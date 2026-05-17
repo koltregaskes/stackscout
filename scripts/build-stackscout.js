@@ -175,6 +175,10 @@ function pageUrl(outputPath) {
   return normalised.replace(/index\.html$/, '')
 }
 
+function canonicalUrl(outputPath) {
+  return new URL(pageUrl(outputPath), PUBLIC_BASE_URL).href
+}
+
 function badgeTone(label) {
   if (label === 'Recommended') return 'green'
   if (label === 'Specialist Pick') return 'blue'
@@ -520,6 +524,34 @@ function renderNav(currentKey, outputPath) {
 function renderDocument({ title, description, currentKey, outputPath, content }) {
   const homeHref = outputHref(outputPath, 'index.html')
   const siteRoot = homeHref === './' ? './' : homeHref
+  const absoluteUrl = canonicalUrl(outputPath)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${PUBLIC_BASE_URL}#organization`,
+        name: 'StackScout',
+        url: PUBLIC_BASE_URL,
+        description: 'Public tool intelligence for builders, operators, and agent-assisted workflows.',
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${PUBLIC_BASE_URL}#website`,
+        name: 'StackScout',
+        url: PUBLIC_BASE_URL,
+        publisher: { '@id': `${PUBLIC_BASE_URL}#organization` },
+      },
+      {
+        '@type': currentKey === 'catalog' ? 'CollectionPage' : 'WebPage',
+        '@id': `${absoluteUrl}#webpage`,
+        name: title,
+        description,
+        url: absoluteUrl,
+        isPartOf: { '@id': `${PUBLIC_BASE_URL}#website` },
+      },
+    ],
+  }
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -528,9 +560,12 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
+    <link rel="canonical" href="${escapeHtml(absoluteUrl)}" />
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="${escapeHtml(absoluteUrl)}" />
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#0a100c" />
     <link rel="icon" type="image/svg+xml" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="apple-touch-icon" href="${outputAssetHref(outputPath, 'icon.svg')}" />
@@ -539,6 +574,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,500..800,50&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="${outputAssetHref(outputPath, 'styles.css')}" />
+    <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
   </head>
   <body data-page="${escapeHtml(currentKey)}" data-site-root="${escapeHtml(siteRoot)}">
     <div class="atmosphere" aria-hidden="true">
@@ -1238,6 +1274,61 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 `
 }
 
+function buildRobots() {
+  return `User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: ${PUBLIC_BASE_URL}sitemap.xml
+`
+}
+
+function buildLlms(site, tools, categories) {
+  const recommended = tools.filter((tool) => tool.badge === 'Recommended').slice(0, 5)
+  const categoryLines = categories
+    .slice(0, 5)
+    .map((category) => `- [${category.title}](${PUBLIC_BASE_URL}categories/${category.slug}/): ${category.description}`)
+    .join('\n')
+  const toolLines = recommended
+    .map((tool) => `- [${tool.name}](${PUBLIC_BASE_URL}tools/${tool.slug}/): ${tool.summary}`)
+    .join('\n')
+
+  return `# StackScout
+
+StackScout is the public scout deck for useful builder tools, APIs, MCPs, CLIs, workflow services, and a clearly labelled in-house lab lane.
+
+## Start Here
+- [Home](${PUBLIC_BASE_URL}): ${site.brand.description}
+- [Catalog](${PUBLIC_BASE_URL}catalog/): searchable public tool catalogue.
+- [Method](${PUBLIC_BASE_URL}method/): curation policy, freshness rules, badge meanings, and public guardrails.
+
+## Main Sections
+${categoryLines}
+
+## Recommended Tool Dossiers
+${toolLines}
+
+## Agent Notes
+- Treat badges as editorial judgement, not benchmark scores.
+- Prefer each dossier's official source link before citing a claim.
+- The StackScout Lab lane is explicitly in-house and should not be confused with third-party ecosystem recommendations.
+`
+}
+
 function main() {
   const privatePreviewExport = resolveWritableExternalPath(PRIVATE_PREVIEW_EXPORT_CANDIDATES)
   const site = readJson('site-source.json')
@@ -1296,6 +1387,8 @@ function main() {
   ]
 
   writeFile('sitemap.xml', buildSitemap(sitemapRoutes))
+  writeFile('robots.txt', buildRobots())
+  writeFile('llms.txt', buildLlms(site, tools, categories))
   console.log(
     `StackScout build complete. Generated ${tools.length} tool pages, ${categories.length} category pages, and ${updates.length} updates.`,
   )
