@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en" data-mood="graphite">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stack Scout — A field log for the AI stack</title>
+  <meta name="description" content="Stack Scout is a curated, opinionated field log for the AI tools stack. No directory, no aggregator." />
+  <meta name="theme-color" content="#14171c" />
+  <!-- Domain: stack-scout.com (recommended) — update CNAME + canonical when confirmed. -->
+  <link rel="canonical" href="https://stack-scout.com/prototype/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ──────────────────────────────────────────────────────────────────────
+       Stack Scout · Zine prototype (vanilla port of StackScout Prototype.html)
+       Phase 1 of CLAUDE-HANDOFF-2026-05-zine.md
+       Source design: DESIGN-2026-05-zine.md
+       ────────────────────────────────────────────────────────────────────── */
+
+    /* Fixed cream/muted scale — never changes between moods */
+    :root {
+      --ink: #ede5d3;
+      --muted: #7d8086;
+      --rule: rgba(237,229,211,0.18);
+      --rule-strong: rgba(237,229,211,0.45);
+      --fs-cap: 11px;
+      --tracking-cap: 0.16em;
+      --tracking-eyebrow: 0.18em;
+      --tracking-marquee: 0.22em;
+      --pad-x: 56px;
+    }
+
+    /* Mood palettes — only --bg and --accent vary */
+    [data-mood="graphite"] { --bg: #14171c; --accent: #6dbab1; }
+    [data-mood="midnight"] { --bg: #0f1622; --accent: #7fb8d2; }
+    [data-mood="obsidian"] { --bg: #0a0c0f; --accent: #6dd5b8; }
+    [data-mood="slate"]    { --bg: #1a1d22; --accent: #8ec2a8; }
+    [data-mood="carbon"]   { --bg: #181b22; --accent: #88bdd1; }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Newsreader', serif;
+      transition: background 500ms ease, color 400ms ease;
+    }
+
+    body {
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; }
+
+    ::selection { background: var(--accent); color: var(--bg); }
+
+    /* Caption / mono / nav voice */
+    .mono {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: var(--fs-cap);
+      letter-spacing: var(--tracking-cap);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .mono--muted { color: var(--muted); }
+    .mono--ink { color: var(--ink); }
+    .mono--accent { color: var(--accent); }
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: var(--tracking-eyebrow);
+      text-transform: uppercase;
+      color: var(--accent);
+      transition: color 400ms ease;
+    }
+
+    /* Hairline rules */
+    .rule {
+      height: 1px;
+      border-top: 1px solid var(--rule-strong);
+      transform-origin: left center;
+      animation: ss-rule-in 1100ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+    .rule--dashed {
+      border-top-style: dashed;
+      border-top-color: var(--rule);
+    }
+    .rule--strong { border-top-width: 1.5px; }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      animation: ss-reveal-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    @keyframes ss-rule-in {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+    @keyframes ss-reveal-in {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes ss-pulse {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50%      { opacity: 1;   transform: scale(1.15); }
+    }
+    @keyframes ss-marquee-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    @keyframes ss-cycle-in {
+      from { opacity: 0; transform: translateY(8px); filter: blur(4px); }
+      to   { opacity: 1; transform: translateY(0);   filter: blur(0); }
+    }
+    @keyframes ss-spark-rise {
+      from { transform: scaleY(0); }
+      to   { transform: scaleY(1); }
+    }
+
+    /* Film grain */
+    body::before {
+      content: "";
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      opacity: 0.035; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    }
+
+    /* ── Masthead ─────────────────────────────────────────────────────── */
+    .masthead {
+      padding: 30px var(--pad-x) 16px;
+      position: relative;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .brand {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .brand__dot {
+      display: inline-block;
+      width: 10px; height: 10px;
+      background: var(--accent);
+      border-radius: 2px;
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 13%, transparent);
+      transform: translateY(-1px);
+      transition: background 400ms ease, box-shadow 400ms ease;
+    }
+    .brand__word {
+      font-family: 'Newsreader', serif;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .nav-and-mood { display: inline-flex; align-items: center; gap: 28px; }
+    .nav { display: inline-flex; gap: 22px; }
+    .nav__btn {
+      background: transparent; border: 0; cursor: pointer;
+      padding: 4px 0 5px;
+      border-bottom: 2px solid transparent;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--muted);
+      transition: border-color 280ms ease, color 240ms ease;
+    }
+    .nav__btn[aria-current="page"] {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .nav__btn:hover { color: var(--ink); }
+
+    /* Mood toggle */
+    .mood {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mood__label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .mood__swatches { display: inline-flex; gap: 6px; }
+    .swatch {
+      width: 22px; height: 22px; padding: 0;
+      border-radius: 999px; cursor: pointer;
+      position: relative;
+      border: 1px solid rgba(237,229,211,0.25);
+      transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+    }
+    .swatch::after {
+      content: "";
+      position: absolute; inset: 0; margin: auto;
+      width: 8px; height: 8px; border-radius: 999px;
+    }
+    .swatch[aria-pressed="true"] {
+      transform: scale(1.08);
+    }
+    .swatch--graphite { background: #14171c; }
+    .swatch--graphite::after { background: #6dbab1; }
+    .swatch--graphite[aria-pressed="true"] { border-color: #6dbab1; box-shadow: 0 0 0 2px rgba(109,186,177,0.33); }
+    .swatch--midnight { background: #0f1622; }
+    .swatch--midnight::after { background: #7fb8d2; }
+    .swatch--midnight[aria-pressed="true"] { border-color: #7fb8d2; box-shadow: 0 0 0 2px rgba(127,184,210,0.33); }
+    .swatch--obsidian { background: #0a0c0f; }
+    .swatch--obsidian::after { background: #6dd5b8; }
+    .swatch--obsidian[aria-pressed="true"] { border-color: #6dd5b8; box-shadow: 0 0 0 2px rgba(109,213,184,0.33); }
+    .swatch--slate { background: #1a1d22; }
+    .swatch--slate::after { background: #8ec2a8; }
+    .swatch--slate[aria-pressed="true"] { border-color: #8ec2a8; box-shadow: 0 0 0 2px rgba(142,194,168,0.33); }
+    .swatch--carbon { background: #181b22; }
+    .swatch--carbon::after { background: #88bdd1; }
+    .swatch--carbon[aria-pressed="true"] { border-color: #88bdd1; box-shadow: 0 0 0 2px rgba(136,189,209,0.33); }
+
+    /* ── Main / page transitions ──────────────────────────────────────── */
+    main {
+      padding: 0 var(--pad-x);
+      position: relative;
+      z-index: 2;
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+    main[data-fading="true"] {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    .page { display: none; }
+    .page[data-active="true"] { display: block; }
+
+    /* ── Home: hero / cycling lead ────────────────────────────────────── */
+    .hero {
+      position: relative;
+      padding: 48px 0 32px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 56px;
+      align-items: end;
+      min-height: 380px;
+    }
+    .hero__spotlight {
+      position: absolute; inset: 0; pointer-events: none;
+      transition: background 200ms ease;
+    }
+    .hero__copy { position: relative; z-index: 1; }
+    .hero__verb {
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      color: var(--accent);
+      transition: color 400ms ease;
+    }
+    .hero__headline {
+      font-family: 'Newsreader', serif;
+      font-size: clamp(48px, 7vw, 96px);
+      line-height: 0.95;
+      letter-spacing: -0.025em;
+      font-weight: 500;
+      margin: 12px 0 18px;
+      min-height: 1.9em;
+    }
+    .hero__lede {
+      font-size: 17px;
+      line-height: 1.45;
+      max-width: 52ch;
+      color: var(--ink);
+    }
+    .hero__indicators {
+      display: inline-flex; gap: 8px;
+      margin-top: 22px;
+    }
+    .hero__indicator {
+      width: 22px; height: 4px;
+      background: var(--rule);
+      border-radius: 2px;
+      border: 0; padding: 0; cursor: pointer;
+      transition: background 280ms ease;
+    }
+    .hero__indicator[aria-pressed="true"] { background: var(--accent); }
+
+    .hero__rail {
+      align-self: start;
+      padding-top: 32px;
+      border-left: 1px dashed var(--rule);
+      padding-left: 32px;
+    }
+    .hero__rail-image {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%),
+        repeating-linear-gradient(45deg, var(--rule) 0 1px, transparent 1px 14px);
+      border: 1px dashed var(--rule);
+    }
+    .hero__rail-meta { margin-top: 14px; }
+
+    /* Also today */
+    .also-today {
+      padding: 22px 0 26px;
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+    .also-today__label {
+      flex: 0 0 auto;
+      align-self: center;
+    }
+    .also-today__item {
+      flex: 1 1 220px;
+      min-width: 220px;
+      font-family: 'Newsreader', serif;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+    .also-today__source {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* Section heading row */
+    .section {
+      padding: 28px 0;
+    }
+    .section__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 18px;
+      gap: 24px;
+    }
+    .section__title {
+      font-family: 'Newsreader', serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.012em;
+      margin: 0;
+    }
+
+    /* Setlist / Wire rows with hover stripes */
+    .row {
+      position: relative;
+      padding: 14px 0 14px 0;
+      transition: padding-left 240ms ease;
+      border-bottom: 1px dashed var(--rule);
+    }
+    .row:last-child { border-bottom: 0; }
+    .row__stripe {
+      position: absolute;
+      left: -14px; top: 18px; bottom: 18px;
+      width: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: opacity 220ms ease, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .row:hover .row__stripe { opacity: 1; transform: scaleY(1); }
+
+    .setlist__row {
+      display: grid;
+      grid-template-columns: 36px minmax(0, 1.5fr) 110px minmax(0, 1fr) 110px;
+      gap: 22px;
+      align-items: center;
+    }
+    .setlist__rank {
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-size: 28px;
+      color: var(--accent);
+      font-weight: 600;
+      text-align: right;
+    }
+    .setlist__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .setlist__studio {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .setlist__date,
+    .setlist__tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .setlist__date { text-align: right; color: var(--ink); }
+
+    /* Sparkline */
+    .spark {
+      display: inline-flex;
+      gap: 3px;
+      align-items: flex-end;
+      height: 22px;
+    }
+    .spark__bar {
+      width: 3px;
+      background: var(--accent);
+      transform-origin: bottom;
+      transform: scaleY(0);
+      opacity: 0.6;
+      animation: ss-spark-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    /* Wire rows */
+    .wire__row {
+      display: grid;
+      grid-template-columns: 140px minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 24px;
+      align-items: baseline;
+    }
+    .wire__kind {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .wire__title {
+      font-family: 'Newsreader', serif;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .wire__lede {
+      display: block;
+      font-size: 15px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .wire__source {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .wire__source a { border-bottom: 1px solid var(--rule); color: var(--ink); }
+    .pulse {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: ss-pulse 2.4s ease-in-out infinite;
+    }
+
+    /* Against / With banner */
+    .stance {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      padding: 40px 0;
+      border-top: 1px solid var(--rule-strong);
+      border-bottom: 1px solid var(--rule-strong);
+      margin: 12px 0;
+    }
+    .stance__copy {
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-size: clamp(22px, 3vw, 32px);
+      line-height: 1.25;
+      max-width: 38ch;
+    }
+    .stance__copy em { color: var(--accent); font-style: italic; transition: color 400ms ease; }
+    .stance__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 22px;
+      background: var(--accent);
+      color: var(--bg);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 0; cursor: pointer;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), background 400ms ease, color 400ms ease;
+      will-change: transform;
+    }
+
+    /* ── Page header strip (non-home pages) ───────────────────────────── */
+    .page-header {
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .crumbs {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .crumbs__current { color: var(--ink); }
+    .stat-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .stat {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+    }
+    .stat__value {
+      font-family: 'Newsreader', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .stat__label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Filter rail */
+    .filters {
+      padding: 22px 0;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-pill {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--rule);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 240ms ease, background 240ms ease, border-color 240ms ease;
+    }
+    .filter-pill[aria-pressed="true"] {
+      color: var(--ink);
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+    }
+
+    /* ── Footer ───────────────────────────────────────────────────────── */
+    .marquee {
+      padding: 12px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      overflow: hidden;
+      position: relative;
+      margin-top: 32px;
+      transition: border-color 400ms ease;
+    }
+    .marquee__track {
+      display: inline-flex;
+      gap: 36px;
+      padding-left: var(--pad-x);
+      white-space: nowrap;
+      animation: ss-marquee-scroll 38s linear infinite;
+      will-change: transform;
+    }
+    .marquee:hover .marquee__track { animation-play-state: paused; }
+    .marquee__item {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .marquee__item .mark { color: var(--accent); margin-right: 8px; transition: color 400ms ease; }
+
+    .footer-strip {
+      padding: 18px var(--pad-x) 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-strip__live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-link {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+      background: transparent; border-left: 0; border-right: 0; border-top: 0;
+      cursor: pointer;
+    }
+
+    /* ── Compact layouts at small screens ─────────────────────────────── */
+    @media (max-width: 900px) {
+      :root { --pad-x: 22px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 28px 0 16px;
+      }
+      .hero__rail { border-left: 0; padding-left: 0; padding-top: 12px; border-top: 1px dashed var(--rule); }
+      .nav-and-mood { flex-wrap: wrap; gap: 14px; }
+      .nav { flex-wrap: wrap; gap: 14px; }
+      .setlist__row { grid-template-columns: 28px 1fr 80px; gap: 14px; }
+      .setlist__row .setlist__tag,
+      .setlist__row .setlist__date { display: none; }
+      .wire__row { grid-template-columns: 1fr; gap: 6px; }
+      .stance { flex-direction: column; align-items: flex-start; gap: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ── Masthead ─────────────────────────────────────────────────────── -->
+  <header class="masthead reveal">
+    <button class="brand" type="button" data-nav="home" aria-label="Stack Scout home">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__word">Stack Scout</span>
+    </button>
+
+    <div class="nav-and-mood">
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__btn" type="button" data-nav="home"      aria-current="page">Home</button>
+        <button class="nav__btn" type="button" data-nav="releases">Releases</button>
+        <button class="nav__btn" type="button" data-nav="wire">Wire</button>
+        <button class="nav__btn" type="button" data-nav="list">Top tools</button>
+        <button class="nav__btn" type="button" data-nav="subscribe">Subscribe</button>
+      </nav>
+
+      <div class="mood">
+        <span class="mood__label">Mood ▾</span>
+        <div class="mood__swatches" role="radiogroup" aria-label="Mood palette">
+          <button class="swatch swatch--graphite" type="button" data-mood-id="graphite" aria-pressed="true"  aria-label="Graphite"></button>
+          <button class="swatch swatch--midnight" type="button" data-mood-id="midnight" aria-pressed="false" aria-label="Midnight"></button>
+          <button class="swatch swatch--obsidian" type="button" data-mood-id="obsidian" aria-pressed="false" aria-label="Obsidian"></button>
+          <button class="swatch swatch--slate"    type="button" data-mood-id="slate"    aria-pressed="false" aria-label="Slate"></button>
+          <button class="swatch swatch--carbon"   type="button" data-mood-id="carbon"   aria-pressed="false" aria-label="Carbon"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rule rule--strong"></div>
+
+  <!-- ── Main ─────────────────────────────────────────────────────────── -->
+  <main id="main" data-fading="false">
+
+    <!-- ── Home ─────────────────────────────────────────────────────── -->
+    <section class="page" id="page-home" data-active="true">
+      <div class="hero" id="hero">
+        <div class="hero__spotlight" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <p class="eyebrow">Lead · cycling</p>
+          <h1 class="hero__headline" id="cyclingHeadline">&nbsp;</h1>
+          <p class="hero__lede" id="cyclingLede">&nbsp;</p>
+          <div class="hero__indicators" id="cyclingIndicators" role="tablist" aria-label="Cycling lead"></div>
+        </div>
+
+        <aside class="hero__rail reveal" style="animation-delay:120ms">
+          <div class="hero__rail-image" aria-hidden="true"></div>
+          <div class="hero__rail-meta">
+            <p class="mono mono--muted" id="cyclingMeta">Source · Studio · 17 May 2026</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="rule rule--dashed"></div>
+
+      <!-- Also today -->
+      <div class="also-today reveal">
+        <span class="also-today__label mono mono--accent">Also today ▾</span>
+        <div class="also-today__item">
+          OpenAI ships smaller-model price drop across the API tier.
+          <span class="also-today__source">OpenAI release notes · 14:20 UTC</span>
+        </div>
+        <div class="also-today__item">
+          Cursor 2.5 changelog confirms multi-window edit reviews in stable.
+          <span class="also-today__source">Cursor changelog · 12:08 UTC</span>
+        </div>
+        <div class="also-today__item">
+          Suno v5.5 lifts the loop-token cap; longer-form clips now in beta.
+          <span class="also-today__source">Suno blog · 09:47 UTC</span>
+        </div>
+      </div>
+
+      <div class="rule rule--dashed"></div>
+
+      <!-- Setlist -->
+      <section class="section reveal" style="animation-delay:60ms">
+        <header class="section__head">
+          <h2 class="section__title">Setlist · next ninety days</h2>
+          <a class="mono mono--muted" href="#" data-nav="releases">All releases →</a>
+        </header>
+        <div id="setlist"></div>
+      </section>
+
+      <div class="rule rule--dashed"></div>
+
+      <!-- Wire -->
+      <section class="section reveal" style="animation-delay:120ms">
+        <header class="section__head">
+          <h2 class="section__title">
+            <span class="pulse" aria-hidden="true"></span>
+            Wire · last 48 hours
+          </h2>
+          <a class="mono mono--muted" href="#" data-nav="wire">All wire →</a>
+        </header>
+        <div id="wire"></div>
+      </section>
+
+      <!-- Against / With banner -->
+      <section class="stance reveal" style="animation-delay:160ms">
+        <p class="stance__copy">
+          This week we are <em>with</em> small models that ship<br />
+          and <em>against</em> roadmap theatre.
+        </p>
+        <button class="stance__cta" type="button" id="magneticCta">Read the take</button>
+      </section>
+    </section>
+
+    <!-- ── Releases (Phase 2 stub) ─────────────────────────────────── -->
+    <section class="page" id="page-releases">
+      <header class="page-header">
+        <span class="crumbs">Stack Scout / <span class="crumbs__current">Releases</span></span>
+        <div class="stat-row">
+          <span class="stat"><span class="stat__value" data-countup="32">0</span><span class="stat__label">Tracked</span></span>
+          <span class="stat"><span class="stat__value" data-countup="14">0</span><span class="stat__label">Confirmed</span></span>
+          <span class="stat"><span class="stat__value" data-countup="9">0</span><span class="stat__label">This week</span></span>
+        </div>
+      </header>
+      <div class="rule rule--dashed"></div>
+      <div class="filters" role="group" aria-label="Release filters">
+        <button class="filter-pill" type="button" aria-pressed="true">All</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Models</button>
+        <button class="filter-pill" type="button" aria-pressed="false">IDE</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Image</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Audio</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Video</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Voice</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Confirmed only</button>
+        <button class="filter-pill" type="button" aria-pressed="false">Recommended</button>
+      </div>
+      <div class="rule rule--dashed"></div>
+      <p class="mono mono--muted" style="padding:32px 0;">
+        Phase 2 of the build wires this page to <code>content/stackscout/tools-source.json</code>.
+        List view groups by release window; calendar view is a 3-month strip. See KOL-540 (TBC) for the plumbing ticket.
+      </p>
+    </section>
+
+    <!-- ── Wire (Phase 2 stub) ─────────────────────────────────────── -->
+    <section class="page" id="page-wire">
+      <header class="page-header">
+        <span class="crumbs">Stack Scout / <span class="crumbs__current">Wire</span></span>
+        <div class="stat-row">
+          <span class="stat"><span class="stat__value" data-countup="24">0</span><span class="stat__label">Items 48h</span></span>
+          <span class="stat"><span class="stat__value" data-countup="147">0</span><span class="stat__label">Indexed</span></span>
+          <span class="stat"><span class="stat__value" data-countup="38">0</span><span class="stat__label">Sources</span></span>
+        </div>
+      </header>
+      <div class="rule rule--dashed"></div>
+      <p class="mono mono--muted" style="padding:32px 0;">
+        Phase 2 wires this page to <code>content/stackscout/updates-source.json</code> with query-string filters.
+      </p>
+    </section>
+
+    <!-- ── List (Phase 2 stub) ─────────────────────────────────────── -->
+    <section class="page" id="page-list">
+      <header class="page-header">
+        <span class="crumbs">Stack Scout / <span class="crumbs__current">Top tools</span></span>
+        <span class="mono mono--muted">Curated, not algorithmic.</span>
+      </header>
+      <div class="rule rule--dashed"></div>
+      <p class="mono mono--muted" style="padding:32px 0;">
+        Phase 2 reads the manual <code>rank</code> field in <code>tools-source.json</code>.
+        Filter rail: All / Recommended / Worth watching / Specialist pick.
+      </p>
+    </section>
+
+    <!-- ── Subscribe (Phase 2 stub) ────────────────────────────────── -->
+    <section class="page" id="page-subscribe">
+      <header class="page-header">
+        <span class="crumbs">Stack Scout / <span class="crumbs__current">Subscribe</span></span>
+        <span class="mono mono--muted">A field log for the AI stack.</span>
+      </header>
+      <div class="rule rule--dashed"></div>
+      <p class="mono mono--muted" style="padding:32px 0;">
+        Phase 2 wires the email form to the chosen subscribe endpoint and renders the past-issue archive
+        from <code>updates-source.json</code> grouped by week.
+      </p>
+    </section>
+  </main>
+
+  <div class="rule rule--strong"></div>
+
+  <!-- ── Footer marquee ──────────────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marqueeTrack">
+      <!-- duplicated in JS for seamless scroll -->
+    </div>
+  </div>
+
+  <div class="footer-strip">
+    <span class="mono mono--muted">Stack Scout · independent · est. 2026</span>
+    <div class="footer-strip__live">
+      <span class="mono mono--muted">
+        <span class="pulse" aria-hidden="true"></span>
+        Live · <span id="utcClock">--:-- UTC</span>
+      </span>
+      <button class="footer-link" type="button" data-nav="sources">Sources &amp; method →</button>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────────────────
+       Stack Scout · vanilla JS
+       Mood, navigation, cycling lead, marquee, sparklines, clock, spotlight,
+       magnetic CTA, count-up.
+       ────────────────────────────────────────────────────────────────── -->
+  <script>
+    (function () {
+      'use strict';
+
+      // ── Mood persistence ────────────────────────────────────────────
+      var MOODS = ['graphite', 'midnight', 'obsidian', 'slate', 'carbon'];
+      var STORAGE_KEY = 'stackscout.mood.v1';
+
+      function setMood(id) {
+        if (MOODS.indexOf(id) === -1) id = 'graphite';
+        document.documentElement.setAttribute('data-mood', id);
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', getComputedStyle(document.documentElement).getPropertyValue('--bg').trim());
+        document.querySelectorAll('.swatch').forEach(function (b) {
+          b.setAttribute('aria-pressed', b.dataset.moodId === id ? 'true' : 'false');
+        });
+        try { localStorage.setItem(STORAGE_KEY, id); } catch (e) {}
+      }
+
+      // Restore on load
+      try {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) setMood(saved);
+      } catch (e) {}
+
+      document.querySelectorAll('.swatch').forEach(function (b) {
+        b.addEventListener('click', function () { setMood(b.dataset.moodId); });
+      });
+
+      // ── Navigation between pages ───────────────────────────────────
+      var main = document.getElementById('main');
+      function navTo(id) {
+        var current = document.querySelector('.page[data-active="true"]');
+        if (current && current.id === 'page-' + id) return;
+        main.setAttribute('data-fading', 'true');
+        setTimeout(function () {
+          document.querySelectorAll('.page').forEach(function (p) {
+            p.setAttribute('data-active', p.id === 'page-' + id ? 'true' : 'false');
+          });
+          document.querySelectorAll('.nav__btn').forEach(function (n) {
+            n.setAttribute('aria-current', n.dataset.nav === id ? 'page' : 'false');
+          });
+          main.setAttribute('data-fading', 'false');
+          window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+        }, 200);
+      }
+      document.querySelectorAll('[data-nav]').forEach(function (n) {
+        n.addEventListener('click', function (ev) { ev.preventDefault(); navTo(n.dataset.nav); });
+      });
+
+      // ── Placeholder data (Phase 2 will replace from JSON manifests) ─
+      var LEADS = [
+        {
+          headline: 'Claude 4.6 ships the editor mode without the wobble.',
+          lede: 'Anthropic\'s new <em>editor mode</em> claims first-draft latency stays under 350 ms on 100k-token contexts. Numbers from the dev preview line up; community runs land later this week.',
+          meta: 'Anthropic · Claude · 18 May 2026'
+        },
+        {
+          headline: 'Cursor 2.5 turns multi-window review into a real workflow.',
+          lede: 'The stable channel now keeps diff context across windows. Reviewing a stacked branch no longer means juggling tabs; the agent <em>stays</em> with you.',
+          meta: 'Cursor · IDE · 17 May 2026'
+        },
+        {
+          headline: 'Suno v5.5 doubles the loop ceiling, quietly.',
+          lede: 'No press release. Just a higher token cap and a <em>cleaner</em> tail on long-form clips. Worth a sample run before you commit a brief.',
+          meta: 'Suno · Audio · 16 May 2026'
+        },
+        {
+          headline: 'Gemini 3.1 Flash beats its Pro sibling on the cheap.',
+          lede: 'Google\'s smaller variant lands at a quarter of the price and within a coin-flip of Pro on the eval set we run. The headline is <em>price</em>, not capability.',
+          meta: 'Google · Models · 15 May 2026'
+        }
+      ];
+
+      var SETLIST = [
+        { rank: 1, title: 'Claude 4.6',      studio: 'Anthropic', tag: 'Models',  date: '23 May', spark: [3,5,4,6,8,7,9,11,10] },
+        { rank: 2, title: 'Cursor 2.5',      studio: 'Cursor',    tag: 'IDE',     date: '28 May', spark: [2,3,5,4,7,6,8,7,9] },
+        { rank: 3, title: 'Suno v5.5',       studio: 'Suno',      tag: 'Audio',   date: '04 Jun', spark: [4,4,5,5,7,6,8,9,8] },
+        { rank: 4, title: 'Gemini 3.1 Pro',  studio: 'Google',    tag: 'Models',  date: '11 Jun', spark: [3,4,4,5,6,5,7,8,9] },
+        { rank: 5, title: 'Runway Gen-5',    studio: 'Runway',    tag: 'Video',   date: '19 Jun', spark: [1,2,2,3,4,5,6,7,8] }
+      ];
+
+      var WIRE = [
+        { kind: 'Release · 14:20', title: 'OpenAI cuts API price on smaller models.',     lede: 'Across the API tier; takes effect Thursday.',         source: 'OpenAI release notes', tool: 'OpenAI' },
+        { kind: 'Update · 12:08',  title: 'Cursor 2.5 stable channel adds multi-window.', lede: 'Diff context now persists across windows.',           source: 'Cursor changelog',     tool: 'Cursor' },
+        { kind: 'Feature · 09:47', title: 'Suno lifts loop-token cap.',                   lede: 'Longer-form clips entering beta.',                    source: 'Suno blog',            tool: 'Suno' },
+        { kind: 'Pricing · 08:30', title: 'Replicate trims cold-start fees.',             lede: 'Pay-per-second now starts at first warm token.',      source: 'Replicate pricing',    tool: 'Replicate' },
+        { kind: 'Funding · 07:00', title: 'Tiny image-model lab raises $14m seed.',       lede: 'Backed by Index, Hoxton, and three operator angels.', source: 'Term sheet · public',  tool: 'Lab' }
+      ];
+
+      // ── Render: setlist ─────────────────────────────────────────────
+      var setlistRoot = document.getElementById('setlist');
+      setlistRoot.innerHTML = SETLIST.map(function (s, i) {
+        var bars = s.spark.map(function (v, j) {
+          var max = Math.max.apply(null, s.spark);
+          var h = Math.round((v / max) * 22);
+          return '<span class="spark__bar" style="height:' + h + 'px;animation-delay:' + (j * 40) + 'ms"></span>';
+        }).join('');
+        return ''
+          + '<div class="row setlist__row">'
+          + '  <span class="row__stripe" aria-hidden="true"></span>'
+          + '  <span class="setlist__rank">' + s.rank + '</span>'
+          + '  <span>'
+          + '    <span class="setlist__title">' + s.title + '</span>'
+          + '    <span class="setlist__studio">' + s.studio + '</span>'
+          + '  </span>'
+          + '  <span class="spark" aria-hidden="true">' + bars + '</span>'
+          + '  <span class="setlist__tag">' + s.tag + '</span>'
+          + '  <span class="setlist__date">' + s.date + '</span>'
+          + '</div>';
+      }).join('');
+
+      // ── Render: wire ────────────────────────────────────────────────
+      var wireRoot = document.getElementById('wire');
+      wireRoot.innerHTML = WIRE.map(function (w) {
+        return ''
+          + '<div class="row wire__row">'
+          + '  <span class="row__stripe" aria-hidden="true"></span>'
+          + '  <span class="wire__kind">' + w.kind + '</span>'
+          + '  <span class="wire__title">' + w.title + '<span class="wire__lede">' + w.lede + '</span></span>'
+          + '  <span class="wire__source"><a href="#">' + w.source + '</a> · ' + w.tool + '</span>'
+          + '</div>';
+      }).join('');
+
+      // ── Cycling lead ────────────────────────────────────────────────
+      var leadIdx = 0;
+      var leadTimer = null;
+      var headlineEl = document.getElementById('cyclingHeadline');
+      var ledeEl = document.getElementById('cyclingLede');
+      var metaEl = document.getElementById('cyclingMeta');
+      var indicatorsRoot = document.getElementById('cyclingIndicators');
+
+      indicatorsRoot.innerHTML = LEADS.map(function (_, i) {
+        return '<button class="hero__indicator" type="button" data-lead="' + i + '" aria-pressed="' + (i === 0 ? 'true' : 'false') + '" aria-label="Lead ' + (i + 1) + '"></button>';
+      }).join('');
+
+      function renderLead(idx) {
+        leadIdx = idx;
+        var l = LEADS[idx];
+        headlineEl.style.animation = 'none';
+        ledeEl.style.animation = 'none';
+        // Force reflow
+        void headlineEl.offsetWidth;
+        headlineEl.innerHTML = l.headline.replace(/<em>(.*?)<\/em>/g, '<span class="hero__verb">$1</span>');
+        ledeEl.innerHTML = l.lede;
+        metaEl.textContent = l.meta;
+        headlineEl.style.animation = 'ss-cycle-in 600ms cubic-bezier(0.2, 0.8, 0.2, 1) both';
+        ledeEl.style.animation = 'ss-cycle-in 600ms cubic-bezier(0.2, 0.8, 0.2, 1) both';
+        ledeEl.style.animationDelay = '80ms';
+        document.querySelectorAll('[data-lead]').forEach(function (b) {
+          b.setAttribute('aria-pressed', b.dataset.lead == idx ? 'true' : 'false');
+        });
+      }
+      renderLead(0);
+
+      function startCycle() {
+        stopCycle();
+        leadTimer = setInterval(function () { renderLead((leadIdx + 1) % LEADS.length); }, 9000);
+      }
+      function stopCycle() { if (leadTimer) clearInterval(leadTimer); leadTimer = null; }
+      startCycle();
+
+      var hero = document.getElementById('hero');
+      hero.addEventListener('mouseenter', stopCycle);
+      hero.addEventListener('mouseleave', startCycle);
+      indicatorsRoot.addEventListener('click', function (ev) {
+        var b = ev.target.closest('[data-lead]');
+        if (!b) return;
+        renderLead(parseInt(b.dataset.lead, 10));
+        startCycle();
+      });
+
+      // ── Cursor spotlight on home hero ───────────────────────────────
+      var spotEl = hero.querySelector('.hero__spotlight');
+      hero.addEventListener('mousemove', function (e) {
+        var r = hero.getBoundingClientRect();
+        var x = e.clientX - r.left;
+        var y = e.clientY - r.top;
+        var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+        spotEl.style.background = 'radial-gradient(420px circle at ' + x + 'px ' + y + 'px, ' + accent + '22, transparent 60%)';
+      });
+      hero.addEventListener('mouseleave', function () { spotEl.style.background = 'transparent'; });
+
+      // ── Magnetic CTA ────────────────────────────────────────────────
+      var cta = document.getElementById('magneticCta');
+      cta.addEventListener('mousemove', function (e) {
+        var r = cta.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width / 2)) * 0.25;
+        var dy = (e.clientY - (r.top + r.height / 2)) * 0.25;
+        cta.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
+      });
+      cta.addEventListener('mouseleave', function () { cta.style.transform = 'translate(0,0)'; });
+
+      // ── Live UTC clock ──────────────────────────────────────────────
+      function tickClock() {
+        var d = new Date();
+        var hh = String(d.getUTCHours()).padStart(2, '0');
+        var mm = String(d.getUTCMinutes()).padStart(2, '0');
+        document.getElementById('utcClock').textContent = hh + ':' + mm + ' UTC';
+      }
+      tickClock();
+      setInterval(tickClock, 30000);
+
+      // ── Footer marquee (duplicate items for seamless scroll) ───────
+      var MARQUEE = [
+        "No affiliate links",
+        "No ranked lists",
+        "No 'trending tools'",
+        "One take per week",
+        "Official sources or it didn't happen",
+        "Used it, or it's not here"
+      ];
+      var track = document.getElementById('marqueeTrack');
+      var loopHtml = MARQUEE.map(function (s) {
+        return '<span class="marquee__item"><span class="mark">✕</span>' + s + '</span>';
+      }).join('');
+      track.innerHTML = '<span style="display:inline-flex;gap:36px">' + loopHtml + '</span><span style="display:inline-flex;gap:36px;padding-left:36px">' + loopHtml + '</span>';
+
+      // ── Count-up numbers on stat pills ─────────────────────────────
+      function countUp(el, target) {
+        var start = performance.now();
+        var dur = 1200;
+        function step(now) {
+          var t = Math.min(1, (now - start) / dur);
+          var eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(eased * target);
+          if (t < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      // Only run count-ups when their page becomes active
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            countUp(en.target, parseInt(en.target.dataset.countup, 10));
+            io.unobserve(en.target);
+          }
+        });
+      });
+      document.querySelectorAll('[data-countup]').forEach(function (el) { io.observe(el); });
+
+      // Re-trigger count-ups when navigating into a page
+      document.querySelectorAll('.nav__btn').forEach(function (n) {
+        n.addEventListener('click', function () {
+          setTimeout(function () {
+            document.querySelectorAll('.page[data-active="true"] [data-countup]').forEach(function (el) {
+              el.textContent = '0';
+              countUp(el, parseInt(el.dataset.countup, 10));
+            });
+          }, 220);
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
