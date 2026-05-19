@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stack Scout — A field log for the AI stack</title>
-  <meta name="description" content="Stack Scout is a curated, opinionated field log for the AI tools stack. No directory, no aggregator." />
+  <title>Stack Gazette — A field log for the AI stack</title>
+  <meta name="description" content="Stack Gazette is a curated, opinionated field log for the AI tools stack. No directory, no aggregator." />
   <meta name="theme-color" content="#14171c" />
-  <!-- Domain: stack-scout.com (recommended) — update CNAME + canonical when confirmed. -->
-  <link rel="canonical" href="https://stack-scout.com/prototype/" />
+  <!-- Domain: stackgazette.com (confirmed NXDOMAIN, register before publishing). -->
+  <link rel="canonical" href="https://stackgazette.com/prototype/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,9 +17,13 @@
 
   <style>
     /* ──────────────────────────────────────────────────────────────────────
-       Stack Scout · Zine prototype (vanilla port of StackScout Prototype.html)
+       Stack Gazette · Zine prototype (vanilla port of StackScout Prototype.html)
        Phase 1 of CLAUDE-HANDOFF-2026-05-zine.md
        Source design: DESIGN-2026-05-zine.md
+       Wordmark renamed from "Stack Scout" → "Stack Gazette" (stackscout.com
+       was taken; stackgazette.com matches the broadsheet mood in DESIGN.md § 1).
+       Logo refreshed: replaced the single accent square with three stacked
+       horizontal bars (literal "stack" mark, no glow ring).
        ────────────────────────────────────────────────────────────────────── */
 
     /* Fixed cream/muted scale — never changes between moods */
@@ -152,17 +156,21 @@
       padding: 0;
       cursor: pointer;
       display: inline-flex;
-      align-items: baseline;
-      gap: 12px;
+      align-items: center;
+      gap: 14px;
     }
-    .brand__dot {
+    /* Logo mark — three stacked horizontal bars, accent colour.
+       Reads as "stack" literally; sits flush with the wordmark baseline. */
+    .brand__mark {
       display: inline-block;
-      width: 10px; height: 10px;
-      background: var(--accent);
-      border-radius: 2px;
-      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 13%, transparent);
-      transform: translateY(-1px);
-      transition: background 400ms ease, box-shadow 400ms ease;
+      width: 18px;
+      height: 16px;
+      flex-shrink: 0;
+      transform: translateY(2px);
+    }
+    .brand__mark rect {
+      fill: var(--accent);
+      transition: fill 400ms ease;
     }
     .brand__word {
       font-family: 'Newsreader', serif;
@@ -171,6 +179,14 @@
       letter-spacing: -0.03em;
       line-height: 1;
       color: var(--ink);
+    }
+    /* Optional italic accent on the second word, used on hover */
+    .brand:hover .brand__word-second {
+      color: var(--accent);
+      transition: color 240ms ease;
+    }
+    .brand__word-second {
+      transition: color 240ms ease;
     }
     .nav-and-mood { display: inline-flex; align-items: center; gap: 28px; }
     .nav { display: inline-flex; gap: 22px; }
@@ -660,9 +676,14 @@
 <body>
   <!-- ── Masthead ─────────────────────────────────────────────────────── -->
   <header class="masthead reveal">
-    <button class="brand" type="button" data-nav="home" aria-label="Stack Scout home">
-      <span class="brand__dot" aria-hidden="true"></span>
-      <span class="brand__word">Stack Scout</span>
+    <button class="brand" type="button" data-nav="home" aria-label="Stack Gazette home">
+      <!-- Stack mark: three horizontal bars stacked, narrowest on top -->
+      <svg class="brand__mark" viewBox="0 0 18 16" aria-hidden="true" focusable="false">
+        <rect x="3" y="2"  width="9"  height="2.5" rx="0.5"/>
+        <rect x="0" y="6.5" width="18" height="2.5" rx="0.5"/>
+        <rect x="2" y="11" width="13" height="2.5" rx="0.5"/>
+      </svg>
+      <span class="brand__word">Stack <span class="brand__word-second">Gazette</span></span>
     </button>
 
     <div class="nav-and-mood">
@@ -769,7 +790,7 @@
     <!-- ── Releases (Phase 2 stub) ─────────────────────────────────── -->
     <section class="page" id="page-releases">
       <header class="page-header">
-        <span class="crumbs">Stack Scout / <span class="crumbs__current">Releases</span></span>
+        <span class="crumbs">Stack Gazette / <span class="crumbs__current">Releases</span></span>
         <div class="stat-row">
           <span class="stat"><span class="stat__value" data-countup="32">0</span><span class="stat__label">Tracked</span></span>
           <span class="stat"><span class="stat__value" data-countup="14">0</span><span class="stat__label">Confirmed</span></span>
@@ -798,7 +819,7 @@
     <!-- ── Wire (Phase 2 stub) ─────────────────────────────────────── -->
     <section class="page" id="page-wire">
       <header class="page-header">
-        <span class="crumbs">Stack Scout / <span class="crumbs__current">Wire</span></span>
+        <span class="crumbs">Stack Gazette / <span class="crumbs__current">Wire</span></span>
         <div class="stat-row">
           <span class="stat"><span class="stat__value" data-countup="24">0</span><span class="stat__label">Items 48h</span></span>
           <span class="stat"><span class="stat__value" data-countup="147">0</span><span class="stat__label">Indexed</span></span>
@@ -814,7 +835,7 @@
     <!-- ── List (Phase 2 stub) ─────────────────────────────────────── -->
     <section class="page" id="page-list">
       <header class="page-header">
-        <span class="crumbs">Stack Scout / <span class="crumbs__current">Top tools</span></span>
+        <span class="crumbs">Stack Gazette / <span class="crumbs__current">Top tools</span></span>
         <span class="mono mono--muted">Curated, not algorithmic.</span>
       </header>
       <div class="rule rule--dashed"></div>
@@ -827,7 +848,7 @@
     <!-- ── Subscribe (Phase 2 stub) ────────────────────────────────── -->
     <section class="page" id="page-subscribe">
       <header class="page-header">
-        <span class="crumbs">Stack Scout / <span class="crumbs__current">Subscribe</span></span>
+        <span class="crumbs">Stack Gazette / <span class="crumbs__current">Subscribe</span></span>
         <span class="mono mono--muted">A field log for the AI stack.</span>
       </header>
       <div class="rule rule--dashed"></div>
@@ -848,7 +869,7 @@
   </div>
 
   <div class="footer-strip">
-    <span class="mono mono--muted">Stack Scout · independent · est. 2026</span>
+    <span class="mono mono--muted">Stack Gazette · independent · est. 2026</span>
     <div class="footer-strip__live">
       <span class="mono mono--muted">
         <span class="pulse" aria-hidden="true"></span>
@@ -869,7 +890,7 @@
 
       // ── Mood persistence ────────────────────────────────────────────
       var MOODS = ['graphite', 'midnight', 'obsidian', 'slate', 'carbon'];
-      var STORAGE_KEY = 'stackscout.mood.v1';
+      var STORAGE_KEY = 'stackgazette.mood.v1';
 
       function setMood(id) {
         if (MOODS.indexOf(id) === -1) id = 'graphite';
