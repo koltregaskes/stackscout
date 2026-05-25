@@ -1,0 +1,27 @@
+# StackScout
+
+StackScout is the public scout deck for useful builder tools, APIs, MCPs, CLIs, workflow services, and a clearly labelled in-house lab lane.
+
+## Start Here
+- [Home](https://koltregaskes.github.io/tools-hub/): StackScout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder's attention.
+- [Catalog](https://koltregaskes.github.io/tools-hub/catalog/): searchable public tool catalogue.
+- [Method](https://koltregaskes.github.io/tools-hub/method/): curation policy, freshness rules, badge meanings, and public guardrails.
+
+## Main Sections
+- [Websites](https://koltregaskes.github.io/tools-hub/categories/websites/): Browser-first products and hubs that are useful on their own, not just as a wrapper around an API.
+- [Web Services](https://koltregaskes.github.io/tools-hub/categories/web-services/): Hosted workflow and automation platforms that carry real operational value without requiring a local runtime first.
+- [APIs](https://koltregaskes.github.io/tools-hub/categories/apis/): Platform surfaces for shipping structured AI, automation, and developer workflows.
+- [MCPs](https://koltregaskes.github.io/tools-hub/categories/mcps/): Model Context Protocol servers and bridges that turn static assistants into tool-using systems.
+- [CLIs](https://koltregaskes.github.io/tools-hub/categories/clis/): Command-line tools that earn a place in a serious builder workflow.
+
+## Recommended Tool Dossiers
+- [Hugging Face](https://koltregaskes.github.io/tools-hub/tools/hugging-face/): The strongest public hub for models, datasets, Spaces, open-source research, and fast-moving AI tooling infrastructure.
+- [Make](https://koltregaskes.github.io/tools-hub/tools/make/): A polished hosted automation platform that is shipping quickly into agents, credential collection, and MCP-shaped workflows.
+- [OpenAI API](https://koltregaskes.github.io/tools-hub/tools/openai-api/): A frontier model API stack that increasingly optimizes for real agent workflows, tool use, and professional work products.
+- [Anthropic API](https://koltregaskes.github.io/tools-hub/tools/anthropic-api/): A strong API lane for Claude-based reasoning, long context, and enterprise-facing agent workflows with a rapidly expanding model lineup.
+- [GitHub MCP Server](https://koltregaskes.github.io/tools-hub/tools/github-mcp-server/): GitHub's official MCP server brings repositories, issues, pull requests, actions, and related workflows directly into agent loops.
+
+## Agent Notes
+- Treat badges as editorial judgement, not benchmark scores.
+- Prefer each dossier's official source link before citing a claim.
+- The StackScout Lab lane is explicitly in-house and should not be confused with third-party ecosystem recommendations.
