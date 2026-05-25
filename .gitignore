@@ -1,10 +1,12 @@
 # Local planning and working notes
 .local/
 local-hub/
+design/
 PLAN.md
 TODO.local.md
 TASKS.local.md
 *.local.md
+CLAUDE-HANDOFF-*.md
 notes-local/
 planning-local/
 .local-notes/
