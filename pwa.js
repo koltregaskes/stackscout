@@ -12,7 +12,7 @@ async function registerStackScoutServiceWorker() {
       scope: siteRoot,
     })
   } catch (error) {
-    console.error('StackScout service worker registration failed.', error)
+    console.error('Stack Scout service worker registration failed.', error)
   }
 }
 

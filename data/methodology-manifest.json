@@ -1,8 +1,8 @@
 {
-  "title": "StackScout // Methodology",
-  "generatedAt": "2026-04-25",
-  "updatedAt": "2026-04-25",
-  "thesis": "StackScout is a public guide, not a benchmark lab. We badge selectively, update from official sources where possible, and avoid pretending every fast-moving tool deserves a fixed numeric score.",
+  "title": "Stack Scout // Methodology",
+  "generatedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "thesis": "Stack Scout is a public guide, not a benchmark lab. We badge selectively, update from official sources where possible, and avoid pretending every fast-moving tool deserves a fixed numeric score.",
   "principles": [
     {
       "title": "Curated over exhaustive",

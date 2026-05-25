@@ -11,15 +11,15 @@ const PRIVATE_PREVIEW_EXPORT_CANDIDATES = [
 const BUILD_NOW = new Date()
 const GENERATED_AT = BUILD_NOW.toISOString().slice(0, 10)
 const GENERATED_AT_ISO = BUILD_NOW.toISOString()
-const PUBLIC_BASE_URL = 'https://koltregaskes.github.io/tools-hub/'
+const PUBLIC_BASE_URL = 'https://koltregaskes.github.io/stackscout/'
 const STATIC_PAGES = [
   ['home', 'Home', 'Editorial front door, featured tools, categories, updates, and the lab subset.', 'index.html'],
-  ['catalog', 'Catalog', 'Searchable, filterable catalog of tracked tools and lab products.', 'catalog/index.html'],
+  ['catalog', 'Top tools', 'Searchable, filterable catalog of tracked tools and lab products.', 'catalog/index.html'],
   ['categories', 'Categories', 'Landing page for websites, web services, APIs, MCPs, CLIs, and app lanes.', 'categories/index.html'],
-  ['updates', 'Updates', 'Recent public activity, releases, direction changes, and noteworthy platform moves.', 'updates/index.html'],
+  ['updates', 'Wire', 'Recent public activity, releases, direction changes, and noteworthy platform moves.', 'updates/index.html'],
   ['radar', 'Radar', 'The worth-watching layer for tools and systems that are not yet full recommendations.', 'radar/index.html'],
   ['collections', 'Collections', 'Curated use-case groupings that make the catalog easier to navigate.', 'collections/index.html'],
-  ['method', 'Method', 'Public badge definitions, freshness rules, and editorial guardrails.', 'method/index.html'],
+  ['method', 'Sources & method', 'Public badge definitions, freshness rules, and editorial guardrails.', 'method/index.html'],
 ].map(([key, title, summary, outputPath]) => ({ key, title, summary, outputPath }))
 const BADGE_ORDER = ['Recommended', 'Specialist Pick', 'Worth Watching', 'Early but Promising']
 const CATEGORY_LABELS = {
@@ -195,7 +195,7 @@ function scopeTone(scope) {
 
 function buildPageRegistry(tools, categories, collections) {
   return {
-    title: 'StackScout // Page Registry',
+    title: 'Stack Scout // Page Registry',
     generatedAt: GENERATED_AT,
     pages: [
       ...STATIC_PAGES.map((page) => ({
@@ -231,10 +231,10 @@ function buildPageRegistry(tools, categories, collections) {
 
 function buildToolManifest(tools, categories) {
   return {
-    title: 'StackScout // Tools Manifest',
+    title: 'Stack Scout // Tools Manifest',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
-    summary: 'Public-safe catalog for StackScout.',
+    summary: 'Public-safe catalog for Stack Scout.',
     counts: {
       total: tools.length,
       ecosystem: tools.filter((tool) => tool.scope === 'ecosystem').length,
@@ -247,7 +247,7 @@ function buildToolManifest(tools, categories) {
 
 function buildCategoriesManifest(categories, tools) {
   return {
-    title: 'StackScout // Categories',
+    title: 'Stack Scout // Categories',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     categories: categories.map((category) => ({
@@ -260,7 +260,7 @@ function buildCategoriesManifest(categories, tools) {
 
 function buildUpdatesManifest(updates, toolIndex) {
   return {
-    title: 'StackScout // Updates',
+    title: 'Stack Scout // Updates',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     summary: 'Public-safe activity stream seeded from official or first-party sources.',
@@ -274,7 +274,7 @@ function buildUpdatesManifest(updates, toolIndex) {
 
 function buildMethodologyManifest(site) {
   return {
-    title: 'StackScout // Methodology',
+    title: 'Stack Scout // Methodology',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     thesis: site.methodology.thesis,
@@ -288,7 +288,7 @@ function buildMethodologyManifest(site) {
 
 function buildCollectionsManifest(collections, toolIndex) {
   return {
-    title: 'StackScout // Collections',
+    title: 'Stack Scout // Collections',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     collections: collections.map((collection) => ({
@@ -304,7 +304,7 @@ function buildCollectionsManifest(collections, toolIndex) {
 
 function buildRadarManifest(radar) {
   return {
-    title: 'StackScout // Radar',
+    title: 'Stack Scout // Radar',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     items: radar,
@@ -315,7 +315,7 @@ function buildPublishingPreview(tools, updates, categories) {
   return {
     generatedAt: GENERATED_AT,
     generatedAtIso: GENERATED_AT_ISO,
-    title: 'StackScout public export preview',
+    title: 'Stack Scout public export preview',
     catalogCount: tools.length,
     updateCount: updates.length,
     categoryCount: categories.length,
@@ -392,7 +392,7 @@ function renderToolCard(tool, outputPath, compact = false) {
       data-priority="${escapeHtml(String(BADGE_ORDER.length - BADGE_ORDER.indexOf(tool.badge)))}"
       data-search="${escapeHtml([tool.name, tool.summary, tool.publisher, tool.latestTrackedChange, tool.tags.join(' ')].join(' '))}">
       <div class="scout-card__topline">
-        <span class="pill pill--${scopeTone(tool.scope)}">${escapeHtml(tool.scope === 'lab' ? 'StackScout Lab' : 'Ecosystem')}</span>
+        <span class="pill pill--${scopeTone(tool.scope)}">${escapeHtml(tool.scope === 'lab' ? 'Stack Scout Lab' : 'Ecosystem')}</span>
         <span class="pill pill--${badgeTone(tool.badge)}">${escapeHtml(tool.badge)}</span>
       </div>
       <div class="signal-mark signal-mark--${escapeHtml(tool.category)}">
@@ -520,61 +520,101 @@ function renderNav(currentKey, outputPath) {
 function renderDocument({ title, description, currentKey, outputPath, content }) {
   const homeHref = outputHref(outputPath, 'index.html')
   const siteRoot = homeHref === './' ? './' : homeHref
+  const sourceHref = outputHref(outputPath, 'method/index.html')
+  const rootClass = 'mood-graphite'
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="${rootClass}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${escapeHtml(title)}</title>
+    <title>${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}</title>
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta property="og:title" content="${escapeHtml(title)}" />
+    <meta property="og:title" content="${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0a100c" />
+    <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="apple-touch-icon" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="manifest" href="${outputAssetHref(outputPath, 'manifest.json')}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,500..800,50&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="${outputAssetHref(outputPath, 'styles.css')}" />
   </head>
   <body data-page="${escapeHtml(currentKey)}" data-site-root="${escapeHtml(siteRoot)}">
-    <div class="atmosphere" aria-hidden="true">
-      <div class="atmosphere__grid"></div>
-      <div class="atmosphere__ring atmosphere__ring--one"></div>
-      <div class="atmosphere__ring atmosphere__ring--two"></div>
-      <div class="atmosphere__flare atmosphere__flare--acid"></div>
-      <div class="atmosphere__flare atmosphere__flare--ice"></div>
-      <div class="atmosphere__flare atmosphere__flare--ember"></div>
-    </div>
-    <div class="site-meta-bar">
-      <div class="site-meta-bar__inner">
-        <p class="site-meta-bar__issue">Issue ${escapeHtml(GENERATED_AT)} // Curated public signal for builders</p>
-        <div class="site-meta-bar__tokens">
-          <span>No fake telemetry</span>
-          <span>Official sources first</span>
-          <span>Badges over fake scores</span>
-        </div>
-      </div>
-    </div>
+    <div class="ss-grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="site-brand" href="${homeHref}">
-        <span class="site-brand__mark">S</span>
-        <span class="site-brand__wordmark">StackScout</span>
+        <span class="site-brand__mark" aria-hidden="true"></span>
+        <span class="site-brand__wordmark">Stack <span>Scout</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary">${renderNav(currentKey, outputPath)}</nav>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="Primary">${renderNav(currentKey, outputPath)}</nav>
+        <div class="mood-switcher" aria-label="Theme">
+          <button class="mood-switcher__button is-active" type="button" data-mood="graphite" aria-label="Graphite theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="midnight" aria-label="Midnight theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="obsidian" aria-label="Obsidian theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="slate" aria-label="Slate theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="carbon" aria-label="Carbon theme"></button>
+        </div>
+      </div>
     </header>
     <main class="page-shell">${content}</main>
     <footer class="site-footer">
-      <div>
-        <p class="site-footer__brand">StackScout</p>
-        <p>Public tool intelligence for builders, operators, and curious system nerds.</p>
+      <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
+        <div class="site-footer__marquee-track">
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+        </div>
+      </div>
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Stack <span>Scout</span></p>
+          <p>A field log for builder tools, official sources, and the stack worth opening.</p>
+        </div>
+        <nav class="site-footer__links" aria-label="Main pages">
+          <span>Main</span>
+          <a href="${homeHref}">Home</a>
+          <a href="${outputHref(outputPath, 'catalog/index.html')}">Top tools</a>
+          <a href="${outputHref(outputPath, 'updates/index.html')}">Wire</a>
+          <a href="${outputHref(outputPath, 'collections/index.html')}">Collections</a>
+        </nav>
+        <nav class="site-footer__links" aria-label="Projects">
+          <span>Projects</span>
+          <a href="${outputHref(outputPath, 'radar/index.html')}">Radar</a>
+          <a href="${sourceHref}">Sources &amp; method</a>
+          <a href="https://theairesourcehub.com/" target="_blank" rel="noreferrer">AI Resource Hub</a>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </nav>
+        <div class="site-footer__links">
+          <span>Contact</span>
+          <a href="https://koltregaskes.com/" target="_blank" rel="noreferrer">Kol Tregaskes</a>
+          <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="${sourceHref}">Method</a>
+        </div>
+      </div>
+      <div class="site-footer__estate" aria-label="Elusion Works umbrella">
+        <div>
+          <span>Umbrella home</span>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </div>
+        <p>The showcase for Kol's websites, tools, games, and web experiments.</p>
+        <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Visit Elusion Works -&gt;</a>
       </div>
       <div class="site-footer__meta">
-        <p>Updated ${escapeHtml(formatDate(GENERATED_AT))}</p>
-        <p>Public site generation from the StackScout shared source layer.</p>
+        <p><span class="live-dot" aria-hidden="true"></span><span id="utcClock">Live UTC</span></p>
+        <p>Updated ${escapeHtml(formatDate(GENERATED_AT))} from the Stack Scout shared source layer.</p>
       </div>
     </footer>
     <script src="${outputAssetHref(outputPath, 'pwa.js')}"></script>
@@ -596,7 +636,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
   const labCount = labTools.length
 
   return renderDocument({
-    title: 'StackScout // Home',
+    title: 'Stack Scout // Home',
     description: site.brand.description,
     currentKey: 'home',
     outputPath,
@@ -625,9 +665,9 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
             <h2>${escapeHtml(spotlightUpdate?.title || 'Fresh public movement')}</h2>
             <p class="summary">${escapeHtml(spotlightUpdate?.summary || site.brand.description)}</p>
             <div class="hero-panel__meta">
-              <span>${escapeHtml(spotlightTool?.name || 'StackScout')}</span>
+              <span>${escapeHtml(spotlightTool?.name || 'Stack Scout')}</span>
               <span>${escapeHtml(spotlightUpdate ? formatDate(spotlightUpdate.publishedAt) : formatDate(GENERATED_AT))}</span>
-              <span>${escapeHtml(spotlightUpdate?.sourceLabel || 'StackScout')}</span>
+              <span>${escapeHtml(spotlightUpdate?.sourceLabel || 'Stack Scout')}</span>
             </div>
             <div class="hero__actions">
               ${spotlightTool ? `<a class="button button--primary" href="${outputHref(outputPath, `tools/${spotlightTool.slug}/index.html`)}">Open dossier</a>` : ''}
@@ -690,7 +730,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
                   <strong>${mcpCount} tracked</strong>
                 </a>
                 <a class="brief-link" href="${outputQueryHref(outputPath, 'catalog/index.html', { scope: 'lab' })}">
-                  <span>StackScout Lab</span>
+                  <span>Stack Scout Lab</span>
                   <strong>${labCount} public builds</strong>
                 </a>
                 <a class="brief-link" href="${outputHref(outputPath, 'collections/index.html')}#offline-friendly">
@@ -725,7 +765,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
             <p class="eyebrow">Categories</p>
             <h2>Find a lane before you drown in tabs.</h2>
           </div>
-          <p class="section-copy">StackScout works best when you enter through a workflow lane, not a random pile of names.</p>
+          <p class="section-copy">Stack Scout works best when you enter through a workflow lane, not a random pile of names.</p>
         </div>
         <div class="card-grid card-grid--categories">
           ${categories.map((category) => renderCategoryCard(category, tools.filter((tool) => tool.category === category.slug), outputPath)).join('')}
@@ -804,8 +844,8 @@ function renderCatalog(tools, categories, outputPath) {
   const newestTracked = [...tools].sort((left, right) => right.lastUpdatedAt.localeCompare(left.lastUpdatedAt))[0]
 
   return renderDocument({
-    title: 'StackScout // Catalog',
-    description: 'Searchable StackScout catalog of tracked ecosystem tools and lab products.',
+    title: 'Stack Scout // Top tools',
+    description: 'Searchable Stack Scout catalog of tracked ecosystem tools and lab products.',
     currentKey: 'catalog',
     outputPath,
     content: `
@@ -847,7 +887,7 @@ function renderCatalog(tools, categories, outputPath) {
                   <select id="scopeFilter">
                     <option value="">All</option>
                     <option value="ecosystem">Ecosystem</option>
-                    <option value="lab">StackScout Lab</option>
+                    <option value="lab">Stack Scout Lab</option>
                   </select>
                 </label>
                 <label class="filter-field">
@@ -900,7 +940,7 @@ function renderCatalog(tools, categories, outputPath) {
                   <strong>Agent-ready protocol surfaces</strong>
                 </a>
                 <a class="brief-link" href="${outputQueryHref(outputPath, 'catalog/index.html', { scope: 'lab' })}">
-                  <span>StackScout Lab</span>
+                  <span>Stack Scout Lab</span>
                   <strong>Clearly labelled in-house tools</strong>
                 </a>
                 <a class="brief-link" href="${outputQueryHref(outputPath, 'catalog/index.html', { pricing: 'Usage-based' })}">
@@ -925,7 +965,7 @@ function renderCatalog(tools, categories, outputPath) {
 
 function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
   return renderDocument({
-    title: `StackScout // ${tool.name}`,
+    title: `Stack Scout // ${tool.name}`,
     description: tool.summary,
     currentKey: 'catalog',
     outputPath,
@@ -933,7 +973,7 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
       <section class="hero hero--detail">
         <div class="hero__copy" data-reveal>
           <div class="chip-row">
-            <span class="chip chip--${scopeTone(tool.scope)}">${escapeHtml(tool.scope === 'lab' ? 'StackScout Lab' : 'Ecosystem')}</span>
+            <span class="chip chip--${scopeTone(tool.scope)}">${escapeHtml(tool.scope === 'lab' ? 'Stack Scout Lab' : 'Ecosystem')}</span>
             <span class="chip chip--${badgeTone(tool.badge)}">${escapeHtml(tool.badge)}</span>
             <span class="chip chip--${maturityTone(tool.maturity)}">${escapeHtml(tool.maturity)}</span>
           </div>
@@ -971,7 +1011,7 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
           <div class="section-head">
             <div>
               <p class="eyebrow">Why it matters</p>
-              <h2>StackScout verdict</h2>
+              <h2>Stack Scout verdict</h2>
             </div>
           </div>
           <div class="detail-panel detail-panel--prose">
@@ -1039,8 +1079,8 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
 
 function renderCategoriesIndex(categories, tools, outputPath) {
   return renderDocument({
-    title: 'StackScout // Categories',
-    description: 'All public StackScout lanes in one place.',
+    title: 'Stack Scout // Categories',
+    description: 'All public Stack Scout lanes in one place.',
     currentKey: 'categories',
     outputPath,
     content: `
@@ -1062,7 +1102,7 @@ function renderCategoriesIndex(categories, tools, outputPath) {
 
 function renderCategoryDetail(category, tools, outputPath) {
   return renderDocument({
-    title: `StackScout // ${category.title}`,
+    title: `Stack Scout // ${category.title}`,
     description: category.description,
     currentKey: 'categories',
     outputPath,
@@ -1090,8 +1130,8 @@ function renderCategoryDetail(category, tools, outputPath) {
 
 function renderUpdates(updates, toolIndex, outputPath) {
   return renderDocument({
-    title: 'StackScout // Updates',
-    description: 'Recent public activity from the StackScout cohort.',
+    title: 'Stack Scout // Wire',
+    description: 'Recent public activity from the Stack Scout cohort.',
     currentKey: 'updates',
     outputPath,
     content: `
@@ -1111,7 +1151,7 @@ function renderUpdates(updates, toolIndex, outputPath) {
 
 function renderRadar(site, outputPath) {
   return renderDocument({
-    title: 'StackScout // Radar',
+    title: 'Stack Scout // Radar',
     description: 'Worth-watching tools and systems that are not yet full recommendations.',
     currentKey: 'radar',
     outputPath,
@@ -1120,7 +1160,7 @@ function renderRadar(site, outputPath) {
         <div class="hero__copy" data-reveal>
           <p class="eyebrow">Radar</p>
           <h1>Interesting is not the same as ready.</h1>
-          <p class="hero__lede">Radar is where StackScout puts genuinely interesting systems that still need more evidence before they become default recommendations.</p>
+          <p class="hero__lede">Radar is where Stack Scout puts genuinely interesting systems that still need more evidence before they become default recommendations.</p>
         </div>
       </section>
       <section class="section-block" data-reveal>
@@ -1132,8 +1172,8 @@ function renderRadar(site, outputPath) {
 
 function renderCollections(collections, toolIndex, outputPath) {
   return renderDocument({
-    title: 'StackScout // Collections',
-    description: 'Curated collections that group the StackScout catalog by real use case.',
+    title: 'Stack Scout // Collections',
+    description: 'Curated collections that group the Stack Scout catalog by real use case.',
     currentKey: 'collections',
     outputPath,
     content: `
@@ -1153,8 +1193,8 @@ function renderCollections(collections, toolIndex, outputPath) {
 
 function renderMethod(site, outputPath) {
   return renderDocument({
-    title: 'StackScout // Method',
-    description: 'How StackScout curates, badges, and updates public entries.',
+    title: 'Stack Scout // Sources & method',
+    description: 'How Stack Scout curates, badges, and updates public entries.',
     currentKey: 'method',
     outputPath,
     content: `
@@ -1170,7 +1210,7 @@ function renderMethod(site, outputPath) {
         <div class="section-head">
           <div>
             <p class="eyebrow">Principles</p>
-            <h2>How StackScout decides.</h2>
+            <h2>How Stack Scout decides.</h2>
           </div>
         </div>
         <div class="card-grid card-grid--method">
@@ -1239,7 +1279,8 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 }
 
 function main() {
-  const privatePreviewExport = resolveWritableExternalPath(PRIVATE_PREVIEW_EXPORT_CANDIDATES)
+  const privatePreviewExport =
+    process.platform === 'win32' ? resolveWritableExternalPath(PRIVATE_PREVIEW_EXPORT_CANDIDATES) : null
   const site = readJson('site-source.json')
   const tools = readJson('tools-source.json')
   const updates = readJson('updates-source.json').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
@@ -1254,7 +1295,9 @@ function main() {
   writeJson('data/methodology-manifest.json', buildMethodologyManifest(site))
   writeJson('data/collections-manifest.json', buildCollectionsManifest(collections, toolIndex))
   writeJson('data/radar-manifest.json', buildRadarManifest(site.radar))
-  writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
+  if (privatePreviewExport) {
+    writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
+  }
 
   writeFile('index.html', renderHome(site, tools, updates, categories, collections, 'index.html'))
   writeFile('catalog/index.html', renderCatalog(tools, categories, 'catalog/index.html'))
@@ -1297,7 +1340,7 @@ function main() {
 
   writeFile('sitemap.xml', buildSitemap(sitemapRoutes))
   console.log(
-    `StackScout build complete. Generated ${tools.length} tool pages, ${categories.length} category pages, and ${updates.length} updates.`,
+    `Stack Scout build complete. Generated ${tools.length} tool pages, ${categories.length} category pages, and ${updates.length} updates.`,
   )
 }
 

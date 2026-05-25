@@ -1,8 +1,8 @@
 {
-  "title": "StackScout // Tools Manifest",
-  "generatedAt": "2026-04-25",
-  "updatedAt": "2026-04-25",
-  "summary": "Public-safe catalog for StackScout.",
+  "title": "Stack Scout // Tools Manifest",
+  "generatedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "summary": "Public-safe catalog for Stack Scout.",
   "counts": {
     "total": 14,
     "ecosystem": 10,
@@ -499,7 +499,7 @@
       "category": "web-apps",
       "summary": "A visual planning surface for boards, campaign flow, and creative work without the drag of a generic project manager.",
       "officialUrl": "https://koltregaskes.github.io/canvas-planner/",
-      "publisher": "StackScout Lab",
+      "publisher": "Stack Scout Lab",
       "platforms": [
         "Web App",
         "PWA"
@@ -542,7 +542,7 @@
       "category": "web-apps",
       "summary": "A publishing planner built around image, video, and queue workflows rather than generic social-media posting dashboards.",
       "officialUrl": "https://koltregaskes.github.io/signal-stack/",
-      "publisher": "StackScout Lab",
+      "publisher": "Stack Scout Lab",
       "platforms": [
         "Web App"
       ],
@@ -584,7 +584,7 @@
       "category": "web-apps",
       "summary": "A browser-based music studio path that brings programmable patterns, scenes, and samples into a clearer public-facing workflow.",
       "officialUrl": "https://koltregaskes.github.io/strudel-studio/",
-      "publisher": "StackScout Lab",
+      "publisher": "Stack Scout Lab",
       "platforms": [
         "Web App",
         "PWA"
@@ -627,7 +627,7 @@
       "category": "desktop-apps",
       "summary": "A private, desktop-first notes tool with live sync ambitions and a workflow that stays close to the operator.",
       "officialUrl": "https://github.com/koltregaskes/syncpad",
-      "publisher": "StackScout Lab",
+      "publisher": "Stack Scout Lab",
       "platforms": [
         "Windows",
         "Desktop App",

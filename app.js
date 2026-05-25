@@ -1,5 +1,51 @@
 document.body.classList.add('has-motion')
 
+const MOOD_CLASSES = ['mood-graphite', 'mood-midnight', 'mood-obsidian', 'mood-slate', 'mood-carbon']
+
+function initMoodSwitcher() {
+  const buttons = Array.from(document.querySelectorAll('[data-mood]'))
+  if (!buttons.length) {
+    return
+  }
+
+  const storedMood = localStorage.getItem('stackscout:mood')
+  const initialMood = buttons.some((button) => button.dataset.mood === storedMood) ? storedMood : 'graphite'
+
+  function applyMood(mood) {
+    document.documentElement.classList.remove(...MOOD_CLASSES)
+    document.documentElement.classList.add(`mood-${mood}`)
+    buttons.forEach((button) => {
+      const isActive = button.dataset.mood === mood
+      button.classList.toggle('is-active', isActive)
+      button.setAttribute('aria-pressed', String(isActive))
+    })
+    localStorage.setItem('stackscout:mood', mood)
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => applyMood(button.dataset.mood))
+  })
+
+  applyMood(initialMood)
+}
+
+function initUtcClock() {
+  const clock = document.getElementById('utcClock')
+  if (!clock) {
+    return
+  }
+
+  function renderClock() {
+    const now = new Date()
+    const hours = String(now.getUTCHours()).padStart(2, '0')
+    const minutes = String(now.getUTCMinutes()).padStart(2, '0')
+    clock.textContent = `Live - ${hours}:${minutes} UTC`
+  }
+
+  renderClock()
+  window.setInterval(renderClock, 30_000)
+}
+
 function initReveal() {
   const revealItems = Array.from(document.querySelectorAll('[data-reveal]'))
   if (!revealItems.length) {
@@ -24,7 +70,7 @@ function initReveal() {
       })
     },
     {
-      threshold: 0.16,
+      threshold: 0.02,
       rootMargin: '0px 0px -8% 0px',
     },
   )
@@ -173,3 +219,5 @@ function initCatalogFilters() {
 
 initReveal()
 initCatalogFilters()
+initMoodSwitcher()
+initUtcClock()

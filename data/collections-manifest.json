@@ -1,13 +1,13 @@
 {
-  "title": "StackScout // Collections",
-  "generatedAt": "2026-04-25",
-  "updatedAt": "2026-04-25",
+  "title": "Stack Scout // Collections",
+  "generatedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
   "collections": [
     {
       "slug": "creator-stack",
       "title": "Best tools for creators",
       "summary": "A practical mix for publishing, generation, research, and creative flow.",
-      "description": "If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first StackScout lane to start with.",
+      "description": "If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first Stack Scout lane to start with.",
       "items": [
         {
           "slug": "hugging-face",
@@ -117,7 +117,7 @@
     },
     {
       "slug": "stackscout-lab",
-      "title": "From the StackScout Lab",
+      "title": "From the Stack Scout Lab",
       "summary": "A clearly labelled subset of the tools we are building ourselves.",
       "description": "These are not presented as the whole point of the site. They sit alongside the wider ecosystem and earn their place separately.",
       "items": [
