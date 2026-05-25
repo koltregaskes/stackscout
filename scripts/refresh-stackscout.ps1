@@ -25,7 +25,7 @@ foreach ($candidate in $privateDataDirCandidates) {
 }
 
 if (-not $privateDataDir) {
-  throw 'Unable to resolve a writable private data directory for StackScout refresh status.'
+  throw 'Unable to resolve a writable private data directory for Stack Scout refresh status.'
 }
 
 $statusFile = Join-Path $privateDataDir 'stackscout-refresh-status.json'
@@ -123,19 +123,19 @@ function Invoke-RefreshStep {
   }
 }
 
-Write-RefreshStatus -State 'running' -Message 'StackScout refresh started.' -Extra @{
+Write-RefreshStatus -State 'running' -Message 'Stack Scout refresh started.' -Extra @{
   lastSuccessAt = $previousLastSuccessAt
 }
 
 Push-Location $repoRoot
 
 try {
-  Invoke-RefreshStep -Label 'Build StackScout' -ScriptBlock {
+  Invoke-RefreshStep -Label 'Build Stack Scout' -ScriptBlock {
     & node 'scripts/build-stackscout.js'
   }
 
   if (-not $SkipCheck) {
-    Invoke-RefreshStep -Label 'Check StackScout' -ScriptBlock {
+    Invoke-RefreshStep -Label 'Check Stack Scout' -ScriptBlock {
       & cmd /c 'npm run check'
     }
   }
@@ -145,13 +145,13 @@ try {
   $categoriesManifest = Read-JsonFile -Path $categoriesManifestFile
 
   if (-not $toolsManifest) {
-    throw 'StackScout refresh completed but tools-manifest.json could not be read.'
+    throw 'Stack Scout refresh completed but tools-manifest.json could not be read.'
   }
 
   $durationStopwatch.Stop()
   $completedAt = (Get-Date).ToUniversalTime().ToString('o')
 
-  Write-RefreshStatus -State 'ok' -Message 'StackScout refresh completed successfully.' -Extra @{
+  Write-RefreshStatus -State 'ok' -Message 'Stack Scout refresh completed successfully.' -Extra @{
     completedAt = $completedAt
     lastSuccessAt = $completedAt
     durationMs = [int][Math]::Round($durationStopwatch.Elapsed.TotalMilliseconds)

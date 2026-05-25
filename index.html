@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mood-graphite">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StackScout // Home</title>
-    <meta name="description" content="StackScout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder&#39;s attention." />
-    <meta property="og:title" content="StackScout // Home" />
-    <meta property="og:description" content="StackScout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder&#39;s attention." />
+    <title>Stack Scout // Home</title>
+    <meta name="description" content="Stack Scout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder&#39;s attention." />
+    <meta property="og:title" content="Stack Scout // Home" />
+    <meta property="og:description" content="Stack Scout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder&#39;s attention." />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0a100c" />
+    <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <link rel="apple-touch-icon" href="./icon.svg" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,500..800,50&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-page="home" data-site-root="./">
-    <div class="atmosphere" aria-hidden="true">
-      <div class="atmosphere__grid"></div>
-      <div class="atmosphere__ring atmosphere__ring--one"></div>
-      <div class="atmosphere__ring atmosphere__ring--two"></div>
-      <div class="atmosphere__flare atmosphere__flare--acid"></div>
-      <div class="atmosphere__flare atmosphere__flare--ice"></div>
-      <div class="atmosphere__flare atmosphere__flare--ember"></div>
-    </div>
-    <div class="site-meta-bar">
-      <div class="site-meta-bar__inner">
-        <p class="site-meta-bar__issue">Issue 2026-04-25 // Curated public signal for builders</p>
-        <div class="site-meta-bar__tokens">
-          <span>No fake telemetry</span>
-          <span>Official sources first</span>
-          <span>Badges over fake scores</span>
-        </div>
-      </div>
-    </div>
+    <div class="ss-grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="site-brand" href="./">
-        <span class="site-brand__mark">S</span>
-        <span class="site-brand__wordmark">StackScout</span>
+        <span class="site-brand__mark" aria-hidden="true"></span>
+        <span class="site-brand__wordmark">Stack <span>Scout</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary"><a href="./" aria-current="page">Home</a><a href="./catalog/">Catalog</a><a href="./categories/">Categories</a><a href="./updates/">Updates</a><a href="./radar/">Radar</a><a href="./collections/">Collections</a><a href="./method/">Method</a></nav>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="Primary"><a href="./" aria-current="page">Home</a><a href="./catalog/">Top tools</a><a href="./categories/">Categories</a><a href="./updates/">Wire</a><a href="./radar/">Radar</a><a href="./collections/">Collections</a><a href="./method/">Sources &amp; method</a></nav>
+        <div class="mood-switcher" aria-label="Theme">
+          <button class="mood-switcher__button is-active" type="button" data-mood="graphite" aria-label="Graphite theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="midnight" aria-label="Midnight theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="obsidian" aria-label="Obsidian theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="slate" aria-label="Slate theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="carbon" aria-label="Carbon theme"></button>
+        </div>
+      </div>
     </header>
     <main class="page-shell">
       <section class="hero hero--home hero--launch">
         <div class="hero__copy" data-reveal>
-          <p class="eyebrow">Curated ecosystem // tools, systems, and builder intelligence</p>
-          <h1>A cleaner way to track the tools actually shaping modern workflows.</h1>
-          <p class="hero__lede">StackScout is the public-facing scout deck for fast-moving builder infrastructure: websites, web services, APIs, MCPs, CLIs, and a smaller lab lane for the tools we are building ourselves. It is curated, selective, and designed to stay useful rather than exhaustive.</p>
+          <p class="eyebrow">Today&#39;s lead // official sources first</p>
+          <h1>A field log for the tools worth opening.</h1>
+          <p class="hero__lede">Stack Scout is a selective, source-led zine for builder infrastructure: APIs, MCPs, CLIs, services, workbench apps, and the lab tools we are building ourselves. It is curated rather than exhaustive, with visible dates and editorial badges instead of fake precision.</p>
           <div class="hero__actions">
             <a class="button button--primary" href="./catalog/">Explore catalog</a>
             <a class="button button--ghost" href="./updates/">See updates</a>
@@ -269,7 +261,7 @@
                   <strong>2 tracked</strong>
                 </a>
                 <a class="brief-link" href="./catalog/?scope=lab">
-                  <span>StackScout Lab</span>
+                  <span>Stack Scout Lab</span>
                   <strong>4 public builds</strong>
                 </a>
                 <a class="brief-link" href="./collections/#offline-friendly">
@@ -330,7 +322,7 @@
             <p class="eyebrow">Categories</p>
             <h2>Find a lane before you drown in tabs.</h2>
           </div>
-          <p class="section-copy">StackScout works best when you enter through a workflow lane, not a random pile of names.</p>
+          <p class="section-copy">Stack Scout works best when you enter through a workflow lane, not a random pile of names.</p>
         </div>
         <div class="card-grid card-grid--categories">
           
@@ -585,9 +577,9 @@
       data-badge="Early but Promising"
       data-date="2026-04-11"
       data-priority="1"
-      data-search="Canvas Planner A visual planning surface for boards, campaign flow, and creative work without the drag of a generic project manager. StackScout Lab The latest public-ready pass cleaned the browser surface and kept the board flow sharp without adding clutter. planning boards creative workflow pwa">
+      data-search="Canvas Planner A visual planning surface for boards, campaign flow, and creative work without the drag of a generic project manager. Stack Scout Lab The latest public-ready pass cleaned the browser surface and kept the board flow sharp without adding clutter. planning boards creative workflow pwa">
       <div class="scout-card__topline">
-        <span class="pill pill--violet">StackScout Lab</span>
+        <span class="pill pill--violet">Stack Scout Lab</span>
         <span class="pill pill--violet">Early but Promising</span>
       </div>
       <div class="signal-mark signal-mark--web-apps">
@@ -601,7 +593,7 @@
         <div class="chip-row"><span class="chip chip--ink">campaign planning</span><span class="chip chip--ink">creative sequencing</span></div>
       </div>
       <div class="scout-card__meta">
-        <span>StackScout Lab</span>
+        <span>Stack Scout Lab</span>
         <span>Experimental</span>
         <span>11 Apr 2026</span>
       </div>
@@ -619,9 +611,9 @@
       data-badge="Early but Promising"
       data-date="2026-04-12"
       data-priority="1"
-      data-search="Signal Stack A publishing planner built around image, video, and queue workflows rather than generic social-media posting dashboards. StackScout Lab The recent execution pass made delivery truth more explicit, but live platform integrations still depend on real credentials and approvals. publishing scheduling creator workflow social">
+      data-search="Signal Stack A publishing planner built around image, video, and queue workflows rather than generic social-media posting dashboards. Stack Scout Lab The recent execution pass made delivery truth more explicit, but live platform integrations still depend on real credentials and approvals. publishing scheduling creator workflow social">
       <div class="scout-card__topline">
-        <span class="pill pill--violet">StackScout Lab</span>
+        <span class="pill pill--violet">Stack Scout Lab</span>
         <span class="pill pill--violet">Early but Promising</span>
       </div>
       <div class="signal-mark signal-mark--web-apps">
@@ -635,7 +627,7 @@
         <div class="chip-row"><span class="chip chip--ink">creator scheduling</span><span class="chip chip--ink">queue design</span></div>
       </div>
       <div class="scout-card__meta">
-        <span>StackScout Lab</span>
+        <span>Stack Scout Lab</span>
         <span>Experimental</span>
         <span>12 Apr 2026</span>
       </div>
@@ -653,9 +645,9 @@
       data-badge="Worth Watching"
       data-date="2026-04-12"
       data-priority="2"
-      data-search="Strudel Studio A browser-based music studio path that brings programmable patterns, scenes, and samples into a clearer public-facing workflow. StackScout Lab The takeover pass tightened the smoke runner and kept the product moving toward a more serious music workspace. music browser studio coding audio">
+      data-search="Strudel Studio A browser-based music studio path that brings programmable patterns, scenes, and samples into a clearer public-facing workflow. Stack Scout Lab The takeover pass tightened the smoke runner and kept the product moving toward a more serious music workspace. music browser studio coding audio">
       <div class="scout-card__topline">
-        <span class="pill pill--violet">StackScout Lab</span>
+        <span class="pill pill--violet">Stack Scout Lab</span>
         <span class="pill pill--amber">Worth Watching</span>
       </div>
       <div class="signal-mark signal-mark--web-apps">
@@ -669,7 +661,7 @@
         <div class="chip-row"><span class="chip chip--ink">browser music prototyping</span><span class="chip chip--ink">pattern-driven composition</span></div>
       </div>
       <div class="scout-card__meta">
-        <span>StackScout Lab</span>
+        <span>Stack Scout Lab</span>
         <span>Experimental</span>
         <span>12 Apr 2026</span>
       </div>
@@ -687,9 +679,9 @@
       data-badge="Early but Promising"
       data-date="2026-04-12"
       data-priority="1"
-      data-search="SyncPad A private, desktop-first notes tool with live sync ambitions and a workflow that stays close to the operator. StackScout Lab The browser and client surfaces are healthier, but the Electron desktop verification path is still blocked by a GPU startup issue on the manager machine. notes desktop private sync knowledge">
+      data-search="SyncPad A private, desktop-first notes tool with live sync ambitions and a workflow that stays close to the operator. Stack Scout Lab The browser and client surfaces are healthier, but the Electron desktop verification path is still blocked by a GPU startup issue on the manager machine. notes desktop private sync knowledge">
       <div class="scout-card__topline">
-        <span class="pill pill--violet">StackScout Lab</span>
+        <span class="pill pill--violet">Stack Scout Lab</span>
         <span class="pill pill--violet">Early but Promising</span>
       </div>
       <div class="signal-mark signal-mark--desktop-apps">
@@ -703,7 +695,7 @@
         <div class="chip-row"><span class="chip chip--ink">private notes</span><span class="chip chip--ink">local-first drafting</span></div>
       </div>
       <div class="scout-card__meta">
-        <span>StackScout Lab</span>
+        <span>Stack Scout Lab</span>
         <span>Experimental</span>
         <span>12 Apr 2026</span>
       </div>
@@ -733,7 +725,7 @@
       <div class="scout-card__body">
         <p class="label">Use-case grouping</p>
         <h3>Best tools for creators</h3>
-        <p class="summary">If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first StackScout lane to start with.</p>
+        <p class="summary">If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first Stack Scout lane to start with.</p>
         <div class="token-list">
           <a class="token" href="./tools/hugging-face/">Hugging Face</a><a class="token" href="./tools/perplexity/">Perplexity</a><a class="token" href="./tools/make/">Make</a><a class="token" href="./tools/openai-api/">OpenAI API</a><a class="token" href="./tools/strudel-studio/">Strudel Studio</a><a class="token" href="./tools/canvas-planner/">Canvas Planner</a>
         </div>
@@ -777,7 +769,7 @@
       </div>
       <div class="scout-card__body">
         <p class="label">Use-case grouping</p>
-        <h3>From the StackScout Lab</h3>
+        <h3>From the Stack Scout Lab</h3>
         <p class="summary">These are not presented as the whole point of the site. They sit alongside the wider ecosystem and earn their place separately.</p>
         <div class="token-list">
           <a class="token" href="./tools/canvas-planner/">Canvas Planner</a><a class="token" href="./tools/signal-stack/">Signal Stack</a><a class="token" href="./tools/strudel-studio/">Strudel Studio</a><a class="token" href="./tools/syncpad/">SyncPad</a>
@@ -789,13 +781,59 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div>
-        <p class="site-footer__brand">StackScout</p>
-        <p>Public tool intelligence for builders, operators, and curious system nerds.</p>
+      <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
+        <div class="site-footer__marquee-track">
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+        </div>
+      </div>
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Stack <span>Scout</span></p>
+          <p>A field log for builder tools, official sources, and the stack worth opening.</p>
+        </div>
+        <nav class="site-footer__links" aria-label="Main pages">
+          <span>Main</span>
+          <a href="./">Home</a>
+          <a href="./catalog/">Top tools</a>
+          <a href="./updates/">Wire</a>
+          <a href="./collections/">Collections</a>
+        </nav>
+        <nav class="site-footer__links" aria-label="Projects">
+          <span>Projects</span>
+          <a href="./radar/">Radar</a>
+          <a href="./method/">Sources &amp; method</a>
+          <a href="https://theairesourcehub.com/" target="_blank" rel="noreferrer">AI Resource Hub</a>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </nav>
+        <div class="site-footer__links">
+          <span>Contact</span>
+          <a href="https://koltregaskes.com/" target="_blank" rel="noreferrer">Kol Tregaskes</a>
+          <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="./method/">Method</a>
+        </div>
+      </div>
+      <div class="site-footer__estate" aria-label="Elusion Works umbrella">
+        <div>
+          <span>Umbrella home</span>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </div>
+        <p>The showcase for Kol's websites, tools, games, and web experiments.</p>
+        <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Visit Elusion Works -&gt;</a>
       </div>
       <div class="site-footer__meta">
-        <p>Updated 25 Apr 2026</p>
-        <p>Public site generation from the StackScout shared source layer.</p>
+        <p><span class="live-dot" aria-hidden="true"></span><span id="utcClock">Live UTC</span></p>
+        <p>Updated 25 May 2026 from the Stack Scout shared source layer.</p>
       </div>
     </footer>
     <script src="./pwa.js"></script>

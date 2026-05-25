@@ -9,12 +9,21 @@ on:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Build generated site
+        run: npm run build:site
+
+      - name: Run launch-safety checks
+        run: npm run check
 
       - name: Check index.html exists and is non-empty
         run: test -s index.html

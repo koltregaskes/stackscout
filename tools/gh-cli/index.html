@@ -1,47 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mood-graphite">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StackScout // GitHub CLI</title>
+    <title>Stack Scout // GitHub CLI</title>
     <meta name="description" content="Still one of the best developer CLIs going, and now clearly leaning into agent skills and official extension ergonomics." />
-    <meta property="og:title" content="StackScout // GitHub CLI" />
+    <meta property="og:title" content="Stack Scout // GitHub CLI" />
     <meta property="og:description" content="Still one of the best developer CLIs going, and now clearly leaning into agent skills and official extension ergonomics." />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0a100c" />
+    <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="../../icon.svg" />
     <link rel="apple-touch-icon" href="../../icon.svg" />
     <link rel="manifest" href="../../manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,500..800,50&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body data-page="catalog" data-site-root="../../">
-    <div class="atmosphere" aria-hidden="true">
-      <div class="atmosphere__grid"></div>
-      <div class="atmosphere__ring atmosphere__ring--one"></div>
-      <div class="atmosphere__ring atmosphere__ring--two"></div>
-      <div class="atmosphere__flare atmosphere__flare--acid"></div>
-      <div class="atmosphere__flare atmosphere__flare--ice"></div>
-      <div class="atmosphere__flare atmosphere__flare--ember"></div>
-    </div>
-    <div class="site-meta-bar">
-      <div class="site-meta-bar__inner">
-        <p class="site-meta-bar__issue">Issue 2026-04-25 // Curated public signal for builders</p>
-        <div class="site-meta-bar__tokens">
-          <span>No fake telemetry</span>
-          <span>Official sources first</span>
-          <span>Badges over fake scores</span>
-        </div>
-      </div>
-    </div>
+    <div class="ss-grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="site-brand" href="../../">
-        <span class="site-brand__mark">S</span>
-        <span class="site-brand__wordmark">StackScout</span>
+        <span class="site-brand__mark" aria-hidden="true"></span>
+        <span class="site-brand__wordmark">Stack <span>Scout</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary"><a href="../../">Home</a><a href="../../catalog/" aria-current="page">Catalog</a><a href="../../categories/">Categories</a><a href="../../updates/">Updates</a><a href="../../radar/">Radar</a><a href="../../collections/">Collections</a><a href="../../method/">Method</a></nav>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="Primary"><a href="../../">Home</a><a href="../../catalog/" aria-current="page">Top tools</a><a href="../../categories/">Categories</a><a href="../../updates/">Wire</a><a href="../../radar/">Radar</a><a href="../../collections/">Collections</a><a href="../../method/">Sources &amp; method</a></nav>
+        <div class="mood-switcher" aria-label="Theme">
+          <button class="mood-switcher__button is-active" type="button" data-mood="graphite" aria-label="Graphite theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="midnight" aria-label="Midnight theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="obsidian" aria-label="Obsidian theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="slate" aria-label="Slate theme"></button>
+          <button class="mood-switcher__button" type="button" data-mood="carbon" aria-label="Carbon theme"></button>
+        </div>
+      </div>
     </header>
     <main class="page-shell">
       <section class="hero hero--detail">
@@ -85,7 +77,7 @@
           <div class="section-head">
             <div>
               <p class="eyebrow">Why it matters</p>
-              <h2>StackScout verdict</h2>
+              <h2>Stack Scout verdict</h2>
             </div>
           </div>
           <div class="detail-panel detail-panel--prose">
@@ -233,13 +225,59 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div>
-        <p class="site-footer__brand">StackScout</p>
-        <p>Public tool intelligence for builders, operators, and curious system nerds.</p>
+      <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
+        <div class="site-footer__marquee-track">
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+          <span>No affiliate theatre</span>
+          <span>No fake scores</span>
+          <span>Official sources first</span>
+          <span>Used or vetted</span>
+          <span>Badges over decimal dust</span>
+          <span>Curated, not exhaustive</span>
+        </div>
+      </div>
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Stack <span>Scout</span></p>
+          <p>A field log for builder tools, official sources, and the stack worth opening.</p>
+        </div>
+        <nav class="site-footer__links" aria-label="Main pages">
+          <span>Main</span>
+          <a href="../../">Home</a>
+          <a href="../../catalog/">Top tools</a>
+          <a href="../../updates/">Wire</a>
+          <a href="../../collections/">Collections</a>
+        </nav>
+        <nav class="site-footer__links" aria-label="Projects">
+          <span>Projects</span>
+          <a href="../../radar/">Radar</a>
+          <a href="../../method/">Sources &amp; method</a>
+          <a href="https://theairesourcehub.com/" target="_blank" rel="noreferrer">AI Resource Hub</a>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </nav>
+        <div class="site-footer__links">
+          <span>Contact</span>
+          <a href="https://koltregaskes.com/" target="_blank" rel="noreferrer">Kol Tregaskes</a>
+          <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="../../method/">Method</a>
+        </div>
+      </div>
+      <div class="site-footer__estate" aria-label="Elusion Works umbrella">
+        <div>
+          <span>Umbrella home</span>
+          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+        </div>
+        <p>The showcase for Kol's websites, tools, games, and web experiments.</p>
+        <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Visit Elusion Works -&gt;</a>
       </div>
       <div class="site-footer__meta">
-        <p>Updated 25 Apr 2026</p>
-        <p>Public site generation from the StackScout shared source layer.</p>
+        <p><span class="live-dot" aria-hidden="true"></span><span id="utcClock">Live UTC</span></p>
+        <p>Updated 25 May 2026 from the Stack Scout shared source layer.</p>
       </div>
     </footer>
     <script src="../../pwa.js"></script>

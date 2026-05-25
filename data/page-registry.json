@@ -1,6 +1,6 @@
 {
-  "title": "StackScout // Page Registry",
-  "generatedAt": "2026-04-25",
+  "title": "Stack Scout // Page Registry",
+  "generatedAt": "2026-05-25",
   "pages": [
     {
       "key": "home",
@@ -10,7 +10,7 @@
     },
     {
       "key": "catalog",
-      "title": "Catalog",
+      "title": "Top tools",
       "summary": "Searchable, filterable catalog of tracked tools and lab products.",
       "href": "catalog/"
     },
@@ -22,7 +22,7 @@
     },
     {
       "key": "updates",
-      "title": "Updates",
+      "title": "Wire",
       "summary": "Recent public activity, releases, direction changes, and noteworthy platform moves.",
       "href": "updates/"
     },
@@ -40,7 +40,7 @@
     },
     {
       "key": "method",
-      "title": "Method",
+      "title": "Sources & method",
       "summary": "Public badge definitions, freshness rules, and editorial guardrails.",
       "href": "method/"
     },
@@ -123,7 +123,7 @@
     },
     {
       "key": "collection-stackscout-lab",
-      "title": "From the StackScout Lab",
+      "title": "From the Stack Scout Lab",
       "summary": "A clearly labelled subset of the tools we are building ourselves.",
       "href": "collections/index.html#stackscout-lab",
       "parent": "collections"

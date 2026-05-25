@@ -1,11 +1,11 @@
 {
   "brand": {
-    "name": "StackScout",
-    "tagline": "The public scout deck for serious builder tools.",
-    "description": "StackScout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder's attention.",
-    "heroEyebrow": "Curated ecosystem // tools, systems, and builder intelligence",
-    "heroTitle": "A cleaner way to track the tools actually shaping modern workflows.",
-    "heroLede": "StackScout is the public-facing scout deck for fast-moving builder infrastructure: websites, web services, APIs, MCPs, CLIs, and a smaller lab lane for the tools we are building ourselves. It is curated, selective, and designed to stay useful rather than exhaustive."
+    "name": "Stack Scout",
+    "tagline": "A field log for the AI stack.",
+    "description": "Stack Scout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder's attention.",
+    "heroEyebrow": "Today's lead // official sources first",
+    "heroTitle": "A field log for the tools worth opening.",
+    "heroLede": "Stack Scout is a selective, source-led zine for builder infrastructure: APIs, MCPs, CLIs, services, workbench apps, and the lab tools we are building ourselves. It is curated rather than exhaustive, with visible dates and editorial badges instead of fake precision."
   },
   "home": {
     "featureSlugs": [
@@ -23,7 +23,7 @@
       "creator-stack",
       "mcp-starters",
       "automation-apis",
-      "stackscout-lab"
+        "stackscout-lab"
     ]
   },
   "categories": [
@@ -108,7 +108,7 @@
     }
   ],
   "methodology": {
-    "thesis": "StackScout is a public guide, not a benchmark lab. We badge selectively, update from official sources where possible, and avoid pretending every fast-moving tool deserves a fixed numeric score.",
+    "thesis": "Stack Scout is a public guide, not a benchmark lab. We badge selectively, update from official sources where possible, and avoid pretending every fast-moving tool deserves a fixed numeric score.",
     "principles": [
       {
         "title": "Curated over exhaustive",
@@ -177,7 +177,7 @@
       "slug": "creator-stack",
       "title": "Best tools for creators",
       "summary": "A practical mix for publishing, generation, research, and creative flow.",
-      "description": "If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first StackScout lane to start with.",
+      "description": "If you are building content systems, prototyping creative workflows, or stitching research into production, this is the first Stack Scout lane to start with.",
       "items": [
         "hugging-face",
         "perplexity",
@@ -223,7 +223,7 @@
     },
     {
       "slug": "stackscout-lab",
-      "title": "From the StackScout Lab",
+      "title": "From the Stack Scout Lab",
       "summary": "A clearly labelled subset of the tools we are building ourselves.",
       "description": "These are not presented as the whole point of the site. They sit alongside the wider ecosystem and earn their place separately.",
       "items": [
