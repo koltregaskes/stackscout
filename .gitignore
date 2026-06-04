@@ -10,6 +10,8 @@ planning-local/
 .local-notes/
 
 # Local screenshots and scratch files
+.serve.log
+.serve.err.log
 tmp-*.png
 tmp-*.jpg
 tmp-*.jpeg

@@ -6,29 +6,24 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
-$privateDataDirCandidates = @(
-  'W:\Repos\_local\surfaces\tools-hub-local\data',
-  '\\nas_storage_1\Workspaces\Repos\_local\surfaces\tools-hub-local\data'
-)
+$privateDataDirInput = if ($env:STACKSCOUT_PRIVATE_STATUS_DIR) {
+  $env:STACKSCOUT_PRIVATE_STATUS_DIR
+} elseif ($env:STACKSCOUT_PRIVATE_EXPORT_DIR) {
+  $env:STACKSCOUT_PRIVATE_EXPORT_DIR
+} else {
+  $null
+}
+
 $privateDataDir = $null
-foreach ($candidate in $privateDataDirCandidates) {
-  try {
-    if (-not (Test-Path $candidate)) {
-      New-Item -ItemType Directory -Path $candidate -Force | Out-Null
-    }
-
-    $privateDataDir = (Resolve-Path $candidate).Path
-    break
-  } catch {
-    continue
+if ($privateDataDirInput) {
+  if (-not (Test-Path $privateDataDirInput)) {
+    New-Item -ItemType Directory -Path $privateDataDirInput -Force | Out-Null
   }
+
+  $privateDataDir = (Resolve-Path $privateDataDirInput).Path
 }
 
-if (-not $privateDataDir) {
-  throw 'Unable to resolve a writable private data directory for Stack Scout refresh status.'
-}
-
-$statusFile = Join-Path $privateDataDir 'stackscout-refresh-status.json'
+$statusFile = if ($privateDataDir) { Join-Path $privateDataDir 'stackscout-refresh-status.json' } else { $null }
 $toolsManifestFile = Join-Path $repoRoot 'data\tools-manifest.json'
 $updatesManifestFile = Join-Path $repoRoot 'data\updates-manifest.json'
 $categoriesManifestFile = Join-Path $repoRoot 'data\categories-manifest.json'
@@ -38,9 +33,12 @@ $durationStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
 
 function Read-JsonFile {
   param(
-    [Parameter(Mandatory = $true)]
     [string]$Path
   )
+
+  if (-not $Path) {
+    return $null
+  }
 
   if (-not (Test-Path $Path)) {
     return $null
@@ -80,6 +78,10 @@ function Write-RefreshStatus {
 
   foreach ($entry in $Extra.GetEnumerator()) {
     $payload[$entry.Key] = $entry.Value
+  }
+
+  if (-not $statusFile) {
+    return
   }
 
   $directory = Split-Path -Parent $statusFile
