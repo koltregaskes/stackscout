@@ -4,10 +4,6 @@ const path = require('path')
 const ROOT_DIR = path.resolve(__dirname, '..')
 const SOURCE_DIR = path.join(ROOT_DIR, 'content', 'stackscout')
 const DATA_DIR = path.join(ROOT_DIR, 'data')
-const PRIVATE_PREVIEW_EXPORT_CANDIDATES = [
-  'W:\\Repos\\_local\\surfaces\\tools-hub-local\\data\\stackscout-publishing.json',
-  '\\\\nas_storage_1\\Workspaces\\Repos\\_local\\surfaces\\tools-hub-local\\data\\stackscout-publishing.json',
-]
 const BUILD_NOW = new Date()
 const GENERATED_AT = BUILD_NOW.toISOString().slice(0, 10)
 const GENERATED_AT_ISO = BUILD_NOW.toISOString()
@@ -54,17 +50,16 @@ function writeExternalJson(absolutePath, value) {
   fs.writeFileSync(absolutePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
 }
 
-function resolveWritableExternalPath(candidates) {
-  for (const candidate of candidates) {
-    try {
-      ensureParent(candidate)
-      return candidate
-    } catch (error) {
-      continue
-    }
+function resolvePrivatePreviewExportPath() {
+  if (process.env.STACKSCOUT_PRIVATE_EXPORT_FILE) {
+    return path.resolve(process.env.STACKSCOUT_PRIVATE_EXPORT_FILE)
   }
 
-  throw new Error(`Unable to resolve writable external path from candidates: ${candidates.join(', ')}`)
+  if (process.env.STACKSCOUT_PRIVATE_EXPORT_DIR) {
+    return path.join(path.resolve(process.env.STACKSCOUT_PRIVATE_EXPORT_DIR), 'stackscout-publishing.json')
+  }
+
+  return null
 }
 
 function escapeHtml(value) {
@@ -1239,7 +1234,7 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 }
 
 function main() {
-  const privatePreviewExport = resolveWritableExternalPath(PRIVATE_PREVIEW_EXPORT_CANDIDATES)
+  const privatePreviewExport = resolvePrivatePreviewExportPath()
   const site = readJson('site-source.json')
   const tools = readJson('tools-source.json')
   const updates = readJson('updates-source.json').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
@@ -1254,7 +1249,9 @@ function main() {
   writeJson('data/methodology-manifest.json', buildMethodologyManifest(site))
   writeJson('data/collections-manifest.json', buildCollectionsManifest(collections, toolIndex))
   writeJson('data/radar-manifest.json', buildRadarManifest(site.radar))
-  writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
+  if (privatePreviewExport) {
+    writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
+  }
 
   writeFile('index.html', renderHome(site, tools, updates, categories, collections, 'index.html'))
   writeFile('catalog/index.html', renderCatalog(tools, categories, 'catalog/index.html'))
