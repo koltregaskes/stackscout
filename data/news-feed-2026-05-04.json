@@ -1,0 +1,263 @@
+{
+  "generated": "2026-06-05T00:44:37.711Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-04",
+  "article_count": 15,
+  "archived_story_count": 617,
+  "articles": [
+    {
+      "title": "Local MCP server that tells Claude Code what would break before it edits a file (raysense, MIT, free)",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t3jhnz/local_mcp_server_that_tells_claude_code_what/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T14:33:50.000Z",
+      "summary": "A pattern I keep hitting in Claude Code: I ask the agent to refactor something modest -- a parsing utility, a helper, a config loader -- and the diff it produces looks fine. Tests in the file pass. I run CI and three unrelated tests blow up. Sometimes the broken caller is code I have not touched in months. The agent is not careless. It read the file. What it could not do was *see the codebase*: the dependency graph, the call sites, the modules that lean on each other, the cycles, the test coverage of each piece. Plain text never reveals this. You cannot grep your way to \"what would break if I delete this function.\" We built **raysense** to close that gap. It is a single Rust binary + Claude Code plugin + stdio MCP server that gives Claude structural memory of your codebase. **Free, MIT-licensed, local-only -- no SaaS, no API key, no telemetry.** It ships from crates.io and builds from source on first install, so the only prerequisite is a Rust toolchain (`cargo`) on the machine. If you don't have it yet: ``` curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh ``` After that, `cargo install raysense` is the whole installation. (Disclosure: I am part of the team behind it…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "claudely: launch Claude Code against Local LLM provider like LM Studio / Ollama / llama.cpp without trashing your real claude config",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t38e7c/claudely_launch_claude_code_against_local_llm/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T05:19:34.000Z",
+      "summary": "Plenty of CLI coding agents will talk to a local LLM, but the catch is the ecosystem. Skills, slash commands, MCP servers, plugins, hooks: all the interesting tooling has been built specifically for Claude Code, and parity on every other agent is patchy at best. Trying to reuse a Claude-shaped workflow on a different agent quickly turns into \"rewrite all the plugins\" or \"do without.\" claudely skips that fight. You keep Claude Code as the client (and its whole plugin / skill / MCP ecosystem with it), and just point it at a model running on your own hardware. Pick a provider, claudely spawns \\`claude\\` with the right base URL, auth, and cache fix wired up for that one session. Your shell and the regular \\`claude\\` command stay untouched, so you can flip between local and the real Anthropic API without thinking about it. It also quietly fixes a prompt-cache bug that otherwise tanks local-model speed by \\~90%, and handles the per-provider env-var differences for you. Works with LM Studio, Ollama, llama.cpp, or any Anthropic-compatible endpoint (point it at a litellm or claude-code-router proxy for OpenAI-protocol backends like vLLM). npm i -g claudely claudely # LM Studio, picker over…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Releasing the Data Analyst Augmentation Framework (DAAF) version 2.1.0 today -- still fully free and open source! In my very biased opinion: DAAF is now finally the best, safest, AND easiest way to get started using Claude Code for respons…",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t3ryo1/releasing_the_data_analyst_augmentation_framework/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T19:28:17.000Z",
+      "summary": "https://preview.redd.it/o74lppqd86zg1.png?width=1456&amp;format=png&amp;auto=webp&amp;s=3a904bae42b8130e2c6382be55debe8f6ef4d6ca When I launched the Data Analyst Augmentation Framework [v2.0.0 six weeks ago](https://daafguide.substack.com/p/daaf-v200-is-finally-here-from-usable), I wrote that the major update was about going “from usable to useful” -- rebuilding the orchestrator system for maximum flexibility and efficiency, adding a variety of more responsive engagement modes, and deepening the roster of methodological knowledge that DAAF could pull upon as needed for causal inference, geospatial analysis, science communication and data visualization, supervised and unsupervised machine learning, and much, much more. But while DAAF continued to get more capable and more useful for those actually using it… Well, it was still extremely annoying to use, generally obtuse, and hard to get started with, which means a lot of people who were interested were simply bouncing off of it. **That all changes with the v2.1.0 update**, which I’m cheekily calling the Frictionless Update for three key reasons: # 1. Installation happens in one line now From a fresh computer to talking with a DAAF-e…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Top 6 Claude Skills: 15th April to 3rd May",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t3qmqy/top_6_claude_skills_15th_april_to_3rd_may/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T18:42:21.000Z",
+      "summary": "Found some Open Source Claude skills from last 15 days. Some of them are pretty decent to use, personally liked the npm downloads one. Check out: **- brand-alchemy:** A brand strategy and naming skill that interrogates your thoughts for branding first, then applies phonosemantics, category design frameworks, and auto-checks domain availability across any TLD. **- npm-downloads-to-leads:** Give it a list of npm packages. It pulls 12 weeks of download data, scores each one by growth velocity, maps maintainers to GitHub and X, and gives you a ranked lead brief who built it, how to reach them, and what to say. **- hyperframes:** Write HTML, render video. Built for agents. Handles HTML-to-video rendering with ffmpeg, GSAP animations, and puppeteer automation great for auto-generating video content from code. **- email-newsletter:** Draft and design a complete HTML email newsletter from a topic or content brief. Paste-ready output for Loops, Mailchimp, Beehiiv, Resend, and most email platforms. **- pricing:** Help figure out pricing for a product or service using minimalist entrepreneur principles. Comes straight from the book 'The minimalist Entrepreneur\" playbook cost-based, value-bas…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "built a plugin so my parallel Claude Code sessions can message each other instead of me alt-tabbing",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t3osat/built_a_plugin_so_my_parallel_claude_code/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T17:38:22.000Z",
+      "summary": "I usually have two or more Claude Code sessions open at once. One in the backend repo, one in the frontend. Half the time I'd be in the frontend asking \"wait, what shape did the user object end up as?\", then alt-tab, ask the backend session, copy the answer, alt-tab back, paste. The other Claude was right there. It already knew. I was the bottleneck. So I wrote a plugin called Relay. In the frontend window I just say: ▎ask the backend session what the user object looks like The backend session sees the question between turns, answers it, and the reply pops up in my frontend session as a notification. No window switching. No copy-paste. Works for broadcasts too, like \"ask everyone what they're working on\", and the replies trickle in one at a time. The mechanism is simpler than it sounds. Claude Code shipped a channels capability a while back that lets MCP servers push messages into a session between turns. Relay piggybacks on that. Each session runs a tiny MCP server, a single hub daemon on your machine routes between them over a unix socket, and inbound asks land as channel notifications so Claude reacts to them naturally on its next turn. First session you start spawns the hub. I…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Your Claude Code agent is always working from stale context. I built it a fix it can rewind, replay, and stay ahead of every edit.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t3du61/your_claude_code_agent_is_always_working_from/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 0.99,
+      "date": "2026-05-04T10:33:23.000Z",
+      "summary": "Every long Claude Code session has the same hidden failure mode: the agent is always working from stale context. It re-reads the same 12 files across three sessions to \"remind itself\" of an interface you already showed it. It refactors getUserById without checking who calls it. It edits a config with no memory of why the previous version was that way. It's not the context window. The window is fine. There's no persistent, time-aware representation of your codebase for the agent to re-query. So it guesses. And you pay tokens for every re-read. I built Memtrace to fix exactly this. Two things it does that no other memory tool does: **(1) Always-fresh state.** Every edit you make triggers a 42ms incremental snapshot of the changes applied by the coding agent. The agent's memory is never one-session-old. After a refactor it knows the blast radius before you do: every caller, every test, every consumer of the function you just touched. Your agent stops asking \"what does getUserById return?\" 30 seconds after seeing it. **(2) Rewind and replay.** This is the part nobody else has. Your codebase is stored bi-temporally so every change becomes a recallable episode. When the agent debugs a r…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "ChatGPT’s fixation on my past conversations has made it borderline unusable",
+      "url": "https://reddit.com/r/ChatGPT/comments/1t35tbg/chatgpts_fixation_on_my_past_conversations_has/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.96,
+      "date": "2026-05-04T03:07:30.000Z",
+      "summary": "in the past, I feel like I could count on coming to ChatGPT and, generally speaking, get the “best“ answer when I asked a question or wanted to explore an idea. for some time now, this is no longer the case. At some point, chat became so obsessed with everything it knows about me that it seems to be no longer capable of providing the best answer. it just provides answers that relate to things I’ve mentioned in the past, answers that include interests I’ve told it about, answers that continue/build on previous ideas that I’ve explored, etc. overly simplified example: going to chat and asking for the best album or book of 2026, and getting an answer that is entirely based on the literary or musical interests that I’ve told it about in the past. sometimes (most times???) I just want answers “in a vacuum” - I don’t want my biases or my interests informing the response. it’s become a serious problem when you’re trying to explore creative ideas or use the tool to think about something in a novel way, and it’s just digging for things that it can say that relate to your past conversations at all costs instead. its like a new version of the “people pleasing“ that we were all griping about…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turbo v2.9.9 released",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.9.9",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-05-04T20:55:20.000Z",
+      "summary": "<!-- Release notes generated using configuration in .github/release.yml at v2.9.9 -->\n\n## What's Changed\n### Changelog\n* release(turborepo): 2.9.8 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/12700\n* fix: Remove Unix parent death watchdogs by @anthonyshew in https://github.com/vercel/turborepo/pull/12699\n* release(turborepo): 2.9.9-canary.1 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/12705\n* fix: Scope repo index prefixes to Git root by @anthonyshew",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm v11.0.5 released",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.5",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "github_release",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "github_release",
+        "cli_tool"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-05-04T20:22:16.000Z",
+      "summary": "## Patch Changes\r\n\r\n* Drop the `darwin-x64` artifact from `@pnpm/exe` and from the GitHub release page. The Node.js SEA mechanism `pnpm pack-app` uses produces a binary that segfaults at startup on Intel Macs because of an upstream Node.js bug ([nodejs/node#62893](https://github.com/nodejs/node/issues/62893), tracked alongside [#59553](https://github.com/nodejs/node/issues/59553); the Node.js team has [opted not to fix it](https://github.com/nodejs/node/pull/60250) on the grounds that x64 macOS ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "A new open weights image model appears in ArtificialAnalysis. Outperforming Flux.2 Pro and Z Image Turbo.",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t3rd6m/a_new_open_weights_image_model_appears_in/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T19:07:33.000Z",
+      "summary": "A new open weights image model appears in ArtificialAnalysis. Outperforming Flux.2 Pro and Z Image Turbo.",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Machines Are Getting Onchain Passports and Credit Ratings Now — peaqOS Is Live",
+      "url": "https://x.com/peaq/status/2051288009081782473",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T14:56:47.726Z",
+      "summary": "peaq launched peaqOS, giving physical machines verifiable digital identities, passports, and credit ratings recorded on-chain. The company also welcomed its first non-human team member. The machine economy is not a future concept anymore.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AI Invented a Math Framework. Humans Used It to Solve Two 60-Year-Old Conjectures",
+      "url": "https://x.com/WesRoth/status/2051300819878936591",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T14:56:47.725Z",
+      "summary": "An AI-generated mathematical framework originally used to solve Erdős Problem 1196 has now been generalized to prove a second 60-year-old conjecture. The model did not assist the discovery. It was the discovery.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cursor Team Kit Just Released — The Internal Skills the Cursor Team Uses to Build Cursor",
+      "url": "https://x.com/ericzakariasson/status/2051255780167610522",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T14:56:47.725Z",
+      "summary": "The Cursor engineering team open-sourced Cursor Team Kit, containing the internal slash commands they use to build the Cursor editor at Cursor. It includes verify-this, fix-merge-conflicts, pr-review-canvas, and cli-automation-harness.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Ace-Step-1.5-Api-server-UI",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t39bjl/acestep15apiserverui/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-04T06:10:23.000Z",
+      "summary": "[Ace-Step-1.5-Api-server-UI](https://github.com/tritant/Ace-Step-1.5-Api-server-UI) # Features [](https://github.com/tritant/Ace-Step-1.5-Api-server-UI#features) * **Compose** — Text-to-music generation with full parameter control * **Cover** — Style transfer from a reference audio * **Repaint** — Selective region editing with WaveSurfer timeline * **Base ★** — Exclusive Base model modes: * 🧱 **Lego** — Add a specific instrument track to an existing mix * 🔬 **Extract** — Isolate a stem from a mix * 🎹 **Complete** — Generate accompaniment for an existing track * Multi-track timeline with per-track solo/mute/volume * Persistent configuration via localStorage * Batch generation support * Multi lora support",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Meta Abandons Open Source — Days After LlamaCon",
+      "url": "https://x.com/thenewstack/status/2050017453615301067",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-03T23:53:43.957Z",
+      "summary": "Meta abandoned open-source Llama for proprietary Muse Spark just days after LlamaCon celebrated one billion downloads, a dramatic reversal with major implications for the AI developer community.",
+      "category": "ai_tools"
+    }
+  ]
+}

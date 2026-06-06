@@ -1,0 +1,249 @@
+{
+  "generated": "2026-06-05T00:44:33.705Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-11",
+  "article_count": 15,
+  "archived_story_count": 346,
+  "articles": [
+    {
+      "title": "How I made my Claude multimodal — now I just feed it videos",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1simmfx/how_i_made_my_claude_multimodal_now_i_just_feed/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T15:49:48.000Z",
+      "summary": "Claude + Qwen API\n\nFigured out (with Claude's help) how to set up a bridge to Qwen 3.5 Omni Plus API so that Claude calls it on its own — sends the video with a prompt, iterates on the result, and comes back with a report or action.\n\nNow I just drop a video straight into Claude and get back what I need.\n\nPackaged it as a plugin for easy setup.\n\ngithub.com/kirillbrsnkv/give-claude-eyes",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How to get Claude to run more autonomously",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sigr1t/how_to_get_claude_to_run_more_autonomously/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T11:38:26.000Z",
+      "summary": "Hi! Can someone tell me how to get Claude to work more autonomously on a large task?\n\nA bit of context:  \nI have a .NET project, it contains unit test coverage, integration tests and API tests. Recently we decided to become more strict on code style and warnings.\n\nThe application has large request and response models for an external API. Currently, that model is camelCase not PascalCase. Also a lot of properties are nullable, but not explicitly. 3k warnings currently.\n\nSuper tedious for a human ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "update on my ai waifu app, can use web search react to images even picture of herself",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sige8s/update_on_my_ai_waifu_app_can_use_web_search/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T11:19:52.000Z",
+      "summary": "using qwen 3 VL for the llm and the vision (really good for recognize popular characters and even recognize their appearances)\n\nusing SerpApi for the web search\n\nthe tts is using omnivoice tts (support 600+ languages) that i make a custom api that i recently open source it, get it here: [https://github.com/aziib/omnivoice-tts-api](https://github.com/aziib/omnivoice-tts-api)\n\nmy ai waifu project stil in work in progress, i just hope there is free web search api, SerpApi has some search limit usag",
+      "category": "ai_models"
+    },
+    {
+      "title": "I built an open-source platform to manage multiple coding agents – recursive split panes, shared content folder, and a per-project wiki",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sidojq/i_built_an_opensource_platform_to_manage_multiple/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T08:42:01.000Z",
+      "summary": "If you run multiple agent CLIs daily, you've probably hit the same pain points I have:\n\n1. Too many terminal windows — impossible to find the one you need\n2. Tmux commands are clunky — switching sessions is awkward, easy to jump to the wrong window, and you can't even scroll with your mouse\n3. Sharing files between agents means manually copying everything into the project folder\n\nI looked around at open-source agent management platforms and couldn't find one that fit my workflow. So I took the b",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I automated most of my job",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1shngqm/i_automated_most_of_my_job/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-10T14:03:08.000Z",
+      "summary": "I'm a software engineer with 11 yoe. I automated about 80% of my job with claude cli and a super simple dotnet console app.\n\nThe workflow is super simple:\n\n1. dotnet app calls our gitlab api for issues assigned to me\n\n2. if an issue is found it gets classified → simple prompt that starts claude code with the repo and all image attachments incl. the issue description\n\n3. if the result is that the issue is not ready for development, an answer is posted to my gitlab (i currently just save a draft a",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I got tired of juggling 4 Claude Code sessions, so I built a workspace manager for it",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sidlpe/i_got_tired_of_juggling_4_claude_code_sessions_so/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.99,
+      "date": "2026-04-11T08:37:14.000Z",
+      "summary": "Last month I caught myself running Claude Code in 4 separate terminal windows — one for the API refactor, one for tests, one for the frontend, one as a scratch session. Alt-tab hell. I'd lose track of which session was waiting for me to approve a tool call, which one was still thinking, and which had silently errored out 10 minutes ago.\n\nSo I built **Flowyble Studio** — a desktop app that runs multiple Claude Code sessions side-by-side in split panels, one workspace per project.\n\nWhat it does fo",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a notification tool for Claude Code, hit 374 downloads, then found out notifications were broken the whole time — v1.1.0 is out",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1siexm7/i_built_a_notification_tool_for_claude_code_hit/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 0.96,
+      "date": "2026-04-11T09:58:19.000Z",
+      "summary": "  \nBuilt with Claude Code, specifically for Claude Code users. Free, open source, MIT.  \n  \nWhat it does  \n  \nu/daik0z/claude-notify adds a Stop hook to \\~/.claude/settings.json. When Claude Code finishes a task, you get a push notification — desktop, mobile via ntfy, or any webhook. The body summarizes what happened: \"3 files edited · 2 commands  \n\".  \n  \nnpm install -g u/daik0z/claude-notify  \nclaude-notify setup  \n  \nWhat I learned from 374 downloads  \n  \nI sat down to stress-test it and foun",
+      "category": "ai_tools"
+    },
+    {
+      "title": "ComfyUI workflow to fully python script?",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1siy8ty/comfyui_workflow_to_fully_python_script/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T23:25:36.000Z",
+      "summary": "Hey, I have a ComfyUI workflow and I want to rewrite it as a plain Python script. No ComfyUI API, no wrappers, just native Python.\n\nWhy?\nI'm planning to use a multi-GPU server and I want to optimize for that.\n\nWhat libraries should I use? Is Diffusers the go-to or is there something better? Any tips from people who've done this?\n\nAlso, custom nodes are tricky. does anyone know a good method or step-by-step instructions for handling those?\n\nThank you!",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Labs for Claude Certified Architect Foundations Exam",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sip8jd/labs_for_claude_certified_architect_foundations/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T17:28:37.000Z",
+      "summary": "While preparing for the exam I engineered 6 labs, one per scenario, covering all 5 domains and all 30 task statements. Each one walks you through building working, runnable code step by step, for hands-on practice with the architectures the exam covers.\n\n* Lab 01 - Customer Support Resolution Agent\n* Lab 02 - Code Generation Workflows\n* Lab 03 - Multi-Agent Research System\n* Lab 04 - Developer Productivity Agent\n* Lab 05 - CI/CD Integration\n* Lab 06 - Structured Data Extraction\n\n[https://github.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "FT - China’s Alibaba shifts towards revenue over open-source AI",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sip3hd/ft_chinas_alibaba_shifts_towards_revenue_over/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T17:23:20.000Z",
+      "summary": "[https://www.ft.com/content/b39da303-3188-447b-8b65-3dd8dad8b59a?syn-25a6b1a6=1t](https://www.ft.com/content/b39da303-3188-447b-8b65-3dd8dad8b59a?syn-25a6b1a6=1t)\n\n  \nIs it true?",
+      "category": "ai_models"
+    },
+    {
+      "title": "FlashAttention (FA1–FA4) in PyTorch - educational implementations focused on algorithmic differences [P]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1sim6y1/flashattention_fa1fa4_in_pytorch_educational/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T15:33:13.000Z",
+      "summary": "I recently updated my FlashAttention-PyTorch repo so it now includes educational implementations of FA1, FA2, FA3, and FA4 in plain PyTorch.\n\nThe main goal is to make the progression across versions easier to understand from code.\n\nThis is not meant to be an optimized kernel repo, and it is not a hardware-faithful recreation of the official implementations. The point is to expose the algorithmic ideas and design changes without immediately going deep into CUDA/Hopper/Blackwell-specific details.\n",
+      "category": "ai_research"
+    },
+    {
+      "title": "I built a structured reasoning framework for Claude — because \"good output\" isn't enough",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sil0me/i_built_a_structured_reasoning_framework_for/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T14:46:51.000Z",
+      "summary": "**I built a structured reasoning framework for Claude — because \"good output\" isn't enough**\n\nI kept running into the same problem: Claude gives a great answer, but I have no idea how it got there. Same prompt, different results. Complex tasks where I couldn't tell if the reasoning actually held up.\n\nSo I built CRC — Complex Reasoning Compiler. It's a 6-step Claude Skill that forces reasoning to be auditable, teachable, and human-controlled.\n\nThe core idea:\n\n* Every complex task goes through a f",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Update: the open-source 62K multimodal prompt injection dataset now has GCG suffixes, multi-turn orchestration, indirect injection, tool abuse, and more (v2 + v3 added overnight)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1siilrp/update_the_opensource_62k_multimodal_prompt/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T13:06:26.000Z",
+      "summary": "Posted here yesterday about the v1 cross-modal dataset. One of you suggested adding GCG adversarial suffixes and multi-turn attack coverage. That feedback turned into v2 and v3 being built and shipped within 24 hours. The dataset has gone from 47K to 62K samples.\n\nHuggingFace: https://huggingface.co/datasets/Bordair/bordair-multimodal\nGitHub: https://github.com/Josh-blythe/bordair-multimodal-v1/\nMIT licensed.\n\nThe repo's also picked up early interest from engineers at NVIDIA, PayPal, NetApp, and",
+      "category": "ai_models"
+    },
+    {
+      "title": "Gemma 4 - Going Mad - - - Help!!!",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1siia1t/gemma_4_going_mad_help/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T12:52:14.000Z",
+      "summary": "Hi All\n\nIm getting up to speed on LLMs and we are looking at Gemma4.  \nWe are using a M3 Ultra with 512GB VRAM. So no dangers there.\n\nIm using opencode cli for these tests.  However it doesnt appear to matter what I use the results are the same.  Its all around tooling.\n\nI have re-downloaded all the models this morning post the fixes. These are the unsloth ones.  \n\nIm running llama.cpp - which i build on the server and is bang up to date.\n\nSo in opencode CLI - if i give it this prompt - its runs",
+      "category": "ai_models"
+    },
+    {
+      "title": "Curated 550+ free LLM tools for builders (APIs, local models, RAG, agents, IDEs)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sigg35/curated_550_free_llm_tools_for_builders_apis/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-11T11:22:38.000Z",
+      "summary": "I spent the whole day putting together a big list of **free or cheap LLM tools** that are actually useful if you’re building stuff.\n\nTried to focus more on **local models + dev tools** instead of those generic “1000 AI websites” type lists.\n\nIt includes:\n\n• local models (Ollama, Qwen, Llama etc)  \n• free LLM APIs (OpenRouter, Groq, Gemini etc)  \n• coding IDEs + CLI tools (Cursor, Qwen Code, Gemini CLI etc)  \n• RAG stack tools (vector DBs, embeddings, frameworks)  \n• agent frameworks and automati",
+      "category": "ai_models"
+    }
+  ]
+}

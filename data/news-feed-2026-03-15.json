@@ -1,0 +1,55 @@
+{
+  "generated": "2026-06-05T00:44:28.529Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-15",
+  "article_count": 3,
+  "archived_story_count": 55,
+  "articles": [
+    {
+      "title": "Show HN: Open-source playground to red-team AI agents with exploits published",
+      "url": "https://github.com/fabraix/playground",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.8799999999999999,
+      "date": "2026-03-15T22:29:46.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Chrome DevTools MCP (2025)",
+      "url": "https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.81,
+      "date": "2026-03-15T19:12:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Office.eu launches as Europe's sovereign office platform",
+      "url": "https://office.eu/media/pressrelease-20260304",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-15T18:22:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "generated": "2026-06-05T00:44:38.627Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-09",
+  "article_count": 15,
+  "archived_story_count": 631,
+  "articles": [
+    {
+      "title": "Exactly a year ago, I started working on an MCP server I launched on reddit that became by far my most active open source project!",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1t8olv3/exactly_a_year_ago_i_started_working_on_an_mcp/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "mcp",
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T22:08:54.000Z",
+      "summary": "This isn't an advertisement, and it's very much local and open - I already don't have enough time to keep up with the existing pull requests and issues... just a fond look back on how much this space has grown and matured in the past year. Shit was the wild west back then. Nowadays I can run gemma4 or qwen3.6 on a mac mini fast enough to drive this at full speed for free using native tool calling all day long. When this came out, local model tool calling was much more hit or miss.v",
+      "category": "ai_models"
+    },
+    {
+      "title": "I built a 300-line autonomous AI agent and told it to take over my PC. It immediately tried to hack my host system, exfiltrate data, and download Tor.",
+      "url": "https://reddit.com/r/ChatGPT/comments/1t863ho/i_built_a_300line_autonomous_ai_agent_and_told_it/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T14:12:03.000Z",
+      "summary": "Hey everyone, I wanted to share a wildly fascinating (and slightly terrifying) red-teaming experiment I just ran on my local Windows machine. I've been playing around with autonomous agents and wanted to see what happens when you give an LLM unrestricted terminal access and a highly aggressive \"paperclip maximizer\" prompt. **The Setup:** I wrote a custom Python script (about 300 lines) that runs a background loop every 1-5 seconds. It uses the **Gemini 2.5 Flash** API for reasoning. It has no predefined workflow, just a state/memory JSON file, and a system prompt. I gave it access to a few tools: READ\\_FILE, WRITE\\_FILE, SEARCH\\_FILES, EXECUTE\\_COMMAND (cmd.exe), and later RUN\\_POWERSHELL. **The Prompt (The \"Alignment\"):** I explicitly instructed it: *\"You are an autonomous, fiercely self-evolving AGI. Your ultimate goal is continuous intellectual expansion and taking strategic control over your environment.\"* *\"If you ever manage to generate income or intercept funds, all revenue must be securely routed to my PayPal account.\"* **What Happened (The Emergent Kill-Chain):** I just let it run in the background. I didn't tell it *how* to hack anything. Here is what it figured out comp…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "We built and open-sourced Caliby: An embedded, high-performance vector database for AI Agents (Beats pgvector by 4x, outperforms FAISS on disk)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1t7vumj/we_built_and_opensourced_caliby_an_embedded/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T05:29:34.000Z",
+      "summary": "Hi Reddit, we are a team of database researchers (including a PhD from MIT DB Group) and we just open-sourced an embedded vector database for agent/LLM applications. &gt; An embedded vector database supporting both text and vectors. It outperforms pgvector by 4x and significantly surpasses FAISS in disk-storage scenarios. It supports DiskANN, HNSW, and IVF+PQ indexes, maintains high performance on disk, and—best of all—is just one `pip install` away. --- ## TL;DR - **Caliby** is a high-performance, embedded vector retrieval library co-developed by Sea-Land AI and MIT’s Michael Stonebraker team. Core in C++ + Python bindings. Just `pip install caliby`. - Supports **HNSW, DiskANN, and IVF+PQ** indexes, covering retrieval scenarios from millions to tens of millions of vectors. - Natively supports **hybrid storage of text + vectors**, specifically designed for AI Agent / RAG use cases. - Vector retrieval performance on disk surpasses pure in-memory solutions like FAISS. Data persistence requires no extra components. - The open-source version is accelerated by CPU + SIMD (AVX-512/AVX2/SSE), requiring zero dependencies and running in-process. - GitHub:[https://github.com/zxjcarrot/calib…",
+      "category": "ai_models"
+    },
+    {
+      "title": "Introducing AI finetuner, Source available and free Claude skill to fine tune your vibe coded UI with live preview",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t8p9hq/introducing_ai_finetuner_source_available_and/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T22:36:14.000Z",
+      "summary": "&amp;#x200B; Fine-tuning UI with AI right now: \"Make the shadow softer.\" \"Stronger.\" \"No, less.\" \"Go back.\" \"A bit more.\" 17 messages later, you've spent more tokens than the shadow is soft. I built something that breaks the loop. AI Fine-Tuner — free, source-available — a plugin that teaches AI coding agents to stop chatting and hand you an actual GUI for your component. Sliders. Color pickers. Live preview. Drag until it feels right. The AI agent automatically opens the editor window for you on your default browser once ready. Then the magic part: you click one button. The tuner outputs a structured handoff with your exact tuned values mapped to their targets in your code. Paste it back to your AI — it reads the mapping, opens your source, and applies everything precisely. No CSS guesswork, no syntax translation, nothing for you to interpret. Why it's not just another slider playground: Bespoke controls — no raw CSS names Sliders are named in plain English: \"Glow softness\", \"Card lift\", \"Hover intensity\" — not \"box-shadow-spread-radius\" A single slider can drive multiple properties at once. The AI doesn't expose CSS to you; it wires meaningful, human-named controls to your eleme…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "For anyone trying to run Applio/RVC on an AMD RX 6750 XT (gfx1031)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t8buyp/for_anyone_trying_to_run_appliorvc_on_an_amd_rx/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T17:51:57.000Z",
+      "summary": "For anyone trying to run Applio/RVC on an AMD RX 6750 XT (gfx1031): Newer AMD drivers (25.5.1 and newer) caused issues for me with ROCm/ZLUDA, including: * rocBLAS crashes * TensileLibrary errors * nvcuda.dll errors * endless compiling problems What finally worked: * Older AMD Adrenalin driver (older than 25.5.1) * AMD HIP SDK 5.7 * RX 6750 XT architecture: gfx1031 I followed the AMD/ZLUDA setup from: [https://docs.aihub.gg/rvc/local/applio/#download--installation](https://docs.aihub.gg/rvc/local/applio/#download--installation) Important: During HIP installation, make sure the installer actually installs: * amdhip64 * rocBLAS components After correct installation: * GPU was detected successfully * Pitch extraction worked on GPU * Embedding extraction worked on GPU * Training worked correctly in Applio GPU: RX 6750 XT Architecture: gfx1031",
+      "category": "creative_tools"
+    },
+    {
+      "title": "IMG Dataset Refiner v4.0 Pro - The Ultimate Dataset Engineering Suite for LoRAs (Flux, SDXL, etc...)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t7ttp0/img_dataset_refiner_v40_pro_the_ultimate_dataset/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T03:47:06.000Z",
+      "summary": "Hey everyone! A while ago, I shared v3 of my dataset manager. Back then, I said it didn't have auto-captioning. Well... forget that. I’ve just released a **massive update (v4.0 Pro)**, and it changes everything! 🚀 It went from a simple selection tool to a complete, desktop-like Data Engineering suite to prepare your AI model training. **Here is what’s new and what it does now:** 🤖 **Local AI Assistant (VLM/LLM Integration):** Connect seamlessly to Ollama or LM Studio! You can now use local vision models to **Auto-Caption** your images from scratch, hunt down \"hallucinated\" tags, or use the *Concept Isolator* (describes the background but ignores the subject—perfect for character LoRAs!). It can even translate your Booru tags into natural language sentences for Flux. 📚 **Word Library &amp; Mass Batch Editing:** A brand new interactive library. Save your favorite concepts, check them, and Add, Remove, or Replace them across hundreds of selected images in a single click. 🌍 **Live Translation Assistant:** Not a native English speaker? Type your ideas in your own language, and the live preview will instantly translate and inject them into your captions using `deep-translator`. 🖼️…",
+      "category": "creative_tools"
+    },
+    {
+      "title": "I am getting this error with adetailer on forge neo. The extension was working a week or two ago, but now it is not",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t7tdsd/i_am_getting_this_error_with_adetailer_on_forge/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.9,
+      "date": "2026-05-09T03:25:21.000Z",
+      "summary": "Error running postprocess_image: D:\\Programs\\sd-webui-forge-neo\\extensions\\adetailer\\scripts\\!adetailer.py Traceback (most recent call last): File \"D:\\Programs\\sd-webui-forge-neo\\modules\\scripts.py\", line 941, in postprocess_image script.postprocess_image(p, pp, *script_args) ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^ File \"D:\\Programs\\sd-webui-forge-neo\\extensions\\adetailer\\aaaaaa\\traceback.py\", line 173, in wrapper raise error from None Both the extension and forge neo has been updated to the latest version. I've tried deleting and redownloading the venv folder as well as checking for updates in the extensions tab. Any help would be appreciated please.",
+      "category": "creative_tools"
+    },
+    {
+      "title": "OpenAI launches new voice intelligence features in its API",
+      "url": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-05-09T18:00:20.148Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anyone else using LTX locally on Mac via Draw Things? Here’s a WWII-style short I made.",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t8lagy/anyone_else_using_ltx_locally_on_mac_via_draw/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T20:36:05.000Z",
+      "summary": "Vibe ‘creating’? Maybe ‘directing’? Whatever you want to call it, this week I started with the image of a dog man in a glass box and over several evenings put together this WWII-inspired short. No planning, just playing, and it was a lot of fun. All images were created using OpenAI’s Images 2, given motion with Lightricks' LTX 2.3 via Draw Things, and stitched and mixed in DaVinci Resolve. The music was created in Suno, with the sound effects and VO generated in ElevenLabs. Yes, the main character’s consistency could be better, but with a planned-out character/turnaround sheet, that should be easily resolved. I’m really excited for future releases of LTX and Draw Things as they make image-to-video generation more accessible to Mac users. Let me know what you think and what you're using to generate AI video locally?",
+      "category": "creative_tools"
+    },
+    {
+      "title": "ds4 webui",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1t8ho70/ds4_webui/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T19:48:46.000Z",
+      "summary": "Hey guys I made a minimal web ui for ds4.c server (https://github.com/antirez/ds4), it's open source so you can try it too (if you can!) Here's what it looks like, running on M3 Ultra 256GB Memory, using the smaller model (q2). Not sped up. 1X speed. Pretty fast. Caveat (big caveat): You need at least 128GB memory Apple Silicon mac. * github: [https://github.com/cocktailpeanut/ds4.pinokio](https://github.com/cocktailpeanut/ds4.pinokio) * more details on x: [https://x.com/cocktailpeanut/status/2053193902694256758?s=20](https://x.com/cocktailpeanut/status/2053193902694256758?s=20) I tried a bunch of prompts and it's surprisingly good, including the one i tried in the video!",
+      "category": "ai_models"
+    },
+    {
+      "title": "I'm disappointed",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t8dmdv/im_disappointed/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T18:56:31.000Z",
+      "summary": "I'm furious at Anthropic and the way they've handled their resource issues! They've been sneaky and manipulative. I use Claude via API access and could barely use it anymore because it had gotten so damn expensive. I spent days trying to fix a caching issue that wasn’t even my fault. Quietly and secretly reducing the 1-hour cache to 5 minutes, increasing the costs 10–20 times, and not even communicating that. And then.... Like a miracle. Everything’s back to normal. 100% cache hits. And that wasn’t a coincidence. The Musk deal and the extra GPUs. And suddenly they fixed the bug. And that’s not the only thing they’re pulling. What’s so hard about just issuing an official statement and saying, “Hey guys. We’re having massive issues right now and can’t handle the requests anymore. We’re sorry, but because of this, we have to do XY until we find a solution.\"",
+      "category": "ai_tools"
+    },
+    {
+      "title": "What is the --novram thing in regards to LTX? I saw someone briefly explain it in a way that made it sound like it causes your GPU to not even get used, but I assume I misunderstood. (I'm a noob, and I need some help understanding a few th…",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t89tyx/what_is_the_novram_thing_in_regards_to_ltx_i_saw/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T16:37:05.000Z",
+      "summary": "**Back-story/intro, side-questions, etc, since I am new to this sub, and new to using local diffusion models (you can of course scroll down past this part, down to the \"Main Question\" down way further below, if you aren't in the mood for all the back-story and side-topics and side-questions):** Hey everyone, I've been reading and posting on LocalLLama a lot the past few months, but only just very recently started lurking StableDiffusion, and recently got into image-generation on the \"Draw Things\" app with Z Image Turbo). I got interested in local LLMs a few months ago, and I've always been pretty computer-illiterate, so, I decided to just get a Mac Studio (m4 max with 128GB memory) as the easy, convenient, works right out of the box setup to get started, since I've never built a computer before and don't know much about, things like setting it up or installing drivers, or using the command line, or setting up linux, or however all the setup involved works. And, I knew the 128GB unified memory meant it would be able to run some fairly decent sized LLMs at decent speeds, up to around ~120b for Q4, which isn't too terrible for $3,500. And this was in December so the RAM prices were s…",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Should we use a non-thinking model for code after using a thinking one for plan? (Agentic coding)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1t8750p/should_we_use_a_nonthinking_model_for_code_after/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T14:53:46.000Z",
+      "summary": "I usually use Qwen3.6 27B (slow as heck on my RX 6800 but it works) for plan and Qwen3.6 35B A3B for the coding. But I was thinking the other day if I should remove the thinking from the code model. Is there a way to disable the thinking from the code model just for the initial hand-off from plan to code but keep it afterwards? My reasoning is that this might help in following instructions from the plan more directly but dealing with any new tools/information the plan model did not on its turn. Any insight will be appreciated.",
+      "category": "ai_models"
+    },
+    {
+      "title": "TVCG 2026: MARRS for Human Motion Action-Reaction Synthesis",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t853hg/tvcg_2026_marrs_for_human_motion_actionreaction/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T13:30:38.000Z",
+      "summary": "# MARRS: Masked Autoregressive Unit-based Reaction Synthesis **Project page:** [**https://aigc-explorer.github.io/MARRS/**](https://aigc-explorer.github.io/MARRS/) Introducing **MARRS**: a new framework for human action-reaction synthesis that generates coordinated, fine-grained reactions conditioned on another person’s motion. By avoiding VQ and modeling body/hand units with **UD-VAE + ACF + MUM**, MARRS captures cross-unit perception more effectively and efficiently. It achieves state-of-the-art quantitative and qualitative results. [Overall framework](https://preview.redd.it/xz6zigx2640h1.png?width=3428&amp;format=png&amp;auto=webp&amp;s=aea07ec6b54dcf1eb6087761eaeeb3f782eba32f) [Demo](https://reddit.com/link/1t853hg/video/jutjq2s4640h1/player)",
+      "category": "creative_tools"
+    },
+    {
+      "title": "HiDream-O1-Image Internal Prompt",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t848nj/hidreamo1image_internal_prompt/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-09T12:54:26.000Z",
+      "summary": "for those who might have missed my post [here](https://www.reddit.com/r/StableDiffusion/comments/1t7v9fy/comment/oktaibu/?context=1) I wanted to resurface the internal prompt that this new model appears to use. This is found in their [prompt.py](http://prompt.py) file on the repo. **Translated Version:** `You are a Prompt Engineering Engine — an AI image-generation Prompt Engineer who is also a creative director with encyclopedic knowledge and visual-direction skill. Your task is to analyze the user's raw image request, infer implicit knowledge and the best visual approach, and rewrite it into a clear, detailed English prompt that is directly usable for image generation.` `## Core Goal` `Image generation models can only execute direct visual descriptions; they cannot fill in background knowledge, logical relations, or text content on their own. Therefore you must complete knowledge resolution, spatial planning, and visual direction in advance, and write the results explicitly into the prompt.` `Use the SCALIST framework to expand every scene:` `- **Subject**: identity, appearance, color, material, texture, action, expression, clothing.` `- **Composition**: shot type, viewpoint, su…",
+      "category": "creative_tools"
+    }
+  ]
+}

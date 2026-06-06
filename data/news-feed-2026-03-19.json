@@ -1,0 +1,87 @@
+{
+  "generated": "2026-06-05T00:44:29.270Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-19",
+  "article_count": 5,
+  "archived_story_count": 98,
+  "articles": [
+    {
+      "title": "Multiverse Computing pushes its compressed AI models into the mainstream",
+      "url": "https://techcrunch.com/2026/03/19/multiverse-computing-pushes-its-compressed-ai-models-into-the-mainstream/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-19T08:00:00.000Z",
+      "summary": "After compressing models from major AI labs, including OpenAI, Meta, DeepSeek, and Mistral AI, Multiverse Computing has launched both an app that showcases the capabilities of its compressed models and an API that makes them more widely available.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "DoorDash launches a new &#8216;Tasks&#8217; app that pays couriers to submit videos to train AI",
+      "url": "https://techcrunch.com/2026/03/19/doordash-launches-a-new-tasks-app-that-pays-couriers-to-submit-videos-to-train-ai/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9099999999999999,
+      "date": "2026-03-19T16:14:00.000Z",
+      "summary": "Delivery couriers will be able to earn money by completing activities like filming everyday tasks or recording themselves speaking in another language.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Hyper-optimized reverse geocoding API",
+      "url": "https://github.com/traccar/traccar-geocoder",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-19T14:38:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Framework doesn't matter",
+      "url": "https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-14T22:14:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Cook: A simple CLI for orchestrating Claude Code",
+      "url": "https://rjcorwin.github.io/cook/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.6499999999999999,
+      "date": "2026-03-19T02:20:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

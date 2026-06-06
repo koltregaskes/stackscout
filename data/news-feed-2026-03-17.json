@@ -1,0 +1,237 @@
+{
+  "generated": "2026-06-05T00:44:28.931Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-17",
+  "article_count": 15,
+  "archived_story_count": 140,
+  "articles": [
+    {
+      "title": "Show HN: Crust – A CLI framework for TypeScript and Bun",
+      "url": "https://github.com/chenxin-yan/crust",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-03-17T04:43:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "World launches tool to verify humans behind AI shopping agents",
+      "url": "https://techcrunch.com/2026/03/17/world-launches-tool-to-verify-humans-behind-ai-shopping-agents/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-17T15:00:00.000Z",
+      "summary": "As AI agents take the reins for online shoppers, Sam Altman's unconventional startup is looking to expand its verification offerings to support agentic commerce.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Picsart now allows creators to &#8216;hire&#8217; AI assistants through agent marketplace",
+      "url": "https://techcrunch.com/2026/03/16/picsart-now-allows-creators-to-hire-ai-assistants-through-agent-marketplace/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-17T04:01:00.000Z",
+      "summary": "Picsart's AI agent marketplace will launch with four agents, then add more agents each week.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Nvidia&#8217;s version of OpenClaw could solve its biggest problem: security",
+      "url": "https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-16T22:45:51.000Z",
+      "summary": "Nvidia announced an open enterprise AI agent platform, called NemoClaw, that is built off of viral OpenClaw.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How to watch Jensen Huang’s Nvidia GTC 2026 keynote — and what to expect",
+      "url": "https://techcrunch.com/2026/03/16/nvidia-gtc-how-to-watch-jensen-huang-2026-keynote/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-16T17:51:46.000Z",
+      "summary": "GTC is Nvidia's flagship annual event, where the chipmaker typically announces new products, partnerships, and its vision for the future of computing. Huang's keynote will focus on Nvidia's role in the future of computing and AI.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "China’s OpenClaw Boom Is a Gold Rush for AI Companies",
+      "url": "https://www.wired.com/story/china-is-going-all-in-on-openclaw/",
+      "source": "Wired AI",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.9099999999999999,
+      "date": "2026-03-13T12:00:00.000Z",
+      "summary": "Hype around the open source agent is driving people to rent cloud servers and buy AI subscriptions just to try it, creating a windfall for tech companies.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Mistral AI Releases Forge",
+      "url": "https://mistral.ai/news/forge",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.79,
+      "date": "2026-03-17T21:04:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Horizon – GPU-accelerated infinite-canvas terminal in Rust",
+      "url": "https://github.com/peters/horizon",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-03-17T18:14:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Chrome extension adjusts video speed based on how fast the speaker is talking",
+      "url": "https://github.com/ywong137/speech-speed",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-03-13T06:18:17.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Retraction: After a routine code rejection, an AI agent published a hit piece on someone by name",
+      "url": "https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-02-13T19:40:21.000Z",
+      "summary": "This story has been retracted",
+      "category": "tech_general"
+    },
+    {
+      "title": "Node.js needs a virtual file system",
+      "url": "https://blog.platformatic.dev/why-nodejs-needs-a-virtual-file-system",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-17T14:28:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Kagi Translate now supports LinkedIn Speak as an output language",
+      "url": "https://translate.kagi.com/?from=en&to=LinkedIn+speak",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-17T04:39:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Reverse-engineering Viktor and making it Open Source",
+      "url": "https://matijacniacki.com/blog/openviktor",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-03-17T08:15:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Building a Shell",
+      "url": "https://healeycodes.com/building-a-shell",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-17T09:52:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Droeftoeter, a Terminal Coding Toy",
+      "url": "https://github.com/whtspc/droeftoeter",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-13T04:16:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

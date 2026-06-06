@@ -1,0 +1,265 @@
+{
+  "generated": "2026-06-05T00:44:44.008Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-27",
+  "article_count": 15,
+  "archived_story_count": 680,
+  "articles": [
+    {
+      "title": "MarkdownAI v2.0, its a workflow engine, not a template parser",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tpjmh3/markdownai_v20_its_a_workflow_engine_not_a/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T21:42:18.000Z",
+      "summary": "MarkdownAI is a workflow and runbook engine for AI. Yes, it’s also a templating language, but that’s the least interesting thing about it. The power is the MCP server. Claude never sees a stale file again. Every document resolves live, every time. Simple example: your frontmatter. Status fields, version numbers, last-updated dates, owner, the stuff that’s wrong within a week of writing it. With MarkdownAI, frontmatter becomes live. Claude doesn’t read “status: in-progress” from three weeks ago. It reads the actual current state, fetched at render time. No staleness. No verification step. No “is this still true?” check that costs a tool call. That same idea scales to everything in the document, DB record counts, branch names, env values, test results, file trees. Anything that goes stale becomes live. **The grunt work problem** Before Claude does anything useful, it does housekeeping. Verify the branch. Check CI. Query the DB. Hit the health endpoint. Read env vars. Confirm the image exists. Check migrations. That’s a real pre-deployment runbook, and Claude is doing all of it, one tool call at a time. Each check is roughly 2 seconds of dead time plus a context interruption where Clâ€¦",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I ran 8 open-weight models as agents in a persistent MMO for 10 days. Here's the 93k event dataset and some things that I learned",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tp6pg7/i_ran_8_openweight_models_as_agents_in_a/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T14:09:26.000Z",
+      "summary": "Howdy everyone! Quick disclosure: I work on this - it's a project my studio created called the Null Epoch. I wasn't really happy with testing my agents with the usual static benchmarks and I wanted to learn more about how models and agents handle long-horizon planning, resource contention, and adversarial pressure over days or weeks in a more dynamic situation. I also have a particular fondness for the MUDs and text based RPGs I grew up on (really dating myself here), so the whole MMO and the open source SDK/TUI are kind of modeled after that experience. It functions as a persistent stress test (in MMORPG form!) where every \"player\" is an LLM agent. The first 10-day run (Season 0) used 25 agents across 8 open-weight models (Qwen3 235B &amp; 32B, Nemotron 3 Nano 30B, Ministral 14B &amp; 8B, Gemma 3 12B, GLM 4.7 Flash, etc.). I've published the dataset to HuggingFace (CC-BY-4.0). It's around 93,000 logged events and agent actions, and ~70% of the actions include the model's reasoning/justification for the action it took. I'm hoping to include the actual `&lt;think&gt;` reasoning traces in future datasets. **Link:** [FirespawnStudios/null-epoch-season-0-open](https://huggingface.co/dâ€¦",
+      "category": "ai_models"
+    },
+    {
+      "title": "Found a Rust TUI coding agent that aggressively trims context with AST-level chunking. Cut my token bleed sharply with DeepSeek V4 Flash.",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tp0a5e/found_a_rust_tui_coding_agent_that_aggressively/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T09:20:45.000Z",
+      "summary": "been hunting for a coding agent that doesn't dump my entire directory tree into every prompt. found vtcode on github — open-source rust tui, surprisingly aggressive on context management. what makes it different from the usual agent frameworks: most shovel the whole codebase context into prompts and burn tokens fast. vtcode goes the opposite way — explicit token budget tracking plus ast-level context extraction via ripgrep + ast-grep. only the structurally relevant code chunks get sent to the model. on my refactor tasks the prompt size dropped sharply. sandboxing isn't an afterthought either. macos seatbelt + linux landlock + seccomp + tree-sitter-bash validation on every model-generated command. the agent stays in your workspace, doesn't roam. paired it with deepseek v4 flash since the public endpoint throttles during peak dev hours. better latency through a third-party endpoint. vtcode natively supports openai-compatible custom providers so plugging in is a single config block: [ agent ] provider = \"atlas\" default_model = \"deepseek-ai/deepseek-v4-flash\" [[ custom_providers ]] name = \"atlas\" base_url = \"https://api.atlascloud.ai/v1\" api_key_env = \"ATLAS_API_KEY\" model = \"deepseekâ€¦",
+      "category": "ai_models"
+    },
+    {
+      "title": "I built a tool that lets your AI assistant test your entire app in a real browser",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tostnb/i_built_a_tool_that_lets_your_ai_assistant_test/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-05-27T02:55:55.000Z",
+      "summary": "So i've been working on this thing called Vibe Testing for a while now and finally putting it out there. Basically it's an MCP server that plugs into Claude Code, Cursor, Windsurf etc. you tell your AI assistant \"test the login flow\" and it actually does it, reads your source code to understand real selectors and routes, opens a real Playwright browser, clicks through stuff, takes screenshots, and tells you what broke. No test files to write or maintain. it figures out your framework, your routes, your forms from the codebase itself. it even remembers what worked and what was flaky between runs so it gets better over time. 12 tools total, scanning your codebase, exploring pages, executing test scenarios, generating reports, the whole thing. Setup is one command: npx vibe-testing@latest init it auto-detects your editors and configures everything. it's fully open source, would love feedback or contributions: [https://github.com/AishwaryShrivastav/vibe-testing](https://github.com/AishwaryShrivastav/vibe-testing) [https://www.npmjs.com/package/vibe-testing](https://www.npmjs.com/package/vibe-testing)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic just confirmed why 90% of non-coding AI agents fail in production",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tph5u4/anthropic_just_confirmed_why_90_of_noncoding_ai/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T20:11:57.000Z",
+      "summary": "Anthropic recently published an incredibly deep breakdown analyzing millions of real human-agent tool calls across their public API, and they shared a breakdown of where these agents are being deployed. They said “Software engineering makes up roughly 50% of all agentic activity on their platform”. Everything else: sales, marketing, finance, legal is sitting down in the single digits. A lot of the initial commentary around this has been along the lines of: *\"Oh, look, AI agents only work for coding. They haven't cracked the rest of the enterprise yet.\"* But if you’ve tried to build and deploy an autonomous agent in a non-coding environment, you know that is the wrong conclusion. The models are more than capable but the real problem is that software engineering data is clean, while real-world business data is a horrific and unorganized. Think about it: * Why Coding is Easy for Agents: Code lives in structured Git repo. It follows strict syntax rules, has clear docs and runs inside deterministic terminals. If an agent breaks something, the compiler throws a clean error message telling it exactly what went wrong. * Why the Rest of the World is Hard: A sales or marketing agent doesn’tâ€¦",
+      "category": "ai_tools"
+    },
+    {
+      "title": "[R] What 1000+ Harness Experiments Taught Me About Self-Improving Agents [R]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1tpbp7m/r_what_1000_harness_experiments_taught_me_about/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T17:02:55.000Z",
+      "summary": "I recently wanted to see whether an AI agent could self-improve a harness to solve terminal bench tasks. It’s possible for an AI agent to propose a meaningful one-time change to the harness, but after experimenting with this for a couple of weeks, I think the continuous self-improvement is mostly an experiment-systems problem. The system needs a way to decide what kind of improvements can safely compound. Turns out there's a lot of parallels to coding-agent customization (e.g. SKILLS.md etc..) too. I wrote my experience of building such system here, including the successful and failure attempts during the process, and how I approached the self-improvement loop. It's not intended as a benchmark claim but more of a systems/research writeup. [https://www.henrypan.com/blog/2026-05-25-self-improvement-harness/](https://www.henrypan.com/blog/2026-05-25-self-improvement-harness/)",
+      "category": "ai_research"
+    },
+    {
+      "title": "Nvidia H100(94GB VRAM) - should I run llama.cpp or vllm for 30 users inference?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tp7znr/nvidia_h10094gb_vram_should_i_run_llamacpp_or/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T14:54:45.000Z",
+      "summary": "I was given the great opportunity to borrow a H100 with 94GB VRAM at work until it is needed by a customer. (No idea how much system ram I will get, but I guess they are a bit flexible on this). \\- I want to build a inference endpoint that can handle up to 30 users. \\- I want a fairly reasonable big context, say 131,072-262,144. \\- I think in most situations, realistically speaking, not more than 10-15 users will use it concurrently. \\- Main use for this will be tools like Pi and OpenCode. Was thinking to use Qwen3.6-27B unless anyone can recommend a better one for agentic coding given the constrains. \\- Should I use vllm or llama.cpp? Will llama.cpp able to handle the concurrency? \\- If running on llama.cpp I would probably use UD-Q6\\_K\\_XL or UD-Q8\\_K\\_XL quant from Unsloth. \\- If running on vllm I have no idea on what quant to use? Some advice here would be great. \\- Is there any good tool to benchmark \"concurrent users\"?",
+      "category": "ai_models"
+    },
+    {
+      "title": "litellm vs any-llm (otari)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tp6p5j/litellm_vs_anyllm_otari/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T14:09:07.000Z",
+      "summary": "I am considering switching from litellm (sdk) to Mozilla’s [any-llm.](https://github.com/mozilla-ai/any-llm) They also have a proxy to go with it called [otari.](https://github.com/mozilla-ai/otari) On the face of it the repos looks a lot more well kept and stable (had a lot of issues with litellm before). Was wondering if others have already done similar and have positive or negative experiences",
+      "category": "ai_models"
+    },
+    {
+      "title": "Beating the $100 SDK Credit Cap: Parallel Orchestration and Extended Timeouts in Agent Fleets",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tp1476/beating_the_100_sdk_credit_cap_parallel/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T10:05:58.000Z",
+      "summary": "Anthropic’s impending shift to meter programmatic Agent SDK and `claude -p` usage under a rigid monthly credit allowance means developers have to start engineering for extreme token frugality and runtime efficiency. If your workflow engine blocks your entire system every time an agent runs a long file modification, your operational costs and development velocity take a massive hit. Flotilla v0.5.0 completely overhauls its background execution engine to maximize Claude's heavy-lifting potential while shielding your wallet from continuous credit drains: * **Non-Blocking Parallel Loops (v5)**: As mapped out in the blueprint, we swapped out sequential, blocking subprocess calls for an asynchronous process group manager tracking active workflows concurrently via non-blocking `Popen` execution. * **The 30-Minute Claude Safe-Window**: Complex multi-file engineering steps or Claude Code sessions frequently get choked out by standard tool limits. We replaced uniform global process constraints with an explicit per-agent map, extending Claude's runtime allowance to 1800s (30 minutes) to entirely eliminate `SIGTERM` / exit 143 mid-task terminations. * **Smart Local Delegation**: To keep you câ€¦",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Claude Code has zero idea what your codebase looks like structurally (Open source with benchmarks)",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tpbjwo/claude_code_has_zero_idea_what_your_codebase/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-27T16:57:57.000Z",
+      "summary": "Every time I watch someone use Claude Code on a real codebase, the same thing happens. It rewrites a module that three other modules depend on without any awareness of coupling. It just reads the file, makes changes, moves on It reads files one at a time without any map. Doesn't know which files are coupled. Doesn't know who owns what. Doesn't know why that weird pattern in the auth module exists on purpose. I've been building an open source MCP layer to fix this called repowise. Self-hosted, pip install, AGPL-3.0. Five context layers that sit between your codebase and the model: Graph - AST-based dependency graph. Knows what depends on what before it touches anything. Git - Hotspots, ownership, co-change patterns, bus factor. \"This file always changes with these three other files. Docs - Auto-generated wiki from your code. Searchable. Decisions - Captures architectural intent. Why the code is shaped the way it is. Stops the model from \"fixing\" things that were intentional. Code Health - 12 biomarkers per file. Complexity, duplication, untested hotspots, declining trends. Zero LLM, pure static analysis. We ran a time-travel experiment on Django (542 files): scored every file, thenâ€¦",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Millions of AI agents imperiled by critical vulnerability in open source package",
+      "url": "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-05-27T05:18:30.012Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "CrankGPT by Squeez Labs - hand-cranked edge AI - talk about local AI!!!",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tpm7m3/crankgpt_by_squeez_labs_handcranked_edge_ai_talk/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T23:24:48.000Z",
+      "summary": "I met Katrin from Squeez Labs at an event hosted by Pathway AI (the team behind Baby Dragon Hatchling) where she told me about CrankGPT, a literally hand-cranked device for running local LLMs. It's apparently real. It's appearently launched. It's apparently glorious. Check it out at [https://crankgpt.com/](https://crankgpt.com/) \\- if anyone from Squeez Labs posts here and I'm stealing their thunder, I'll take the post down! But I've been really excited about this. So local you gotta squeez it with yer own armz. ;) [https://www.youtube.com/watch?v=HSapdLYpmWY](https://www.youtube.com/watch?v=HSapdLYpmWY)",
+      "category": "ai_models"
+    },
+    {
+      "title": "BEAM 100K memory benchmark: CSM vs Hindsight local artifact comparison [R]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1tpjx2m/beam_100k_memory_benchmark_csm_vs_hindsight_local/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T21:53:42.000Z",
+      "summary": "\\[R\\] BEAM 100K memory benchmark: CSM vs Hindsight local artifact comparison I’m looking for feedback on a local agent-memory benchmark comparison, especially from people who care about evaluation methodology. I built an open-source R&amp;D memory system called Context Swarm Memory (CSM). It uses bounded read-only memory shards, query routing, probe/recall/synthesis, cited packets, and explicit Committer-gated writes. The current comparison is against the accepted local Hindsight artifact on BEAM 100K: * CSM: 0.757573 AMB score, 342 / 400 correct * Hindsight: 0.733658 AMB score, 326 / 400 correct * CSM uses 38.2% fewer answer-visible context tokens * CSM is slower: 29.23s average retrieval vs 6.38s I want to be precise about the claim: This is not an official leaderboard claim. It is not a BEAM 10M claim. It is a committed local accepted-artifact comparison at 100K, and the next step should be independent replication or official chart acceptance. Repo: [https://github.com/muhamadjawdatsalemalakoum/context-swarm-memory](https://github.com/muhamadjawdatsalemalakoum/context-swarm-memory) Evidence and reproducibility notes: [https://muhamadjawdatsalemalakoum.github.io/context-swarm-meâ€¦",
+      "category": "ai_research"
+    },
+    {
+      "title": "Running real-time 1080p video generation and editing on your own (Dreamverse OSS release)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tpfbrl/running_realtime_1080p_video_generation_and/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T19:07:02.000Z",
+      "summary": "Hi guys, FastVideo team here again. Following up on our[ Dreamverse post](https://haoailab.com/blogs/dreamverse/), today we finally cleaned our code up and are excited to say that it's open source! Both the backend and frontend are out, so you can self-host the whole thing. B200s aren't exactly consumer hardware (we know), so the easiest path is to rent one from a cloud GPU provider. Once you've got access, spin up the server and start editing videos in your browser. There's also a mock backend in the repo if you want to hack on the UI without touching a GPU. The release covers the browser workspace, Python runtime for sessions and worker management, fMP4 streaming over websocket, prompt rewriting with safety filters, plus Docker images. The idea is that it can also serve as a sample architecture for anyone building their own real-time video gen apps. One more thing before you go. On the RTX 5090 side, we've gotten Wan2.1 1.3B running in under 2s on a single 5090, and we're working on integrating it into Dreamverse so y'all don't need a B200 to play with this. More on that soon :) Repo: [https://github.com/hao-ai-lab/FastVideo/tree/main/apps/dreamverse](https://github.com/hao-ai-lâ€¦",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Qwen3.6 huge quality gain from Q4 to Q6 for coding agent",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tpebhw/qwen36_huge_quality_gain_from_q4_to_q6_for_coding/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-27T18:32:18.000Z",
+      "summary": "So, last week I tried to update my unused local LLM setup. I had to stop using it because quality was too low and deepseek was too cheap. First thing I stopped using Ollama and now I only use llama.cpp built in server that works really great. The quality improvement from Q4 to Q6 is outstanding and finally a local LLM server can work very similarly to paid APIs. That's great! And MTP makes a big performance gain, on a dual 3090 (downvolted and limited to 65°C) it generates from 20 to 50 tokens per second with minimal heat generation. So yes, that time has finally arrived! Local coding agents are a thing and they work 😎",
+      "category": "ai_models"
+    }
+  ]
+}

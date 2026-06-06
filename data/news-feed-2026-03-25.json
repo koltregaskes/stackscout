@@ -1,0 +1,115 @@
+{
+  "generated": "2026-06-05T00:44:30.352Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-25",
+  "article_count": 7,
+  "archived_story_count": 95,
+  "articles": [
+    {
+      "title": "Google launches Lyria 3 Pro music generation model",
+      "url": "https://techcrunch.com/2026/03/25/google-launches-lyria-3-pro-music-generation-model/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-25T16:37:43.000Z",
+      "summary": "Google is launching Lyria 3 Pro, an upgraded music model that generates longer, more customizable tracks, as it expands AI music tools across Gemini, enterprise products, and other services.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta launches new initiative to support entrepreneurship, drive AI adoption",
+      "url": "https://techcrunch.com/2026/03/25/meta-launches-new-initiative-to-support-entrepreneurship-drive-ai-adoption/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-25T14:45:20.000Z",
+      "summary": "Meta CEO Mark Zuckerberg said in a memo to staff that small businesses have always been a big part of the company's business model, and that while tens of millions of entrepreneurs already use its platforms to grow and connect with customers, the company wants to do more in the space.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google unveils TurboQuant, a new AI memory compression algorithm — and yes, the internet is calling it &#8216;Pied Piper&#8217;",
+      "url": "https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.77,
+      "date": "2026-03-25T20:38:45.000Z",
+      "summary": "Google’s TurboQuant has the internet joking about Pied Piper from HBO's \"Silicon Valley.\" The compression algorithm promises to shrink AI’s “working memory” by up to 6x, but it’s still just a lab experiment for now.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Building a coding agent in Swift from scratch",
+      "url": "https://github.com/ivan-magda/swift-claude-code",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-25T10:45:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: DuckDB community extension for prefiltered HNSW using ACORN-1",
+      "url": "https://github.com/cigrainger/duckdb-hnsw-acorn",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-25T03:28:04.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Rendering complex scripts in terminal and OSC 66",
+      "url": "https://thottingal.in/blog/2026/03/22/complex-scripts-in-terminal/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-22T09:31:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open source isn't a tip jar – it's time to charge for access",
+      "url": "https://www.theregister.com/2026/03/25/open_source_bill_opinion/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-03-25T11:59:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

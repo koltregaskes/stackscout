@@ -1,0 +1,263 @@
+{
+  "generated": "2026-06-05T00:44:32.736Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-06",
+  "article_count": 15,
+  "archived_story_count": 651,
+  "articles": [
+    {
+      "title": "RightNow AI Releases AutoKernel: An Open-Source Framework that Applies an Autonomous Agent Loop to GPU Kernel Optimization for Arbitrary PyTorch Models",
+      "url": "https://www.marktechpost.com/2026/04/06/rightnow-ai-releases-autokernel-an-open-source-framework-that-applies-an-autonomous-agent-loop-to-gpu-kernel-optimization-for-arbitrary-pytorch-models/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T18:01:49.121Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "[P] Easily provide Wandb logs as context to agents for analysis and planning.",
+      "url": "https://reddit.com/r/MachineLearning/comments/1se1rmd/p_easily_provide_wandb_logs_as_context_to_agents/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T15:16:50.000Z",
+      "summary": "It is frustrating to use the Wandb CLI and MCP tools with my agents. For one, the MCP tool basically floods the context window and frequently errors out :/\n\nSo I built a cli tool that:\n\n* imports my wandb projects;\n* uses algorithms from [AlphaEvolve](https://arxiv.org/abs/2506.13131) to index and structure my runs;\n* is easy to use for agents;\n* provides greater context of past experiments;\n* does not flood the context window; and\n* easily tune exploration-exploitation while planning\n\nWould lov",
+      "category": "ai_research"
+    },
+    {
+      "title": "Gemma4:26b's reasoning capabilities are crazy.",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sdz71b/gemma426bs_reasoning_capabilities_are_crazy/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T13:41:08.000Z",
+      "summary": "Been experimenting with it, first on my buddy's compute he let me borrow, and then with the Gemini SDK so that I don't need to keep stealing his macbook from 600 miles away. Originally my home agent was run through Gemini-3-Flash because no other model I've tried has been able to match it's reasoning ability.\n\nThe script(s) I have it running through are a re-implementation of a multi-speaker smart home speaker setup, with several rasperry pi zeroes functioning as speaker satellites for a central",
+      "category": "ai_models"
+    },
+    {
+      "title": "[D] Why do we keep pretending that AI agent continuity is a prompt engineering problem?",
+      "url": "https://reddit.com/r/MachineLearning/comments/1sdwqn5/d_why_do_we_keep_pretending_that_ai_agent/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T11:55:38.000Z",
+      "summary": "Every few months someone posts about \"long-term memory for LLMs\" and the thread fills with retrieval strategies, vector databases, and context window tricks. Good engineering. Wrong level of abstraction.\n\nThe continuity problem for deployed AI agents is not a retrieval problem. It is an infrastructure problem.\n\nHere is the distinction:\n\n**Retrieval-level continuity:** The agent can surface relevant context from past interactions. This is solved well enough with embedding search, hierarchical sum",
+      "category": "ai_research"
+    },
+    {
+      "title": "Claude Code can now submit your app to App Store Connect and help you pass review",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sdot1s/claude_code_can_now_submit_your_app_to_app_store/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T04:22:25.000Z",
+      "summary": "I built a native macOS app called Blitz that gives Claude Code (or any MCP client) full control over App Store Connect. Built most of it with Claude Code.\n\nThe problem was simple: every time I needed to submit to ASC, the entire agentic workflow broke. Metadata, screenshots, builds, localization, review notes... all meant leaving the terminal and fighting Apple's web UI. So I built MCP servers that let Claude Code handle the whole thing.\n\nWhat Claude Code can do through Blitz:\n\n* Create and edit",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Apex Protocol – An open MCP-based standard for AI agent trading",
+      "url": "https://apexstandard.org/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T00:50:32.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "I built CLI-Anything-WEB — a Claude Code plugin that generates complete Python CLIs for any website (17 CLIs so far: Amazon, Airbnb, TripAdvisor, Reddit, YouTube...)",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sde44i/i_built_clianythingweb_a_claude_code_plugin_that/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.94,
+      "date": "2026-04-05T20:26:58.000Z",
+      "summary": "Point it at a URL, Claude Code captures the live HTTP traffic, and generates a production-grade Python CLI with commands, tests, REPL mode, and `--json` output — fully automated across 4 phases.\n\n## How it works\n\n- **Phase 1 (capture)**: Records live browser traffic via playwright-cli\n- **Phase 2 (methodology)**: Analyzes endpoints, designs architecture, generates CLI code\n- **Phase 3 (testing)**: Writes unit + E2E tests (40–60+ per CLI, all passing)\n- **Phase 4 (standards)**: 3 parallel Claude ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I spent 3 months evolving SmartGallery into a free professional Local First DAM. v2.11 launches on April 9th",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1se8sfd/i_spent_3_months_evolving_smartgallery_into_a/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-06T19:25:53.000Z",
+      "summary": "https://preview.redd.it/btvzkruzemtg1.png?width=1899&amp;format=png&amp;auto=webp&amp;s=3891b8f2a7df98942a0643eb649e623f817211ae\n\n**Hi everyone!**\n\nMany of you know SmartGallery as a standalone gallery for ComfyUI. For the last 3 months, I have been working to turn it into a complete Digital Asset Manager (DAM) for AI creators.\n\n* I just launched the new website with the full documentation and feature list of the upcoming v2.11: [**https://smartgallerydam.com**](https://smartgallerydam.com)\n* **",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Mercury – Free MCP proxy that cuts non-English token costs by 28-64%",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sduozd/mercury_free_mcp_proxy_that_cuts_nonenglish_token/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 0.86,
+      "date": "2026-04-06T10:08:59.000Z",
+      "summary": "I noticed that when using Claude with Japanese MCP servers, I was burning through tokens surprisingly fast. \n\nThe culprit: LLMs use English-centric BPE tokenizers, so non-English text consumes 2-4x more tokens per word than equivalent English.\n\n\n\nThe fix seemed obvious — translate MCP responses to English before they reach the LLM. So I built Mercury, a transparent proxy that sits between any MCP server and your LLM client. It uses Google Translate (free, no API key needed) by default, so transl",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meet &#8216;AutoAgent&#8217;: The Open-Source Library That Lets an AI Engineer and Optimize Its Own Agent Harness Overnight",
+      "url": "https://www.marktechpost.com/2026/04/05/meet-autoagent-the-open-source-library-that-lets-an-ai-engineer-and-optimize-its-own-agent-harness-overnight/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.82,
+      "date": "2026-04-06T06:00:24.237Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "I built a macOS widget to track Claude usage limits in real-time",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sd923u/i_built_a_macos_widget_to_track_claude_usage/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-05T17:09:05.000Z",
+      "summary": "Hey everyone! I built a free, open-source macOS desktop widget that shows your Claude usage limits at a glance — no more guessing when your rate limit resets. What it does:\n\n* Displays both the 5-hour session and 7-day weekly usage windows with progress bars\n* Shows countdown timers for when each window resets\n* Color-coded indicators — green → yellow → orange → red as you approach the limit\n* Auto-refreshes every 5 minutes\n* Comes in small, medium, and large widget sizes Quick demo: It sits rig",
+      "category": "ai_tools"
+    },
+    {
+      "title": "After months with Claude Code, the biggest time sink isn't bugs — it's silent fake success",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sdmohb/after_months_with_claude_code_the_biggest_time/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.54,
+      "date": "2026-04-06T02:38:02.000Z",
+      "summary": "I've been using Claude Code daily for months and there's a pattern that has cost me more debugging time than actual bugs: the agent making things *look* like they work when they don't.\n\nHere's what happens. You ask it to build something that fetches data from an API. It writes the code, you run it, data appears on screen. Looks correct. You move on.\n\nThree days later you discover the API integration was broken from the start. The agent couldn't get auth working, so it quietly inserted a try/catc",
+      "category": "ai_tools"
+    },
+    {
+      "title": "[llama.cpp] 3.1x Q8_0 speedup on Intel Arc GPUs - reorder optimization fix (PR submitted)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1se9d9x/llamacpp_31x_q8_0_speedup_on_intel_arc_gpus/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T19:46:13.000Z",
+      "summary": "***TL;DR***: Q8\\_0 quantization on Intel Xe2 (Battlemage/Arc B-series) GPUs was achieving only 21% of theoretical memory bandwidth. My AI Agent and I found the root cause and submitted a fix that brings it to 66% - a 3.1x speedup in token generation.\n\n**The problem**:\n\nOn Intel Arc Pro B70, Q8\\_0 models ran at 4.88 t/s while Q4\\_K\\_M ran at 20.56 t/s; a 4x gap that shouldn't exist since Q8\\_0 only has 1.7x more data. After ruling out VRAM pressure, drivers, and backend issues, we traced it to th",
+      "category": "ai_models"
+    },
+    {
+      "title": "llama.cpp - llama-bench: add `-fitc` and `-fitt` to arguments",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1se8ezw/llamacpp_llamabench_add_fitc_and_fitt_to_arguments/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T19:13:30.000Z",
+      "summary": "Was expecting this for sometime. This is available [b8679](https://github.com/ggml-org/llama.cpp/releases/tag/b8679) onwards.",
+      "category": "ai_models"
+    },
+    {
+      "title": "I benchmarked 37 LLMs on MacBook Air M5 32GB — full results + open-source tool to benchmark your own Mac",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1se81a5/i_benchmarked_37_llms_on_macbook_air_m5_32gb_full/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-06T19:00:28.000Z",
+      "summary": "So I got curious about how fast different models actually run on my M5 Air (32GB, 10 CPU/10 GPU). Instead of just testing one or two, I went through 37 models across 10 different families and recorded everything using llama-bench with Q4\\_K\\_M quantization.\n\nThe goal: build a **community benchmark database** covering every Apple Silicon chip (M1 through M5, base/Pro/Max/Ultra) so anyone can look up performance for their exact hardware.\n\n# The Results (M5 32GB, Q4_K_M, llama-bench)\n\n# Top 15 by G",
+      "category": "ai_models"
+    }
+  ]
+}

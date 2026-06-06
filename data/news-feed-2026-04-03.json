@@ -1,0 +1,119 @@
+{
+  "generated": "2026-06-05T00:44:32.201Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-03",
+  "article_count": 7,
+  "archived_story_count": 351,
+  "articles": [
+    {
+      "title": "Arcee AI Releases Trinity Large Thinking: An Apache 2.0 Open Reasoning Model for Long-Horizon Agents and Tool Use",
+      "url": "https://www.marktechpost.com/2026/04/02/arcee-ai-releases-trinity-large-thinking-an-apache-2-0-open-reasoning-model-for-long-horizon-agents-and-tool-use/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-03T06:00:57.447Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "TII Releases Falcon Perception: A 0.6B-Parameter Early-Fusion Transformer for Open-Vocabulary Grounding and Segmentation from Natural Language Prompts",
+      "url": "https://www.marktechpost.com/2026/04/03/tii-releases-falcon-perception-a-0-6b-parameter-early-fusion-transformer-for-open-vocabulary-grounding-and-segmentation-from-natural-language-prompts/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-03T14:05:05.318Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "New ways to balance cost and reliability in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
+      "source": "Google AI Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.94,
+      "date": "2026-04-03T06:00:46.321Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "C89cc.sh – standalone C89/ELF64 compiler in pure portable shell",
+      "url": "https://gist.github.com/alganet/2b89c4368f8d23d033961d8a3deb5c19",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-04-01T08:41:49.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Your Agent Has 12 Blind Spots You Can't See Yet. This Audit Prompt Finds Them. (+ Skill Package)",
+      "url": "https://natesnewsletter.substack.com/p/your-agent-has-12-blind-spots-you",
+      "source": "Nate's Newsletter",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-04-03T14:05:06.150Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Vids extension",
+      "url": "https://chromewebstore.google.com/detail/google-vids-screen-record/iklnnbgdcppplombffihcijanngoeifm",
+      "source": "The Verge AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-04-03T06:01:01.783Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Post Mortem: axios NPM supply chain compromise",
+      "url": "https://github.com/axios/axios/issues/10636",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-04-03T00:00:19.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    }
+  ]
+}

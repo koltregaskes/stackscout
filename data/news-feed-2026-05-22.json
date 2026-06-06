@@ -1,0 +1,257 @@
+{
+  "generated": "2026-06-05T00:44:42.334Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-22",
+  "article_count": 15,
+  "archived_story_count": 512,
+  "articles": [
+    {
+      "title": "New Release of ROCm based MLX LLM Engine - lemon-mlx-engine",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tkbupt/new_release_of_rocm_based_mlx_llm_engine/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T07:38:05.000Z",
+      "summary": "Hey everyone lemon-mlx-engine just got done integrating TheRock / ROCm 7.13 into the lemon-mlx-engine which means you get to try the latest ROCm on your local hardware with the MLX engine! This also includes various bug fixes and kernel fixes we have been seeing in Qwen3, 3.5 and 3.6 MoE and dense. try it out! [https://github.com/lemonade-sdk/lemon-mlx-engine/releases/tag/b1034-stable](https://github.com/lemonade-sdk/lemon-mlx-engine/releases/tag/b1034-stable)",
+      "category": "ai_models"
+    },
+    {
+      "title": "Claude Chrome extension nerfed?",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tk5g5y/claude_chrome_extension_nerfed/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-05-22T02:18:47.000Z",
+      "summary": "Past few weeks or so the Claude Chrome extension has been asking permission for every single action. Submit a form, check a permission box, navigate to other pages/domains, etc. Tasks that used to run end-to-end now stall on 5–10 prompts and frequently abort with \"I can't proceed without explicit approval.\" Even with permissions pre-granted for the site, it re-asks on every step. Swearing and yelling to make it do stuff helps a little, but it still seems nearly useless right now. Same behavior across simple jobs (scrape a table, fill a form, summarize a dashboard) and complex ones. Before I could just tell it to get me warranty or something and it would find the chat, chat with support and take care of everything for me. Now it won't open the chat itself and it wants me to notify it of every chat message that's received... it's faster to do it myself like this. Same experience on your end, or isolated? Any setting or flag that restores the previous autonomy level? Did Anthropic push a policy/guardrail change recently? Can't find a changelog entry. Workarounds beyond falling back to the desktop app or computer-use? Running latest extension build, Chrome stable, macOS.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "KVCache.ai launches open-source web-based KV Cache Size Calculator for models including DeepSeek V4 Flash, Qwen3, GLM, Kimi, and MiniMax — DeepSeek V4 Flash at 1M tokens needs 2.893 GiB total cache.",
+      "url": "https://www.digg.com/ai/yuusdejg?rank=6",
+      "source": "Digg AI",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T18:00:11.717Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Phosphene 3.0 — open source AI video + image suite for Apple Silicon. Train your own LTX characters.",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tkh9c2/phosphene_30_open_source_ai_video_image_suite_for/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T12:17:25.000Z",
+      "summary": "Sharing Phosphene 3.0. It's a free panel that runs LTX-Video 2.3 and a couple of image models natively on Apple Silicon. Local, MIT license, no subs, no cloud. The thing that sets it apart from \"yet another LTX wrapper\": you can \\*\\***train your own characters**\\*\\* inside the panel. Drop 30 to 80 photos, click Train, get a face LoRA back. Add a voice clip and you get a voice LoRA too. Auto-captions with Gemma 3 12B locally. \\~3 hours per character on an M4 Max 64 GB. \\*\\***What 3.0 ships**\\*\\* \\- Text → video+audio (LTX-2 generates joint audio+video in one pass) \\- Image → video+audio \\- Audio → video (drive a clip with an audio reference) \\- FFLF (first frame + last frame interpolation) \\- Extend (continue an existing clip) \\- Character training (face + optional voice LoRA, from a single dataset) \\- Image Studio with three engines: Qwen-Image-Edit-2511, HiDream-O1, and the FLUX.1 family. Multi-reference composition up to 3 subjects. \\*\\***HiDream-O1 ported to MLX**\\*\\* HiDream released their O1 image model on May 14. Got it running natively on Apple Silicon five days later. Photoreal portraits, instruction edits, multi-subject. \\~67 seconds per 1024² on a 64 GB Mac. \\*\\***Hardwa…",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Sam Altman makes 'mic drop' offer to every Y Combinator startup",
+      "url": "https://reddit.com/r/ChatGPT/comments/1tkffxq/sam_altman_makes_mic_drop_offer_to_every_y/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T10:53:26.000Z",
+      "summary": "just read this on techcrunch. OpenAI is putting $2M worth of API tokens into every company in the current YC batch (\\~169 startups) via an uncapped SAFE that converts at their next priced round. roughly 2% equity if they hit a $100M valuation. YC takes 7% for $500k cash. this is on top of that, so founders aren't choosing between them. but the dynamic is wild. on one hand, infra bills are the #1 silent killer of AI startups right now. solving that with tokens instead of cash is genuinely useful. on the other hand, Jason Calacanis already came out swinging, basically saying OpenAI now has a window into 169 startups' exact usage patterns, prompts, and product directions. nothing stopping them from rolling the best ideas into ChatGPT itself a year later. we've already seen this movie with the GPT store. also there's the lock in. once your stack is OpenAI native and you've burned the tokens, switching to anthropic or open source models becomes way harder. you're basically buying into the ecosystem with your equity, not just your code. curious what people here think. would you take the deal if you were in YC right now? feels like one of those things that looks like free money but costs…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Which MCP servers are actually changing your Claude workflow? Sharing mine",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tkec4e/which_mcp_servers_are_actually_changing_your/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T09:57:17.000Z",
+      "summary": "Running Claude with MCP for a couple months now, it really does feel like a whole new product. The ability to run real tools (file system, API, database, etc.) connected to Claude, and never have to cut/paste from context again, is huge. I'm trying a bunch of servers, some are pretty good and some aren't. My current normal is: filesystem server for docs on my computer; GitHub server for PR context; and a handful of other domain specific ones I found. The one thing I keep thinking about is how much better Claude's output gets when you give it the proper context. It seems like less hallucinating, more on point answers. MCP is essentially an answer to \"How do I provide Claude with enough information to help me without having to always watch the context box?\" What are people running? Specifically looking for underrated or domain specific things that don't come up as often.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gmail tie-ins",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tk5of4/gmail_tieins/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T02:29:08.000Z",
+      "summary": "hey folks. I’m looking to setup a way to give a local LLM access to google cloud SDK for Gmail functions. The goal is to be able to have an LLM once daily check a spreadsheet, and based on criteria send an email that will be structured exactly the same way each time, simply as a notification to the client. I have set up GWS through Hermes agent using Gwen3.5 and gone through the whole Oauth 2.0 method. That’s as far as I got tonight before shutting everything down. It gave me some error message in the setup after auth confirmation that I’ll circle back to tomorrow. I’m fairly new to all this obviously. I believe I will need: an excel file that the LLM with access, a .md file listing customer names and emails, and a skill .md file explaining what the email format is and how to decide who to send the email(s) to based on the excel file. I’ve never made a skill before but I’ll do more research on that tomorrow. Am I on the right track here or way off base? Thanks for any input or assistance here.",
+      "category": "ai_models"
+    },
+    {
+      "title": "Gergely Neu, an ML researcher at ICREA and Universitat Pompeu Fabra, introduces Value-Driven Transport, a generative modeling framework that integrates optimal control, reinforcement learning, optimal transport, and stochastic primal-dual optimization — Framework evolves samples across five stages via learned value functions.",
+      "url": "https://www.digg.com/ai/hpkmhl2b?rank=7",
+      "source": "Digg AI",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.94,
+      "date": "2026-05-22T18:00:11.719Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a music notation app with Claude, and Claude is also a feature inside it",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tkp3p4/i_built_a_music_notation_app_with_claude_and/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-22T17:05:02.000Z",
+      "summary": "I've been building Nubium, an open-source music notation editor, with Claude Code. Check out the [README](https://github.com/nth-chile/nubium) to see how I combined Github issues + Claude skills to find a workflow that worked for me. The app is document-driven, which makes it easy for its AI Chat plugin to use the app and edit the score for you. Aside from that, it's a fully-featured editor that's free, runs standalone or in browser, and requires no account. If you happen to be looking for a new notation editor, I'd love any feedback - I made it easy to send feedback in-app. Lmk what you think! Website: [https://nubium.rocks/](https://nubium.rocks/) Repo: [github.com/nth-chile/nubium](http://github.com/nth-chile/nubium)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "DeepSeek makes its 75% discount on the DeepSeek-V4-Pro API permanent, keeping rates at one-quarter of prior levels for input and output tokens beyond the prior May 31, 2026 cutoff. — The 1.6-trillion-parameter model offers 1M-token context and fixed per-million pricing.",
+      "url": "https://www.digg.com/ai/axzmul0l?rank=1",
+      "source": "Digg AI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T18:00:11.698Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "DeepSeek makes its 75% discount on the DeepSeek-V4-Pro API permanent, keeping rates at one-quarter of prior levels for input and output tokens beyond the prior May 31, 2026 cutoff.",
+      "url": "https://www.digg.com/ai/axzmul0l",
+      "source": "Digg AI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T18:00:11.686Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Most security tools watch what runs in production. Perplexity just released one that scans what's sitting on developer laptops. Bumblebee fills the gap between SBOMs (what shipped) and EDR (what executed). It's a read-only inventory of eve…",
+      "url": "https://x.com/AlphaSignalAI/status/2057875938180755757",
+      "source": "X search / AI model updates",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T17:27:11.000Z",
+      "summary": "Most security tools watch what runs in production. Perplexity just released one that scans what's sitting on developer laptops. Bumblebee fills the gap between SBOMs (what shipped) and EDR (what executed). It's a read-only inventory of every installed package, extension, and dev",
+      "category": "ai_models"
+    },
+    {
+      "title": "Claude + MCP + SVG icons. I wrote a practical guide showing how Claude can use http:// SVGIcons.com as a custom connector to search and retrieve SVG icons directly inside a developer workflow. https:// svgicons.com/articles/svgic ons-claud…",
+      "url": "https://x.com/svg_icons/status/2057874901252370492",
+      "source": "X search / Agent workflows",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T17:23:04.000Z",
+      "summary": "Claude + MCP + SVG icons. I wrote a practical guide showing how Claude can use http:// SVGIcons.com as a custom connector to search and retrieve SVG icons directly inside a developer workflow. https:// svgicons.com/articles/svgic ons-claude-custom-connector … #Claude #MCP #AI #WebDev",
+      "category": "ai_agents"
+    },
+    {
+      "title": "I built \"zero2claude\", a free course that takes people from zero terminal experience to shipping with Claude Code. The curriculum goes from absolute zero → software basics → Claude Code fundamentals → advanced usage. No shortcuts, no assum…",
+      "url": "https://x.com/IShmool/status/2057872918348976191",
+      "source": "X search / AI model updates",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T17:15:11.000Z",
+      "summary": "I built \"zero2claude\", a free course that takes people from zero terminal experience to shipping with Claude Code. The curriculum goes from absolute zero → software basics → Claude Code fundamentals → advanced usage. No shortcuts, no assumptions. 17,000+ students. 7",
+      "category": "ai_models"
+    },
+    {
+      "title": "trained a prompt injection detector using ml-intern and DeepSeek v4 Flash, runs in the browser",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tkoeuo/trained_a_prompt_injection_detector_using/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-22T16:41:10.000Z",
+      "summary": "Trained a prompt injection classifier using `ml-intern` \\+ DeepSeek v4 Flash. DistilBERT, F1 99%, ONNX int8, \\~65 MB, runs in browser with Transformers.js v3. You can try it here: [https://huggingface.co/spaces/av-codes/prompt-injection-detector](https://huggingface.co/spaces/av-codes/prompt-injection-detector) \\--- I've been interested in prompt injections and agentic security for a while, and wanted to see how a purpose-built ML agent compares to general-purpose coding agents for this kind of task. Here's roughly how it went: `ml-intern` takes an HF token and supports OpenAI-compatible APIs, so I pointed it at OpenRouter (GPU-poor). The agent found existing datasets, [deepset/prompt-injections](https://huggingface.co/datasets/deepset/prompt-injections) and [Shomi28/prompt-injection-dataset](https://huggingface.co/datasets/Shomi28/prompt-injection-dataset), which simplified things since building the dataset is typically 95% of the work in tasks like this. For v1, I went with DistilBERT targeting CPU inference. After a few parameter sweeps, the agent launched a full run and landed at F1 95.87%. I also tried training an HRM-Text model, but the agent didn't figure it out and set up…",
+      "category": "ai_models"
+    }
+  ]
+}

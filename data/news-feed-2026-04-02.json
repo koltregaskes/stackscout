@@ -1,0 +1,181 @@
+{
+  "generated": "2026-06-05T00:44:32.037Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-02",
+  "article_count": 11,
+  "archived_story_count": 120,
+  "articles": [
+    {
+      "title": "Google releases Gemma 4 under Apache 2.0 — and that license change may matter more than benchmarks",
+      "url": "https://venturebeat.com/technology/google-releases-gemma-4-under-apache-2-0-and-that-license-change-may-matter",
+      "source": "VentureBeat AI",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-02T18:00:23.348Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cursor Launches a New AI Agent Experience to Take On Claude Code and Codex",
+      "url": "https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/",
+      "source": "Wired AI",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-02T18:00:15.314Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google announces Gemma 4 open AI models, switches to Apache 2.0 license",
+      "url": "https://arstechnica.com/ai/2026/04/google-announces-gemma-4-open-ai-models-switches-to-apache-2-0-license/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 0.98,
+      "date": "2026-04-02T18:00:16.217Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Z.ai Launches GLM-5V-Turbo: A Native Multimodal Vision Coding Model Optimized for OpenClaw and High-Capacity Agentic Engineering Workflows Everywhere",
+      "url": "https://www.marktechpost.com/2026/04/01/z-ai-launches-glm-5v-turbo-a-native-multimodal-vision-coding-model-optimized-for-openclaw-and-high-capacity-agentic-engineering-workflows-everywhere/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-02T06:00:27.059Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "IBM Announces Strategic Collaboration with Arm",
+      "url": "https://newsroom.ibm.com/2026-04-02-ibm-announces-strategic-collaboration-with-arm-to-shape-the-future-of-enterprise-computing",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.98,
+      "date": "2026-04-02T08:48:44.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "IBM Releases Granite 4.0 3B Vision: A New Vision Language Model for Enterprise Grade Document Data Extraction",
+      "url": "https://www.marktechpost.com/2026/04/01/ibm-releases-granite-4-0-3b-vision-a-new-vision-language-model-for-enterprise-grade-document-data-extraction/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9,
+      "date": "2026-04-02T18:00:19.625Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Google releases Gemma 4 open models",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9,
+      "date": "2026-04-02T16:10:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Lemonade by AMD: a fast and open source local LLM server using GPU and NPU",
+      "url": "https://lemonade-server.ai",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-04-02T11:04:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Artemis II, NASA's boldest mission in generations, launches crew to the Moon",
+      "url": "https://arstechnica.com/space/2026/04/four-astronauts-depart-for-the-moon-with-a-fiery-send-off-from-cape-canaveral/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-04-02T18:00:16.230Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Delve allegedly forked an open-source tool and sold it as its own",
+      "url": "https://techcrunch.com/2026/04/01/the-reputation-of-troubled-yc-startup-delve-has-gotten-even-worse/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-04-02T15:03:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Python API usage",
+      "url": "https://github.com/datasette/datasette-llm/blob/0.1a6/README.md#usage",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-04-02T06:00:31.526Z",
+      "summary": null,
+      "category": "ai_tools"
+    }
+  ]
+}

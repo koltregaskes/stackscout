@@ -1,0 +1,275 @@
+{
+  "generated": "2026-06-05T00:44:40.446Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-16",
+  "article_count": 15,
+  "archived_story_count": 407,
+  "articles": [
+    {
+      "title": "Follow-up: the Claude design-spec library is 100 apps now, iOS + Android.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tevt37/followup_the_claude_designspec_library_is_100/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T14:50:57.000Z",
+      "summary": "Yesterday I posted about turning 50 apps into Claude-readable design specs. It did better than expected, and the two asks in the comments were: more apps, and Android. Both done. The library is now: \\- 100 apps (was 50) \\- iOS and Android spec for every one The Android pass surfaced something the iOS-only version hid. The problem: an iOS-only spec quietly encodes HIG assumptions you didn't know you were making. Hand it to Claude, ask for the Android build, and you get an iOS app in Android's clothes: \\- back behavior wrong, no system back \\- flat surfaces, no Material elevation \\- tab bar where a nav drawer or bottom nav belongs \\- SF type scale instead of Roboto and Material The fix: split each spec into two layers. \\- Product intent: hierarchy, flow, states. Invariant across platforms. \\- Platform layer: Material vs HIG conventions. Swappable. Claude clones far more cleanly when it isn't guessing which layer it's looking at. Repo, both layers, 100 apps, 3 depths each, markdown, MIT, no dependencies: [github.com/Meliwat/awesome-ios-design-md](http://github.com/Meliwat/awesome-ios-design-md) The MCP server and CLI that generate these are free and open source too, so you can spec y…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub - richardr1126/openreader: An open-source read-along document reader server with high-quality TTS options, synchronized highlighting, and audiobook export for EPUB, PDF, DOCX, TXT, and MD.",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tf15eh/github_richardr1126openreader_an_opensource/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source",
+        "github_release"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "github_release"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T18:12:10.000Z",
+      "summary": "Sharing my latest release of OpenReader v3.0.0, an open-source text-to-speech document reader and audiobook exporter. It has been live for over a year now, and slowly has gained 300+ GitHub stars. **What is OpenReader?** A Next.js web app for reading and listening to EPUB, PDF, TXT, Markdown, and DOCX files. * Supports multiple TTS providers: OpenAI, Replicate, Deepinfra, and self-hosted OpenAI-compatible APIs (like [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI), [KittenTTS-FastAPI](https://github.com/richardr1126/KittenTTS-FastAPI)). * **Self-hosted:** your documents, TTS audio, and settings all live on your own server in SQLite or Postgres and Embedded SeaweedFS or External S3. * **Audiobook export:** generate and download m4b/mp3 audiobooks with chapter metadata via ffmpeg. **What's new in v3.0.0?** * TTS now preloads audio across multiple pages ahead of where you are. * Audio is cached persistently on the server's embedded or external object storage. * New Admin panel (set `ADMIN_EMAILS` in your env) for managing multiple named TTS providers with separate API keys. * Site-wide feature flags (user signups, provider restrictions, etc.) are now manageable from the Adm…",
+      "category": "ai_models"
+    },
+    {
+      "title": "macOS support in Lemonade has graduated out of beta!",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tevjjr/macos_support_in_lemonade_has_graduated_out_of/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T14:40:45.000Z",
+      "summary": "All major Lemonade capabilities, including OmniRouter, coding, image gen, speech gen, and transcription are all available on Lemonade for macOS thanks to the hard work of u/GeramyL. If you're on macOS and just looking into Lemonade for the first time, we're a local AI solution similar in functionality to LM Studio or Ollama. What sets us apart is: - Open source, community driven, zero telemetry - Focused on local with no cloud upsell - Omni-modal with the ability to input and output images and speech - Developer friendly with a 3 MB portable binary, code once and deploy across Linux/Windows/macOS I hope this release brings more macOS users into the Lemonade community. Stay tuned for the update iPhone app, which can access all of this from your phone! GitHub: https://github.com/lemonade-sdk/lemonade Discord: https://discord.gg/5xXzkMu8Zk",
+      "category": "ai_models"
+    },
+    {
+      "title": "Claude Code in VS Code keeps “answering” by freezing mid-stream, logs show sdk_stream_ended_no_result",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tenric/claude_code_in_vs_code_keeps_answering_by/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-05-16T08:28:58.000Z",
+      "summary": "[error message on Claude extension for VS Code](https://preview.redd.it/08qtvuaamg1h1.png?width=910&amp;format=png&amp;auto=webp&amp;s=6c2d4005bcdd6e5c058e5235b8d76b0512753ee6) I’m trying to use Claude Code in VS Code, but it has become almost unusable for larger tasks. The logs show Claude authenticates fine, sends the /v1/messages request, receives the first stream chunk, then the stream stalls. After about 30 seconds the UI reports an error with: eventName: \"sdk\\_stream\\_ended\\_no\\_result\", had\\_error: true It is not a simple auth/config failure: OAuth check completes, context window says OK, and the API stream opens. Smaller requests seem to work, but larger multi-part prompts repeatedly freeze with stream stall warnings like: \\[Stall\\] stream\\_idle\\_partial lastChunkAgeMs=15002 bytesTotal=669 idleDeadlineMs=300000 There are some unrelated MCP auth/config errors too, but the main issue is that Claude starts responding and then stops producing a usable answer. Has anyone else seen Claude Code/VS Code fail this way on large prompts? Is this a known streaming bug, server-side issue, or something caused by heavy tool/skill context?",
+      "category": "ai_tools"
+    },
+    {
+      "title": "WSL can't reach Kobold.cpp running on Windows, even though the API works fine in PowerShell, SillyTavern &amp; a Kenshi SentientSands Mod. Does anyone know the solution?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tf7f4d/wsl_cant_reach_koboldcpp_running_on_windows_even/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T22:24:17.000Z",
+      "summary": "Okay sorry for the slop below but I'm losing my mind with this and I'm hoping someone here has dealt with the same setup. (I asked the AI that let me copy&amp;paste shit for 3 hours to summarise what it asked me to do) Here's the situation: * Kobold.cpp is running on Windows * The OpenAI-compatible API is on port 5001 * It works from PowerShell on Windows, SillyTavern and a Kenshi Mod (SentientSands) * But WSL cannot connect to it, even though it's the same machine Kobold.cpp starts normally and shows that the OpenAI-compatible API is running on `http://0.0.0.0:5001/v1/`. From **PowerShell**, this works fine: bash curl http://127.0.0.1:5001/v1/models and it returns the model list. From **WSL**, `pwd` works normally, but this fails: bash curl http://127.0.0.1:5001/v1/models with: bash curl: (7) Failed to connect to 127.0.0.1 port 5001 after 0 ms: Could not connect to server So at this point I know: * Kobold itself is running fine * The API endpoint is working on Windows * The actual problem is specifically WSL trying to reach a service hosted on the Windows side Things I already tried: * Binding Kobold to [`0.0.0.0`](http://0.0.0.0) instead of only localhost * Changing WSL config t…",
+      "category": "ai_models"
+    },
+    {
+      "title": "I replicated Anthropic's Generator-Evaluator harness to build a website through 12 adversarial AI iterations - here's the result and what I learned",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tf76wp/i_replicated_anthropics_generatorevaluator/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T22:14:25.000Z",
+      "summary": "Anthropic recently published their [harness design for long-running apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) — a multi-agent architecture inspired by GANs where a Generator builds code and an Evaluator critiques it in a loop. I built my own version using Kiro CLI and used it to generate a marketing website for my project [Mnemo](https://github.com/Mnemo-mcp/Mnemo) (persistent memory for AI coding agents). **The architecture:** Planner (runs once) → Generator ↔ Evaluator (12 iterations) Each agent is a separate CLI process with zero shared context. They communicate only through files (spec.md, eval-report.md). The Evaluator uses Playwright to actually browse the live site — not just read code. **What made it work:** **Clean slate per invocation** — each agent starts fresh, reads only its input files. Prevents context anxiety. **Playwright MCP for testing** — the evaluator navigates, clicks, resizes viewports. Catches visual bugs code review never would. **Anthropic's frontend design skill** — explicitly penalizes generic AI patterns (Inter font, purple gradients, card layouts). Forces creative risk-taking. **Continuous iteration, not retry-on-fa…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Interconnects newsletter reviews wave of open AI releasesOpen AI models saw a burst of new releases this month from several labs. The Interconnects newsletter reviewed five of them, including Gemma 4 and DeepSeek V4, using the CAISI V4 evaluation framework.",
+      "url": "https://www.digg.com/ai/09imapy5?rank=7",
+      "source": "Digg AI",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T20:04:50.938Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "How I started programming differently over the last year. What about you?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tf2cxh/how_i_started_programming_differently_over_the/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T18:58:05.000Z",
+      "summary": "An interesting observation: I’ve stopped using the LLM-powered autocomplete in my IDE. At first, it was one of the key features for me. It felt extremely convenient: you start writing a function in your code, and the LLM completes it based on common sense or the context from the open tabs. But the most interesting thing is that back when LLM autocomplete was useful and in demand, I had already written a script that could go through the source files, let me select what I needed, and prepare the context to feed into an LLM chat so it could tell me what to add or fix. I worked like that for about six months. And even that is gone now. These days it’s easier to open a CLI interface with a coding agent, without even launching the IDE. You describe what you need, use @ to point it to the files it should inspect or modify, and that’s it. Everything is changing at an absolutely insane speed. Basically, the only things I still use an IDE for are nice Git diff visualization, step-by-step debugging, and the ability to click on functions and jump into their implementation. In other words, code navigation. And even that functionality is only needed in about 5-10% of my work. It’s interesting t…",
+      "category": "ai_models"
+    },
+    {
+      "title": "LLM Phone Home: Reliable Apps that can deliver inference from local backend",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tez9sb/llm_phone_home_reliable_apps_that_can_deliver/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T17:02:05.000Z",
+      "summary": "Hello all, I’m wondering what suggestions there are for an ios app that can serve an openai compatible endpoint. I am using 3sparks which works GREAT for that specific use, BUT, there is no mcp, no web search, etc. I want to show people that a local model with web search on your phone is very impressive, but I can’t find an app that can mimic OWUI/LMS/etc. Texting Hermes works but I was hoping to find a solution that is not using a slow agent, just calling requests from local server. So far, I tried: Apollo, Locally AI, Noema, and 3 Sparks. Previously I have gone through other apps that run models in situ (in the iphone) but they don’t have remote endpoint usage. Noema seemed promising but Deepseek V4 Flash from my mac studio never makes it through a request (works great with 3 Sparks, but no web search or mcp capability).",
+      "category": "ai_models"
+    },
+    {
+      "title": "Frameo AI Launches Pixar-Style Short Films Powered by Seedance 2.0 — Native Audio, Multi-Shot, Director Mode",
+      "url": "https://x.com/frameo_ai/status/2055642282796400821",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T14:56:25.012Z",
+      "summary": "Frameo AI launched Pixar-quality short films on Seedance 2.0 with native audio and Director Mode, making cinematic AI video creation accessible to independent creative producers.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How Do You Tell If Someone Is Good at Agents? — Scoble Asks the Question the AI Industry Cannot Answer",
+      "url": "https://x.com/Scobleizer/status/2055566706714845328",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T14:52:06.433Z",
+      "summary": "Scoble's question on evaluating agent development talent surfaces the unsolved hiring signal problem as companies scramble for AI agent skills with no reliable credential or assessment framework.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B and 9B are officially on the public Terminal-Bench 2.0 leaderboard!",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1temio0/qwen3635ba3b_and_9b_are_officially_on_the_public/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-16T07:19:25.000Z",
+      "summary": "Qwen3.6-35B-A3B and 9B are officially on the public Terminal-Bench 2.0 leaderboard! little-coder × Qwen3.6-35B-A3B hit 24.6% (±3.2), and **now land above Gemini 2.5 Pro on Gemini CLI (19.6%)** and Qwen3-Coder-480B on Terminus 2 (23.9%). I didn’t expect the scaffold-model gap from Polyglot to hold on a benchmark this hard but it did! little-coder × Qwen3.5-9B came in at 9.2% which is more humble. Yet, it also shows again that **sub-10B local models are now measurable on a hard agentic benchmark**, not assumed unworthy of a slot. Just felt it was right to follow up here as you requested, and say a genuine thanks to this community. It really is the place currently driving innovation toward less compute, and this run exists there because you pushed for it. Now it’s time to head for the top of the leaderboard 👀 let’s go open source!",
+      "category": "ai_models"
+    },
+    {
+      "title": "Claude in Chrome extension stopped working in claude.ai after using Claude Code — anyone else?",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1teudps/claude_in_chrome_extension_stopped_working_in/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.88,
+      "date": "2026-05-16T13:55:37.000Z",
+      "summary": "Hey everyone, running into a weird issue and hoping someone has seen this before. A few hours ago, Claude in Chrome was working fine in the claude.ai web app. Then I started using Claude Code (CLI) with the \\`--chrome\\` flag, which connected to the extension no problem. Ever since, the extension refuses to connect from claude.ai — but it still works fine from Claude Code and the extension itself appears active and logged in. \\*\\*Setup:\\*\\* \\- Claude in Chrome extension installed and signed in \\- Same account on [claude.ai](http://claude.ai) and Claude Code \\- Extension shows as active in Chrome toolbar \\*\\*What works:\\*\\* \\- ✅ Claude Code CLI (\\`claude --chrome\\`) connects to the browser fine \\- ✅ Extension itself appears active and logged in \\- ❌ [claude.ai](http://claude.ai) web app: consistently returns \"Browser extension is not connected\" \\*\\*What I've already tried (nothing helped):\\*\\* \\- Restarted Chrome \\- Restarted PC \\- Logged out and back into [claude.ai](http://claude.ai) \\- Disabled and re-enabled the extension My theory: once Claude Code connected to the extension, it somehow \"claimed\" the connection and the [claude.ai](http://claude.ai) web app can no longer get thr…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Free Premiere Pro extension to download YouTube/Instagram/X videos and auto-import to your project bin",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tf20ta/free_premiere_pro_extension_to_download/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-16T18:45:19.000Z",
+      "summary": "Tired of the whole workflow — open browser, find video, download, wait, drag into Premiere. So I built a panel that does it all from inside Premiere. Paste a URL, pick quality, click Download &amp; Import — file lands directly in your project bin. Supports: \\- YouTube, Instagram, X/Twitter \\- Best / 1080p / 720p / 480p / MP3 \\- Live progress bar with ETA \\- Auto-import to project bin on finish Powered by yt-dlp under the hood. Built this with the help of Claude (AI) — had the idea and kept iterating until it worked. Free &amp; open source: [https://github.com/gitttsarya/media-fetcher-premiere](https://github.com/gitttsarya/media-fetcher-premiere) Full install guide in the README. Let me know if you run into any issues! https://preview.redd.it/y5svnpjuoj1h1.png?width=482&amp;format=png&amp;auto=webp&amp;s=0dfb391daefb06dbbb37c4b13174efc6a1ca7a22",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Using Claude chat for making Apps.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1teum62/using_claude_chat_for_making_apps/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-16T14:05:01.000Z",
+      "summary": "I have been using Claude chat to build structural engineering calculation apps, and it has worked very well for me. Claude generates the files, and I host the projects on GitHub. To avoid hitting the context window limit, I periodically start new chat sessions. When I do, I download the ZIP file from GitHub (including the MD file), and paste it into the new chat so Claude has the project context again. I was wondering if there are any drawbacks to working this way. I do not use Claude Code (don’t have coding background )or the terminal much. I tried it once but did not really like the workflow. Most of my coding is done on the go through the chat interface on my phone or on my computer at work and at home.",
+      "category": "ai_tools"
+    }
+  ]
+}

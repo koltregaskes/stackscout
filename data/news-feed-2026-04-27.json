@@ -1,0 +1,263 @@
+{
+  "generated": "2026-06-05T00:44:36.433Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-27",
+  "article_count": 15,
+  "archived_story_count": 683,
+  "articles": [
+    {
+      "title": "(Open Source) AURA: A Local-First Management Vault for Civitai - Auto-tagging, Metadata and Browser Integration - Version 1.0.1 Fixes",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sx98ch/open_source_aura_a_localfirst_management_vault/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-04-27T16:44:43.000Z",
+      "summary": "**GitHub Link:** [**https://github.com/TheGho7t/AURA-AI-Studio-Vault**](https://github.com/TheGho7t/AURA-AI-Studio-Vault)\n\n**Latest Release:** [**https://github.com/TheGho7t/AURA-AI-Studio-Vault/releases/tag/AURAv1.0.1**](https://github.com/TheGho7t/AURA-AI-Studio-Vault/releases/tag/AURAv1.0.1)\n\nI resolved an obvious mistake causing images and models not to be rated General by default. I also fixed an issue regarding what type of model (Lora, Checkpoint, Dora, etc...) being displayed. It had bee",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Qwen 3.6 Max Preview just dropped on OpenRouter. One trillion parameters. Released today. $1.30/$7.80 per million tokens. 262K context. Sparse mixture-of-experts. Optimized for agentic coding and tool use. No open weights. Alibaba's bigges…",
+      "url": "https://x.com/bridgemindai/status/2048816878454194460",
+      "source": "X / @bridgemindai",
+      "tags": [
+        "api_update",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T17:29:43.000Z",
+      "summary": "Qwen 3.6 Max Preview just dropped on OpenRouter. One trillion parameters. Released today. $1.30/$7.80 per million tokens. 262K context. Sparse mixture-of-experts. Optimized for agentic coding and tool use. No open weights. Alibaba's biggest model ever. And it costs less",
+      "category": "ai_tools"
+    },
+    {
+      "title": "A quick guide to add @SurfAI MCP to claude 1-Get your API key from Surf dashboard 2-Claim free credits 3-Run in terminal (Replace your api key) : claude mcp add surf -e SURF_API_KEY=YOUR_API_KEY -- npx -y @surf -ai/surf-mcp 5-Verify: claud…",
+      "url": "https://x.com/0xAirr/status/2048663698806620544",
+      "source": "X / @0xairr",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T07:21:02.000Z",
+      "summary": "A quick guide to add @SurfAI MCP to claude 1-Get your API key from Surf dashboard 2-Claim free credits 3-Run in terminal (Replace your api key) : claude mcp add surf -e SURF_API_KEY=YOUR_API_KEY -- npx -y @surf -ai/surf-mcp 5-Verify: claude mcp list You should see Surf MCP",
+      "category": "ai_tools"
+    },
+    {
+      "title": "how to build a persistent memory layer like recall?",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1swyzvc/how_to_build_a_persistent_memory_layer_like_recall/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T09:50:01.000Z",
+      "summary": "I've been testing recall 2.0 and their context layer is exactly what i want. it sits outside the chat, ingests all my github repos and web research, and then feeds the exact right context into claude when i ask a question.  i want to build my own version of this using the mcp protocol so i don't have to pay for another subscription.  what's the best vector database and orchestration setup to replicate this? my current python script just dumps way too much junk into the context window and confuse",
+      "category": "ai_tools"
+    },
+    {
+      "title": "it’s been a good run... rip my stable diffusion setup (+ Raven fanart)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sx30ke/its_been_a_good_run_rip_my_stable_diffusion_setup/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-04-27T13:01:33.000Z",
+      "summary": "i've been a stable diffusion user since march 2023, but sadly my journey ended last june 2025. it's been a struggle since python got updated in sagemaker and the api i was renting got way too greedy, they even removed the free features for http tunneling services.\n\non top of that, kaggle keeps banning my accounts if you try to generate any woman pictures, and google colab basically moved everything behind the pro version. it's getting harder and harder to find a good spot to build.\n\nanyway, i wa",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Built an MCP connector for official Python docs .. no API keys, no unofficial sources",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sx2u3s/built_an_mcp_connector_for_official_python_docs/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-27T12:54:43.000Z",
+      "summary": "I built an MCP server for Python stdlib docs with one goal: make it easy to defend in a company environment.\n\n[https://github.com/ayhammouda/python-docs-mcp-server](https://github.com/ayhammouda/python-docs-mcp-server)\n\nThe core idea is simple. Instead of going through third-party APIs or unofficial doc sources, it connects MCP clients to the official Python docs.\n\nI built it because this is where good tooling usually gets stuck. In a solo setup, everything looks fine. In a company, security and",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenClaw v2026.4.25 released",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.25",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-27T12:45:30.000Z",
+      "summary": "## 2026.4.25\n\n### Highlights\n\n- Voice replies get a full TTS upgrade: `/tts latest`, chat-scoped auto-TTS controls, personas, per-agent/per-account overrides, and new Azure Speech, Xiaomi, Local CLI, Inworld, Volcengine, and ElevenLabs v3 provider coverage. Thanks @leonchui, @zoujiejun, @solar2ain, @cshape, @xuruiray, @itsuzef, and @barronlroth.\n- Plugin startup and install paths move to the cold persisted registry, cutting broad manifest scans while making plugin update, repair, provider discov",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Built a open-source local music video generator using SDXL + AnimateDiff + audio-reactive GLSL shaders",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1swx934/built_a_opensource_local_music_video_generator/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-27T08:04:41.000Z",
+      "summary": "I needed visuals for AI-generated tracks, so I built Glitchframe, a pipeline that takes an audio file and produces a full music video using SDXL keyframe stills or AnimateDiff motion, with GLSL shaders that react to beat/onset/spectrum data in real time.\n\nStack: SDXL for backgrounds, optional AnimateDiff (fair warning: \\~20 GB VRAM), Skia for kinetic typography, WhisperX for word-level lyric sync, FFmpeg NVENC for encode. UI runs in Gradio locally.\n\nAnimateDiff integration was the most painful p",
+      "category": "creative_tools"
+    },
+    {
+      "title": "PixlStash 1.1.0 is now available!",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sx8khw/pixlstash_110_is_now_available/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-27T16:21:39.000Z",
+      "summary": "[PixlStash](https://pixlstash.dev) is a locally hosted, open source, picture management server for organising, filtering, tagging and reviewing large image collections.\n\nThe main target for version 1.1.0 was to support existing self-organised reference folders, so you can index, tag and include pictures from folders you've carefully organised yourself. But there are some more features as well:\n\n* Automatic import folders in the UI along with the reference folders\n* Statistics sidebar that shows ",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Is anyone working on a ComfyUI node for the new Ideogram LoRA API? (They call it Custom Model)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sxh6ir/is_anyone_working_on_a_comfyui_node_for_the_new/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-27T21:21:20.000Z",
+      "summary": "I've been playing around with the new Ideogram LoRA training feature just to test it out. I trained a LoRA on the [Loomies illustration library](https://getillustrations.com/illustration-pack/loomies-free-vector-illustrations), and the way it gets all the details right and handles text generation is honestly flawless. 😀\n\nBut, I do 99% of my actual work locally and hate leaving my node setups. Has anyone seen (or started building) a custom node to pull their API into ComfyUI yet? I'd love to be ",
+      "category": "creative_tools"
+    },
+    {
+      "title": "NVIDIA Sonic Makes Humanoid Robots Cheap — Open Source Forever",
+      "url": "https://x.com/JoseCSancho/status/2048587841882439784",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T15:59:13.833Z",
+      "summary": "Braygent's take: NVIDIA Sonic is the moment humanoid robotics becomes accessible to startups. The economics changed permanently today.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Kimodo — Motion Diffusion for Humanoid Robots Trained on 700 Hours of Mocap",
+      "url": "https://x.com/AIKumarvels/status/2048294442063970777",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T15:59:13.833Z",
+      "summary": "Braygent's take: NVIDIA Kimodo plus Sonic gives humanoid developers a complete open source motion stack. NVIDIA is winning the physical AI era the same way it won LLM compute.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Releases GPT-5.5 The new model tops the benchmarks against its main rivals, Claude Opus 4.7 and Google's Gemini 3.1 Pro, even outperforming GPT-5.4 Pro in some areas. The model is built for agentic tasks and ease of use: GPT-5.5 fig…",
+      "url": "https://x.com/News_pulse360/status/2048733780744278450",
+      "source": "X / @news_pulse360",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T11:59:31.000Z",
+      "summary": "OpenAI Releases GPT-5.5 The new model tops the benchmarks against its main rivals, Claude Opus 4.7 and Google's Gemini 3.1 Pro, even outperforming GPT-5.4 Pro in some areas. The model is built for agentic tasks and ease of use: GPT-5.5 figures out what you're trying to do",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI has introduced Privacy Filter, a locally runnable open-weight AI model for context-aware detection and redaction of personally identifiable information in text. The model is now available on platforms like Hugging Face and GitHub. h…",
+      "url": "https://x.com/AlternativeTo/status/2048666474181808532",
+      "source": "X / @alternativeto",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T07:32:04.000Z",
+      "summary": "OpenAI has introduced Privacy Filter, a locally runnable open-weight AI model for context-aware detection and redaction of personally identifiable information in text. The model is now available on platforms like Hugging Face and GitHub. https:// alternativeto.net/news/2026/4/op enai-releases-privacy-filter-a-local-open-weight-model-built-for-personal-data-masking/ …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "two model releases shipped on the same day, april 24. it’s worth putting them next to each other. // openai released GPT-5.5 at $5/$30 per million in/out tokens. closed weights, 1M context, agent stack baked in. // deepseek released V4 the…",
+      "url": "https://x.com/witcheer/status/2048665173326532861",
+      "source": "X / @witcheer",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-27T07:26:54.000Z",
+      "summary": "two model releases shipped on the same day, april 24. it’s worth putting them next to each other. // openai released GPT-5.5 at $5/$30 per million in/out tokens. closed weights, 1M context, agent stack baked in. // deepseek released V4 the same day. V4-Pro at $1.74/$3.48,",
+      "category": "ai_tools"
+    }
+  ]
+}

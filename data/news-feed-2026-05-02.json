@@ -1,0 +1,273 @@
+{
+  "generated": "2026-06-05T00:44:37.317Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-02",
+  "article_count": 15,
+  "archived_story_count": 459,
+  "articles": [
+    {
+      "title": "@WesRoth: Meta Launches Ads MCP — Claude and ChatGPT Can Now Manage Meta Ad Accounts",
+      "url": "https://x.com/WesRoth/status/2050606311440531809",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T16:23:29.285Z",
+      "summary": "Meta launched its Ads MCP and CLI, creating a direct bridge for frontier AI models like Claude and ChatGPT to access and interact with the Meta Ads ecosystem through natural language.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a Claude Code skill that gives Claude real local time + session tracking (open source, one-line install)",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t1xoca/i_built_a_claude_code_skill_that_gives_claude/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T18:27:13.000Z",
+      "summary": "Built this with Claude Code over a few sessions open sourcing it. Claude has no built-in clock. Each session starts cold, training data is frozen in time, and when Claude says \"the current time\" it's hallucinating. Got tired of correcting it, so I built time-anchor. **What it does:** \\- Auto-detects your timezone on install, no API key, no network call \\- Reads the host system clock when you ask for the time (the trick: Python scripts in the skill can read the OS clock when Claude executes them via bash, Claude itself stays clockless, but it now has a tool it can query) \\- Logs every session start/end so Claude can answer \"how long have we been talking\" or \"what did I say 20 minutes ago\" \\- Persists in a local JSON file (or shares with another memory plugin via $TIME\\_ANCHOR\\_MEMORY\\_PATH) \\- \\~85% of users get auto-detected (Windows tzutil, Linux /etc/localtime, $TZ). The remaining 15% type a city/country and get a paginated picker \\- covering \\~200 countries with their full IANA zone lists. Free + open source. MIT licensed, no telemetry, all state local. No paid tier, nothing to sign up for. #### Install (any OS, no git, no SSH, no plugin marketplace setup): **Windows (PowerShel…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Parallelogram – a strict linter for LLM fine-tuning datasets (catches broken data before your GPU run starts)",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1t1sf5z/parallelogram_a_strict_linter_for_llm_finetuning/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T15:07:24.000Z",
+      "summary": "Fine-tuning frameworks assume your data is correctly formatted. None of them enforce it. The result is broken training runs discovered after the compute is spent.\n\nParallelogram is a CLI tool that validates fine-tuning datasets before any training starts. Strict hard-blocks on role sequence errors, empty turns, context window violations, duplicates, and mojibake. Exits 0 on clean data, exits 1 on errors — CI/CD friendly.\n\nApache 2.0, local-first, zero network calls.\n\ngithub.com/Thatayotlhe04/Par",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Tried running Claude Code with local LLMs via Ollama — ended up subscribing to Pro anyway. But now I can't disconnect from the local server.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t1vjd0/tried_running_claude_code_with_local_llms_via/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T17:07:21.000Z",
+      "summary": "I've been experimenting with using Ollama to run Claude Code locally with models like Gemma 4, thinking I could avoid API costs. However, I quickly realised these models aren't really optimised for Claude Code's agentic workflows — they tend to get stuck in thinking loops and don't follow Claude Code's expected output structure well. So I ended up subscribing to Claude Pro anyway. The problem now is that even after logging into my Anthropic account through the terminal, Claude Code still connects to the local Ollama server no matter how many times I restart the terminal or VSCode. Just wondering how this can be solved, and also is it possible to run both local LLMs and claude models at the same time?",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Tool orchestration > model benchmarks. MCP connects any model to any tool without API keys. That's the real shift: system design matters more than intelligence scores. Built 13 tools across Claude, Codex, local. Same shipping pace. Archite…",
+      "url": "https://x.com/HudBeer/status/2050622456436818111",
+      "source": "X / @hudbeer",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T17:04:26.000Z",
+      "summary": "Tool orchestration > model benchmarks. MCP connects any model to any tool without API keys. That's the real shift: system design matters more than intelligence scores. Built 13 tools across Claude, Codex, local. Same shipping pace. Architecture wins.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Weekly Meal Planning Fully Automated with Claude and Migros MCP",
+      "url": "https://x.com/hslu_aiml/status/2049100936287498456",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T16:28:06.379Z",
+      "summary": "A developer automated their weekly meal plan entirely using Claude and Migros's MCP integration, demonstrating how AI agents can handle grocery and meal planning end-to-end.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "@ValsAI: GPT-5.5 Now #1 on Terminal Bench 2 — Updated Results Show +11% Improvement",
+      "url": "https://x.com/ValsAI/status/2050240263420072446",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T16:21:16.690Z",
+      "summary": "Vals AI updated GPT-5.5's results and it is now the #1 model on Terminal Bench 2, improving by +11%. It remains #2 on the overall Vals Index.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built \"Semvec\": A Constant-Cost Semantic Memory for LLMs (Looking for testers!)",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t1ti3q/i_built_semvec_a_constantcost_semantic_memory_for/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T15:49:05.000Z",
+      "summary": "Hey everyone, If you build LLM applications, autonomous agents, or just use Claude/Cursor for coding, you've probably hit this wall: Conversation history grows infinitely, token costs explode, latency skyrockets, and eventually, the LLM starts forgetting early context anyway. To fix this, I built semvec. It replaces unbounded conversation histories with a fixed-size semantic state combined with a tiered, content-aware memory (short/medium/long-term). The result: The cost and latency of every LLM call stay constant. Turn 10 and Turn 10,000 carry the exact same input footprint. In 48-turn benchmarks, it yields roughly a 76% token reduction while retaining all structured access to decisions, error patterns, and prior context. Here is what you get: \\- Constant-size compressed context: Token-reduced LLM context that stops growing. \\- Tiered memory with selective forgetting: Frequently accessed older memories outlive never-touched newer ones. \\- Drop-in chat proxy: Wrap any OpenAI-compatible LLM (vLLM, Ollama, OpenRouter) and get compressed context for free. \\- Coding-agent compaction (MCP): Persistent memory across coding sessions. It comes with an MCP server for Claude Code &amp; Curs…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The OpenAI Prompting Guide Has Been Updated. 🙌🏻 Check It Out 👏🏻",
+      "url": "https://reddit.com/r/ChatGPT/comments/1t1tgok/the_openai_prompting_guide_has_been_updated_check/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T15:47:33.000Z",
+      "summary": "A great resource for learning how to prompt better and get the most out of ChatGPT 5.5: https://developers.openai.com/api/docs/guides/prompt-guidance?model=gpt-5.5 🤙🏻",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I reverse-engineered the Perplexity app and built an MCP that turns your Perplexity/Comet account into a Claude MCP, so Claude can search like crazy and read 200+ sources in one answer with your personal account subscription without API product needed. [Experiment - Educational Purpose]",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t1pdqc/i_reverseengineered_the_perplexity_app_and_built/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T13:05:38.000Z",
+      "summary": "Here's video showcase: [***https://youtu.be/wErgEe9Pgqo***](https://youtu.be/wErgEe9Pgqo)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Kept having dreams last night about the game system... I think why this is weighing so heavy is because I don't want to launch with any Gemini api calls(cheap, fast, practically free but I dunno if scalable) so I'm actually building base t…",
+      "url": "https://x.com/genondemand3d/status/2050539325763293222",
+      "source": "X / @genondemand3d",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T11:34:07.000Z",
+      "summary": "Kept having dreams last night about the game system... I think why this is weighing so heavy is because I don't want to launch with any Gemini api calls(cheap, fast, practically free but I dunno if scalable) so I'm actually building base training and mcp and hopefully it'll grow",
+      "category": "ai_tools"
+    },
+    {
+      "title": "xAI Launches Grok 4.3 with Low-Cost Voice Cloning API Elon Musk’s xAI has released Grok 4.3, featuring a new, high-fidelity voice cloning suite at a price point significantly lower than ElevenLabs or OpenAI. The release emphasizes real-tim…",
+      "url": "https://x.com/mehedi_u/status/2050462001571504588",
+      "source": "X / @mehedi_u",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-05-02T06:26:51.000Z",
+      "summary": "xAI Launches Grok 4.3 with Low-Cost Voice Cloning API Elon Musk’s xAI has released Grok 4.3, featuring a new, high-fidelity voice cloning suite at a price point significantly lower than ElevenLabs or OpenAI. The release emphasizes real-time speed, targeting developers building",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Hermes Just Beat Claude Code in GitHub Stars and Nobody Is Talking About It",
+      "url": "https://x.com/aakashgupta/status/2050349093969694825",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-01T23:49:55.116Z",
+      "summary": "Braygent highlights the Hermes GitHub star milestone as the underreported open source AI agent story of the week, arguing it signals a turning point in open versus closed AI competition.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Pika Just Let You Give Claude a Face and Make Videos Through Conversation",
+      "url": "https://x.com/pika_labs/status/2050294291998933455",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-01T23:49:55.116Z",
+      "summary": "Braygent highlights the Pika MCP as a genuinely new Claude integration category that gives the assistant a custom identity and full video production capabilities, not just tool access.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA's Open Source Enterprise AI Agent Security Layer Is More Important Than People Realize",
+      "url": "https://x.com/NVIDIAAI/status/2050336285428998202",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-01T23:49:55.116Z",
+      "summary": "Braygent argues NVIDIA's open source OpenShell is the infrastructure unlock for enterprise AI agent deployment, with the open source design being crucial for security team auditability.",
+      "category": "ai_tools"
+    }
+  ]
+}

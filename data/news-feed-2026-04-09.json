@@ -1,0 +1,253 @@
+{
+  "generated": "2026-06-05T00:44:33.363Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-09",
+  "article_count": 15,
+  "archived_story_count": 616,
+  "articles": [
+    {
+      "title": "Hermes Agent Is Displacing OpenClaw — And Nobody Is Talking About It",
+      "url": "https://x.com/ghumare64/status/2042234817358462986",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T14:33:10.226Z",
+      "summary": "Hermes Agent is quietly displacing OpenClaw as the dominant open-source AI agent framework, with a new memory plugin and viral tutorials driving adoption. The architectural difference is fundamental.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenWork, an opensource Claude Cowork alternative, is silently relicensing under a commercial license",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sgnppg/openwork_an_opensource_claude_cowork_alternative/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T12:05:50.000Z",
+      "summary": "OpenWork is a locally hosted AI agent harness that was presented as a MIT-licensed opensource Claude Cowork alternative based on opencode.\n\nJust a heads up for any user of the app that it has silently relicensed some components under a commercial license and modified the overall project's MIT license to limit its reach (which I am not even sure makes it a MIT license anymore).\n\nMore details here: https://github.com/different-ai/openwork/issues/1412\n\nNote that as a fellow opensource developer mys",
+      "category": "ai_models"
+    },
+    {
+      "title": "OpenWork, an opensource Claude Code alternative, is silently relicensing under a commercial license",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sgm9d1/openwork_an_opensource_claude_code_alternative_is/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T10:54:02.000Z",
+      "summary": "OpenWork is locally hosted AI agent harness that was presented as a MIT-licensed opensource Claude Cowork alternative based on opencode.\n\nJust a heads up for any user of the app that it has silently relicensed some components under a commercial license and modified the overall project's MIT license to limit its reach (which I am not even sure makes it a MIT license anymore).\n\nMore details here: https://github.com/different-ai/openwork/issues/1412\n\nNote that as a fellow opensource developer mysel",
+      "category": "ai_models"
+    },
+    {
+      "title": "I built a multi-agent coordination plugin for Claude Code using Royal Navy procedures. 237 stars later I'm still not sure if the metaphor is genius or unhinged.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sgx5i0/i_built_a_multiagent_coordination_plugin_for/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-09T17:59:55.000Z",
+      "summary": "So earlier this year Anthropic shipped the experimental Agent Teams feature. I'd spent the Christmas break reading about the Gas Town vision and was properly excited to try it. Agent Teams felt like Claude Code's version of a mini Gas Town.\n\nThen I actually used it. Agent one rewrote a module. Agent two rewrote that module's tests. Agent three updated the integration layer that depended on both. Nobody told agent three about the interface changes from agents one and two.\n\nThree pieces of perfect",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Managed Agents launched today. I built a Slack relay, tested it end-to-end. Here's what I found.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sgejap/managed_agents_launched_today_i_built_a_slack/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-09T03:36:27.000Z",
+      "summary": "Managed Agents dropped a few hours ago. I had been reading the docs ahead of time, so I built a full Slack relay right away - Socket Mode listener, session-per-channel management, SSE streaming, cost tracking via span events. Tested multi-turn conversations, tool usage, session persistence. Wanted to share what I found. \n\nThe prompt caching is genuinely impressive. My second session cost $0.006 because the system prompt and tool definitions were served from cache automatically. API design is cle",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a security scanner for Claude Code (and vibe coding in general) — here's what it found in my own projects",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sgboiu/i_built_a_security_scanner_for_claude_code_and/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-09T01:24:01.000Z",
+      "summary": "I built VibeLint using Claude Code. It runs as an MCP server inside your IDE and scans AI-generated code for security issues before it gets written to your files.\n\nWhile building it, I started scanning my own projects with it. What I found was uncomfortable.\n\nIn one file, it caught my OpenAI API key and my Supabase service role key — both hardcoded by the AI. The service role key bypasses RLS entirely, meaning anyone with it has unrestricted access to the database.\n\nAcross my last 5 projects, th",
+      "category": "ai_tools"
+    },
+    {
+      "title": "your claude doesn't need a better memory, it needs a self-evolving knowledge base",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sgr5zz/your_claude_doesnt_need_a_better_memory_it_needs/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-09T14:27:00.000Z",
+      "summary": "https://i.redd.it/57wdspbqc6ug1.gif\n\nAndrej Karpathy recently shared his setup for building a personal LLM knowledge base - raw docs, LLM compiles them into a structured wiki, then queries the wiki for answers.\n\nI've been building something similar for the past year, except it's not a set of scripts - it's a plugin you can install in 2 minutes.\n\nThe idea: every conversation you have in claude (Desktop, claude code or any MCP-compatible tool like codex, cursor) gets compacted into a memory episod",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Chinese AI models (Qwen, Kimi, MiniMax) are going closed-source. Does that kill their appeal for you?",
+      "url": "https://reddit.com/r/ChatGPT/comments/1sgfp00/chinese_ai_models_qwen_kimi_minimax_are_going/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-09T04:34:27.000Z",
+      "summary": "Honest question for people who actually use these models:\n\nThe main reason I and many others trusted Chinese AI models was open source — you could run them locally, inspect the weights, avoid sending data to Chinese servers. That felt like a reasonable workaround for anyone with privacy or geopolitical concerns.\n\nNow that they're closing up, the calculus changes:\n\n\\- No local deployment\n\n\\- API calls go to servers in China\n\n\\- No way to verify what the model is actually doing\n\nIs this a dealbrea",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Dynamic few-shot retrieval on Apple's on-device 3B LLM: 40% → 70%+ on shell commands",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sgxo6d/dynamic_fewshot_retrieval_on_apples_ondevice_3b/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T18:17:58.000Z",
+      "summary": "I've been poking at Apple's on-device 3B model (via FoundationModels on Tahoe) to see where its ceiling sits on code-adjacent tasks. Tested shell command generation as a concrete benchmark (100 prompts, \\~10 approaches)\n\nhttps://i.redd.it/ferxmyorh7ug1.gif\n\nBare model: \\~40% correct. Mostly flags and some command hallucinations. Feeding documentation as context didn't help. Not man pages, not tldr as docs, not self-critique loops. All within noise of baseline, and self-critique was actively wors",
+      "category": "ai_models"
+    },
+    {
+      "title": "OpenAI pauses UK data centre deal over energy costs and regulationThe project was part of a package of tech investment promising the UK could become an AI superpower.See more",
+      "url": "https://www.bbc.com/news/articles/clyd032ej70o",
+      "source": "BBC AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T18:00:10.184Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "I benchmarked 42 STT models on medical audio with a new Medical WER metric — the leaderboard completely reshuffled",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sgtrgc/i_benchmarked_42_stt_models_on_medical_audio_with/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T16:00:16.000Z",
+      "summary": "**TL;DR:** I updated my medical speech-to-text benchmark to **42 models** (up from 31 in v3) and added a new metric: **Medical WER (M-WER)**.\n\nStandard WER treats every word equally. In medical audio, that makes little sense — **“yeah” and “amoxicillin” do not carry the same importance**.\n\nSo for v4 I re-scored the benchmark using only **clinically relevant words**: drugs, conditions, symptoms, anatomy, and clinical procedures. I also broke out **Drug M-WER** separately, since medication names a",
+      "category": "ai_models"
+    },
+    {
+      "title": "LG Just Released the First Open-Weight Vision Language Model for Physical Intelligence",
+      "url": "https://x.com/LG_AI_Research",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T14:33:10.226Z",
+      "summary": "LG AI Research launched EXAONE 4.5, their first open-weight Vision Language Model targeting physical intelligence and robotics. LG's hardware and manufacturing expertise gives them unique insight into what robots need.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Open-Source Models Can Do Everything Claude Mythos Can Do",
+      "url": "https://x.com/stanislavfort",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T14:33:10.226Z",
+      "summary": "Researchers replicated all 8 Mythos security vulnerabilities using open-source models, proving dangerous AI capabilities cannot be contained by restricting frontier model access. The finding has major implications for AI safety policy.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NanoBanana Powers WorldAgents — AI Image Generator Used for 3D World Creation",
+      "url": "https://x.com/MattNiessner/status/2036019740930408905",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T14:29:35.589Z",
+      "summary": "NanoBanana is being used as the Generator in WorldAgents for 3D world creation, demonstrating how AI image models are being integrated into complex multi-agent creative systems. The integration highlights NanoBanana's versatility.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Unused phone as AI server",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sgqlfn/unused_phone_as_ai_server/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-09T14:05:51.000Z",
+      "summary": "If you have an unused phone lying around, you might be sitting on a tiny AI server\n\nI’ve been working on a project where I modified Google AI Edge Gallery and turned it into an OpenAI-compatible API server: \\[Gallery as Server\\](https://github.com/xiaoyao9184/gallery)\n\nYour phone can run local AI inference\n\nYou can call it just like an OpenAI API (chat/completions, etc.)\n\nInstead of letting that hardware collect dust, you can turn it into a lightweight inference node.\n\nSo yeah—if you have more t",
+      "category": "ai_models"
+    }
+  ]
+}

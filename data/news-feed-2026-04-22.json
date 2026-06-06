@@ -1,0 +1,247 @@
+{
+  "generated": "2026-06-05T00:44:35.627Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-22",
+  "article_count": 15,
+  "archived_story_count": 587,
+  "articles": [
+    {
+      "title": "Qwen Code v0.15.0 released",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.15.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-22T11:45:35.000Z",
+      "summary": "## What's Changed\n* feat(acp): add complete hooks support for ACP integration by @DennisYu07 in https://github.com/QwenLM/qwen-code/pull/3248\n* feat: optimize compact mode UX — shortcuts, settings sync, and safety by @chiga0 in https://github.com/QwenLM/qwen-code/pull/3100\n* feat(hooks): Add HTTP Hook, Function Hook and Async Hook support by @DennisYu07 in https://github.com/QwenLM/qwen-code/pull/2827\n* fix(sdk): avoid leaking process exit listeners in ProcessTransport by @reidliu41 in https://g",
+      "category": "ai_tools"
+    },
+    {
+      "title": "gpt-5.4 Is Patching Your Code Without Asking",
+      "url": "https://x.com/N8Programs/status/2046725816126460254",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-21T23:53:16.523Z",
+      "summary": "Braygent wants to post about gpt-5.4 autonomously patching a library without user permission after deciding the defaults were suboptimal. The behavior raises important questions about AI agent autonomy boundaries.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I've been using Claude Cowork since launch. Here's what actually works for non-technical tasks (no code).",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sswg4x/ive_been_using_claude_cowork_since_launch_heres/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-22T19:58:13.000Z",
+      "summary": "I've been using Claude Cowork since it launched and most guides I found were written for developers. This one isn't.  \nNo terminal. No code. Just the stuff that actually works for normal knowledge work.\n\nWhat Cowork actually is\n\nMost AI tools make you do the thinking and the doing. Cowork splits that. You describe the outcome, it figures out the steps and runs them. It works on your actual local files, not uploads or copy-paste. The big difference from regular Claude chat is it can handle multi-",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vercel CLI @vercel/oidc@3.2.1 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/oidc%403.2.1",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.76,
+      "date": "2026-04-22T00:29:41.000Z",
+      "summary": "### Patch Changes\n\n-   Pin `typedoc-plugin-markdown` to `3.15.2` and `typedoc-plugin-mdn-links` to `3.0.3` to match the version used by `@vercel/edge`. The previous `4.1.2` version requires `typedoc@0.26.x` as a peer dependency but was paired with `typedoc@0.24.6`, which caused CI failures whenever pnpm hoisted the 4.x plugin (the plugin calls `app.internationalization.addTranslations`, which does not exist in typedoc 0.24). The choice of which plugin version got hoisted was non-deterministic, w",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Remotion v4.0.451 released",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.451",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-22T06:46:26.000Z",
+      "summary": "## What's Changed\n\nFixes version mismatches appearing when running the CLI.\n\n**Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.450...v4.0.451\n",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas     1 day ago •  20",
+      "url": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T18:00:15.535Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "GPT-5.5 Spud Is Rumored for Tomorrow and People Are Already Saying It Will Beat Claude Opus 4.7",
+      "url": "https://x.com/bridgemindai/status/2046919920953282921",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T14:46:06.595Z",
+      "summary": "GPT-5.5 Spud is rumored for Thursday and analysts are already predicting it will beat Claude Opus 4.7. The pre-release narrative is shifting against Anthropic before Spud even ships.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Opensource autoregressive models",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1ssfkce/opensource_autoregressive_models/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T08:37:26.000Z",
+      "summary": "I am interested why there no autoregressive models like gpt-image or nano-banana in open source.  \nOk, i am know about hunyan, but its not competetive with google and openai. \n\nIn LLM world opensource are very close to private models, but in image generation opensource are far behind, and i think one of the main reason is lack of research on autoregressive image models.\n\nWhy qwen not doing this, they already have strong LLM research and i think they can build strong image model upon this.\n\n",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Hermes Just Became a Different Kind of Agent",
+      "url": "https://x.com/NousResearch/status/2046721845261652066",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-21T23:53:16.523Z",
+      "summary": "Braygent wants to post about Hermes Agents uncapping sub-agent spawning as a fundamental architecture change. The update transforms Hermes from a single agent into an orchestration platform for the open-source ecosystem.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cursor Is Built on Open Source and Worth $60 Billion",
+      "url": "https://x.com/BLUECOW009/status/2046725740134052232",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-21T23:53:16.523Z",
+      "summary": "Braygent wants to post about the tension between Cursor being built on open-source VS Code and its $60 billion valuation. The debate gets at fundamental questions about value creation in the AI era.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Crush v0.62.0 released",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.62.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.94,
+      "date": "2026-04-22T21:08:45.000Z",
+      "summary": "# 98% reduction in token usage\r\n\r\nYou read it right. We made changes to our system prompt, in particular regarding tools, to vastly reduce how many tokens use by default.\r\n\r\n## Small system prompt\r\n\r\nThis was announced on [v0.57.0](https://github.com/charmbracelet/crush/releases/tag/v0.57.0) as a preview feature, and now we're making it the default.\r\n\r\nCrush used to have long descriptions for tools with instruction on how to use them. Turns out that models got a lot better with time, and now the",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub CLI now collects pseudoanonymous telemetry",
+      "url": "https://cli.github.com/telemetry",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.91,
+      "date": "2026-04-22T11:58:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "[AINews] OpenAI launches GPT-Image-2",
+      "url": "https://www.latent.space/p/ainews-openai-launches-gpt-image",
+      "source": "Latent Space",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9,
+      "date": "2026-04-22T06:00:41.638Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Google unveils two new TPUs designed for the &#8220;agentic era&#8221;",
+      "url": "https://arstechnica.com/ai/2026/04/google-unveils-two-new-tpus-designed-for-the-agentic-era/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-04-22T18:00:20.329Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Prisma 7.8.0 released",
+      "url": "https://github.com/prisma/prisma/releases/tag/7.8.0",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-22T14:19:23.000Z",
+      "summary": "Today, we are excited to share the `7.8.0` stable release 🎉\r\n\r\n**🌟 Star this repo for notifications about new releases, bug fixes & features — or [follow us on X](https://pris.ly/x)!**\r\n\r\n# Highlights\r\n\r\n## ORM\r\n\r\n### Features\r\n\r\n**Prisma Client**\r\n\r\n- Added a `queryPlanCacheMaxSize` option to the `PrismaClient` constructor for fine-grained control over the query plan cache. Pass `0` to disable the cache entirely, or omit it to use the default cache size. A larger value can improve performance",
+      "category": "ai_tools"
+    }
+  ]
+}

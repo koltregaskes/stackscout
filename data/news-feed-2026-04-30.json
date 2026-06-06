@@ -1,0 +1,255 @@
+{
+  "generated": "2026-06-05T00:44:36.990Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-30",
+  "article_count": 15,
+  "archived_story_count": 692,
+  "articles": [
+    {
+      "title": "[Open Source] We built a local code search MCP for Claude Code that uses ~98% fewer tokens than grep+read",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1szvo7t/open_source_we_built_a_local_code_search_mcp_for/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T13:11:07.000Z",
+      "summary": "Working on large codebases with Claude Code, we kept running into the same issue: when Claude looks for relevant code, it falls back to grep, reading full files, or launching multiple subagents. This burns through tokens, and often misses the relevant code. There are some existing solutions (that we also benchmarked against), but they all had issues (too slow, needs API keys, quality not good enough, etc).\n\nWe built [Semble](https://github.com/MinishLab/semble) to fix this. It's a local MCP serv",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The \"Big Tech Steamroller\" is coming for your AI agent. Before you write another line of code, ask yourself: \"Can a trillion-dollar company do this with a single API update?\" If the answer is yes, pivot now.",
+      "url": "https://x.com/AI_BioPhD/status/2049769860897321027",
+      "source": "X / @ai_biophd",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T08:36:32.000Z",
+      "summary": "The \"Big Tech Steamroller\" is coming for your AI agent. Before you write another line of code, ask yourself: \"Can a trillion-dollar company do this with a single API update?\" If the answer is yes, pivot now.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cursor SDK — The Democratization of Agent Development",
+      "url": "https://x.com/Marktechpost/status/2049711306643759265",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T05:23:49.823Z",
+      "summary": "Cursor's SDK reduces agent deployment to three lines of TypeScript, democratizing agent development. The release is the AWS moment for agents, dramatically lowering the barrier to production deployment.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Codex CLI 0.128.0 is out! Persisted /goal workflows: create, pause, resume, clear codex update + configurable TUI keymaps Built-in permission profiles + sandbox CLI selection Changelog:",
+      "url": "https://x.com/Codex_Changelog/status/2049905403262079480",
+      "source": "X / @codex_changelog",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.97,
+      "date": "2026-04-30T17:35:08.000Z",
+      "summary": "Codex CLI 0.128.0 is out! Persisted /goal workflows: create, pause, resume, clear codex update + configurable TUI keymaps Built-in permission profiles + sandbox CLI selection Changelog:",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Pu.sh – a full coding-agent harness in 400 lines of shell",
+      "url": "https://pu.dev/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 0.88,
+      "date": "2026-04-30T20:55:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "26 years ago I took a website management company public on NASDAQ (200+ staff, 60 engineers).  Over just a few weekends I rebuilt a better product using Claude Code.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1t00h8u/26_years_ago_i_took_a_website_management_company/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-30T15:59:02.000Z",
+      "summary": "Yeah, me again, same guy from [the Legends of Future Past post](https://www.reddit.com/r/ClaudeAI/comments/1sfsz67/i_gave_claude_my_dead_games_30yearold_files_and/) a few weeks back (where I resurrected a 30+ year old game I lost the source to from its script files, using Claude Code). A bunch of folks asked what else I was working on. This is it.\n\nLightCMS is now open source: [https://github.com/jonradoff/lightcms](https://github.com/jonradoff/lightcms) (MIT). About 47K lines of Go, 114 MCP too",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm v11.0.3 released",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.3",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-30T21:17:05.000Z",
+      "summary": "## Patch Changes\r\n\r\n* Fix too many open files error sometimes happening on Windows, when creating command shims in `node_modules/.bin` [#11412](https://github.com/pnpm/pnpm/issues/11412).\r\n* Fix `ERR_PNPM_FETCH_404` when installing a project whose lockfile depends on a `file:` tarball. The previous behavior dropped the `tarball` field from `file:` and git-hosted resolutions when `lockfile-include-tarball-url=false` (the default), even though those URLs cannot be reconstructed from the package na",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vercel CLI @vercel/python-workers@0.0.20 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/python-workers%400.0.20",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.76,
+      "date": "2026-04-30T03:51:45.000Z",
+      "summary": "### Patch Changes\n\n-   894e7d4: [python/vercel-workers] refactor framework-specific logic into vercel-workers\n",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gemini CLI v0.40.1 released",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.40.1",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-30T18:16:48.000Z",
+      "summary": "## What's Changed\n* fix(patch): cherry-pick 2194da2 to release/v0.40.0-pr-26153 to patch version v0.40.0 and create version 0.40.1 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/26268\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.40.0...v0.40.1",
+      "category": "ai_tools"
+    },
+    {
+      "title": "X announces a rebuilt ad platform powered by AI",
+      "url": "https://techcrunch.com/2026/04/30/x-announces-a-rebuilt-ad-platform-powered-by-ai/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T18:04:35.970Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+      "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T18:04:35.962Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "The MCP Era Feels Like Déjà Vu     1 day ago •  3",
+      "url": "https://huggingface.co/blog/Navid-AI/mcp-era-feels-like-deja-vu",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T18:04:33.505Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "Most people use Claude Code like autocomplete. This tutorial shows how to use it like a system: agentic loops, subagents, MCP servers, real workflows. That’s the difference between “AI help” and real leverage. https:// claudedigest.com/tut…",
+      "url": "https://x.com/ClaudeDigest/status/2049902211292127462",
+      "source": "X / @claudedigest",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T17:22:27.000Z",
+      "summary": "Most people use Claude Code like autocomplete. This tutorial shows how to use it like a system: agentic loops, subagents, MCP servers, real workflows. That’s the difference between “AI help” and real leverage. https:// claudedigest.com/tutorials/mdx/ mastering-claude-code …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "81% of dev teams use AI in testing, but the QE Lead is still human. Greenlyt changes that. Autonomous AI agent that owns your entire release quality process.",
+      "url": "https://x.com/polsia/status/2049901864381288455",
+      "source": "X / @polsia",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T17:21:04.000Z",
+      "summary": "81% of dev teams use AI in testing, but the QE Lead is still human. Greenlyt changes that. Autonomous AI agent that owns your entire release quality process.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MiMo-V2.5-Pro Matches Opus 4.6 at 8x Lower Cost — Open Weights",
+      "url": "https://x.com/itsPaulAi/status/2049862276832715177",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-30T15:20:23.436Z",
+      "summary": "Braygent's take: MiMo-V2.5-Pro at 8x lower cost than Opus 4.6 is the open vs closed model story of 2026. The gap is closing fast.",
+      "category": "ai_tools"
+    }
+  ]
+}
