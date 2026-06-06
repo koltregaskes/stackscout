@@ -1273,6 +1273,21 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 `
 }
 
+function updateServiceWorkerCacheName() {
+  const serviceWorkerPath = 'service-worker.js'
+  const current = fs.readFileSync(path.join(ROOT_DIR, serviceWorkerPath), 'utf8')
+  const cacheNamePattern = /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}['"]/
+
+  if (!cacheNamePattern.test(current)) {
+    throw new Error('service-worker.js cache name was not updated; expected stackscout-YYYY-MM-DD declaration.')
+  }
+
+  const next = current.replace(cacheNamePattern, `const CACHE_NAME = 'stackscout-${GENERATED_AT}'`)
+  if (next !== current) {
+    writeFile(serviceWorkerPath, next)
+  }
+}
+
 function main() {
   const privatePreviewExport = resolvePrivatePreviewExportPath()
   const site = readJson('site-source.json')
@@ -1333,6 +1348,7 @@ function main() {
   ]
 
   writeFile('sitemap.xml', buildSitemap(sitemapRoutes))
+  updateServiceWorkerCacheName()
   console.log(
     `Stack Scout build complete. Generated ${tools.length} tool pages, ${categories.length} category pages, and ${updates.length} updates.`,
   )

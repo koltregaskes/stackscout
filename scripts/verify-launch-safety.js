@@ -45,9 +45,10 @@ const REQUIRED_PUBLIC_FILES = [
 ]
 const TEXT_EXTENSIONS = new Set(['.css', '.html', '.js', '.json', '.svg', '.txt', '.xml'])
 const PRIVATE_PATTERNS = [
-  { label: 'Windows drive path', pattern: /\b[A-Z]:[\\/][^\s"'<>)]*/i },
-  { label: 'UNC path', pattern: /\\\\[A-Za-z0-9._-]+[\\/][^\s"'<>)]*/i },
-  { label: 'local-only surface marker', pattern: /\b(?:tools-hub-local|LOCAL-ONLY|_local)\b/i },
+  { label: 'Kol Windows user path', pattern: /\b[A-Z]:[\\/]Users[\\/](?:koltregaskes|kolin)[\\/][^\s"'<>)]*/i },
+  { label: 'W drive estate path', pattern: /\bW:[\\/][^\s"'<>)]*/i },
+  { label: 'estate UNC path', pattern: /\\\\(?:\?\\)?(?:nas_storage_1|MINI-PC|localhost|127\.0\.0\.1)[\\/][^\s"'<>)]*/i },
+  { label: 'local-only surface marker', pattern: /\b(?:tools-hub-local|LOCAL-ONLY|_local)\b/ },
   { label: 'private operations wording', pattern: /\b(?:manager inbox|review evidence|session state)\b/i },
 ]
 const REQUIRED_GITIGNORE_PATTERNS = ['.env', '.env.*', '*.local.md', '.local/', 'local-hub/']
