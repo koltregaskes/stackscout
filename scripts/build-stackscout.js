@@ -1276,16 +1276,16 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 function updateServiceWorkerCacheName() {
   const serviceWorkerPath = 'service-worker.js'
   const current = fs.readFileSync(path.join(ROOT_DIR, serviceWorkerPath), 'utf8')
-  const next = current.replace(
-    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}['"]/,
-    `const CACHE_NAME = 'stackscout-${GENERATED_AT}'`,
-  )
+  const cacheNamePattern = /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}['"]/
 
-  if (next === current) {
+  if (!cacheNamePattern.test(current)) {
     throw new Error('service-worker.js cache name was not updated; expected stackscout-YYYY-MM-DD declaration.')
   }
 
-  writeFile(serviceWorkerPath, next)
+  const next = current.replace(cacheNamePattern, `const CACHE_NAME = 'stackscout-${GENERATED_AT}'`)
+  if (next !== current) {
+    writeFile(serviceWorkerPath, next)
+  }
 }
 
 function main() {
