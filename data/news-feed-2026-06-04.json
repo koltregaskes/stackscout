@@ -1,0 +1,72 @@
+{
+  "generated": "2026-06-06T17:46:28.958Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-06-04",
+  "article_count": 4,
+  "archived_story_count": 218,
+  "articles": [
+    {
+      "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-06-04T20:11:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Open Terminal – A Bloomberg Style App for Research",
+      "url": "https://tesseractanalytics.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-06-04T15:58:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Meta's ships facial recognition on smart glasses",
+      "url": "https://www.buchodi.com/meta-glasses-facial-recognition/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-04T19:36:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Branchless Quicksort faster than std:sort and pdqsort with C and C++ API",
+      "url": "https://tiki.li/blog/blqsort",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-02T20:00:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

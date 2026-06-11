@@ -1,0 +1,87 @@
+{
+  "generated": "2026-06-06T17:46:10.496Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-27",
+  "article_count": 5,
+  "archived_story_count": 86,
+  "articles": [
+    {
+      "title": "Nashville library launches Memory Lab for digitizing home movies",
+      "url": "https://www.axios.com/local/nashville/2026/03/16/nashville-library-digitize-home-movies",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-03-24T04:22:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Open-Source Animal Crossing–Style UI for Claude Code Agents",
+      "url": "https://github.com/outworked/outworked/releases/tag/v0.3.0",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.7699999999999999,
+      "date": "2026-03-27T17:25:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Telnyx package compromised on PyPI",
+      "url": "https://www.aikido.dev/blog/telnyx-pypi-compromised-teampcp-canisterworm",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-27T18:13:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Telnyx package compromised on PyPI",
+      "url": "https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-27T08:57:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Minimalist library to generate SVG views of scientific data",
+      "url": "https://github.com/alefore/mini_svg/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-23T17:54:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

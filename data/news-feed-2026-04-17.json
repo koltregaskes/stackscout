@@ -1,0 +1,263 @@
+{
+  "generated": "2026-06-06T17:46:16.116Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-17",
+  "article_count": 15,
+  "archived_story_count": 370,
+  "articles": [
+    {
+      "title": "Crush v0.60.0 released",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.60.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T16:55:33.000Z",
+      "summary": "# Secret release\r\n\r\nYou're not supposed to read through the changelog below.\r\n\r\n## Changelog\r\n### New!\r\n* ea86101bf6c61ee05ca3e887ea65d2f5ff9e68d7: feat(hyper): use openai-compatible endpoint for hyper (#2640) (@andreynering)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Verifying the artifacts</summary>\r\n\r\nFirst, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.60.0/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Adapt: open-source memory that rewrites its own structure when your data surprises it",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1so002u/adapt_opensource_memory_that_rewrites_its_own/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T12:48:26.000Z",
+      "summary": "TypeScript library I've been building. The thing I want feedback on: when the memory keeps dismissing data it shouldn't, or queries keep coming back empty, it restructures itself;splits overloaded learners, merges redundant ones, grows new ones for domains nobody configured.   \n  \nWorks with any Vercel AI SDK provider, so Ollama / LM Studio / llama.cpp plus hosted.   \n  \nObserve and synthesize are separate LLM calls, so you can run a 7B for observe (the high-volume path) and a bigger model for s",
+      "category": "ai_models"
+    },
+    {
+      "title": "Anthropic's AI protocol has critical flaw affecting 200,000 servers",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1snx2nw/anthropics_ai_protocol_has_critical_flaw/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T10:29:36.000Z",
+      "summary": "https://www.infosecurity-magazine.com/news/systemic-flaw-mcp-expose-150/\n\nSecurity researchers at OX Security disclosed on Tuesday what they describe as a critical, systemic vulnerability in Anthropic's Model Context Protocol, an open-source standard that allows AI models to connect to external data sources and systems. The flaw could enable arbitrary command execution on any vulnerable system, potentially exposing sensitive user data, internal databases, API keys, and chat histories across more",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Codex Just Got Its Biggest Update Yet",
+      "url": "https://reddit.com/r/ChatGPT/comments/1sno26n/openai_codex_just_got_its_biggest_update_yet/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T02:27:24.000Z",
+      "summary": "OpenAI says Codex now works in the app, IDE, terminal, web, GitHub, iOS, and Slack.   \n  \nRecent upgrades bundled a new GPT-5.3-Codex model for agentic coding, a rebuilt CLI, an IDE extension for VS Code-compatible editors, faster cloud task performance via container caching, automated code review, an in-app browser for rendered pages, and computer use for macOS apps.   \n  \nApril 2026 added three more shifts: a token-based credit billing model, a new $100 Pro tier with up to 10x Plus usage, and ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "[Resource] Anima Style Explorer: A free web tool for ComfyUI styles + Open Source MooshieUI Desktop Client",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1snkume/resource_anima_style_explorer_a_free_web_tool_for/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T00:03:20.000Z",
+      "summary": "I wanted to share a project I have been building for the community called Anima. It is a completely free web-based style explorer designed to help you discover and visualize different aesthetic prompts and configurations for your Stable Diffusion generations without guesswork.\n\nWeb Version: [https://anima.mooshieblob.com/](https://anima.mooshieblob.com/)\n\n**MooshieUI Integration (Open Source)**\n\nFor those who prefer a local workflow, I have also integrated this into MooshieUI. This is a custom, ",
+      "category": "creative_tools"
+    },
+    {
+      "title": "How to Implement Karpathy's LLM Knowledge Base. Full Guide",
+      "url": "https://reddit.com/r/ChatGPT/comments/1so334n/how_to_implement_karpathys_llm_knowledge_base/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.98,
+      "date": "2026-04-17T14:45:37.000Z",
+      "summary": "karpathy introduced his LLM Knowledge base Wiki last week.  We've been quietly doing a version of this for months at our Org, but his write-up made me realize how much further you can take it with the right setup.\n\n**the core idea**:  using LLM to compile and maintain knowledge. **you feed source documents** \\- articles, papers, sdk references, repos into a raw directory. the model incrementally builds a wiki from them. markdown files, summaries, backlinks, categorized by concept. the llm writes",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gemini CLI v0.38.2 released",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.38.2",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-04-17T18:38:59.000Z",
+      "summary": "## What's Changed\n* fix(patch): cherry-pick 14b2f35 to release/v0.38.1-pr-24974 to patch version v0.38.1 and create version 0.38.2 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/25585\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.38.1...v0.38.2",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vercel CLI vercel@51.7.0 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/vercel%4051.7.0",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-17T22:38:37.000Z",
+      "summary": "### Minor Changes\n\n-   [detect-services] If a vercel.toml exists, update the vercel.toml ([#15895](https://github.com/vercel/vercel/pull/15895))\n\n-   Use correct filename in messages when config file is not vercel.json ([#15893](https://github.com/vercel/vercel/pull/15893))\n\n-   [services] move Python workers to v2beta triggers with private routing ([#15920](https://github.com/vercel/vercel/pull/15920))\n\n### Patch Changes\n\n-   Include `action` and `resource` fields from API 403 responses in non-",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vercel CLI vercel@51.6.1 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/vercel%4051.6.1",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-17T02:34:08.000Z",
+      "summary": "### Patch Changes\n\n-   Updated dependencies \\[[`055f6239a4fe763b9f3b33cfbb5baa2e0e214767`](https://github.com/vercel/vercel/commit/055f6239a4fe763b9f3b33cfbb5baa2e0e214767)]:\n    -   @vercel/build-utils@13.18.0\n    -   @vercel/backends@0.1.0\n    -   @vercel/python@6.34.0\n    -   @vercel/elysia@0.1.68\n    -   @vercel/express@0.1.78\n    -   @vercel/fastify@0.1.71\n    -   @vercel/go@3.5.0\n    -   @vercel/h3@0.1.77\n    -   @vercel/hono@0.2.71\n    -   @vercel/hydrogen@1.3.6\n    -   @vercel/koa@0.1.51",
+      "category": "ai_tools"
+    },
+    {
+      "title": "CadQuery is an open-source Python library for building 3D CAD models",
+      "url": "https://cadquery.github.io/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-14T23:20:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Qwen3.6 GGUF is so good for debugging.",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sofcqv/qwen36_gguf_is_so_good_for_debugging/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T22:13:05.000Z",
+      "summary": "using unsloth dynamic quant on 16GB vram + 32GB dram. 200k q8\\_0 kv cache (context window)",
+      "category": "ai_models"
+    },
+    {
+      "title": "Intel Arc Pro B70 Open-Source Linux Performance Against NVIDIA RTX &amp; AMD Radeon AI PRO Review",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1soe0nm/intel_arc_pro_b70_opensource_linux_performance/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T21:20:59.000Z",
+      "summary": "The R9700 is about 30% more than the B70, but it's more than 30% better. Overall, I rather have a R9700 than a B70.\n\n",
+      "category": "ai_models"
+    },
+    {
+      "title": "Trying to Run LTX2.3 locally but getting an error",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sodw5o/trying_to_run_ltx23_locally_but_getting_an_error/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T21:16:26.000Z",
+      "summary": "I'm pretty new to all of this, but I thought that the cool thing about LTX 2.3 was that you are able to do image and video generation locally on your own hardware. But it's still connected to the API key that I created which makes it think I'm still trying to use it through the cloud. I tried switching the model to something that would make it generate locally but I guess that wasn't the solution? It was a 25 GB download so I thought that was the answer but now I'm stumped. Can someone explain h",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Claude Design just launched and Figma dropped 4.26% in a single day, we are witnessing history in real time",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1so6z2t/claude_design_just_launched_and_figma_dropped_426/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T17:04:24.000Z",
+      "summary": "I genuinely cannot believe what I'm watching unfold today\n\nAnthropic dropped Claude Design this morning , a tool that lets anyone describe what they want and get back a full website, landing page, or presentation. No design skills needed and No Figma subscription. Just... talk to it\n\nAnd the market reacted instantly. Figma stock is down $0.86 (4.26%) today alone. Adobe, Wix, GoDaddy all bled too. Anthropic's own CPO literally resigned from Figma's board three days ago. The writing was on the wal",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Fastest image to image model",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1so6um1/fastest_image_to_image_model/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-17T17:00:09.000Z",
+      "summary": "Does anybody know a platform that can deliver **image-to-image** responses in their **API** in less than **7** seconds? I already tried **Nano Banana**, but it takes about **16** seconds or more.",
+      "category": "creative_tools"
+    }
+  ]
+}

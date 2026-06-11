@@ -1,0 +1,253 @@
+{
+  "generated": "2026-06-06T17:46:12.058Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-01",
+  "article_count": 15,
+  "archived_story_count": 894,
+  "articles": [
+    {
+      "title": "MiniMax Releases M2.1: An Enhanced M2 Version with Features like Multi-Coding Language Support, API Integration, and Improved Tools for Structured Coding",
+      "url": "https://www.marktechpost.com/2025/12/25/minimax-releases-m2-1-an-enhanced-m2-version-with-features-like-multi-coding-language-support-api-integration-and-improved-tools-for-structured-coding/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.743Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Agent-Infra Releases AIO Sandbox: An All-in-One Runtime for AI Agents with Browser, Shell, Shared Filesystem, and MCP",
+      "url": "https://www.marktechpost.com/2026/03/29/agent-infra-releases-aio-sandbox-an-all-in-one-runtime-for-ai-agents-with-browser-shell-shared-filesystem-and-mcp/",
+      "source": "MarkTechPost",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.720Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "UT Austin and ServiceNow Research Team Releases AU-Harness: An Open-Source Toolkit for Holistic Evaluation of Audio LLMs",
+      "url": "https://www.marktechpost.com/2025/09/14/ut-austin-and-servicenow-research-team-releases-au-harness-an-open-source-toolkit-for-holistic-evaluation-of-audio-llms/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.737Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Google AI Releases Veo 3.1 Lite: Giving Developers Low Cost High Speed Video Generation via The Gemini API",
+      "url": "https://www.marktechpost.com/2026/03/31/google-ai-releases-veo-3-1-lite-giving-developers-low-cost-high-speed-video-generation-via-the-gemini-api/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.724Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Improve coding agents’ performance with Gemini API Docs MCP and Agent Skills.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-docsmcp-agent-skills/",
+      "source": "Google AI Blog",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:34:55.903Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "source": "Anthropic News",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:34:54.348Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "Show HN: CLI to order groceries via reverse-engineered REWE API (Haskell)",
+      "url": "https://github.com/yannick-cw/korb",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-03-30T06:45:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Stability AI Announces Investment from WPP and New Partnership to Shape the Future of Media and Entertainment Production",
+      "url": "https://stability.ai/news-updates/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production",
+      "source": "Stability AI Blog",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:11.176Z",
+      "summary": null,
+      "category": "creative_tools"
+    },
+    {
+      "title": "NVIDIA Releases New AI Models and Developer Tools to Advance Autonomous Vehicle Ecosystem",
+      "url": "https://blogs.nvidia.com/blog/autonomous-vehicle-ecosystem-ai-models-developer-tools/",
+      "source": "NVIDIA AI Blog",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:05.180Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "An Implementation of IWE&#8217;s Context Bridge as an AI-Powered Knowledge Graph with Agentic RAG, OpenAI Function Calling, and Graph Traversal",
+      "url": "https://www.marktechpost.com/2026/03/27/an-implementation-of-iwes-context-bridge-as-an-ai-powered-knowledge-graph-with-agentic-rag-openai-function-calling-and-graph-traversal/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.747Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "How to Design a Fully Functional Enterprise AI Assistant with Retrieval Augmentation and Policy Guardrails Using Open Source AI Models",
+      "url": "https://www.marktechpost.com/2025/10/22/how-to-design-a-fully-functional-enterprise-ai-assistant-with-retrieval-augmentation-and-policy-guardrails-using-open-source-ai-models/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.735Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Salesforce AI Research Releases VoiceAgentRAG: A Dual-Agent Memory Router that Cuts Voice RAG Retrieval Latency by 316x",
+      "url": "https://www.marktechpost.com/2026/03/30/salesforce-ai-research-releases-voiceagentrag-a-dual-agent-memory-router-that-cuts-voice-rag-retrieval-latency-by-316x/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.718Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Hugging Face Releases TRL v1.0: A Unified Post-Training Stack for SFT, Reward Modeling, DPO, and GRPO Workflows",
+      "url": "https://www.marktechpost.com/2026/04/01/hugging-face-releases-trl-v1-0-a-unified-post-training-stack-for-sft-reward-modeling-dpo-and-grpo-workflows/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:35:03.710Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "Salesforce announces an AI-heavy makeover for Slack, with 30 new features",
+      "url": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:34:58.227Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "How I contributed a new model to the Transformers library using Codex     1 day ago •  34",
+      "url": "https://huggingface.co/blog/nielsr/contributing-to-transformers-with-codex",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-01T09:34:55.910Z",
+      "summary": null,
+      "category": "ai_models"
+    }
+  ]
+}

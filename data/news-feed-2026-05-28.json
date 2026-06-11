@@ -1,0 +1,271 @@
+{
+  "generated": "2026-06-06T17:46:27.219Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-28",
+  "article_count": 15,
+  "archived_story_count": 714,
+  "articles": [
+    {
+      "title": "Claude Code 2.1.153 Open Changelog Reflects Anthropic's Transparent Developer Tooling Strategy",
+      "url": "https://x.com/ClaudeCodeLog/status/2059802880811434228",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T12:12:48.493Z",
+      "summary": "Anthropic's commitment to publishing detailed Claude Code changelogs with every release enables developers to track improvements and plan migrations. Version 2.1.153 with 36 CLI changes reflects rapid iteration in the agentic coding space.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built and open-sourced Skill Index to organize &amp; standardize your AI agent knowledge across Claude, Codex, Cursor, and more. 100% local and free on macOS.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tprx27/i_built_and_opensourced_skill_index_to_organize/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T03:36:12.000Z",
+      "summary": "I’ve been using Claude alongside other coding agents, and I kept running into the same problem: useful skills, MCPs, commands, hooks, and workflows start getting scattered across different tools. Sometimes Claude has the best version of something. Sometimes Codex or Cursor does. Sometimes an MCP is configured in one agent but missing or slightly different in another. Over time, it gets harder to treat your agent knowledge as one reusable system. So I built Skill Index: a free, open-source, 100% local macOS app for organizing and standardizing AI agent knowledge. The goal is to make it easier to bring reusable skills/MCPs/agent knowledge into Claude, while also keeping Claude’s own knowledge portable across the rest of your setup. It can help you: \\- see where your skills and MCPs live \\- compare what Claude, Codex, Cursor, Windsurf, and other agents can access \\- standardize around a canonical definition of each skill/MCP \\- keep your skills and MCPs in sync across every agent It’s local-first: no accounts, no cloud sync, no telemetry. Website: [https://skillindex.app](https://skillindex.app) GitHub: [https://github.com/arjitj2/skillindex](https://github.com/arjitj2/skillindex)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MCP Servers / Connectors in Claude Desktop / Cowork via AWS Bedrock",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tpxskx/mcp_servers_connectors_in_claude_desktop_cowork/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-28T08:48:48.000Z",
+      "summary": "While using MCP servers in the code CLI works with MCP servers, I'm having trouble using connectors or MCP servers in Cowork. Connecting to Jira or O365 seems not possible. With Bedrock, we don't have the Chat, but only the Cowork tab and also some additional settings are missing. I tried configuring the claude\\_desktop\\_config.json with MCP servers, but cowork doesn't seem to be able to use it. I can Import a manual plugin, but after a restart it seems gone and configuring it in cowork is not possible, the authentication doesn't work. Did anyone manage to get Connectors / MCP Servers / Plugins in Claude Desktop with Bedrock to work, and if so, how?",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing Claude Opus 4.8",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tq99mu/introducing_claude_opus_48/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T16:52:23.000Z",
+      "summary": "We’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with sharper judgment, more honesty about its own progress, and the ability to work independently for longer than its predecessors. Available today for the same price. In Claude Code, you can hand off a feature, a migration, or a bug sweep and let it follow the work through while you focus on what’s next. Also launching today: * Fast mode for Opus 4.8 (research preview). Same model at roughly 2.5x the speed, now three times cheaper than before. * Dynamic workflows in Claude Code (research preview). Claude runs hundreds of parallel subagents in a single session and verifies its work before reporting back. * A new effort control on [claude.ai](http://claude.ai), so you can choose how much thinking Claude puts into a response. Claude Opus 4.8 is live today on [claude.ai](http://claude.ai), the Claude Platform, and all major cloud platforms. Read more: [anthropic.com/news/claude-opus-4-8](http://anthropic.com/news/claude-opus-4-8)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built an enforcement layer for AI coding agents using a local knowledge graph and hybrid RAG",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tq6sd0/i_built_an_enforcement_layer_for_ai_coding_agents/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T15:23:21.000Z",
+      "summary": "I know this sub is focused on local models but the architecture behind this applies to any LLM-powered coding agent, not just Claude Code. The problem: when you give a coding agent a large set of rules and standards, two things break. The context fills up with rules that aren't relevant to the current task, and nothing enforces compliance. The agent reads your instructions and decides what to follow. I built Writ to solve both. The knowledge layer: rules, skills, techniques, antipatterns, and playbooks live as nodes in a Neo4j knowledge graph with typed relationships between them. A five stage retrieval pipeline (BM25 over Tantivy, vector similarity over HNSW with a local ONNX embedding model, graph traversal, reciprocal rank fusion, context budget management) retrieves only what's relevant per task. Everything runs locally. No API calls for retrieval. The embedding model (all-MiniLM-L6-v2) runs through ONNX runtime, not PyTorch, so inference is fast without a GPU. The enforcement layer: 30 bash hook scripts intercept tool calls before execution. The agent can't write code without an approved plan, can't skip tests, can't say \"tests pass\" without running static analysis. These areâ€¦",
+      "category": "ai_models"
+    },
+    {
+      "title": "Kept context-switching between arxiv, OpenReview, GitHub, and HuggingFace for every paper, so I built this. Chrome extension + website with everything inline, plus citation graph + SPECTER2 neighbors. 3M papers, free, feedback welcome [P]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1tq53il/kept_contextswitching_between_arxiv_openreview/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T14:21:49.000Z",
+      "summary": "Spent the last few months building a deeper context layer over arxiv. Each paper gets a Tomesphere page with a TLDR + key findings (LLM-curated), OpenReview reviews where the venue is public, linked GitHub repos, HuggingFace models, conference videos, the citation graph in both directions, and a SPECTER2-based semantic neighbor graph. Same panel renders inline on arxiv via a Chrome extension (MV3 side panel API), or you can browse directly at tomesphere.com. 3M arxiv papers indexed. Caveats: reviewer scores only cover venues that publish openly on OpenReview (NeurIPS, ICLR, ICML, TMLR, COLM). Blind-review venues like CVPR, AAAI, ECCV are out of scope until contributors fill them in. GitHub, Hugging Face, and conference video matches are best-effort. Free, no signup. Site: [tomesphere.com](http://tomesphere.com/) Chrome: [chromewebstore.google.com/detail/tomesphere/nopoigoclhjcopjppnehidnkljmabllk](https://chromewebstore.google.com/detail/tomesphere/nopoigoclhjcopjppnehidnkljmabllk) Would love feedback, especially: which paper did you check first, and what's missing that you'd actually use?",
+      "category": "ai_research"
+    },
+    {
+      "title": "Built a richer reading layer for arxiv (Chrome extension + web): OpenReview reviews, GitHub/HuggingFace links, citation graph, SPECTER2 neighbors, TLDRs. 3M papers, free, looking for feedback [P]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1tq31yu/built_a_richer_reading_layer_for_arxiv_chrome/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T13:05:39.000Z",
+      "summary": "Spent the last few months building a deeper context layer over arxiv. Each paper gets a Tomesphere page with a TLDR + key findings (LLM-curated), OpenReview reviews where the venue is public, linked GitHub repos, HuggingFace models, conference videos, the citation graph in both directions, and a SPECTER2-based semantic neighbor graph. Same panel renders inline on arxiv via a Chrome extension (MV3 side panel API), or you can browse directly at tomesphere.com. 3M arxiv papers indexed. Caveats: reviewer scores only cover venues that publish openly on OpenReview (NeurIPS, ICLR, ICML, TMLR, COLM). Blind-review venues like CVPR, AAAI, ECCV are out of scope until contributors fill them in. GitHub, Hugging Face, and conference video matches are best-effort. Free, no signup. Site: [tomesphere.com](http://tomesphere.com) Chrome: [chromewebstore.google.com/detail/tomesphere/nopoigoclhjcopjppnehidnkljmabllk](https://chromewebstore.google.com/detail/tomesphere/nopoigoclhjcopjppnehidnkljmabllk) Would love feedback, especially: which paper did you check first, and what's missing that you'd actually use?",
+      "category": "ai_research"
+    },
+    {
+      "title": "SDXL image generation now works on iPhone. The bug that blocked it for months was a missing file check",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tq302b/sdxl_image_generation_now_works_on_iphone_the_bug/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T13:03:34.000Z",
+      "summary": "We've been building \\[Off Grid\\](https://github.com/alichherawalla/off-grid-mobile-ai) - open-source app for on-device AI (text + image gen, no cloud). SDXL on iPhone was broken for months. Users kept reporting it, we couldn't reproduce it consistently. Turns out: SDXL models ship in two UNet layouts: \\- Monolithic: one big \\`Unet.mlmodelc\\` file \\- Chunked: \\`UnetChunk1.mlmodelc\\` + \\`UnetChunk2.mlmodelc\\` Our validation code only checked for the monolithic layout. If you downloaded a chunked SDXL model (which most are), the app said \"model invalid\" and refused to load it. Months of reports. The fix was adding the chunked layout check — straightforward once we understood the problem. The app uses Apple's ml-stable-diffusion framework with CoreML. On an iPhone 15 Pro, you get SDXL images in about 30-45 seconds fully on-device. No internet needed at any point - the model lives on your phone. It's free and open source: \\- GitHub: [https://github.com/alichherawalla/off-grid-mobile-ai](https://github.com/alichherawalla/off-grid-mobile-ai) \\- iOS: [https://apps.apple.com/us/app/off-grid-local-ai/id6759299882](https://apps.apple.com/us/app/off-grid-local-ai/id6759299882) \\- Android (SDâ€¦",
+      "category": "creative_tools"
+    },
+    {
+      "title": "DSPy v3.3.0 Beta Brings ReActV2 to Open-Source AI Programming Framework",
+      "url": "https://x.com/isaacbmiller1/status/2059828079371894786",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T12:12:48.493Z",
+      "summary": "Stanford's DSPy framework released v3.3.0 beta on PyPI with ReActV2, improved LM/BaseLM architecture, and RLM data-passing support. DSPy is widely used for structured programming with language models in both research and production.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Tencent WorkBuddy Global Launch Brings China's Top Desktop AI Agent to International Markets",
+      "url": "https://x.com/TencentAI_News/status/2059827192964808922",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T12:12:47.642Z",
+      "summary": "Tencent's WorkBuddy desktop AI agent — already China's market leader — launches worldwide with autonomous handling of coding, analysis, and productivity tasks. The global launch challenges Microsoft Copilot, Cursor, and other Western enterprise AI assistants on their home turf.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Local run for multi users: which software set?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tq0cj7/local_run_for_multi_users_which_software_set/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T11:06:34.000Z",
+      "summary": "Context: I am testing and running local LLM on Linux for some months, first with llama.cpp and now with vLLM for better concurrent capabilities. I use llama-swap in front of either vLLM or llama.cpp in order to have thinking and non-thinking variants exposed with all inference parameters adjusted according to the model requirements. My needs: now, I would like to make the LLM available to multiple (less than 10) users, outside from the local network: https access, web chat interface with either connection or api-key, API access with api-key. What I tried: * apache as frontend proxy: handle SSL part and redirect to internal applications as unsecured connections. * LibreChat as web user interface * llama-swap * vLLM Observed problems: * concurrency is limited to 10 requests (llama-swap limitation, either find how to raise this value or good alternative) * LibreChat only gives web interface, still need API access with keys management. Which open source software set do you use to serve multiple users? Do you know simple keys management tools? Did I miss something? Thank for any help!",
+      "category": "ai_models"
+    },
+    {
+      "title": "OpenAI releases secure tunnels to connect private Model Context Protocol servers without modifying inbound firewallsOutbound-only HTTPS tunnels secure the connection to OpenAI.",
+      "url": "https://www.digg.com/ai/28n5w7d2",
+      "source": "Digg AI",
+      "tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T05:18:10.307Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Genesis AI launches Genesis World 1.0, an open-source robotics simulator that turns one hour of real-world testing into 100 simulation daysIt features GPU-accelerated physics solvers and path-traced rendering",
+      "url": "https://www.digg.com/ai/tuo1sird",
+      "source": "Digg AI",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T05:18:10.290Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vulnerability found in framework used by VLLM, many MCP servers, and other LLM tools",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tpp2th/vulnerability_found_in_framework_used_by_vllm/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T01:27:29.000Z",
+      "summary": "Worth taking a look to see if this affects any of you. Surprised nobody has posted it yet.",
+      "category": "ai_models"
+    },
+    {
+      "title": "GH200 NVL2 or 8x RTX 6000 Blackwell for running Kimi K2.6 / DeepSeek V4 locally? (5 devs, agentic coding)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tpp0a7/gh200_nvl2_or_8x_rtx_6000_blackwell_for_running/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-28T01:24:20.000Z",
+      "summary": "Trying to figure out the right box for my team and wanted to see if anyone had any clue which would be a better fit or if it is not worth our time in our budget. Situation: 5 of us doing agentic coding (lots of long context getting re-sent every turn, parallel tool calls, etc.) and we want to self-host the latest open MoE models — Kimi K2.6 and DeepSeek V4 class. My boss likes the idea of having it in house so no point in just saying pay the API (I did pitch that) Budget is around $100k - $150k. I'm stuck between a dual GH200 NVL2 (cheaper, \\~1.2TB unified memory) (about 95k) and an 8x RTX 6000 Pro Blackwell build (768GB of actual fast VRAM, more expensive) (about 140k). To get real numbers I rented a single GH200 and tested Kimi K2.6 at a 2-bit quant. After some playing around I got it up to \\~23 tok/s decode, which is not bad considering it is one GH200 with only 96gb of HBM, but I am not sure how it will scale to the dual GH200. The prefill was pretty slow yet again not sure how it will scale. The thing I keep coming back to: these models are too big to fit in HBM no matter what. Even the NVL2's 288GB HBM3e can't hold them, so the model partially lives in the slower unified memâ€¦",
+      "category": "ai_models"
+    }
+  ]
+}

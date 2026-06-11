@@ -1,0 +1,275 @@
+{
+  "generated": "2026-06-06T17:46:24.828Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-19",
+  "article_count": 15,
+  "archived_story_count": 634,
+  "articles": [
+    {
+      "title": "Google launches Antigravity 2.0 with an updated desktop app and CLI tool",
+      "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T19:45:37.755Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google releases Gemini 3.5 Flash for complex agentic workflows, coding, and reasoning at 289 tokens per second and higher scores than Gemini 3.1 Pro on Terminal-Bench 2.1, GDPval-AA, and MCP Atlas — Large token quotas appeared in Google Cloud Console before wider rollout.",
+      "url": "https://www.digg.com/ai/9p5cqkyn?rank=2",
+      "source": "Digg AI",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T19:45:35.241Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic just bought the company that generates most production MCP servers",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1thkkrb/anthropic_just_bought_the_company_that_generates/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T11:52:46.000Z",
+      "summary": "Anthropic acquired Stainless on Monday for a reported $300M+. Most coverage is framing this as a developer tools acquisition. Stainless is best known for generating the official Python and Node SDKs that ship with OpenAI, Google, Meta, Cloudflare, and Anthropic. The SDK story is real. The MCP side is the part that matters here. Stainless was one of the first vendors to extend their compiler to produce MCP servers from the same OpenAPI specs that produce their SDKs. MCP hit \\~97M monthly SDK downloads by December 2025 and around 10,000 production servers by early 2026. A lot of that production code was Stainless-generated. Anthropic now owns the dominant MCP server generator. What actually changed hands on Monday: 1. The engineering team. Roughly 40-50 people including founder Alex Rattray, who previously built Stripe's patented SDK generation system. Now reporting to Katelyn Lesse in Anthropic's Platform Engineering org. 2. The technology. The generator, the templates, the language-specific runtimes, the OpenAPI extensions Stainless invented for SDK-specific edge cases. 3. The hosted product is winding down. New signups stopped Monday. New SDK and MCP server generations stopped Mo…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "favorite Agentic Coding Harness",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1th5t1b/favorite_agentic_coding_harness/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-18T23:53:49.000Z",
+      "summary": "So far, I’ve tried Codex CLI, Claude Code, Gemini CLI, OpenCode, and recently, Pi with local models. Pi is the leanest of them all, with just four tools: read, write, edit, and bash. Its system prompt is only under 2K tokens, and it's perfect for local models. I've been trying out Qwen 27B-MXFP8 with it, and it's much better than I expected! It doesn't have fancy bells and whistles like multi agents, but the only thing I’m missing is searching the web for documentation. I’m sure you can get it through an extension, but you probably won’t get the same robust search features you get from commercial platforms anyways. This might be my new favorite! What’s yours?",
+      "category": "ai_models"
+    },
+    {
+      "title": "Tripsy's latest update integrates Model Context Protocol (MCP), allowing users to plan trips using AI clients and tools. AI can adjust itineraries by time, location, or preference, and a command-line interface has also been added for advan…",
+      "url": "https://x.com/AlternativeTo/status/2056637498978398395",
+      "source": "X / @alternativeto",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-05-19T07:26:04.000Z",
+      "summary": "Tripsy's latest update integrates Model Context Protocol (MCP), allowing users to plan trips using AI clients and tools. AI can adjust itineraries by time, location, or preference, and a command-line interface has also been added for advanced users. https:// alternativeto.net/news/2026/5/tr ipsy-adds-mcp-integration-and-cli-support-for-ai-powered-travel-planning-and-organization/ …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google introduces Gemini Spark, a 24/7 agentic assistant with Gmail integration",
+      "url": "https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T19:45:37.747Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Edison Scientific announces partnership with Incyte to deploy Kosmos AI agent across full drug development pipeline from molecular design through FDA approval — Incyte becomes first company to integrate the system end-to-end.",
+      "url": "https://www.digg.com/ai/r5p7scr1?rank=3",
+      "source": "Digg AI",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T19:45:35.257Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Why is LM-Studio download page showing me 0.4.7 to download when the latest version is 0.4.13?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1thx8eo/why_is_lmstudio_download_page_showing_me_047_to/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T19:17:46.000Z",
+      "summary": "I'm currently running LM-Studio 0.4.12. In the app if I check for updates it says there's a new version (0.4.13), I can read the changelog for 0.4.13, but when I go to [https://lmstudio.ai/download](https://lmstudio.ai/download) it shows 0.4.7. What's going on here? Anyone knows?",
+      "category": "ai_models"
+    },
+    {
+      "title": "OpenAI cofounder Andrej karpathy just joined anthropic and the talent war is officially over",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1thw3bu/openai_cofounder_andrej_karpathy_just_joined/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T18:40:02.000Z",
+      "summary": "this happened literally today ,andrej karpathy one of the most respected ai researchers alive nd the guy whose youtube lectures taught half the developers in this sub how neural networks work, just announced he is joining anthropic's pre training team. He's the 3rd senior openai figure to defect to anthropic in under two years. Jan leike left in may 2024, John schulman (co-founder) left in august 2024 and now karpathy. He is joining the pre training team under nick josef and building a new team focused on using claude to accelerate pre training research which means Anthropic is betting that claude can help make itself smarter, thats recursive self improvement with one of the most capable researchers in the world leading it. The musk trial verdict came in yesterday with the jury ruling in altman's favor, karpathy announces today voilaa . The timing is either coincidental or the most savage talent acquisition move in tech history. I hv been watching this trajectory while building my own workflows on claude ,every month the ecosystem around claude gets stronger. The connectors mean claude orchestrates professional creative tools natively, the api means platforms like magic hour and k…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Floor for local meeting summarization on a 6GB GPU: qwen3.5:0.8b works at 57s, Granite 4 350M hallucinates",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1thsset/floor_for_local_meeting_summarization_on_a_6gb/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T16:50:50.000Z",
+      "summary": "Disclosure: I made this. Open-source, MIT, Windows + Linux. Not affiliated with [voiceflow.com](http://voiceflow.com) (the chatbot SaaS, name collision, sorry). Why this exists: I wanted local-only dictation and meeting transcription, because audio shouldn't have to leave the machine just to become text. I had a 6GB GPU sitting there doing nothing most of the day. So I built it: hold a hotkey, faster-whisper transcribes locally, text pastes at the cursor. v1.6.0 shipped today and adds the meetings recorder: mic + system audio into one stereo file, transcribed locally, summary goes through whatever endpoint you point it at (Ollama, llama.cpp, Groq, OpenAI). The only network call in the whole product is the optional summary, and you pick where it goes. The on-topic part for this sub: mini models on real workloads. v1.6.0 was the excuse to actually benchmark this on real meeting transcripts instead of toy prompts. I tried the latest small Qwen first, qwen3.5:0.8b (873M, Q8\\_0). Test rig: RTX 3060 Laptop 6GB, \\~4.3GB free after Whisper loads, Ollama 0.23, Arch. Input: a real 4-minute meeting, \\~2900 chars. It works, with one caveat. Ollama's VRAM-aware default num\\_ctx on this GPU is…",
+      "category": "ai_models"
+    },
+    {
+      "title": "bytedance released an open source model that attempts to do just about anything with only 3b parameters",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1thkwgk/bytedance_released_an_open_source_model_that/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T12:05:26.000Z",
+      "summary": "Lance is a lightweight native unified multimodal model that supports **image and video understanding, generation, and editing** within a single framework. * **Efficient at 3B scale.** With only **3B active parameters**, Lance delivers strong performance across image generation, image editing, and video generation benchmarks. * **Trained from scratch.** Lance is built with a staged multi-task recipe and trained entirely from scratch within a **128-A100-GPU** budget.",
+      "category": "ai_models"
+    },
+    {
+      "title": "How I built a 9-agent team where my agents actually talk to each other",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1thi16y/how_i_built_a_9agent_team_where_my_agents/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T09:50:18.000Z",
+      "summary": "I've been running Claude Code for 6 months, shipping my product and running content/launch ops for it. The thing that kept breaking wasn't the agents themselves. It was me. Every handoff between research and write and code and review was me copy pasting context between sessions. I was the dispatcher and context holder for my own AI team Tried gstack first. The roles are great but I'm still the one cycling through slash commands. /office-hours → /plan-eng-review → /review → /ship. Good output, but I'm orchestrating every step Spent a weekend porting my workflow over. Here's the lineup: **Engineering (4 agents)** * arch: owns architectural decisions. Reviews proposed changes before code starts. Soul: \"senior staff engineer, asks 'what breaks at 10x' before approving anything * backend: owns /api, /services. Implements after arch greenlights * frontend: owns /web. Picks up from backend when API contracts are stable * review: reads every PR before I do. Catches the lazy stuff so I only review substantive changes **Growth/Content (5 agents)** * research: uses ahrefs MCP to analyse keywords/opportunities/market and hands off to strategist * strategist: reads research, writes campaign br…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "We have sub-agents at home",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1th8a43/we_have_subagents_at_home/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-19T01:38:42.000Z",
+      "summary": "At work I get unfettered access to gpt 5.4 and sonnet, so I'm quite used to spawning sub-agents to go crazy on a repo and split up tasks. At home I am VRAM poor and like to run the models locally for my own enjoyment. Almost every single sub-agent extension/implementation does not account for any of the restrictions imposed by having 10gb of VRAM and a single slot for a KV cache (thats already quantized). I already work as a developer, so I qwen3.6-35b-a3b tagged teamed a partially vibe-coded fork of an existing sub-agent repository for pi coding agent. This is really only relevant if you: * Use pi coding agent as your harness * Can only run a single LLM at a time with 1 slot via llama.cpp server * Want to use sub-agents without fully reprocessing your prompts after the sub-agent is done Repo is [here](https://github.com/BenjaminBilbro/pi-subagent), feel free to use it or fork it idc. I am also interested in how others around here have dealt with sub-agents on a purely local and VRAM constrained setup. I was also planning to add the ability for sub-agents to be spawned with no previous context, and manage the saving and storing the main context via \\`--slot-save-path\\` and the \\`s…",
+      "category": "ai_models"
+    },
+    {
+      "title": "Glia – Local-first shared memory layer (SQLite-vec + FTS5 + Offline Knowledge Graph)",
+      "url": "https://reddit.com/r/ChatGPT/comments/1ther0u/glia_localfirst_shared_memory_layer_sqlitevec/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-05-19T06:46:11.000Z",
+      "summary": "Hey everyone, I wanted to share a project I've been working on called Glia. It is a 100% offline, local-first RAG and memory layer designed to connect your AI web chats (Claude, ChatGPT, DeepSeek) with your local developer tools (Claude Code, Cursor, Windsurf) using a unified local database. I wanted something lightweight that did not require pulling heavy Docker containers or subscribing to third-party memory APIs. I settled on a Node.js + SQLite architecture running sqlite-vec (for 768-dim float32 embeddings) alongside SQLite FTS5 for hybrid search, powered completely by local Ollama instances. We just launched a live website that outlines the details and demonstrates the features in action: * Website: [https://glia-ai.vercel.app/](https://glia-ai.vercel.app/) * Codebase: [https://github.com/Eshaan-Nair/Glia-AI](https://github.com/Eshaan-Nair/Glia-AI) Technical Stack &amp; Features: * Hybrid Search Retrieval: SQLite-vec (using nomic-embed-text locally) + FTS5 keyword prefix matching (porter stemmer). * Surgical Sentence-level Trimming: Chunks are sliced into sentences. When a prompt is intercepted, only the exact matching sentences are pulled out of the vector store instead of t…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Centralize SKILLs",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1thc7pg/centralize_skills/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-05-19T04:35:20.000Z",
+      "summary": "We recently tried to roll out an AI agent workflow across a 60-person company, and we found out 1. need to centralize the SKILLs files 2. update, versioning markdown file supporting multi users is a challenge Does Claude enterprise version offer any solution? or there are any open source project helping company to manage skills ? Since these are just text files, we could hack together a workaround using SharePoint to distribute them internally. But are there any actual purpose-built tools for this?",
+      "category": "ai_tools"
+    }
+  ]
+}

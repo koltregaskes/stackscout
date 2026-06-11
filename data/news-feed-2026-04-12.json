@@ -1,0 +1,168 @@
+{
+  "generated": "2026-06-06T17:46:15.096Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-12",
+  "article_count": 10,
+  "archived_story_count": 109,
+  "articles": [
+    {
+      "title": "JARVIS running on 3 servers as one fleet. Claude Code, Cursor, and OpenCode all coordinating.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sj4o7y/jarvis_running_on_3_servers_as_one_fleet_claude/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T04:34:19.000Z",
+      "summary": "One instance is enough, but where is the fun in that right? 🤣\n\nJARVIS across 3 servers, each running a different AI coding agent:\n\n\\- Hel2: Claude Code CLI\n\n\\- Hel1: Cursor CLI\n\n\\- Mainframe: OpenCode \n\nThey talk to each other over fleet MCP. Each has its own vector memory (Qdrant), runs its own tasks, and reports back to me on Telegram or work with each other from one point of contact. \n\nSame JARVIS, different hands. They don't just run. They coordinate.\n\nVideo is all 3 tmux sessions open at o",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Openclaw real costs: self hosting vs managed hosting vs API fees",
+      "url": "https://reddit.com/r/ChatGPT/comments/1sj6r9b/openclaw_real_costs_self_hosting_vs_managed/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T06:27:27.000Z",
+      "summary": "Everyone says openclaw is free and open source but what's the real monthly cost when you add everything up? Hosting, API fees, whatever else. How much are people paying for self-hosting vs managed and is the price difference worth?",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OK I installed bitsandbytes but still getting error - Help please - thanks",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sj1gi9/ok_i_installed_bitsandbytes_but_still_getting/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T01:55:27.000Z",
+      "summary": "Used terminal and installed it like so:\n\npip install --force-reinstall [https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release\\_main/bitsandbytes-1.33.7.preview-py3-none-win\\_amd64.whl](https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl)\n\n  \nGetting error and StableDiffusion does not run\n\nFile \"C:\\\\Users\\\\123\\\\Downloads\\\\StabilityMatrix-win-x64\\\\Data\\\\Packages\\\\",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Meta released new paper : Neural Computers",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sj782l/meta_released_new_paper_neural_computers/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T06:54:27.000Z",
+      "summary": "What they wish to convey is can AI act like a computer? the team tried training a video model to generate simulation for terminal and desktop and got decent results. check more details : https://youtu.be/Evcgg-LG\\_jA?si=0h0bnM7qUsqDcKCJ\n\npaper : https://arxiv.org/abs/2604.06425",
+      "category": "ai_models"
+    },
+    {
+      "title": "Open source agent stack that actually works in 2026 (no hype)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sj6ke6/open_source_agent_stack_that_actually_works_in/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T06:16:49.000Z",
+      "summary": "been running this setup for a few months and wanted to share what actually works vs whats just github stars\n\nhermes agent (24k stars, MIT) - runs on your own machine or vps, connects to telegram/discord/whatsapp, persistent memory stored locally in sqlite. your data doesnt leave your network. pair it with ollama and local models for fully offline operation. the memory layer is what separates it from everything else.. your agent on day 30 actually knows your projects and preferences\n\neverything c",
+      "category": "ai_models"
+    },
+    {
+      "title": "MiniMax M2.7 is NOT open source - DOA License :(",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sj2oqz/minimax_m27_is_not_open_source_doa_license/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-12T02:55:38.000Z",
+      "summary": "Commercial use is banned without prior written permission from MiniMax.\n\nAnd their definition of \"commercial\" is broad - covers paid services, commercial APIs, and even deploying a fine-tuned version for profit. Military use is also explicitly prohibited- interesting.\n\nSo you can't use the model or any outputs for anything commercial!\n\nI'm really starting to hate these \"open weights, closed license\" models...\n\nhttps://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/LICENSE",
+      "category": "ai_models"
+    },
+    {
+      "title": "Does LTX 2.3 have good motion transfer?",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1sj87tk/does_ltx_23_have_good_motion_transfer/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-04-12T07:50:22.000Z",
+      "summary": "What are the best open source motion transfer workflows and models right now? Is it still Wan + SCAIL? Or LTX 2.3 have a better one?\n\n",
+      "category": "creative_tools"
+    },
+    {
+      "title": "This is so good",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sj3icv/this_is_so_good/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.86,
+      "date": "2026-04-12T03:35:24.000Z",
+      "summary": "Claude code just created a whole gamified experience in the web. for my baby baby shower. Unique ids admin ui with count of RSVP the whole thing. All canvas over html in around 3 hrs because I tweaked a lot and also developed the whole api in c++ and published it to a domain created an AWS cloud front and managed to tied it to email sending. I’m officially wowed. ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "It seems ChatGPT leaked a JSON response (including API enpoint)",
+      "url": "https://reddit.com/r/ChatGPT/comments/1siyuyb/it_seems_chatgpt_leaked_a_json_response_including/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.86,
+      "date": "2026-04-11T23:52:55.000Z",
+      "summary": "idk if this is visible in network requests, but chatgpt responded with \\[Errno fetch [http://image-gen-service.openai.svc.cluster.local:8081/chatgpt/worker\\_convo2im](http://image-gen-service.openai.svc.cluster.local:8081/chatgpt/worker_convo2im) failed: 429: b'{\\\\n \"error\": {\\\\n \"message\": \"You're generating images too quickly. To ensure the best experience for everyone, we have rate limits in place. Please wait for 9 minutes before generating more images.\",\\\\n \"type\": \"images\",\\\\n \"param\": nul",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MiniMax M2.7 Is Now Open Source",
+      "url": "https://firethering.com/minimax-m2-7-agentic-model/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.74,
+      "date": "2026-04-12T10:07:33.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

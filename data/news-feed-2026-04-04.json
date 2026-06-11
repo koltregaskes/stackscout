@@ -1,0 +1,87 @@
+{
+  "generated": "2026-06-06T17:46:12.995Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-04",
+  "article_count": 5,
+  "archived_story_count": 236,
+  "articles": [
+    {
+      "title": "@CloudflareDev — Gemma 4 Just Landed on Cloudflare Workers AI — 256K Context, Tool Calling, Vision",
+      "url": "https://x.com/CloudflareDev/status/2040459229039940068",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-04T16:20:03.318Z",
+      "summary": "@CloudflareDev announces Gemma 4 is now on Workers AI — MoE model with 26B total and 4B active parameters, 256K context window, tool calling, reasoning, and vision capabilities.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "YC-Bench: Can Your AI Agent Run a Startup Without Going Bankrupt?     2 days ago •  3",
+      "url": "https://huggingface.co/blog/collinear-ai/yc-bench",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-04T18:00:25.574Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "@synthwavedd — GPT Image 2 Stealth Launched — Significant Quality Upgrade for All ChatGPT Users",
+      "url": "https://x.com/synthwavedd/status/2040442540508287101",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-04T16:20:03.318Z",
+      "summary": "@synthwavedd reports GPT Image 2 has been stealth launched on ChatGPT — all image generations now routing to the new model. A significant quality upgrade with no announcement.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Components of A Coding Agent",
+      "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+      "source": "Sebastian Raschka",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-04T18:00:27.636Z",
+      "summary": null,
+      "category": "ai_research"
+    },
+    {
+      "title": "RAG-Anything: All-in-One RAG Framework",
+      "url": "https://paperswithcode.com/papers/2510.12323",
+      "source": "Papers With Code",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.76,
+      "date": "2026-04-04T06:00:23.350Z",
+      "summary": null,
+      "category": "ai_research"
+    }
+  ]
+}

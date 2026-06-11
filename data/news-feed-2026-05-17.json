@@ -1,0 +1,267 @@
+{
+  "generated": "2026-06-06T17:46:24.242Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-05-17",
+  "article_count": 15,
+  "archived_story_count": 420,
+  "articles": [
+    {
+      "title": "I built SeeFlow - architecture diagrams that actually run, wired to your live app",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tfd6j6/i_built_seeflow_architecture_diagrams_that/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T02:50:20.000Z",
+      "summary": "Architecture diagrams rot. You spend an afternoon in Confluence, three months later it's wrong, and nobody updates it because there's no forcing function. https://preview.redd.it/9svmg8ih3m1h1.png?width=2508&amp;format=png&amp;auto=webp&amp;s=0d06df1f82fd417ee9a45e504efd26628eaf33fd SeeFlow tries to fix that by making diagrams executable. It generates a flow canvas from your codebase, then wires each node to your actual running app. There's a Claude Code / Codex/ Cursor / Windsurf plugin that does the heavy lifting: &gt;/seeflow show me the shopping cart feature It also ships an MCP server so any MCP-aware editor can register and edit demos without leaving the IDE. Link to the site: [https://seeflow.dev](https://seeflow.dev) 100% Free/ MIT Open Source",
+      "category": "ai_tools"
+    },
+    {
+      "title": "ROCm 7.13 nightly adds strix halo optimizations",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tftg09/rocm_713_nightly_adds_strix_halo_optimizations/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T15:56:56.000Z",
+      "summary": "[https://www.phoronix.com/news/ROCm-7.13-Released](https://www.phoronix.com/news/ROCm-7.13-Released) Quote: ...new optimizations for Ryzen AI Max 300 \"Strix Halo\" and the ROCprof Trace Decoder is now open-source...&lt;snip&gt;... Those rolling from source can grab the ROCm 7.13 Tech Preview via [TheRock on GitHub](https://github.com/ROCm/TheRock/releases/tag/therock-7.13). [https://rocm.docs.amd.com/en/7.13.0-preview/about/release-notes.html](https://rocm.docs.amd.com/en/7.13.0-preview/about/release-notes.html) Trivia: Rocm name origin: radeon open compute module",
+      "category": "ai_models"
+    },
+    {
+      "title": "I updated my tool that turns any book into character &amp; landscape images using RAG + ComfyUI/Gemini — now with Locations support!",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tfro2h/i_updated_my_tool_that_turns_any_book_into/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 0.78,
+      "date": "2026-05-17T14:51:01.000Z",
+      "summary": "Hey everyone! I am back with an update to my character generation tool. I got some great feedback when I posted it here, I am pleased to announce that I have integrated a lot of requested features and added a lot more ! **Big thanks to everyone who tried the tool from the first post and gave valuable suggestions !** All the updates and features for just 2.99 a month ! No, just kidding, still fully open source. **Image gallery -** Modern Dracula adaptation, plus some characters from the Eye of the world ( which inspired this whole project ). Tool screenshots at the end. # What's new in this update? # 🔧 QoL updates ! Configurable .env file, api endpoints for Ollama, OpenAI etc, database for books generated, character details saved after generation, image gallery, prompt save feature, installer, updated UI, support for epub/text, Gemini image integration, collapsible sidebars, task manager widget, debug panel to test connections or databases, and tons more # 📍 Locations Tab — \"The one I didn't know I needed\" This was the exciting one. You can now generate **landscape/architectural images** for prominent locations in the book — not just characters. * Click **\"Extract Locations from…",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Are local models good enough yet for AI meeting memory?",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tfukyl/are_local_models_good_enough_yet_for_ai_meeting/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T16:38:58.000Z",
+      "summary": "I’ve been testing different ways to handle AI meeting notes and realized the most useful part isn’t the summary, it’s having searchable context from past meetings later. Right now I’m using Bluedot because it handles capture really well, transcripts, summaries, action items, recordings, all searchable after. The new Claude MCP integration made me realize how valuable meeting history becomes once you can actually query it naturally. Are you building local AI meeting memory setups, or are cloud tools still way ahead for this use case?",
+      "category": "ai_models"
+    },
+    {
+      "title": "NeuralCompanion",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tftqwg/neuralcompanion/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T16:07:34.000Z",
+      "summary": "NeuralCompanion is an open-source, local-first AI companion project for people who like building, experimenting, and seeing how far personal AI can go on their own hardware. It brings together realtime voice chat, local LLMs, TTS/STT, image generation, interactive tutorials, API-friendly workflows, and a modular addon system into one desktop app designed to be flexible, hackable, and genuinely fun to explore. NC also supports avatar systems and avatar engines like VSeeFace, VAM/VAM2, and other experimental realtime avatar workflows. It is still experimental and a little rough around the edges in places, but that is part of the project. The goal is not to make another locked-down corporate assistant. It is to build a customizable AI companion platform you can actually run, modify, and shape yourself. If you are into local AI, creative tools, avatars, plugins, voice interfaces, automation, or weird future-facing software, come take a look. GitHub: [https://github.com/Rakile/NeuralCompanion](https://github.com/Rakile/NeuralCompanion) Discord: [https://discord.com/invite/UqnwX46rcK](https://discord.com/invite/UqnwX46rcK) Developers, tinkerers, artists, AI enthusiasts, and curious peop…",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Made a simple template manager and GUI for llama.cpp so I don't have to keep memorizing CLI flags.",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tfqrbt/made_a_simple_template_manager_and_gui_for/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T14:15:45.000Z",
+      "summary": "[Introducing Hexllama](https://reddit.com/link/1tfqrbt/video/uobdgqq1hp1h1/player) Hey, I’ve always found **llama-server** to be more than enough for testing out local models, mostly because it guarantees you always have the absolute latest llama.cpp features and architecture support. But keeping track of different CLI commands, context sizes, and batch settings for different models was becoming a massive headache. Plus, managing multiple terminal tabs when I wanted to run two models at once was annoying. So, I built **Hexllama**. It's a fast desktop interface that gets out of your way and just makes managing llama.cpp easier. No walled gardens, just a clean wrapper. **What it actually does:** * **Template-Based Execution:** You configure your CLI flags (threads, context, etc.) once via a visual editor, save it as a template, and from then on it’s just one click to run. * **Built-in llama.cpp Version Manager:** This is the feature I use the most. It auto-checks the ggml-org repo, lets you download new releases directly in the app, and lets you swap backends instantly (super useful when a new model architecture drops and needs a specific build). * **Integrated HF Downloader:** Sear…",
+      "category": "ai_models"
+    },
+    {
+      "title": "Kimi K 2.6 is good and can get free api keys from Nvidia integrate with aider launch in powershell and you got something same as claude code for testing new ideas before paying for claude subscription",
+      "url": "https://x.com/lordsa_m/status/2055959075012104631",
+      "source": "X search / AI model updates",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T10:30:16.000Z",
+      "summary": "Kimi K 2.6 is good and can get free api keys from Nvidia integrate with aider launch in powershell and you got something same as claude code for testing new ideas before paying for claude subscription",
+      "category": "ai_models"
+    },
+    {
+      "title": "Is there a new Wan2.2 lightx2v (20260412) FP8 version for ComfyUI?",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1tfkwx7/is_there_a_new_wan22_lightx2v_20260412_fp8/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T09:43:32.000Z",
+      "summary": "I decided to check the `lightx2v` Hugging Face account and noticed they released an updated version of their distilled Wan2.2 i2v A14b model about a month ago. They uploaded a new version 20260412 on Hugging Face, \"Wan2.2-Distill-Models\" repository. (Can't post a link because Reddit filters block the post) However, they only uploaded the FP32 version, which is also incompatible with ComfyUI. I can't find a converted version via Google or Hugging Face search. Does anyone know how to convert this model to FP8, or would someone be willing to convert it and upload it?",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF · Hugging Face",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tfin40/jackrongqwopus359bcodergguf_hugging_face/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T07:33:35.000Z",
+      "summary": "&gt;**Qwopus3.5-9B-coder** is specially optimized and fine-tuned for high-performance **🤖 Agentic Coding, complex Tool Calling, and logical reasoning.** &gt;*💡* ***Why the 9B Dense Model?*** *We believe that the 9B dense architecture represents the perfect* ***\"sweet spot\"*** *for large language models. It runs seamlessly at 8-bit precision on entry-level 16GB RAM devices—such as standard laptops and the Mac mini—making it exceptionally lightweight yet highly versatile. Without requiring expensive hardware, it allows you to achieve excellent performance paired with impressive inference speeds. Simply put,* ***Qwen3.5-9B is currently the best open-source model in its class.*** # 🛠 Training Strategy The fine-tuning process of this model deeply integrates **Trace Inversion** data augmentation technology with high-quality **Agent Traces**. This systematic approach not only strengthens the model's ability to solve complex programming tasks, but also greatly improves its logical coherence and accuracy when using various tools. This model is designed specifically for the following goals: * 🧩 More structured and stronger logical reasoning capabilities, reducing repetitive thinking * �…",
+      "category": "ai_models"
+    },
+    {
+      "title": "2026.5.16 released. Highlights: - xAI Grok via SuperGrok OAuth provides 1M token context window - OpenAI‑compatible local proxy allows any OAuth‑authored provider to speak the OpenAI API Full release notes:",
+      "url": "https://x.com/OliverB72157882/status/2055972796711502049",
+      "source": "X search / AI model updates",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.9800000000000001,
+      "date": "2026-05-17T11:24:47.000Z",
+      "summary": "2026.5.16 released. Highlights: - xAI Grok via SuperGrok OAuth provides 1M token context window - OpenAI‑compatible local proxy allows any OAuth‑authored provider to speak the OpenAI API Full release notes:",
+      "category": "ai_models"
+    },
+    {
+      "title": "I ran 100 Claude + Codex sessions in parallel to understand what I'm doing wrong in marketing my open source \"Claude Command Center\". Here's the playbook they came up with.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tfbxmf/i_ran_100_claude_codex_sessions_in_parallel_to/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-05-17T01:50:08.000Z",
+      "summary": "A week ago I launched my open-source project (Claude Control Center) on this subreddit. Got 0 upvotes. Dead in 5 hours. :) \\[The app is awesome - great way to manage multiple sessions and avoid waiting on top of Claude + Codex - try it :) [git:amirfish1/ccc](http://github.com/amirfish1/claude-command-center) . So I spawned **100 Claude + Codex agents** in parallel and asked them to figure out what I did wrong (It had two hours left on my weekly Claude limit and 20% left - tried to think of good use :) ) . 30 minutes and 100 artifacts later, they handed me back a playbook. https://reddit.com/link/1tfbxmf/video/0mi1ytksol1h1/player The headline finding: stars don't come from better code. They come from: marketing surface. Tagline, demo GIF, founder credential, hosted landing page, multi-shot Hacker News, awesome-list inclusion. The system found that gap on its own - I never told it to study marketing. 5-min video walking through the 7 findings + what the agents drafted (Show HN body, X thread, LinkedIn post, channel plan): [https://youtu.be/Tm2svTe\\_Ed4](https://youtu.be/Tm2svTe_Ed4) The video itself - is \\*ON PURPOSE\\* 100% built by the AI who created the agents \\[happy to share th…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Claude Code context-window: /clear after EVERY task in the codebase or are there edge cases?",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1tfnqmc/claude_code_contextwindow_clear_after_every_task/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-05-17T12:08:39.000Z",
+      "summary": "So I have been recently coding a bunch with the following setup: I am launching Claude Code CLI inside of my repo (a complete shopify theme; if you are unfamiliar it is 3-8mb of source code, structurally something like this: `layout/ 2–3 files (theme.liquid = root shell)` `templates/ 15–25 files (one per page type, JSON or liquid)` `sections/ 30–50 files (reusable page blocks)` `snippets/ 20–40 files (sub-components, like partials)` `assets/ 30–60 files (css, js, svgs)` `locales/ 5–10 files (i18n JSON)` `config/ 2 files (settings_schema.json = theme editor config)` ) I also have an app set up that shows, what the current usage of the models context windows is currently at in %. **Recently I have been wondering: say I give claude quite a heavy task that involves the typical stack of 3 files (1 .js, 1 .liquid and 1 .css) and this instantly bumps up the context window from 0% to 10%, is there a golden rule that one should always do /clear after such an extensive task or does it depend if say, the next task depends on the same 3 files?** Do you guys have any advice on when the perfect time is to /clear? What are your experiences with this? Do you know of any addons that could facilita…",
+      "category": "ai_tools"
+    },
+    {
+      "title": "LLM's on Android (Snapdragon 8 Elite) MOE Experience",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tg3ssd/llms_on_android_snapdragon_8_elite_moe_experience/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T22:22:53.000Z",
+      "summary": "So I bought a phone with Snapdragon 8 elite (gen 4) and 24GB ram (Honor magic 7 pro). My experience has been mixed but with solid potential. Hexagon (Snapdragon 8 Elite) NPU and OpenclGPU support and updates have been rolling in fast but still the fastest prompt processing and token generation have mostly been CPU (I would bet that soon enough either NPU or GPU will be faster or more realistically both). CPU has the downside of generating more heat than NPU and GPU inference but overall it's still the fastest **currently**. Now there are no phones with 32gb ram without a virtual ram extension which doesn't work with LLM's ofc, so the best you will do is 24gb ram. What can you do with 24gb ram and a smartphone processor though? Quite a lot actually, MOE has been getting quite popular and their Q4 quants of these models are great and fit into the 24GB. My personal recommendation is IQ4\\_XS and MXFP4\\_MOE since with what I have tested MXFP4\\_MOE is quite faster but for the size IQ4\\_XS can't be beaten. Q4\\_0 is more optimised but quality wise it's worse than both (subjectively from my own experience). Goes without saying but Q4\\_K\\_M is also quite reliable from a speed/quality/size s…",
+      "category": "ai_models"
+    },
+    {
+      "title": "While waiting for Fara-1.5 for my coding harness",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tg3kbz/while_waiting_for_fara15_for_my_coding_harness/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T22:13:11.000Z",
+      "summary": "Hi all, Not sure many people are aware so wanted to give a word about [Fara-1.5 release](https://www.microsoft.com/en-us/research/video/magenticlite-a-full-stack-agentic-experience-powered-by-small-models/). =&gt; this release will likely be the big sister of [Fara-7B](https://huggingface.co/bartowski/microsoft_Fara-7B-GGUF) and built on top of Qwen3.5 Actual Fara-7B performs not bad at all but actually requires a proper implementation, and I really hope the 1.5 will be SOTA, in different (including smaller) versions, and may simplify all the pipeline! I gave my coding agent harness extra built-in features: * browser automation tool allowing navigation either via accessibility tree only (CDP / DOM) or via vision + grounding (the above video uses Qwen3.6 35B + Fara-7B) * the possibility to generate prefilled \"skills\" directly from conversation history + Jobs to schedule auto-run * recording from user actions (requires vllm for video and maybe llama.cpp following [this PR](https://github.com/ggml-org/llama.cpp/pull/21858)?) Feel free to have a look at the project, it is focused on controllability and low context footprint: [https://github.com/leflakk/openclose](https://github.com/le…",
+      "category": "ai_models"
+    },
+    {
+      "title": "Pushing the limit: minimax m2.7 q8_0 128k on 2x3090, 256GB DDR4",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1tg37t6/pushing_the_limit_minimax_m27_q8_0_128k_on_2x3090/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-05-17T21:59:27.000Z",
+      "summary": "CPU is just a secondhand 10900x. Using 128k context, unquantized kv cache. Model is at q8\\_0 to mitigate some weird behavior I was seeing at lower quants. Speed is very slow at around 50tps pp, 10tps tg, but usable for coding agent workflows. Anybody else running MoE models in this size class on relatively low-end hardware? For my purposes, speed is less important than accuracy, as long as it's not like literally all day. Any other models you'd recommend I'd try or additional optimization tips that could help within my constraints? I wish they'd released the draft model for MTP on this model but it looks like they declined to do so for 2.7. My ik\\_llama flags -- sorry for the funny formatting, this is pasted out of my vibe coded NixOS config: \"${ik-llama-cuda}/bin/llama-server\" + \" -m ${modelPath}\" + \" --host 0.0.0.0\" + \" --port ${toString cfg.port}\" + \" -c ${toString cfg.contextLength}\" + \" -ngl 999\" + \" --cpu-moe\" + \" -sm graph\" + \" -fa on\" + \" -t 16\" + \" -tb 16\" + \" -b 4096\" + \" -ub 4096\" + \" -np 1\" + \" -muge\" + \" -ger\" + \" --jinja\" + \" --metrics\" + \" --temp 1.0\" + \" --top-p 0.95\" + \" --top-k 40\" + \" --min-p 0.01\"",
+      "category": "ai_models"
+    }
+  ]
+}

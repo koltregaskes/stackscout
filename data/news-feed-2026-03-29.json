@@ -1,0 +1,55 @@
+{
+  "generated": "2026-06-06T17:46:10.994Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-29",
+  "article_count": 3,
+  "archived_story_count": 57,
+  "articles": [
+    {
+      "title": "Figma's MCP Update Reflects a Larger Industry Shift",
+      "url": "https://metedata.substack.com/p/a-small-figma-update-and-a-big-signal",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-03-29T15:46:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenYak – An open-source Cowork that runs any model and owns your filesystem",
+      "url": "https://github.com/openyak/desktop",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.82,
+      "date": "2026-03-29T04:26:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Pretext: TypeScript library for multiline text measurement and layout",
+      "url": "https://github.com/chenglou/pretext",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-28T16:52:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

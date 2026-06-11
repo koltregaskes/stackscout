@@ -1,0 +1,40 @@
+{
+  "generated": "2026-06-06T17:46:29.229Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-06-05",
+  "article_count": 2,
+  "archived_story_count": 165,
+  "articles": [
+    {
+      "title": "Open Code Review – An AI-powered code review CLI tool",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-05T00:04:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "databow: a Rust CLI to query any database with an ADBC driver",
+      "url": "https://columnar.tech/blog/introducing-databow//",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-02T23:11:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

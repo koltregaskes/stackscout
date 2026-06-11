@@ -1,0 +1,115 @@
+{
+  "generated": "2026-06-06T17:46:09.346Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-21",
+  "article_count": 7,
+  "archived_story_count": 80,
+  "articles": [
+    {
+      "title": "Apple Announces New Mac Sales Record Following MacBook Neo Launch",
+      "url": "https://www.macrumors.com/2026/03/20/apple-shares-mac-sales-achievement/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9,
+      "date": "2026-03-21T15:59:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Mamba-3",
+      "url": "https://www.together.ai/blog/mamba-3",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.87,
+      "date": "2026-03-17T00:00:00.000Z",
+      "summary": "Meet Mamba-3: the SSM built for inference. Faster than Transformers at decode, stronger than Mamba-2, and open-source from day one.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Iran launched unsuccessful attack on UK's Diego Garcia",
+      "url": "https://www.bbc.com/news/articles/c5yljdgwppzo",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.84,
+      "date": "2026-03-21T14:54:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Termcraft – terminal-first 2D sandbox survival in Rust",
+      "url": "https://github.com/pagel-s/termcraft",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-21T18:42:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Atuin v18.13 – better search, a PTY proxy, and AI for your shell",
+      "url": "https://blog.atuin.sh/atuin-v18-13/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-21T10:35:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "purl: a curl-esque CLI for making HTTP requests that require payment",
+      "url": "https://www.purl.dev/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-21T02:09:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Floci – A free, open-source local AWS emulator",
+      "url": "https://github.com/hectorvent/floci",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-03-21T21:49:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

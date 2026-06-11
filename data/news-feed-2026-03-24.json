@@ -1,0 +1,145 @@
+{
+  "generated": "2026-06-06T17:46:09.915Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-24",
+  "article_count": 9,
+  "archived_story_count": 101,
+  "articles": [
+    {
+      "title": "Google TV&#8217;s new Gemini features keep fans updated on sports teams and more",
+      "url": "https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-24T19:12:11.000Z",
+      "summary": "Three Gemini-powered features are coming to your Google TV. This includes visual responses, deep dives, and sports briefs.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI adds open source tools to help developers build for teen safety",
+      "url": "https://techcrunch.com/2026/03/24/openai-adds-open-source-tools-to-help-developers-build-for-teen-safety/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.94,
+      "date": "2026-03-24T18:41:34.000Z",
+      "summary": "Rather than working from scratch to figure out how to make AI safer for teens, developers can use these policies to fortify what they build.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Sunsetting the Techempower Framework Benchmarks",
+      "url": "https://github.com/TechEmpower/FrameworkBenchmarks/issues/10932",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.82,
+      "date": "2026-03-24T01:54:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Self-propagating malware poisons open source software and wipes Iran-based machines",
+      "url": "https://arstechnica.com/security/2026/03/self-propagating-malware-poisons-open-source-software-and-wipes-iran-based-machines/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-24T12:38:09.000Z",
+      "summary": "Development houses: It's time to check your networks for infections.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Qite.js – Frontend framework for people who hate React and love HTML",
+      "url": "https://qitejs.qount25.dev",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-19T13:49:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Nanobrew: The fastest macOS package manager compatible with brew",
+      "url": "https://nanobrew.trilok.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-24T11:40:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A retro terminal music player inspired by Winamp",
+      "url": "https://github.com/bjarneo/cliamp",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-23T20:42:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Gridland: make terminal apps that also run in the browser",
+      "url": "https://www.gridland.io/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-24T16:57:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Log File Viewer for the Terminal",
+      "url": "https://lnav.org/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-24T05:32:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

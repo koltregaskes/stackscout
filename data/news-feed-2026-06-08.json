@@ -1,0 +1,40 @@
+{
+  "generated": "2026-06-09T02:48:08.252Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-06-08",
+  "article_count": 2,
+  "archived_story_count": 73,
+  "articles": [
+    {
+      "title": "Apple Core AI Framework",
+      "url": "https://developer.apple.com/documentation/coreai/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-08T18:47:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Performative-UI – A react component library of design tropes",
+      "url": "https://vorpus.github.io/performativeUI/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.6599999999999999,
+      "date": "2026-06-08T14:05:16.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

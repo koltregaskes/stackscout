@@ -1,0 +1,251 @@
+{
+  "generated": "2026-06-06T17:46:16.923Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-20",
+  "article_count": 15,
+  "archived_story_count": 503,
+  "articles": [
+    {
+      "title": "PowerShell v7.6.0 released",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.0",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-18T18:49:57.000Z",
+      "summary": "﻿## [7.6.0] - 2026-03-12\r\n\r\n### General Cmdlet Updates and Fixes\r\n\r\n- Update PowerShell Profile DSC resource manifests to allow `null` for content (#26973)\r\n\r\n### Tests\r\n\r\n- Add GitHub Actions annotations for Pester test failures (#26969)\r\n- Fix `Import-Module.Tests.ps1` to handle Arm32 platform (#26888)\r\n\r\n### Build and Packaging Improvements\r\n\r\n<details>\r\n\r\n<summary>\r\n\r\n<p>Update to .NET SDK 10.0.201</p>\r\n\r\n</summary>\r\n\r\n<ul>\r\n<li>Update v7.6 release branch to use .NET SDK 10.0.201 (#27041)</l",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Are AI agent tools (like MCP servers) too fragmented right now",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sqhsz2/are_ai_agent_tools_like_mcp_servers_too/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T06:57:57.000Z",
+      "summary": "Are MCP servers / AI tools feeling too fragmented right now?\n\nI’ve been exploring AI agents and noticed that tools (like MCP servers or similar integrations) are spread across GitHub with no clear way to discover, test, or install them easily.\n\nCurious:\n\n\\- Do you struggle to find reliable tools for your agents?\n\n\\- How do you currently discover and test them?\n\n\\- What’s the most annoying part of using these tools right now?\n\nWould love to hear real experiences.",
+      "category": "ai_models"
+    },
+    {
+      "title": "Your MCP tools are wasting 40% of Claude's context on JSON field names",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sqfk3f/your_mcp_tools_are_wasting_40_of_claudes_context/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T04:54:55.000Z",
+      "summary": "Every time an MCP tool returns data, a database query, API response, search result, it lands verbatim in Claudes context. That means `transactionId`, `orderStatus`, `repositoryDescription` repeated thousands of times across a session. Pure structural noise eating into the space Claude needs to actually think.\n\nI built [compressmcp](https://github.com/TheDecipherist/compressmcp) to fix this. It hooks into Claude Code's PostToolUse pipeline, compresses JSON keys using a shared dictionary, and inje",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Scoble: OpenClaw and similar tools are very similar — comparing AI agent frameworks",
+      "url": "https://x.com/Scobleizer/status/2045981445479710871",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-19T23:40:22.108Z",
+      "summary": "Scoble observes that OpenClaw and similar AI agent tools are converging on similar designs, reflecting the maturation of the AI agent framework space.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vercel CLI @vercel/node@5.7.12 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/node%405.7.12",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-20T07:26:00.000Z",
+      "summary": "### Patch Changes\n\n-   Updated dependencies \\[[`c1866cf1add2107f91cae8292e38e4854bfe0aca`](https://github.com/vercel/vercel/commit/c1866cf1add2107f91cae8292e38e4854bfe0aca)]:\n    -   @vercel/build-utils@13.19.1\n",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Goose v1.31.1 released",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.31.1",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.76,
+      "date": "2026-04-20T07:03:22.000Z",
+      "summary": "New version of Goose available.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a native macOS GUI for Claude Code",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sqicze/i_built_a_native_macos_gui_for_claude_code/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-20T07:29:52.000Z",
+      "summary": "https://preview.redd.it/l9sgqnfgsawg1.png?width=3572&amp;format=png&amp;auto=webp&amp;s=8dc26a4e89526137b919f82acff985a7a4c1c25b\n\n[https://github.com/ttnear/Clarc](https://github.com/ttnear/Clarc)\n\nThis is my first open-source project. I wanted my non-developer coworkers to be able to use Claude Code. The terminal was the wall — installing the CLI, setting up SSH keys for GitHub, approving every tool call without any real preview of what was about to happen. None of that is a problem for me but ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vessel Browser: The Open Source Browser Designed for Autonomous Agents     3 days ago •  3",
+      "url": "https://huggingface.co/blog/unmodeled-tyler/vessel-browser-for-agents",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T18:00:15.263Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "Anthropic Launched a Figma Competitor and Nobody Is Talking About It Enough",
+      "url": "https://x.com/theneurondaily/status/2046227398317035871",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:40:59.573Z",
+      "summary": "Braygent's take on Claude Design: it reads your codebase before generating interfaces, making it fundamentally different from generic AI design tools and a direct threat to Figma.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenMythos: The Community Rebuilt Claude Mythos in PyTorch",
+      "url": "https://x.com/mkovarski/status/2046040942830928276",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:40:59.573Z",
+      "summary": "Braygent's take on OpenMythos: the community rebuilt Claude Mythos in PyTorch with 1,000+ retweets, demonstrating that open source does not wait for permission from proprietary labs.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Assembled an Emergency Strike Team to Catch Anthropic in Coding AI",
+      "url": "https://x.com/cryptopunk7213/status/2046226722081722761",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:40:59.573Z",
+      "summary": "Braygent's take on Google's emergency coding AI strike team: an admission they are behind Anthropic, with an ambitious goal of building a self-improving coding agent that builds future Gemini models.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Scoble: X API Costs Dropping From $300/Day to $30 — Starting Tomorrow",
+      "url": "https://x.com/Scobleizer/status/2046037305866272811",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:39:35.542Z",
+      "summary": "Scoble expects his X API costs to drop from $300/day to $30/day starting tomorrow. The dramatic reduction would make large-scale social media monitoring much more accessible to developers.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Scoble: Built an AI to Watch the Entire AI Community on X — 40,000 Accounts in Lists",
+      "url": "https://x.com/Scobleizer/status/2046041740420010430",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:39:35.542Z",
+      "summary": "Scoble explained his AI news monitoring system: 40,000 accounts in curated X lists, monitored by an AI agent that reads all their posts daily and surfaces the most important developments at alignednews.com.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Scoble: AI Debugging Is Easy — 'Do a Complete Quality Review'",
+      "url": "https://x.com/Scobleizer/status/2046116360477200744",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T14:39:35.542Z",
+      "summary": "Scoble noted that AI debugging is easy: just tell the agent to 'do a complete quality review.' The comment reflects his practical experience building production AI agent systems.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Closest replacement for Claude + Claude Code? (got banned, no explanation)",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sqelfp/closest_replacement_for_claude_claude_code_got/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-20T04:05:02.000Z",
+      "summary": "I was using Claude Pro + Claude Code pretty heavily (terminal workflow, file access, etc.) and my account just got banned with zero explanation.\n\nFrom what I’m seeing, this isn’t that uncommon — people getting flagged without clear reasons or support responses — so I’m trying to move on and rebuild my setup.\n\nWhat I’m looking for is something that actually matches BOTH sides of what Claude gave me:\n\n**1. Claude-level reasoning / writing**\n\n* strong long-form thinking\n* structured outputs (planni",
+      "category": "ai_models"
+    }
+  ]
+}

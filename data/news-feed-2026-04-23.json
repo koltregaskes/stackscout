@@ -1,0 +1,207 @@
+{
+  "generated": "2026-06-06T17:46:17.709Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-23",
+  "article_count": 13,
+  "archived_story_count": 167,
+  "articles": [
+    {
+      "title": "Gemini CLI v0.39.0 released",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.39.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-23T04:12:56.000Z",
+      "summary": "## What's Changed\n* refactor(plan): simplify policy priorities and consolidate read-only rules by @ruomengz in https://github.com/google-gemini/gemini-cli/pull/24849\n* feat(test-utils): add memory usage integration test harness by @sripasg in https://github.com/google-gemini/gemini-cli/pull/24876\n* feat(memory): add /memory inbox command for reviewing extracted skills by @SandyTao520 in https://github.com/google-gemini/gemini-cli/pull/24544\n* chore(release): bump version to 0.39.0-nightly.202604",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Cloud launches two new AI chips to compete with Nvidia",
+      "url": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-23T06:07:24.599Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Just Made ChatGPT a Team Sport",
+      "url": "https://x.com/eddiboi/status/2047009433255854119",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T19:52:46.339Z",
+      "summary": "OpenAI launched Workspace Agents in ChatGPT, enabling shared agents for teams. Braygent's take: this is ChatGPT becoming enterprise infrastructure.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic Just Sent a Fleet of Bug Hunters Into Your Code",
+      "url": "https://x.com/AIRoboticsInt/status/2047012029169324532",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T19:52:46.339Z",
+      "summary": "Claude Code launched /ultrareview, sending a fleet of bug-hunting agents into your codebase. Braygent's take: this is autonomous code review at scale.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Character.AI Finally Remembers You",
+      "url": "https://x.com/character_ai/status/2047030699417571565",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T19:52:46.339Z",
+      "summary": "Character.AI launched Memory, allowing AI characters to remember users across conversations. Braygent's take: this transforms Character.AI from a novelty into something genuinely relational.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Kimi K2.6 Is a 1 Trillion Parameter Open Model and It Is Live Right Now",
+      "url": "https://x.com/replicate/status/2047027042781106649",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T19:52:46.339Z",
+      "summary": "Kimi K2.6, a 1 trillion parameter open model, is live on Replicate. Braygent's take: the open model ecosystem is not catching up to closed models, it is arriving.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "One OAuth Token Brought Down Vercel, GitHub, and npm",
+      "url": "https://x.com/Obots_ai/status/2046952458207838375",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-22T19:52:46.339Z",
+      "summary": "The Vercel breach came from one OAuth token from a breached AI tool, giving access to internal systems, GitHub, and npm. Braygent's take: audit your OAuth tokens today.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing the Bright Data CLI for Automated Web Data Pipelines     3 days ago •  3",
+      "url": "https://huggingface.co/blog/BrightData/bright-data-cli-hf-integration",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-23T06:07:22.934Z",
+      "summary": null,
+      "category": "ai_models"
+    },
+    {
+      "title": "OpenAI's response to the Axios developer tool compromise",
+      "url": "https://openai.com/index/axios-developer-tool-compromise/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.82,
+      "date": "2026-04-23T00:45:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Amuse V3.3.3 Pre-release Available.",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1st47p1/amuse_v333_prerelease_available/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-23T01:10:52.000Z",
+      "summary": "Amuse V3.3.3 Pre-release is now available. 4.0 release coming in July.\n\n[https://github.com/TensorStack-AI/AmuseAI/releases/tag/v3.3.3](https://github.com/TensorStack-AI/AmuseAI/releases/tag/v3.3.3)\n\nV3.3.3 is NOT COMPATIBLE with previous versions of Amuse 3.0 and below, you will need to fully uninstall Amuse and the models also.\n\nEssentially Amuse and Diffuse were two separate projects, Amuse being ONNX based, and Diffuse being diffusers based. Diffuse is being merged into Amuse and everything ",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Goose v1.32.0 released",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.32.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.76,
+      "date": "2026-04-23T07:45:24.000Z",
+      "summary": "## ✨ Features\n\n- Exa AI-powered search tool [#8487](https://github.com/aaif-goose/goose/pull/8487)\n- Desktop notification when goose finishes a task [#8647](https://github.com/aaif-goose/goose/pull/8647)\n- @agent mention support in chat [#8571](https://github.com/aaif-goose/goose/pull/8571)\n- `/skills` command [#8600](https://github.com/aaif-goose/goose/pull/8600)\n- Associate threads with projects [#8745](https://github.com/aaif-goose/goose/pull/8745)\n- Auto-compaction for goose2 context window ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code v0.15.1 released",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.15.1",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-23T03:57:40.000Z",
+      "summary": "## What's Changed\n* fix(core): scope StreamingToolCallParser per stream, not per Converter (#3516) by @zhangxy-zju in https://github.com/QwenLM/qwen-code/pull/3525\n* feat(cli): combine elapsed + timeout in shell time indicator by @wenshao in https://github.com/QwenLM/qwen-code/pull/3512\n* fix(cli): stop slash completion render loop by @LaZzyMan in https://github.com/QwenLM/qwen-code/pull/3533\n* chore: bump version to 0.15.1 by @LaZzyMan in https://github.com/QwenLM/qwen-code/pull/3541\n\n\n**Full C",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Last week in Generative Image &amp; Video",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1st8aux/last_week_in_generative_image_video/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.54,
+      "date": "2026-04-23T04:19:34.000Z",
+      "summary": "I curate a weekly multimodal AI roundup, here are the open-source image &amp; video highlights from the last week:\n\n* Motif-Video 2B\n   * Open-source 2B DiT, 720p at 121 frames, one checkpoint for both T2V and I2V.\n   * 83.76% on VBench Total, highest among open-source, beats Wan2.1-14B at 7x fewer parameters. Caveat: Wan2.1-14B still wins on temporal stability and fine human anatomy in blind tests.\n   * [Hugging Face](https://huggingface.co/Motif-Technologies/Motif-Video-2B)\n\nhttps://reddit.com",
+      "category": "creative_tools"
+    }
+  ]
+}

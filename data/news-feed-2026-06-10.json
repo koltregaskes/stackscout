@@ -1,0 +1,67 @@
+{
+  "generated": "2026-06-10T17:45:09.375Z",
+  "site": "Stack Scout",
+  "article_count": 4,
+  "articles": [
+    {
+      "title": "GitHub Authentication issues related to API requests",
+      "url": "https://www.githubstatus.com/incidents/fcj3088jg1wx",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-06-10T15:29:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A €0.01 bank transfer could compromise a banking AI agent",
+      "url": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-06-10T13:39:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apache Burr: Build reliable AI agents and applications",
+      "url": "https://burr.apache.org/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.48,
+      "date": "2026-06-10T15:01:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Upcoming breaking changes for npm v12",
+      "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-06-09T21:01:00.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

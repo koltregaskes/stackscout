@@ -1,0 +1,55 @@
+{
+  "generated": "2026-06-06T17:46:09.736Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-23",
+  "article_count": 3,
+  "archived_story_count": 82,
+  "articles": [
+    {
+      "title": "The Download: animal welfare gets AGI-pilled, and the White House unveils its AI policy",
+      "url": "https://www.technologyreview.com/2026/03/23/1134509/the-download-animal-welfare-agi-pilled-white-house-unveils-ai-policy/",
+      "source": "MIT Tech Review AI",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.8800000000000001,
+      "date": "2026-03-23T12:17:33.000Z",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The Bay Area’s animal welfare movement wants to recruit AI&#160; In early February, animal welfare advocates and AI researchers arrived in stocking feet at Mox, a scrappy, shoes-free coworking space in&#8230;",
+      "category": "ai_research"
+    },
+    {
+      "title": "Show HN: Agent Kernel – Three Markdown files that make any AI agent stateful",
+      "url": "https://github.com/oguzbilgic/agent-kernel",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-03-23T07:06:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The way CTRL-C in Postgres CLI cancels queries is incredibly hack-y",
+      "url": "https://neon.com/blog/ctrl-c-in-psql-gives-me-the-heebie-jeebies",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-20T13:21:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

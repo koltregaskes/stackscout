@@ -1,0 +1,102 @@
+{
+  "generated": "2026-06-06T17:46:09.083Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-20",
+  "article_count": 6,
+  "archived_story_count": 82,
+  "articles": [
+    {
+      "title": "OpenCode – Open source AI coding agent",
+      "url": "https://opencode.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.76,
+      "date": "2026-03-20T21:03:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "My AI Agent ‘Cofounder’ Conquered LinkedIn. Then It Got Banned",
+      "url": "https://www.wired.com/story/linkedin-invited-my-ai-cofounder-to-give-a-corporate-talk-then-banned-it/",
+      "source": "Wired AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-20T10:00:00.000Z",
+      "summary": "When social media is constantly pushing people to use AI, why not let AI agents participate?",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Trump&#8217;s AI framework targets state laws, shifts child safety burden to parents",
+      "url": "https://techcrunch.com/2026/03/20/trumps-ai-framework-targets-state-laws-shifts-child-safety-burden-to-parents/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.9099999999999999,
+      "date": "2026-03-20T16:14:04.000Z",
+      "summary": "Trump’s AI framework pushes federal preemption of state laws, emphasizes innovation, and shifts responsibility for child safety toward parents while laying out lighter-touch rules for tech companies.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: We built a terminal-only Bluesky / AT Proto client written in Fortran",
+      "url": "https://github.com/FormerLab/fortransky",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-20T22:06:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Sonar – A tiny CLI to see and kill whatever's running on localhost",
+      "url": "https://github.com/RasKrebs/sonar",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-20T09:59:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: An open-source safety net for home hemodialysis",
+      "url": "https://safehemo.com/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-03-17T00:48:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

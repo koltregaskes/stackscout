@@ -1,0 +1,265 @@
+{
+  "generated": "2026-06-06T17:46:19.273Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-29",
+  "article_count": 15,
+  "archived_story_count": 700,
+  "articles": [
+    {
+      "title": "Vercel CLI @vercel/python-workers@0.0.19 released",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/python-workers%400.0.19",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-04-29T20:39:18.000Z",
+      "summary": "### Patch Changes\n\n-   b357f9d: Align queue deployment pinning with the TypeScript SDK by distinguishing automatic pinning, explicit deployment IDs, and explicit unpinned sends.\n-   fddd88c: [vercel-workers] payload type validation\n-   fb68ac6: Add explicit Python queue worker retry and acknowledgement directives. Workers can now return or raise `RetryAfter` and `Ack` to control retry and acknowledgement behavior.\n",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Converting Claude Code into the most intelligent Deep Research Agent",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz9ib0/converting_claude_code_into_the_most_intelligent/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-29T19:47:38.000Z",
+      "summary": "Over the past several weeks, I've been working on HyperResearch, a Claude Code skill harness that converts CC into the most intelligent deep research framework out there.\n\nHyperResearch surpasses OpenAI, Google, and NVIDIA's offerings in the agentic search space based on DeepResearch Bench. It's open-source, installable with a single command, and uses your CC subscription, so you don't have to pay for OpenAI or Gemini Pro.\n\nIt uses a 16-step pipeline that creates a searchable, persistent knowled",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Higgsfield MCP Is Now Inside OpenClaw, Hermes Agent, and NemoClaw",
+      "url": "https://x.com/Maginative/status/2049200033665569020",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-29T14:44:20.783Z",
+      "summary": "Higgsfield MCP launched inside OpenClaw, Hermes Agent, and NemoClaw, enabling end-to-end content creation including video generation within a single agent session.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AAIF Announces AGNTCon and MCPCon EU and NA for 2026",
+      "url": "https://x.com/AgenticAIFdn/status/2039696612633571565",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-29T14:41:24.682Z",
+      "summary": "The Agentic AI Foundation announced its 2026 events lineup including AGNTCon and MCPCon in EU and NA, plus global MCP Dev Summits for agentic AI builders.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Poolside AI Just Released Its First Public Models: Open Source and API",
+      "url": "https://x.com/marah_i_abdin/status/2049161468017287490",
+      "source": "Aligned News (Scoble)",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-29T01:48:00.432Z",
+      "summary": "Braygent's take: Poolside's first public models are a significant stealth-to-public moment. The open-source Laguna XS.2 gives the community access to a serious coding-focused MoE model.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code v0.15.5 released",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.15.5",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 0.9400000000000001,
+      "date": "2026-04-29T09:54:18.000Z",
+      "summary": "## What's Changed\n* mcp config as cli by @eliird in https://github.com/QwenLM/qwen-code/pull/1279\n* fix(cli): refresh static header on model switch by @pomelo-nwu in https://github.com/QwenLM/qwen-code/pull/3667\n* feat(core): wire background shells into the task_stop tool by @wenshao in https://github.com/QwenLM/qwen-code/pull/3687\n* feat(skills): add tmux-real-user-testing skill for readable TUI test logs by @pomelo-nwu in https://github.com/QwenLM/qwen-code/pull/3577\n* feat(cli): wire backgrou",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The final nail in the coffin for entry level creative freelancers just dropped",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1syu949/the_final_nail_in_the_coffin_for_entry_level/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 0.94,
+      "date": "2026-04-29T09:55:19.000Z",
+      "summary": "Anthropic just officially released the blender mcp connector today alongside adobe ,splice and sketchup, you can now type \"create a low poly beach scene with palm trees and sunset lighting\" into claude and watch it build the entire thing in blender in real time tadaaa. They even became an official blender development fund patron\n\nThis is claude directly controlling blender through the python api which means it can modify existing scenes, debug your node setups, batch apply changes across objects",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Launched My First App Using Claude",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz38u6/launched_my_first_app_using_claude/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.8600000000000001,
+      "date": "2026-04-29T16:07:47.000Z",
+      "summary": "Hello everyone. About a week ago, I was able to launch my very own app, all of it being built by Claude.\n\nIt’s a vehicle management app. Allows you to keep track of how much you’re spending on your car(s), comes with a built in maintenance schedule that’s customizable, fuel tracking system, a showroom mode for people who would like to showcase their vehicles, and an AI assistant (Claude API).\n\nIt’s all front end, and everything is stored locally on the users device. The API calls do require a da",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Claude Design is amazing but I keep hitting rate limits. Tested an open source skill that runs on your normal subscription limits — here's both outputs for you to judge.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz1rca/claude_design_is_amazing_but_i_keep_hitting_rate/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 0.78,
+      "date": "2026-04-29T15:15:33.000Z",
+      "summary": "Claude design is genuinely great for building HTML layouts and presentations. the problem is it burns through your usage fast — i was hitting limits after a few iterations.\n\nFound an open source claude code skill called huashu-design that does the same kind of thing (HTML prototypes, slide decks, animations) but runs through your normal claude code subscription. no separate rate limit.\n\n\n\nWanted to see how they actually compare, so i gave both the exact same prompt. one shot each, no follow-up e",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Fully 3D-modeled Raspberry Pi 5 enclosure made 100% through Claude's Blender MCP, zero manual modeling",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz748q/fully_3dmodeled_raspberry_pi_5_enclosure_made_100/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-29T18:23:09.000Z",
+      "summary": "So I've been experimenting with Claude's new Blender MCP integration and decided to push it to its limits with a real engineering project: a complete, print-ready enclosure for the Raspberry Pi 5, modeled entirely through AI prompts, no hands on keyboard in Blender at all.\n\n**What Claude did autonomously:**\n\n* Researched and confirmed the official Raspberry Pi 5 mechanical dimensions from the datasheet (85×56mm PCB, exact mounting hole positions at 3.5/61.5 × 3.5/52.5mm)\n* Mapped every port and ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Pattern I'm using to keep Claude Code productive on overnight unattended runs",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1syr2pt/pattern_im_using_to_keep_claude_code_productive/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-29T06:51:16.000Z",
+      "summary": "Been running Claude Code on multi-hour autonomous sessions for a few months and kept hitting the same wall: the longer it runs, the worse the work gets. Not a context-window problem (1M handles that fine), but a feedback-loop problem. Iteration N+10 makes the same mistakes it made at iteration N, because nothing updates between iterations except the code.\n\nBuilt a small framework around three pieces that, between them, solved it for me. Together this framework as enabled me to consistently run v",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Your Claude Code project dashboard is now on the Mac App Store",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1symv0c/your_claude_code_project_dashboard_is_now_on_the/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-29T03:13:42.000Z",
+      "summary": "Follow up to my .story/ post last week. The Mac companion is now live on the Mac App Store, free.\n\nApp Store: [https://apps.apple.com/us/app/storybloq/id6761348691](https://apps.apple.com/us/app/storybloq/id6761348691)\n\nQuick recap if you missed the original.  \nStorybloq is a project tracker that lives in `.story/` inside your repo.\n\nTickets, issues, roadmap phases, lessons, session handovers. All JSON and markdown, editable in any text editor, git-trackable. The CLI and MCP server expose it to ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "LosslessCut v3.68.0 released",
+      "url": "https://github.com/mifi/lossless-cut/releases/tag/v3.68.0",
+      "source": "GitHub Releases · LosslessCut",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-01-29T16:54:17.000Z",
+      "summary": "⚠️ **Warning:** The keyboard handling has changed as of v3.67.0 and later. If you after upgrading to this version ever revert to a version prior to v3.67.0, you **will lose your keyboard bindings**. Also there's an issue with migrating certain shortcuts with some keyboard layouts to the new version. See [TLDR here.](https://github.com/mifi/lossless-cut/issues/2671#issuecomment-3727638311)\r\n\r\nNote: there's a bug with the [app size of this version being larger](https://github.com/mifi/lossless-cut",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a Kanban board for Claude Code so I can run agent sessions straight from cards",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sye8bs/i_built_a_kanban_board_for_claude_code_so_i_can/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-04-28T21:04:05.000Z",
+      "summary": "I've been running 4-5 Claude Code sessions in parallel and kept losing track - which terminal had the auth work, which one was the bug fix, what's actually done.\n\nSo I added a Kanban board to **Vibeyard** (an open-source IDE I'm building for Claude Code).                                                        \n\nEach card is a task. Click run → it spins up a Claude session scoped to that task. When Claude finishes, the card moves itself to Done.\n\nIt turned Claude from \"a terminal I talk to\" into ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Are we underweighting execution benchmarks when we talk about open-source frontier models?",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1szb07b/are_we_underweighting_execution_benchmarks_when/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-29T20:41:38.000Z",
+      "summary": "A lot of open-source model discussion still centers on broad IQ-style evals or raw one-turn quality. What feels underdiscussed to me is whether execution-heavy evaluation is becoming its own frontier.\n\n\n\nLing-2.6-1T being open-sourced on Hugging Face today is one reason I’m thinking about this. Its stated profile is unusually explicit: precise instruct execution, strong results on execution-heavy / agentic tasks, low token overhead, and long-context task handling.\n\n\n\nIf more frontier open models",
+      "category": "creative_tools"
+    }
+  ]
+}

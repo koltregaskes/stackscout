@@ -1,0 +1,70 @@
+{
+  "generated": "2026-06-06T17:46:10.667Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-03-28",
+  "article_count": 4,
+  "archived_story_count": 67,
+  "articles": [
+    {
+      "title": "Arm releases first in-house chip, with Meta as debut customer",
+      "url": "https://www.cnbc.com/2026/03/24/arm-launches-its-own-cpu-with-meta-as-first-customer.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-03-24T23:34:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Improving personal tax filing with Claude CLI and Obsidian",
+      "url": "https://www.mrafayaleem.com/blog/improving-personal-tax-filing-with-claude-obsidian",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.73,
+      "date": "2026-03-28T18:21:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Improved Git Diffs with Delta, Fzf and a Little Shell Scripting",
+      "url": "https://nickjanetakis.com/blog/awesome-git-diffs-with-delta-fzf-and-a-little-shell-scripting",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-24T15:02:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenCiv1 – open-source rewrite of Civ1",
+      "url": "https://github.com/rajko-horvat/OpenCiv1",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.6799999999999999,
+      "date": "2026-03-28T18:22:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

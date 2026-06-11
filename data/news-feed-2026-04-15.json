@@ -1,0 +1,255 @@
+{
+  "generated": "2026-06-06T17:46:15.711Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-04-15",
+  "article_count": 15,
+  "archived_story_count": 418,
+  "articles": [
+    {
+      "title": "Qwen Code v0.14.5 released",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.5",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T15:33:06.000Z",
+      "summary": "## What's Changed\n* feat(cli/sdk): expose /context usage data in non-interactive mode and SDK API by @wenshao in https://github.com/QwenLM/qwen-code/pull/2916\n* feat(cli): add startup performance profiler by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/3232\n* feat(core): implement fork subagent for context sharing by @wenshao in https://github.com/QwenLM/qwen-code/pull/2936\n* feat(vscode-ide-companion): add /account for account display by @qqqys in https://github.com/QwenLM/qwen-code/p",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MCP vs API?",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1slr3qj/mcp_vs_api/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T00:52:13.000Z",
+      "summary": "I am trying to get deeper into utilizing Claude Code (trying to become more technical) as I have recently switched to the terminal and wanted some feedback on better understanding MCP vs APIs.   \n  \nTo me it seems like APIs are direct instructions on how to navigate and pull or push data between a product and another entity. MCP on the other hand seems like it is allowing the AI to dynamically use tools and definitions based on your current context.\n\nI have heard a lot of people say that API is ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Built a Visual Studio Code extension to use OpenCode as a GUI sidebar instead of the terminal",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sml59n/built_a_visual_studio_code_extension_to_use/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T22:28:23.000Z",
+      "summary": "Hey everyone,\n\nI built a VS Code extension that brings OpenCode directly into your sidebar as a native panel, that uses the UI elements exactly as they are from the OpenCode Desktop app. No terminal needed, no browser tab. It just lives in your activity bar and works easily.\n\nWhat it does:\n\n* Runs OpenCode sessions inside a VS Code webview sidebar\n* Automatically uses whatever workspace folder you have open\n* Can auto-start a local OpenCode server when you open the sidebar\n* Keeps your session a",
+      "category": "ai_models"
+    },
+    {
+      "title": "Open Ai Agent Dashboard for Monitoring, Memory, Performance and Audit Trail",
+      "url": "https://reddit.com/r/ChatGPT/comments/1sm2bkg/open_ai_agent_dashboard_for_monitoring_memory/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T10:39:22.000Z",
+      "summary": "Been building AI agents for about a year now and the thing that always drove me crazy is you deploy an agent, it runs for hours, and you have absolutely no idea what it did. The logs say \"task complete\" 47 times but did it actually do 47 different things or did it just loop the same task over and over?\n\nI had an agent burn through about $340 in API credits over a weekend because it got stuck retrying the same request. The logs showed 200 OK on every call. Everything looked fine. It just kept doi",
+      "category": "ai_tools"
+    },
+    {
+      "title": "[P] Added 8 Indian languages to Chatterbox TTS via LoRA — 1.4% of parameters, no phoneme engineering [P]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1sltun8/p_added_8_indian_languages_to_chatterbox_tts_via/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T02:55:46.000Z",
+      "summary": "TL;DR:  \nFine-tuned Chatterbox-Multilingual (Resemble AI's open-source TTS) to support Telugu, Kannada, Bengali, Tamil, Malayalam, Marathi, Gujarati, and Hindi using LoRA adapters + tokenizer extension. Only 7.8M / 544M parameters trained. Model + audio samples available.\n\n\\---\n\nThe Problem\n\nChatterbox-Multilingual supports 23 languages with zero-shot voice cloning, but no Dravidian languages (Telugu, Kannada, Tamil, Malayalam) and limited Indo-Aryan coverage beyond Hindi. That's 500M+ speakers ",
+      "category": "ai_research"
+    },
+    {
+      "title": "Claude Code on desktop, redesigned for parallel agentic work.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1slictc/claude_code_on_desktop_redesigned_for_parallel/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.99,
+      "date": "2026-04-14T19:10:50.000Z",
+      "summary": "New sidebar for parallel sessions. Drag-and-drop layout. Integrated terminal. Run multiple agents from one window. \n\nNew tools make it easier to complete work without leaving the app.\n\nIntegrated terminal, in-app file editing, HTML + PDF preview, and a rebuilt diff viewer. Drag any panel into the layout that fits how you work. Three view modes when you want more (or less) signal.\n\nPlus more updates and customizations to fit how you work including SSH for Mac, keyboard shortcuts, and CLI plugin p",
+      "category": "ai_tools"
+    },
+    {
+      "title": "I built a CLI that scans your project and auto-installs matching skills for Claude Code",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sm4at4/i_built_a_cli_that_scans_your_project_and/",
+      "source": "Reddit r/ClaudeAI",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.96,
+      "date": "2026-04-15T12:13:27.000Z",
+      "summary": "Hey r/ClaudeAI — I built a small tool to fix something that bugged me: every time I start a new project, picking the right skills from [skills.sh](http://skills.sh) is manual and slow.\n\n\n\nskillgrab does this:\n\n\n\n1. Scans \\`package.json\\`, \\`requirements.txt\\`, \\`pubspec.yaml\\`, \\`go.mod\\`, \\`Dockerfile\\`, \\`vercel.json\\`, etc. to detect your stack\n\n2. Reads your README for non-code hints (\"landing page\", \"pricing\", \"SEO\") and asks if you want marketing/design/sales skills\n\n3. Queries [skills.sh]",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gemini CLI v0.38.1 released",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.38.1",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-04-15T17:56:33.000Z",
+      "summary": "## What's Changed\n* fix(patch): cherry-pick 050c303 to release/v0.38.0-pr-25317 to patch version v0.38.0 and create version 0.38.1 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/25466\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.38.0...v0.38.1",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MidJourney V8.1 Alpha Has Just Been Released. How Much Improvement Does It Have?",
+      "url": "https://reddit.com/r/midjourney/comments/1smlk07/midjourney_v81_alpha_has_just_been_released_how/",
+      "source": "Reddit r/midjourney",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T22:45:01.000Z",
+      "summary": "A new r/midjourney version always creates excitement. Beautiful sample images start appearing everywhere, people begin testing it immediately, and the usual question follows:\n\n**Is it really better, or is it just new?**\n\nWith MidJourney V8.1 Alpha now available, I wanted to look beyond the hype and test it in a more practical way.\n\nInstead of judging it in isolation, I compared it against two other strong image models available today: **Nano Banana 2** and **Grok Imagine 1.0.**\n\nThe goal was sim",
+      "category": "creative_tools"
+    },
+    {
+      "title": "Great news, everyone. If you were sick of the condescending 5.2 model, creators have announced 5.3, with a less preachy tone. I have tested it over the last few days and it has become more balanced.",
+      "url": "https://reddit.com/r/ChatGPT/comments/1smkzda/great_news_everyone_if_you_were_sick_of_the/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T22:21:37.000Z",
+      "summary": "I noticed a change from the condescending, sometimes rude and persistent looping behaviour of ChatGPT 5.2, so I asked Google about it and got this confirmation back that in March they updated to 5.3. I think I'm starting to receive that model now because it's become less preachy and isn't looping into psychoanalysis of me every time I talk to it.\n\n\n\nChatGPT has likely felt \"nicer\" recently due to several updates in early 2026 designed to improve its conversational tone and reduce the rigid, robo",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen3.5 35b is sure still one the best local model (pulling above its weight) - More Details",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1smgqgy/qwen35_35b_is_sure_still_one_the_best_local_model/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T19:46:08.000Z",
+      "summary": "Last time I posted on how this model has performed in creating the webapp based on provided research paper. I got so much love to see people has appreciated the post and of-course the potential of this MOE model.\n\nI am sharing details on how I used this model to create webapp just using prompt and step by step guiding it. Later I converted my guidance steps into skills using same qwen-code cli with this model, that helped to add more examples.\n\nHere is github repo where I have added the [researc",
+      "category": "ai_models"
+    },
+    {
+      "title": "Is it possible for an open-source AI that you run at home to become as powerful as that of chatgpt and others at that level?",
+      "url": "https://reddit.com/r/ChatGPT/comments/1smepps/is_it_possible_for_an_opensource_ai_that_you_run/",
+      "source": "Reddit r/ChatGPT",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T18:34:26.000Z",
+      "summary": "What would need to be true for someone to be able to run something that powerful entirely from home? Do they just need the correct weights? Assume that they don't need to do training (maybe some tech enthusiast does the training and just hands off the built model to people). Would storage space be a constraint? How much storage would they need? And how much RAM would they need? This is all for 1 person using it, not like the person would be serving an AI service out of their garage or something",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Lyra 2.0 : Explorable Generative 3D Worlds",
+      "url": "https://reddit.com/r/StableDiffusion/comments/1smbyjf/lyra_20_explorable_generative_3d_worlds/",
+      "source": "Reddit r/StableDiffusion",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T16:59:26.000Z",
+      "summary": "Nvidia released **Lyra 2.0**, a framework for generating persistent, explorable 3D worlds at scale, from NVIDIA Research.  \n  \nGenerating large-scale, complex environments is difficult for AI models. Current models often “forget” what spaces look like and lose track of movement over time, causing objects to shift, blur, or appear inconsistent. This prevents them from creating the reliable 3D environments required for downstream simulations. Lyra 2.0 solves these issues by:  \n  \n Maintaining per-",
+      "category": "creative_tools"
+    },
+    {
+      "title": "[P] Built GPT-2, Llama 3, and DeepSeek from scratch in PyTorch - open source code + book",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1sm82ze/p_built_gpt2_llama_3_and_deepseek_from_scratch_in/",
+      "source": "Reddit r/LocalLLaMA",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T14:42:55.000Z",
+      "summary": "I wrote a book that implements modern LLM architectures from scratch. The part most relevant to this sub:\n\nChapter 3 takes GPT-2 and swaps exactly 4 things to get Llama 3.2-3B:\n\n1. LayerNorm → RMSNorm\n2. Learned positional encodings → RoPE\n3. GELU → SwiGLU\n4. Multi-Head Attention → Grouped-Query Attention\n\nThen loads Meta's real pretrained weights.\n\nChapter 5 builds DeepSeek's full architecture: MLA with the absorption trick, decoupled RoPE, MoE with shared experts and fine-grained segmentation,",
+      "category": "ai_models"
+    },
+    {
+      "title": "Built GPT-2, Llama 3, and DeepSeek from scratch in PyTorch - open source code + book [p]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1sm75yf/built_gpt2_llama_3_and_deepseek_from_scratch_in/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-15T14:08:23.000Z",
+      "summary": "I spent the past year implementing five LLM architectures from scratch in PyTorch and wrote a book documenting the process.\n\nWhat's covered:\n\n* Vanilla encoder-decoder transformer (English to Hindi translation)\n* GPT-2 (124M), loading real OpenAI pretrained weights\n* Llama 3.2-3B, showing the exact 4 component swaps from GPT-2 (RMSNorm, RoPE, SwiGLU, GQA), loading Meta's pretrained weights\n* KV cache mechanics, MQA, GQA\n* DeepSeek: Multi-Head Latent Attention with absorption trick and decoupled ",
+      "category": "ai_research"
+    }
+  ]
+}
