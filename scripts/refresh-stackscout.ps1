@@ -1,6 +1,12 @@
 [CmdletBinding()]
 param(
-  [switch]$SkipCheck
+  [switch]$SkipCheck,
+  # Opt-in publish leg: commit + push generated public output to main so the
+  # live GitHub Pages site actually receives refreshed data. Without this the
+  # refresh only writes files locally — digests were piling up untracked and
+  # the deployed site never saw them. Off by default; enable by adding
+  # -Publish to the scheduled task action once approved.
+  [switch]$Publish
 )
 
 $ErrorActionPreference = 'Stop'
@@ -150,6 +156,55 @@ try {
     throw 'Stack Scout refresh completed but tools-manifest.json could not be read.'
   }
 
+  $publishedCommit = $null
+  if ($Publish) {
+    Invoke-RefreshStep -Label 'Publish generated output' -ScriptBlock {
+      # Scoped to public generated output only, so unrelated local work is
+      # never swept into an automated commit. Filter to paths that actually
+      # exist — `git add -- <missing>` aborts the whole add otherwise.
+      $candidatePaths = @(
+        'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
+        'radar', 'index.html', 'sitemap.xml'
+      )
+      $publishPaths = @($candidatePaths | Where-Object { Test-Path (Join-Path $repoRoot $_) })
+      if ($publishPaths.Count -eq 0) {
+        return
+      }
+
+      $changes = @(git status --porcelain -- $publishPaths)
+      if ($LASTEXITCODE -ne 0) {
+        throw "git status failed with exit code $LASTEXITCODE."
+      }
+
+      if ($changes.Count -eq 0) {
+        return
+      }
+
+      git add -- $publishPaths
+      if ($LASTEXITCODE -ne 0) {
+        throw "git add failed with exit code $LASTEXITCODE."
+      }
+
+      $staged = @(git diff --cached --name-only)
+      if ($staged.Count -eq 0) {
+        return
+      }
+
+      $commitMessage = "chore: publish Stack Scout refresh $((Get-Date).ToString('yyyy-MM-dd')) [automated]"
+      git commit -m $commitMessage
+      if ($LASTEXITCODE -ne 0) {
+        throw "git commit failed with exit code $LASTEXITCODE."
+      }
+
+      git push origin main
+      if ($LASTEXITCODE -ne 0) {
+        throw "git push failed with exit code $LASTEXITCODE. The commit remains local."
+      }
+
+      $script:publishedCommit = (git rev-parse --short HEAD)
+    }
+  }
+
   $durationStopwatch.Stop()
   $completedAt = (Get-Date).ToUniversalTime().ToString('o')
 
@@ -161,6 +216,8 @@ try {
     toolCount = [int]($toolsManifest.counts.total)
     updateCount = [int]((@($updatesManifest.items)).Count)
     categoryCount = [int]((@($categoriesManifest.categories)).Count)
+    publishEnabled = [bool]$Publish
+    publishedCommit = $publishedCommit
   }
 } catch {
   $durationStopwatch.Stop()
