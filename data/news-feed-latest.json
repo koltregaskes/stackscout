@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-11T12:00:07.998Z",
+  "generated": "2026-06-11T17:45:17.150Z",
   "site": "Stack Scout",
-  "article_count": 5,
+  "article_count": 4,
   "articles": [
     {
       "title": "AI agent runs amok in Fedora and elsewhere",
@@ -15,21 +15,6 @@
       ],
       "importance": 0.5599999999999999,
       "date": "2026-06-11T00:10:08.000Z",
-      "summary": null,
-      "category": "tech_general"
-    },
-    {
-      "title": "A €0.01 bank transfer could compromise a banking AI agent",
-      "url": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
-      "source": "Hacker News",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.5599999999999999,
-      "date": "2026-06-10T13:39:11.000Z",
       "summary": null,
       "category": "tech_general"
     },
@@ -49,32 +34,32 @@
       "category": "tech_general"
     },
     {
-      "title": "Authentication issues related to API requests",
-      "url": "https://www.githubstatus.com/incidents/fcj3088jg1wx",
+      "title": "MiMo Code is now released and open-source",
+      "url": "https://mimo.xiaomi.com/mimocode",
       "source": "Hacker News",
       "tags": [
-        "api_update"
+        "open_source"
       ],
       "matching_tags": [
-        "api_update"
+        "open_source"
       ],
       "importance": 0.48,
-      "date": "2026-06-10T15:29:52.000Z",
+      "date": "2026-06-11T14:27:19.000Z",
       "summary": null,
       "category": "tech_general"
     },
     {
-      "title": "Apache Burr: Build reliable AI agents and applications",
-      "url": "https://burr.apache.org/",
+      "title": "US-Canada border library gets new Quebec-only entrance",
+      "url": "https://www.bbc.com/news/videos/clyrvrde160o",
       "source": "Hacker News",
       "tags": [
-        "open_source"
+        "developer_tool"
       ],
       "matching_tags": [
-        "open_source"
+        "developer_tool"
       ],
       "importance": 0.48,
-      "date": "2026-06-10T15:01:06.000Z",
+      "date": "2026-06-11T13:42:42.000Z",
       "summary": null,
       "category": "tech_general"
     }
