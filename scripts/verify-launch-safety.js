@@ -43,6 +43,15 @@ const REQUIRED_PUBLIC_FILES = [
   'sitemap.xml',
   'icon.svg',
 ]
+const GENERATED_DATA_FILES = new Set([
+  'data/page-registry.json',
+  'data/tools-manifest.json',
+  'data/updates-manifest.json',
+  'data/categories-manifest.json',
+  'data/methodology-manifest.json',
+  'data/collections-manifest.json',
+  'data/radar-manifest.json',
+])
 const TEXT_EXTENSIONS = new Set(['.css', '.html', '.js', '.json', '.svg', '.txt', '.xml'])
 const PRIVATE_PATTERNS = [
   { label: 'Windows drive path', pattern: /\b[A-Z]:[\\/][^\s"'<>)]*/i },
@@ -111,7 +120,19 @@ function walk(relativePath) {
 }
 
 function collectPublicTextFiles() {
-  return PUBLIC_ENTRIES.flatMap(walk).filter((file) => TEXT_EXTENSIONS.has(path.extname(file).toLowerCase()))
+  return PUBLIC_ENTRIES.flatMap(walk).filter((file) => {
+    const normalised = file.replaceAll('\\', '/')
+
+    if (!TEXT_EXTENSIONS.has(path.extname(file).toLowerCase())) {
+      return false
+    }
+
+    if (normalised.startsWith('data/')) {
+      return GENERATED_DATA_FILES.has(normalised)
+    }
+
+    return true
+  })
 }
 
 function extractIssueDate() {
