@@ -50,6 +50,19 @@ function writeExternalJson(absolutePath, value) {
   fs.writeFileSync(absolutePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
 }
 
+function syncServiceWorkerCacheName() {
+  const serviceWorkerPath = path.join(ROOT_DIR, 'service-worker.js')
+  const current = fs.readFileSync(serviceWorkerPath, 'utf8')
+  const next = current.replace(
+    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}['"]/,
+    `const CACHE_NAME = 'stackscout-${GENERATED_AT}'`,
+  )
+
+  if (next !== current) {
+    fs.writeFileSync(serviceWorkerPath, next, 'utf8')
+  }
+}
+
 function resolvePrivatePreviewExportPath() {
   if (process.env.STACKSCOUT_PRIVATE_EXPORT_FILE) {
     return path.resolve(process.env.STACKSCOUT_PRIVATE_EXPORT_FILE)
@@ -1289,6 +1302,7 @@ function main() {
   writeJson('data/methodology-manifest.json', buildMethodologyManifest(site))
   writeJson('data/collections-manifest.json', buildCollectionsManifest(collections, toolIndex))
   writeJson('data/radar-manifest.json', buildRadarManifest(site.radar))
+  syncServiceWorkerCacheName()
   if (privatePreviewExport) {
     writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
   }
