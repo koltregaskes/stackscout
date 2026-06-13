@@ -1,0 +1,19 @@
+# Stack Scout
+
+> Public-facing tools destination for curated builder tools, services, APIs, MCPs, CLIs, and apps.
+
+## Start Here
+
+- [Home](https://koltregaskes.github.io/stackscout/): Editorial front door, featured tools, categories, updates, and lab subset.
+- [Top tools](https://koltregaskes.github.io/stackscout/catalog/): Searchable catalog of tracked tools and lab products.
+- [Categories](https://koltregaskes.github.io/stackscout/categories/): Website, service, API, MCP, CLI, web-app, and desktop-app lanes.
+- [Wire](https://koltregaskes.github.io/stackscout/updates/): Recent public activity and noteworthy tool movement.
+- [Radar](https://koltregaskes.github.io/stackscout/radar/): Worth-watching tools and systems.
+- [Collections](https://koltregaskes.github.io/stackscout/collections/): Curated use-case groupings.
+- [Sources & method](https://koltregaskes.github.io/stackscout/method/): Badge definitions, freshness rules, and editorial guardrails.
+
+## Agent Notes
+
+- This public site excludes private operational records and local W-drive state.
+- Prefer official source links and dated update entries before repeating tool claims.
+- Public verdicts use editorial badges rather than fake numeric scores.

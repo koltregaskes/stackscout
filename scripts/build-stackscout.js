@@ -63,6 +63,31 @@ function syncServiceWorkerCacheName() {
   }
 }
 
+function buildLlmsTxt(site, categories) {
+  const categoryLinks = categories
+    .map((category) => `- [${category.title}](${PUBLIC_BASE_URL}categories/${category.slug}/): ${category.description}`)
+    .join('\n')
+
+  return `# Stack Scout
+
+> ${site.brand.description}
+
+## Start Here
+
+${STATIC_PAGES.map((page) => `- [${page.title}](${PUBLIC_BASE_URL}${page.outputPath.replace(/index\\.html$/, '')}): ${page.summary}`).join('\n')}
+
+## Categories
+
+${categoryLinks}
+
+## Agent Notes
+
+- This public site excludes private operational records and local W-drive state.
+- Prefer official source links and dated update entries before repeating tool claims.
+- Public verdicts use editorial badges rather than fake numeric scores.
+`
+}
+
 function resolvePrivatePreviewExportPath() {
   if (process.env.STACKSCOUT_PRIVATE_EXPORT_FILE) {
     return path.resolve(process.env.STACKSCOUT_PRIVATE_EXPORT_FILE)
@@ -1303,6 +1328,7 @@ function main() {
   writeJson('data/collections-manifest.json', buildCollectionsManifest(collections, toolIndex))
   writeJson('data/radar-manifest.json', buildRadarManifest(site.radar))
   syncServiceWorkerCacheName()
+  writeFile('llms.txt', buildLlmsTxt(site, categories))
   if (privatePreviewExport) {
     writeExternalJson(privatePreviewExport, buildPublishingPreview(tools, updates, categories))
   }

@@ -18,6 +18,7 @@ const PUBLIC_ENTRIES = [
   'manifest.json',
   'styles.css',
   'sitemap.xml',
+  'llms.txt',
   'icon.svg',
 ]
 const REQUIRED_PUBLIC_FILES = [
@@ -41,6 +42,7 @@ const REQUIRED_PUBLIC_FILES = [
   'manifest.json',
   'styles.css',
   'sitemap.xml',
+  'llms.txt',
   'icon.svg',
 ]
 const GENERATED_DATA_FILES = new Set([
