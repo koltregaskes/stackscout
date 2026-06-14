@@ -1,16 +1,26 @@
 # Stack Scout
 
-> Public-facing tools destination for curated builder tools, services, APIs, MCPs, CLIs, and apps.
+> Stack Scout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder's attention.
 
 ## Start Here
 
-- [Home](https://koltregaskes.github.io/stackscout/): Editorial front door, featured tools, categories, updates, and lab subset.
-- [Top tools](https://koltregaskes.github.io/stackscout/catalog/): Searchable catalog of tracked tools and lab products.
-- [Categories](https://koltregaskes.github.io/stackscout/categories/): Website, service, API, MCP, CLI, web-app, and desktop-app lanes.
-- [Wire](https://koltregaskes.github.io/stackscout/updates/): Recent public activity and noteworthy tool movement.
-- [Radar](https://koltregaskes.github.io/stackscout/radar/): Worth-watching tools and systems.
-- [Collections](https://koltregaskes.github.io/stackscout/collections/): Curated use-case groupings.
-- [Sources & method](https://koltregaskes.github.io/stackscout/method/): Badge definitions, freshness rules, and editorial guardrails.
+- [Home](https://koltregaskes.github.io/stackscout/index.html): Editorial front door, featured tools, categories, updates, and the lab subset.
+- [Top tools](https://koltregaskes.github.io/stackscout/catalog/index.html): Searchable, filterable catalog of tracked tools and lab products.
+- [Categories](https://koltregaskes.github.io/stackscout/categories/index.html): Landing page for websites, web services, APIs, MCPs, CLIs, and app lanes.
+- [Wire](https://koltregaskes.github.io/stackscout/updates/index.html): Recent public activity, releases, direction changes, and noteworthy platform moves.
+- [Radar](https://koltregaskes.github.io/stackscout/radar/index.html): The worth-watching layer for tools and systems that are not yet full recommendations.
+- [Collections](https://koltregaskes.github.io/stackscout/collections/index.html): Curated use-case groupings that make the catalog easier to navigate.
+- [Sources & method](https://koltregaskes.github.io/stackscout/method/index.html): Public badge definitions, freshness rules, and editorial guardrails.
+
+## Categories
+
+- [Websites](https://koltregaskes.github.io/stackscout/categories/websites/): Browser-first products and hubs that are useful on their own, not just as a wrapper around an API.
+- [Web Services](https://koltregaskes.github.io/stackscout/categories/web-services/): Hosted workflow and automation platforms that carry real operational value without requiring a local runtime first.
+- [APIs](https://koltregaskes.github.io/stackscout/categories/apis/): Platform surfaces for shipping structured AI, automation, and developer workflows.
+- [MCPs](https://koltregaskes.github.io/stackscout/categories/mcps/): Model Context Protocol servers and bridges that turn static assistants into tool-using systems.
+- [CLIs](https://koltregaskes.github.io/stackscout/categories/clis/): Command-line tools that earn a place in a serious builder workflow.
+- [Web Apps](https://koltregaskes.github.io/stackscout/categories/web-apps/): Focused public-facing applications that sit closer to products than infrastructure.
+- [Desktop Apps](https://koltregaskes.github.io/stackscout/categories/desktop-apps/): Private or local-first desktop surfaces that are notable enough to track publicly.
 
 ## Agent Notes
 
