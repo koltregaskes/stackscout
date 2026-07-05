@@ -1,0 +1,37 @@
+{
+  "generated": "2026-07-01T17:45:10.973Z",
+  "site": "Stack Scout",
+  "article_count": 2,
+  "articles": [
+    {
+      "title": "Box3D, an open source 3D physics engine",
+      "url": "https://box2d.org/posts/2026/06/announcing-box3d/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-01T12:12:17.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A Fake Shell for Pangenomics",
+      "url": "https://www.cs.cornell.edu/~asampson/blog/flash.html",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-06-26T06:02:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}
