@@ -1,0 +1,219 @@
+{
+  "generated": "2026-07-05T12:00:32.899Z",
+  "site": "Stack Scout",
+  "article_count": 14,
+  "articles": [
+    {
+      "title": "Reggae walk of fame launched in Harlesden",
+      "url": "https://www.bbc.co.uk/news/articles/c0ryxr0l4elo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Entertainment & Arts",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 0.54,
+      "date": "2026-07-05T11:32:23.320Z",
+      "summary": "A trail celebrating Harlesden's reggae heritage and Windrush pioneers launches in north-west London.",
+      "category": "tech_general"
+    },
+    {
+      "title": "NHS to use AI on its app to direct patients to appropriate services",
+      "url": "https://www.theguardian.com/society/2026/jul/04/nhs-ai-app-patients-appropriate-services-health",
+      "source": "The Guardian (Society/Health)",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-07-05T11:32:31.220Z",
+      "summary": "&lt;p&gt;Update in England expected to reach about 200,000 patients over the next year as part of £10bn package to overhaul NHS systems&lt;/p&gt;&lt;p&gt;The NHS will begin using AI on its app to direct patients to the appropriate services, it has been announced.&lt;/p&gt;&lt;p&gt;The tool will be used to triage patients and to ascertain if they should be allocated a GP appointment. Some may be advised to attend a pharmacy or their local A&amp;amp;E department instead, depending on the severity ",
+      "category": "health_research"
+    },
+    {
+      "title": "Agentic coding notes from Galapagos Island",
+      "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-07-04T04:37:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Beyoncé releases surprise new track for Fourth of July weekend",
+      "url": "https://www.theguardian.com/music/2026/jul/04/beyonce-releases-surprise-new-track-for-fourth-of-july-weekend",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.54,
+      "date": "2026-07-05T11:32:30.868Z",
+      "summary": "&lt;p&gt;Morning Dew (Donk) reportedly conceived for Beyoncé’s second album B’Day, which will be reissued for its 20th anniversary in September&lt;/p&gt;&lt;p&gt;She popularised the shock drop in 2013 with the surprise release of her self-titled album. And on Saturday, Beyoncé did it again, dropping a new song out of the blue.&lt;/p&gt;&lt;p&gt;The singer released the new track, titled Morning Dew (Donk), on the Fourth of July holiday weekend. Reports say the track was initially intended for her",
+      "category": "tech_general"
+    },
+    {
+      "title": "Audacious mission to rescue NASA&#039;s falling telescope has launched",
+      "url": "https://www.newscientist.com/article/2532627-audacious-mission-to-rescue-nasas-falling-telescope-has-launched/?utm_campaign=RSS%7CNSNS&#038;utm_source=NSNS&#038;utm_medium=RSS&#038;utm_content=home",
+      "source": "New Scientist",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.54,
+      "date": "2026-07-05T11:32:28.133Z",
+      "summary": "NASA’s Swift space telescope is reaching the end of its two-decade run in orbit – unless a satellite launched on 3 July can give it a lifesaving boost",
+      "category": "tech_general"
+    },
+    {
+      "title": "Beeg float library, a Rust port of Fabrice Bellard's libbf",
+      "url": "https://github.com/lifthrasiir/libbeef",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-05T05:23:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Zig: All Package Management Functionality Moved from Compiler to Build System",
+      "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-04T16:30:10.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "‘Our little adventure’: Angela Merkel unveils portrait of herself in Berlin",
+      "url": "https://www.theguardian.com/world/2026/jul/03/portrait-angela-merkel-unveiled-berlin-jeremie-queyras",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-07-05T11:32:30.883Z",
+      "summary": "&lt;p&gt;Jérémie Queyras, 28, created painting over months of sessions at his studio where pair struck up unlikely bond&lt;/p&gt;&lt;p&gt;Over months they met secretly in a studio in the government quarter of central Berlin – a young artist and his subject, the former German chancellor Angela Merkel. For hours at a time, while &lt;a href=\"https://jeremiequeyras.eu/\"&gt;Jérémie Queyras&lt;/a&gt; painted her portrait, they bonded, Merkel has said, chatting “about all and sundry”. Sometimes they we",
+      "category": "tech_general"
+    },
+    {
+      "title": "You know the Mayflower. What about the White Lion? Here&apos;s the story of &apos;Two Ships&apos;",
+      "url": "https://www.npr.org/2026/07/03/nx-s1-5876220/two-ships-review-america-250-mayflower-white-lion",
+      "source": "NPR Culture",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-07-05T11:32:28.648Z",
+      "summary": "David S. Reynolds&apos; book examines the twin legacies of the Mayflower, which carried the Pilgrims to Plymouth in 1620, and the White Lion, which brought the first enslaved Africans to Virginia in 1619.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Nasa launches mission to save falling space telescope",
+      "url": "https://www.bbc.co.uk/news/articles/c0ry4xx7rk8o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Science & Environment",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-07-05T11:32:27.244Z",
+      "summary": "A Nasa-funded robot has blasted off to catch a falling telescope in mid-orbit and blast it back to safety before it burns up.",
+      "category": "tech_general"
+    },
+    {
+      "title": "China releases underground church pastor after months in detention",
+      "url": "https://www.aljazeera.com/news/2026/7/5/china-releases-underground-church-pastor-after-months-in-detention?traffic_source=rss",
+      "source": "Al Jazeera",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-07-05T11:32:22.835Z",
+      "summary": "Ezra Jin’s family says the Zion Church founder arrived in the US after months in detention in China.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Ukraine hits major oil terminal in Russia's St Petersburg",
+      "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News (World)",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.38,
+      "date": "2026-07-05T11:32:26.084Z",
+      "summary": "Ukrainian President Volodymyr Zelensky says the target is key infrastructure \"that generates revenue for Russia's war\".",
+      "category": "tech_general"
+    },
+    {
+      "title": "Legally Blonde revival Elle - boring and tedious or a hot pink delight?",
+      "url": "https://www.bbc.co.uk/news/articles/c5yzj5m22lro?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Entertainment & Arts",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.38,
+      "date": "2026-07-05T11:32:23.409Z",
+      "summary": "The spin-off introduces a new generation to Elle Woods, but critics say young people deserve better.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Rocket Report: Indian startup nears first launch; SpaceX&#039;s millenary milestone",
+      "url": "https://arstechnica.com/space/2026/07/rocket-report-indian-startup-nears-first-launch-spacexs-millenary-milestone/",
+      "source": "Ars Technica Science",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.38,
+      "date": "2026-07-05T11:32:23.082Z",
+      "summary": "NASA awarded Rocket Lab deals for three dedicated launches using the company's Electron rocket.",
+      "category": "tech_general"
+    }
+  ]
+}
