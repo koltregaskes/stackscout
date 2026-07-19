@@ -1,0 +1,82 @@
+{
+  "generated": "2026-07-12T12:00:05.616Z",
+  "site": "Stack Scout",
+  "article_count": 5,
+  "articles": [
+    {
+      "title": "Ghostel.el: Terminal emulator powered by libghostty",
+      "url": "https://dakra.github.io/ghostel/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-12T08:52:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
+      "url": "https://github.com/cosmtrek/mindwalk",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-12T05:51:32.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "What xAI's Grok Build CLI Actually Sends to xAI",
+      "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-12T01:09:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "RISCBoy is an open-source portable games console, designed from scratch",
+      "url": "https://github.com/Wren6991/RISCBoy",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-11T21:58:00.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Earth Game – An offline CLI for turning life goals into quests",
+      "url": "https://github.com/skorotkiewicz/earth-game",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-07-11T16:37:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}

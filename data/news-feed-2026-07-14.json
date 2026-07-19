@@ -1,0 +1,57 @@
+{
+  "generated": "2026-07-18T17:45:40.483Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-07-14",
+  "article_count": 3,
+  "archived_story_count": 206,
+  "articles": [
+    {
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.85,
+      "date": "2026-07-12T18:28:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The zero-cost fallacy: open-source software in the agentic era",
+      "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.84,
+      "date": "2026-07-10T20:45:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Dependabot version updates introduce default package cooldown",
+      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-07-14T21:15:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
+}
