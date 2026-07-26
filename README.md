@@ -84,10 +84,11 @@ For unattended Windows refreshes without visible terminal focus theft, use a loc
 
 When `-Publish` is enabled, the refresh now fails safely unless the checkout is
 on `main`, exactly matches the freshly fetched `origin/main`, and contains no
-changes outside the generated public allow-list. It re-fetches immediately
-before committing and stops without creating a commit if the remote moved
-during the build. Recovery must preserve generated output on a review branch;
-the automation never resets, rebases, force-pushes, or resolves conflicts.
+staged changes or working-tree changes outside the case-sensitive generated
+public allow-list. It re-fetches immediately before committing and stops
+without creating a commit if the remote moved during the build. Recovery must
+preserve generated output on a review branch; the automation never resets,
+rebases, force-pushes, or resolves conflicts.
 
 ## Site structure
 

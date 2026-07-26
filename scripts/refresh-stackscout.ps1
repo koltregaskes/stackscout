@@ -162,7 +162,7 @@ function Test-IsPublishPath {
   foreach ($candidate in $publishCandidatePaths) {
     $normalisedCandidate = $candidate.Replace('\', '/')
     if (
-      $normalisedPath -eq $normalisedCandidate -or
+      $normalisedPath -ceq $normalisedCandidate -or
       $normalisedPath.StartsWith("$normalisedCandidate/", [System.StringComparison]::Ordinal)
     ) {
       return $true
@@ -201,6 +201,14 @@ function Assert-PublishCheckoutReady {
   $branch = Invoke-GitText -Arguments @('branch', '--show-current') -FailureMessage 'Could not read the current branch.'
   if ($branch -ne 'main') {
     throw "Publishing is only allowed from the main branch. Current branch: '$branch'."
+  }
+
+  & git diff --cached --quiet
+  if ($LASTEXITCODE -eq 1) {
+    throw 'Publishing refused because the Git index already contains staged changes. The scheduled publisher only stages its own allow-listed generated output.'
+  }
+  if ($LASTEXITCODE -ne 0) {
+    throw "Could not verify that the Git index is clean. git diff exited with code $LASTEXITCODE."
   }
 
   $unexpected = @(Get-UnexpectedPublishChanges)
