@@ -9,8 +9,8 @@
       "consumerPath": "data/news-feed-latest.json",
       "generatedAt": "2026-07-26T17:47:21.785Z",
       "newestItemAt": "2026-07-26T15:28:37.000Z",
-      "itemCount": 15,
-      "consumedItems": 15
+      "itemCount": 14,
+      "consumedItems": 14
     }
   },
   "items": [
@@ -43,21 +43,6 @@
       "externalSignal": true,
       "toolName": "Turbo",
       "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.8-canary.1"
-    },
-    {
-      "id": "routed-b594dc31f7646e25",
-      "toolSlug": null,
-      "kind": "launch",
-      "title": "Flavio Bolsonaro launches Brazil presidential bid with Milei support",
-      "summary": "Flavio Bolsonaro, son of disgraced former Brazilian President Jair, has launched his bid to unseat President Lula.",
-      "publishedAt": "2026-07-26",
-      "publishedAtIso": "2026-07-26T02:19:58.000Z",
-      "sourceLabel": "Al Jazeera",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/26/flavio-bolsonaro-launches-brazil-presidential-bid-with-milei-support?traffic_source=rss",
-      "projectName": "Al Jazeera",
-      "externalSignal": true,
-      "toolName": "Al Jazeera",
-      "href": "https://www.aljazeera.com/video/newsfeed/2026/7/26/flavio-bolsonaro-launches-brazil-presidential-bid-with-milei-support?traffic_source=rss"
     },
     {
       "id": "routed-62c2815a26b822fe",

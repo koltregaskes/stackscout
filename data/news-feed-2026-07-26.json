@@ -1,7 +1,7 @@
 {
   "generated": "2026-07-26T17:47:21.785Z",
   "site": "Stack Scout",
-  "article_count": 15,
+  "article_count": 14,
   "articles": [
     {
       "title": "Release v0.21.0-nightly.20260726.9d19eafa9",
@@ -141,23 +141,6 @@
       "date": "2026-07-10T08:12:28.000Z",
       "summary": "GPT-5.6 Sol, ChatGPT work agent, Grok 4.5 coding agents, DeepMind agent warning, Claude Code’s AI-written leap, breast cancer AI, China AI companion shutdowns, Cloudflare x402 payments, Claude Cowork",
       "category": "ai_tools"
-    },
-    {
-      "title": "Flavio Bolsonaro launches Brazil presidential bid with Milei support",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/flavio-bolsonaro-launches-brazil-presidential-bid-with-milei-support?traffic_source=rss",
-      "source": "Al Jazeera",
-      "tags": [
-        "product_launch",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "product_launch",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-07-26T02:19:58.000Z",
-      "summary": "Flavio Bolsonaro, son of disgraced former Brazilian President Jair, has launched his bid to unseat President Lula.",
-      "category": "tech_general"
     },
     {
       "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
