@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stackscout-2026-06-14'
+const CACHE_NAME = 'stackscout-2026-07-25'
 const APP_SHELL = [
   '',
   'index.html',
@@ -14,6 +14,7 @@ const APP_SHELL = [
   'manifest.json',
   'icon.svg',
   'data/page-registry.json',
+  'data/source-provenance.json',
   'data/tools-manifest.json',
   'data/updates-manifest.json',
   'data/categories-manifest.json',

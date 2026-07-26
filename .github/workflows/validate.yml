@@ -25,6 +25,9 @@ jobs:
       - name: Run launch-safety checks
         run: npm run check
 
+      - name: Prove generated public output is committed
+        run: git diff --exit-code
+
       - name: Check index.html exists and is non-empty
         run: test -s index.html
 

@@ -6,7 +6,8 @@
   "scripts": {
     "build:site": "node scripts/build-stackscout.js",
     "refresh:site": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/refresh-stackscout.ps1",
-    "check": "node --check scripts/build-stackscout.js && node --check app.js && node --check pwa.js && node --check service-worker.js && node --check scripts/verify-launch-safety.js && node scripts/verify-launch-safety.js",
+    "test": "node --test tests/routed-news.test.js",
+    "check": "npm run test && node --check scripts/build-stackscout.js && node --check scripts/routed-news.js && node --check app.js && node --check pwa.js && node --check service-worker.js && node --check scripts/verify-launch-safety.js && node scripts/verify-launch-safety.js",
     "verify:launch": "node scripts/verify-launch-safety.js"
   }
 }

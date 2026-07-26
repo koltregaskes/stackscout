@@ -164,7 +164,8 @@ try {
       # exist — `git add -- <missing>` aborts the whole add otherwise.
       $candidatePaths = @(
         'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
-        'radar', 'index.html', 'sitemap.xml'
+        'radar', 'method', 'index.html', 'sitemap.xml', 'service-worker.js',
+        'llms.txt'
       )
       $publishPaths = @($candidatePaths | Where-Object { Test-Path (Join-Path $repoRoot $_) })
       if ($publishPaths.Count -eq 0) {
