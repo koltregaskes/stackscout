@@ -1,12 +1,12 @@
 const fs = require('fs')
 const path = require('path')
+const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
 const SOURCE_DIR = path.join(ROOT_DIR, 'content', 'stackscout')
 const DATA_DIR = path.join(ROOT_DIR, 'data')
-const BUILD_NOW = new Date()
-const GENERATED_AT = BUILD_NOW.toISOString().slice(0, 10)
-const GENERATED_AT_ISO = BUILD_NOW.toISOString()
+let GENERATED_AT = null
+let GENERATED_AT_ISO = null
 const PUBLIC_BASE_URL = 'https://koltregaskes.github.io/stackscout/'
 const STATIC_PAGES = [
   ['home', 'Home', 'Editorial front door, featured tools, categories, updates, and the lab subset.', 'index.html'],
@@ -29,6 +29,10 @@ const CATEGORY_LABELS = {
 
 function readJson(relativeFile) {
   return JSON.parse(fs.readFileSync(path.join(SOURCE_DIR, relativeFile), 'utf8'))
+}
+
+function readRootJson(relativeFile) {
+  return JSON.parse(fs.readFileSync(path.join(ROOT_DIR, relativeFile), 'utf8'))
 }
 
 function ensureParent(filePath) {
@@ -98,15 +102,6 @@ function resolvePrivatePreviewExportPath() {
   }
 
   return null
-}
-
-function escapeHtml(value) {
-  return String(value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;')
 }
 
 function titleCaseFromSlug(slug) {
@@ -291,16 +286,17 @@ function buildCategoriesManifest(categories, tools) {
   }
 }
 
-function buildUpdatesManifest(updates, toolIndex) {
+function buildUpdatesManifest(updates, toolIndex, sourceProvenance) {
   return {
     title: 'Stack Scout // Updates',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
     summary: 'Public-safe activity stream seeded from official or first-party sources.',
+    sourceProvenance,
     items: updates.map((item) => ({
       ...item,
-      toolName: toolIndex.get(item.toolSlug)?.name || titleCaseFromSlug(item.toolSlug),
-      href: pageUrl(`tools/${item.toolSlug}/index.html`),
+      toolName: toolIndex.get(item.toolSlug)?.name || item.projectName || titleCaseFromSlug(item.toolSlug),
+      href: item.toolSlug ? pageUrl(`tools/${item.toolSlug}/index.html`) : item.sourceUrl,
     })),
   }
 }
@@ -452,16 +448,22 @@ function renderToolCard(tool, outputPath, compact = false) {
 }
 
 function renderUpdateCard(update, tool, outputPath, compact = false) {
+  const label = tool
+    ? `${tool.toolType} / ${tool.name}`
+    : `Routed signal / ${update.projectName || update.sourceLabel}`
+
   return `
     <article class="activity-card${compact ? ' activity-card--compact' : ''}">
       <div class="activity-card__head">
         <div>
-          <p class="label">${escapeHtml(tool.toolType)} / ${escapeHtml(tool.name)}</p>
+          <p class="label">${escapeHtml(label)}</p>
           <h3>${escapeHtml(update.title)}</h3>
         </div>
         <div class="chip-row">
           <span class="pill pill--ink">${escapeHtml(titleCaseFromSlug(update.kind || 'update'))}</span>
-          <span class="pill pill--${badgeTone(tool.badge)}">${escapeHtml(tool.badge)}</span>
+          ${tool
+            ? `<span class="pill pill--${badgeTone(tool.badge)}">${escapeHtml(tool.badge)}</span>`
+            : '<span class="pill pill--blue">Routed feed</span>'}
         </div>
       </div>
       <p class="summary">${escapeHtml(update.summary)}</p>
@@ -470,11 +472,13 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
         <span>${escapeHtml(update.sourceLabel)}</span>
       </div>
       <div class="scout-card__actions">
-        <a class="button button--ghost" href="${outputHref(outputPath, `tools/${update.toolSlug}/index.html`)}">Tool page</a>
+        ${tool
+          ? `<a class="button button--ghost" href="${outputHref(outputPath, `tools/${update.toolSlug}/index.html`)}">Tool page</a>`
+          : ''}
         <a class="button button--ghost" href="${escapeHtml(update.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>
       </div>
     </article>
-  `
+  `.replace(/[ \t]+$/gm, '')
 }
 
 function renderCollectionCard(collection, toolIndex, outputPath) {
@@ -702,8 +706,8 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
               <span>${escapeHtml(spotlightUpdate ? formatDate(spotlightUpdate.publishedAt) : formatDate(GENERATED_AT))}</span>
               <span>${escapeHtml(spotlightUpdate?.sourceLabel || 'Stack Scout')}</span>
             </div>
-            <div class="hero__actions">
-              ${spotlightTool ? `<a class="button button--primary" href="${outputHref(outputPath, `tools/${spotlightTool.slug}/index.html`)}">Open dossier</a>` : ''}
+            <div class="hero__actions">${spotlightTool ? `
+              <a class="button button--primary" href="${outputHref(outputPath, `tools/${spotlightTool.slug}/index.html`)}">Open dossier</a>` : ''}
               ${spotlightUpdate ? `<a class="button button--ghost" href="${escapeHtml(spotlightUpdate.sourceUrl)}" target="_blank" rel="noreferrer">Read source</a>` : ''}
             </div>
           </article>
@@ -826,11 +830,13 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
                   .slice(3, 6)
                   .map(
                     (update) => `
-                      <a class="brief-link" href="${outputHref(outputPath, `tools/${update.toolSlug}/index.html`)}">
+                      <a class="brief-link" href="${update.toolSlug
+                        ? outputHref(outputPath, `tools/${update.toolSlug}/index.html`)
+                        : escapeHtml(update.sourceUrl)}"${update.toolSlug ? '' : ' target="_blank" rel="noreferrer"'}>
                         <span>${escapeHtml(update.title)}</span>
                         <strong>${escapeHtml(formatDate(update.publishedAt))}</strong>
                       </a>
-                    `,
+                    `.replace(/[ \t]+$/gm, ''),
                   )
                   .join('')}
               </div>
@@ -1315,14 +1321,23 @@ function main() {
   const privatePreviewExport = resolvePrivatePreviewExportPath()
   const site = readJson('site-source.json')
   const tools = readJson('tools-source.json')
-  const updates = readJson('updates-source.json').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+  const routedFeed = readRootJson('data/news-feed-latest.json')
+  const routedNews = compileRoutedNewsFeed(routedFeed)
+  GENERATED_AT_ISO = routedNews.provenance.generatedAt
+  GENERATED_AT = GENERATED_AT_ISO.slice(0, 10)
+  const updates = mergeUpdates(readJson('updates-source.json'), routedNews.updates)
   const toolIndex = new Map(tools.map((tool) => [tool.slug, tool]))
   const categories = site.categories
   const collections = site.collections
+  const sourceProvenance = {
+    generatedAt: GENERATED_AT_ISO,
+    news: routedNews.provenance,
+  }
 
   writeJson('data/page-registry.json', buildPageRegistry(tools, categories, collections))
   writeJson('data/tools-manifest.json', buildToolManifest(tools, categories))
-  writeJson('data/updates-manifest.json', buildUpdatesManifest(updates, toolIndex))
+  writeJson('data/updates-manifest.json', buildUpdatesManifest(updates, toolIndex, sourceProvenance))
+  writeJson('data/source-provenance.json', sourceProvenance)
   writeJson('data/categories-manifest.json', buildCategoriesManifest(categories, tools))
   writeJson('data/methodology-manifest.json', buildMethodologyManifest(site))
   writeJson('data/collections-manifest.json', buildCollectionsManifest(collections, toolIndex))

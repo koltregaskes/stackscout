@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const { escapeHtml } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
 const PUBLIC_ENTRIES = [
@@ -27,6 +28,7 @@ const REQUIRED_PUBLIC_FILES = [
   'categories/index.html',
   'collections/index.html',
   'data/page-registry.json',
+  'data/source-provenance.json',
   'data/tools-manifest.json',
   'data/updates-manifest.json',
   'data/categories-manifest.json',
@@ -47,6 +49,7 @@ const REQUIRED_PUBLIC_FILES = [
 ]
 const GENERATED_DATA_FILES = new Set([
   'data/page-registry.json',
+  'data/source-provenance.json',
   'data/tools-manifest.json',
   'data/updates-manifest.json',
   'data/categories-manifest.json',
@@ -77,6 +80,7 @@ const REQUIRED_APP_SHELL_ENTRIES = [
   'manifest.json',
   'icon.svg',
   'data/page-registry.json',
+  'data/source-provenance.json',
   'data/tools-manifest.json',
   'data/updates-manifest.json',
   'data/categories-manifest.json',
@@ -202,6 +206,46 @@ function assertServiceWorkerFreshness() {
   return { cacheName }
 }
 
+function assertRoutedSourceProof() {
+  const feed = JSON.parse(readText('data/news-feed-latest.json'))
+  const provenance = JSON.parse(readText('data/source-provenance.json'))
+  const updatesManifest = JSON.parse(readText('data/updates-manifest.json'))
+  const updatesHtml = readText('updates/index.html')
+  const newestItem = [...feed.articles].sort(
+    (left, right) => new Date(right.date).getTime() - new Date(left.date).getTime(),
+  )[0]
+  const expectedGeneratedDate = new Date(feed.generated).toISOString().slice(0, 10)
+
+  if (provenance.news?.consumerPath !== 'data/news-feed-latest.json') {
+    throw new Error('Source provenance does not name data/news-feed-latest.json as the consumed routed feed.')
+  }
+  if (provenance.news?.generatedAt !== new Date(feed.generated).toISOString()) {
+    throw new Error('Source provenance generated timestamp does not match the routed feed.')
+  }
+  if (provenance.news?.itemCount !== feed.articles.length || provenance.news?.consumedItems !== feed.articles.length) {
+    throw new Error('Source provenance item counts do not match the routed feed.')
+  }
+  if (updatesManifest.generatedAt !== expectedGeneratedDate) {
+    throw new Error('Updates manifest date does not match the routed feed generation date.')
+  }
+  if (updatesManifest.sourceProvenance?.news?.consumerPath !== provenance.news.consumerPath) {
+    throw new Error('Updates manifest is missing the routed-feed consumer proof.')
+  }
+  if (!updatesManifest.items.some((item) => item.sourceUrl === newestItem.url)) {
+    throw new Error('Updates manifest does not contain the newest routed-feed item.')
+  }
+  if (!updatesHtml.includes(`href="${escapeHtml(newestItem.url)}"`)) {
+    throw new Error('Rendered updates page does not contain the newest routed-feed source URL.')
+  }
+
+  return {
+    consumerPath: provenance.news.consumerPath,
+    sourceGeneratedAt: provenance.news.generatedAt,
+    newestItemAt: provenance.news.newestItemAt,
+    consumedItems: provenance.news.consumedItems,
+  }
+}
+
 function assertGitignoreKeepsPrivateNotesOut() {
   const gitignore = readText('.gitignore')
   const missing = REQUIRED_GITIGNORE_PATTERNS.filter((entry) => !gitignore.includes(entry))
@@ -228,10 +272,16 @@ function main() {
   const publicFiles = collectPublicTextFiles()
   assertNoPrivateLeaks(publicFiles)
   const freshness = assertServiceWorkerFreshness()
+  const routedSource = assertRoutedSourceProof()
   assertGitignoreKeepsPrivateNotesOut()
   assertReadmeDocumentsLaunchGate()
 
-  console.log(`Stack Scout launch safety passed: ${publicFiles.length} public files scanned, CACHE_NAME=${freshness.cacheName}.`)
+  console.log(
+    `Stack Scout launch safety passed: ${publicFiles.length} public files scanned, ` +
+    `CACHE_NAME=${freshness.cacheName}, routed=${routedSource.consumerPath}, ` +
+    `source=${routedSource.sourceGeneratedAt}, newest=${routedSource.newestItemAt}, ` +
+    `consumed=${routedSource.consumedItems}.`,
+  )
 }
 
 try {

@@ -25,6 +25,11 @@ These source files drive:
 - generated static pages across the public site
 - an optional private preview export when `STACKSCOUT_PRIVATE_EXPORT_DIR` or `STACKSCOUT_PRIVATE_EXPORT_FILE` is set locally
 
+The public Wire also consumes the classifier-owned routed feed at
+`data/news-feed-latest.json`. A build fails if that feed or its newest item is
+more than three days old. `data/source-provenance.json` records the exact
+consumer path, feed timestamp, newest-item timestamp, and consumed count.
+
 ## Build
 
 ```bash
@@ -50,13 +55,18 @@ This regenerates:
 npm run check
 ```
 
-`npm run check` also runs the no-publish launch-safety gate:
+`npm run check` also runs routed-feed contract tests and the no-publish
+launch-safety gate:
 
 ```bash
 npm run verify:launch
 ```
 
 That gate scans generated public output for local Windows paths and private surface markers, confirms the public file set exists, checks `.gitignore` still excludes local notes and env files, and verifies the `service-worker.js` cache name is not older than the generated issue date.
+
+It also proves the newest routed item reached the updates manifest and rendered
+Wire, and that visible dates come from the routed source timestamp rather than
+the wall clock used to run the build.
 
 GitHub Pages does not support custom response headers such as a Netlify `_headers` file. Keep browser hardening inside static HTML, conservative client code, and dependency-free scripts unless the site moves to a host that can set CSP/HSTS-style headers.
 
