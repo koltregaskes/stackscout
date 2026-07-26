@@ -33,6 +33,11 @@ $statusFile = if ($privateDataDir) { Join-Path $privateDataDir 'stackscout-refre
 $toolsManifestFile = Join-Path $repoRoot 'data\tools-manifest.json'
 $updatesManifestFile = Join-Path $repoRoot 'data\updates-manifest.json'
 $categoriesManifestFile = Join-Path $repoRoot 'data\categories-manifest.json'
+$publishCandidatePaths = @(
+  'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
+  'radar', 'method', 'index.html', 'sitemap.xml', 'service-worker.js',
+  'llms.txt'
+)
 $startedAt = (Get-Date).ToUniversalTime().ToString('o')
 $steps = New-Object System.Collections.Generic.List[object]
 $durationStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
@@ -131,6 +136,111 @@ function Invoke-RefreshStep {
   }
 }
 
+function Invoke-GitText {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string[]]$Arguments,
+    [Parameter(Mandatory = $true)]
+    [string]$FailureMessage
+  )
+
+  $output = @(& git @Arguments)
+  if ($LASTEXITCODE -ne 0) {
+    throw "$FailureMessage Git exited with code $LASTEXITCODE."
+  }
+
+  return (($output -join "`n").Trim())
+}
+
+function Test-IsPublishPath {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Path
+  )
+
+  $normalisedPath = $Path.Replace('\', '/').Trim('"')
+  foreach ($candidate in $publishCandidatePaths) {
+    $normalisedCandidate = $candidate.Replace('\', '/')
+    if (
+      $normalisedPath -ceq $normalisedCandidate -or
+      $normalisedPath.StartsWith("$normalisedCandidate/", [System.StringComparison]::Ordinal)
+    ) {
+      return $true
+    }
+  }
+
+  return $false
+}
+
+function Get-UnexpectedPublishChanges {
+  $statusLines = @(& git status --porcelain=v1 --untracked-files=all)
+  if ($LASTEXITCODE -ne 0) {
+    throw "git status failed with exit code $LASTEXITCODE."
+  }
+
+  $unexpected = New-Object System.Collections.Generic.List[string]
+  foreach ($line in $statusLines) {
+    if ([string]::IsNullOrWhiteSpace($line) -or $line.Length -lt 4) {
+      continue
+    }
+
+    $path = $line.Substring(3)
+    if ($path.Contains(' -> ')) {
+      $path = ($path -split ' -> ')[-1]
+    }
+
+    if (-not (Test-IsPublishPath -Path $path)) {
+      $unexpected.Add($path)
+    }
+  }
+
+  return @($unexpected)
+}
+
+function Assert-PublishCheckoutReady {
+  $branch = Invoke-GitText -Arguments @('branch', '--show-current') -FailureMessage 'Could not read the current branch.'
+  if ($branch -ne 'main') {
+    throw "Publishing is only allowed from the main branch. Current branch: '$branch'."
+  }
+
+  & git diff --cached --quiet
+  if ($LASTEXITCODE -eq 1) {
+    throw 'Publishing refused because the Git index already contains staged changes. The scheduled publisher only stages its own allow-listed generated output.'
+  }
+  if ($LASTEXITCODE -ne 0) {
+    throw "Could not verify that the Git index is clean. git diff exited with code $LASTEXITCODE."
+  }
+
+  $unexpected = @(Get-UnexpectedPublishChanges)
+  if ($unexpected.Count -gt 0) {
+    throw "Publishing refused because non-generated worktree changes exist: $($unexpected -join ', ')."
+  }
+
+  Invoke-GitText -Arguments @('fetch', '--no-tags', 'origin', 'main') -FailureMessage 'Could not fetch origin/main before publishing.' | Out-Null
+
+  $head = Invoke-GitText -Arguments @('rev-parse', 'HEAD') -FailureMessage 'Could not read local HEAD.'
+  $originHead = Invoke-GitText -Arguments @('rev-parse', 'origin/main') -FailureMessage 'Could not read origin/main.'
+  if ($head -ne $originHead) {
+    $counts = Invoke-GitText -Arguments @('rev-list', '--left-right', '--count', 'HEAD...origin/main') -FailureMessage 'Could not compare local main with origin/main.'
+    throw "Publishing refused because local main is not exactly current with origin/main (ahead/behind: $counts). Reconcile it without reset or force-push, then retry."
+  }
+
+  return $originHead
+}
+
+function Assert-PublishRemoteUnchanged {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$ExpectedCommit
+  )
+
+  Invoke-GitText -Arguments @('fetch', '--no-tags', 'origin', 'main') -FailureMessage 'Could not re-fetch origin/main before committing.' | Out-Null
+  $currentOriginHead = Invoke-GitText -Arguments @('rev-parse', 'origin/main') -FailureMessage 'Could not re-read origin/main.'
+  if ($currentOriginHead -ne $ExpectedCommit) {
+    throw "Publishing stopped before commit because origin/main moved from $ExpectedCommit to $currentOriginHead during the refresh."
+  }
+}
+
 Write-RefreshStatus -State 'running' -Message 'Stack Scout refresh started.' -Extra @{
   lastSuccessAt = $previousLastSuccessAt
 }
@@ -138,13 +248,26 @@ Write-RefreshStatus -State 'running' -Message 'Stack Scout refresh started.' -Ex
 Push-Location $repoRoot
 
 try {
+  $publishBaseCommit = $null
+  if ($Publish) {
+    Invoke-RefreshStep -Label 'Preflight publish checkout' -ScriptBlock {
+      $script:publishBaseCommit = Assert-PublishCheckoutReady
+    }
+  }
+
   Invoke-RefreshStep -Label 'Build Stack Scout' -ScriptBlock {
     & node 'scripts/build-stackscout.js'
+    if ($LASTEXITCODE -ne 0) {
+      throw "Stack Scout build failed with exit code $LASTEXITCODE."
+    }
   }
 
   if (-not $SkipCheck) {
     Invoke-RefreshStep -Label 'Check Stack Scout' -ScriptBlock {
       & cmd /c 'npm run check'
+      if ($LASTEXITCODE -ne 0) {
+        throw "Stack Scout checks failed with exit code $LASTEXITCODE."
+      }
     }
   }
 
@@ -159,15 +282,12 @@ try {
   $publishedCommit = $null
   if ($Publish) {
     Invoke-RefreshStep -Label 'Publish generated output' -ScriptBlock {
+      Assert-PublishRemoteUnchanged -ExpectedCommit $publishBaseCommit
+
       # Scoped to public generated output only, so unrelated local work is
       # never swept into an automated commit. Filter to paths that actually
       # exist — `git add -- <missing>` aborts the whole add otherwise.
-      $candidatePaths = @(
-        'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
-        'radar', 'method', 'index.html', 'sitemap.xml', 'service-worker.js',
-        'llms.txt'
-      )
-      $publishPaths = @($candidatePaths | Where-Object { Test-Path (Join-Path $repoRoot $_) })
+      $publishPaths = @($publishCandidatePaths | Where-Object { Test-Path (Join-Path $repoRoot $_) })
       if ($publishPaths.Count -eq 0) {
         return
       }
@@ -197,7 +317,7 @@ try {
         throw "git commit failed with exit code $LASTEXITCODE."
       }
 
-      git push origin main
+      git push origin HEAD:main
       if ($LASTEXITCODE -ne 0) {
         throw "git push failed with exit code $LASTEXITCODE. The commit remains local."
       }
@@ -218,6 +338,7 @@ try {
     updateCount = [int]((@($updatesManifest.items)).Count)
     categoryCount = [int]((@($categoriesManifest.categories)).Count)
     publishEnabled = [bool]$Publish
+    publishBaseCommit = $publishBaseCommit
     publishedCommit = $publishedCommit
   }
 } catch {
