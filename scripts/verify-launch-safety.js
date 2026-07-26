@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const { escapeHtml } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
 const PUBLIC_ENTRIES = [
@@ -210,7 +211,9 @@ function assertRoutedSourceProof() {
   const provenance = JSON.parse(readText('data/source-provenance.json'))
   const updatesManifest = JSON.parse(readText('data/updates-manifest.json'))
   const updatesHtml = readText('updates/index.html')
-  const newestItem = [...feed.articles].sort((left, right) => right.date.localeCompare(left.date))[0]
+  const newestItem = [...feed.articles].sort(
+    (left, right) => new Date(right.date).getTime() - new Date(left.date).getTime(),
+  )[0]
   const expectedGeneratedDate = new Date(feed.generated).toISOString().slice(0, 10)
 
   if (provenance.news?.consumerPath !== 'data/news-feed-latest.json') {
@@ -231,7 +234,7 @@ function assertRoutedSourceProof() {
   if (!updatesManifest.items.some((item) => item.sourceUrl === newestItem.url)) {
     throw new Error('Updates manifest does not contain the newest routed-feed item.')
   }
-  if (!updatesHtml.includes(newestItem.url)) {
+  if (!updatesHtml.includes(`href="${escapeHtml(newestItem.url)}"`)) {
     throw new Error('Rendered updates page does not contain the newest routed-feed source URL.')
   }
 

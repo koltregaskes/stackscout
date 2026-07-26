@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { compileRoutedNewsFeed, mergeUpdates } = require('./routed-news')
+const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
 const SOURCE_DIR = path.join(ROOT_DIR, 'content', 'stackscout')
@@ -102,15 +102,6 @@ function resolvePrivatePreviewExportPath() {
   }
 
   return null
-}
-
-function escapeHtml(value) {
-  return String(value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;')
 }
 
 function titleCaseFromSlug(slug) {
@@ -845,7 +836,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
                         <span>${escapeHtml(update.title)}</span>
                         <strong>${escapeHtml(formatDate(update.publishedAt))}</strong>
                       </a>
-                    `,
+                    `.replace(/[ \t]+$/gm, ''),
                   )
                   .join('')}
               </div>

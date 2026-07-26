@@ -51,6 +51,15 @@ function cleanPublicText(value) {
     .trim()
 }
 
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;')
+}
+
 function truncate(value, maxLength = 360) {
   const text = String(value || '').trim()
   if (text.length <= maxLength) return text
@@ -194,6 +203,7 @@ function compileRoutedNewsFeed(feed, options = {}) {
         title,
         summary: summary || `Routed public update from ${sourceProject}.`,
         publishedAt,
+        publishedAtIso,
         sourceLabel,
         sourceUrl: article.url,
         projectName: sourceProject,
@@ -201,7 +211,7 @@ function compileRoutedNewsFeed(feed, options = {}) {
       }
     })
     .filter((item) => item.title && item.summary)
-    .sort((left, right) => right.publishedAt.localeCompare(left.publishedAt))
+    .sort(compareUpdatesNewestFirst)
 
   if (updates.length === 0) {
     throw new Error('Stack Scout routed news feed produced no public-safe updates.')
@@ -225,7 +235,13 @@ function mergeUpdates(staticUpdates, routedUpdates) {
       seenUrls.add(key)
       return true
     })
-    .sort((left, right) => right.publishedAt.localeCompare(left.publishedAt))
+    .sort(compareUpdatesNewestFirst)
+}
+
+function compareUpdatesNewestFirst(left, right) {
+  const leftTimestamp = left.publishedAtIso || left.publishedAt || ''
+  const rightTimestamp = right.publishedAtIso || right.publishedAt || ''
+  return rightTimestamp.localeCompare(leftTimestamp)
 }
 
 module.exports = {
@@ -233,6 +249,8 @@ module.exports = {
   ROUTED_NEWS_PUBLIC_PATH,
   assertRoutedNewsFeed,
   cleanPublicText,
+  compareUpdatesNewestFirst,
   compileRoutedNewsFeed,
+  escapeHtml,
   mergeUpdates,
 }

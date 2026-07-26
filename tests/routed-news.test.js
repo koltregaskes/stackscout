@@ -5,8 +5,10 @@ const {
   ROUTED_NEWS_PUBLIC_PATH,
   assertRoutedNewsFeed,
   compileRoutedNewsFeed,
+  escapeHtml,
   mergeUpdates,
 } = require('../scripts/routed-news')
+const { findGeneratedOutputChanges } = require('../scripts/verify-generated-output')
 
 const now = new Date('2026-07-26T12:00:00.000Z')
 const routedFeed = {
@@ -94,4 +96,54 @@ test('routed updates lead the wire and deduplicate static source URLs', () => {
   assert.equal(merged[0].title, 'Newest update')
   assert.equal(merged.filter((item) => item.sourceUrl === routedFeed.articles[0].url).length, 1)
   assert.equal(merged.at(-1).title, 'Static unique')
+})
+
+test('same-day routed updates retain timestamps for newest-first sorting', () => {
+  const sameDayFeed = {
+    ...routedFeed,
+    articles: [
+      {
+        ...routedFeed.articles[0],
+        title: 'Older same-day update',
+        url: 'https://example.com/older-same-day',
+        date: '2026-07-24T19:57:10.000Z',
+      },
+      {
+        ...routedFeed.articles[1],
+        title: 'Newer same-day update',
+        url: 'https://example.com/newer-same-day',
+        date: '2026-07-24T23:22:12.000Z',
+      },
+    ],
+  }
+
+  const compiled = compileRoutedNewsFeed(sameDayFeed, { now })
+
+  assert.deepEqual(
+    compiled.updates.map((item) => item.title),
+    ['Newer same-day update', 'Older same-day update'],
+  )
+  assert.equal(compiled.updates[0].publishedAt, '2026-07-24')
+  assert.equal(compiled.updates[0].publishedAtIso, '2026-07-24T23:22:12.000Z')
+})
+
+test('rendered routed URL proof compares the HTML-escaped href', () => {
+  const sourceUrl = 'https://example.com/release?a=1&b=2'
+  const renderedHtml = `<a href="${escapeHtml(sourceUrl)}">Source</a>`
+
+  assert.equal(renderedHtml.includes(`href="${escapeHtml(sourceUrl)}"`), true)
+  assert.equal(renderedHtml.includes(`href="${sourceUrl}"`), false)
+})
+
+test('generated-output gate reports untracked public routes', () => {
+  const status = [
+    ' M index.html',
+    '?? tools/new-tool/index.html',
+    '?? .playwright-cli/session.json',
+  ].join('\n')
+
+  assert.deepEqual(findGeneratedOutputChanges(status), [
+    ' M index.html',
+    '?? tools/new-tool/index.html',
+  ])
 })
