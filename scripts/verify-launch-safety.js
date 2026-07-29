@@ -18,6 +18,7 @@ const PUBLIC_ENTRIES = [
   'service-worker.js',
   'manifest.json',
   'styles.css',
+  'robots.txt',
   'sitemap.xml',
   'llms.txt',
   'icon.svg',
@@ -43,6 +44,7 @@ const REQUIRED_PUBLIC_FILES = [
   'service-worker.js',
   'manifest.json',
   'styles.css',
+  'robots.txt',
   'sitemap.xml',
   'llms.txt',
   'icon.svg',
@@ -246,6 +248,53 @@ function assertRoutedSourceProof() {
   }
 }
 
+function assertDiscoveryMetadata() {
+  const publicPages = [
+    'index.html',
+    ...walk('catalog').filter((file) => file.endsWith('.html')),
+    ...walk('categories').filter((file) => file.endsWith('.html')),
+    ...walk('collections').filter((file) => file.endsWith('.html')),
+    ...walk('method').filter((file) => file.endsWith('.html')),
+    ...walk('radar').filter((file) => file.endsWith('.html')),
+    ...walk('tools').filter((file) => file.endsWith('.html')),
+    ...walk('updates').filter((file) => file.endsWith('.html')),
+  ]
+  const failures = []
+
+  for (const file of publicPages) {
+    const html = readText(file)
+    if (!/<link[^>]+rel=["']canonical["'][^>]+href=["']https:\/\/koltregaskes\.github\.io\/stackscout\//i.test(html)) {
+      failures.push(`${file}: canonical`)
+    }
+    if (!/<meta[^>]+property=["']og:url["'][^>]+content=["']https:\/\/koltregaskes\.github\.io\/stackscout\//i.test(html)) {
+      failures.push(`${file}: og:url`)
+    }
+    if (!/<script[^>]+type=["']application\/ld\+json["']/i.test(html)) {
+      failures.push(`${file}: JSON-LD`)
+    }
+  }
+
+  const robots = readText('robots.txt')
+  const requiredRobotsSignals = [
+    'User-agent: OAI-SearchBot',
+    'User-agent: GPTBot',
+    'User-agent: ChatGPT-User',
+    'User-agent: Claude-SearchBot',
+    'Sitemap: https://koltregaskes.github.io/stackscout/sitemap.xml',
+  ]
+  for (const signal of requiredRobotsSignals) {
+    if (!robots.includes(signal)) {
+      failures.push(`robots.txt: ${signal}`)
+    }
+  }
+
+  if (failures.length) {
+    throw new Error(`Discovery metadata is incomplete:\n${failures.join('\n')}`)
+  }
+
+  return { pageCount: publicPages.length }
+}
+
 function assertGitignoreKeepsPrivateNotesOut() {
   const gitignore = readText('.gitignore')
   const missing = REQUIRED_GITIGNORE_PATTERNS.filter((entry) => !gitignore.includes(entry))
@@ -273,6 +322,7 @@ function main() {
   assertNoPrivateLeaks(publicFiles)
   const freshness = assertServiceWorkerFreshness()
   const routedSource = assertRoutedSourceProof()
+  const discovery = assertDiscoveryMetadata()
   assertGitignoreKeepsPrivateNotesOut()
   assertReadmeDocumentsLaunchGate()
 
@@ -280,7 +330,7 @@ function main() {
     `Stack Scout launch safety passed: ${publicFiles.length} public files scanned, ` +
     `CACHE_NAME=${freshness.cacheName}, routed=${routedSource.consumerPath}, ` +
     `source=${routedSource.sourceGeneratedAt}, newest=${routedSource.newestItemAt}, ` +
-    `consumed=${routedSource.consumedItems}.`,
+    `consumed=${routedSource.consumedItems}, metadataPages=${discovery.pageCount}.`,
   )
 }
 

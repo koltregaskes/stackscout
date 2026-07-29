@@ -12,6 +12,7 @@ const GENERATED_OUTPUT_PATHS = [
   'radar',
   'method',
   'index.html',
+  'robots.txt',
   'sitemap.xml',
   'service-worker.js',
   'llms.txt',
