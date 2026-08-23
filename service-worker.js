@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stackscout-2026-07-29'
+const CACHE_NAME = 'stackscout-2026-08-22'
 const APP_SHELL = [
   '',
   'index.html',
