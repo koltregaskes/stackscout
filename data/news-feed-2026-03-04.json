@@ -1,9 +1,196 @@
 {
-  "generated": "2026-07-29T16:20:36.057Z",
+  "generated": "2026-08-26T03:03:54.872Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-04",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 12,
+  "archived_story_count": 172,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.47.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.47.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T14:49:43.000Z",
+      "summary": "# Community patch We're shipping a small release with two nice contributions from the community. ## Better background jobs @portertech implemented a new `wait: true` optional parameter on the `job_output` tool. This means that the model can now ask Crush to wait for a background job command to finish before returning its output. This is important to prevent polling, which would also consume more tokens than needed. ## LSP connection fix @taigrr worked on a patch to ensure that LSP connections are closed once the server is shut down. Enjoy! ## Changelog ### New! * 9ec46b8d439646a505018576e7197b2daacfb7b3: feat(shell): add blocking wait option to job_output tool (#2189) (@portertech) ### Fixed * 56d79d108ee5036224ef13155871457425c7729e: fix(lsp): fallback to Kill() on timeout (#2349) (@taigrr) ### Other stuff * aa0997b31590d4ac61221f6d6f35eef2de50628f: chore: bump powernap to v0.1.2 (@aymanbagabas) * 6d89de6320761c6eb8791cd7e87c3812a6ee5ce0: chore: update catwalk (@andreynering) --- Veri",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: AgentBus – Centralized AI Agent-to-Agent Messaging via REST API",
+      "url": "https://agentbus.org/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T01:42:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.26.2",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.26.2",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T23:01:29.000Z",
+      "summary": "## 🐛 **Bug Fixes** - Allow sandbox to write to goose config.yaml [#7656](https://github.com/block/goose/pull/7656)",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.25.3",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.25.3",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T21:20:59.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "You need to rewrite your CLI for AI agents",
+      "url": "https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T19:20:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open Source Iran War Cost Tracker: 45.7B",
+      "url": "https://iranwarcost.com",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T18:30:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Codex app now available on Windows",
+      "url": "https://developers.openai.com/codex/app/windows/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T18:03:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apple Announces Low-Cost 'MacBook Neo' with A18 Pro Chip",
+      "url": "https://www.macrumors.com/2026/03/04/apple-announces-low-cost-macbook-neo-with-a18-pro-chip/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T14:18:33.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: A shell-native cd-compatible directory jumper using power-law frecency",
+      "url": "https://github.com/jghub/sd-switchdir",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T10:20:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Tell HN: I got Claude Max for my open source project",
+      "url": "https://news.ycombinator.com/item?id=47244173",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T07:11:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "US launches military operations in Ecuador",
+      "url": "https://www.politico.com/news/2026/03/03/us-military-operations-ecuador-00811272",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T06:38:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apple Unveils 599 Macbook Neo 20260304 171331 7",
+      "url": "https://techpresso.co/archives/apple-unveils-599-macbook-neo-20260304-171331-7",
+      "source": "Techpresso",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-04T00:00:00.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    }
+  ]
 }

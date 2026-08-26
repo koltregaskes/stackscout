@@ -1,9 +1,130 @@
 {
-  "generated": "2026-07-29T16:20:36.094Z",
+  "generated": "2026-08-26T03:04:02.269Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-08",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 157,
+  "articles": [
+    {
+      "title": "Google just gave Sundar Pichai a $692M pay package",
+      "url": "https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T18:37:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Microsoft releases urgent Office patch. Russian-state hackers pounce",
+      "url": "https://arstechnica.com/security/2026/02/russian-state-hackers-exploit-office-vulnerability-to-infect-computers/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T18:05:17.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "LibreOffice Writer now supports Markdown",
+      "url": "https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T17:01:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "CLI RSS/Atom feed reader inspired by Taskwarrior, synced using Git",
+      "url": "https://github.com/kantord/blogtato",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T13:16:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "If It Quacks Like a Package Manager",
+      "url": "https://nesbitt.io/2026/03/08/if-it-quacks-like-a-package-manager.html",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T11:27:49.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Invoker Commands API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T08:16:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Way-Shell: A GNOME-like shell for Wayland compositors",
+      "url": "https://github.com/ldelossa/way-shell",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T04:23:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "MonoGame: A .NET framework for making cross-platform games",
+      "url": "https://github.com/MonoGame/MonoGame",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-08T02:16:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

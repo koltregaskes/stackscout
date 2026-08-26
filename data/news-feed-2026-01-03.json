@@ -1,9 +1,149 @@
 {
-  "generated": "2026-07-29T16:20:35.319Z",
+  "generated": "2026-08-26T02:59:58.123Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-03",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 9,
+  "archived_story_count": 150,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.30.1",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.30.1",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T17:54:30.000Z",
+      "summary": "# A Fistful of Fixes Happy New Year! This is a little patch release to fix session naming, Copilot quota usage, and symlinks in skill directories, and a potential panic. Best wishes for 2026! 💘 ## Changelog ### Fixed * aeadffde3bbb407bec508f7c8b95acf0991b1f3c: fix: copilot quota handling (#1738) (@Gustave-241021, @kujtimiihoxha) * 7315fceb643a44014da37257f88ed23e79ab4b50: fix(sessions): generate title with large model if small model fails (@meowgorithm) * d361a3311470b91c9d9184a968ed13c56e74f6cb: fix(skills): use fastwalk to resolve symlinks (#1732) (@Amolith) * c49b4fe243ffd6b9ded5afdc53c9e85e0dff404c: fix(sessions): tag removal, handle multibyte (@meowgorithm) * 63a3d831881d76b9a4aab615ba8581498fcb5ae0: fix(tui): guard model selection when list is empty (#1715) (@jamestrew) ### Other stuff * 7091b4f77b0d58a482f3872b8bfd3d3586b78c21: chore(cli): simplify help text (#1752) (@meowgorithm) * 67e8f140fab298698c7b15d41a95097256551ac3: chore: auto-update files (@charmcli) * 59e4adc2fb034f5",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.399",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.399",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T12:50:23.000Z",
+      "summary": "## What's Changed * `@remotion/web-renderer`: Improve error messages for broken and tainted images by @samohovets in https://github.com/remotion-dev/remotion/pull/6171 * `@remotion/web-renderer`: Support `object-fit` property by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6206 * `@remotion/web-renderer`: Fix how SVGs are rendered in a container they do not fit in by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6193 * `@remotion/web-renderer`: Add support for `-webkit-text-fill-color` by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6194 * `@remotion/web-renderer`: Support `background-clip` CSS property by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6198 * `@remotion/web-renderer`: Skip very compressed transforms for performance by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6202 * `@remotion/web-renderer`: Reuse WebGL context for more performance by @JonnyBurger in https://github.com/remotion-dev/rem",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The math animation library ManimCE had many of its assets deleted by an attack",
+      "url": "https://old.reddit.com/r/manim/comments/1pxq981/deletion_of_some_community_assets/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T12:02:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Gtasks-terminal – Google Tasks power-tool for the terminal",
+      "url": "https://github.com/sirusdas/gtasks-terminal",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T05:43:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: uvx ptn, scan a QR, get a terminal in your phone",
+      "url": "https://github.com/lyehe/porterminal",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T04:22:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "IQuest-Coder: A new open-source code model beats Claude Sonnet 4.5 and GPT 5.1 [pdf]",
+      "url": "https://github.com/IQuestLab/IQuest-Coder-V1/blob/main/papers/IQuest_Coder_Technical_Report.pdf",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T04:01:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: TCP chat server written in C# and .NET 9, used in the terminal",
+      "url": "https://github.com/Sieep-Coding/simple-chat-csharp",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T02:05:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: I used AI to recreate a $4000 piece of audio hardware as a plugin",
+      "url": "https://news.ycombinator.com/item?id=46471648",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T01:08:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TIL: I am an open-source contributor",
+      "url": "https://beasthacker.com/til/i-am-an-open-source-contributor.html",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-03T00:36:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,245 @@
 {
-  "generated": "2026-07-29T16:20:35.735Z",
+  "generated": "2026-08-26T03:02:00.108Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-01",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 155,
+  "articles": [
+    {
+      "title": "GitHub Releases · Remotion: v4.0.416",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.416",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T20:51:19.000Z",
+      "summary": "Fixes wrong package.json versions in 4.0.415 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.415...v4.0.416",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.415",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.415",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T13:53:25.000Z",
+      "summary": "## What's Changed * **New package: `@remotion/light-leaks`** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6429 * **`@remotion/renderer`: Upgrade to Chrome 144 and Lambda to Node.js 24** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6422 * **`@remotion/transitions`: New ` ` component for adding overlay transitions without reducing total duration** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6430 * **Deprecate Media Parser** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6431 * `@remotion/media`: Consider FPS when evicting cache by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6426 * Skills: Better handle captions by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6419 ## Docs * **[remotion.dev/prompts](https://remotion.dev/prompts)** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6434 * Homepage: Render the video using client-side rendering by @JonnyBurger in htt",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Apate API mocking/prototyping server and Rust unit test library",
+      "url": "https://github.com/rustrum/apate",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T10:29:07.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: My Open Source Deep Research tools beats Google and I can Prove it",
+      "url": "https://github.com/IamLumae/Project-Lutum-Veritas",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T19:09:41.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "FOSDEM: Open-Source Is Political – Resist Organize Protect",
+      "url": "https://ftp.belnet.be/mirror/FOSDEM/video/2026/janson/SFKNTZ-welcome_to_fosdem_2026.mp4",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T18:49:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The L4Re Operating System Framework",
+      "url": "https://l4re.org/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T18:39:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Voiden – an offline, Git-native API tool built around Markdown",
+      "url": "https://github.com/VoidenHQ/voiden",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T15:09:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Zuckerman – minimalist personal AI agent that self-edits its own code",
+      "url": "https://github.com/zuckermanai/zuckerman",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T13:50:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "FOSDEM 2026 – Open-Source Conference in Brussels – Day#1 Recap",
+      "url": "https://gyptazy.com/blog/fosdem-2026-opensource-conference-brussels/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T10:30:41.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Netbird – Open Source Zero Trust Networking",
+      "url": "https://netbird.io/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T09:44:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "What I learned building an opinionated and minimal coding agent",
+      "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T09:33:46.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The 80% Problem in Agentic Coding – Addy Osmani",
+      "url": "https://addyo.substack.com/p/the-80-problem-in-agentic-coding",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T09:13:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Coding Agent VMs on NixOS with Microvm.nix",
+      "url": "https://michael.stapelberg.ch/posts/2026-02-01-coding-agent-microvm-nix/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T08:02:46.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: SymDerive – A functional, stateless symbolic math library",
+      "url": "https://news.ycombinator.com/item?id=46842711",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T01:20:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Exposed Moltbook Database Let Anyone Take Control of Any AI Agent on the Site",
+      "url": "https://www.404media.co/exposed-moltbook-database-let-anyone-take-control-of-any-ai-agent-on-the-site/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-01T00:08:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,166 @@
 {
-  "generated": "2026-07-29T16:20:35.495Z",
+  "generated": "2026-08-26T03:00:06.186Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-16",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 10,
+  "archived_story_count": 166,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.33.2",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.33.2",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T21:48:23.000Z",
+      "summary": "# Pasting images from the ol’ clipboard :framed_picture: Thanks to contributor @kslamph you can now paste images from clipboard directly into Crush. Many other fixes are included to make Crush more stable and reliable as well. Enjoy! :sparkles: ## Changelog ### New! * feat: add clipboard image paste functionality to chat editor by @kslamph in https://github.com/charmbracelet/crush/pull/1151 ### Fixed * fix: race in agent.go by @caarlos0 in https://github.com/charmbracelet/crush/pull/1853 * fix: resolve extra headers for providers by @kujtimiihoxha in https://github.com/charmbracelet/crush/pull/1764 * fix: make hyper and copilot link styled on ui by @andreynering in https://github.com/charmbracelet/crush/pull/1872 * fix: try to make the search tool more reliable by @kujtimiihoxha in https://github.com/charmbracelet/crush/pull/1779 * fix: mcps loading in non interactive mode by @kujtimiihoxha in https://github.com/charmbracelet/crush/pull/1894 ### Other stuff * chore(README): update crus",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.407",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.407",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T18:02:25.000Z",
+      "summary": "## What's Changed * `@remotion/web-renderer`: New text renderer by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6300 * `@remotion/media`: Remove readahead threshold by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6295 * `@remotion/media`: Smoother playback, better handle videos with variable FPS and offset start timestamps by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6305 * `@remotion/renderer`: Abort downloads when render fails (fix) by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6307 ## Templates * Prompt to motion graphics: Add Skills setup for Code Generation by @ASchwad in https://github.com/remotion-dev/remotion/pull/6298 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.406...v4.0.407",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.20.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.20.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T17:24:01.000Z",
+      "summary": "docs: slash commands topic (https://github.com/block/goose/pull/6333) (https://github.com/block/goose/commit/c90ead254f96d8489b3746d913551b08875c1f3f) feat: add a max tokens env var (https://github.com/block/goose/pull/6264) (https://github.com/block/goose/commit/edcb6347727f96acfcdc3a232a570c182c71a799) make sure the models are using streaming properly (https://github.com/block/goose/pull/6331) (https://github.com/block/goose/commit/a842c99d11b88776b176feee4afc1f57cba0c13b) chore: refactor cli() function to reduce line count (https://github.com/block/goose/pull/6272) (https://github.com/block/goose/commit/f6042fa6fe5b83e344fb49324e4c85266978f95a) chore: refactor docx_tool to reduce function size (https://github.com/block/goose/pull/6273) (https://github.com/block/goose/commit/41dbddade678b138cb77c3d49effa353f75c9a6f) chore: refactor interactive session to reduce line count (https://github.com/block/goose/pull/6274) (https://github.com/block/goose/commit/d7a7b21487904937ed4eb1fcfe10057",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Re: Mix: open-source repairable blender",
+      "url": "https://github.com/openfunkHQ/reMix",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T22:49:04.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenAI Introduces Ads to ChatGPT",
+      "url": "https://twitter.com/sama/status/2012253252771824074",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T21:36:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open Source Alternatives to Cloudflare Products",
+      "url": "https://oneuptime.com/blog/post/2026-01-16-decentralize-the-internet-cloudflare-alternatives/view",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T20:18:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Serveo: Expose local servers to the internet using only a browser extension",
+      "url": "https://serveo.net/articles/serveo-browser-extension",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T15:36:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Hc: an agentless, multi-tenant shell history sink",
+      "url": "https://github.com/alessandrocarminati/hc",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T08:13:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Local-only Marstek Venus e-battery integration with Home Assistant",
+      "url": "https://du.nkel.dev/blog/2026-01-11_marstek-battery-homeassistant/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T06:46:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Gambit, an open-source agent harness for building reliable AI agents",
+      "url": "https://github.com/bolt-foundry/gambit",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-16T00:13:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

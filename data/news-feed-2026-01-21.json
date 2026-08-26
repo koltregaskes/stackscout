@@ -1,9 +1,239 @@
 {
-  "generated": "2026-07-29T16:20:35.571Z",
+  "generated": "2026-08-26T03:00:13.060Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-21",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 165,
+  "articles": [
+    {
+      "title": "GitHub Releases · ComfyUI: v0.10.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.10.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T19:22:04.000Z",
+      "summary": "## What's Changed * Update workflow templates to v0.8.7 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/11896 * Update workflow templates to v0.8.10 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/11899 * Adjust memory usage factor calculation for flux2 klein. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/11900 * Added try-except around seed_assets call in get_object_info by @Kosinkadink in https://github.com/Comfy-Org/ComfyUI/pull/11901 * feat(api-nodes): extend ByteDance nodes with seedance-1-5-pro model by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/11871 * Update workflow templates to v0.8.11 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/11918 * Add image sizes to clip vision outputs. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/11923 * Update readme rdna3 nightly url by @alexheretic in https://github.com/Comfy-Org/ComfyUI/pull/11937 * Fix: TypeError on AMD GPUs by moving audio tensor to CPU",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Apollo Server v4: @apollo/server-integration-testsuite@5.3.0",
+      "url": "https://github.com/apollographql/apollo-server/releases/tag/%40apollo/server-integration-testsuite%405.3.0",
+      "source": "GitHub Releases · Apollo Server v4",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T11:46:07.000Z",
+      "summary": "### Patch Changes - Updated dependencies \\[[`8e54e58`](https://github.com/apollographql/apollo-server/commit/8e54e5827791666e36082ad49d19c77f050355ac), [`26320bc`](https://github.com/apollographql/apollo-server/commit/26320bccd77c6074d4a38119294f153f64e52d96)]: - @apollo/server@5.3.0",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Sweep, Open-weights 1.5B model for next-edit autocomplete",
+      "url": "https://huggingface.co/sweepai/sweep-next-edit-1.5B",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T23:22:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Crush: v0.34.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.34.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T21:24:45.000Z",
+      "summary": "# Non-interactive improvements + more! How's it going? We've been busy! The main focus of this release is `crush run`, aka non-interactive mode, but there are some other gems here as well. For more, read on. ## Now with more non-interactivity Crush is really powerful in scripts, CI/CD, and so on, and we're seeing more and more headless Crush usage. On that note, this release adds some improvements to non-interactive mode. You can can now specify a model with the `--model` flag, which allows you to specify a model and provider via a `{model}` or `{provider}/{model}` format. For example: ```bash # Model arguments are case sensitive crush run --model \"glm-4.7\" # Find the first available configured instance of GLM-4.7 crush run --model \"openai/gpt-5.2-codex\" # Use GPT-5.2-Codex at OpenAI crush run --model \"synthetic/hf:MiniMaxAI/MiniMax-M2.1\" # Multiple slashes are totally fine ``` Wondering what models are available? Check out `crush models`. Works great with `grep`, too. ## Better edits ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Tell HN: Claude helped me maintain my old open source project",
+      "url": "https://news.ycombinator.com/item?id=46711311",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T20:46:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenAI API Logs: Unpatched data exfiltration",
+      "url": "https://www.promptarmor.com/resources/openai-api-logs-unpatched-data-exfiltration",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T19:45:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Trump says reached Greenland deal framework with NATO, backs off Europe tariffs",
+      "url": "https://www.cnbc.com/2026/01/21/trump-tariffs-nato-greenland-davos.html",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T19:45:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TrustTunnel: AdGuard VPN protocol goes open-source",
+      "url": "https://adguard-vpn.com/en/blog/adguard-vpn-protocol-goes-open-source-meet-trusttunnel.html",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T17:21:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open source server code for the BitCraft MMORPG",
+      "url": "https://github.com/clockworklabs/BitCraftPublic",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T17:20:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: S2-lite, an open source Stream Store",
+      "url": "https://github.com/s2-streamstore/s2",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T16:40:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Prisma: 7.3.0",
+      "url": "https://github.com/prisma/prisma/releases/tag/7.3.0",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T16:09:13.000Z",
+      "summary": "Today, we are excited to share the `7.3.0` stable release 🎉 **🌟 Star this repo for notifications about new releases, bug fixes & features — or [follow us on X](https://pris.ly/x)!** ## ORM - [#28976](https://github.com/prisma/prisma/pull/28976): Fast and Small Query Compilers We've been working on various performance-related bugs since the initial ORM 7.0 release. With 7.3.0, we're introducing a new `compilerBuild` option for the client generator block in `schema.prisma` with two options: `fast` and `small`. This allows you to swap the underlying Query Compiler engine based on your selection, one built for speed (with an increase in size), and one built for size (with the trade off for speed). By default, the `fast` mode is used, but this can be set by the user: ```groovy generator client { provider = \"prisma-client\" output = \"../src/generated/prisma\" compilerBuild = \"fast\" // \"fast\" | \"small\" } ``` We still have more in progress for performance, but this new `compilerBuild` option i",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Skip is now free and open source",
+      "url": "https://skip.dev/blog/skip-is-free/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T15:20:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: PicoFlow – a tiny DSL-style Python library for LLM agent workflows",
+      "url": "https://news.ycombinator.com/item?id=46706535",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T14:55:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: ChartGPU – WebGPU-powered charting library (1M points at 60fps)",
+      "url": "https://github.com/ChartGPU/ChartGPU",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T14:54:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: UltraContext – A simple context API for AI agents with auto-versioning",
+      "url": "https://ultracontext.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-21T14:48:10.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

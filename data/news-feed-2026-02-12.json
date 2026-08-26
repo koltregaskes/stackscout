@@ -1,9 +1,232 @@
 {
-  "generated": "2026-07-29T16:20:35.866Z",
+  "generated": "2026-08-26T03:02:10.942Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-12",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 14,
+  "archived_story_count": 162,
+  "articles": [
+    {
+      "title": "GitHub Releases · Goose: v1.24.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.24.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T22:17:00.000Z",
+      "summary": "# goose v1.24.0 Release Notes ## ✨ Features - **Unified summon extension** — replaces subagent and skills with a single, streamlined extension [[#6964](https://github.com/block/goose/pull/6964)](https://github.com/block/goose/pull/6964) - **Top of Mind (tom) platform extension** — new built-in extension enabled by default for contextual awareness [[#7073](https://github.com/block/goose/pull/7073)](https://github.com/block/goose/pull/7073) [[#7111](https://github.com/block/goose/pull/7111)](https://github.com/block/goose/pull/7111) - **MCP support for agentic CLI providers** — Claude Code, Codex, and Gemini CLI can now use MCP tools [[#6972](https://github.com/block/goose/pull/6972)](https://github.com/block/goose/pull/6972) - **Claude Code: dynamic model listing and mid-session model switching** [[#7120](https://github.com/block/goose/pull/7120)](https://github.com/block/goose/pull/7120) - **Claude Code: stream-json protocol for persistent sessions** [[#7029](https://github.com/block/g",
+      "category": "ai_tools"
+    },
+    {
+      "title": "#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger",
+      "url": "https://lexfridman.com/peter-steinberger/?utm_source=rss&utm_medium=rss&utm_campaign=peter-steinberger",
+      "source": "Lex Fridman Podcast",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T03:10:39.000Z",
+      "summary": "Peter Steinberger is the creator of OpenClaw, an open-source AI agent framework that’s the fastest-growing project in GitHub history. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep491-sc See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript: https://lexfridman.com/peter-steinberger-transcript CONTACT LEX: Feedback – give feedback to Lex: https://lexfridman.com/survey AMA – submit questions, videos or call-in: https://lexfridman.com/ama Hiring – join our team: https://lexfridman.com/hiring Other – other ways to get in touch: https://lexfridman.com/contact EPISODE LINKS: Peter’s X: https://x.com/steipete Peter’s GitHub: https://github.com/steipete Peter’s Website: https://steipete.com Peter’s LinkedIn: https://www.linkedin.com/in/steipete OpenClaw Website: https://openclaw.ai OpenClaw GitHub: https://github.com/openclaw/openclaw OpenClaw Discord: https://discord.gg/openclaw",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Arianespace launches 32 Amazon Leo satellites with the first Ariane 64",
+      "url": "https://newsroom.arianespace.com/arianespace-successfully-launches-32-amazon-leo-satellites-with-the-first-ariane-64",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T21:03:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: YOR – open-source bimanual mobile robot for <$10k",
+      "url": "https://www.yourownrobot.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T20:51:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Rari – Rust-powered React framework",
+      "url": "https://rari.build/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T19:15:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Polis: Open-source platform for large-scale civic deliberation",
+      "url": "https://pol.is/home2",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T18:23:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: 20+ Claude Code agents coordinating on real work (open source)",
+      "url": "https://github.com/mutable-state-inc/lean-collab",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T16:23:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "An AI agent published a hit piece on me",
+      "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T16:23:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "url": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "source": "DeepMind Blog",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T16:15:09.000Z",
+      "summary": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges.",
+      "category": "ai_research"
+    },
+    {
+      "title": "Apache Arrow is 10 years old",
+      "url": "https://arrow.apache.org/blog/2026/02/12/arrow-anniversary/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T13:13:30.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "AI agent opens a PR write a blogpost to shames the maintainer who closes it",
+      "url": "https://github.com/matplotlib/matplotlib/pull/31132",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T11:46:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Anna's Archive 'Releases' Spotify Tracks, Despite Legal Pushback",
+      "url": "https://torrentfreak.com/annas-archive-quietly-releases-millions-of-spotify-tracks-despite-legal-pushback/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-12T02:25:10.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Transcript for OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger | Lex Fridman Podcast #491",
+      "url": "https://lexfridman.com/peter-steinberger-transcript/?utm_source=rss&utm_medium=rss&utm_campaign=peter-steinberger-transcript",
+      "source": "Lex Fridman Podcast",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.68,
+      "date": "2026-02-12T02:55:04.000Z",
+      "summary": "This is a transcript of Lex Fridman Podcast #491 with Peter Steinberger. The timestamps in the transcript are clickable links that take you directly to that point in the main video. Please note that the transcript is human generated, and may have errors. Here are some useful links: Go back to this episode’s main page Watch the full YouTube version of the podcast Table of Contents Here are the loose “chapters” in the conversation. Click link to jump approximately to that part in the transcript: 0:00 – Episode highlight 1:30 – Introduction 5:36 – OpenClaw origin story 8:55 – Mind-blowing",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing Dedicated Container Inference: Delivering 2.6x faster inference for custom AI models",
+      "url": "https://www.together.ai/blog/dedicated-container-inference",
+      "source": "Together AI Blog",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.62,
+      "date": "2026-02-12T00:00:00.000Z",
+      "summary": "Together AI launches production-grade orchestration for custom AI models with 1.4x–2.6x faster inference.",
+      "category": "ai_tools"
+    }
+  ]
 }

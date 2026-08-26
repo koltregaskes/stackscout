@@ -1,9 +1,249 @@
 {
-  "generated": "2026-07-29T16:20:35.399Z",
+  "generated": "2026-08-26T02:59:59.974Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-06",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 166,
+  "articles": [
+    {
+      "title": "GitHub Releases · Goose: v1.19.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.19.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T20:48:31.000Z",
+      "summary": "## :sparkles: Features - Shell completion generation via new `completion` subcommand for bash, zsh, fish, and more [#6313](https://github.com/block/goose/pull/6313) - OpenAI Codex CLI provider support [#6263](https://github.com/block/goose/pull/6263) - Caching support for Anthropic models via Databricks [#6320](https://github.com/block/goose/pull/6320) - MCP servers from clients like Zed now honored (stdio + http) [#6230](https://github.com/block/goose/pull/6230) - MCP app renderer for richer UI experiences [#6095](https://github.com/block/goose/pull/6095) - Server names now used for MCP extensions in code mode [#6284](https://github.com/block/goose/pull/6284) - Improved UX for tool calls via `execute_code` [#6205](https://github.com/block/goose/pull/6205) - JSONL streaming option for JSON output [#6228](https://github.com/block/goose/pull/6228) - Default todo message for better task tracking [#6217](https://github.com/block/goose/pull/6217) - Upgraded to rmcp 0.12.0 and sacp 10.0.0 (S",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Tailscale: v1.92.5",
+      "url": "https://github.com/tailscale/tailscale/releases/tag/v1.92.5",
+      "source": "GitHub Releases · Tailscale",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T21:22:20.000Z",
+      "summary": "Please refer to the changelog available at https://tailscale.com/changelog",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: mcpc – Universal command-line client for Model Context Protocol (MCP)",
+      "url": "https://github.com/apify/mcp-cli",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T15:05:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: ccrider - Search and Resume Your Claude Code Sessions – TUI / MCP / CLI",
+      "url": "https://github.com/neilberkman/ccrider",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T14:14:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.402",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.402",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T10:57:50.000Z",
+      "summary": "v4.0.401 was broken! Use 4.0.402 instead ## What's Changed * `@remotion/media`: Fix AudioContext not being available in Studio by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6252 * Revert \"`@remotion/web-renderer`: Always precompose transforms on WebGL to force flattening\" by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6254 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.401...v4.0.402",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.401",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.401",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T08:27:56.000Z",
+      "summary": "## What's Changed * `@remotion/web-renderer`: Always precompose transforms on WebGL to force flattening by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6248 * `@remotion/web-renderer`: Use explicit resource management for Mediabunny resources by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6244 * `@remotion/web-renderer`: Add docs for cancelling renders by @samohovets in https://github.com/remotion-dev/remotion/pull/6243 * `@remotion/player`: Don't create an `AudioContext` if mounting a ` ` by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6249 ## Internals * Add Claude skill for writing docs by @samohovets in https://github.com/remotion-dev/remotion/pull/6245 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.400...v4.0.401",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Hyundai Introduces Its Next-Gen Atlas Robot at CES 2026 [video]",
+      "url": "https://www.youtube.com/watch?v=9e0SQn9uUlw",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T23:40:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "White House unveils webpage saying Democrats 'staged the real insurrection'",
+      "url": "https://thehill.com/homenews/administration/5675182-trump-launches-jan6-website/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T20:52:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TGFX - A lightweight 2D graphics library for modern GPUs",
+      "url": "https://github.com/Tencent/tgfx",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T20:02:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Self hosting my media library with Jellyfin and Wireguard on Hetzner",
+      "url": "https://layandreas.github.io/personal-blog/posts/how-spotify-made-me-self-host/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T19:50:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Stop Doom Scrolling, Start Doom Coding: Build via the terminal from your phone",
+      "url": "https://github.com/rberg27/doom-coding",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T19:38:32.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Jax-JS, array library in JavaScript targeting WebGPU",
+      "url": "https://ss.ekzhang.com/p/jax-js-an-ml-library-for-the-web",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T18:19:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Opus 4.5 is not the normal AI agent experience that I have had thus far",
+      "url": "https://burkeholland.github.io/posts/opus-4-5-change-everything/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T17:45:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Stash – Sync Markdown Files with Apple Notes via CLI",
+      "url": "https://github.com/shakedlokits/stash",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T16:57:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Tt – P2P terminal sharing over WebRTC",
+      "url": "https://news.ycombinator.com/item?id=46514587",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-06T16:38:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

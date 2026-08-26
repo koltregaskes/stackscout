@@ -1,9 +1,187 @@
 {
-  "generated": "2026-07-29T16:20:35.582Z",
+  "generated": "2026-08-26T03:00:13.876Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-22",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 11,
+  "archived_story_count": 140,
+  "articles": [
+    {
+      "title": "Vargai/SDK – JSX for AI video, declarative programming language for Claude Code",
+      "url": "https://varg.ai/sdk",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T20:24:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.21.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.21.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T19:45:36.000Z",
+      "summary": "## Features - **Multi-chat support** - Added ability to manage multiple chat sessions ([#6428](https://github.com/block/goose/pull/6428)) ([@zanesq](https://github.com/zanesq)) - **Standalone MCP apps** - Support for standalone MCP applications ([#6458](https://github.com/block/goose/pull/6458)) ([@DOsinga](https://github.com/DOsinga)) - **User configurable templates** - Allow users to customize templates ([#6420](https://github.com/block/goose/pull/6420)) ([@DOsinga](https://github.com/DOsinga)) - **Flatpak support for Linux** - Added Flatpak packaging for Linux distributions ([#6387](https://github.com/block/goose/pull/6387)) ([@The-Best-Codes](https://github.com/The-Best-Codes)) - **GCP Vertex model list with org policy filtering** - Enhanced model listing with organization policy support ([#6393](https://github.com/block/goose/pull/6393)) ([@rabi](https://github.com/rabi)) - **Parallel sessions with isolated agent state** - Enable parallel sessions in goose-acp ([#6392](https://git",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Emissary, a fast open-source Java messaging library",
+      "url": "https://github.com/joel-jeremy/emissary",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T18:15:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Build an agent into any app with the GitHub Copilot SDK",
+      "url": "https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T17:36:00.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Redis: 8.6-RC1",
+      "url": "https://github.com/redis/redis/releases/tag/8.6-rc1",
+      "source": "GitHub Releases · Redis",
+      "tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T15:17:11.000Z",
+      "summary": "This is the first Release Candidate of Redis 8.6 in Redis Open Source. Release Candidates are feature-complete pre-releases. Pre-releases are not suitable for production use. ### Binary distributions - Alpine and Debian Docker images - https://hub.docker.com/_/redis - Install using snap - see https://github.com/redis/redis-snap - Install using brew - see https://github.com/redis/homebrew-redis - Install using RPM - see https://github.com/redis/redis-rpm - Install using Debian APT - see https://github.com/redis/redis-debian ### Operating systems we test Redis 8.6 on - Ubuntu 22.04 (Jammy Jellyfish), 24.04 (Noble Numbat) - Rocky Linux 8.10, 9.5, 10.1 - AlmaLinux 8.10, 9.5, 10.1 - Debian 12 (Bookworm), Debian 13 (Trixie) - 14 (Sonoma), 15 (Sequoia) ### New Features (compared to 8.4.0) - #14615 Streams: `XADD` idempotency (at-most-once guarantee) with new `IDMPAUTO` and `IDMP` arguments - #14624 New eviction policies - least recently modified: `volatile-lrm` and `allkeys-lrm` - #14680 Hot ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.409",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.409",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T13:18:05.000Z",
+      "summary": "## What's Changed * `@remotion/web-renderer`: Fix low fps when capturing R3F canvas by @samohovets in https://github.com/remotion-dev/remotion/pull/6335 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.408...v4.0.409",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Viking Ship Museum in Denmark announces the discovery of the largest cog",
+      "url": "https://www.medievalists.net/2025/12/medieval-ship-discovered-copenhagen/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T21:43:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: CLI for working with Apple Core ML models",
+      "url": "https://github.com/schappim/coreml-cli",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T20:12:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Managed Postgres with native ClickHouse integration",
+      "url": "https://news.ycombinator.com/item?id=46723128",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T18:21:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "ReactOS Celebrates 30 Years in Striving to Be an Open-Source Windows",
+      "url": "https://www.phoronix.com/news/ReactOS-30-Years-Old",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T12:27:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.408",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.408",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-22T08:41:24.000Z",
+      "summary": "## What's Changed * **Add Remotion Skills** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6311 * **Upgrade Mediabunny to 1.29.0, add .ts support** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6328 * `@remotion/studio`: Option to disable Ask AI by @hunxjunedo in https://github.com/remotion-dev/remotion/pull/6302 * `@remotion/studio`: implement a queue for client side renders by @samohovets in https://github.com/remotion-dev/remotion/pull/6279 * `@remotion/media`: Fix video frame not updating when trim props change while paused by @samohovets in https://github.com/remotion-dev/remotion/pull/6317 * `create-video`: Ask whether to install Skills by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6329 * `@remotion/web-renderer`: Fix audio in partial renders by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6331 ## Docs * Add documentation for importing, generating, displaying and exporting captions by @JonnyBurger in https:/",
+      "category": "ai_tools"
+    }
+  ]
 }

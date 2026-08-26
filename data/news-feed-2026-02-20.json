@@ -1,9 +1,182 @@
 {
-  "generated": "2026-07-29T16:20:35.951Z",
+  "generated": "2026-08-26T03:02:18.114Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-20",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 10,
+  "archived_story_count": 143,
+  "articles": [
+    {
+      "title": "GitHub Releases · PowerShell: v7.6.0-rc.1 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.0-rc.1",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T00:15:37.000Z",
+      "summary": "## [7.6.0-rc.1] - 2026-02-19 ### Tests - Fix `$PSDefaultParameterValues` leak causing tests to skip unexpectedly (#26705) ### Build and Packaging Improvements Expand to see details. Update branch for release (#26779) Update Microsoft.PowerShell.PSResourceGet version to 1.2.0-rc3 (#26767) Update Microsoft.PowerShell.Native package version (#26748) Move PowerShell build to depend on .NET SDK 10.0.102 (#26717) Fix buildinfo.json uploading for preview, LTS, and stable releases (#26715) Fix macOS preview package identifier detection to use version string (#26709) Update metadata.json to update the Latest attribute with a better name (#26708) Remove unused runCodesignValidationInjection variable from pipeline templates (#26707) Update Get-ChangeLog to handle backport PRs correctly (#26706) Bring release changes from the v7.6.0-preview.6 release (#26626) Fix the DSC test by skipping AfterAll cleanup if the initial setup in BeforeAll failed (#26622) [7.6.0-rc.1]: https://github.com/PowerShell/",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Crush: v0.43.4",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.4",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T18:28:58.000Z",
+      "summary": "# Killin’ some bugs We’re finishing the week by crushing some small bugs. Some highlights: * Fixed a potential panic related to LSP configuration * Fixed an authorization bug for MiniMax that was affecting a minority of the users * IO.net API keys are now properly validated * Fixed a bug related to thinking in the chosen small model * Fixed a bug where Crush would struggle with certain disks on Windows Have an incredible weekend ✨ Charm ## Changelog * fix(lsp): prevent nil client from being stored in clients map by @acmacalister in https://github.com/charmbracelet/crush/pull/2262 * fix: use `Authorization` header for MiniMax by @taoeffect in https://github.com/charmbracelet/crush/pull/2269 * fix: proper validate io.net api keys by @andreynering in https://github.com/charmbracelet/crush/pull/2272 * fix(agent): pass correct model config to small provider builder by @0xarcher in https://github.com/charmbracelet/crush/pull/2236 * fix: more reliably detect windows drive by @andreynering in ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.426",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.426",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T15:41:58.000Z",
+      "summary": "## What's Changed * `@remotion/vercel`: **New package for rendering on Vercel Sandbox!** by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6586 * `remotion`: **Allow Zod v4 schemas to be used!** * [`@remotion/zod-types-v3` backwards compatibility package](https://www.remotion.dev/docs/zod-types/v3) by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6546 * `@remotion/bundler`: Add experimental flag for Rspack (Fast Refresh not yet working) by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6596 * `@remotion/cli`: Migrate hardcoded CLI flags to proper RemotionOption definitions by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6600 * `@remotion/cli`: Migrate runs, gl, repro, and muted CLI flags to options system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6602 * `@remotion/cli`: Move lambda/cloudrun-only flags to respective packages and add no-open option by @JonnyBurger in https://github.com/remotion-dev/remo",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.30.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.30.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T01:17:18.000Z",
+      "summary": "## Patch Changes * Use the `/-/npm/v1/security/audits/quick` endpoint as the primary audit endpoint, falling back to `/-/npm/v1/security/audits` when it fails [#10649](https://github.com/pnpm/pnpm/issues/10649). ## Platinum Sponsors ## Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.427",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.427",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T17:45:57.000Z",
+      "summary": "## What's Changed * `@remotion/media`: Fix audio scheduling and debug overlay at non-1x playback rates by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6622 * `@remotion/studio`: Fix infinite loop when duplicating composition by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6621 * `@remotion/vercel`: Support new private Blob stores by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6623 ## Docs * Structure vercel docs more logically by @JonnyBurger ## Internal * Update publish.ts by @JonnyBurger * Update create-snapshot.ts by @JonnyBurger **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.426...v4.0.427",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Trump announces new 10% global tariff after raging over Supreme Court loss",
+      "url": "https://www.cnbc.com/2026/02/20/trump-global-trade-tariff-supreme-court.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T19:01:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Goldman Sachs launches AI-free index",
+      "url": "https://www.axios.com/2026/02/20/ai-goldman-sachs-stocks-index",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T18:18:19.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Code Mode: give agents an API in 1k tokens",
+      "url": "https://blog.cloudflare.com/code-mode-mcp/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T15:47:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Web Components: The Framework-Free Renaissance",
+      "url": "https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T08:45:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
+      "url": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-20T03:05:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

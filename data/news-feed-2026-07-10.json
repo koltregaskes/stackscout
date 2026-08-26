@@ -1,9 +1,253 @@
 {
-  "generated": "2026-07-29T16:20:37.983Z",
+  "generated": "2026-08-26T03:14:14.582Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-07-10",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 279,
+  "articles": [
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.34.5",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.34.5",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T11:39:29.000Z",
+      "summary": "## Patch Changes * 78e29fe: Prevent a crafted `pnpm-lock.yaml` from writing package content outside the virtual store. A dependency path key whose name reconstructs to a path-traversal sequence (e.g. `../../../tmp/x@1.0.0`) is now rejected by the isolated (virtual-store) linker and the Plug'n'Play resolver map, matching the containment already applied to the hoisted linker. Under the global virtual store, a traversal in the version-derived path segment (e.g. a snapshot `version: \"../../x\"`) is now rejected at `iterateHashedGraphNodes`, the single point every global-virtual-store slot path funnels through. * 78e29fe: Fixed a path traversal vulnerability where a dependency whose manifest `name` was a scoped path traversal (e.g. `@x/../../../ `) could be written outside `node_modules` to an attacker-controlled location during `pnpm install`, even with `--ignore-scripts`. The isolated linker now validates the package name before using it as a directory name, matching the existing protectio",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.84.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.84.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T01:55:03.000Z",
+      "summary": "<h1>If you like caching and coding on your Android, you’ll love Crush v0.84.0</h1> <p>This is a mini release with two little niceties:</p> <h2>Cachemaxxing</h2> <p>Crush now sends the fabled <code>x-session-affinity</code> header (and <code>x-session-id</code>) in its requests. Supporting providers can pick the header up, pin the session to a given replica, and go cache wild. The session header is a hash with no personally identifiable information, of course.</p> <h2>Fixed: Termux</h2> <p>If you’re a nerd with an Android, you probably use Termux, the hot Android terminal emulator. If you’re a cool nerd, you probably <em>want</em> to use Crush on an Android and are annoyed that it was broken. Thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Ricardo-M-L/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Ricardo-M-L\">@Ricardo-M-L</a>, Crush now works on Android again.</p> <p>Hope you're having a great summer! Unless you're in South America, Central America, the Southern part of Mexico, parts of Africa or Australia, in which case…hope you're enjoying the Winter!</p> <p>xoxo,<br> Charm 🍔</p> <h2>Changelog</h2> <h3>New!</h3> <ul> <li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/charmbracelet/crush/commit/ebd845c003579484171922fda8a671367eee7684/hovercard\" href=\"https://github.com/charmbracelet/crush/commit/ebd845c003579484171922fda8a671367eee7684\"><tt>ebd845c</tt></a>: feat(agent): send session hash in header for cache affinity (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/meowgorithm/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/meowgorithm\">@meowgorithm</a>)</li> </ul> <h3>Fixed</h3> <ul> <li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/charmbracelet/crush/commit/5b61432984ba271cf9cb3791295ba94e9c2c8f81/hovercard\" href=\"https://github.com/charmbracelet/crush/commit/5b61432984ba271cf9cb3791295ba94e9c2c8f81\"><tt>5b61432</tt></a>: fix(release): drop broken .termux.deb artifact (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4412859744\" data-permission-text=\"Title is private\" data-url=\"https://github.com/charmbracelet/crush/issues/2848\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/charmbracelet/crush/pull/2848/hovercard\" href=\"https://github.com/charmbracelet/crush/pull/2848\">#2848</a>) (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Ricardo-M-L/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Ricardo-M-L\">@Ricardo-M-L</a>)</li> <li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/charmbracelet/crush/commit/e3074f14cec703bdddba13e6df5cf2242b34194c/hovercard\" href=\"https://github.com/charmbracelet/crush/commit/e3074f14cec703bdddba13e6df5cf2242b34194c\"><tt>e3074f1</tt></a>: fix(server): show update notices in client-server mode (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/meowgorithm/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/meowgorithm\">@meowgorithm</a>)</li> </ul> <hr> <details> <summary>Verifying the artifacts</summary> <p>First, download the <a href=\"https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt\"><code>checksums.txt</code> file</a> and the <a href=\"https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt.sigstore.json\"><code>checksums.txt.sigstore.json</code> file</a> files, for example, with <code>wget</code>:</p> <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"wget 'https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt' wget 'https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt.sigstore.json'\"><pre>wget <span class=\"pl-s\"><span class=\"pl-pds\">'</span>https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt<span class=\"pl-pds\">'</span></span> wget <span class=\"pl-s\"><span class=\"pl-pds\">'</span>https://github.com/charmbracelet/crush/releases/download/v0.84.0/checksums.txt.sigstore.json<span class=\"pl-pds\">'</span></span></pre></div> <p>Then, verify it using <a href=\"https://github.com/sigstore/cosign\"><code>cosign</code></a>:</p> <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"cosign verify-blob \\ --certificate-identity 'https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main' \\ --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \\ --bundle 'checksums.txt.sigstore.json' \\ ./checksums.txt\"><pre>cosign verify-blob \\ --certificate-identity <span class=\"pl-s\"><span class=\"pl-pds\">'</span>https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main<span class=\"pl-pds\">'</span></span> \\ --certificate-oidc-issuer <span class=\"pl-s\"><span class=\"pl-pds\">'</span>https://token.actions.githubusercontent.com<span class=\"pl-pds\">'</span></span> \\ --bundle <span class=\"pl-s\"><span class=\"pl-pds\">'</span>checksums.txt.sigstore.json<span class=\"pl-pds\">'</span></span> \\ ./checksums.txt</pre></div> <p>If the output is <code>Verified OK</code>, you can safely use it to verify the checksums of other artifacts you downloaded from the release using <code>sha256sum</code>:</p> <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"sha256sum --ignore-missing -c checksums.txt\"><pre>sha256sum --ignore-missing -c checksums.txt</pre></div> <p>Done! You artifacts are now verified!</p> </details> <p><a href=\"https://charm.land/\" rel=\"nofollow\"><img alt=\"The Charm logo\" src=\"https://camo.githubusercontent.com/69664ad4650dabc137df37044e4d9366cfe32124b10f97b798c064aeaef86443/68747470733a2f2f73747566662e636861726d2e73682f636861726d2d62616e6e65722d6e6578742e6a7067\" width=\"400\" data-canonical-src=\"https://stuff.charm.sh/charm-banner-next.jpg\" style=\"max-width: 100%;\"></a></p> <p>Thoughts? Questions? We love hearing from you. Feel free to reach out on <a href=\"https://x.com/charmcli\" rel=\"nofollow\">X</a>, <a href=\"https://charm.land/discord\" rel=\"nofollow\">Discord</a>, <a href=\"https://charm.land/slack\" rel=\"nofollow\">Slack</a>, <a href=\"https://mastodon.social/@charmcli\" rel=\"nofollow\">The Fediverse</a>, <a href=\"https://bsky.app/profile/charm.land\" rel=\"nofollow\">Bluesky</a>.</p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Qwen Code: Release v0.19.9",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.19.9",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T19:39:45.000Z",
+      "summary": "## What's Changed * Stop repeated subagent tool-call loops by @yiliang114 in https://github.com/QwenLM/qwen-code/pull/6543 * fix(session): detect and mark broken history chains instead of silently truncating by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/6502 * fix(cli): prefer command name match over alias match regardless of recentScore by @Alex-ai-future in https://github.com/QwenLM/qwen-code/pull/6504 * feat(memory): make background memory agent timeouts configurable by @zjunothing in https://github.com/QwenLM/qwen-code/pull/6459 * feat(cli): Add session owner index for workspace runtimes by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/6540 * docs: fix model-provider config shape and refresh feature/setting drift by @DragonnZhang in https://github.com/QwenLM/qwen-code/pull/6552 * fix(channels): add chat payload diagnostics by @qqqys in https://github.com/QwenLM/qwen-code/pull/6539 * fix(core): configurable vision bridge timeout + retry with fresh budget by @zju",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.10.5-canary.5",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.5-canary.5",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T12:53:13.000Z",
+      "summary": "<h2>What's Changed</h2> <h3>Changelog</h3> <ul> <li>release(turborepo): 2.10.5-canary.4 by @github-actions[bot] in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4848329460\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13325\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13325/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13325\">#13325</a></li> <li>feat: Run the Rust workspace tests through nextest via command override by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4841355971\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13316\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13316/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13316\">#13316</a></li> <li>feat: Engage the Remote Cache and sccache compile cache for Rust CI by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4823808583\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13292\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13292/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13292\">#13292</a></li> <li>ci: Pin GitHub Actions to full commit SHAs by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/XananasX7/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/XananasX7\">@XananasX7</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4761034046\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13143\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13143/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13143\">#13143</a></li> <li>fix: Make npm prune rehoisting deterministic and complete by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4847184204\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13323\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13323/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13323\">#13323</a></li> <li>feat: Report incremental cache reuse in the run summary by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4849936259\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13327\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13327/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13327\">#13327</a></li> </ul> <h2>New Contributors</h2> <ul> <li><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/XananasX7/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/XananasX7\">@XananasX7</a> made their first contribution in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4761034046\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13143\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13143/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13143\">#13143</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/vercel/turborepo/compare/v2.10.5-canary.4...v2.10.5-canary.5\"><tt>v2.10.5-canary.4...v2.10.5-canary.5</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "🗞️ OpenAI Launches GPT-5.6 Sol across ChatGPT and API and also unveils ChatGPT work agent to field tasks for hours.",
+      "url": "https://www.rohan-paul.com/p/openai-launches-gpt-56-sol-across",
+      "source": "Rohan Paul",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T08:12:28.000Z",
+      "summary": "GPT-5.6 Sol, ChatGPT work agent, Grok 4.5 coding agents, DeepMind agent warning, Claude Code’s AI-written leap, breast cancer AI, China AI companion shutdowns, Cloudflare x402 payments, Claude Cowork",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.52.0-nightly.20260710.ga4c91ce19",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.52.0-nightly.20260710.ga4c91ce19",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T01:43:08.000Z",
+      "summary": "<h2>What's Changed</h2> <ul> <li>fix(core): strip thoughts from scrubbed history turns and resolve thought leakage by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amelidev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amelidev\">@amelidev</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4678608403\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/27971\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/27971/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/27971\">#27971</a></li> <li>Refactor: exclude transient CI configuration files from workspace context by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/DavidAPierce/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/DavidAPierce\">@DavidAPierce</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4771753114\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28216\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28216/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28216\">#28216</a></li> <li>feat(caretaker-triage): add triage worker core foundational modules by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chadd28/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chadd28\">@chadd28</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4753861958\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28163\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28163/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28163\">#28163</a></li> <li>feat(caretaker-egress): implement octokit github action handler for egress service by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chadd28/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chadd28\">@chadd28</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4830419267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28303\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28303/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28303\">#28303</a></li> <li>chore(release): bump version to 0.52.0-nightly.20260707.g27a3da3e8 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gemini-cli-robot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gemini-cli-robot\">@gemini-cli-robot</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4840274631\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28323\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28323/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28323\">#28323</a></li> <li>Changelog for v0.51.0-preview.0 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gemini-cli-robot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gemini-cli-robot\">@gemini-cli-robot</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4839873704\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28320\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28320/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28320\">#28320</a></li> <li>Changelog for v0.50.0 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gemini-cli-robot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gemini-cli-robot\">@gemini-cli-robot</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4840167585\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28322\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28322/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28322\">#28322</a></li> <li>fix(core-tools): bypass LLM correction for JSON and IPYNB files in write_file and replace by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amelidev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amelidev\">@amelidev</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4780686006\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28223\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28223/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28223\">#28223</a></li> <li>fix(core): use unambiguous previous intent label in fallback summary by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amelidev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amelidev\">@amelidev</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4848950194\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28343\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28343/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28343\">#28343</a></li> <li>feat(caretaker-triage): implement main worker execution loop and egress action publisher by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chadd28/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chadd28\">@chadd28</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4832842460\" data-permission-text=\"Title is private\" data-url=\"https://github.com/google-gemini/gemini-cli/issues/28306\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/google-gemini/gemini-cli/pull/28306/hovercard\" href=\"https://github.com/google-gemini/gemini-cli/pull/28306\">#28306</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/google-gemini/gemini-cli/compare/v0.51.0-nightly.20260707.g15a9429b6...v0.52.0-nightly.20260710.ga4c91ce19\"><tt>v0.51.0-nightly.20260707.g15a9429b6...v0.52.0-nightly.20260710.ga4c91ce19</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Qwen Code: Release v0.19.8-nightly.20260710.205430235",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.19.8-nightly.20260710.205430235",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T00:51:26.000Z",
+      "summary": "## What's Changed * Stop repeated subagent tool-call loops by @yiliang114 in https://github.com/QwenLM/qwen-code/pull/6543 * fix(session): detect and mark broken history chains instead of silently truncating by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/6502 * fix(cli): prefer command name match over alias match regardless of recentScore by @Alex-ai-future in https://github.com/QwenLM/qwen-code/pull/6504 * feat(memory): make background memory agent timeouts configurable by @zjunothing in https://github.com/QwenLM/qwen-code/pull/6459 * feat(cli): Add session owner index for workspace runtimes by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/6540 * docs: fix model-provider config shape and refresh feature/setting drift by @DragonnZhang in https://github.com/QwenLM/qwen-code/pull/6552 * fix(channels): add chat payload diagnostics by @qqqys in https://github.com/QwenLM/qwen-code/pull/6539 * fix(core): configurable vision bridge timeout + retry with fresh budget by @zju",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.3.0-canary.83",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.83",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T23:56:15.000Z",
+      "summary": "<h3>Misc Changes</h3> <ul> <li>Turbopack tests: remove assertions that duplicate webpack results: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4857466807\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95688\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95688/hovercard\" href=\"https://github.com/vercel/next.js/pull/95688\">#95688</a></li> <li>Fix support for <code>custom-media-queries</code> in LightningCSS: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4857554860\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95689\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95689/hovercard\" href=\"https://github.com/vercel/next.js/pull/95689\">#95689</a></li> <li>Clarify AI-assisted contribution policy in PR template and AGENTS.md: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4842731262\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95629\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95629/hovercard\" href=\"https://github.com/vercel/next.js/pull/95629\">#95629</a></li> <li>docs: add Building guide: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4708037669\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/94999\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/94999/hovercard\" href=\"https://github.com/vercel/next.js/pull/94999\">#94999</a></li> <li>docs: add incremental adoption path to Cache Components migration guide: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4780930517\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95325\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95325/hovercard\" href=\"https://github.com/vercel/next.js/pull/95325\">#95325</a></li> <li>[PPF] Sync IO is only allowed in the dynamic stage: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4790112364\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95384\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95384/hovercard\" href=\"https://github.com/vercel/next.js/pull/95384\">#95384</a></li> <li>refactor: remove unnecessary switches from StagedRenderingController: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4789916925\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95383\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95383/hovercard\" href=\"https://github.com/vercel/next.js/pull/95383\">#95383</a></li> <li>Keep the request body a plain Readable after middleware so Readable.toWeb() doesn't hang: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4838360024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95607\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95607/hovercard\" href=\"https://github.com/vercel/next.js/pull/95607\">#95607</a></li> <li>docs: note default error/not-found UI follows OS color scheme, not app theme: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4853515208\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95673\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95673/hovercard\" href=\"https://github.com/vercel/next.js/pull/95673\">#95673</a></li> <li>test: skip redbox check in \"static prefetch - missing suspense around search params\": <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4851246352\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95670\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95670/hovercard\" href=\"https://github.com/vercel/next.js/pull/95670\">#95670</a></li> <li>test: allow-runtime breaks Link's Server component child detection: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4833788138\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95596\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95596/hovercard\" href=\"https://github.com/vercel/next.js/pull/95596\">#95596</a></li> <li>docs: Immutable static assets: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4783344515\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95348\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95348/hovercard\" href=\"https://github.com/vercel/next.js/pull/95348\">#95348</a></li> <li>[turbopack] Simplify service worker e2e tests: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4852492882\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95672\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95672/hovercard\" href=\"https://github.com/vercel/next.js/pull/95672\">#95672</a></li> <li>[docs] Update \"Handling a Custom <code>Service Worker</code>\" in the CRA migration docs: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4798481406\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95434\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95434/hovercard\" href=\"https://github.com/vercel/next.js/pull/95434\">#95434</a></li> <li>[docs] Update progressive web apps documentation for new service worker syntax: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4798256912\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95431\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95431/hovercard\" href=\"https://github.com/vercel/next.js/pull/95431\">#95431</a></li> <li>(TypeScript 7 Support) Add experimental TypeScript CLI backend: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4846993560\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/next.js/issues/95639\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/next.js/pull/95639/hovercard\" href=\"https://github.com/vercel/next.js/pull/95639\">#95639</a></li> </ul> <h3>Credits</h3> <p>Huge thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wbinnssmith/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wbinnssmith\">@wbinnssmith</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sampoder/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sampoder\">@sampoder</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bgw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bgw\">@bgw</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/aurorascharff/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/aurorascharff\">@aurorascharff</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/lubieowoce/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/lubieowoce\">@lubieowoce</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/timneutkens/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/timneutkens\">@timneutkens</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/icyJoseph/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/icyJoseph\">@icyJoseph</a>, and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mischnic/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mischnic\">@mischnic</a> for helping!</p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Mayor Mamdani announces \"Click-to-Cancel\" rules",
+      "url": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani-announces-landmark--click-to-cancel--consumer-prot",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T19:30:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: SubjectiveZero, an open-source agentic node editor for creative coding",
+      "url": "https://sxp.studio/apps/subz",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T15:23:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · n8n: n8n@2.30.3",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.30.3",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T07:59:16.000Z",
+      "summary": "## [2.30.3](https://github.com/n8n-io/n8n/compare/n8n@2.30.2...n8n@2.30.3) (2026-07-10) ### Bug Fixes * **editor:** Keep AI Assistant thread state intact on editor hand-off ([#33924](https://github.com/n8n-io/n8n/issues/33924)) ([ee10d01](https://github.com/n8n-io/n8n/commit/ee10d01e96a1a621efb5cb671b8af0ed0436bb91)) ---",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · n8n: n8n@2.29.10",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.29.10",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T07:57:16.000Z",
+      "summary": "## [2.29.10](https://github.com/n8n-io/n8n/compare/n8n@2.29.9...n8n@2.29.10) (2026-07-10) ### Bug Fixes * **editor:** Keep AI Assistant thread state intact on editor hand-off ([#33925](https://github.com/n8n-io/n8n/issues/33925)) ([3934a83](https://github.com/n8n-io/n8n/commit/3934a83e4757fac493446bc505d1edd3804c27c2)) ---",
+      "category": "ai_tools"
+    },
+    {
+      "title": "China may restrict foreign access to Chinese open-source AI models",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/china-weighs-silicon-curtain-around-sought-after-ai-models-2026-07-08/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T06:22:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
+      "url": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
+      "source": "Latent Space",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T06:19:40.000Z",
+      "summary": "A big day for OpenAI.",
+      "category": "ai_research"
+    },
+    {
+      "title": "GitHub Releases · Qwen Code: PR #6633 Screenshots",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/pr6633-screenshots",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-10T03:13:34.000Z",
+      "summary": "Screenshots for PR #6633 verification",
+      "category": "ai_tools"
+    }
+  ]
 }

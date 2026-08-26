@@ -1,9 +1,251 @@
 {
-  "generated": "2026-07-29T16:20:36.140Z",
+  "generated": "2026-08-26T03:04:09.389Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-12",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 165,
+  "articles": [
+    {
+      "title": "Systematic debugging for AI agents: Introducing the AgentRx framework",
+      "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/",
+      "source": "Microsoft Research Blog",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T16:38:45.000Z",
+      "summary": "As AI agents transition from simple chatbots to autonomous systems capable of managing cloud incidents, navigating complex web interfaces, and executing multi-step API workflows, a new challenge has emerged: transparency. When a human makes a mistake, we can usually trace the logic. But when an AI agent fails, perhaps by hallucinating a tool output or [&#8230;] The post Systematic debugging for AI agents: Introducing the AgentRx framework appeared first on Microsoft Research .",
+      "category": "ai_research"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.435",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.435",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T15:34:45.000Z",
+      "summary": "## What's Changed * New [**`@remotion/starburst`**](https://www.remotion.dev/docs/starburst) package by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6820 * `@remotion/cli`: Fix gitSource subfolder for Vercel deployments, fix setVolume error message by @bhaktofmahakal in https://github.com/remotion-dev/remotion/pull/6832 * `@remotion/google-fonts`: Add ignoreTooManyRequestsWarning to generated loadFont options by @motemen in https://github.com/remotion-dev/remotion/pull/6836 * `@remotion/lambda`: Add `compatibleOnly` support to `getSites()` and `sites ls` by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6825 * `@remotion/studio`: Add search bar to serve as a visual cue for the quick switcher by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6824 * `@remotion/web-renderer`: Add render progress estimations by @samohovets in https://github.com/remotion-dev/remotion/pull/6827 * Brand asset farm under remotion.dev/brand by @JonnyBurger in https",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · PowerShell: v7.5.5 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.5.5",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T18:19:38.000Z",
+      "summary": "## [7.5.5] ### Engine Updates and Fixes - Fix up `SSHConnectionInfo` ssh PATH checks (#26165) (Thanks @jborean93!) ### General Cmdlet Updates and Fixes - Close pipe client handles after creating the child ssh process (#26822) - Fix the progress preference variable in script cmdlets (#26791) (Thanks @cmkb3!) ### Tools - Add merge conflict marker detection to `linux-ci` workflow and refactor existing actions to use reusable `get-changed-files` action (#26812) - Add reusable `get-changed-files` action and refactor existing actions (#26811) - Create GitHub Copilot setup workflow (#26807) - Refactor analyze job to reusable workflow and enable on Windows CI (#26799) ### Tests - Mark flaky `Update-Help` web tests as pending to unblock CI (#26837) - Add GitHub Actions annotations for Pester test failures (#26836) - Fix `$PSDefaultParameterValues` leak causing tests to skip unexpectedly (#26823) - Fix merge conflict checker for empty file lists and filter `*.cs` files (#26813) - Update the `Upd",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Crush: v0.48.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.48.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T17:33:48.000Z",
+      "summary": "# Notifications, CLI-based session management, and more :wave: Hello all! This is a fairly beefy release with a some nice features and a slew of bugfixes. ## Notifications Sometimes LLMs take a while to do so things and, naturally, we go and do other things in the meantime. Now, Crush will send a notification when it needs your attention (e.g. permission requests) and when it finishes its work. How thoughtful! If you find this annoying, it's easy to toggle notifs on and off, too: This feature was implemented by star contributor @Amolith, who waited _so_ patiently for us to QA this incredibly tricky feature across the various platforms we support. ## Sessions on the CLI for humans and agents We're big believers in `crush run`, Crush's non-interactive mode, and this release brings a host of session-based features to the CLI for humans and agents alike. In particular, now you can browse sessions with `crush session list` and inspect former sessions with `crush session `. Agents and machin",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · PowerShell: v7.4.14 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.4.14",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T17:14:16.000Z",
+      "summary": "## [7.4.14] ### General Cmdlet Updates and Fixes - Fix `PSMethodInvocationConstraints.GetHashCode` method (#26959) ### Tools - Add merge conflict marker detection to `linux-ci` workflow and refactor existing actions to use reusable `get-changed-files` action (#26362) - Add reusable `get-changed-files` action and refactor existing actions (#26361) - Refactor analyze job to reusable workflow and enable on Windows CI (#26342) ### Tests - Skip the flaky `Update-Help` test for the `PackageManagement` module (#26871) - Fix `$PSDefaultParameterValues` leak causing tests to skip unexpectedly (#26869) - Add GitHub Actions annotations for Pester test failures (#26800) - Mark flaky `Update-Help` web tests as pending to unblock CI (#26805) - Update the `Update-Help` tests to use `-Force` to remove read-only files (#26786) - Fix merge conflict checker for empty file lists and filter `*.cs` files (#26387) - Add markdown link verification for PRs (#26340) ### Build and Packaging Improvements Update .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: I built an SDK that scrambles HTML so scrapers get garbage",
+      "url": "https://www.obscrd.dev/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T13:27:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Illinois introduces OS-level age verification law",
+      "url": "https://legiscan.com/IL/bill/SB3977/2025",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T21:21:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Ask HN: How do you cope with the broken rythm of agentic coding?",
+      "url": "https://news.ycombinator.com/item?id=47356614",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T20:29:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Scrt: A CLI secret manager for developers, sysadmins and DevOps",
+      "url": "https://github.com/loderunner/scrt",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T17:31:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: LogClaw – Open-source AI SRE that auto-creates tickets from logs",
+      "url": "https://logclaw.ai",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T17:06:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The Met releases high-def 3D scans of 140 famous art objects",
+      "url": "https://www.openculture.com/2026/03/the-met-releases-high-definition-3d-scans-of-140-famous-art-objects.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T15:43:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Axe – A 12MB binary that replaces your AI framework",
+      "url": "https://github.com/jrswab/axe",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T13:49:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "ArcaOS 5.1.2 (based on OS/2 Warp 4.52) now available",
+      "url": "https://www.arcanoae.com/arcaos-5-1-2-now-available/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T13:27:19.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Calyx – Ghostty-Based macOS Terminal with Liquid Glass UI",
+      "url": "https://github.com/yuuichieguchi/Calyx",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T13:13:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Shell declares force majeure to clients who buy Qatari LNG",
+      "url": "https://www.reuters.com/business/energy/shell-totalenergies-others-declare-fm-their-clients-who-take-lng-qatar-sources-2026-03-11/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-12T02:13:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

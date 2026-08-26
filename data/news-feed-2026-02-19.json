@@ -1,9 +1,241 @@
 {
-  "generated": "2026-07-29T16:20:35.941Z",
+  "generated": "2026-08-26T03:02:17.327Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-19",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 159,
+  "articles": [
+    {
+      "title": "GitHub Releases · Prisma: 7.4.1",
+      "url": "https://github.com/prisma/prisma/releases/tag/7.4.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T17:58:06.000Z",
+      "summary": "Today, we are issuing a 7.4.1 patch release focused on bug fixes and quality improvements. ## 🛠 Fixes **Prisma Client** - Fix cursor-based pagination regression with parameterised values (https://github.com/prisma/prisma/pull/29184) - Preserve `Prisma.skip` through query extension argument cloning (https://github.com/prisma/prisma/pull/29198) - Enable batching of multiple queries inside interactive transactions (https://github.com/prisma/prisma/pull/25571) - Add missing JSON value deserialization for JSONB parameter fields (https://github.com/prisma/prisma/pull/29182) - Apply result extensions correctly for nested and fluent relations (https://github.com/prisma/prisma/pull/29218) - Allow missing config datasource URL and validate only when needed (https://github.com/prisma/prisma-engines/pull/5777) **Driver Adapters** - **@prisma/adapter-ppg**: Handle null values in type parsers for nullable columns (https://github.com/prisma/prisma/pull/29192) **Prisma Schema Language** - Support `wh",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Crush: v0.43.2",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.2",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T14:19:27.000Z",
+      "summary": "# A Quick Patch This release fixes two regressions from the previous release: * Cache work was reverted in favor of a new optimization, due to a bug on UI rendering. * A potential panic was fixed. See you in the next release, Charm ## Changelog ### Fixed * 72bb0866a4481e5dcb695e3d7149dcefe5185148: Revert \"fix(ui): cache blurred and focused renderings separately for assistant messages (#2252)\" (@aymanbagabas) * 46ebd20b63d8e5265e14393821ce747e8ce44ff3: fix(ui): optimize assistant message rendering to improve performance (#2258) (@aymanbagabas) * 9862d3a5552d3246eaff554cca83f2b4eee42ffd: fix: address `nil` pointer dereference panics on lsp client methods (#2256) (@andreynering) --- Verifying the artifacts First, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.43.2/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.43.2/checksums.txt.sigstore.json) files, for example, with ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.425",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.425",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T08:21:38.000Z",
+      "summary": "## What's Changed * `remotion`: Automatically premount Sequences from Remotion 5.0 on by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6566 * `@remotion/renderer`, `@remotion/cli`: Migrate `pixel-format` and `browser-executable` to options system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6561 * `@remotion/renderer`: Migrate more options to the new options system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6562 * `@remotion/renderer`, `@remotion/cli`: Migrate `--user-agent`, `--disable-web-security`, `--ignore-certificate-errors` to options system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6564 * `@remotion/renderer`: Convert concurrency to a proper AnyRemotionOption by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6569 * `@remotion/renderer`: Allow override of fps and durationInFrames by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6573 * `@remotion/studio`: Disallow selec",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: A small, simple music theory library in C99",
+      "url": "https://github.com/thelowsunoverthemoon/mahler.c",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T22:54:28.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Kumo: Cloudflare's UI Component Library",
+      "url": "https://kumo-ui.com/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T19:52:44.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A terminal weather app with ASCII animations driven by real-time weather data",
+      "url": "https://github.com/Veirt/weathr",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T17:47:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The Musidex: A physical music library for the streaming era",
+      "url": "https://hannahilea.com/blog/musidex/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T16:42:04.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Micasa – track your house from the terminal",
+      "url": "https://micasa.dev",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T15:54:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "How I launched 3 consoles and found true love at Babbage's store no. 9 (2013)",
+      "url": "https://arstechnica.com/gadgets/2013/01/how-i-launched-3-consoles-and-found-true-love-at-babbages-store-no-9/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T15:14:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Measuring AI agent autonomy in practice",
+      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T14:14:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "I traced 3,177 API calls to see what 4 AI coding tools put in the context window",
+      "url": "https://theredbeard.io/blog/i-intercepted-3177-api-calls-across-4-ai-coding-tools/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T12:54:16.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: LatentScore – Type a mood, get procedural/ambient music (open source)",
+      "url": "https://latentscore.com/demo",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T12:06:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "ShannonMax: A Library to Optimize Emacs Keybindings with Information Theory",
+      "url": "https://github.com/sstraust/shannonmax",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T11:15:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Stoolap/Node: A Native Node.js Driver That's Surprisingly Fast",
+      "url": "https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T06:09:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Step 3.5 Flash – Open-source foundation model, supports deep reasoning at speed",
+      "url": "https://static.stepfun.com/blog/step-3.5-flash/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-19T02:32:00.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

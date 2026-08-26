@@ -1,9 +1,275 @@
 {
-  "generated": "2026-07-29T16:20:37.934Z",
+  "generated": "2026-08-26T03:14:12.944Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-07-06",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 236,
+  "articles": [
+    {
+      "title": "GitHub Releases · Vercel CLI: vercel@54.21.0",
+      "url": "https://github.com/vercel/vercel/releases/tag/vercel%4054.21.0",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:58:42.000Z",
+      "summary": "### Minor Changes - cc74129: Enable monorepo subdirectory build fixes by default (previously gated behind `VERCEL_RESOLVE_ROOT_DIRECTORY=1`), scoped to directories the workspace actually claims. When a project is linked in place (`apps/api/.vercel/project.json`) and `vc build` is run from that directory, the build now re-anchors to the workspace root and expresses the project as its path relative to that root — so builders trace correctly, hoisted dependencies are packaged, and `--standalone` output preserves package-manager symlinks so dependencies resolve at runtime. Re-anchoring only happens when an ancestor workspace manifest (`pnpm-workspace.yaml` or `package.json#workspaces`) actually declares the linked directory as a member package. Membership is decided by matching the directory's path against the manifest's declared patterns (including negations like `!apps/legacy`) plus a `package.json` existence check — pure string matching with no filesystem traversal, so large repositorie",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Vercel CLI: @vercel/fs-detectors@6.11.6",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/fs-detectors%406.11.6",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:58:48.000Z",
+      "summary": "### Patch Changes - Updated dependencies [85c897e] - @vercel/frameworks@3.30.5",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Vercel CLI: @vercel/frameworks@3.30.5",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/frameworks%403.30.5",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:58:45.000Z",
+      "summary": "### Patch Changes - 85c897e: Run framework detection during `vc build` (opt-in via `VERCEL_FRAMEWORK_DETECTION=1`): detect the framework on a project's first deployment (`VERCEL_FIRST_DEPLOYMENT=1`) when none is configured and record it as `detectedFramework` in `builds.json`, cross-check the configured framework against the source code in the background without slowing the build, and validate the build output after it is written. Adds a `detectionConfidence` annotation to framework definitions for detections that are commonly incidental (e.g. Storybook as a devDependency) so they are never suggested as a framework override.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.10.4",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.4",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:18:53.000Z",
+      "summary": "## What's Changed ### Changelog * release(turborepo): 2.10.3 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13222 * ci: Retry Windows nextest aborts from transient 0xc0000142 spawn failures by @anthonyshew in https://github.com/vercel/turborepo/pull/13240 * perf: Use mimalloc as the global allocator by @anthonyshew in https://github.com/vercel/turborepo/pull/13237 * perf: Parse yarn v1 lockfiles in a single pass by @anthonyshew in https://github.com/vercel/turborepo/pull/13241 * ci: Fix cache outputs for Eve app by @anthonyshew in https://github.com/vercel/turborepo/pull/13243 * perf: Stop materializing spans for the disabled daemon log layer by @anthonyshew in https://github.com/vercel/turborepo/pull/13244 * fix: Keep ancestor-scoped bun dependencies resolvable after prune renames by @anthonyshew in https://github.com/vercel/turborepo/pull/13236 * perf: Overlap external dependency hashing with package file hashing by @anthonyshew in https://github.com/vercel/turbo",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.10.4-canary.2",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.4-canary.2",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T16:43:37.000Z",
+      "summary": "## What's Changed ### Changelog * release(turborepo): 2.10.4-canary.1 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13247 * feat: Discover Cargo crates as packages by @anthonyshew in https://github.com/vercel/turborepo/pull/13248 * perf: Reuse per-package external dependency hashes in run summaries by @anthonyshew in https://github.com/vercel/turborepo/pull/13249 * perf: Stat workspace turbo.json files concurrently during discovery by @anthonyshew in https://github.com/vercel/turborepo/pull/13251 * chore: Add tracing spans to workspace discovery and globwalk phases by @anthonyshew in https://github.com/vercel/turborepo/pull/13252 * fix: Avoid non-reentrant libc calls in concurrent shutdown process scans by @anthonyshew in https://github.com/vercel/turborepo/pull/13256 * perf: Memoize resolved task definitions during engine construction by @anthonyshew in https://github.com/vercel/turborepo/pull/13257 * perf: Compute transitive closures and external dependency hash",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Gemini CLI: Release v0.51.0-nightly.20260706.gf7af4e518",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.51.0-nightly.20260706.gf7af4e518",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T01:31:23.000Z",
+      "summary": "**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.51.0-nightly.20260705.gf7af4e518...v0.51.0-nightly.20260706.gf7af4e518",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Qwen Code: Release v0.19.6-nightly.20260706.47f62a466",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.19.6-nightly.20260706.47f62a466",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T00:48:59.000Z",
+      "summary": "## What's Changed * fix(triage): strengthen PR gate with batch detection, problem existence check, and red flag patterns by @pomelo-nwu in https://github.com/QwenLM/qwen-code/pull/5723 * feat(review): route suggestion-level findings to an updatable PR comment by @pomelo-nwu in https://github.com/QwenLM/qwen-code/pull/5786 * fix(autofix): unconditionally restore tracked files before branch checkout (#6281) by @qwen-code-dev-bot in https://github.com/QwenLM/qwen-code/pull/6286 * feat(serve): Add runtime.activity fields to daemon status API by @doudouOUC in https://github.com/QwenLM/qwen-code/pull/6270 * feat(web-shell): add a daemon status page backed by GET /daemon/status by @wenshao in https://github.com/QwenLM/qwen-code/pull/6272 * fix(vscode): keep auth quick inputs open on focus loss by @barry166 in https://github.com/QwenLM/qwen-code/pull/6274 * ci(audio): clarify macOS prebuild artifact suffix by @barry166 in https://github.com/QwenLM/qwen-code/pull/6275 * fix(cache): preserve too",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Vercel CLI: @vercel/python@6.48.0",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/python%406.48.0",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:58:54.000Z",
+      "summary": "### Minor Changes - 4097a62: Fix django services when using static assets and vc dev.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Vercel CLI: @vercel/next@4.20.3",
+      "url": "https://github.com/vercel/vercel/releases/tag/%40vercel/next%404.20.3",
+      "source": "GitHub Releases · Vercel CLI",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T20:58:51.000Z",
+      "summary": "### Patch Changes - 6dbc280: [next] Update to latest Next.js adapter",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · n8n: n8n@2.28.7",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.28.7",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T08:17:34.000Z",
+      "summary": "## [2.28.7](https://github.com/n8n-io/n8n/compare/n8n@2.28.6...n8n@2.28.7) (2026-07-06) ### Bug Fixes * **core:** Pin langgraph and langgraph-checkpoint to prevent broken npm installs ([#33610](https://github.com/n8n-io/n8n/issues/33610)) ([7fe5d56](https://github.com/n8n-io/n8n/commit/7fe5d5692ae802f854c95ad99cb080df670b71f2)) ---",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · n8n: n8n@2.29.6",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.29.6",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T08:15:11.000Z",
+      "summary": "## [2.29.6](https://github.com/n8n-io/n8n/compare/n8n@2.29.5...n8n@2.29.6) (2026-07-06) ### Bug Fixes * **core:** Pin langgraph and langgraph-checkpoint to prevent broken npm installs ([#33609](https://github.com/n8n-io/n8n/issues/33609)) ([a1d2108](https://github.com/n8n-io/n8n/commit/a1d2108900210c316840e6121efd4acc22ecb727)) ---",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v4.0.485",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.485",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T06:56:03.000Z",
+      "summary": "<h2>What's Changed</h2> <ul> <li><code>remotion</code>: Fix media playbackRate duration in loops by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4793850574\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8756\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8756/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8756\">#8756</a></li> <li><code>@remotion/media</code>: Fix preview frame accuracy by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4795021444\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8760\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8760/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8760\">#8760</a></li> <li><code>@remotion/media</code>: Fix frame stepping in preview by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4778479563\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8739\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8739/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8739\">#8739</a></li> <li><code>@remotion/media</code>: Fix <code><Video></code> reinitializing MediaPlayer when onError identity changes by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mvanhorn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mvanhorn\">@mvanhorn</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4761325184\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8725\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8725/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8725\">#8725</a></li> <li><a href=\"https://remotion.dev/docs/effects/venetian-blinds\" rel=\"nofollow\"><code>@remotion/effects</code>: Add venetian blinds effect</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4765732221\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8728\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8728/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8728\">#8728</a></li> <li><code>@remotion/studio</code>: Add sequence rename in Inspector by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4785280359\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8745\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8745/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8745\">#8745</a></li> <li><code>@remotion/studio</code>: Make Interactive text editable in visual mode by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4745970121\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8669\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8669/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8669\">#8669</a></li> <li><code>@remotion/studio</code>: Keep context menus above splitters by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4768245998\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8730\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8730/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8730\">#8730</a></li> <li><code>@remotion/studio</code>: Fix context menu retriggering by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4759041445\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8721\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8721/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8721\">#8721</a></li> <li><code>@remotion/studio</code>: Add split clip source edits and serialize writes by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758211230\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8715\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8715/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8715\">#8715</a></li> <li><code>@remotion/studio</code>: Preserve inspector collapsed effects by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4759162815\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8723/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8723\">#8723</a></li> <li><code>@remotion/studio</code>: Create compositions in folders by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758840204\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8719\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8719/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8719\">#8719</a></li> <li><code>@remotion/studio</code>: Prevent dialog validation messages widening modals by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758894792\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8720\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8720/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8720\">#8720</a></li> <li><code>@remotion/studio</code>: Auto-select newly created composition by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758733611\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8716\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8716/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8716\">#8716</a></li> <li><code>@remotion/studio</code>: Redirect after renaming composition by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4755183163\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8704\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8704/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8704\">#8704</a></li> <li><code>@remotion/studio</code>: Fix timeline zoom flicker by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4757949629\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8710\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8710/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8710\">#8710</a></li> <li><code>@remotion/studio</code>: Prevent marquee selection while dragging timeline handles by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4752535499\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8698\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8698/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8698\">#8698</a></li> <li><code>@remotion/studio</code>: Add inline composition renaming in the inspector by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4753683014\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8703\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8703/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8703\">#8703</a></li> <li><code>@remotion/web-renderer</code>: Fix package license metadata by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4777814527\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8738\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8738/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8738\">#8738</a></li> <li><code>@remotion/web-renderer</code>: Support dotted, dashed and double text-decoration styles by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mvanhorn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mvanhorn\">@mvanhorn</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4774727121\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8733\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8733/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8733\">#8733</a></li> <li><code>@remotion/web-renderer</code>: Fix nested mask precomposition offset by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4753123127\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8700\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8700/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8700\">#8700</a></li> <li><code>@remotion/browser-studio</code>: Upgrade Rspack to 2.1 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4757950603\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8711\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8711/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8711\">#8711</a></li> <li><code>@remotion/eslint-plugin</code>: Add valid composition name rule by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4757888048\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8708\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8708/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8708\">#8708</a></li> <li><code>remotion-monorepo</code>: Upgrade Mediabunny to 1.50.3 by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4793588090\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8754\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8754/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8754\">#8754</a></li> </ul> <h2>Docs</h2> <ul> <li>Autoplay muted element previews by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4792928676\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8753\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8753/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8753\">#8753</a></li> <li>Redesign lower third element by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4786456271\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8748\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8748/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8748\">#8748</a></li> <li>Crop 2px from left of effects studio panel screenshot by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4792591003\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8752\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8752/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8752\">#8752</a></li> <li>Add WebCodecs bug for VideoEncoder flush/close error by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4785221920\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8743\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8743/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8743\">#8743</a></li> <li>Add WebCodecs bug for VideoFrame RGBX -> RGB copyTo() by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4775686023\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8736\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8736/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8736\">#8736</a></li> <li>Mark Chromium H.264 AUD key frame bug as fixed by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4775480166\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8735\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8735/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8735\">#8735</a></li> </ul> <h2>Internal</h2> <ul> <li><code>@remotion/promo-pages</code>: Fix docs stat layout by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/JonnyBurger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonnyBurger\">@JonnyBurger</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758020255\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8712\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8712/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8712\">#8712</a></li> <li><code>remotion-monorepo</code>: Forbid force pushing in PR skill by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4785796524\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8746\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8746/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8746\">#8746</a></li> <li><code>remotion-monorepo</code>: Add Zed tasks for monorepo build, watch, starting an example app by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4776140913\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8737\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8737/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8737\">#8737</a></li> <li><code>remotion-monorepo</code>: Fix Zed worktree setup hook by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4758813825\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8718\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8718/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8718\">#8718</a></li> <li>Improve <code>pr</code> skill boundaries by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samohovets/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samohovets\">@samohovets</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4768328957\" data-permission-text=\"Title is private\" data-url=\"https://github.com/remotion-dev/remotion/issues/8731\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/remotion-dev/remotion/pull/8731/hovercard\" href=\"https://github.com/remotion-dev/remotion/pull/8731\">#8731</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/remotion-dev/remotion/compare/v4.0.484...v4.0.485\"><tt>v4.0.484...v4.0.485</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Speechify's Simba 3.2 API takes the #1 spot on Artificial Analysis Speech Arena",
+      "url": "https://artificialanalysis.ai/text-to-speech/leaderboard/selected-voice",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T22:45:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "🗞️ CAIS and Scale (AI safety research group) say Fable 5 now automates 16.1% of real remote-work projects, about 2x Opus 4.8.",
+      "url": "https://www.rohan-paul.com/p/cais-and-scale-ai-safety-research",
+      "source": "Rohan Paul",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T22:39:34.000Z",
+      "summary": "Fable 5 automates remote work; Report on open LLMs; AI speedup illusion; Big Tech AI capex at 3.2% of US GDP; AI revenue scaling 3x faster; Cathie Wood on AI productivity; Hugging Face coding-agent",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Otari: your open-source LLM control plane",
+      "url": "https://github.com/mozilla-ai/otari",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-06T21:08:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

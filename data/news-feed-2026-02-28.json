@@ -1,9 +1,119 @@
 {
-  "generated": "2026-07-29T16:20:36.024Z",
+  "generated": "2026-08-26T03:02:31.540Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-28",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 7,
+  "archived_story_count": 142,
+  "articles": [
+    {
+      "title": "GitHub Releases · Remotion: v4.0.431",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.431",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T21:43:00.000Z",
+      "summary": "Fixes version mismatch warnings **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.430...v4.0.431",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.430",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.430",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T15:02:08.000Z",
+      "summary": "## What's Changed - `remotion`: Preserve component state during Fast Refresh by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6692 - `@remotion/bundler`: Move sequence stack trace proxy to bundler entry script by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6687 - `@remotion/cli`: Preserve `catalog:` entries during `remotion upgrade` by @samohovets in https://github.com/remotion-dev/remotion/pull/6685 - `@remotion/cli`: Migrate `timeout` and `force` CLI flags to option system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6717 - `@remotion/cli`: Migrate `--concurrencies` CLI flag to option system by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6720 - `@remotion/design`: Prevent Button from stretching to full width by @nielskaspers in https://github.com/remotion-dev/remotion/pull/6689 - `@remotion/media`: Pre-schedule audio nodes while premounting by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6718 - `",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Open source devs consider making hogs pay for every Git pull",
+      "url": "https://www.theregister.com/2026/02/28/open_source_opinion/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T14:22:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Gitcredits – movie-style end credits for any Git repo in your terminal",
+      "url": "https://github.com/Higangssh/gitcredits",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T12:45:28.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "MCP server that reduces Claude Code context consumption by 98%",
+      "url": "https://mksg.lu/blog/context-mode",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T10:01:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The United States and Israel have launched a major attack on Iran",
+      "url": "https://www.cnn.com/2026/02/28/middleeast/israel-attack-iran-intl-hnk",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T06:34:07.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Build your own Command Line with ANSI escape codes (2016)",
+      "url": "https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-28T03:48:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

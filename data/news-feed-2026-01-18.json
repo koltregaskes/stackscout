@@ -1,9 +1,149 @@
 {
-  "generated": "2026-07-29T16:20:35.516Z",
+  "generated": "2026-08-26T03:00:06.919Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-18",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 9,
+  "archived_story_count": 129,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.33.3",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.33.3",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T09:27:04.000Z",
+      "summary": "# Mini MCP Fix This patch reverts a change which caused MCPs to block the first interaction until loaded. No more! MCPs are back to async. Hope you're having a great weekend! 💘 ### Fixed * c0662f13c0a71c584f71aee9bdbe8a63f6dca457: fix: do not wait for MCP on interactive mode (@kujtimiihoxha) * e55706507ff00460f09cfabb8b15278ccc2ee8d0: fix: don't build native clipboard for ios (@aymanbagabas) --- Verifying the artifacts First, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.33.3/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.33.3/checksums.txt.sigstore.json) files, for example, with `wget`: ```bash wget 'https://github.com/charmbracelet/crush/releases/download/v0.33.3/checksums.txt' wget 'https://github.com/charmbracelet/crush/releases/download/v0.33.3/checksums.txt.sigstore.json' ``` Then, verify it using [`cosign`](https://github.com/sigstore/cosign): ```bash cosig",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Iconify: Library of Open Source Icons",
+      "url": "https://icon-sets.iconify.design/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T06:53:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Memdeklaro – The humanitarian open source alternative to government ID",
+      "url": "https://memdeklaro.computersforpeace.net",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T19:54:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Microslop: A Web Browser Extension",
+      "url": "https://github.com/4O4-wasd/Microslop",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T19:41:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Open-source certificate from GitHub activity",
+      "url": "https://certificate.brendonmatos.com",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T15:52:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A free and open-source rootkit for Linux",
+      "url": "https://lwn.net/SubscriberLink/1053099/19c2e8180aeb0438/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T09:36:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Command-line Tools can be 235x Faster than your Hadoop Cluster (2014)",
+      "url": "https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T08:58:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Figma-use – CLI to control Figma for AI agents",
+      "url": "https://github.com/dannote/figma-use",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T05:55:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Fish Shell",
+      "url": "https://fishshell.com/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-18T01:07:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

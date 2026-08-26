@@ -1,9 +1,249 @@
 {
-  "generated": "2026-07-29T16:20:35.920Z",
+  "generated": "2026-08-26T03:02:15.249Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-17",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 167,
+  "articles": [
+    {
+      "title": "GitHub Releases · ComfyUI: v0.14.1",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.1",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T20:31:49.000Z",
+      "summary": "## What's Changed * Fix anima LLM adapter forward when manual cast by @chaObserv in https://github.com/Comfy-Org/ComfyUI/pull/12504 * feat(api-nodes): add \"viduq3-turbo\" model support by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/12482 * feat(api-nodes): add Recraft V4 nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/12502 * Update workflow templates to v0.8.43 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/12507 **Full Changelog**: https://github.com/Comfy-Org/ComfyUI/compare/v0.14.0...v0.14.1",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.30",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.30.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T15:05:01.000Z",
+      "summary": "## Minor Changes * `pnpm why` now shows a reverse dependency tree. The searched package appears at the root with its dependents as branches, walking back to workspace roots. This replaces the previous forward-tree output which was noisy and hard to read for deeply nested dependencies. ## Patch Changes * Revert `pnpm why` dependency pruning to prefer correctness over memory consumption. Reverted PR: [#7122](https://github.com/pnpm/pnpm/pull/7122). * Optimize `pnpm why` and `pnpm list` performance in workspaces with many importers by sharing the dependency graph and materialization cache across all importers instead of rebuilding them independently for each one [#10596](https://github.com/pnpm/pnpm/pull/10596/changes). ## Platinum Sponsors ## Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 11 Alpha 5",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.0-alpha.5",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T13:55:11.000Z",
+      "summary": "## Major Changes ### Store * Runtime dependencies are always linked from the global virtual store [#10233](https://github.com/pnpm/pnpm/pull/10233). * Optimized index file format to store the hash algorithm once per file instead of repeating it for every file entry. Each file entry now stores only the hex digest instead of the full integrity string (` - `). Using hex format improves performance since file paths in the content-addressable store use hex representation, eliminating base64-to-hex conversion during path lookups. * Store version bumped to v11. * Switched internal store and cache files from JSON to MessagePack format for improved performance. This change migrates all internal index files and metadata cache files to use MessagePack serialization instead of JSON. MessagePack provides faster serialization/deserialization and more compact file sizes, resulting in improved installation performance. Related PR: [#10500](https://github.com/pnpm/pnpm/pull/10500) * Store the bundled m",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 11 Alpha.4",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.0-alpha.4",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T12:09:21.000Z",
+      "summary": "## Major Changes ### Store * Runtime dependencies are always linked from the global virtual store [#10233](https://github.com/pnpm/pnpm/pull/10233). * Optimized index file format to store the hash algorithm once per file instead of repeating it for every file entry. Each file entry now stores only the hex digest instead of the full integrity string (` - `). Using hex format improves performance since file paths in the content-addressable store use hex representation, eliminating base64-to-hex conversion during path lookups. * Store version bumped to v11. * Switched internal store and cache files from JSON to MessagePack format for improved performance. This change migrates all internal index files and metadata cache files to use MessagePack serialization instead of JSON. MessagePack provides faster serialization/deserialization and more compact file sizes, resulting in improved installation performance. Related PR: [#10500](https://github.com/pnpm/pnpm/pull/10500) * Store the bundled m",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · ComfyUI: v0.14.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.14.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T06:29:10.000Z",
+      "summary": "## What's Changed * mp: dont deep-clone objects from model_options by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12382 * sd: delay VAE dtype archive until after override by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12388 * dynamic_vram: ops: Fix vanilla-fp8 loaded lora quality by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12390 * Fix 3D models not showing in outputs window by @guill in https://github.com/Comfy-Org/ComfyUI/pull/12381 * Add a VideoSlice node by @AustinMroz in https://github.com/Comfy-Org/ComfyUI/pull/12107 * [Trainer] training with proper offloading by @KohakuBlueleaf in https://github.com/Comfy-Org/ComfyUI/pull/12189 * Make built in lora training work on anima. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/12402 * fix(api-nodes): retry on connection errors during polling instead of aborting by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/12393 * Dispatch desktop auto-bump when a ComfyUI release is publi",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cryptographic Issues in Matrix's Rust Library Vodozemac",
+      "url": "https://soatok.blog/2026/02/17/cryptographic-issues-in-matrixs-rust-library-vodozemac/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T23:49:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Forget MCP, Bash Is All You Need",
+      "url": "https://deadneurons.substack.com/p/forget-mcp-bash-is-all-you-need",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T20:56:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "BarraCUDA Open-source CUDA compiler targeting AMD GPUs",
+      "url": "https://github.com/Zaneham/BarraCUDA",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T20:35:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
+      "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T19:31:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A sitting US president launched two memecoins that wiped out $4.3B+",
+      "url": "https://twitter.com/MeshnetCapital/status/2023573563559547180",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T17:34:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
+      "url": "https://sonarly.com/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T17:03:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: I built a simulated AI containment terminal for my sci-fi novel",
+      "url": "https://vertex.flowlogix.ai",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T16:45:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.424",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.424",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T16:23:30.000Z",
+      "summary": "## What's Changed * `@remotion/studio`: Show render queue in read-only mode by @samohovets in https://github.com/remotion-dev/remotion/pull/6530 * `@remotion/media`: Don't rely on sample durations to determine real duration by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6532 * `@remotion/studio`: Show only encoding progress in web renderer by @samohovets in https://github.com/remotion-dev/remotion/pull/6533 * `@remotion/studio`: Show asset info when asset is selected in sidebar by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6536 * `@remotion/renderer`: Add \"bt601\" colorSpace option as an alias for \"default\" by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6542 * `@remotion/renderer`: Fix numberOfGifLoops being ignored on Lambda by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6547 * `@remotion/serverless`: Retry on socket hang up and ECONNRESET errors by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/654",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Sub-Millisecond RAG on Apple Silicon. No Server. No API. One File",
+      "url": "https://github.com/christopherkarani/Wax",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T15:43:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Data Studio – Open-Source Data Notebooks",
+      "url": "https://github.com/dataspren-analytics/data-studio",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-17T12:10:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,239 @@
 {
-  "generated": "2026-07-29T16:20:35.479Z",
+  "generated": "2026-08-26T03:00:04.588Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-14",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 203,
+  "articles": [
+    {
+      "title": "Show HN: A fast CLI and MCP server for managing Lambda cloud GPU instances",
+      "url": "https://github.com/Strand-AI/lambda-cli",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T19:45:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Webctl – Browser automation for agents based on CLI instead of MCP",
+      "url": "https://github.com/cosinusalpha/webctl",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T14:34:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Digg launches its new Reddit rival to the public",
+      "url": "https://techcrunch.com/2026/01/14/digg-launches-its-new-reddit-rival-to-the-public/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T21:44:19.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Technical Analysis of Starlink Terminal GPS Spoofing/Jamming Detection in Iran",
+      "url": "https://github.com/narimangharib/starlink-iran-gps-spoofing/blob/main/starlink-iran.md",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T18:23:17.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Eigent: An open source Claude Cowork alternative",
+      "url": "https://github.com/eigent-ai/eigent",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T17:23:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Grsh – A high-performance shell for FreeBSD written in Rust",
+      "url": "https://grimreaper.icu/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T17:19:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Google Gemini Introduces Personal Intelligence",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T16:26:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub should charge everyone $1 more per month to fund open source",
+      "url": "https://blog.greg.technology/2025/11/27/github-should-charge-1-dollar-more-per-month.html",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T16:25:07.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: YASP – Open-source, modern status page with full CMS control",
+      "url": "https://yasp.io",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T15:27:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "China announces record $1.2T trade surplus despite Trump tariffs",
+      "url": "https://www.bbc.com/news/articles/c9wx1v84rzyo",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T15:05:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Skillshare – Sync skills across AI CLI tools",
+      "url": "https://github.com/runkids/skillshare",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T15:03:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Nori CLI, a better interface for Claude Code (no flicker)",
+      "url": "https://github.com/tilework-tech/nori-cli",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T14:40:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Claude Cowork runs Linux VM via Apple virtualization framework",
+      "url": "https://gist.github.com/simonw/35732f187edbe4fbd0bf976d013f22c8",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T07:21:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: OpenWork – An open-source alternative to Claude Cowork",
+      "url": "https://github.com/different-ai/openwork",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T04:55:04.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Cachekit – High performance caching policies library in Rust",
+      "url": "https://github.com/OxidizeLabs/cachekit",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-14T02:28:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

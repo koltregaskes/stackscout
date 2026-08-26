@@ -1,9 +1,196 @@
 {
-  "generated": "2026-07-29T16:20:35.877Z",
+  "generated": "2026-08-26T03:02:11.673Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-13",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 12,
+  "archived_story_count": 142,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.43.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T18:09:42.000Z",
+      "summary": "# Faster Crush on big repos If you've been following our recent releases, you probably noticed we're frequently shipping performance improvements. We really want Crush to be light on CPU, memory and disk. For this release, our talented contributor @acmacalister did an incredible job on profiling and addressing a few performance bottlenecks for projects with many files (the so-called monorepos). This greatly reduces both CPU usage and disk access for these big projects. Enjoy! The Charm™ Team :sparkles: ## Changelog ### New! * 8ccb3c70918b2affbe0b0f96717e972313f2cd8f: feat(pills): add toggle todos/pills menu item (#2202) (@meowgorithm) ### Fixed * eae61e16b238063ee1d8c4a03ce396e011dd8d0e: fix(ui): completions offset for attachments row (#2208) (@caarlos0) * aa1ea496985d81e219a537271ca9ba993a3d0f0f: fix: add io.net api key validation fallback (@andreynering) ### Docs * 27548b6424ec062185ebbe2a435ba8fdda698d9f: docs(readme): mention io.net provider (@andreynering) ### Other stuff * db46f5",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.422",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.422",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T16:09:08.000Z",
+      "summary": "## What's Changed * Skills: Add voiceover skill using ElevenLabs TTS by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6487 * `@remotion/cli`: allow open-ended frame ranges in `--frames` by @samohovets in https://github.com/remotion-dev/remotion/pull/6497 * `@remotion/cli`: Loosen multiple lockfile rule, don't fail hard by @tiwariaayu in https://github.com/remotion-dev/remotion/pull/6482 * `@remotion/renderer`: Turn `numberOfSharedAudioTags` into an option by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6504 * `@remotion/lambda-client`: Handle empty Lambda response payload by @acj in https://github.com/remotion-dev/remotion/pull/6509 ## Experts * Add Pablito Silva as Remotion expert by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6518 ## Templates * Remotion on Vercel updates to docs and template by @anthonyshew in https://github.com/remotion-dev/remotion/pull/6506 ## Docs * Update GitHub stars from 35k to 36k by @zw008 in https://github",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Data Engineering Book – An open source, community-driven guide",
+      "url": "https://github.com/datascale-ai/data_engineering_book/blob/main/README_en.md",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T21:35:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The \"AI agent hit piece\" situation clarifies how dumb we are acting",
+      "url": "https://ardentperf.com/2026/02/13/the-scott-shambaugh-situation-clarifies-how-dumb-we-are-acting/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T19:41:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: GitHub \"Lines Viewed\" extension to keep you sane reviewing long AI PRs",
+      "url": "https://chromewebstore.google.com/detail/github-lines-viewed/npledcbofpmjjammgkkoeaehbphhdopi",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T19:19:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: I built a tool to un-dumb Claude Code's CLI output (Local Log Viewer)",
+      "url": "https://github.com/matt1398/claude-devtools",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T16:43:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "I ditched OpenClaw and built a more secure AI agent (Blink and Mac Mini)",
+      "url": "https://coder.com/blog/why-i-ditched-openclaw-and-built-a-more-secure-ai-agent-on-blink-mac-mini",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T16:00:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open source is not about you (2018)",
+      "url": "https://gist.github.com/richhickey/1563cddea1002958f96e7ba9519972d9",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T14:36:28.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Epstein Files: if you change the extension to .mp4 you can view the videos",
+      "url": "https://old.reddit.com/r/Epstein/comments/1r1dkrf/comment/o4orail/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T09:06:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Forge: Scalable Agent RL Framework and Algorithm",
+      "url": "https://www.minimax.io/news/forge-scalable-agent-rl-framework-and-algorithm",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T09:04:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Welcome to the Eternal September of open source. What we'll do for maintainers",
+      "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-13T06:57:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Retraction: After a routine code rejection, an AI agent published a hit piece on someone by name",
+      "url": "https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-02-13T19:40:21.000Z",
+      "summary": "This story has been retracted",
+      "category": "tech_general"
+    }
+  ]
 }

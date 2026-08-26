@@ -1,9 +1,253 @@
 {
-  "generated": "2026-07-29T16:20:37.042Z",
+  "generated": "2026-08-26T03:07:49.758Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-04-13",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 187,
+  "articles": [
+    {
+      "title": "hands on workshop: context engineering for multi agent systems [D]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1skf122/hands_on_workshop_context_engineering_for_multi/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "api_update",
+        "mcp",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T15:56:23.000Z",
+      "summary": "hey everyone, sharing this because it's directly relevant to what a lot of people here are building.\n\npackt publishing is running a hands on workshop on april 25 on context engineering for multi agent systems with denis rothman.\n\nwhat gets covered:\n\n\\- semantic blueprints for multi agent orchestration\n\n\\- MCP integration for standardized agent tool use\n\n\\- context window management across agents\n\n\\- high fidelity RAG pipelines with verifiable citations\n\n\\- safeguards against prompt injection and",
+      "category": "ai_research"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.9.7-canary.6",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.9.7-canary.6",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T22:42:24.000Z",
+      "summary": "## What's Changed ### Changelog * fix: Ignore `SIGINT` in shim after spawning local `turbo` by @anthonyshew in https://github.com/vercel/turborepo/pull/12612 **Full Changelog**: https://github.com/vercel/turborepo/compare/v2.9.7-canary.5...v2.9.7-canary.6",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GAIA – Open-source framework for building AI agents that run on local hardware",
+      "url": "https://amd-gaia.ai/docs",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T19:28:41.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.9.7-canary.5",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.9.7-canary.5",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T18:55:58.000Z",
+      "summary": "## What's Changed ### Changelog * test: Add stdin EOF startup regression coverage by @anthonyshew in https://github.com/vercel/turborepo/pull/12609 **Full Changelog**: https://github.com/vercel/turborepo/compare/v2.9.7-canary.4...v2.9.7-canary.5",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.9.7-canary.4",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.9.7-canary.4",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T17:20:50.000Z",
+      "summary": "## What's Changed ### Changelog * feat: Graceful shutdown by @anthonyshew in https://github.com/vercel/turborepo/pull/12607 **Full Changelog**: https://github.com/vercel/turborepo/compare/v2.9.7-canary.3...v2.9.7-canary.4",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Turbo: Turborepo v2.9.7-canary.3",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.9.7-canary.3",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T15:01:58.000Z",
+      "summary": "## What's Changed ### eslint * chore: Upgrade dependencies to resolve their known vulnerabilities by @anthonyshew in https://github.com/vercel/turborepo/pull/12604 **Full Changelog**: https://github.com/vercel/turborepo/compare/v2.9.7-canary.2...v2.9.7-canary.3",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gemini CLI v0.37.2 released",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.37.2",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.9199999999999999,
+      "date": "2026-04-13T20:19:57.000Z",
+      "summary": "## What's Changed\n* fix(patch): cherry-pick 9d741ab to release/v0.37.1-pr-24565 to patch version v0.37.1 and create version 0.37.2 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/25322\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.37.1...v0.37.2",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Kiro CLI 2.0",
+      "url": "https://kiro.dev/blog/cli-2-0/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T23:45:37.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Kimi K2.6-code-preview is now available",
+      "url": "https://www.kimi.com/code",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T21:02:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Building a CLI for all of Cloudflare",
+      "url": "https://blog.cloudflare.com/cf-cli-local-explorer/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T15:44:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TurboOCR: 270–1200 img/s OCR with Paddle + TensorRT (C++/CUDA, FP16) [P]",
+      "url": "https://reddit.com/r/MachineLearning/comments/1skd6s9/turboocr_2701200_imgs_ocr_with_paddle_tensorrt/",
+      "source": "Reddit r/MachineLearning",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T14:53:33.000Z",
+      "summary": "I had about 940,000 PDFs to process. Running VLMs over a million pages is slow and expensive, and that gap is only getting worse as OCR moves toward transformer and VLM-based approaches. They’re great for complex understanding, but throughput and cost can become a bottleneck at scale.\n\nPaddleOCR (the non VL version), in my opinion the best non-VLM open source OCR, only handled \\~15 img/s on my RTX 5090, which was still too slow. PaddleOCR-VL was crawling at 2 img/s with vLLM.\n\nPaddleOCR runs sin",
+      "category": "ai_research"
+    },
+    {
+      "title": "Servo is now available on crates.io",
+      "url": "https://servo.org/blog/2026/04/13/servo-0.1.0-release/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-04-13T12:12:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Qwen Code v0.14.4 released",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.4",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.84,
+      "date": "2026-04-13T14:26:26.000Z",
+      "summary": "## What's Changed\n* feat(cli): CJK word segmentation and Ctrl+arrow navigation optimization by @Apophis3158 in https://github.com/QwenLM/qwen-code/pull/2942\n* fix(vscode): force fresh ACP session on new-session action by @yiliang114 in https://github.com/QwenLM/qwen-code/pull/2874\n* feat: replace text input with model picker for Fast Model in /settings by @wenshao in https://github.com/QwenLM/qwen-code/pull/3120\n* feat: show description for active setting in /settings dialog by @wenshao in https",
+      "category": "ai_tools"
+    },
+    {
+      "title": "ReBot-DevArm: open-source Robotic Arm",
+      "url": "https://github.com/Seeed-Projects/reBot-DevArm",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-04-13T11:39:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Python Package Compiler:Package Matlab Programs for Deployment as Python Package",
+      "url": "https://www.mathworks.com/help/compiler_sdk/ml_code/pythonpackagecompiler-app.html",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-04-13T10:06:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

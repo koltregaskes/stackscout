@@ -1,9 +1,134 @@
 {
-  "generated": "2026-07-29T16:20:35.551Z",
+  "generated": "2026-08-26T03:00:07.245Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-19",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 157,
+  "articles": [
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.28.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.28.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T11:38:21.000Z",
+      "summary": "## Patch Changes * Fixed installation of config dependencies from private registries. Added support for object type in `configDependencies` when the tarball URL returned from package metadata differs from the computed URL [#10431](https://github.com/pnpm/pnpm/pull/10431). * Fix path traversal vulnerability in binary fetcher ZIP extraction * Validate ZIP entry paths before extraction to prevent writing files outside target directory * Validate BinaryResolution.prefix (basename) to prevent directory escape via crafted prefix * Both attack vectors now throw `ERR_PNPM_PATH_TRAVERSAL` error * Support plain `http://` and `https://` URLs ending with `.git` as git repository dependencies. Previously, URLs like `https://gitea.example.org/user/repo.git#commit` were not recognized as git repositories because they lacked the `git+` prefix (e.g., `git+https://`). This caused issues when installing dependencies from self-hosted git servers like Gitea or Forgejo that don't provide tarball downloads. ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "American Closed Source vs. Chinese Open Source: A False Dichotomy",
+      "url": "https://senteguard.com/blog/#post-h2V9GtUh5Xts9NTzH4zu",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T23:46:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Flux.2 Klein 4B (Apache 2.0)",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T21:54:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: A creative coding library for making art with desktop windows",
+      "url": "https://github.com/willmeyers/window-art",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T20:11:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: An interactive physics simulator with 1000’s of balls, in your terminal",
+      "url": "https://github.com/minimaxir/ballin",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T17:47:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A new open-source benchkit to create your own reproducible database benchmarks",
+      "url": "https://www.exasol.com/blog/reproducible-database-benchmarks-benchkit/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T14:09:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go",
+      "url": "https://github.com/elC0mpa/aws-doctor",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T04:35:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.20.1",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.20.1",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-19T02:13:30.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    }
+  ]
 }

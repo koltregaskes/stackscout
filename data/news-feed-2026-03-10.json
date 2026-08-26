@@ -1,9 +1,147 @@
 {
-  "generated": "2026-07-29T16:20:36.116Z",
+  "generated": "2026-08-26T03:04:05.636Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-10",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 9,
+  "archived_story_count": 194,
+  "articles": [
+    {
+      "title": "Appsflyer SDK Hijacked",
+      "url": "https://websdk.appsflyer.com/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T04:31:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A Special AMD Ryzen AM5 Motherboard for Linux / Open-Source Enthusiasts",
+      "url": "https://www.phoronix.com/review/msi-pro-b850p-wifi",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T23:14:49.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Television and computer use and dementia risk in older adults",
+      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.71259",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T22:51:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Cloudflare crawl endpoint",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T22:27:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "M5 Max MacBook Pro Review: Preeminent Power in the Same Old Shell",
+      "url": "https://gizmodo.com/m5-max-macbook-pro-review-preeminent-power-in-the-same-old-shell-2000731479",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T21:48:55.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TermF1: A terminal-style dashboard for Formula 1",
+      "url": "https://github.com/dk-a-dev/termf1",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T20:40:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "AEP (API Design Standard and Tooling Ecosystem)",
+      "url": "https://aep.dev/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T18:38:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: A modern React onboarding tour library",
+      "url": "https://github.com/btahir/react-tourlight",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T16:17:27.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "AI Agent hacked McKinsey's chatbot and gained full read-write access in 2 hours",
+      "url": "https://www.theregister.com/2026/03/09/mckinsey_ai_chatbot_hacked/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-10T14:49:44.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,153 @@
 {
-  "generated": "2026-07-29T16:20:35.854Z",
+  "generated": "2026-08-26T03:02:10.267Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-11",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 9,
+  "archived_story_count": 142,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.42.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.42.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T21:18:35.000Z",
+      "summary": "# GLM 5 + general fixes GLM 5 via z.AI is now available! ## Many small fixes Several small adjustments were made as well. Some of them: * We recently made an optimization to only start LSP servers when needed, but it caused some confusion for some users because they weren't being shown in the UI until started. We'll now show these servers in the UI as \"unstarted\". * Fixed cursor misplacement when file attachments were added to the prompt. * Addressed regression regarding the `disable_default_providers` setting. (This setting is for users only interested in using local models). * Changed key binding to open and close TODO to ctrl+t because ctrl+space don't work on all terminal emulators. * Fixed potential issue on running shell commands on Windows. * Some visual adjustments were made to the dialogs. ## Changelog ### New! * 5179b28efd13e48cb3419fede83958930a065682: feat(lsp): show user-configured LSPs in the UI (#2192) (@caarlos0) ### Fixed * 47ca98d0e29b0da47a6084bb0eaef132e1608369: fix",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Deadend CLI – Open-source self-hosted agentic pentest tooling",
+      "url": "https://github.com/xoxruns/deadend-cli",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T16:49:55.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.29.3",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.29.3",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T14:16:52.000Z",
+      "summary": "### Patch Changes * Fixed an out-of-memory error in `pnpm list` (and `pnpm why`) on large dependency graphs by replacing the recursive tree builder with a two-phase approach: a BFS dependency graph followed by cached tree materialization. Duplicate subtrees are now deduplicated in the output, shown as \"deduped (N deps hidden)\" [#10586](https://github.com/pnpm/pnpm/pull/10586). * Fixed `allowBuilds` not working when set via `.pnpmfile.cjs` [#10516](https://github.com/pnpm/pnpm/issues/10516). * When the [`enableGlobalVirtualStore`](https://pnpm.io/settings#enableglobalvirtualstore) option is set, the `pnpm deploy` command would incorrectly create symlinks to the global virtual store. To keep the deploy directory self-contained, `pnpm deploy` now ignores this setting and always creates a localized virtual store within the deploy directory. * Fixed `minimumReleaseAgeExclude` not being respected by `pnpm dlx` [#10338](https://github.com/pnpm/pnpm/issues/10338). ## Platinum Sponsors ## Gold ",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Send Claude Code tasks to the Batch API at 50% off",
+      "url": "https://github.com/s2-streamstore/claude-batch-toolkit",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T21:53:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Transforming a Clojure Database into a Library with GraalVM Native Image and FFI",
+      "url": "https://avelino.run/chrondb-polyglot-ffi-clojure-graalvm-native-image/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T21:03:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Y Combinator CEO Garry Tan launches dark-money group to influence CA politics",
+      "url": "https://missionlocal.org/2026/02/sf-garry-tan-california-politics-garrys-list/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T20:40:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Agent framework that generates its own topology and evolves at runtime",
+      "url": "https://github.com/adenhq/hive/blob/main/README.md",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T19:39:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Should your developer company go open source?",
+      "url": "https://extremefoundership.substack.com/p/should-your-developer-company-go",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T17:34:27.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Prisma: 7.4.0",
+      "url": "https://github.com/prisma/prisma/releases/tag/7.4.0",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-11T17:09:25.000Z",
+      "summary": "Today, we are excited to share the `7.4.0` stable release 🎉 **🌟 Star this repo for notifications about new releases, bug fixes & features — or [follow us on X](https://pris.ly/x)!** # Highlights ## ORM ### Caching in Prisma Client Today’s release is a big one, as we introduce a new caching layer into Prisma ORM. But why the need for a caching layer? In Prisma 7, the query compiler runs as a WebAssembly module directly on the JavaScript main thread. While this simplified the architecture by eliminating the separate engine process, it introduced a trade-off: every query now synchronously blocks the event loop during compilation. For individual queries, compilation takes between 0.1ms and 1ms, which is barely noticeable in isolation. But under high concurrency this overhead adds up and creates event loop contention that affects overall application throughput. For instance, say we have a query that is run over and over, but is a similar shape: ```tsx // These two queries have the same sh",
+      "category": "ai_tools"
+    }
+  ]
 }

@@ -1,0 +1,253 @@
+{
+  "generated": "2026-08-26T02:48:01.712Z",
+  "generatedBy": "Studio news backfill",
+  "site": "Stack Scout",
+  "date": "2026-08-16",
+  "article_count": 15,
+  "archived_story_count": 422,
+  "articles": [
+    {
+      "title": "Release v0.21.11-nightly.20260816.5677823abb",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.21.11-nightly.20260816.5677823abb",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-08-16T00:47:18.000Z",
+      "summary": "<h2>What's Changed</h2> <ul> <li>feat(autofix): deny-by-default footprint gate and positional window censuses by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5150569734\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9156\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9156/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9156\">#9156</a></li> <li>fix(web-shell): share at mention providers with split-view panes by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/samuelhsin/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/samuelhsin\">@samuelhsin</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5138093311\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9052\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9052/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9052\">#9052</a></li> <li>fix(ci): skip non-bot review_requested siblings before jobs spend compute by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yiliang114/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yiliang114\">@yiliang114</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5158044651\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9204\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9204/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9204\">#9204</a></li> <li>feat(review): absorb prose gh commands into platform-backed subcommands by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5141745589\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9096\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9096/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9096\">#9096</a></li> <li>feat: support fork from any conversation by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/water-in-stone/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/water-in-stone\">@water-in-stone</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5102548405\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/8817\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/8817/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/8817\">#8817</a></li> <li>fix(ci): minimize spam inline review comments by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yiliang114/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yiliang114\">@yiliang114</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5159624533\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9229\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9229/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9229\">#9229</a></li> <li>feat(web-shell): support text file attachments in the composer by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/doudouOUC/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/doudouOUC\">@doudouOUC</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5153552782\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9180\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9180/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9180\">#9180</a></li> <li>fix(ci): keep no-op review requests out of the PR review concurrency group by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5158322837\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9210\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9210/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9210\">#9210</a></li> <li>feat(review): adopt a round-aware convergence posture for posted findings by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5147867309\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9118\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9118/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9118\">#9118</a></li> <li>feat(autofix): escalate stopped takeover PRs and age out unanswered pauses by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5125678148\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/8960\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/8960/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/8960\">#8960</a></li> <li>fix(integration-tests): ack daemon tool-guard handshake in the mock ACP child (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5150744997\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9159\" data-hovercard-type=\"issue\" data-hovercard-url=\"/QwenLM/qwen-code/issues/9159/hovercard\" href=\"https://github.com/QwenLM/qwen-code/issues/9159\">#9159</a>) by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/qwen-code-dev-bot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/qwen-code-dev-bot\">@qwen-code-dev-bot</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5151052273\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9161\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9161/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9161\">#9161</a></li> <li>fix(sdk): raise daemon browser bundle budget to 191KB by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wenshao/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wenshao\">@wenshao</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5160458057\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9238\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9238/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9238\">#9238</a></li> <li>fix(review): note when --all-chunks fans out a plan whose numbers say 3A by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yiliang114/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yiliang114\">@yiliang114</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5160755245\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/9249\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/9249/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/9249\">#9249</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/QwenLM/qwen-code/compare/v0.21.12...v0.21.11-nightly.20260816.5677823abb\"><tt>v0.21.12...v0.21.11-nightly.20260816.5677823abb</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Ukrainian drone attack on Russia kills at least six, says Moscow",
+      "url": "https://www.theguardian.com/world/2026/aug/16/ukrainian-drone-attack-on-russia-wildberries-warehouse-fire",
+      "source": "The Guardian (World)",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 0.94,
+      "date": "2026-08-16T16:10:19.000Z",
+      "summary": "<p>Kyiv launches what may be its largest attack wave of war, with fire breaking out at warehouse near Russian capital</p><p>Ukraine has launched one of its largest drone attacks since the start of the war, causing a fire at a distribution warehouse near Moscow and killing at least six people overnight, according to Russian authorities.</p><p>The defence ministry in Moscow said it had shot down 1,478 Ukrainian drones in the past 24 hours – the highest ever total claimed – in an escalating air war in which seven Ukrainians were also killed as Russia bombed 13 locations inside the country.</p> <a href=\"https://www.theguardian.com/world/2026/aug/16/ukrainian-drone-attack-on-russia-wildberries-warehouse-fire\">Continue reading...</a>",
+      "category": "tech_general"
+    },
+    {
+      "title": "DSW EAS full E2E r3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/dsw-eas-full-20260816-r3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.94,
+      "date": "2026-08-16T02:35:37.000Z",
+      "summary": "<p>Benchmark-Qwen-Ref: v0.21.12</p> <p>Full end-to-end rerun after scoping the DSW package proxy to verifier dependency egress only: Release -> DSW SWE-bench Verified (500) -> Terminal-Bench 2.0 (89) -> same Release publication.</p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.56.0-nightly.20260816.g2a87e7be1",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.56.0-nightly.20260816.g2a87e7be1",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.9299999999999999,
+      "date": "2026-08-16T01:09:18.000Z",
+      "summary": "<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/google-gemini/gemini-cli/compare/v0.56.0-nightly.20260815.g2a87e7be1...v0.56.0-nightly.20260816.g2a87e7be1\"><tt>v0.56.0-nightly.20260815.g2a87e7be1...v0.56.0-nightly.20260816.g2a87e7be1</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Qwen Code: DSW EAS SWE-bench Verified + Terminal-Bench 2.0 full run",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/dsw-eas-full-20260816-r1",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.9,
+      "date": "2026-08-16T01:43:33.000Z",
+      "summary": "Benchmark-Qwen-Ref: v0.21.12 Full end-to-end validation: Release -> DSW SWE-bench Verified (500) -> Terminal-Bench 2.0 (89) -> same Release publication.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Brazil’s Lula launches historic fourth term bid – but son of jailed Bolsonaro stands in his way",
+      "url": "https://www.theguardian.com/world/2026/aug/16/lula-brazil-president-fourth-term-jair-flavio-bolsonaro",
+      "source": "The Guardian (World)",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 0.89,
+      "date": "2026-08-16T18:44:41.000Z",
+      "summary": "<p>President, 80, vows to keep far-right from power as Flávio Bolsonaro tells supporters he will ‘fight this system’</p><p>Brazil’s leftwing president, Luiz Inácio Lula da Silva, has launched his campaign for a historic fourth term and vowed that as long as he lived he would not allow the “shameless” right to return to power.</p><p>Addressing a sea of supporters in São Bernardo do Campo, the industrial city where his political career began nearly half a century ago, the 80-year-old politician reminded voters of the chaos and violence that unfolded during <a href=\"https://www.theguardian.com/world/2022/nov/04/jair-bolsonaro-brazil-election-unfloppable-lost\">the 2018-22 presidency of his far-right predecessor, Jair Bolsonaro</a>, whose son <a href=\"https://www.theguardian.com/world/2026/apr/03/flavio-is-surname-dropping-son-downplaying-bolsonaro-connection\">Flávio Bolsonaro will face Lula in October’s presidential election</a>.</p> <a href=\"https://www.theguardian.com/world/2026/aug/16/lula-brazil-president-fourth-term-jair-flavio-bolsonaro\">Continue reading...</a>",
+      "category": "tech_general"
+    },
+    {
+      "title": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
+      "source": "NPR News",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 0.85,
+      "date": "2026-08-16T10:12:09.000Z",
+      "summary": "Ukraine launched hundreds of drones across Russia Sunday, killing at least six people in one of Kyiv's largest aerial attacks of the war.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Flynt.js – 2.2kb, zero-build, CSP-safe reactivity library for MPAs",
+      "url": "https://github.com/marsbos/flynt.js",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-08-16T17:40:33.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: PageSieve, a web scraping browser extension",
+      "url": "https://julius383.github.io/PageSieve/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-08-16T13:45:27.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "California law would force companies to disclose toxic chemicals in disposable diapers",
+      "url": "https://www.theguardian.com/us-news/2026/aug/16/california-law-chemicals-diapers",
+      "source": "The Guardian (Society/Health)",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-08-16T11:00:25.000Z",
+      "summary": "<p>Legislation requiring disclosure of chemicals in diapers passed assembly and will go before state senate soon</p><p>New <a href=\"https://berman.asmdc.org/press-releases/20260310-berman-unveils-legislation-require-diaper-manufacturers-fully-disclose\">California legislation</a> would require manufacturers to disclose the “mystery cocktail” of toxic chemicals used in disposable diapers.</p><p>Diapers often contain among the most toxic substances – phthalates, lead, Pfas, quats, arsenic, a range of volatile organic compounds (VOCs) and “fragrance”, which can include any number of 1,200 compounds <a href=\"https://www.theguardian.com/us-news/2019/may/23/fragrance-perfume-personal-cleaning-products-health-issues\">thought to be</a> hazardous to human health.</p> <a href=\"https://www.theguardian.com/us-news/2026/aug/16/california-law-chemicals-diapers\">Continue reading...</a>",
+      "category": "health_research"
+    },
+    {
+      "title": "Show HN: PyScrappy, self-healing web scraping selectors plus an MCP server",
+      "url": "https://github.com/mldsveda/PyScrappy",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-08-16T07:46:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A Six-Step Framework for Auditing Enterprise AI Agents",
+      "url": "https://hackernoon.com/a-six-step-framework-for-auditing-enterprise-ai-agents?source=rss",
+      "source": "Flipboard AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.97,
+      "date": "2026-08-16T15:08:07.000Z",
+      "summary": "The pattern repeats across large companies. A year of enthusiasm produced agents everywhere. One team built an agent to summarize tickets. Another …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "21,000 MCP servers exposed: the protocol reaches a security inflection point",
+      "url": "https://forkast.news/the-model-context-protocol-reaches-a-security-inflection-point/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.93,
+      "date": "2026-08-16T04:07:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Turborepo v2.10.11-canary.4",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.11-canary.4",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.9,
+      "date": "2026-08-16T14:41:50.000Z",
+      "summary": "<h2>What's Changed</h2> <h3>Changelog</h3> <ul> <li>chore: Release Turborepo 2.10.11-canary.3 by @github-actions[bot] in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5156124740\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13749\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13749/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13749\">#13749</a></li> <li>fix: Isolate concurrent generator config bundles by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5156131670\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13750\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13750/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13750\">#13750</a></li> <li>chore: Forbid release-age exclusions in examples maintenance by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5157131589\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13751\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13751/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13751\">#13751</a></li> <li>fix: Respect gitignore without git metadata by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/anthonyshew/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/anthonyshew\">@anthonyshew</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5164410847\" data-permission-text=\"Title is private\" data-url=\"https://github.com/vercel/turborepo/issues/13756\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/vercel/turborepo/pull/13756/hovercard\" href=\"https://github.com/vercel/turborepo/pull/13756\">#13756</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/vercel/turborepo/compare/v2.10.11-canary.3...v2.10.11-canary.4\"><tt>v2.10.11-canary.3...v2.10.11-canary.4</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
+      "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News (World)",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.89,
+      "date": "2026-08-16T18:04:25.000Z",
+      "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
+      "category": "tech_general"
+    }
+  ]
+}

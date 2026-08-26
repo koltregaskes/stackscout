@@ -1,9 +1,119 @@
 {
-  "generated": "2026-07-29T16:20:35.593Z",
+  "generated": "2026-08-26T03:00:14.817Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-23",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 7,
+  "archived_story_count": 153,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.35.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.35.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T20:33:48.000Z",
+      "summary": "# Vercel AI Gateway and secret UI stuff This release adds support for Vercel's fancy AI Gateway as well as a boatload of improvements to the secret-not-secret UI refactor that we've cleverly hidden behind a flag. Details below. ## Hello Vercel AI Gateway If you're one of those so-called “production-grade AI” people then you might like to know that Crush now supports the [Vercel AI Gateway](https://vercel.com/docs/ai-gateway). Just pop in your API key (pro tip: use your boss’s key), choose your fave model, mash out a prompt and LET IT RIP. ## Shhhhh We're refactoring the UI for speed and code simplicity. It's not totally finished yet but, if you dare, set `CRUSH_NEW_UI=1` to try it out. Feedback welcome! ## You probably already know this but… …you rock. Thanks for all the Crush love. Your feedback for us is like ambrosia for Zeus. Enjoy your weekend! 💖 ## Changelog ### New! * 88d10d13367eb0722898196b78a422cf98b6c21e: feat(ui): add keybinding to copy chat message content to clipboard (#",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Winapp, the Windows App Development CLI",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T21:28:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.21.1",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.21.1",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T18:08:39.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Gamekit-CLI – Use Claude Code to quickly create games in Unity",
+      "url": "https://github.com/gamekit-agent/gamekit-cli",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T16:06:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "EloqKV: Achieving Predictable P99.99 Latency on NVMe with Redis API",
+      "url": "https://www.eloqdata.com/blog/2026/01/08/eloqkv-on-eloqstore",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T16:00:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Teemux – Zero-config log multiplexer with built-in MCP server",
+      "url": "https://teemux.com/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T15:49:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Is liberal democracy in terminal decline?",
+      "url": "https://www.ft.com/content/b4d2c7a3-587d-440f-a7a9-7e5e85b93a88",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-23T14:40:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

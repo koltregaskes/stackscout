@@ -1,9 +1,179 @@
 {
-  "generated": "2026-07-29T16:20:35.425Z",
+  "generated": "2026-08-26T03:00:02.061Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-09",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 11,
+  "archived_story_count": 153,
+  "articles": [
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.28",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.28.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T23:12:46.000Z",
+      "summary": "## Minor Changes * Add support for a hook called `beforePacking` that can be used to customize the `package.json` contents at publish time [#3816](https://github.com/pnpm/pnpm/issues/3816). * In some cases, a filtered install (i.e. `pnpm install --filter ...`) was slower than running `pnpm install` without any filter arguments. This performance regression is now fixed. Filtered installs should be as fast or faster than a full install [#10408](https://github.com/pnpm/pnpm/pull/10408). ## Patch Changes * Do not add a symlink to the project into the store's project registry if the store is in a subdirectory of the project [#10411](https://github.com/pnpm/pnpm/issues/10411). * It should be possible to declare the `requiredScripts` setting in `pnpm-workspace.yaml` [#10261](https://github.com/pnpm/pnpm/issues/10261). ## Platinum Sponsors ## Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Fly's Sprites.dev addresses dev environment sandboxes and API sandboxes together",
+      "url": "https://simonwillison.net/2026/Jan/9/sprites-dev/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T23:57:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenAI is allowing 3rd-party coding agents to use Codex API keys",
+      "url": "https://twitter.com/thdxr/status/2009742070471082006",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T22:01:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: EuConform – Offline-first EU AI Act compliance tool (open source)",
+      "url": "https://github.com/Hiepler/EuConform",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T19:11:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "How we made Python's packaging library 3x faster",
+      "url": "https://iscinumpy.dev/post/packaging-faster/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T18:53:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Kagi releases alpha version of Orion for Linux",
+      "url": "https://help.kagi.com/orion/misc/linux-status.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T12:54:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "MCP is a fad",
+      "url": "https://tombedor.dev/mcp-is-a-fad/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T10:27:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: A Wall Street Terminal for Everyone",
+      "url": "https://marketterminal.com/chart",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T07:38:49.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "European Commission issues call for evidence on open source",
+      "url": "https://lwn.net/Articles/1053107/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T07:09:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The No Fakes Act has a “fingerprinting” trap that kills open source?",
+      "url": "https://old.reddit.com/r/LocalLLaMA/comments/1q7qcux/the_no_fakes_act_has_a_fingerprinting_trap_that/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T05:01:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apple Watch blood sugar monitoring a step closer as new tech launches",
+      "url": "https://9to5mac.com/2026/01/08/apple-watch-blood-sugar-monitoring-a-step-closer-as-new-tech-launches/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-09T02:17:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

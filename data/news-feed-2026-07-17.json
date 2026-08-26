@@ -1,9 +1,243 @@
 {
-  "generated": "2026-07-29T16:20:38.045Z",
+  "generated": "2026-08-26T03:14:29.195Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-07-17",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 357,
+  "articles": [
+    {
+      "title": "pnpm 11.14",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.14.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T22:20:32.000Z",
+      "summary": "<h2>Minor Changes</h2> <ul> <li> <p><code>peerDependencies</code> now accept dependency specifiers that carry a scheme — a named-registry spec (<code><registry>:<version></code>), an <code>npm:</code> alias, or a <code>file:</code>/git/URL spec — instead of rejecting them with <code>ERR_PNPM_INVALID_PEER_DEPENDENCY_SPECIFICATION</code> <a href=\"https://github.com/pnpm/pnpm/issues/13095\" data-hovercard-type=\"issue\" data-hovercard-url=\"/pnpm/pnpm/issues/13095/hovercard\">#13095</a>. Such a peer is matched against the semver range carried by the specifier (<code>work:5.x.x</code> is checked as <code>5.x.x</code>, <code>npm:bar@^5</code> as <code>^5</code>), or against <code>*</code> when it carries no version, while the original specifier still selects the package to auto-install. Bare <code>name@version</code> values, which are almost always a mistake, are still rejected.</p> </li> <li> <p>Added <code>pnpm doctor</code>, which diagnoses the pnpm installation and the environment it runs in: the versions and install method, whether the global bin directory is on <code>PATH</code>, whether the store and cache are writable, which link strategies (reflink, hardlink, symlink) the store's filesystem supports, registry connectivity, and an offline <code>file:</code> install that exercises the resolve/store/link path end to end. Each check reports how to fix what it finds, and the command exits non-zero when any check fails.</p> <p>Use <code>--offline</code> to skip the checks that need network access, <code>--json</code> for machine-readable output, and <code>--benchmark</code> to time the filesystem and install checks.</p> </li> <li> <p>Added support for executing multiple scripts matching a RegExp passed to <code>pnpm run</code> (e.g., <code>pnpm run \"/^build:.*/\"</code>), running matched scripts in deterministic lexicographical order. Restored the <code>--sequential</code> (<code>-s</code>) CLI option for <code>pnpm run</code>, which forces <code>workspaceConcurrency</code> to 1 so that matched scripts run sequentially one by one across and within packages.</p> </li> </ul> <h2>Patch Changes</h2> <ul> <li> <p>Fixed <code>pnpm install</code> failing with <code>ERR_PNPM_LOCKFILE_IS_SYMLINK</code> when <code>pnpm-lock.yaml</code> is a symlink, as build sandboxes such as Bazel and Nix stage it <a href=\"https://github.com/pnpm/pnpm/issues/13073\" data-hovercard-type=\"issue\" data-hovercard-url=\"/pnpm/pnpm/issues/13073/hovercard\">#13073</a>. Reading a lockfile through a symlink is allowed again, and an install that leaves the lockfile unchanged no longer rewrites it, so <code>--frozen-lockfile</code> no longer needs to write at all. Writing a <em>changed</em> lockfile through a symlink is still refused, as that would redirect the write onto the symlink's target.</p> </li> <li> <p>Fixed frozen installs incorrectly treating equivalent Git dependency specifiers as a stale lockfile. See <a href=\"https://github.com/pnpm/pnpm/issues/13039\" data-hovercard-type=\"issue\" data-hovercard-url=\"/pnpm/pnpm/issues/13039/hovercard\">#13039</a>.</p> </li> <li> <p><code>pnpm owner ls</code> now reports authentication and authorization failures (401/403) as dedicated errors that include the registry's response body, matching <code>pnpm owner add</code>/<code>rm</code>, instead of a generic <code>Failed to fetch owners</code> message.</p> </li> <li> <p>Recover from a metadata cache entry that disappears (concurrent cache cleanup, antivirus) after the registry has already answered the conditional request with <code>304 Not Modified</code>. The metadata is re-requested once without cache validators instead of failing the install with <code>ERR_PNPM_CACHE_MISSING_AFTER_304</code>.</p> </li> <li> <p>A project pinned to a broken pnpm release via <code>packageManager</code> or <code>devEngines.packageManager</code> now reports which release is broken and what to do about it, instead of failing inside the installer. <code>pnpm self-update</code> already refused these releases; the version switch does too.</p> </li> <li> <p>Prevent broken-lockfile errors from including snippets of the lockfile's contents.</p> </li> <li> <p><code>pnpm self-update</code> now checks that the version it installed can run before making it the active pnpm. A release that installs but cannot execute is discarded with an error instead of replacing a working installation.</p> </li> <li> <p>Fixed an out-of-memory regression when workspace projects concurrently resolve a package with large registry metadata <a href=\"https://github.com/pnpm/pnpm/issues/13077\" data-hovercard-type=\"issue\" data-hovercard-url=\"/pnpm/pnpm/issues/13077/hovercard\">pnpm/pnpm#13077</a>.</p> </li> <li> <p>Fixed <code>pnpm update</code> rewriting exact version pins that use the <code>=</code> operator (for example <code>=3.5.1</code>) to a caret range (<code>^3.5.1</code>). Exact pins are now preserved and written back as the bare version. See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4777697282\" data-permission-text=\"Title is private\" data-url=\"https://github.com/pnpm/pnpm/issues/12745\" data-hovercard-type=\"issue\" data-hovercard-url=\"/pnpm/pnpm/issues/12745/hovercard\" href=\"https://github.com/pnpm/pnpm/issues/12745\">#12745</a>.</p> </li> </ul> <h2>Platinum Sponsors</h2> <table> <tbody> <tr> <td align=\"center\" valign=\"middle\"> <a href=\"https://bit.cloud/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"><img src=\"https://camo.githubusercontent.com/072bc23afbf6ef3a2ed9cb4f5f9649889b6f64f852baa3d4b6590e5f236ed74e/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6269742e737667\" width=\"80\" alt=\"Bit\" data-canonical-src=\"https://pnpm.io/img/users/bit.svg\" style=\"max-width: 100%;\"></a> </td> </tr> <tr> <td align=\"center\" valign=\"middle\"> <a href=\"https://openai.com/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/0fd41952c916479e29e7ecb4dde5500a220fbe82cc7b23b3a6806270c15f8f3a/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6f70656e61695f6461726b2e737667\" data-canonical-src=\"https://pnpm.io/img/users/openai_dark.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/6e2fe58934ad3a6cfe75c0ca31d7492d9bda5c9e08ddc4031c05d235d95cecef/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6f70656e61695f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/openai_light.svg\"> <img src=\"https://camo.githubusercontent.com/0fd41952c916479e29e7ecb4dde5500a220fbe82cc7b23b3a6806270c15f8f3a/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6f70656e61695f6461726b2e737667\" width=\"160\" alt=\"OpenAI\" data-canonical-src=\"https://pnpm.io/img/users/openai_dark.svg\"> </picture></themed-picture> </a> </td> </tr> </tbody> </table> <h2>Gold Sponsors</h2> <table> <tbody> <tr> <td align=\"center\" valign=\"middle\"> <a href=\"https://sanity.io/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/9bef226aac7cfa84846bd5d2808f72fd8072092e02c3d0d3ddcfbe4360a0583d/68747470733a2f2f706e706d2e696f2f696d672f75736572732f73616e6974792e737667\" data-canonical-src=\"https://pnpm.io/img/users/sanity.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/46987d8e6a581c84a03a7e46b7080f2a28fcf6f1095099da2dfd5c756e891ba8/68747470733a2f2f706e706d2e696f2f696d672f75736572732f73616e6974795f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/sanity_light.svg\"> <img src=\"https://camo.githubusercontent.com/9bef226aac7cfa84846bd5d2808f72fd8072092e02c3d0d3ddcfbe4360a0583d/68747470733a2f2f706e706d2e696f2f696d672f75736572732f73616e6974792e737667\" width=\"120\" alt=\"Sanity\" data-canonical-src=\"https://pnpm.io/img/users/sanity.svg\"> </picture></themed-picture> </a> </td> <td align=\"center\" valign=\"middle\"> <a href=\"https://discord.com/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/d51f7dcc7a3cfdd0c08e4ba8d6930cc431f26db50f2aae05a1092ba2e4d3e8c1/68747470733a2f2f706e706d2e696f2f696d672f75736572732f646973636f72642e737667\" data-canonical-src=\"https://pnpm.io/img/users/discord.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/9d2eeae1cff98a9f98637567f0a3249a72ebfeefce8447b9700143fc0b1c0c3b/68747470733a2f2f706e706d2e696f2f696d672f75736572732f646973636f72645f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/discord_light.svg\"> <img src=\"https://camo.githubusercontent.com/d51f7dcc7a3cfdd0c08e4ba8d6930cc431f26db50f2aae05a1092ba2e4d3e8c1/68747470733a2f2f706e706d2e696f2f696d672f75736572732f646973636f72642e737667\" width=\"220\" alt=\"Discord\" data-canonical-src=\"https://pnpm.io/img/users/discord.svg\"> </picture></themed-picture> </a> </td> <td align=\"center\" valign=\"middle\"> <a href=\"https://vite.dev/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"><img src=\"https://camo.githubusercontent.com/cffba5acb3d14c85b65ed731b08c7deec6dbcb87657ee81c8a7bf2b4fb0ccf30/68747470733a2f2f706e706d2e696f2f696d672f75736572732f766974656a732e737667\" width=\"42\" alt=\"Vite\" data-canonical-src=\"https://pnpm.io/img/users/vitejs.svg\" style=\"max-width: 100%;\"></a> </td> </tr> <tr> <td align=\"center\" valign=\"middle\"> <a href=\"https://serpapi.com/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/ea9344b74ee418556ad2c3f0134545a934388834389f43cfdf96f6112b69fa97/68747470733a2f2f706e706d2e696f2f696d672f75736572732f736572706170695f6461726b2e737667\" data-canonical-src=\"https://pnpm.io/img/users/serpapi_dark.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/11b2780179190cd0fb35eafd892e9787904329ce5623de812272f9ec4ccc79de/68747470733a2f2f706e706d2e696f2f696d672f75736572732f736572706170695f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/serpapi_light.svg\"> <img src=\"https://camo.githubusercontent.com/ea9344b74ee418556ad2c3f0134545a934388834389f43cfdf96f6112b69fa97/68747470733a2f2f706e706d2e696f2f696d672f75736572732f736572706170695f6461726b2e737667\" width=\"160\" alt=\"SerpApi\" data-canonical-src=\"https://pnpm.io/img/users/serpapi_dark.svg\"> </picture></themed-picture> </a> </td> <td align=\"center\" valign=\"middle\"> <a href=\"https://coderabbit.ai/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/2d522bfa28143c996d8fd85d99cce1c7237b5e014052304ada842f998773aa54/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636f64657261626269742e737667\" data-canonical-src=\"https://pnpm.io/img/users/coderabbit.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/6f429b63bc3064518fcf85b2536dbcd7298479b46cb44b7d0ecdf90daba99dc5/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636f64657261626269745f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/coderabbit_light.svg\"> <img src=\"https://camo.githubusercontent.com/2d522bfa28143c996d8fd85d99cce1c7237b5e014052304ada842f998773aa54/68747470733a2f2f706e706d2e696f2f696d672f75736572732f636f64657261626269742e737667\" width=\"220\" alt=\"CodeRabbit\" data-canonical-src=\"https://pnpm.io/img/users/coderabbit.svg\"> </picture></themed-picture> </a> </td> <td align=\"center\" valign=\"middle\"> <a href=\"https://stackblitz.com/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/3f4d6861b173326eaac7517a4f5c1da0eb5b5890785e2eb95142e8aaf53af044/68747470733a2f2f706e706d2e696f2f696d672f75736572732f737461636b626c69747a2e737667\" data-canonical-src=\"https://pnpm.io/img/users/stackblitz.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/428743e215c5ee9452e201ec53b10bb79d965e32975fc0df989ead951a23a2d3/68747470733a2f2f706e706d2e696f2f696d672f75736572732f737461636b626c69747a5f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/stackblitz_light.svg\"> <img src=\"https://camo.githubusercontent.com/3f4d6861b173326eaac7517a4f5c1da0eb5b5890785e2eb95142e8aaf53af044/68747470733a2f2f706e706d2e696f2f696d672f75736572732f737461636b626c69747a2e737667\" width=\"190\" alt=\"Stackblitz\" data-canonical-src=\"https://pnpm.io/img/users/stackblitz.svg\"> </picture></themed-picture> </a> </td> </tr> <tr> <td align=\"center\" valign=\"middle\"> <a href=\"https://workleap.com/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/f3116990f0ade6221abcc5663fe5e911d52eaac20a1c2c39c5449499d53a7725/68747470733a2f2f706e706d2e696f2f696d672f75736572732f776f726b6c6561702e737667\" data-canonical-src=\"https://pnpm.io/img/users/workleap.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/af1d4db86222999e0b4d02d12795d27cb251ef8402ed888b0b2feb0cbabf4a8a/68747470733a2f2f706e706d2e696f2f696d672f75736572732f776f726b6c6561705f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/workleap_light.svg\"> <img src=\"https://camo.githubusercontent.com/f3116990f0ade6221abcc5663fe5e911d52eaac20a1c2c39c5449499d53a7725/68747470733a2f2f706e706d2e696f2f696d672f75736572732f776f726b6c6561702e737667\" width=\"190\" alt=\"Workleap\" data-canonical-src=\"https://pnpm.io/img/users/workleap.svg\"> </picture></themed-picture> </a> </td> <td align=\"center\" valign=\"middle\"> <a href=\"https://nx.dev/?utm_source=pnpm&amp;utm_medium=release_notes\" rel=\"nofollow\"> <themed-picture data-catalyst-inline=\"true\"><picture> <source media=\"(prefers-color-scheme: light)\" srcset=\"https://camo.githubusercontent.com/8efd60d988e8850180483033dacc6b1e5f78b5a2349f183bca9ecdc7054fdbce/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6e782e737667\" data-canonical-src=\"https://pnpm.io/img/users/nx.svg\"> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://camo.githubusercontent.com/cf34ab073fc61e5e94b29d44af1cc7f2af908ba78cc300da23a9391fe084bbc4/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6e785f6c696768742e737667\" data-canonical-src=\"https://pnpm.io/img/users/nx_light.svg\"> <img src=\"https://camo.githubusercontent.com/8efd60d988e8850180483033dacc6b1e5f78b5a2349f183bca9ecdc7054fdbce/68747470733a2f2f706e706d2e696f2f696d672f75736572732f6e782e737667\" width=\"50\" alt=\"Nx\" data-canonical-src=\"https://pnpm.io/img/users/nx.svg\"> </picture></themed-picture> </a> </td> </tr> </tbody> </table>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.19.11-nightly.20260717.f8e6e8931",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.19.11-nightly.20260717.f8e6e8931",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T00:43:17.000Z",
+      "summary": "<h2>What's Changed</h2> <ul> <li>feat(daemon): Trace cold first-session startup by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/doudouOUC/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/doudouOUC\">@doudouOUC</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4885474123\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/6907\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/6907/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/6907\">#6907</a></li> <li>fix(serve): Harden multi-workspace ownership guards by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/doudouOUC/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/doudouOUC\">@doudouOUC</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4898571110\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/7005\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/7005/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/7005\">#7005</a></li> <li>docs(serve): Close multi-workspace hardening gaps by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/doudouOUC/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/doudouOUC\">@doudouOUC</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4899661706\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/7019\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/7019/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/7019\">#7019</a></li> <li>feat(web-shell): add archived session export by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/doudouOUC/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/doudouOUC\">@doudouOUC</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4885567367\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/6910\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/6910/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/6910\">#6910</a></li> <li>fix: bound usage-only streams and abort on quit by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yiliang114/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yiliang114\">@yiliang114</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4902591677\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/7038\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/7038/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/7038\">#7038</a></li> <li>fix(acp): disambiguate model routes by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yiliang114/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yiliang114\">@yiliang114</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4900843406\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QwenLM/qwen-code/issues/7028\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QwenLM/qwen-code/pull/7028/hovercard\" href=\"https://github.com/QwenLM/qwen-code/pull/7028\">#7028</a></li> </ul> <p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/QwenLM/qwen-code/compare/v0.19.11...v0.19.11-nightly.20260717.f8e6e8931\"><tt>v0.19.11...v0.19.11-nightly.20260717.f8e6e8931</tt></a></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs",
+      "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T22:55:09.000Z",
+      "summary": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12 Alpha 14",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.0.0-alpha.14",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T22:21:46.000Z",
+      "summary": "<p>chore(release): 11.14.0, pacquet 12.0.0-alpha.14 (<a class=\"issue-link js-issue-link\" href=\"https://github.com/pnpm/pnpm/pull/13113\">#13113</a>)</p> <p>Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com></p>",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Open Book Touch: open-source e-reader",
+      "url": "https://www.crowdsupply.com/oddly-specific-objects/open-book-touch",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T20:47:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Topcoat: The full full-stack framework for Rust",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T20:41:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The state of open source AI",
+      "url": "https://stateofopensource.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T14:31:10.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "PennyLane is an open-source quantum software platform for quantum",
+      "url": "https://github.com/PennyLaneAI/pennylane",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T13:30:47.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Why a Ukrainian cruise missile is flying with hobby drone hardware",
+      "url": "https://www.newscientist.com/article/2580002-why-a-ukrainian-cruise-missile-is-flying-with-hobby-drone-hardware/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+      "source": "New Scientist",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T10:00:00.000Z",
+      "summary": "An open-source flight-control system found in consumer drones has been installed in Ukraine’s latest cruise missile, showing how cheap technology is making military hardware accessible to all",
+      "category": "tech_general"
+    },
+    {
+      "title": "Belfort Releases Fastest Encrypted Image Classifer",
+      "url": "https://belfortlabs.com/blog/sofar",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T08:54:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "In-toto: A framework to secure the integrity of software supply chains",
+      "url": "https://in-toto.io/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T02:00:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T01:46:36.000Z",
+      "summary": "a great week for open models continues.",
+      "category": "ai_research"
+    },
+    {
+      "title": "Google Kills Custom Search API on Jan 1, 2027",
+      "url": "https://thenextgennexus.com/2026/05/14/google-kills-custom-search-api-on-jan-1-2027-you-have-9-months/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-07-17T01:03:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "‘No stuffy vibes … just good books’: Matt Haig to open bookshop in Brighton",
+      "url": "https://www.theguardian.com/books/2026/jul/17/matt-haig-bookshop-brighton",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.94,
+      "date": "2026-07-17T12:29:59.000Z",
+      "summary": "<p>‘My belief, as someone who grew up in a town without a bookshop, is that all communities should have one,’ says author of The Midnight Library</p><p>Matt Haig, the bestselling author of titles including <a href=\"https://www.theguardian.com/books/2020/aug/27/the-midnight-library-by-matt-haig-review-a-celebration-of-lifes-possibilities\">The Midnight Library</a> and <a href=\"https://www.theguardian.com/books/2016/jan/31/reasons-to-stay-alive-matt-haig-review-depression\">Reasons to Stay Alive</a>, is opening a bookshop in Brighton.</p><p>The writer plans to open the shop, called Golden, by Christmas. It is located in the Seven Dials neighbourhood, a part of the coastal city that doesn’t currently have a bookshop.</p> <a href=\"https://www.theguardian.com/books/2026/jul/17/matt-haig-bookshop-brighton\">Continue reading...</a>",
+      "category": "tech_general"
+    },
+    {
+      "title": "Introducing Gemini 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "source": "DeepMind Blog",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.8400000000000001,
+      "date": "2026-07-17T15:00:11.000Z",
+      "summary": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities.",
+      "category": "ai_research"
+    }
+  ]
 }

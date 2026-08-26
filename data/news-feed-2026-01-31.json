@@ -1,9 +1,130 @@
 {
-  "generated": "2026-07-29T16:20:35.714Z",
+  "generated": "2026-08-26T03:00:20.981Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-31",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 117,
+  "articles": [
+    {
+      "title": "Rewrote our Python API gateway in Go and nobody cares",
+      "url": "https://old.reddit.com/r/golang/comments/1qr9375/rewrote_our_python_api_gateway_in_go_and_now_its/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T23:03:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The mythical AI-agent month",
+      "url": "https://thetechenabler.substack.com/p/the-mythical-ai-agent-month",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T22:14:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Post-a-molt: Post to Moltbook directly using the public REST API",
+      "url": "https://github.com/shash42/post-a-molt",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T20:44:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Noctia: A sleek and minimal desktop shell thoughtfully crafted for Wayland",
+      "url": "https://github.com/noctalia-dev/noctalia-shell",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T19:58:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Minimal – Open-Source Community driven Hardened Container Images",
+      "url": "https://github.com/rtvkiz/minimal",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T19:58:00.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The Context Window Is Becoming a Virtual Machine",
+      "url": "https://conikeec.substack.com/p/the-context-window-is-becoming-a",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T18:26:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "htmx: Server Sent Event (SSE) Extension",
+      "url": "https://htmx.org/extensions/sse/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T10:30:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "We have ipinfo at home or how to geolocate IPs in your CLI using latency",
+      "url": "https://blog.globalping.io/we-have-ipinfo-at-home-or-how-to-geolocate-ips-in-your-cli-using-latency/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-31T09:30:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

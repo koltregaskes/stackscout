@@ -1,9 +1,177 @@
 {
-  "generated": "2026-07-29T16:20:35.972Z",
+  "generated": "2026-08-26T03:02:19.680Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-22",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 11,
+  "archived_story_count": 139,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.44.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.44.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T18:38:22.000Z",
+      "summary": "# Smallish Rendering Things You may have noticed we care about integrity in user interfaces a lot. That's what this small release is all about. ## Which skill? Skills are awesome, but currently a little mysterious in Crush, and we found ourselves asking whether a skill was loaded or the LLM was just improvising. Now it's super clear when skills are read in courtesy a little bit of visual flourish. ## Size Calcs We noticed some cases where a character or two would get clipped at certain widths, which was a little annoying. Now it's fixed. That's it for v0.44.0. See ya later! ✌️ ## Changelog ### New! * c1d294d161dbee0d1bd5061c3270050c980b8d98: feat(ui): indicate when skills are loaded (@meowgorithm) ### Fixed * 12a6372bee85e72b717aa407747395258ad40ee7: fix(ui): apply the message style to each line of the message items (@aymanbagabas) * e3376ad117f8cfd267fa8a94221662b45e58d44a: fix(ui): fix cases where compact header and footer bleed off screen (#2279) (@meowgorithm) ### Other stuff * d63",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Large US company came after me for releasing a free open-source alternative",
+      "url": "https://old.reddit.com/r/selfhosted/comments/1rbkx5e/large_us_company_came_after_me_for_releasing_a/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T23:32:19.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Symplex, an open-source protocol semantic negotiation between distributed agents",
+      "url": "https://github.com/olserra/symplex",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T19:20:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Building a (Bad) Local AI Coding Agent Harness from Scratch",
+      "url": "https://www.appsoftware.com/blog/building-a-bad-local-ai-coding-agent-harness-from-scratch",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T19:09:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Loops is a federated, open-source TikTok",
+      "url": "https://joinloops.org/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T18:56:40.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Fresh File Explorer – VS Code extension for navigating recent work",
+      "url": "https://github.com/FreHu/vscode-fresh-file-explorer",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T18:20:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: TLA+ Workbench skill for coding agents (compat. with Vercel skills CLI)",
+      "url": "https://github.com/younes-io/agent-skills/tree/main/skills/tlaplus-workbench",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T13:44:27.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Volatility: The volatile memory forensic extraction framework",
+      "url": "https://github.com/volatilityfoundation/volatility3",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T13:20:07.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Django-xbench – slow endpoint aggregation for Django",
+      "url": "https://github.com/yeongbin05/django-xbench",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T10:56:30.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Palantir's secret weapon isn't AI – it's Ontology. An open-source deep dive",
+      "url": "https://github.com/Leading-AI-IO/palantir-ontology-strategy",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T02:29:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apple researchers develop on-device AI agent that interacts with apps for you",
+      "url": "https://9to5mac.com/2026/02/20/apple-researchers-develop-on-device-ai-agent-that-interacts-with-apps-for-you/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-22T00:51:23.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

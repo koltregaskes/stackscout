@@ -1,9 +1,177 @@
 {
-  "generated": "2026-07-29T16:20:36.039Z",
+  "generated": "2026-08-26T03:03:49.580Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-02",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 11,
+  "archived_story_count": 176,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.46.2",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.46.2",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T20:22:39.000Z",
+      "summary": "# Tiny patch A very small patch to fix scroll not always following bottom when it should. Our favorite contributor @huaiyuWangh also continues to deliver good patches, this time a small fix for an edge-case on LSPs integration. Have a great week! Charm ✨ ## Changelog ### Fixed * 4596b02f5617c29fd7e8a3768c49be71fd68098b: fix(lsp): treat adjacent ranges as non-overlapping per LSP spec (#2322) (@huaiyuWangh) * 8762efc8fa0970883f807a5f564b5ef8b6042e4c: fix(ui): follow scroll when at bottom (#2336) (@aymanbagabas) --- Verifying the artifacts First, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.46.2/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.46.2/checksums.txt.sigstore.json) files, for example, with `wget`: ```bash wget 'https://github.com/charmbracelet/crush/releases/download/v0.46.2/checksums.txt' wget 'https://github.com/charmbracelet/crush/releases/download/v0.46",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Physicists developing a quantum computer that’s entirely open source",
+      "url": "https://physics.aps.org/articles/v19/24",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T23:22:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Pianoterm – Run shell commands from your Piano. A Linux CLI tool",
+      "url": "https://github.com/vustagc/pianoterm",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T20:50:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Xous security focused open source on 22nm custom silicon",
+      "url": "https://www.crowdsupply.com/sutajio-kosagi/precursor/updates/xous-0-10-0-introducing-baochip-1x-support",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T19:22:23.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Web Audio Studio – A Visual Debugger for Web Audio API Graphs",
+      "url": "https://webaudio.studio/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T11:47:44.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "RAG vs. Skill vs. MCP vs. RLM",
+      "url": "https://blog.alexewerlof.com/p/rag-vs-skill-vs-mcp-vs-rlm",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T10:49:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenPencil – AI-native design editor. Open-source Figma alternative",
+      "url": "https://github.com/open-pencil/open-pencil",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T09:44:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Omni – Open-source workplace search and chat, built on Postgres",
+      "url": "https://github.com/getomnico/omni",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T08:58:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Motorola announces a partnership with GrapheneOS",
+      "url": "https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T06:48:07.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Apple Launches The Iphone 17e 20260302 172638 7",
+      "url": "https://techpresso.co/archives/apple-launches-the-iphone-17e-20260302-172638-7",
+      "source": "Techpresso",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-02T00:00:00.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing Together AI’s new look",
+      "url": "https://www.together.ai/blog/introducing-together-ai-new-look",
+      "source": "Together AI Blog",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-02T00:00:00.000Z",
+      "summary": "We&#39;ve refreshed our visual identity — designed with Pentagram to express how Together AI connects open-source innovation, systems research, and builders to unlock new possibilities.",
+      "category": "ai_tools"
+    }
+  ]
 }

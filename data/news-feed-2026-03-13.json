@@ -1,9 +1,245 @@
 {
-  "generated": "2026-07-29T16:20:36.151Z",
+  "generated": "2026-08-26T03:04:11.815Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-13",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 166,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.49.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.49.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T21:13:57.000Z",
+      "summary": "# Friday patch Hope you had a great weekend! Here's a patch with some small fixes and improvements. ## No background Added new command on the command palette ( ctrl+p ) to toggle on/off the background color (a.k.a. enable \"transparent mode\"). This will be persisted. Screenshots ## Easier Bedrock If you use AWS Bedrock, you'll now be able to just paste your API key in the input as any other provider. Before, it was working only via environment setup (`AWS_BEARER_TOKEN_BEDROCK` env or `aws login`). ## Updated OpenAI SDK from v2 to v3 Note that this SDK is used not only for OpenAI, but for any provider that is OpenAI compatible. This might look like a technical detail, but it means we're covered with the latest bug fixes. A couple users confirmed this fixed some rare errors on some providers. ## `auto_background_after` @portertech contributed by adding a new `auto_background_after` param to the Bash tool. With this param, the model can ask Crush how many seconds it should wait before movi",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · ComfyUI: v0.17.1",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.17.1",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T19:58:49.000Z",
+      "summary": "**Full Changelog**: https://github.com/Comfy-Org/ComfyUI/compare/v0.17.0...v0.17.1",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · ComfyUI: v0.17.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.17.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T01:33:15.000Z",
+      "summary": "## What's Changed * refactor(assets): modular architecture + async two-phase scanner & background seeder by @luke-mino-altherr in https://github.com/Comfy-Org/ComfyUI/pull/12621 * comfy-aimdo 0.2.9 by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12840 * Import assets seeder later, print some package versions. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/12841 * Fix text encoder lora loading for wrapped models by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/12852 * Update workflow templates to v0.9.18 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/12857 * fix(manager): improve install guidance when comfyui-manager is not installed and bump manager version to v4.1b2 by @ltdrdata in https://github.com/Comfy-Org/ComfyUI/pull/12810 * Add a way for nodes to add pre attn patches to flux model. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/12861 * model_detection: deep clone pre edited weights by @rattus128 in https://github",
+      "category": "ai_tools"
+    },
+    {
+      "title": "\"Added 1M context window for Opus 4.6 by default for Max, Team, and Enterprise\"",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/CHANGELOG.md",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T23:38:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Simple plugin to get Claude Code to listen to you",
+      "url": "https://www.gopeek.ai",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T23:15:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "I found 39 Algolia admin keys exposed across open source documentation sites",
+      "url": "https://benzimmermann.dev/blog/algolia-docsearch-admin-keys",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T22:52:05.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Mouser: An open source alternative to Logi-Plus mouse software",
+      "url": "https://github.com/TomBadash/MouseControl",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T18:42:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "John Carmack about open source and anti-AI activists",
+      "url": "https://twitter.com/id_aa_carmack/status/2032460578669691171",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T17:51:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
+      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T16:27:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "TUI Studio – visual terminal UI design tool",
+      "url": "https://tui.studio/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T10:32:45.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Vite+ Alpha: Unified Toolchain for the Web (MIT License)",
+      "url": "https://voidzero.dev/posts/announcing-vite-plus-alpha",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T08:42:23.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Hyperlinks in terminal emulators",
+      "url": "https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-13T03:32:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "China’s OpenClaw Boom Is a Gold Rush for AI Companies",
+      "url": "https://www.wired.com/story/china-is-going-all-in-on-openclaw/",
+      "source": "Wired AI",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.9099999999999999,
+      "date": "2026-03-13T12:00:00.000Z",
+      "summary": "Hype around the open source agent is driving people to rent cloud servers and buy AI subscriptions just to try it, creating a windfall for tech companies.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Chrome extension adjusts video speed based on how fast the speaker is talking",
+      "url": "https://github.com/ywong137/speech-speed",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.78,
+      "date": "2026-03-13T06:18:17.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Droeftoeter, a Terminal Coding Toy",
+      "url": "https://github.com/whtspc/droeftoeter",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-03-13T04:16:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

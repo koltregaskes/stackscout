@@ -1,9 +1,55 @@
 {
-  "generated": "2026-07-29T16:20:35.625Z",
+  "generated": "2026-08-26T03:00:17.259Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-25",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 3,
+  "archived_story_count": 134,
+  "articles": [
+    {
+      "title": "Oneplus phone update introduces hardware anti-rollback",
+      "url": "https://consumerrights.wiki/w/Oneplus_phone_update_introduces_hardware_anti-rollback",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-25T20:39:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GNU C Library 2.43 released",
+      "url": "https://lwn.net/Articles/1055757/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-25T14:51:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "BookLore: A self-hosted, multi-user digital library",
+      "url": "https://github.com/booklore-app/booklore",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-25T03:20:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

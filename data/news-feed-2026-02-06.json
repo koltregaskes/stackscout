@@ -1,9 +1,237 @@
 {
-  "generated": "2026-07-29T16:20:35.804Z",
+  "generated": "2026-08-26T03:02:05.793Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-06",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 15,
+  "archived_story_count": 128,
+  "articles": [
+    {
+      "title": "Introducing the Developer Knowledge API and MCP Server",
+      "url": "https://developers.googleblog.com/introducing-the-developer-knowledge-api-and-mcp-server/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "mcp"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T23:58:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenCiv3: Open-source, cross-platform reimagining of Civilization III",
+      "url": "https://openciv3.org/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T21:51:23.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Maple Mono: open-source monospace font",
+      "url": "https://font.subf.dev/en/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T21:43:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Look Ma, No Linux: Shell, App Installer, Vi, Cc on ESP32-S3 / BreezyBox",
+      "url": "https://github.com/valdanylchuk/breezydemo",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T21:33:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Fun with Shell Emojis",
+      "url": "https://www.lasantha.org/blog/fun-with-shell-emojis/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T18:46:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.23.2",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.23.2",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T17:30:55.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "White House launches direct-to-consumer drug site TrumpRx",
+      "url": "https://www.cnbc.com/2026/02/05/trump-rx-white-house-launches-direct-to-consumer-drug-site.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T16:39:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Daily-updated database of malicious browser extensions",
+      "url": "https://github.com/toborrm9/malicious_extension_sentry",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T16:34:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "macOS No Longer Ships with Emacs",
+      "url": "https://batsov.com/articles/2025/01/12/macos-no-longer-ships-with-emacs/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T15:53:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Microsoft open-sources LiteBox, a security-focused library OS",
+      "url": "https://github.com/microsoft/litebox",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T15:13:04.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Switzerland's Extraordinary Medieval Library",
+      "url": "https://www.bbc.com/travel/article/20260202-inside-switzerlands-extraordinary-medieval-library",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T14:14:58.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Agent Arena – Test How Manipulation-Proof Your AI Agent Is",
+      "url": "https://wiz.jock.pl/experiments/agent-arena/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T12:12:18.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Goose: v1.23.1",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.23.1",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T05:36:48.000Z",
+      "summary": null,
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: Artifact Keeper – Open-Source Artifactory/Nexus Alternative in Rust",
+      "url": "https://github.com/artifact-keeper",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T04:12:59.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The End of the Beginning: Has US Dollar Decline Entered Its Terminal Phase?",
+      "url": "https://multipolaritypod.substack.com/p/the-end-of-the-beginning-has-us-dollar",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-06T02:01:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

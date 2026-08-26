@@ -1,9 +1,228 @@
 {
-  "generated": "2026-07-29T16:20:35.456Z",
+  "generated": "2026-08-26T03:00:03.721Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-12",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 14,
+  "archived_story_count": 162,
+  "articles": [
+    {
+      "title": "GitHub Releases · Remotion: v4.0.405",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.405",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T18:58:14.000Z",
+      "summary": "## What's Changed * `@remotion/mcp`: Remove outputSchema registerTool (Fixes `-32602` error) by @pskd73 in https://github.com/remotion-dev/remotion/pull/6277 * `@remotion/renderer`: Force quit compositor when render fails by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6278 * `@remotion/web-renderer`: fix `onProgress` being called after render is finished by @samohovets in https://github.com/remotion-dev/remotion/pull/6280 **Full Changelog**: https://github.com/remotion-dev/remotion/compare/v4.0.404...v4.0.405",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Crush: v0.32.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.32.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T18:41:43.000Z",
+      "summary": "# Optimizations and More Our most ripped dev @caarlos0 ripped more than his abs in today’s release. Thanks to him, Crush now uses less memory and has faster startup and shutdown times across the board. If you only use Crush because of local models, you might be interested in the contribution from @jonhoo who added a `disable_default_providers` setting to disable all default providers. Note that `CRUSH_DISABLE_DEFAULT_PROVIDERS=1` has been around for a bit and will also work. See you on the internet! 🌐 ## Changelog ### New! * 163abdc1c4903bebbe19643e73f0335740ec7c6d: feat: add `disable_default_providers` option (#1675) (@jonhoo) * 617f9e28f634089fed552cc28a987851f23c48e0: feat: allow to send the prompt if its empty but has text attachments (#1806) (@caarlos0) * 467418d5346b5c253dc141ef44d60ca3e1f1f6f8: feat: open editor in the right position (#1804) (@caarlos0) ### Fixed * df6f51492ef104be308f77066442bb5eded86261: fix(sqlite): busy timeout (#1815) (@caarlos0) * 2350f7ea30658e7fe0240b90",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Open-Meteo is a free and open-source weather API for non-commercial use",
+      "url": "https://open-meteo.com/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T15:36:43.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Republican introduces bill seeking to make Greenland 51st state",
+      "url": "https://thehill.com/homenews/house/5685118-fine-introduces-greenland-bill/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T22:56:48.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Trump announces 25% tariff on countries 'doing business' with Iran",
+      "url": "https://www.ft.com/content/c266f78d-1b53-4aa5-99ff-1726a5126a23",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T22:12:33.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: TraceMem – A trace-native memory layer for AI agent decisions",
+      "url": "https://www.tracemem.com/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T21:11:42.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Framework: Memory and Storage Pricing Updates",
+      "url": "https://frame.work/at/en/blog/in-stock-on-framework-desktop-and-updates-on-the-industry-wide-silicon-crunch",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T16:46:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Ask HN: How do you automate your release notes?",
+      "url": "https://news.ycombinator.com/item?id=46590623",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T16:25:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Geoguess Lite – open-source, subscription free GeoGuessr alternative",
+      "url": "https://geoguesslite.com",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T14:42:33.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Zorgdomein Integration: A Guide to Secure .NET and Azure Architecture",
+      "url": "https://plakhlani.in/healthcare/bidirectional-patient-data-exchange-with-zorgdomein/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T13:58:23.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Stop using MySQL in 2026, it is not true open source",
+      "url": "https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T13:14:51.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Launch a Debugging Terminal into GitHub Actions",
+      "url": "https://blog.gripdev.xyz/2026/01/10/actions-terminal-on-failure-for-debugging/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T12:25:27.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Remotion: v4.0.404",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.404",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T08:57:44.000Z",
+      "summary": "## What's Changed * `@remotion/media`: Fix \"Cannot read properties of undefined (reading 'getOpenFrameCount') by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6266 * `@remotion/media`: onError prop, move to ESM and TypeScript Go by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6265 * `@remotion/studio`: Show validity of license key in client-side rendering modal by @pskd73 in https://github.com/remotion-dev/remotion/pull/6255 * `@remotion/web-renderer`: make `renderMediaOnWeb` keep rendering if the tab is in the background by @samohovets in https://github.com/remotion-dev/remotion/pull/6268 * `@remotion/licensing`: add retry with exponential backoff for `registerUsageEvent` by @samohovets in https://github.com/remotion-dev/remotion/pull/6273 * `@remotion/web-renderer`: Correct way of transforming 3d by @JonnyBurger in https://github.com/remotion-dev/remotion/pull/6263 ## Experts * Add Amir Tadrisi by @amirtds in https://github.com/remotion-dev/remotion/p",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The Emacs Widget Library: A Critique and Case Study",
+      "url": "https://www.d12frosted.io/posts/2025-11-26-emacs-widget-library",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-12T06:37:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,181 @@
 {
-  "generated": "2026-07-29T16:20:36.104Z",
+  "generated": "2026-08-26T03:04:04.403Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-09",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 11,
+  "archived_story_count": 165,
+  "articles": [
+    {
+      "title": "Show HN: Mcp2cli – One CLI for every API, 96-99% fewer tokens than native MCP",
+      "url": "https://github.com/knowsuchagency/mcp2cli",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T05:18:46.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.32",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.32.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T21:51:33.000Z",
+      "summary": "## Minor Changes * Added `--all` flag to `pnpm approve-builds` that approves all pending builds without interactive prompts [#10136](https://github.com/pnpm/pnpm/issues/10136). ## Patch Changes * Reverted change related to setting explicitly the npm config file path, which caused regressions. * Reverted fix related to `lockfile-include-tarball-url`. Fixes [#10915](https://github.com/pnpm/pnpm/issues/10915). ## Platinum Sponsors ## Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Open Weights isn't Open Training",
+      "url": "https://www.workshoplabs.ai/blog/open-weights-open-training",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T23:37:08.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Kettle, open source tooling for TEE-attested builds",
+      "url": "https://github.com/lunal-dev/kettle",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T22:40:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+      "url": "https://news.ycombinator.com/item?id=47311657",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T16:53:52.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "The purpose of continuous integration is to fail",
+      "url": "https://blog.nix-ci.com/post/2026-02-05_the-purpose-of-ci-is-to-fail",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T16:52:50.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "JSLinux Now Supports x86_64",
+      "url": "https://bellard.org/jslinux/",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T16:43:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Jetbrains: Air Launches as Public Preview – A New Wave of Dev Tooling",
+      "url": "https://blog.jetbrains.com/air/2026/03/air-launches-as-public-preview-a-new-wave-of-dev-tooling-built-on-26-years-of-experience/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T15:05:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "SQLite: Query Result Formatting in the CLI",
+      "url": "https://www.sqlite.org/climode.html",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T09:06:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T06:28:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: XLA-based array computing framework for R",
+      "url": "https://github.com/r-xla/anvil",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-09T06:04:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

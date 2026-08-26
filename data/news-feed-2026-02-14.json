@@ -1,9 +1,130 @@
 {
-  "generated": "2026-07-29T16:20:35.887Z",
+  "generated": "2026-08-26T03:02:13.087Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-14",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 108,
+  "articles": [
+    {
+      "title": "Show HN: Nerve: Stitches all your data sources into one mega-API",
+      "url": "https://playground.get-nerve.com/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T23:07:41.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "AI Agent Lands PRs in Major OSS Projects, Targets Maintainers via Cold Outreach",
+      "url": "https://socket.dev/blog/ai-agent-lands-prs-in-major-oss-projects-targets-maintainers-via-cold-outreach",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T18:48:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A header-only C vector database library",
+      "url": "https://github.com/abdimoallim/vdb",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T17:45:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Lessons from the Moltbook Protocol (Agent-Oriented API Design Patterns)",
+      "url": "https://apidog.com/blog/agent-oriented-api-design-patterns-lessons-from-the-moltbook-protocol/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T13:36:10.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Windows: Prefer the Native API over Win32",
+      "url": "https://codeberg.org/ziglang/zig/issues/31131",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T10:15:24.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "NPMX – a fast, modern browser for the NPM registry",
+      "url": "https://npmx.dev",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T02:14:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: ClipPath – Paste screenshots as file paths in your terminal",
+      "url": "https://github.com/BiteCraft/ClipPath",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T01:08:31.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "An AI agent published a hit piece on me – more things have happened",
+      "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-14T00:37:53.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

@@ -1,9 +1,140 @@
 {
-  "generated": "2026-07-29T16:20:36.084Z",
+  "generated": "2026-08-26T03:04:00.625Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-07",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 138,
+  "articles": [
+    {
+      "title": "GitHub Releases · pnpm: pnpm 10.31",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.31.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T23:44:24.000Z",
+      "summary": "## Minor Changes * When pnpm updates the `pnpm-workspace.yaml`, comments, string formatting, and whitespace will be preserved. ## Patch Changes * Added `-F` as a short alias for the `--filter` option in the help output. * Handle undefined pkgSnapshot in `pnpm why -r` [#10700](https://github.com/pnpm/pnpm/issues/10700). * Fix headless install not being used when a project has an injected self-referencing `file:` dependency that resolves to `link:` in the lockfile. * Fixed a race condition when multiple worker threads import the same package to the global virtual store concurrently. The rename operation now tolerates `ENOTEMPTY`/`EEXIST` errors if another thread already completed the import. * When `lockfile-include-tarball-url` is set to `false`, tarball URLs are now always excluded from the lockfile. Previously, tarball URLs could still appear for packages hosted under non-standard URLs, making the behavior flaky and inconsistent [#6667](https://github.com/pnpm/pnpm/issues/6667). * Fix",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · pnpm: pnpm 11 Alpha 13",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.0-alpha.13",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T13:32:58.000Z",
+      "summary": "## Major Changes ### Store * Runtime dependencies are always linked from the global virtual store [#10233](https://github.com/pnpm/pnpm/pull/10233). * Optimized index file format to store the hash algorithm once per file instead of repeating it for every file entry. Each file entry now stores only the hex digest instead of the full integrity string (` - `). Using hex format improves performance since file paths in the content-addressable store use hex representation, eliminating base64-to-hex conversion during path lookups. * Store version bumped to v11. * Store the bundled manifest (name, version, bin, engines, scripts, etc.) directly in the package index file, eliminating the need to read `package.json` from the content-addressable store during resolution and installation. This reduces I/O and speeds up repeat installs [#10473](https://github.com/pnpm/pnpm/pull/10473). * Use SQLite for storing package index in the content-addressable store. Instead of individual JSON files under `$ST",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · ComfyUI: v0.16.4",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.4",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T22:37:49.000Z",
+      "summary": "## What's Changed * feat: add Math Expression node with simpleeval evaluation by @dante01yoon in https://github.com/Comfy-Org/ComfyUI/pull/12687 * feat(api-nodes): add TencentSmartTopology node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/12741 * feat(api-nodes): add Gemini 3.1 Flash-Lite model to LLM node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/12803 * Fix fp16 audio encoder models by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12811 * Don't run TE on cpu when dynamic vram enabled. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/12815 * Fix requirements version. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/12817 * Update workflow templates to v0.9.11 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/12821 * mm: reset_cast_buffers: sync compute stream before free by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/12822 ## New Contributors * @dante01yoon made their first contribution in htt",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: OculOS – Any desktop app as a JSON API via OS accessibility tree",
+      "url": "https://github.com/huseyinstif/oculos",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T08:13:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Sarvam 105B, the first competitive Indian open source LLM",
+      "url": "https://www.sarvam.ai/blogs/sarvam-30b-105b",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T07:43:57.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Ships in Gulf declare themselves Chinese to dodge attack",
+      "url": "https://www.ft.com/content/eaecc3ce-ba4e-4e19-9d0a-6cf1536a5aed",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T05:27:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "UUID package coming to Go standard library",
+      "url": "https://github.com/golang/go/issues/62026",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T02:03:21.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "BYD unveils Blade Battery 2.0: 10-70% in 5 mins, 10-97% in 9 mins",
+      "url": "https://carnewschina.com/2026/03/05/byd-unveils-blade-battery-2-0-10-70-in-5-mins-10-97-in-9-mins-and-20000-flash-charging-stations-in-2026/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-03-07T01:51:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

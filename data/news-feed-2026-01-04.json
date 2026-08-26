@@ -1,9 +1,132 @@
 {
-  "generated": "2026-07-29T16:20:35.377Z",
+  "generated": "2026-08-26T02:59:58.929Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-04",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 142,
+  "articles": [
+    {
+      "title": "GitHub Releases · Crush: v0.30.2",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.30.2",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T02:09:17.000Z",
+      "summary": "# Quick ’Lil Patch This is a tiny patch release to fix a nil pointer issue in the last release, as reported by @umairimtiaz9. Thanks, Umair! 💘 ## Changelog ### Fixed * b618a5bc98367c6011f6ed2a2d85d1faa90ad500: fix(sessions): nil pointer dereference (#1759) (@meowgorithm) --- Verifying the artifacts First, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.30.2/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.30.2/checksums.txt.sigstore.json) files, for example, with `wget`: ```bash wget 'https://github.com/charmbracelet/crush/releases/download/v0.30.2/checksums.txt' wget 'https://github.com/charmbracelet/crush/releases/download/v0.30.2/checksums.txt.sigstore.json' ``` Then, verify it using [`cosign`](https://github.com/sigstore/cosign): ```bash cosign verify-blob \\ --certificate-identity 'https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/m",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Mayor Mamdani Announces Complete Redesign on McGuinness Boulevard",
+      "url": "https://www.nyc.gov/mayors-office/news/2026/01/mayor-mamdani-announces-city-to-complete-redesign-on-mcguinness-",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T21:33:15.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Terminal UI for AWS",
+      "url": "https://github.com/huseyinbabal/taws",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T20:17:22.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Rails-like web framework for Go",
+      "url": "https://github.com/mbvlabs/andurel",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T12:01:35.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Corundum – open-source FPGA-based NIC and platform for in-network compute",
+      "url": "https://github.com/corundum/corundum",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T05:04:29.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Beijing Unveils Supercritical CO2 Turbine That Could Upend Power Tech",
+      "url": "https://oilprice.com/Energy/Energy-General/Beijing-Unveils-Supercritical-CO2-Turbine-That-Could-Upend-Power-Tech.html",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T02:59:06.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Developing a BLAS Library for the AMD AI Engine [pdf]",
+      "url": "https://uni.tlaan.nl/thesis/msc_thesis_tristan_laan_aieblas.pdf",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T01:26:39.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Comet MCP – Give Claude Code a browser that can click",
+      "url": "https://github.com/hanzili/comet-mcp",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-01-04T00:48:38.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

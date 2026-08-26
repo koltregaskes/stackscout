@@ -1,9 +1,132 @@
 {
-  "generated": "2026-07-29T16:20:36.162Z",
+  "generated": "2026-08-26T03:04:14.832Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-03-14",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 8,
+  "archived_story_count": 124,
+  "articles": [
+    {
+      "title": "Show HN: AgentArmor – open-source 8-layer security framework for AI agents",
+      "url": "https://github.com/Agastya910/agentarmor",
+      "source": "Hacker News",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T09:44:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Library of Short Stories",
+      "url": "https://www.libraryofshortstories.com/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T20:16:19.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "MCP is dead; long live MCP",
+      "url": "https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T19:32:13.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: KeyID – Free email and phone infrastructure for AI agents (MCP)",
+      "url": "https://keyid.ai/",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T16:23:20.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: GitAgent – An open standard that turns any Git repo into an AI agent",
+      "url": "https://www.gitagent.sh/",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T13:41:25.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Gigabyte MZ33-AR1: A Unique AMD EPYC 9005 Motherboard for Open-Source Firmware",
+      "url": "https://www.phoronix.com/review/gigabyte-mz33-ar1",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-03-14T11:40:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Framework doesn't matter",
+      "url": "https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7599999999999999,
+      "date": "2026-03-14T22:14:26.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Hacker News archive (47M+ items, 11.6GB) as Parquet, updated every 5m",
+      "url": "https://huggingface.co/datasets/open-index/hacker-news",
+      "source": "Hacker News",
+      "tags": [
+        "tool_update"
+      ],
+      "matching_tags": [
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-03-14T17:12:03.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

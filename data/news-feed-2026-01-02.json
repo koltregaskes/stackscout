@@ -1,9 +1,115 @@
 {
-  "generated": "2026-07-29T16:20:35.309Z",
+  "generated": "2026-08-26T02:59:57.354Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-01-02",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 7,
+  "archived_story_count": 155,
+  "articles": [
+    {
+      "title": "Show HN: Open-source AI workflows with read-only auth scopes",
+      "url": "https://github.com/seer-engg/seer",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T22:16:12.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Fluxer – open-source Discord-like chat",
+      "url": "https://fluxer.app",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T20:00:56.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Unix v4 (1973) – Live Terminal",
+      "url": "https://unixv4.dev/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T19:18:36.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Florida county introduces self driving patrol cars",
+      "url": "https://www.cbsnews.com/video/florida-police-department-tests-nations-first-self-driving-patrol-car/",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T17:06:01.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Punkt. Unveils MC03 Smartphone",
+      "url": "https://www.punkt.ch/blogs/news/punkt-unveils-mc03",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T16:23:34.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "A terminal-based browser with Sixel graphics",
+      "url": "https://codeberg.org/janantos/brow6el",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T09:09:11.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Ask HN: How do I help a colleague who introduces a lot of typos?",
+      "url": "https://news.ycombinator.com/item?id=46462531",
+      "source": "Hacker News",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-01-02T08:05:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }

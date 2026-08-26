@@ -1,9 +1,160 @@
 {
-  "generated": "2026-07-29T16:20:35.823Z",
+  "generated": "2026-08-26T03:02:06.854Z",
   "generatedBy": "Studio news backfill",
   "site": "Stack Scout",
   "date": "2026-02-08",
-  "article_count": 0,
-  "archived_story_count": 0,
-  "articles": []
+  "article_count": 10,
+  "archived_story_count": 142,
+  "articles": [
+    {
+      "title": "Show HN: Poisson – Chrome extension that buries your browsing in decoy traffic",
+      "url": "https://github.com/Daring-Designs/poisson-extension",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T22:37:54.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Intel Recently Shelved Numerous Open-Source Projects",
+      "url": "https://www.phoronix.com/news/Intel-OSS-Projects-Ended-2025",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T20:02:02.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Curated list of 1000 open source alternatives to proprietary software",
+      "url": "https://opensrc.me",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T12:14:44.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Show HN: Elysia JIT \"Compiler\", why it's one of the fastest JavaScript framework",
+      "url": "https://elysiajs.com/internal/jit-compiler",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T10:22:30.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Matchlock – Secures AI agent workloads with a Linux-based sandbox",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T08:07:55.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "DoNotNotify is now Open Source",
+      "url": "https://donotnotify.com/opensource.html",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T07:39:49.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "GitHub Releases · Redis: 8.4.1",
+      "url": "https://github.com/redis/redis/releases/tag/8.4.1",
+      "source": "GitHub Releases · Redis",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T07:28:57.000Z",
+      "summary": "Update urgency: `SECURITY`: There are security fixes in the release. ### Security fixes - RedisTimeSeries/RedisTimeSeries#1837, RedisJSON/RedisJSON#1474 Hide Personally Identifiable Information from server log - RedisBloom/RedisBloom#936 Cuckoo filter: crash on RDB load on 0 buckets (MOD-11593) - RedisBloom/RedisBloom#945 Bloom filter: crash on RDB load on large number of filters (MOD-11590) ### Bug fixes - #14637 Atomic slot migration: wrong adjacent slot range behavior - #14567 Atomic slot migration: support delay trimming slots after finishing migrating slots - #14746 `CLUSTER SLOT-STATS`: Fix few memory tracking bugs - RedisTimeSeries/RedisTimeSeries#1864 Atomic slot migration: time series limitations (MOD-13611) - RediSearch/RediSearch#6973 Correct empty string token counting in byteOffset calculations to ensure accurate text position tracking (MOD-11233) - RediSearch/RediSearch#6995 Prevent `FT.INFO` command fanout to replicas to reduce unnecessary cluster traffic - RediSearch/Re",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Releases · Redis: 8.2.4",
+      "url": "https://github.com/redis/redis/releases/tag/8.2.4",
+      "source": "GitHub Releases · Redis",
+      "tags": [
+        "product_launch"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T07:19:20.000Z",
+      "summary": "Update urgency: `SECURITY`: There are security fixes in the release. ### Security fixes - RedisTimeSeries/RedisTimeSeries#1837, RedisJSON/RedisJSON#1474 Hide Personally Identifiable Information from server log ### Bug fixes - RedisJSON/RedisJSON#1430 Malformed panic log messages (MOD-9365) - RedisBloom/RedisBloom#945 Bloom filter: crash on RDB load on large number of filters (MOD-11590) - RediSearch/RediSearch#6973 Correct empty string token counting in byteOffset calculations to ensure accurate text position tracking (MOD-11233) - RediSearch/RediSearch#6995 Prevent `FT.INFO` command fanout to replicas to reduce unnecessary cluster traffic - RediSearch/RediSearch#7034 Correct goto statement handling on RDB load - RediSearch/RediSearch#7154 Display Background Indexing OOM warning in `FT.AGGREGATE` when memory limits are approached (MOD-11817) - RediSearch/RediSearch#7219 Resolve concurrency issue in Reducer that caused intermittent errors (MOD-12243) - RediSearch/RediSearch#7255 Correct",
+      "category": "ai_tools"
+    },
+    {
+      "title": "The chaos in the US is affecting open source software and its developers",
+      "url": "https://www.osnews.com/story/144348/the-chaos-in-the-us-is-affecting-open-source-software-and-its-developers/",
+      "source": "Hacker News",
+      "tags": [
+        "open_source"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T07:02:14.000Z",
+      "summary": null,
+      "category": "tech_general"
+    },
+    {
+      "title": "Beyond agentic coding",
+      "url": "https://haskellforall.com/2026/02/beyond-agentic-coding",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 1,
+      "date": "2026-02-08T01:55:09.000Z",
+      "summary": null,
+      "category": "tech_general"
+    }
+  ]
 }
