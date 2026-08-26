@@ -203,6 +203,10 @@ function pageUrl(outputPath) {
   return normalised.replace(/index\.html$/, '')
 }
 
+function canonicalUrl(outputPath) {
+  return new URL(pageUrl(outputPath), PUBLIC_BASE_URL).href
+}
+
 function badgeTone(label) {
   if (label === 'Recommended') return 'green'
   if (label === 'Specialist Pick') return 'blue'
@@ -559,6 +563,39 @@ function renderDocument({ title, description, currentKey, outputPath, content })
   const siteRoot = homeHref === './' ? './' : homeHref
   const sourceHref = outputHref(outputPath, 'method/index.html')
   const rootClass = 'mood-graphite'
+  const absoluteUrl = canonicalUrl(outputPath)
+  const pageType = !outputPath.startsWith('tools/') &&
+    ['catalog', 'categories', 'updates', 'radar', 'collections'].includes(currentKey)
+    ? 'CollectionPage'
+    : 'WebPage'
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${PUBLIC_BASE_URL}#organization`,
+        name: 'Stack Scout',
+        url: PUBLIC_BASE_URL,
+        description: 'Public tool intelligence for builders, operators, and agent-assisted workflows.',
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${PUBLIC_BASE_URL}#website`,
+        name: 'Stack Scout',
+        url: PUBLIC_BASE_URL,
+        publisher: { '@id': `${PUBLIC_BASE_URL}#organization` },
+      },
+      {
+        '@type': pageType,
+        '@id': `${absoluteUrl}#webpage`,
+        name: title.replaceAll('StackScout', 'Stack Scout'),
+        description,
+        url: absoluteUrl,
+        isPartOf: { '@id': `${PUBLIC_BASE_URL}#website` },
+      },
+    ],
+  }
+  const jsonLdJson = JSON.stringify(jsonLd).replaceAll('<', '\\u003c')
 
   return `<!DOCTYPE html>
 <html lang="en" class="${rootClass}">
@@ -567,9 +604,12 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}</title>
     <meta name="description" content="${escapeHtml(description)}" />
+    <link rel="canonical" href="${escapeHtml(absoluteUrl)}" />
     <meta property="og:title" content="${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="${escapeHtml(absoluteUrl)}" />
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="apple-touch-icon" href="${outputAssetHref(outputPath, 'icon.svg')}" />
@@ -578,6 +618,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="${outputAssetHref(outputPath, 'styles.css')}" />
+    <script type="application/ld+json">${jsonLdJson}</script>
   </head>
   <body data-page="${escapeHtml(currentKey)}" data-site-root="${escapeHtml(siteRoot)}">
     <div class="ss-grain" aria-hidden="true"></div>
@@ -1317,6 +1358,41 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 `
 }
 
+function buildRobots() {
+  return `User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: ${PUBLIC_BASE_URL}sitemap.xml
+`
+}
+
 function main() {
   const privatePreviewExport = resolvePrivatePreviewExportPath()
   const site = readJson('site-source.json')
@@ -1388,6 +1464,7 @@ function main() {
   ]
 
   writeFile('sitemap.xml', buildSitemap(sitemapRoutes))
+  writeFile('robots.txt', buildRobots())
   console.log(
     `Stack Scout build complete. Generated ${tools.length} tool pages, ${categories.length} category pages, and ${updates.length} updates.`,
   )
