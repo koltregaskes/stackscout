@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koltregaskes.github.io/stackscout/sitemap.xml
+

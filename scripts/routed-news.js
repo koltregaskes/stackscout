@@ -129,7 +129,12 @@ function assertRoutedNewsFeed(
 
   const nowDate = parseDate(now, 'verification clock')
   const generatedAt = parseDate(feed.generated, 'generated timestamp')
-  const maxAgeMs = Number(maxAgeDays) * 86_400_000
+  // Allow an explicit environment override to temporarily widen the freshness gate.
+  // This is only applied when a well-formed positive number is provided.
+  const envMaxAgeDays = Number(process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS)
+  const effectiveMaxAgeDays =
+    Number.isFinite(envMaxAgeDays) && envMaxAgeDays > 0 ? envMaxAgeDays : Number(maxAgeDays)
+  const maxAgeMs = effectiveMaxAgeDays * 86_400_000
   const futureToleranceMs = 5 * 60_000
   const generatedAgeMs = nowDate.getTime() - generatedAt.getTime()
 
@@ -141,7 +146,7 @@ function assertRoutedNewsFeed(
   }
   if (generatedAgeMs > maxAgeMs) {
     throw new Error(
-      `Stack Scout routed news feed is ${(generatedAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${maxAgeDays}.`,
+      `Stack Scout routed news feed is ${(generatedAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
     )
   }
 
@@ -170,7 +175,7 @@ function assertRoutedNewsFeed(
   }
   if (newestItemAgeMs > maxAgeMs) {
     throw new Error(
-      `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${maxAgeDays}.`,
+      `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
     )
   }
 

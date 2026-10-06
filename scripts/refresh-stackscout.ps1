@@ -30,6 +30,7 @@ if ($privateDataDirInput) {
 }
 
 $statusFile = if ($privateDataDir) { Join-Path $privateDataDir 'stackscout-refresh-status.json' } else { $null }
+$logFile = if ($privateDataDir) { Join-Path $privateDataDir 'stackscout-refresh.log' } else { $null }
 $toolsManifestFile = Join-Path $repoRoot 'data\tools-manifest.json'
 $updatesManifestFile = Join-Path $repoRoot 'data\updates-manifest.json'
 $categoriesManifestFile = Join-Path $repoRoot 'data\categories-manifest.json'
@@ -255,8 +256,25 @@ try {
     }
   }
 
+  if ($env:STACKSCOUT_ROUTED_FEED_URL) {
+    Invoke-RefreshStep -Label 'Fetch routed feed' -ScriptBlock {
+      if ($logFile) {
+        & node 'scripts/fetch-routed-feed.js' 2>&1 | Tee-Object -FilePath $logFile -Append
+      } else {
+        & node 'scripts/fetch-routed-feed.js'
+      }
+      if ($LASTEXITCODE -ne 0) {
+        throw "Routed feed fetch failed with exit code $LASTEXITCODE."
+      }
+    }
+  }
+
   Invoke-RefreshStep -Label 'Build Stack Scout' -ScriptBlock {
-    & node 'scripts/build-stackscout.js'
+    if ($logFile) {
+      & node 'scripts/build-stackscout.js' 2>&1 | Tee-Object -FilePath $logFile -Append
+    } else {
+      & node 'scripts/build-stackscout.js'
+    }
     if ($LASTEXITCODE -ne 0) {
       throw "Stack Scout build failed with exit code $LASTEXITCODE."
     }
@@ -264,7 +282,11 @@ try {
 
   if (-not $SkipCheck) {
     Invoke-RefreshStep -Label 'Check Stack Scout' -ScriptBlock {
-      & cmd /c 'npm run check'
+      if ($logFile) {
+        & cmd /c 'npm run check' 2>&1 | Tee-Object -FilePath $logFile -Append
+      } else {
+        & cmd /c 'npm run check'
+      }
       if ($LASTEXITCODE -ne 0) {
         throw "Stack Scout checks failed with exit code $LASTEXITCODE."
       }

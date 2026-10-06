@@ -90,6 +90,32 @@ without creating a commit if the remote moved during the build. Recovery must
 preserve generated output on a review branch; the automation never resets,
 rebases, force-pushes, or resolves conflicts.
 
+### Routed feed controls and diagnostics
+
+- The build reads the routed news feed from `data/news-feed-latest.json` and
+  fails if that feed (or its newest item) is older than three days.
+- Emergency only — to temporarily widen this freshness gate (for example while
+  restoring the external feed generator), set:
+
+  ```
+  STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS=14
+  ```
+
+  Only positive numbers are accepted. When unset, the default is 3 days.
+  Do not rely on this override in normal operation; fix the routed-feed
+  producer instead so the freshest news is published.
+
+- To fetch the routed feed on the publishing machine from a trusted upstream,
+  set `STACKSCOUT_ROUTED_FEED_URL` and the refresh will run
+  `node scripts/fetch-routed-feed.js` before the build to write
+  `data/news-feed-latest.json`. The script validates the basic shape and fails
+  fast on HTTP or JSON errors.
+
+- When `STACKSCOUT_PRIVATE_STATUS_DIR` is set, the refresh also writes a
+  rolling build log to `stackscout-refresh.log` alongside
+  `stackscout-refresh-status.json`, teeing the `build` and `check` step output
+  to make failures diagnosable from the scheduled task history alone.
+
 ## Site structure
 
 - `Home`
