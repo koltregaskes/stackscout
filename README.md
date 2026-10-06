@@ -94,14 +94,16 @@ rebases, force-pushes, or resolves conflicts.
 
 - The build reads the routed news feed from `data/news-feed-latest.json` and
   fails if that feed (or its newest item) is older than three days.
-- To temporarily widen this freshness gate (for example while restoring the
-  external feed generator), set:
+- Emergency only — to temporarily widen this freshness gate (for example while
+  restoring the external feed generator), set:
 
   ```
   STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS=14
   ```
 
   Only positive numbers are accepted. When unset, the default is 3 days.
+  Do not rely on this override in normal operation; fix the routed-feed
+  producer instead so the freshest news is published.
 
 - To fetch the routed feed on the publishing machine from a trusted upstream,
   set `STACKSCOUT_ROUTED_FEED_URL` and the refresh will run
