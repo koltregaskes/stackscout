@@ -1,0 +1,274 @@
+{
+  "generated": "2026-09-26T17:45:07.245Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.16",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.16",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T01:26:02.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.24.6 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.5 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.3 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.24.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.6",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T00:59:39.000Z",
+      "summary": "What's Changed fix(serve): preserve session creation failure diagnostics by @callmeYe in #12331 feat(sdk-java): Add managed runtime attestation client by @doudouOUC in #12522 feat(web-shell): select a time range on the trajectory overview to narrow the table by @qqqys in #12543 feat(serve,web-shell): set the Qwen Live endpoint and model from settings by @qqqys in #12529 feat(channels): separate private and group access policies by @qqqys in #12547 fix(core): bound oversized images returned by MCP tools by @yiliang114 in #10835 feat(serve): run Qwen Live through the Web Shell, native macOS...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T00:44:02.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(sdk-java): Add the Hosted Harness private client ( #12654 ) by @doudouOUC feat(java): Reconcile UNKNOWN tool executions from Runtime evidence ( #12655 ) by @wenshao feat(cli): Declare the v2 execute/status/cancel Managed Runtime contract ( #12630 ) by @doudouOUC feat(sdk-java): Reconcile and adopt restored Runtime bindings ( #12627 ) by @doudouOUC feat(cli): list managed Agent View sessions in qwen sessions ps ( #10942 ) by @yiliang114 feat(scripts): check in the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.5-nightly.20260925.c3a4058a0c",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.5-nightly.20260925.c3a4058a0c",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T21:57:58.000Z",
+      "summary": "What's Changed feat(sdk-java): Add the Hosted Harness private client by @doudouOUC in #12654 test(java): pin runtime-broker guards left open in earlier reviews by @wenshao in #12632 feat(java): Reconcile UNKNOWN tool executions from Runtime evidence by @wenshao in #12655 test(cli): pin the managed-runtime worker's boot, bind and shutdown guards by @wenshao in #12633 fix(review): persist the local findings ledger when a round cannot anchor by @wenshao in #12660 fix(core): Preserve Claude thinking across tool turns by @pomelo-nwu in #12621 feat(cli): Declare the v2 execute/status/cancel...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building",
+      "url": "https://www.marktechpost.com/2026/09/26/exa-launches-agent-ultra-a-subagent-swarm-deep-research-api-built-for-exhaustive-list-building/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-26T08:04:08.000Z",
+      "summary": "Exa has released Agent Ultra, the highest effort mode of its Exa Agent API. It coordinates subagents across thousands of sources for list building and entity enrichment. Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall on WANDR. The post Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Meta’s smart glasses take center stage at Connect, with audio-only models and AI agent Muse",
+      "url": "https://superintelligencenews.com/applications/meta-smart-glasses-connect/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T03:55:04.000Z",
+      "summary": "Meta spotlighted smart glasses at Connect, unveiling audio-only models, hearing support glasses and tighter Muse AI integration. The post Meta’s smart glasses take center stage at Connect, with audio-only models and AI agent Muse appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.63.0-nightly.20260926.g2fe7c2d3f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.63.0-nightly.20260926.g2fe7c2d3f",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T01:20:07.000Z",
+      "summary": "What's Changed fix(core): remove invalid diff.external override by @urielefrenvirtusa in #29467 chore(release): bump version to 0.63.0-nightly.20260923.gf50ba8608 by @gemini-cli-robot in #29471 Changelog for v0.62.0-preview.0 by @gemini-cli-robot in #29470 fix(core): clean up temporary directory when background shell execution exits by @jesussamuel-byte in #29437 fix(acp): resolve session before config initialization and avoid same-minute filename collisions by @jesussamuel-byte in #29463 fix(core): align policy redirection gates, path validation, and workflow parsing by @DavidAPierce in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T01:00:08.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.4.0-canary.48",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.48",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T23:43:36.000Z",
+      "summary": "Misc Changes Hoist resolved pathname into app page route match: #99259 docs: papercuts in image API reference: #99256 test: run the TypeScript version warning suites in deploy: #99195 test: drop skipDeployment where another gate already excludes deploy: #99194 bundle-analyzer: suspend while loading analyzer data: #98535 Fix Server Actions hanging after navigation to PPR pages: #99252 Fix blurry bundle analyzer treemap on low-DPI displays: #99197 Rename bundle analyzer snapshot naming option: #99251 Reduce stacked PR gate polling and use ts-jest: #99215 Name the internal trace server...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Trump and Chinese president Xi end summit without major agreement on AI",
+      "url": "https://www.theguardian.com/technology/2026/sep/25/trump-xi-ai-arms-race",
+      "source": "The Guardian Tech",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-25T22:11:52.000Z",
+      "summary": "Xi’s state visit to the US emphasized personal rapport with the US president, rather than substantial agreements to pause their respective countries’ AI arms race Donald Trump and Chinese president Xi Jinping wrapped up their Washington summit on Friday, facing criticism that they had squandered an opportunity to pause their countries’ artificial intelligence (AI) arms race. The three-day state visit emphasised pageantry and personal rapport rather than substantial agreements. The US president and Xi discussed the wars in Iran and Ukraine and the status of Taiwan. Their biggest policy...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Meta is putting its muscle behind Muse as the AI app takes off",
+      "url": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-25T16:16:52.000Z",
+      "summary": "Muse is topping the app store charts and adding users at a rapid clip, while Meta ramps up the personal AI agent's promotion across its own apps and beyond.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta’s AI Tamagotchi bet is…working?",
+      "url": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-25T16:00:00.000Z",
+      "summary": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s early numbers and is headed for smart glasses and […]",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
+      "url": "https://www.theguardian.com/technology/2026/sep/26/openai-hack-australian-government-anxiety-global-dilemma-artificial-intelligence",
+      "source": "The Guardian Tech",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-25T15:12:38.000Z",
+      "summary": "As the UN warns traditional safeguards are ‘unravelling’, Donald Trump says he will encourage, not restrain, the AI race When the Australian prime minister, Anthony Albanese, sat down for an interview in the heart of Silicon Valley at the weekend he had known for two days that his was the first government known to have been attacked by a rogue AI agent. He didn’t reveal the attack then, but he sounded a warning about the march of AI: “the risk is that AI develops in a way in which humans are no longer in control of what AI is producing.” Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Anthropic Opens Claude Plugin Portal With Review Tracking and Usage Analytics",
+      "url": "https://superpowerdaily.com/posts/anthropic-opens-claude-plugin-portal-with-review-tracking-and-usage-analytics",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-25T20:37:02.000Z",
+      "summary": "Developers can track safety checks before publication, but directory approval and continued compliance remain in Anthropic’s hands.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Exa Adds Agent Ultra for Longer Web Research, Claims Lower Benchmark Costs",
+      "url": "https://superpowerdaily.com/posts/exa-adds-agent-ultra-for-longer-web-research-claims-lower-benchmark-costs",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-26T08:53:38.000Z",
+      "summary": "The new API mode divides searches among parallel workers. Its reported lead over competing agents depends on Exa’s evaluation setup.",
+      "category": "ai_tools"
+    }
+  ]
+}

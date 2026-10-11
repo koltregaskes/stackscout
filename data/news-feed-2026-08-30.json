@@ -1,0 +1,218 @@
+{
+  "generated": "2026-08-30T12:00:20.094Z",
+  "site": "Stack Scout",
+  "article_count": 13,
+  "articles": [
+    {
+      "title": "pnpm 11.25",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.25.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-29T14:20:10.000Z",
+      "summary": "Minor Changes Added an opt-in proof of concept that lets installs reuse a dependency's build output across machines, by publishing and restoring signed, organization-scoped artifacts through pnpr instead of running the lifecycle scripts locally. Configure it with the new remoteSideEffectsCache setting. A workspace names the eligible organization and packages ; everything describing the act of signing — publish , keyId , builderId , trustedKeys , privateKey and the provenance fields — is refused in pnpm-workspace.yaml and read from the global config file or the environment instead. Added...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.1.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-29T14:19:52.000Z",
+      "summary": "Minor Changes pnpm login and pnpm adduser now record the granted token in the global config.yaml , under the _auth setting, with --scope 's scope routed to that registry under registries . pnpm logout removes it from there, and still from an auth.ini an earlier version wrote. Tokens already in auth.ini keep working. A scope set in a project's pnpm-workspace.yaml is now ignored, with a warning naming where to set it instead. pnpm login records the scope as a @scope:registry route in the machine-global auth.ini , which outranks ~/.npmrc in every project — so a repository-committed file...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic Opens a Research Preview of the Model Hardware Standard (MHS): A Shared Specification for AI Agents to Safely Operate Physical Devices",
+      "url": "https://www.marktechpost.com/2026/08/29/anthropic-opens-a-research-preview-of-the-model-hardware-standard-mhs-a-shared-specification-for-ai-agents-to-safely-operate-physical-devices/",
+      "source": "MarkTechPost",
+      "tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-30T06:12:21.000Z",
+      "summary": "Anthropic has opened a research preview of the Model Hardware Standard (MHS), a shared driver specification that lets AI agents discover and safely operate physical devices. Instrument integration that normally takes weeks or months drops to hours: Carnegie Mellon went from raw equipment to a finished dose-response curve in eight, and QuEra's laser relock improved from 58% to 99.3% across 700 trials. MHS is model-agnostic, reachable over MCP, and enforces safety limits in the driver rather than the prompt. The post Anthropic Opens a Research Preview of the Model Hardware Standard (MHS): A...",
+      "category": "ai_research"
+    },
+    {
+      "title": "Release v0.59.0-nightly.20260830.g0bd1d4397",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260830.g0bd1d4397",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-30T01:27:35.000Z",
+      "summary": "Full Changelog : v0.59.0-nightly.20260829.g0bd1d4397...v0.59.0-nightly.20260830.g0bd1d4397",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-30T01:00:02.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.9",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.9",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-29T14:20:24.000Z",
+      "summary": "Minor Changes Made the signed shared-artifact cache horizontally scalable with S3-compatible storage and an independent top-level artifacts feature toggle. Generalized the experimental shared-artifact protocol so candidates and signed payloads identify a discriminated subject. Dependency side effects use package and source-integrity subjects, while workspace tasks use project and task subjects. This changes shared-artifact request bodies and signed payloads. A pnpr server and its clients have to be on matching versions. Patch Changes A published build artifact is now immutable: one input...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenRelay Routes AI Inference Across GPUs, TPUs and Trainium Through One API",
+      "url": "https://superpowerdaily.com/posts/openrelay-routes-ai-inference-across-gpus-tpus-and-trainium-through-one-api",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-30T01:56:58.000Z",
+      "summary": "The early-access network aims to let developers buy performance rather than a particular accelerator, but its cost-savings claims and ability to deliver consistent service across mixed infrastructure remain unproven.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing Hy4 Preview",
+      "url": "https://simonwillison.net/2026/Aug/29/hy4/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-29T23:53:13.000Z",
+      "summary": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size increase from their previous Hy3 in July, which was 295B, 21B active, 256,000 context, 598GB. I recently started using model chat templates to better understand their capabilities. Here's Hy4's chat_template.jinja on Hugging Face, which includes this section: {% - if not reasoning_effort is defined %} {% - set reasoning_effort = 'high' %} {% - elif reasoning_effort not in [...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How I Built a Production-Ready AI Agent on PHP, cPanel, and Gemini Flash",
+      "url": "https://hackernoon.com/how-i-built-a-production-ready-ai-agent-on-php-cpanel-and-gemini-flash?source=rss",
+      "source": "Flipboard AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-29T15:00:20.000Z",
+      "summary": "Most AI agent tutorials assume you are starting from a modern stack: Python, Docker, Redis, background workers, vector databases, and cloud …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google’s WikiSkill Lifts Agent Benchmarks by Giving Models a Memory of Failed Work",
+      "url": "https://superpowerdaily.com/posts/google-s-wikiskill-lifts-agent-benchmarks-by-giving-models-a-memory-of-failed-work",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-08-29T13:16:17.000Z",
+      "summary": "The framework turns task traces into reusable instructions instead of changing a model’s training, offering a practical route to more capable agents while leaving uneven task gains and cross-model transfer as constraints.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Laurie Anderson’s next manuscript to be locked away for 88 years in Future Library",
+      "url": "https://www.theguardian.com/books/2026/aug/29/laurie-anderson-manuscript-88-years-future-library-oslo",
+      "source": "The Guardian (World)",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-08-29T12:00:26.000Z",
+      "summary": "Grammy award-winning American artist selected as 13th person to submit written work to Oslo-based project The next manuscript by the American artist Laurie Anderson will remain unseen for 88 years, as she becomes the 13th figure to contribute to the Future Library project. Anderson joins Margaret Atwood, Han Kang, Ocean Vuong and other prominent authors who have written secret manuscripts, which have been locked away until 2114. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "How America celebrated and mourned Dolly Parton, in Nashville and beyond",
+      "url": "https://www.npr.org/2026/08/29/g-s1-140345/dolly-parton-appreciation-remembrance-tribute",
+      "source": "NPR Culture",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-08-29T09:00:00.000Z",
+      "summary": "The great Dolly Parton died earlier this week and tributes have poured in from across the country. Fans are mourning the loss of a country music icon who not only changed the musical landscape but gave back to communities with her Imagination Library program and donations to develop the Moderna COVID vaccine.",
+      "category": "tech_general"
+    },
+    {
+      "title": "Spark: Sparklines in your shell",
+      "url": "https://git.zx2c4.com/spark/about/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.48,
+      "date": "2026-08-30T10:02:16.000Z",
+      "summary": "",
+      "category": "tech_general"
+    }
+  ]
+}

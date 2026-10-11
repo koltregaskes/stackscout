@@ -1,0 +1,221 @@
+{
+  "generated": "2026-09-07T17:45:13.789Z",
+  "site": "Stack Scout",
+  "article_count": 12,
+  "articles": [
+    {
+      "title": "cua-driver-rs v0.20.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/cua-driver-rs-v0.20.4",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T10:27:17.000Z",
+      "summary": "Qwen CUA Driver prebuilt binaries (vendored under packages/cua-driver ). macOS : codesigned + notarized universal binary + QwenCuaDriver.app Linux : unsigned (x86_64 + arm64, glibc 2.31 floor) Windows : unsigned UIAccess worker + native SDK payload (x86_64 + arm64); deployments must sign and trust the worker on the target machine before UIAccess activation Node.js : the same workflow publishes @qwen-code/cua-sdk after a clean install against these release assets and publishes the independently versioned @qwen-code/node-repl-mcp package after its MCP protocol smoke tests Enable relative...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.1-preview.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.1-preview.2",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T05:50:51.000Z",
+      "summary": "What's Changed feat(web-shell): visualize and manage dynamic workflow runs by @qqqys in #10594 perf(web-shell): derive the session workflow projection once by @yiliang114 in #10871 test(integration): synchronize mid-turn /quit completion by @qwen-code-dev-bot in #10926 feat(ipc): tell senders when a message is refused, and expire held ones by @qqqys in #10809 fix(web-shell): make the 30 s overview-poll e2e deterministic by @yiliang114 in #10934 feat(serve): add session resource catalog by @w9lsky in #10837 fix(cli): submit exact slash commands from the live input by @yiliang114 in #10929...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 11.26",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.26.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-06T23:50:11.000Z",
+      "summary": "Minor Changes Catalogs can now resolve workspace dependencies through the workspace: protocol. pnpm remove and pnpm update now accept --trust-lockfile , --no-trust-lockfile , --trust-policy , --trust-policy-exclude , and --trust-policy-ignore-after . pnpm remove checks the whole lockfile against the active policies unless --trust-lockfile is set. Added pnpm change check for CI validation of package versions against the versioning.epics bands and versioning.fixed groups in pnpm-workspace.yaml . Patch Changes Fetch and tarball errors and retry logs now hide URL credentials, query strings,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.0-nightly.20260906.92a8a8d179",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.0-nightly.20260906.92a8a8d179",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-06T21:56:47.000Z",
+      "summary": "What's Changed feat(web-shell): visualize and manage dynamic workflow runs by @qqqys in #10594 perf(web-shell): derive the session workflow projection once by @yiliang114 in #10871 test(integration): synchronize mid-turn /quit completion by @qwen-code-dev-bot in #10926 feat(ipc): tell senders when a message is refused, and expire held ones by @qqqys in #10809 fix(web-shell): make the 30 s overview-poll e2e deterministic by @yiliang114 in #10934 feat(serve): add session resource catalog by @w9lsky in #10837 fix(cli): submit exact slash commands from the live input by @yiliang114 in #10929...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MCP SDK Starter Guides Leave Authorization Outside the HTTP Setup Path",
+      "url": "https://superpowerdaily.com/posts/mcp-sdk-starter-guides-leave-authorization-outside-the-http-setup-path",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-07T03:08:05.000Z",
+      "summary": "A review of four Tier-1 Streamable HTTP starter paths found no copied example that enables authentication or scoped authorization. The SDKs offer protections and authorization tools, but builders must assemble them when moving beyond a local endpoint.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v4.0.522",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.522",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T09:42:54.000Z",
+      "summary": "What's Changed @remotion/cli : Show command options in --help by @JonnyBurger in #11104 @remotion/studio : Add timeline zoom to audio asset previews by @JonnyBurger in #11115 @remotion/studio : Clamp timeline layer resizing to composition duration by @JonnyBurger in #11114 @remotion/studio : Fix sequence-relative video config in keyframes by @JonnyBurger in #11110 @remotion/studio : Show checkmark after copying by @JonnyBurger in #11109 @remotion/studio : Add Split clip to sequence context menus by @JonnyBurger in #11097 @remotion/studio : Select timeline layers from resize edges by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.60.0-nightly.20260907.g85aca163f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260907.g85aca163f",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T01:27:17.000Z",
+      "summary": "Full Changelog : v0.60.0-nightly.20260906.g85aca163f...v0.60.0-nightly.20260907.g85aca163f",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MathKernel: An evidence-aware multi-engine mathematics kernel and MCP server",
+      "url": "https://github.com/Staatsgeheim/MathKernel",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-07T00:21:01.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "n8n@2.38.4",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.38.4",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T08:07:48.000Z",
+      "summary": "2.38.4 (2026-09-07) Bug Fixes core: Cap task runner task timeouts to the graceful shutdown window ( #37765 ) ( 6e12447 ) core: Keep a serving external secrets provider active when its replacement fails ( #37882 ) ( 1abbd4b ) core: Prevent Anthropic agent threads from breaking permanently and keep run errors visible ( #37722 ) ( 1007dff ) core: Stop npm audit from stalling Instance AI sandbox setup ( #37877 ) ( 6120419 ) core: Stop task broker before task runner processes on shutdown ( #37886 ) ( a8fc772 )",
+      "category": "ai_tools"
+    },
+    {
+      "title": "beta",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T08:04:45.000Z",
+      "summary": "2.38.4 (2026-09-07) Bug Fixes core: Cap task runner task timeouts to the graceful shutdown window ( #37765 ) ( 6e12447 ) core: Keep a serving external secrets provider active when its replacement fails ( #37882 ) ( 1abbd4b ) core: Prevent Anthropic agent threads from breaking permanently and keep run errors visible ( #37722 ) ( 1007dff ) core: Stop npm audit from stalling Instance AI sandbox setup ( #37877 ) ( 6120419 ) core: Stop task broker before task runner processes on shutdown ( #37886 ) ( a8fc772 )",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Reckless review – this breathless thriller about siblings in a hit-and-run is a masterpiece",
+      "url": "https://www.theguardian.com/tv-and-radio/2026/sep/06/reckless-review-this-breathless-thriller-about-siblings-in-a-hit-and-run-is-a-masterpiece",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-06T22:20:16.000Z",
+      "summary": "The Australian retooling of Neil Forsyth’s excellent Guilt sees a brother and sister deal with the aftermath of accidentally killing a stranger. It’s a fast-paced, impressive ride Just do what your elder sister tells you. That’s all there really is to leading an easy life. As a senior female sibling myself, this has always been my belief and now, as a viewer of Australian comedy-drama-caper-thriller Reckless, I can report it as absolute fact. I mean – first things first. Ideally, do not hit a pedestrian out walking late at night in his pyjamas while you’re driving under the influence of a...",
+      "category": "tech_general"
+    },
+    {
+      "title": "A multitask framework for automated multi-frame right upper quadrant ultrasound interpretation and clinical decision support",
+      "url": "https://www.nature.com/articles/s41467-026-77498-w",
+      "source": "Nature AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-09-07T00:00:00.000Z",
+      "summary": "",
+      "category": "ai_research"
+    }
+  ]
+}

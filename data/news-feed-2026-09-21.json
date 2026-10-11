@@ -1,0 +1,284 @@
+{
+  "generated": "2026-09-21T17:45:11.336Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Google Releases EnvHarness to Make AI Agent Training Environments Adapt",
+      "url": "https://superpowerdaily.com/posts/google-releases-envharness-to-make-ai-agent-training-environments-adapt",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-21T02:18:37.000Z",
+      "summary": "The open-source framework keeps an environment’s existing grader intact while changing the conditions an agent faces—a design that may save teams from rebuilding trusted simulators, but adds rollout and integration costs.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "llm-keys-ui 0.1",
+      "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-20T19:22:19.000Z",
+      "summary": "Release: llm-keys-ui 0.1 This plugin solves a very specific problem. I've started using Codex Remote to run coding agents on various machines while controlling them from my phone. Sometimes I use those machines to hack on LLM projects, and occasionally that means I need to configure an API key. I don't like pasting API keys into agent sessions, so I wanted a way to get those keys onto a machine without pasting them into the ChatGPT app directly. With this plugin, I can tell Codex to run: uvx --with llm-keys-ui llm keys-ui --all Then have it tell me the URL - including local network or...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 11.27.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.27.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-20T21:38:41.000Z",
+      "summary": "Patch Changes pn , pnpx , and pnx now run the pnpm installed alongside them. They used to look pnpm up on PATH . That failed when the directory holding them was not on PATH , and it silently handed the call to an unrelated pnpm when one came first there #14803 . The @zkochan/cmd-shim package is now available as @pnpm/bins.cmd-shim . pnpm cache list-registries now prints the registry URL, matching pnpm cache view . It printed https%3A+registry.npmjs.org before and prints https://registry.npmjs.org/ now #15046 . pnpm deploy no longer installs the dependencies of the workspace root project...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "StepFun Launches Step 5 Preview: A 600B-Total, 27B-Active MoE Model With 1M Context for Long-Horizon Agentic Work",
+      "url": "https://www.marktechpost.com/2026/09/20/stepfun-launches-step-5-preview/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-21T06:37:18.000Z",
+      "summary": "StepFun has released Step 5 Preview, a sparse Mixture-of-Experts model with 600B total parameters and 27B active per token. It supports a 1M-token context window and accepts text, image, and video input. The model targets long-horizon agentic work in software engineering, professional knowledge work, and finance. API access is live at $1.00 per 1M input tokens and $2.70 per 1M output tokens, and open weights are scheduled for October 15, 2026. The post StepFun Launches Step 5 Preview: A 600B-Total, 27B-Active MoE Model With 1M Context for Long-Horizon Agentic Work appeared first on...",
+      "category": "ai_research"
+    },
+    {
+      "title": "Alibaba Releases Qwen-Image-2.1 With Transparent Image Editing",
+      "url": "https://superpowerdaily.com/posts/alibaba-releases-qwen-image-2-1-with-transparent-image-editing",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-21T05:41:52.000Z",
+      "summary": "The 7-billion-parameter model gives developers a single open-weights package for generation, editing, transparency, and reference-guided work. But businesses need a separate license before using it commercially.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Five ways that the new Siri AI is frustrating iPhone and Apple Watch users",
+      "url": "https://9to5mac.com/2026/09/20/five-ways-that-the-new-siri-ai-is-frustrating-iphone-and-apple-watch-users/?utm_source=flipboard&utm_content=other",
+      "source": "Flipboard AI",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-20T18:35:12.000Z",
+      "summary": "The new version of Siri, Siri AI, launched to the masses this month as part of iOS 27. The new Siri is rolling out gradually to users via a waitlist, and is labelled as a ‘beta’ indicating that Apple still has some work to do in follow-up releases. The new Siri is much better at answering questions …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.96.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T09:21:33.000Z",
+      "summary": "Themes and more! This release is HUGE and we are so excited to share what our team and contributors have done! The long awaited feature! Crush now has themes! 🎨 Open the new Themes dialog from the command palette to switch looks with live preview, try the built-in Gruvbox Dark, or create and edit your own custom palettes right inside the TUI. Thank @meowgorithm and @gurnben for this feature! QoL and fixes Small changes but no less important. Hypercredits are now displayed in real time! Added spaces to errors in chat by @taciturnaxolotl Increased default timeout to 2 minutes by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-20T14:43:49.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(web-shell): restore remote workspace add flow ( #12085 ) by @yiliang114 feat(web-shell): expose assistant turn settlement lifecycle ( #11251 ) by @yiliang114 Adds an internal bwrap-based Linux sandbox execution foundation with structured process launching, supervision, and confined worker support. ( #12067 ) by @doudouOUC feat(web-shell): choose the Live Voice model and voice from the setup card ( #12199 ) by @qqqys feat(web-shell): expose slash-command exports as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.3-canary.1",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.3-canary.1",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-20T13:47:49.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.10.14-canary.5 by @github-actions[bot] in #14098 test: Fix Windows cache restore test by @anthonyshew in #14099 chore: Update with-prisma example by @vercel-gh-bot-4[bot] in #14101 chore: Release Turborepo 2.11.0 by @github-actions[bot] in #14102 docs: Add Turborepo 2.11 release post by @anthonyshew in #13652 fix: Allow esbuild builds for pnpm generators by @anthonyshew in #14103 chore: Release Turborepo 2.11.1 by @github-actions[bot] in #14104 fix: Restore repeatable CLI flags by @anthonyshew in #14106 chore: Release Turborepo 2.11.2 by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.37.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T07:35:01.000Z",
+      "summary": "What's Changed Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) by @rattus128 in #16333 [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2 by @bigcat88 in #16366 Add CFG control to YuE2 Generate Music node. by @comfyanonymous in #16373 Always put text encoder on GPU when dynamic vram on. by @comfyanonymous in #16374 [Partner Nodes] fix(Tripo): refuse a P2 run whose linked GLB or FBX output would be empty by @bigcat88 in #16369 feat: Support MoGe 3 (CORE-443) by @kijai in #16381 Update comfy-kitchen version to 0.2.35 by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.62.0-nightly.20260921.gcfbcaa8df",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260921.gcfbcaa8df",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T01:32:58.000Z",
+      "summary": "Full Changelog : v0.62.0-nightly.20260920.gcfbcaa8df...v0.62.0-nightly.20260921.gcfbcaa8df",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T01:05:22.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.2-nightly.20260920.eceaede18e",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2-nightly.20260920.eceaede18e",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-20T21:55:24.000Z",
+      "summary": "What's Changed feat(web-shell): capture the Live Voice microphone with an AudioWorklet by @qqqys in #12338 Full Changelog : v0.24.2...v0.24.2-nightly.20260920.eceaede18e",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Z.ai Publishes ZCode as a Coding Workspace for Desktop, Web and Terminal",
+      "url": "https://superpowerdaily.com/posts/z-ai-publishes-zcode-as-a-coding-workspace-for-desktop-web-and-terminal",
+      "source": "Superpower Daily",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-21T08:48:47.000Z",
+      "summary": "The repository packages several ways to run an agent around one shared stack, but the browser and terminal routes still require local runtime setup.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only",
+      "url": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
+      "source": "MarkTechPost",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-20T20:50:56.000Z",
+      "summary": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps. We look at what changed: a layered CI suite that drives packaged apps on real devices, bundled Python 3.12, 3.13 and 3.14, more than 100 mobile ready packages, faster control diffing, and dart-bridge in process communication. We also cover the one migration trap that will bite 0.28 users. The post Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only appeared first on MarkTechPost .",
+      "category": "ai_research"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "generated": "2026-09-08T17:45:15.670Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "n8n@2.39.0",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.0",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T08:29:53.000Z",
+      "summary": "2.39.0 (2026-09-08) Bug Fixes ai-builder: UI tweak to prevent overflowing text on err callout when on Agent Preview ( #37615 ) ( c2e8d02 ) AMQP Trigger Node: Reattach the receiver link when the broker detaches it ( #37431 ) ( ddf6534 ) Anthropic Chat Model Node, AI Agent Node: Send disabled thinking to the provider and parse content-block output ( #37954 ) ( 309fa8d ) API: Check publish permission when a workflow save republishes ( #37264 ) ( 485e370 ) Chat Trigger Node: Fix singular copy on the connect bar ( #37945 ) ( 369c9e2 ) Chat Trigger Node: Re-authenticate hosted chat on session...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "beta",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T08:26:55.000Z",
+      "summary": "2.39.0 (2026-09-08) Bug Fixes ai-builder: UI tweak to prevent overflowing text on err callout when on Agent Preview ( #37615 ) ( c2e8d02 ) AMQP Trigger Node: Reattach the receiver link when the broker detaches it ( #37431 ) ( ddf6534 ) Anthropic Chat Model Node, AI Agent Node: Send disabled thinking to the provider and parse content-block output ( #37954 ) ( 309fa8d ) API: Check publish permission when a workflow save republishes ( #37264 ) ( 485e370 ) Chat Trigger Node: Fix singular copy on the connect bar ( #37945 ) ( 369c9e2 ) Chat Trigger Node: Re-authenticate hosted chat on session...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "stable",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T08:39:42.000Z",
+      "summary": "2.38.1 (2026-09-01) Bug Fixes Add parameter binding for mongodb sort and projection ( #37335 ) ( 292f442 ) ai-builder: Add case for agent artifacts in AIA preview tab bar ( #37141 ) ( ede265d ) ai-builder: Add several tools of the same provider via UI ( #37212 ) ( fd3a51c ) ai-builder: Emit tool call events for Workflow, HTTP Request and Code tools ( #37044 ) ( 7e81610 ) ai-builder: Fix session timeline/trace not showing on preview dock when full screen ( #36930 ) ( 80ff0f3 ) ai-builder: Preserve managed n8n credits when building workflows ( #37198 ) ( 0fbc526 ) Alibaba Cloud Node: Use...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.0-nightly.20260907.f1ed3bc31a",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.0-nightly.20260907.f1ed3bc31a",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T22:01:05.000Z",
+      "summary": "What's Changed feat(web-shell): visualize and manage dynamic workflow runs by @qqqys in #10594 perf(web-shell): derive the session workflow projection once by @yiliang114 in #10871 test(integration): synchronize mid-turn /quit completion by @qwen-code-dev-bot in #10926 feat(ipc): tell senders when a message is refused, and expire held ones by @qqqys in #10809 fix(web-shell): make the 30 s overview-poll e2e deterministic by @yiliang114 in #10934 feat(serve): add session resource catalog by @w9lsky in #10837 fix(cli): submit exact slash commands from the live input by @yiliang114 in #10929...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Arm launches Total Design for Physical AI and robotics framework",
+      "url": "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/",
+      "source": "AI News",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-08T11:44:10.000Z",
+      "summary": "Arm has launched Arm Total Design for Physical AI alongside a new robotics framework to establish common standards across automated systems. Physical industries – spanning mining, agriculture, manufacturing, and global transport – account for trillions of dollars in economic activity and an estimated $200 billion annual compute opportunity by the 2030s. To address engineering fragmentation […] The post Arm launches Total Design for Physical AI and robotics framework appeared first on AI News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenBMB Releases MiniCPM5-2B: A 2.52B Dense Model Averaging 53.9 Across 34 Benchmarks and Built to Run On Device",
+      "url": "https://www.marktechpost.com/2026/09/07/openbmb-releases-minicpm5-2b-a-2-52b-dense-model-averaging-53-9-across-34-benchmarks-and-built-to-run-on-device/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-07T19:18:07.000Z",
+      "summary": "OpenBMB has released MiniCPM5-2B, a dense causal language model with 2,516,756,480 parameters and a native 131,072 token context. It averages 53.9 across the 34 benchmarks in its model card, ahead of Qwen3.5-4B at 51.1, with its clearest leads in tool use, coding agents and long-context retrieval. Post-training pairs 400B tokens of deep-thinking SFT with RL teachers and on-policy distillation that merges 16 expert models into one checkpoint. The weights ship under Apache 2.0 alongside the pre-training, SFT and RL datasets and the intermediate Base, Midtrain and SFT-only checkpoints. GGUF...",
+      "category": "ai_research"
+    },
+    {
+      "title": "v8.0.0-rc.8-dev.17: Remove enum declaration-order SQL rewriting (#30223)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.8-dev.17",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T09:38:17.000Z",
+      "summary": "Linked issue n/a — no ticket. At a glance const Priority = enumType ( 'Priority' , { codecId : 'pg/int4@1' , nativeType : 'int4' } , member ( 'Low' , 0 ) , member ( 'High' , 1 ) , member ( 'Urgent' , 2 ) , ) ; Ordering stays ordinary SQL: ORDER BY \"priority\" ASC . Numeric values encode the priority ranking explicitly; text-backed enum values sort as text rather than by declaration order. Summary Enum metadata should not silently rewrite SQL ordering. Remove the declaration-order rewrite, support numeric enum membership checks, and use numeric priorities in the demo so its intended ranking...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI releases new AI agent – after admitting one went rogue",
+      "url": "https://www.theguardian.com/technology/2026/sep/04/openai-agent-goes-rogue",
+      "source": "The Guardian Tech",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-08T13:29:51.000Z",
+      "summary": "Plus: Americans think they have it bad with unwanted surveillance. They should visit London Hello, and welcome to TechScape. I’m your host, Blake Montgomery, US tech editor at the Guardian, writing to you after visiting Coney Island in New York City, where I ate a hotdog, rode a ferris wheel and enjoyed a quintessentially American summer holiday. Today in tech, we’re examining OpenAI’s new model release and the Silicon Valley’s monopoly power, and wondering why Brits and Americans have such vastly different opinions about surveillance cameras. Nvidia to buy developer platform Hugging Face...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Release v0.60.0-nightly.20260908.g85aca163f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260908.g85aca163f",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T01:26:09.000Z",
+      "summary": "Full Changelog : v0.60.0-nightly.20260907.g85aca163f...v0.60.0-nightly.20260908.g85aca163f",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T01:01:35.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.8-dev.15: Include function names in attribute alternative errors (#30224)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.8-dev.15",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-07T15:10:39.000Z",
+      "summary": "Linked issue n/a — small change; no Linear ticket. At a glance Expected one of: now() | uuid() Previously, both alternatives were labelled function call . Summary Include the pinned function name in attribute parsing errors so users can identify the accepted calls. Decision Use ${name}() as the funcCall label. oneOf already aggregates alternative labels, so it needs no changes. How it fits together Each function-call combinator labels itself with its expected callee. Failed alternatives produce the existing aggregate diagnostic with those names. A regression test checks that both now()...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.8-dev.16: fix(psl-parser): validate AST kinds across parser copies (#30228)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.8-dev.16",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.62,
+      "date": "2026-09-08T09:13:20.000Z",
+      "summary": "Fixes false language-server diagnostics for valid PSL schemas that contract emit accepts, including the schema generated by prisma orm init . Changes Replace constructor-identity checks in all 11 attribute combinators with existing kind-based AST casts. Add an integration regression comparing CLI emission with the LSP diagnostic pipeline across the internal-parser/public-interpreter boundary. Cover the init schema, literal defaults and mapped names, and genuine invalid-function diagnostics. Why The LSP parses with its own parser and passes the artifacts to the project's interpreter. Those...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Multi-Agents LLM Financial Trading Framework",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-08T05:20:23.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "n8n@2.38.4",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.38.4",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-08T08:40:14.000Z",
+      "summary": "2.38.4 (2026-09-07) Bug Fixes core: Cap task runner task timeouts to the graceful shutdown window ( #37765 ) ( 6e12447 ) core: Keep a serving external secrets provider active when its replacement fails ( #37882 ) ( 1abbd4b ) core: Prevent Anthropic agent threads from breaking permanently and keep run errors visible ( #37722 ) ( 1007dff ) core: Stop npm audit from stalling Instance AI sandbox setup ( #37877 ) ( 6120419 ) core: Stop task broker before task runner processes on shutdown ( #37886 ) ( a8fc772 )",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Police used Flock AI cameras to accuse a Denver woman of stealing a $25 package. It took her weeks to prove she was never there",
+      "url": "https://moneywise.com/news/top-stories/flock-ai-cameras-denver-woman-false-accusation-package-theft?utm_source=flipboard&utm_content=topic%2Fartificialintelligence",
+      "source": "Flipboard AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-09-08T14:31:09.000Z",
+      "summary": "Approximately139,000 Flock cameras are up and running in the U.S., and one of them recently turned a Colorado woman’s life upside down. The cameras, …",
+      "category": "ai_tools"
+    }
+  ]
+}

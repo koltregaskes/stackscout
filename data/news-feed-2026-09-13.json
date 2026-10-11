@@ -1,0 +1,292 @@
+{
+  "generated": "2026-09-13T17:45:10.871Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "v8.0.0-rc.11-dev.1: chore(release): bump to 8.0.0-rc.11 (#30272)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-13T07:25:08.000Z",
+      "summary": "Release: 8.0.0-rc.10 → 8.0.0-rc.11 This is the routine release PR per docs/oss/versioning.md . It bumps every workspace package to 8.0.0-rc.11 and moves every @prisma/cli-engine pin from 0.3.0 to 0.4.0. No other change has merged since rc.10; the engine move is the whole release. The engine change: @prisma/cli-engine@0.4.0 adds a --format markdown output format to every command and widens the engine's Format type from \"human\" | \"json\" to \"human\" | \"json\" | \"markdown\" ( prisma/prisma-cli#260 ). No other public API changed. @prisma/orm-toolchain peers the engine at an exact version, so the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "cua-driver-rs v0.20.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/cua-driver-rs-v0.20.6",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-13T11:15:51.000Z",
+      "summary": "Qwen CUA Driver prebuilt binaries (vendored under packages/cua-driver ). macOS : codesigned + notarized universal binary + QwenCuaDriver.app Linux : unsigned (x86_64 + arm64, glibc 2.31 floor) Windows : unsigned UIAccess worker + native SDK payload (x86_64 + arm64); deployments must sign and trust the worker on the target machine before UIAccess activation Node.js : the same workflow publishes @qwen-code/cua-sdk after a clean install against these release assets and publishes the independently versioned @qwen-code/node-repl-mcp package after its MCP protocol smoke tests Enable relative...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.9.4",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-13T09:51:57.000Z",
+      "summary": "OpenClaw v2026.9.4 20 direct commits · 1,558 pull requests · 294 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people, with expandable sections. Changelog — plain Markdown for AI agents and tools. Thanks @0xCyda @100yenadmin @1Vision365-PeterTijsma @609NFT @84dnnvbdvp-debug @aaajiao @aatreya @abacha @adinballew @aeoess @aevgeniou @ai-hpc @aim9sour @akagifreeez @aleps001 @alexjpanagis @alexph-dev @Alix-007 @aminekhettat @andrea-kingautomation @anguslogan01 @aniruddhaadak80...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.3-nightly.20260912.54aa66834b",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.3-nightly.20260912.54aa66834b",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T22:03:27.000Z",
+      "summary": "What's Changed refactor(dingtalk): remove obsolete background response aggregation by @qqqys in #11570 feat(channels)!: remove message prefix filtering by @qqqys in #11571 fix(ci): widen the replayed supersede-cede timeline margin to deflake Scripts by @wenshao in #11581 test(review): pin the fold invariant the per-line escape rests on by @wenshao in #11533 fix(autofix): charge regressions to the brake and gate test weakening by @wenshao in #10188 fix(acp): Preserve submitted prompt provenance for auto recall by @doudouOUC in #11455 fix(serve): restore configured channels after restart by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AWS Introduces Pizza Bot: An Open Source Inbox for Background AI Agents",
+      "url": "https://www.marktechpost.com/2026/09/13/aws-introduces-pizza-bot-an-open-source-inbox-for-background-ai-agents/",
+      "source": "MarkTechPost",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "open_source"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-13T08:10:51.000Z",
+      "summary": "Pizza Bot is an open source, self-hosted inbox for AI agents built on DeepAgents and LangGraph. It combines persistent task state, MCP integrations, configurable approvals, and scheduled workflows across multiple model providers. The post AWS Introduces Pizza Bot: An Open Source Inbox for Background AI Agents appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Cognition Releases SWE-2: A Kimi K3 Post-Trained Coding Model That Matches Fable 5.1 on FrontierCode at 64% Lower Cost",
+      "url": "https://www.marktechpost.com/2026/09/12/cognition-releases-swe-2-a-kimi-k3-post-trained-coding-model-that-matches-fable-5-1-on-frontiercode-at-64-lower-cost/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-12T23:56:03.000Z",
+      "summary": "Cognition, the company behind the Devin coding agent, has released SWE-2, its most capable coding model to date. SWE-2 is post-trained with reinforcement learning from Kimi K3, Moonshot AI’s 2.8T-parameter open model. Cognition reports a score of 50.0% on FrontierCode 1.1 Main, within 1 point of Fable 5.1 at 64% lower cost. It is also […] The post Cognition Releases SWE-2: A Kimi K3 Post-Trained Coding Model That Matches Fable 5.1 on FrontierCode at 64% Lower Cost appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "pnpm 11.27",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.27.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T21:22:42.000Z",
+      "summary": "Minor Changes nodeDownloadMirrors can now be set in the global config file ( config.yaml ) and through the PNPM_CONFIG_NODE_DOWNLOAD_MIRRORS environment variable, so a Node.js download mirror can be configured once for a machine instead of in every workspace #12124 , #13611 . PNPM_CONFIG_NODE_DOWNLOAD_MIRRORS= ' {\"release\":\"https://npmmirror.com/mirrors/node/\"} ' Added a new setting trustPolicyExcludePrune (default: false ). When enabled, pnpm add , pnpm update , and pnpm remove prune the entries of trustPolicyExclude in pnpm-workspace.yaml that the freshly written lockfile no longer...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.10.13-canary.5",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.13-canary.5",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T16:10:01.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.10.13-canary.4 by @github-actions[bot] in #14039 docs: Explain circular package dependencies in boundaries by @vercel-gh-bot-2[bot] in #14042 docs: Document circular dependencies in boundaries by @vercel-gh-bot-2[bot] in #14041 fix: Preserve Yarn resolution declaration order by @anthonyshew in #14045 fix: Avoid duplicate interrupts during task shutdown by @anthonyshew in #14046 fix: Preserve nested Bun package keys by @vercel-gh-bot-5[bot] in #14050 chore: Update with-mcp-servers example by @vercel-gh-bot-2[bot] in #14049 Full Changelog...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.11",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-09-13T07:41:41.000Z",
+      "summary": "v8.0.0-rc.11 This release moves the toolchain onto @prisma/cli-engine@0.4.0 , which adds a Markdown output format to every CLI command. Nothing else changed since rc.10. The upgrade recipes for this hop: the app recipe and the extension recipe . Breaking changes The engine peer moves to @prisma/cli-engine@0.4.0 — @prisma/orm-toolchain declares the unified CLI's engine as an exact peer, and this release peers 0.4.0 (up from 0.3.0), so a project that pins the engine itself must change its pin. Under a host CLI running on that engine, every command supports --format markdown , which prints...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-12T23:56:42.000Z",
+      "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at . Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I'd asked for, as both an embedded visualization and downloadable GPX file and GeoJSON files. Here's that 5K route: When I asked it how it had created the route, it replied: I used Nominatim to locate the address and Overpass to download local OpenStreetMap roads and trails , then calculated the loops locally. Frustratingly, the actual code it ran and exact details...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.61.0-nightly.20260913.g9c1b0a610",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0-nightly.20260913.g9c1b0a610",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-13T01:29:27.000Z",
+      "summary": "Full Changelog : v0.61.0-nightly.20260912.g9c1b0a610...v0.61.0-nightly.20260913.g9c1b0a610",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-13T01:06:24.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Perplexity Seeks Dismissal of Amazon AI-Agent Suit After Appeals Court Ruling",
+      "url": "https://superpowerdaily.com/posts/perplexity-seeks-dismissal-of-amazon-ai-agent-suit-after-appeals-court-ruling",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-13T00:24:59.000Z",
+      "summary": "Perplexity says its Comet assistant acts for the user who directs it, not for the company. The argument tests how far a narrow appellate ruling can reach in a fight over AI agents visiting websites.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Obama reportedly urges Democrats to prioritize safety plan for AI",
+      "url": "https://www.theguardian.com/us-news/2026/sep/13/obama-democrats-ai-safety",
+      "source": "The Guardian Tech",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-09-13T15:47:37.000Z",
+      "summary": "Ex-president urged party at closed-door fundraiser to create sweeping framework, from safety ‘slow-down’ to job losses Barack Obama urged Democrats to prioritize a “public conversation” about AI management and safety in a closed-door Manhattan fundraiser last week. The comments by the former US president reportedly urged the party to create a sweeping framework for everything from a safety “slow-down” to domestic job losses and children’s wellbeing. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "A Mathematical Framework for Transformer Circuits (2021)",
+      "url": "https://transformer-circuits.pub/2021/framework/index.html",
+      "source": "Hacker News",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-12T13:56:58.000Z",
+      "summary": "",
+      "category": "tech_general"
+    }
+  ]
+}

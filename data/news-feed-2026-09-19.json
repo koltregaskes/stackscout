@@ -1,0 +1,302 @@
+{
+  "generated": "2026-09-19T05:35:12.059Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Turborepo v2.11.0",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.0",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T16:29:57.000Z",
+      "summary": "What's Changed Changelog release(turborepo): 2.10.0 by @github-actions[bot] in #13131 docs: Add Turborepo 2.10 release post and update docs by @anthonyshew in #13096 perf: Avoid normalizing git index path joins by @anthonyshew in #12944 chore: Remove tbx package by @anthonyshew in #13133 feat: Migrate TUI virtual terminals from vt100 to Ghostty by @anthonyshew in #13135 chore: Add examples maintenance agent by @anthonyshew in #13136 chore: Remove a few pre-push hooks by @anthonyshew in #13137 ci: Making sure Zig works in releases by @anthonyshew in #13138 release(turborepo):...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.0-nightly.20260918.537311b8a5",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0-nightly.20260918.537311b8a5",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T21:59:11.000Z",
+      "summary": "What's Changed docs(serve): record merged ACP boundary acceptance by @wenshao in #12024 fix(ci): wait for the published export renderer before packaging the VSIX by @yiliang114 in #12036 fix(web-shell): stop dropping the daemon credential on two navigation paths by @yiliang114 in #12011 fix(acp): restore managed auto-memory extraction by @yiliang114 in #12018 fix(cli): close twelve OpenTUI parity gaps found against ink by @chiga0 in #11806 fix(core): count Stop-hook blocks across tool round trips by @qqqys in #12062 feat(workflows): let agent() narrow a subagent to an explicit tool...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.5",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.5.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T17:02:57.000Z",
+      "summary": "pnpm 12.5.0 makes Python a first-class ecosystem, accepts Package URLs in pnpm add , names whole platforms in supportedArchitectures , and gives tasks machine-wide concurrency limits. It also fixes an install that could reuse one package's downloaded tarball for another. Minor Changes Installing packages pnpm add accepts a Package URL in place of a package name. pnpm add pkg:npm/express@4.18.2 saves express to package.json . pnpm add pkg:cargo/serde@1.0.188 saves serde to Cargo.toml . pnpm add pkg:pypi/requests@2.31.0 saves requests to pyproject.toml . pkg is now a reserved specifier...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.1-preview.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.1-preview.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T16:55:28.000Z",
+      "summary": "What's Changed docs(serve): record merged ACP boundary acceptance by @wenshao in #12024 fix(ci): wait for the published export renderer before packaging the VSIX by @yiliang114 in #12036 fix(web-shell): stop dropping the daemon credential on two navigation paths by @yiliang114 in #12011 fix(acp): restore managed auto-memory extraction by @yiliang114 in #12018 fix(cli): close twelve OpenTUI parity gaps found against ink by @chiga0 in #11806 fix(core): count Stop-hook blocks across tool round trips by @qqqys in #12062 feat(workflows): let agent() narrow a subagent to an explicit tool...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v1.51.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.51.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T13:31:43.000Z",
+      "summary": "✨ Features Route Desktop to state-machine loop via ACP prompt meta #11247 EUrouter as a declarative provider #11619 Connect external backend ACP socket to redirect-resolved backend URL #11829 GPT-live API support #12011 Operator allowlist for gateway pairing #11979 Opt-in terminal bell when a turn finishes or approval is needed #10182 Report real cause of external backend connection failures #11828 Scope Toolshim to custom providers #11414 🐛 Bug Fixes Treat auto-compact 100% as disabled #11932 Validate recipes consistently in scheduler #11561 MCP preferred version and HTTP retries #12066...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.5.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.5.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T21:48:32.000Z",
+      "summary": "Patch Changes pnpm now reports an unknown task setting in pnpm-workspace.yaml and carries on. It used to refuse to start, so a project could not use a task setting that only the pnpm version its packageManager pins reads. The setting is still an error when the running pnpm is that pinned version. Python interpreter installation now retries historical release metadata requests. It caches the release list for up to 24 hours and refreshes it once after a lookup miss. When a release omits the current platform, the search samples at most eight other releases before reporting that the lookup is...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.12",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.12",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T16:43:44.000Z",
+      "summary": "pnpr 0.1.0-alpha.12 answers broad searches against an upstream registry instead of failing, and keeps Python resolution going when an index or a release carries metadata it cannot read. Patch Changes pnpm search and npm search against an upstream with search: true no longer fail with a 400 error on broad terms. pnpr now truncates an upstream that holds more results than its fetch budget downloads. The results it could not download keep total approximate. Python resolution no longer fails on a release whose Requires-Python is not a version specifier, such as the trailing comma in openpyxl...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.11-dev.31: feat(psl): merge repeated namespace blocks (#30343)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.31",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T10:30:42.000Z",
+      "summary": "Allow repeated same-name namespace blocks in a single PSL file to contribute declarations to one logical namespace. Changes Create each namespace once and extend its members; preserve duplicate-name errors across blocks and declaration kinds. Retain every authored namespace node/span in NamespaceSymbol.declarations ; migrate SQL, Mongo, and Prisma 7 diagnostic consumers. Use null-prototype namespace/member dictionaries for safe identifier handling. Add focused linear tests for merging, duplicates, namespace isolation, and provenance. Why Blocks organize declarations without creating...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "SpaceXAI Releases Grok Voice Transcribe 2.0: A Speech-to-Text API Claiming 2x Accuracy Over 1.0 at $0.10 per Hour",
+      "url": "https://www.marktechpost.com/2026/09/18/spacexai-releases-grok-voice-transcribe-2-0/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-19T03:42:24.000Z",
+      "summary": "SpaceXAI has released Grok Voice Transcribe 2.0, its newest speech-to-text model for batch and streaming audio. The company says it is twice as accurate as version 1.0 at the same price. Short-phrase word error rate across 19 languages fell from 20.6% to 6.8%. Pricing stays at $0.10 per hour for batch and $0.20 for streaming. The model is available today through the Grok Voice API. The post SpaceXAI Releases Grok Voice Transcribe 2.0: A Speech-to-Text API Claiming 2x Accuracy Over 1.0 at $0.10 per Hour appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Alibaba Qwen Releases Qwen3.8-Omni-Flash: A 1M-Context Omni-Modal Model Built Around Agentic Audio-Video Understanding and Tool Use",
+      "url": "https://www.marktechpost.com/2026/09/18/alibaba-qwen-releases-qwen3-8-omni-flash/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-18T08:40:37.000Z",
+      "summary": "Alibaba's Qwen3.8-Omni-Flash understands audio and video, plans tasks, calls tools, and reports about 45.7% fewer tokens on OmniVideoBench. The post Alibaba Qwen Releases Qwen3.8-Omni-Flash: A 1M-Context Omni-Modal Model Built Around Agentic Audio-Video Understanding and Tool Use appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Jina AI Releases Document Parser, Claims 2.57 Pages Per Second",
+      "url": "https://superpowerdaily.com/posts/jina-ai-releases-document-parser-claims-2-57-pages-per-second",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-18T21:46:57.000Z",
+      "summary": "The open-weight model combines speculative decoding with API access, while its reported results point to damaged scans as a practical limitation.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.62.0-nightly.20260919.gcfbcaa8df",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260919.gcfbcaa8df",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-19T01:25:15.000Z",
+      "summary": "What's Changed chore/release: bump version to 0.62.0-nightly.20260918.g9450ade79 by @gemini-cli-robot in #29383 fix(core): synchronize ConPTY process exit lifecycle and harden PTY output finalization by @jvargassanchez-dot in #29379 fix(cli): suppress uncaught AbortError logs during request cancellation by @urielefrenvirtusa in #29343 fix(core,cli): improve terminal buffer memory management and format Windows diagnostic paths by @jesussamuel-byte in #29380 fix(vscode-ide-companion): preserve terminal focus when closing diff tabs by @amelidev in #29378 fix(core): update auth error...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-19T00:58:26.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.11-dev.34: refactor(psl): track source provenance by syntax root (#30335)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.34",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-18T15:40:07.000Z",
+      "summary": "Linked issue Linear linkage omitted at the author's request. Summary Track PSL source provenance by syntax root rather than independently threading filenames through consumers. This is internal groundwork for future multifile support; existing single-file behavior remains the scope. Changes Require parse(source, filename, options?) ; put filenames and coordinate conversion on SourceFile . Introduce PslSources , mapping red syntax roots to source files. Descendant lookup walks parents and throws InternalError for unregistered roots, without a singleton fallback. Migrate SQL, Mongo, and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "SpaceXAI Releases Grok Voice Transcribe 2.0 at Its Existing API Prices",
+      "url": "https://superpowerdaily.com/posts/spacexai-releases-grok-voice-transcribe-2-0-at-its-existing-api-prices",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.64,
+      "date": "2026-09-18T18:02:01.000Z",
+      "summary": "The new batch and live-transcription model is available now, while SpaceXAI’s strongest accuracy results come from its own testing and version 1.0 remains the current default.",
+      "category": "ai_tools"
+    }
+  ]
+}

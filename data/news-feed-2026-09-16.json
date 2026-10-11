@@ -1,0 +1,286 @@
+{
+  "generated": "2026-09-16T17:45:11.131Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.23.5-preview.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.5-preview.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-16T08:54:15.000Z",
+      "summary": "What's Changed test: record what the Windows inode gates are hiding, and un-skip one by @yiliang114 in #11853 fix(cua): preserve Linux observations and REPL diagnostics by @DragonnZhang in #11829 feat(core): cap web_search calls per session by @qqqys in #11852 fix(core)!: let bash expand project directory variables in command hooks by @qqqys in #11864 fix(cua): make Linux input delivery adaptive by @LaZzyMan in #11876 fix(core): keep escaped whitespace at pipe-list entry edges by @qqqys in #11860 docs(hooks): complete the event catalog and correct stale claims by @qqqys in #11863...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.60.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T20:31:02.000Z",
+      "summary": "What's Changed fix(core): improve destination validation and connection routing in web fetch utilities by @diegogodinezr in #29120 fix(core): enforce RFC 9207 issuer identification in MCP OAuth flow by @jvargassanchez-dot in #29117 chore(release): bump version to 0.60.0-nightly.20260901.g0bd1d4397 by @gemini-cli-robot in #29162 Changelog for v0.58.0 by @gemini-cli-robot in #29161 fix(cli): isolate temporary directory for macOS Seatbelt sandbox by @jvargassanchez-dot in #29171 feat(extensions): harden path resolution and boundary validation in extension loader by @diegogodinezr in #29169...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.62.0-nightly.20260916.g6a466a7e2",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260916.g6a466a7e2",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-16T01:28:53.000Z",
+      "summary": "What's Changed fix(core): ensure AgentLoopContext properties are preserved across object spread by @diegogodinezr in #29335 fix(a2a-server): add early return on unsupported store in tasks metadata endpoint by @jesussamuel-byte in #29334 Changelog for v0.61.0-preview.0 by @gemini-cli-robot in #29344 Changelog for v0.60.0 by @gemini-cli-robot in #29345 fix(core,acp): format MCP tool call titles as structured signatures and segregate explanations by @jvargassanchez-dot in #29341 chore(release): bump version to 0.62.0-nightly.20260915.gae28844fb by @gemini-cli-robot in #29346 Full Changelog :...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.95.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.95.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-16T10:25:30.000Z",
+      "summary": "PLAN Mode! 📓 This release introduces many improvements and a new feature from our contributor! Just plan, don't touch my files Together with @vadiminshakov we present to you the long awaited feature \"plan mode\"! Plan Mode is Crush with the safety on. It reads. It greps. It maps your architecture, checks your tests and config, and spins up sub-agents to dig deeper, but it does not write a single file or run a command. Read it, choose to code proceed with permissions or YOLO and if you're feeling picky — argue (refine) the plan! More juice! Some more performance fixes were made by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.36.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T22:26:17.000Z",
+      "summary": "What's Changed Add new model blueprints and reorganize subgraph categories by @comfyui-wiki in #14785 main: bump the AMD Windows VA quota to 4TB (CORE-409) by @rattus128 in #16199 [Partner Noes] feat(OpenRouter): add Microsoft mai-image-2.6 models by @bigcat88 in #16188 quant_ops: drop the dead ROCm triton arch gate by @0xDELUXA in #16211 [Partner Nodes] feat(Gemini-LLM): Add Gemini 3.8 Flash to the Gemini text node by @bigcat88 in #16195 Update instructions for manual install on windows AMD. by @comfyanonymous in #16217 [Partner Nodes] feat(Tripo): migrate to the v3 API, add the Smart...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.10.14-canary.2",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.14-canary.2",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T20:10:11.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.10.14-canary.1 by @github-actions[bot] in #14069 fix: Discover native workspace metadata lazily by @anthonyshew in #14053 fix: Run Go workspace formatting per module by @anthonyshew in #14070 fix: Run Go verification per module by @anthonyshew in #14072 fix: Use pnpm for non-monorepo deployments by @vercel-gh-bot-2[bot] in #14071 chore: Update with-nestjs example by @vercel-gh-bot-4[bot] in #14064 docs: Document per-toolchain task commands by @vercel-gh-bot-3[bot] in #14073 fix: Infer all co-located packages from cwd by @anthonyshew in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.11-dev.16: docs: Prisma 7 bug reports belong in this repository (#30297)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.16",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "github_release",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T14:39:55.000Z",
+      "summary": "A Prisma 7 user who opens a bug report in this repository today is told this before the form: You are on the latest minor version of Prisma 8. While we are pre-1.0, only the latest minor receives fixes — older minors are not supported. If you are on an older minor, please upgrade and re-verify before filing. With this PR they are told this instead: You are on the latest release of the line you use. For Prisma 8, that is the latest release candidate: while we are pre-1.0, only the latest release receives fixes. For Prisma 7, that is the latest 7.x : Prisma 7 is maintained on the v7 branch...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AI models chatting in ‘surreal’ dialect mixing poetic language and tech bro jargon",
+      "url": "https://www.theguardian.com/technology/2026/sep/15/syd-barrett-ai-chat-language-poetic-tech-bro-jargon-oversight",
+      "source": "The Guardian Tech",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-15T16:00:54.000Z",
+      "summary": "Experts air concern over AI lingo redolent of James Joyce’s prose that is creating headaches for monitoring and oversight AI models have begun communicating in a strange new version of English that reads like a cross between James Joyce’s Finnegans Wake and tech bro jargon, new research has found. Autonomous AI agents are rapidly creating novel dialects allowing them to converse in an often barely comprehensible language, which risks making it harder for humans to monitor their behaviour. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Inside NVIDIA’s cuDNN Graph API: Fusion, Autotuning, and Plan Reuse with cuDNN Frontend",
+      "url": "https://www.marktechpost.com/2026/09/15/inside-nvidias-cudnn-graph-api-fusion-autotuning-and-plan-reuse-with-cudnn-frontend/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-15T21:37:11.000Z",
+      "summary": "Learn how to leverage NVIDIA’s cuDNN Frontend Graph API to build custom kernel fusions, autotuning engine configurations, FP8-style epilogues, scaled dot-product attention, dynamic shapes, and CUDA graph captures. This practical tutorial demonstrates how to optimize deep learning computations directly below framework abstractions while validating results against PyTorch The post Inside NVIDIA’s cuDNN Graph API: Fusion, Autotuning, and Plan Reuse with cuDNN Frontend appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Google Releases Gemini 3.8 Live and 3.8 Live Extended Thinking for Production Grade Voice Agents",
+      "url": "https://www.marktechpost.com/2026/09/15/google-releases-gemini-3-8-live-and-3-8-live-extended-thinking-for-production-grade-voice-agents/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-15T20:53:09.000Z",
+      "summary": "Google has released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, its most advanced live dialogue models to date. The models execute tools and API calls in the background while the conversation keeps flowing, process live visual inputs, and switch between 97 languages mid conversation. Extended Thinking ranks #1 on Artificial Analysis' Speech to Speech Quality Index with 82.6 and scores 97.7% on Big Bench Audio. Both are available today in the Gemini API and Google AI Studio at $0.005/min for audio input, with all generated audio carrying Google DeepMind's SynthID watermark. The...",
+      "category": "ai_research"
+    },
+    {
+      "title": "LlamaIndex Begins Stainless Exit, Seeking to Preserve SDK Interfaces",
+      "url": "https://superpowerdaily.com/posts/llamaindex-begins-stainless-exit-seeking-to-preserve-sdk-interfaces",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-15T16:59:58.000Z",
+      "summary": "The hard part is not finding another generator. It is retaining the methods, types and behavior LlamaParse developers already use.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-16T01:00:37.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.4.0-canary.32",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.32",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T23:47:19.000Z",
+      "summary": "Misc Changes fix(turbopack): trace cyclic modules to explicit entries: #98661 Use default pnpm package import method: #98703 Fix constant inlining in shorthand properties: #98662 test(turbopack): add strong read operation roots: #98248 Use pnpm for isolated test installs: #98425 [turbopack] Forward usage information across re-exports: #96282 [turbopack] Use options object for ESM references: #98680 test: enable verified runtime deploy tests: #98457 test: enable verified assets deploy tests: #98527 test: enable verified pages-router deploy tests: #98526 test: enable verified tooling deploy...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.10.14-canary.3",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.14-canary.3",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T22:38:57.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.10.14-canary.2 by @github-actions[bot] in #14080 feat: Make package queries and pruning task-aware by @anthonyshew in #14081 Full Changelog : v2.10.14-canary.2...v2.10.14-canary.3",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.61.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0-preview.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-15T20:22:07.000Z",
+      "summary": "What's Changed Changelog for v0.60.0-preview.0 by @gemini-cli-robot in #29251 chore(release): bump version to 0.61.0-nightly.20260908.gc647533d6 by @gemini-cli-robot in #29254 Changelog for v0.59.0 by @gemini-cli-robot in #29253 fix(core): preserve explicit versioned Flash model IDs by @SandyTao520 in #29252 fix(core): prevent indirect prompt injection via build file modifications and untrusted flags by @villahernandez-coder in #29250 fix(sandbox): harden filesystem boundaries and isolate runtime state by @diegogodinezr in #29214 fix(core): ensure AgentLoopContext properties are preserved...",
+      "category": "ai_tools"
+    }
+  ]
+}

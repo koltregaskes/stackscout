@@ -1,0 +1,282 @@
+{
+  "generated": "2026-09-28T17:45:08.974Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "v8.0.0-rc.13-dev.1: chore(release): bump to 8.0.0-rc.13 (#30457)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.13-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T10:40:09.000Z",
+      "summary": "Release 8.0.0-rc.12 → 8.0.0-rc.13 See docs/oss/versioning.md for the versioning policy and the release procedure. What to review Release notes: docs/releases/v8.0.0-rc.13.md . This file becomes the body of the GitHub Release. CHANGELOG.md carries the same text. Upgrade guides: the app guide and the extension guide . They are assembled from the 13 pending fragments, which moved unchanged to upgrade-instructions/releases/8.0.0-rc.12-to-8.0.0-rc.13/sources/ . What changed The version of every workspace package.json , and the workspace: specifiers that name it, in the package files and in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.5",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.5",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T00:45:34.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.4 by @github-actions[bot] in #14231 test: Move Python opt-in hint into filter contracts by @anthonyshew in #14228 test: Move dependency-output summary assertion into contract by @anthonyshew in #14230 test: Move dependency-output selection and validation cases to engine contracts by @anthonyshew in #14232 test: Move Cargo exclude-only scope coverage by @anthonyshew in #14238 test: Move Cargo cache-authority cases to contracts by @anthonyshew in #14240 test: Move JIT dependency graph scenario into engine contract by @anthonyshew in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Our Review Finds AI Agent Logs Differ in What They Capture and Who Keeps Them",
+      "url": "https://superpowerdaily.com/posts/desk-review-finds-no-documented-agent-proof-action-trail-across-three-ai-tools",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-27T17:13:52.000Z",
+      "summary": "Claude Code, OpenAI’s Agents SDK and Grok Bot offer different records of agent work. None of the reviewed documentation establishes a complete, agent-proof action trail across the three.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.13",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.13",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T10:58:56.000Z",
+      "summary": "v8.0.0-rc.13 This release brings MongoDB closer to Postgres: a Mongo schema can declare Int64 , Decimal128 , Binary , Json and Bson fields and automatic timestamps, and a Prisma 6 MongoDB project can use its existing schema.prisma as the contract source. The ORM client can order by a related row's column, by a relation count, and with explicit null placement. The new prisma contract print command writes any configured contract as Prisma 8 PSL. A TypeScript contract now encodes every literal default through the column's codec, and the generated defaults in contract.json name their target...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.8",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.8.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T07:35:50.000Z",
+      "summary": "pnpm 12.8.0 warns when pnpm pack or pnpm publish would ship a .env file that files does not list, installs sharedWorkspaceLockfile: false workspaces concurrently, applies every setting passed as --config. = , and no longer leaves the Windows terminal stuck after Ctrl+C in a script. Minor Changes pnpm pack and pnpm publish now warn when the tarball includes a .env or .env.* file that the files field of package.json does not list. Templates such as .env.example are not reported. List the file in files to publish it on purpose, or exclude it in .npmignore or .gitignore #7826 . pnpm pack now...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 11.28.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T07:31:11.000Z",
+      "summary": "pnpm 11.28.1 makes pnpm install work in StackBlitz WebContainers, repairs lockfiles whose patch hashes disagree with patchedDependencies , and fixes many bugs in Windows command shims, injected workspace dependencies, and pnpm deploy . Patch Changes Installing packages pnpm install now works in StackBlitz WebContainers. On projects without a lockfile, it used to fail with ENOENT ... pnpm-lock.yaml , because pnpm did not recognize the errors that WebContainers return from asynchronous file system calls. It also failed with \"this.db.exec is not a function\", because node:sqlite there lacks...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.5-canary.3",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.5-canary.3",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-27T16:37:52.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.5-canary.2 by @github-actions[bot] in #14249 fix: Stabilize pnpm per-workspace lockfile hashes by @anthonyshew in #14253 chore: Upgrade factory Next.js to 16.3.3 by @anthonyshew in #14254 fix: Update js-yaml to address CVE-2026-84375 by @anthonyshew in #14255 chore: Upgrade Next.js in docs and factory for CVE-2026-94545 by @anthonyshew in #14256 fix: Remove unmaintained proc-macro-error2 by @anthonyshew in #14257 refactor: Replace clap in production CLIs with usage-rs by @anthonyshew in #14259 chore: Remove tiny-gradient dependency by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Nvidia unveils security platform to rein in AI agents and $150bn stock buyback",
+      "url": "https://www.theguardian.com/technology/2026/sep/28/nvidia-ai-agent-security-platform-stock-buyback",
+      "source": "The Guardian Tech",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-28T15:32:57.000Z",
+      "summary": "Chipmaker says new system was designed to prevent AI agents from going rogue amid incidents at top companies Nvidia on Monday unveiled a new security platform that the chipmaker said can stop artificial intelligence agents from going rogue. The company announced a $150bn stock buyback the same day. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Meta launches enterprise AI platform, hires MongoDB CEO to lead new initiative",
+      "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-09-28T16:52:38.000Z",
+      "summary": "Meta says it will focus on bringing its full technology stack, including Muse, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AI agents stole 600,000 credit cards for about $25 a target, Gambit says",
+      "url": "https://thenextweb.com/news/ai-agents-600000-credit-card-records-gambit?utm_source=flipboard&utm_content=topic%2Fartificialintelligence",
+      "source": "Flipboard AI",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-28T09:53:14.000Z",
+      "summary": "Security company Gambit says an attacker used three open-source AI agents to breach 27 companies and steal more than 600,000 credit card records. A scan cost about $25. An attacker used three open-source AI agent frameworks to break into at least 27 companies and steal more than 600,000 credit card …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Adds AI-Agent Controls That Can Block API Writes Even With a Write-Capable Key",
+      "url": "https://superpowerdaily.com/posts/nvidia-releases-openshell-0-1-0-to-enforce-ai-agent-permissions-outside-the-agent",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-28T09:52:50.000Z",
+      "summary": "OpenShell 0.1.0 keeps credentials outside an agent’s workload and lets operators change network rules mid-task. Some sandbox limits still require a restart.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
+      "url": "https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-28T07:22:33.000Z",
+      "summary": "Fireworks AI has released Ember-1, a post-trained Kimi K3 that learns to produce shorter reasoning traces instead of lowering reasoning effort. Fireworks reports about 40% fewer tokens, with output tokens per task falling from 49.3K to 29.9K in a production A/B test at an essentially unchanged score. Ember-1 is available now as an API-only Research Preview at Kimi K3 pricing. The post Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Release v0.63.0-nightly.20260928.g2fe7c2d3f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.63.0-nightly.20260928.g2fe7c2d3f",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T01:42:38.000Z",
+      "summary": "Full Changelog : v0.63.0-nightly.20260926.g2fe7c2d3f...v0.63.0-nightly.20260928.g2fe7c2d3f",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T01:02:58.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.12-dev.14: Journey test teardown waits as long as its setup (#30435)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.12-dev.14",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-27T15:17:51.000Z",
+      "summary": "Linked issue n/a — small change. Summary useDevDatabase in the CLI journey test helpers registers its afterAll teardown on vitest's default 5 s hook timeout while its beforeAll uses timeouts.spinUpPpgDev . Under full-suite load the dev database's close() took longer than 5 s twice in a row on PR #30402 ( infer-roundtrip-fidelity.hand-written-check.e2e.test.ts , migration-log.e2e.test.ts ), failing files whose tests had all passed; both passed when rerun alone. The sibling helper in test/integration/test/sql-orm-client/integration-helpers.ts already passes timeouts.spinUpPpgDev to its...",
+      "category": "ai_tools"
+    }
+  ]
+}

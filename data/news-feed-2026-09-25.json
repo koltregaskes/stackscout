@@ -1,0 +1,326 @@
+{
+  "generated": "2026-09-25T17:45:41.111Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.15",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.15",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T18:09:07.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.24.5 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.2 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.12-dev.1: chore(release): bump to 8.0.0-rc.12 (#30395)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.12-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T17:25:05.000Z",
+      "summary": "Release: 8.0.0-rc.11 → 8.0.0-rc.12 This is the release PR described in docs/oss/versioning.md . It bumps every workspace package to 8.0.0-rc.12 and moves the Prisma dependencies to their latest versions. Merging this PR ships the release. The push to main carries the new root version . The Publish to npm workflow then publishes 8.0.0-rc.12 under latest and creates a pre-release GitHub Release from the notes file. Review these first docs/releases/v8.0.0-rc.12.md : the release notes, which become the GitHub Release body. The same entry is at the top of CHANGELOG.md . The upgrade guides for...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.5",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.5",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T17:06:19.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(channels): decouple group-member access from senderPolicy ( #12475 ) by @qwen-code-dev-bot feat(cli): Add managed runtime attestation worker ( #12506 ) by @doudouOUC feat(serve): restore serve.channels once for a workspace registered after boot ( #12396 ) by @qqqys feat(core): record when each tool call started ( #12517 ) by @qqqys feat(cua): unify App workflows and fix no-Metal capture for SDK 0.20.11 ( #12386 ) by @LaZzyMan feat(web-shell): trajectory overview...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.7",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.7.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T10:39:37.000Z",
+      "summary": "pnpm 12.7.0 ships with .nvmrc and .node-version support in the global node shim, pnpm install --allow-build , pnpm publish --publish-wait-timeout , and pnpm-workspace.yaml created from the workspaces field. pnpm install --force no longer installs optional dependencies built for other platforms. This release also carries security fixes for bin shims on Nix, for lifecycle scripts of packages in a storeDir inside the workspace, and for userAgent placeholders in pnpm-workspace.yaml . Minor Changes pnpm install --force now keeps skipping optional dependencies whose os , cpu or libc do not...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.24.5",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.5",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T17:41:47.000Z",
+      "summary": "What's Changed fix(serve): preserve session creation failure diagnostics by @callmeYe in #12331 feat(sdk-java): Add managed runtime attestation client by @doudouOUC in #12522 feat(web-shell): select a time range on the trajectory overview to narrow the table by @qqqys in #12543 feat(serve,web-shell): set the Qwen Live endpoint and model from settings by @qqqys in #12529 feat(channels): separate private and group access policies by @qqqys in #12547 fix(core): bound oversized images returned by MCP tools by @yiliang114 in #10835 feat(serve): run Qwen Live through the Web Shell, native macOS...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 11.28",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T10:39:54.000Z",
+      "summary": "pnpm 11.28.0 adds the forceIgnoresPlatform setting and pnpm update --peer , and fixes many bugs in pnpm deploy , --filter , nodeLinker: hoisted , and custom modulesDir setups. This release also carries security fixes for shell completion, bin shims on Nix, lifecycle scripts inside a custom modulesDir , and userAgent placeholders in pnpm-workspace.yaml . Minor Changes Added the forceIgnoresPlatform setting. When it is false , pnpm install --force skips optional dependencies whose os , cpu or libc do not match the host instead of installing all of them. The default stays true #6133 . Patch...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.12-dev.4: docs: close out the orm-init-prisma7-detection project (#30392)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.12-dev.4",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T09:28:16.000Z",
+      "summary": "Close-out of the orm-init-prisma7-detection project after its one PR, #30291 (a Prisma 7 project gets Prisma 8 set up beside it by running orm init once), merged. The project's docs brief becomes a reference page, the design decisions the CLI README did not state yet are added to it, the final retro's lessons land in drive/ , and the transient project directory is deleted. Linear: no Linear project tracked this work. Deferred work filed at close-out: TML-3291 (the upgrade guides' tsconfig advice, assigned to the docs owner, @wmadden ) and TML-3292 (rough edges from manual QA of orm init...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.12-dev.3: fix(postgres): drop RLS policies before the DDL they block (#30232)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.12-dev.3",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T05:44:27.000Z",
+      "summary": "Linked issue Fixes #30226 Summary When one contract change removes both a column and an RLS policy referencing it, the planner emits dropColumn before dropPolicy , and Postgres rejects the migration with 2BP01. Policy drops are now spliced ahead of the first structural table/column drop, so the generated plan applies cleanly. Testing performed New regression test in test/migrations/rls-planner.test.ts (drops a published column together with a policy on (published = true) , asserts drop-policy-before-drop-column): fails before the fix ( dropColumn at index 0, dropPolicy at 2), passes...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.5-nightly.20260924.ffea2d024e",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.5-nightly.20260924.ffea2d024e",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T21:58:09.000Z",
+      "summary": "What's Changed feat(sdk-java): Add the Hosted Harness private client by @doudouOUC in #12654 test(java): pin runtime-broker guards left open in earlier reviews by @wenshao in #12632 feat(java): Reconcile UNKNOWN tool executions from Runtime evidence by @wenshao in #12655 test(cli): pin the managed-runtime worker's boot, bind and shutdown guards by @wenshao in #12633 fix(review): persist the local findings ledger when a round cannot anchor by @wenshao in #12660 Full Changelog : v0.24.5...v0.24.5-nightly.20260924.ffea2d024e",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.13",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.13",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T10:40:06.000Z",
+      "summary": "Patch Changes Requests to a registry or tarball server whose TLS certificate fails verification now fail at once. Such requests were retried for more than a minute without any output #9134 . On macOS, pnpm now uses its bundled certificate roots when macOS cannot create an SSL policy for a registry connection. It crashed on the first registry request in that case pnpm/pnpm#14461 . Installing through a pnpr server now installs a project's peer dependencies when autoInstallPeers is enabled. A project that declared only peer dependencies failed with ERR_PNPM_OUTDATED_LOCKFILE or skipped its...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.5-canary.2",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.5-canary.2",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T04:02:29.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.5-canary.1 by @github-actions[bot] in #14245 test: Make new-package lockfile filter deterministic by @anthonyshew in #14241 test: Trim redundant Go cache builds by @anthonyshew in #14242 test: Reduce Go versioned-name test matrix by @anthonyshew in #14243 test: Move Go binary checks into contracts by @anthonyshew in #14246 test: Consolidate Go format smokes by @anthonyshew in #14244 test: Reuse Cargo build artifacts safely by @anthonyshew in #14247 test: Separate prune planning matrix from buildability smoke by @anthonyshew in #14248...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.5-canary.1",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.5-canary.1",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T01:39:48.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.3-canary.4 by @github-actions[bot] in #14162 fix: Stop with tasks when parent exits by @anthonyshew in #14163 fix: Respect negated global dependencies in affected detection by @anthonyshew in #14164 chore: Release Turborepo 2.11.3 by @github-actions[bot] in #14165 test: Share Go compilation caches across integration tests by @anthonyshew in #14166 refactor: Add injectable manifest loading to repository graphs by @anthonyshew in #14167 test: Move Go and Cargo scope planning into crate tests by @anthonyshew in #14168 refactor: Extract...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.62.0-nightly.20260925.gbedef96ef",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260925.gbedef96ef",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-25T01:23:57.000Z",
+      "summary": "What's Changed Changelog for v0.61.0-preview.1 by @gemini-cli-robot in #29469 Changelog for v0.61.0 by @gemini-cli-robot in #29472 fix(cli): distinguish missing MCP enablement config from malformed JSON by @jesussamuel-byte in #29446 fix(cli): restore paused stdin after capability detection by @ugorla-dev in #29487 fix(core): bound tool output size and optimize memory lifecycle in long-running agent loops by @diegogodinezr in #29451 New Contributors @ugorla-dev made their first contribution in #29487 Full Changelog : v0.62.0-nightly.20260924.g8e70c862f...v0.62.0-nightly.20260925.gbedef96ef",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.4",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.4",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T22:16:50.000Z",
+      "summary": "What's Changed Changelog fix: Respect negated global dependencies in affected detection by @anthonyshew in #14164 chore: Release Turborepo 2.11.3 by @github-actions[bot] in #14165 test: Share Go compilation caches across integration tests by @anthonyshew in #14166 refactor: Add injectable manifest loading to repository graphs by @anthonyshew in #14167 test: Move Go and Cargo scope planning into crate tests by @anthonyshew in #14168 refactor: Extract subprocess-free Go observation assembly by @anthonyshew in #14169 test: Move Cargo environment hash contracts into crates by @anthonyshew in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "PM rejects ‘nonsense’ suggestion he delayed revealing OpenAI Medicare hack as Labor considers changing laws",
+      "url": "https://www.theguardian.com/australia-news/2026/sep/25/wake-up-call-labor-considers-changing-australian-laws-after-openai-medicare-hack",
+      "source": "The Guardian Tech",
+      "tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-25T05:57:17.000Z",
+      "summary": "Expert says Australia’s criminal laws should be clarified to determine how fault is applied to a corporation when its AI agent commits a crime Follow our Australia news live blog for latest updates Get our new political email , free app or daily news podcast The federal government could change Australian laws if the current legal framework could not respond to the unprecedented OpenAI hack of Medicare , ministers have confirmed. It comes as the prime minister denied accusations from the opposition he had held on to the information before announcing it at the UN general assembly in New...",
+      "category": "tech_general"
+    }
+  ]
+}

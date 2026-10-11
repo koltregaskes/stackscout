@@ -1,0 +1,274 @@
+{
+  "generated": "2026-10-10T17:45:20.529Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.25.0-nightly.20261009.085a44f336",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261009.085a44f336",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T22:09:39.000Z",
+      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Deno is joining Cloudflare",
+      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-09T22:48:37.000Z",
+      "summary": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model\" (see the Cloudflare blog .) The bad news is that Deno itself will not be maintained by Cloudflare beyond the next year: We will support the Deno runtime for another year with monthly releases containing bug fixes...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.65.0-nightly.20261010.g9b6e0265d",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-nightly.20261010.g9b6e0265d",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T01:38:44.000Z",
+      "summary": "What's Changed fix(cli): handle JSON parse and response stream errors in fetchJson by @jesussamuel-byte in #29658 fix(core): preserve line terminators in truncateString by @diegogodinezr in #29673 fix(vscode-ide-companion): make IdeServer.stop() resolve while MCP sessions are open by @elberthc-byte in #29674 fix(core): retain ask_user question text in the tool result display by @elberthc-byte in #29677 fix(core): eliminate false positives on untrusted command flags and compound loops by @DavidAPierce in #29672 fix(cli): clear cached credentials when re-selecting Google login by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.11.2",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.11.2",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T17:38:44.000Z",
+      "summary": "This release fixes --workspace-concurrency=Infinity , filters set by an updateConfig hook, and store fetches with enable-modules-dir=false . Patch Changes --workspace-concurrency=Infinity now runs workspace projects with no concurrency limit. It used to fail with invalid digit found in string #16793 . pnpm install and other recursive commands now apply the filter and filterProd that an updateConfig hook sets. They used to run on every workspace project #16792 . enable-modules-dir=false now also fetches the packages an install reuses from an existing lockfile, so the store holds every...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.15: Read PSL block members from symbols instead of syntax nodes (#30674)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.15",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T14:22:41.000Z",
+      "summary": "Linked issue n/a. First slice of the PSL mixins project; the project spec and plan are in projects/psl-mixins/ . At a glance []; }\"> export interface BlockSymbol { readonly kind : 'block' ; readonly name : string ; readonly keyword : string ; readonly node : GenericBlockDeclarationAst ; readonly span : PslSpan ; readonly entries : readonly KeyValuePairAst [ ] ; readonly attributes : readonly ResolvedAttribute ModelAttributeAst > [ ] ; } - for (const entry of block.node.entries()) { + for (const entry of block.entries) { Before this PR a generic block symbol (an enum , a policy_select ,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.15",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.15",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-10-10T12:35:55.000Z",
+      "summary": "pnpr 0.1.0-alpha.15 adds a web UI, admin APIs for package rules, teams, and accounts, and SCIM deprovisioning. It also carries a security fix for tokens that outlived their account. Minor Changes pnpr serves a web UI at /-/ui/ when the new @pnpm/pnpr-ui package is installed next to it, for example with pnpm add -g @pnpm/pnpr,@pnpm/pnpr-ui . The new ui setting turns the UI off or serves it from another directory. The web UI signs in with a password or with an OIDC provider that offers browser sign-in. pnpr lists those providers at GET /-/pnpr/v0/sign-in . A browser sign-in started with...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
+      "url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-09T20:33:17.000Z",
+      "summary": "Alibaba’s Qwen team has released Qwen-Image-2.1-Turbo, an accelerated checkpoint of its open-weight Qwen-Image-2.1 model. It generates and edits images in 8 denoising steps instead of the base model’s 40-step default. For developers, that means 5x fewer denoising steps on the same 7B architecture, plus a hosted API option. TL;DR What is Qwen-Image-2.1-Turbo? Qwen-Image-2.1-Turbo is an […] The post Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T01:08:40.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.64.0-preview.1",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-preview.1",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T20:27:57.000Z",
+      "summary": "What's Changed fix(patch): cherry-pick 2ce1a69 to release/v0.64.0-preview.0-pr-29672 to patch version v0.64.0-preview.0 and create version 0.64.0-preview.1 by @gemini-cli-robot in #29696 Full Changelog : v0.64.0-preview.0...v0.64.0-preview.1",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Stark warning – does new footage in Avengers: Endgame reveal the truth about Doctor Doom?",
+      "url": "https://www.theguardian.com/film/2026/oct/09/stark-warning-does-new-footage-in-avengers-endgame-reveal-the-truth-about-doctor-doom",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T16:25:44.000Z",
+      "summary": "Warning: contains spoilers The four short scenes added to the new version has made the film the highest-grossing of all time – but the only people really enjoying this are the Disney accountants Does it really matter which film is the highest-grossing of all time at the global box office? Will James Cameron be lying awake at night staring into the darkness and pondering whether to withdraw humanity’s access to giant, blue-skinned space elves out of sheer spite, just because Avatar has been dethroned once again by Avengers: Endgame? It seems unlikely. Are the Russo brothers at this very...",
+      "category": "tech_general"
+    },
+    {
+      "title": "v16.5.0-canary.6",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.6",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-09T16:11:53.000Z",
+      "summary": "Core Changes Add more metadata to agent upgrade telemetry: #99925 perf: reduce build tree view allocations: #99930 fix: classify collapsed generated paths from child routes: #99864 Upgrade React from d75b0697-20261006 to b618bbb4-20261007 : #99879 Misc Changes docs(skills): use agent-agnostic branch prefix in create-pr: #99934 [test] Regression test for XSS-safe GoogleTagManager#dataLayer : #99464 [image-optimization] Expose next/image-optimizer-transform as a public subpath: #99312 fix(next): register the chunk groups that are chunked: #99749 refactor(turbopack): chunk several chunk...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Dozens reported injured in Yemeni Houthi attack at Riyadh airport",
+      "url": "https://www.theguardian.com/world/2026/oct/10/yemen-government-allied-forces-recapture-bab-al-mandab-strait-houthis-taiz",
+      "source": "The Guardian (World)",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.54,
+      "date": "2026-10-10T15:54:12.000Z",
+      "summary": "Saudi authorities yet to confirm strike as government-allied forces in Yemen claim successful offensive to retake Bab al-Mandab strait Yemen’s Houthis have launched a missile attack on Riyadh’s international airport in Saudi Arabia, with dozens reported wounded and a witness describing panic in the terminal. Saudi authorities did not confirm any new attack or evacuation, but one witness reported hearing an explosion while waiting to board a flight, and another said they saw a strike that left people wounded. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach. See more",
+      "url": "https://www.bbc.com/news/articles/cqkg50j1yd5lo",
+      "source": "BBC AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-10-10T11:20:51.066Z",
+      "summary": "",
+      "category": "ai_tools"
+    },
+    {
+      "title": "a16z’s Olivia Moore on the state of consumer AI",
+      "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-10-09T15:43:33.000Z",
+      "summary": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "url": "https://github.com/rociiu/talorys",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-10T10:52:09.000Z",
+      "summary": "",
+      "category": "tech_general"
+    }
+  ]
+}

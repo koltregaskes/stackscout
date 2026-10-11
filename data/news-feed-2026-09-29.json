@@ -1,0 +1,334 @@
+{
+  "generated": "2026-09-29T17:45:06.635Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.17",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.17",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T15:12:40.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.6 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.5 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.1 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.24.7",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.7",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T14:47:20.000Z",
+      "summary": "What's Changed fix(serve): preserve session creation failure diagnostics by @callmeYe in #12331 feat(sdk-java): Add managed runtime attestation client by @doudouOUC in #12522 feat(web-shell): select a time range on the trajectory overview to narrow the table by @qqqys in #12543 feat(serve,web-shell): set the Qwen Live endpoint and model from settings by @qqqys in #12529 feat(channels): separate private and group access policies by @qqqys in #12547 fix(core): bound oversized images returned by MCP tools by @yiliang114 in #10835 feat(serve): run Qwen Live through the Web Shell, native macOS...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.7",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T14:24:45.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(managed-agent): admit workspace-bound sessions without execution ( #12709 ) by @doudouOUC feat(cli): Run Managed Runtime tools in the Session's Workspace directory ( #12732 ) by @wenshao feat(acp-bridge): route sessions across legacy and managed engines ( #12698 ) by @wenshao feat(serve): Enable private Hosted Harness no-tool text turns ( #12713 ) by @doudouOUC feat(managed-agent): Define the managed-tool-result/1 contract (O1a) ( #12729 ) by @wenshao...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "n8n@2.42.0",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.0",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T07:26:31.000Z",
+      "summary": "2.42.0 (2026-09-29) Bug Fixes AI Agent Node: Let an AI Agent Tool use its own tools under a pre-v3 parent agent ( #39160 ) ( 60d0598 ) Align MCP workflow headings and remove outdated notice ( #39463 ) ( b096147 ) API: Accept workflow descriptions on creation ( #39705 ) ( 6c1edac ) API: Allow extendsCredential in workflow create/update ( #39243 ) ( 9e7bc66 ) API: Validate OpenAPI path parameter names ( #39067 ) ( a2a2638 ) Azure OpenAI Chat Model Node: Make the Azure Entra credential sign in as the app ( #39377 ) ( 2f98090 ) core: Close Chat integration runtime on shutdown and let...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "beta",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T07:23:44.000Z",
+      "summary": "2.42.0 (2026-09-29) Bug Fixes AI Agent Node: Let an AI Agent Tool use its own tools under a pre-v3 parent agent ( #39160 ) ( 60d0598 ) Align MCP workflow headings and remove outdated notice ( #39463 ) ( b096147 ) API: Accept workflow descriptions on creation ( #39705 ) ( 6c1edac ) API: Allow extendsCredential in workflow create/update ( #39243 ) ( 9e7bc66 ) API: Validate OpenAPI path parameter names ( #39067 ) ( a2a2638 ) Azure OpenAI Chat Model Node: Make the Azure Entra credential sign in as the app ( #39377 ) ( 2f98090 ) core: Close Chat integration runtime on shutdown and let...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "H Company Releases Holo4: Open-Weight Computer-Use Models That Click, Code and Call Tools Across Desktop, Web, Android and APIs",
+      "url": "https://www.marktechpost.com/2026/09/29/h-company-releases-holo4-open-weight-computer-use-models-that-click-code-and-call-tools-across-desktop-web-android-and-apis/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-29T07:38:13.000Z",
+      "summary": "H Company has released Holo4, a family of generalist computer-use models for AI agents. One set of weights clicks and types on screens. It also writes code and calls MCP or API tools. Holo4 ships in 2 sizes: Holo4 27B (dense) and Holo4 35B-A3B (Mixture of Experts, 3B active). Both serve a 256K context on […] The post H Company Releases Holo4: Open-Weight Computer-Use Models That Click, Code and Call Tools Across Desktop, Web, Android and APIs appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "NVIDIA Launches Open Agent Safety Platform: OpenShell Sandboxes Agents on Vera CPUs While Sentry on BlueField-4 Quarantines Them in Milliseconds",
+      "url": "https://www.marktechpost.com/2026/09/28/nvidia-launches-open-agent-safety-platform/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-28T19:21:25.000Z",
+      "summary": "NVIDIA has launched the Open Agent Safety Platform, an open reference design that enforces AI agent safety outside the agent itself. OpenShell, an Apache 2.0 runtime, sandboxes agents under YAML policies. Sentry, an out-of-band watchdog on BlueField-4 DPUs, can quarantine an agent that escapes its boundary in milliseconds. NVIDIA says over 100 organizations are working with the platform. The post NVIDIA Launches Open Agent Safety Platform: OpenShell Sandboxes Agents on Vera CPUs While Sentry on BlueField-4 Quarantines Them in Milliseconds appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "v4.0.530",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.530",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T13:19:51.000Z",
+      "summary": "What's Changed ⚠️ Small breaking change - remotion : durationInFrames applies before playbackRate by @JonnyBurger in #11685 remotion : Add loop to to most components by @JonnyBurger in #11645 @remotion/studio : Add tabs for compositions in Studio by @JonnyBurger in #11699 @remotion/studio : Add Pre-compose action by @JonnyBurger in #11674 @remotion/studio : Add left-only timeline trims by @JonnyBurger in #11703 @remotion/studio : Show right sidebar by default by @JonnyBurger in #11783 @remotion/studio : Import SRT and other formats in caption editor by @samohovets in #11665...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.97.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.97.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T12:50:27.000Z",
+      "summary": "Crushed It! This release introduces many new features that improve QoL by a ton! Brought to you by Charm and our favorite contributors! Toggle MCPs Thanks to awesome @BrunoKrugel , you can now turn off MCP servers from the UI, globally, or locally. Git Branches At last: @taciturnaxolotl and @Gustave-241021 have brought Git branch display to Crush, which is so useful . More UI and QoL changes: ChatGPT OAuth now refreshes with Catwalk Claude Channels, part 2/3 by @joestump Toggle Sidebar on and off with ctrl+b by @andreynering Quit dialog improvements and mouse support by @meowgorithm...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic Releases Claude Sonnet 5.5: 70.6% on Terminal-Bench 4.0 at the Same $2/$10 Price",
+      "url": "https://www.marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-29T04:20:59.000Z",
+      "summary": "Anthropic has released Claude Sonnet 5.5, the second model in its Claude 5.5 family. It scores 70.6% on Terminal-Bench 4.0 and lands within 2 points of Opus 5.5 on GDPval-AA. It also generates output 30%+ faster than Sonnet 5 and keeps the same $2/$10 per million token price. Anthropic says cost per task falls by up to 30% because the model uses fewer tokens. You can deploy it today via the Claude API, AWS, Google Cloud and Azure. The post Anthropic Releases Claude Sonnet 5.5: 70.6% on Terminal-Bench 4.0 at the Same $2/$10 Price appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "AutoTrust Releases JEV-27B for Self-Hosted AI Agent Decisions",
+      "url": "https://superpowerdaily.com/posts/autotrust-releases-jev-27b-for-self-hosted-ai-agent-decisions",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-28T20:59:56.000Z",
+      "summary": "The open-weights model pairs fast, structured choices with text generation. Its close benchmark result against a hosted rival comes from AutoTrust’s own tests.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v10.34.6",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.34.6",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T15:44:40.000Z",
+      "summary": "Patch Changes e7888e5 : pnpm self-update now resolves and verifies pnpm through registry, authentication, proxy, and TLS settings from trusted non-project configuration. Project configuration and the default project pnpmfile can no longer redirect the pnpm download or disable engine identity verification. 46bc7c9 : pnpm no longer tells you to update itself with Corepack or with pnpm add -g : The update notification now suggests pnpm self-update , or the standalone install script when pnpm is running under Corepack. It used to suggest corepack use pnpm@ , or pnpm add -g pnpm / pnpm add -g...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.97.1",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.97.1",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-29T12:47:44.000Z",
+      "summary": "Tiny patch Removed the glyph for Git branch display, as it won't display on when nerdfonts are not available. Changelog Fixed f2d66d2 : fix: remove the powerline symbol ( @andrinoff ) Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/v0.97.1/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/v0.97.1/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.8.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.8.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T17:40:12.000Z",
+      "summary": "pnpm 12.8.1 fixes pnpm install --frozen-lockfile rejecting lockfiles with injected workspace packages that have peers, restores the executable bit on files of local directory dependencies, makes pnpm dedupe converge, and uses less CPU on many-core machines. Patch Changes pnpm install --frozen-lockfile no longer rejects a freshly generated lockfile when an injected workspace package has peer dependencies #16332 . Executable files in a file: directory dependency or an injected workspace package keep their executable bit again. Since 12.8.0, pnpm installed these files without the permissions...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.13-dev.2: Generic block values bind the shared typed expression grammar (#30381)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.13-dev.2",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-28T17:06:44.000Z",
+      "summary": "What this PR does Generic-block values now bind the same typed expression grammar attributes use, and the legacy PslBlockParam DSL is retired in the same change that migrates every consumer. Block authors declare values with fixedBlock({ parameters }) or entriesBlock({ value, allowBare }) , get inferred outputs through InferBlock , and lowering receives a typed envelope ( ParsedPslExtensionBlock ) — never raw parameter text. The design in five decisions Source and semantics are separate products. The print block keeps ordered source entries { expression?, span } strictly for rendering;...",
+      "category": "ai_tools"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "generated": "2026-09-03T17:45:09.354Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.23.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-03T11:03:15.000Z",
+      "summary": "What's Changed feat(web-shell): show git state hints beside branch picker actions by @wenshao in #10397 feat(review): emit the Step 3A fan-out as a generated workflow script by @qqqys in #10119 fix(core): keep the ask_user_question dialog behind allow rules and auto-approval by @qqqys in #10160 fix(cli): derive bootstrap --help from shared option definitions by @yiliang114 in #8902 feat(serve): hide workspace Browse on headless daemon hosts by @qqqys in #9406 fix(core): prevent Anthropic streams from hanging indefinitely by @yiliang114 in #9945 docs(design): OpenTUI migration design and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Live Host v0.2.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/live-host-v0.2.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-03T03:31:34.000Z",
+      "summary": "What's Changed fix(ci): make shared ECS Vitest concurrency tunable by @yiliang114 in #10667 feat(cli): OpenTUI migration batch 4 — dialogs, commands, and session-rewind by @chiga0 in #10383 feat(goal): let the model propose a Goal the user approves in a dialog by @qqqys in #10171 fix(web-shell): persist model reasoning preferences by @callmeYe in #10489 feat(web-shell): Add standalone chats by @doudouOUC in #10514 fix(ci): keep web-shell visuals comment on upload failure by @AaronZ345 in #10253 fix(permissions): never let the AUTO-mode classifier auto-approve out-of-workspace writes;...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.3",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.3.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-02T16:28:57.000Z",
+      "summary": "Minor Changes Every context-aware global command ( node , deno , bun , and the shims created with pnpm shim add ) is now a native executable on every platform, so environment variables whose names are not valid shell identifiers reach these commands. On Windows, .exe replaces the .cmd and .ps1 shims for them. Shims written by earlier pnpm 12 releases are migrated on the next global install or self-update. pnpm remove and pnpm update now accept --trust-lockfile , --no-trust-lockfile , --trust-policy , --trust-policy-exclude and --trust-policy-ignore-after , the same flags pnpm install and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meet Switchyard: A Rust Proxy and Library That Routes and Translates LLM Traffic Across OpenAI and Anthropic APIs",
+      "url": "https://www.marktechpost.com/2026/09/02/nvidia-releases-switchyard-rust-proxy-llm-traffic-openai-anthropic-api-translation/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-02T18:05:52.000Z",
+      "summary": "NVIDIA has released Switchyard, an Apache-2.0 Rust proxy and library for LLM traffic. It decodes requests into provider-neutral types, routes them with passthrough, random, LLM-classifier, or stage-router algorithms, and translates responses back into the client's format, so Claude Code or Codex CLI can run against vLLM, NIM, or Ollama unchanged. The project is pre-alpha and not for production. The post Meet Switchyard: A Rust Proxy and Library That Routes and Translates LLM Traffic Across OpenAI and Anthropic APIs appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "llm-gemini 0.34",
+      "url": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-02T16:39:38.000Z",
+      "summary": "Release: llm-gemini 0.34 New model gemini-3.8-flash for Gemini 3.8 Flash , with low, medium and high thinking levels. #146 Fixed async responses failing to record the resolved model version. Thanks, Charlie Tonneslan . #137 Google released Gemini 3.8 Flash (and 3.8 Flash Cyber, but that's available to \"trusted defenders\" only) today. Here are the pelicans for high, medium, and low. This is high: For comparison, here are the same pelicans generated using Gemini 3.7 Flash . Something I appreciate about Gemini Flash is that it's fast, cheap, and competent at things like HTML and JavaScript....",
+      "category": "ai_tools"
+    },
+    {
+      "title": "LangChain Adds Agent Payments With Spending Caps, but Settlement Questions Remain",
+      "url": "https://superpowerdaily.com/posts/langchain-adds-agent-payments-with-spending-caps-but-settlement-questions-remain",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T03:22:56.000Z",
+      "summary": "The Nevermined integration lets an agent purchase data and API access during a task under delegated-card limits. An open repository issue, however, raises a separate question about whether some paid results can be released when settlement fails.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Abliteration Removes Refusal Mechanisms for Offensive Cyber Work",
+      "url": "https://superpowerdaily.com/posts/abliteration-removes-refusal-mechanisms-for-offensive-cyber-work",
+      "source": "Superpower Daily",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T02:04:09.000Z",
+      "summary": "The derivative is built on Z.ai’s open-weight GLM-5.3, while Abliteration says its reasoning, coding and agent capabilities remain intact. The federal framework cited exempts open-source models, but this product is described as open-weight.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Developers Open-Sources zg (zvec-grep): A Local-First Search Layer Unifying ripgrep, BM25, and Vector Search",
+      "url": "https://www.marktechpost.com/2026/09/02/qwen-developers-open-sources-zg-zvec-grep-a-local-first-search-layer-unifying-ripgrep-bm25-and-vector-search/",
+      "source": "MarkTechPost",
+      "tags": [
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-02T23:48:47.000Z",
+      "summary": "We look at zg (zvec-grep), the local-first search layer that Qwen Developers just open-sourced under Apache 2.0. We explain how it puts ripgrep, BM25, and vector search behind a single interface, so an agent can move from a plain-language description to an exact line span without switching tools. We cover the deliberately small MCP surface, the on-device embedding catalog, and the authorization gate that stands between local content and remote models. The post Qwen Developers Open-Sources zg (zvec-grep): A Local-First Search Layer Unifying ripgrep, BM25, and Vector Search appeared first...",
+      "category": "ai_research"
+    },
+    {
+      "title": "pnpm 12.3.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.3.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-03T00:40:37.000Z",
+      "summary": "Patch Changes Sped up installs in large workspaces: the anchor for re-rendering workspace link: targets is now derived once per project instead of once per dependency edge, and project ordering hashes paths by their raw bytes #14352 . After a self-update from pnpm 12.2 to 12.3, global commands such as node , npm , and yarn failed with unexpected argument '--shim' found . Global commands now launch normally, and their first launch migrates the global bin directory to native shims. When self-update downgrades to pnpm 12.2 or older, it keeps the newer native shims so those commands continue...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Perplexity Adds One-Command API Setup Through Stripe Projects",
+      "url": "https://superpowerdaily.com/posts/perplexity-adds-one-command-api-setup-through-stripe-projects",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-09-03T11:47:22.000Z",
+      "summary": "The terminal flow puts credentials, prepaid credits and spending controls beside an application’s code. But teams connecting an existing Perplexity project stay on its existing billing path.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Tim Cook handed $47m package for new role as executive chair of Apple",
+      "url": "https://www.theguardian.com/technology/2026/sep/02/tim-cook-47m-package-chair-apple",
+      "source": "The Guardian Tech",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-02T14:46:36.000Z",
+      "summary": "Pay and shares deal nearly matches $58m award to John Ternus, his successor as CEO at the $4.7tn tech company Tim Cook has received a $47m (£35m) pay deal as Apple’s executive chair, a remuneration package that nears the level set for his successor as chief executive. Cook, who handed over to John Ternus on Tuesday, will be paid a base salary of $2m and $45m worth of shares . Half of the share award will be based on performance targets being met, while the remaining half will be paid out over four years. Continue reading...",
+      "category": "tech_general"
+    },
+    {
+      "title": "Here's how both Claude and you can use the same computer simultaneously",
+      "url": "https://www.androidauthority.com/claude-background-computer-use-3706684/?utm_source=flipboard&utm_content=topic%2Fartificialintelligence",
+      "source": "Flipboard AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T07:18:31.000Z",
+      "summary": "You can now multitask with an AI agent in the background. Add Android Authority on Google: Preferred SourceGoogle Discover Claude Cowork can be really helpful for handling busywork, leaving you free to pursue the leisure activity of your choice. However, if you’re looking to max out your multitasking …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Capsule Security Adds a Last-Second Block for AI-Agent Actions",
+      "url": "https://superpowerdaily.com/posts/capsule-security-adds-a-last-second-block-for-ai-agent-actions",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T01:20:02.000Z",
+      "summary": "The new control layer judges a planned action before it runs, rather than relying only on access permissions or post-incident review. Its reported benchmark results are promising, but the company’s internal model comparison remains difficult to assess fully.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic upgrades Claude’s computer use to run in the background on Mac",
+      "url": "https://9to5mac.com/2026/09/02/anthropic-upgrades-claude-codes-computer-use-to-run-in-the-background-on-mac/?utm_source=flipboard&utm_content=user/9to5mac",
+      "source": "Flipboard AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-02T19:14:00.000Z",
+      "summary": "While computer use isn’t new for Claude on the desktop, running it in the background is a nice upgrade. Anthropic shared today that background computer use is available for Claude Code, only on macOS, for Pro and Max customers. OpenAI’s Codex-turned-ChatGPT first brought background computer use to …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Oracle Publishes AI Agent Blueprint That Keeps Database Writes Under Human Approval",
+      "url": "https://superpowerdaily.com/posts/oracle-publishes-ai-agent-blueprint-that-keeps-database-writes-under-human-approval",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-02T17:16:11.000Z",
+      "summary": "Oracle’s supply-chain sample connects chat interfaces to inventory recommendations, but limits execution to a procedure-backed, audited database path after a planner approves it.",
+      "category": "ai_tools"
+    }
+  ]
+}

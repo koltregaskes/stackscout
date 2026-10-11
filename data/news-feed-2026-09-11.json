@@ -1,0 +1,294 @@
+{
+  "generated": "2026-09-11T17:45:11.446Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.12",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.12",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T15:52:03.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.23.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.2 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.1 Source: CLI built from source (same branch/ref as SDK) Highlights The bundled CLI 0.23.0 includes two fixes requested in #11022 : Managed memory availability now respects the memory.enableManagedAutoMemory setting ( #6941 ). Hosts that disable managed auto memory no longer see...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.11",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.11",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T16:56:04.000Z",
+      "summary": "pnpr now serves Cargo, Python, and container registries alongside npm, publishes across all of them in one transaction, and signs users in through OIDC. Minor Changes Cargo and Python registries pnpr now serves Cargo and Python registries alongside npm from one instance. Hosted Cargo registries support cargo publish , cargo yank , and crate downloads. Hosted Python registries support pip install --index-url and twine upload . Upstream registries can proxy crates.io and PyPI with checksum verified downloads, and a router can combine sources from all three ecosystems. A registry that serves...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Research Releases ToolGrad: Answer-First Framework Hits 99.8% Pass Rate for Tool-Use Data Generation",
+      "url": "https://www.marktechpost.com/2026/09/10/google-research-releases-toolgrad-answer-first-framework-hits-99-8-pass-rate-for-tool-use-data-generation/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T06:01:25.000Z",
+      "summary": "Google Research has released ToolGrad, an ACL 2026 Findings framework that inverts tool-use dataset generation: it builds a verified API chain first, then writes the matching user query. Guided by textual \"gradients\" from a 4-module propose-execute-select-update loop, ToolGrad reaches a 99.8% pass rate on ToolBench versus 63.8% for DFS search. Gemma-3-12B fine-tuned on only 500 samples scores 83.1 on BFCL, next to Gemini 2.5 Pro at 83.2. Code, dataset, and models are public under Apache-2.0. The post Google Research Releases ToolGrad: Answer-First Framework Hits 99.8% Pass Rate for...",
+      "category": "ai_research"
+    },
+    {
+      "title": "Google Releases ToolGrad, Reporting a 99.8% Pass Rate for Tool-Use Data",
+      "url": "https://superpowerdaily.com/posts/google-releases-toolgrad-reporting-a-99-8-pass-rate-for-tool-use-data",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T06:24:38.000Z",
+      "summary": "The research framework reverses a common synthetic-data workflow: it validates API calls first, then writes the request a user might make. Google says the approach produces more usable examples at lower cost, though its results remain tied to research benchmarks.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Any Nix package, live in your browser",
+      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-10T23:44:15.000Z",
+      "summary": "Any Nix package, live in your browser Farid Zakaria calls this his \" magnum opus of Nix work\", and I can see why. trynix.dev provides a qemu-wasm powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with any Nix package from the past 13 years. They are URL addressable, so you can navigate to this page: https://trynix.dev/?pkg=python3%403.6.2 Then click \"Load\" and get an interactive shell against a virtual machine running Python 3.6.2 from 2017. Farid is building all sorts of neat things on top of this. One recent example:...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.3-nightly.20260910.c46cb85cf2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.3-nightly.20260910.c46cb85cf2",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T22:00:09.000Z",
+      "summary": "What's Changed refactor(dingtalk): remove obsolete background response aggregation by @qqqys in #11570 feat(channels)!: remove message prefix filtering by @qqqys in #11571 fix(ci): widen the replayed supersede-cede timeline margin to deflake Scripts by @wenshao in #11581 test(review): pin the fold invariant the per-line escape rests on by @wenshao in #11533 fix(autofix): charge regressions to the brake and gate test weakening by @wenshao in #10188 fix(acp): Preserve submitted prompt provenance for auto recall by @doudouOUC in #11455 fix(serve): restore configured channels after restart by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.4.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.4.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T17:00:15.000Z",
+      "summary": "pnpm 12.4.1 fixes installs that failed on filesystems refusing hard links or clones, on Android, and under nodeLinker: hoisted . Repeat installs are faster. Patch Changes Installing packages pnpm install no longer fails with Operation not permitted when the filesystem refuses a hard link or a copy-on-write clone #14722 . Under packageImportMethod: auto and clone-or-copy , pnpm copies the file instead. EdenFS checkouts, which have no hard links, and rootless containers, which refuse the clone syscall, both hit this. An explicit packageImportMethod: hardlink or clone still reports the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.9-dev.4: feat(psl): expose inspectable attribute combinators (#30247)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.9-dev.4",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T15:45:39.000Z",
+      "summary": "Expose inspectable attribute combinators so tooling can consume the same grammar used by PSL interpretation, without maintaining a second descriptor tree. Changes Parser API: replace open argument kinds with a closed discriminated union exposing fixed values, collection children, union alternatives, and function signatures. Optional wrappers preserve metadata and output types. Context safety: distinguish local and referenced field arguments and enforce mixed-alternative/nested-wrapper placement constraints through TypeScript parse-context inference only; no runtime context tags or...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-10T14:59:02.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(core): expand Kimi, Qwen and DeepSeek reasoning presets ( #11349 ) by @callmeYe feat(sessions): record what kind of session registered, and document the registry and wire contract ( #11463 ) by @qqqys feat(web-shell): keep answered questions visible outside processed summaries ( #11461 ) by @ytahdn feat(web-shell): improve session overview navigation and details ( #11238 ) by @wenshao feat(core): add OpenAI Responses API content generator ( #8169 ) by @netbrah...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Agents API 🤖, open model adoption 📈, sharded Postgres 🧑‍💻",
+      "url": "https://tldr.tech/tech/2026-09-11",
+      "source": "TLDR AI",
+      "tags": [
+        "api_update",
+        "open_source"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T00:00:00.000Z",
+      "summary": "",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Details BioNeMo Inference Runtime (BioIR): 2.90x Higher Boltz-2 Folding Throughput and 58.5K Residues per GPU-Hour on 8xH100",
+      "url": "https://www.marktechpost.com/2026/09/10/nvidia-details-bionemo-inference-runtime-bioir-2-90x-higher-boltz-2-folding-throughput-and-58-5k-residues-per-gpu-hour-on-8xh100/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-10T21:57:06.000Z",
+      "summary": "NVIDIA has detailed BioNeMo Inference Runtime (BioIR), a Python library that accelerates biomolecular structure-prediction models on NVIDIA GPUs while staying in plain PyTorch. In a matched benchmark on 1,000 human dimer targets across 8xH100 GPUs, BioIR-accelerated Boltz-2 delivered 58.5K successfully folded residues per GPU-hour versus 20.2K for a torch-compiled open-source implementation, a 2.90x gain. The runtime optimizes at 3 layers: custom kernel selection, CUDA Graph capture, and Ray-based replica scaling that places 1 full model copy per GPU. BioIR already powered the AlphaFold...",
+      "category": "ai_research"
+    },
+    {
+      "title": "OpenAI Launches the Agents API in Public Beta, Putting the Codex Harness Behind One API Call",
+      "url": "https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-10T21:21:58.000Z",
+      "summary": "OpenAI has released the Agents API in public beta. It gives developers the same harness and infrastructure that run Codex. OpenAI hosts and maintains the harness. Developers run the agent’s compute in an OpenAI-managed sandbox, their own infrastructure, or a partner sandbox. Is it deployable? Yes. It is live for all developers in public beta. […] The post OpenAI Launches the Agents API in Public Beta, Putting the Codex Harness Behind One API Call appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "OpenAI Launches a Data Agent for ChatGPT Work Without a Public Accuracy Benchmark",
+      "url": "https://superpowerdaily.com/posts/openai-launches-a-data-agent-for-chatgpt-work-without-a-public-accuracy-benchmark",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-10T15:39:42.000Z",
+      "summary": "The new plugin is designed to turn questions across company data, documents and dashboards into analysis and approved follow-up work. The remaining test is whether enterprises trust its answers enough to widen those permissions.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.61.0-nightly.20260911.ged2ac40df",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0-nightly.20260911.ged2ac40df",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-11T01:25:36.000Z",
+      "summary": "Full Changelog : v0.61.0-nightly.20260910.ged2ac40df...v0.61.0-nightly.20260911.ged2ac40df",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-11T00:58:56.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    }
+  ]
+}

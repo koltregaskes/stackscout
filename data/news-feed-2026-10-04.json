@@ -1,0 +1,164 @@
+{
+  "generated": "2026-10-04T17:45:05.719Z",
+  "site": "Stack Scout",
+  "article_count": 9,
+  "articles": [
+    {
+      "title": "Release v0.24.7-nightly.20261003.2c591ecc08",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261003.2c591ecc08",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-03T22:49:15.000Z",
+      "summary": "What's Changed fix(core): align Code Mode text with lazy tool discovery by @tanzhenxin in #12990 fix(permissions): honor approved cross-directory tool calls by @tanzhenxin in #12987 fix(cli): stop swallowing Enter while completion suggestions load ( #13015 ) by @qwen-code-dev-bot in #13021 fix(cli): isolate daemon extension settings loads from shared process state by @yiliang114 in #13022 test(managed-agent): record Hosted latency baseline by @wenshao in #12945 feat(agents): add local workspace-agent collaboration by @yiliang114 in #11206 feat(serve): implement generic Broker provider...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta Releases Open-Source Tools for Building Gadgets That Connect to Its AI Agent",
+      "url": "https://superpowerdaily.com/posts/meta-releases-open-source-tools-for-building-gadgets-connected-to-its-ai-agent",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-03T18:29:45.000Z",
+      "summary": "Muse Gadgets supplies firmware and a Linux development kit. Meta also says it built 5,000 Home Link devices for subscribers, with shipping expected within weeks.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 11.28.4",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.4",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-03T20:48:54.000Z",
+      "summary": "pnpm 11.28.4 fixes two ways credentials could leak, makes pnpm install --frozen-lockfile accept several lockfiles it rejected, warns when an optional dependency cannot be fetched, and stops pnpm self-update from installing a second pnpm next to a Homebrew one. Patch Changes pnpm login no longer forwards credentials in its request body to another origin during redirects. The error for a tarball that fails its integrity check no longer prints credentials, query strings, or fragments from the tarball URL. Installing packages pnpm install --frozen-lockfile now succeeds in a project with no...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.9.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.9.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-03T20:48:42.000Z",
+      "summary": "This release moves the WebContainer build into a separate @pnpm/wasm package, shrinks the pnpm package back to about 4 MB, and fixes pnpm publish with provenance from GitLab CI. Patch Changes The WebAssembly build for StackBlitz WebContainers now ships as a separate @pnpm/wasm package. The pnpm and @pnpm/exe packages no longer include it, which brings their unpacked size back from about 55 MB to about 4 MB. In a WebContainer, install @pnpm/wasm with npm to get the pnpm command. pnpm publish with provenance from GitLab CI is no longer rejected by the npm registry with a 422 error. The...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "DeepSeek Harness v0.2 Brings Official Desktop Apps to Its Open-Source Agent Harness",
+      "url": "https://www.marktechpost.com/2026/10/03/deepseek-harness-v0-2-brings-official-desktop-apps-to-its-open-source-agent-harness/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-04T04:49:42.000Z",
+      "summary": "DeepSeek has released official macOS and Windows desktop apps for DeepSeek Harness v0.2, its MIT-licensed agent harness. The preview adds a plugin manager, file and code-change review, and scheduled Automation Tasks. It also supports non-DeepSeek models through OpenAI-compatible endpoints. The post DeepSeek Harness v0.2 Brings Official Desktop Apps to Its Open-Source Agent Harness appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Microsoft Brings Its Database-Verified AI Agent Benchmark to Hugging Face",
+      "url": "https://superpowerdaily.com/posts/microsoft-brings-its-database-verified-ai-agent-benchmark-to-hugging-face",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-03T23:12:06.000Z",
+      "summary": "The 507-task benchmark checks the records agents leave behind. Its latest results separate finding a solution from repeating it reliably.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Residents Oppose Proposed Queensland AI Data Centre as Approval Rules Shift",
+      "url": "https://superpowerdaily.com/posts/residents-oppose-proposed-queensland-ai-data-centre-as-approval-rules-shift",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-10-04T14:24:18.000Z",
+      "summary": "The proposed Claude facility promises jobs but faces distrust shaped by the region’s gas boom. A new state framework leaves its approval authority unsettled.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.4.0-canary.59",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.59",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-04T00:23:29.000Z",
+      "summary": "Misc Changes Followup from #99249 remove some redundant tests and enable missing assertions all the time: #99605 Simplify turbo-tasks-backend guards and execution contexts: #99599 Add allocation and memory data to the trace-server MCP protocol: #98546 turbo-tasks-backend: check access in track_modification and only track Data on serialization invalidation: #99581 Fix CI break caused by #98932 : #99621 Fix: Unnecessary Suspense fallback triggered by URL update: #99612 Don't suspend client params on shallow URL updates: #99611 Add React Compiler memoization preservation option: #98589...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "We built an AI agent for ServiceNow. The real pain points were narrower than our roadmap assumed",
+      "url": "https://venturebeat.com/orchestration/we-built-an-ai-agent-for-servicenow-the-real-pain-points-were-narrower-than-our-roadmap-assumed",
+      "source": "VentureBeat AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-10-04T17:00:56.994Z",
+      "summary": "",
+      "category": "ai_tools"
+    }
+  ]
+}

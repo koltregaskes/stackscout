@@ -1,0 +1,284 @@
+{
+  "generated": "2026-09-04T12:00:45.896Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.23.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-03T11:34:44.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features The branch picker now displays git state hints like '↓3 · origin/main' or 'Up to date' beside Update Project, Commit, and Push actions to help users judge status before clicking. ( #10397 ) by @wenshao Adds the qwen review emit-workflow subcommand to generate a deterministic script that executes Review Step 3A's agent fan-out using parallel() instead of manual orchestration. ( #10119 ) by @qqqys The Web Shell 'Add workspace' dialog now hides the Browse button on...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.60.0-nightly.20260904.g87a9c71d5",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260904.g87a9c71d5",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T01:40:22.000Z",
+      "summary": "What's Changed fix(core): enforce RFC 9207 issuer identification in MCP OAuth flow by @jvargassanchez-dot in #29117 chore(release): bump version to 0.60.0-nightly.20260901.g0bd1d4397 by @gemini-cli-robot in #29162 Changelog for v0.58.0 by @gemini-cli-robot in #29161 fix(cli): isolate temporary directory for macOS Seatbelt sandbox by @jvargassanchez-dot in #29171 feat(extensions): harden path resolution and boundary validation in extension loader by @diegogodinezr in #29169 Changelog for v0.59.0-preview.0 by @gemini-cli-robot in #29159 fix(core): sanitize and remove hardcoded Google CrUX...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v1.49.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.49.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-03T19:46:14.000Z",
+      "summary": "✨ Features Auto-updater for desktop application #10614 Linux ARM64 desktop release packages #11518 Load extensions in the background so the CLI prompt is immediately usable #10403 Title sessions by subject, not workflow step #11135 Interactive git branch indicator in chat bottom bar #11290 on_failure block for PreToolUse hooks #11449 Web-search and browser-use built-in skills #11233 Model-native audio transcription provider #10589 --with-extension can now name its extension #11127 Auto-focus chat input when user starts typing #11184 Collapse scheduled job sessions into accordion in chat...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Releases GPT-6 Astra: A 1.05M-Context Computer-Use Model Gated Behind a ‘Critical’ Cyber Threshold",
+      "url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T21:16:11.000Z",
+      "summary": "OpenAI released GPT-6 Astra on September 3, 2026, positioning it as a computer-use flagship rather than a chat model. It reports 72.6% on OSWorld V2-Offline, replaces Codex compaction with searchable notes, and ships a 1.05M-token context at $10/$50 per million tokens. It is also the first OpenAI model to cross the Critical cybersecurity threshold, which shapes who can use it and for what. The post OpenAI Releases GPT-6 Astra: A 1.05M-Context Computer-Use Model Gated Behind a ‘Critical’ Cyber Threshold appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "pnpm 12.3.2",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.3.2",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T02:07:17.000Z",
+      "summary": "Patch Changes pnpm audit --fix update no longer aborts when a vulnerable package has no safe version inside its declared range #14508 . The run updates every package it can and lists the rest as remaining. pnpm install no longer reruns root lifecycle scripts when the global virtual store contains an unfinished-build marker in a package slot that the current lockfile does not use pnpm/pnpm#14485 . Sped up installs that have no lockfile. pnpm now links packages whose dependency subtree has no peer dependencies into the virtual store while resolution is still running. pnpm run and pnpm exec...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "claude-api-guard Scans AI SDK Changes in CI, but Misses Raw HTTP Calls",
+      "url": "https://superpowerdaily.com/posts/claude-api-guard-scans-ai-sdk-changes-in-ci-but-misses-raw-http-calls",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T06:12:12.000Z",
+      "summary": "The GitHub Action can block known, high-severity SDK compatibility problems before a merge and fix some mechanical changes. Its coverage remains tied to recognizable official SDK patterns and a limited set of languages.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "ChatGPT-6 Astra is here — this one prompt shows what it can really do",
+      "url": "https://www.tomsguide.com/ai/chatgpt/chatgpt-6-astra-is-here-this-one-prompt-shows-what-it-can-really-do?utm_source=flipboard&utm_content=TomsGuide/magazine/Tom's+Guide:+Full+Edition",
+      "source": "Flipboard AI",
+      "tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T05:15:00.000Z",
+      "summary": "OpenAI launched ChatGPT-6 Astra Thursday and it has already proven to be dramatically better at coding, computer use, research and other complex …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GPT‑6 Astra",
+      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T20:18:41.000Z",
+      "summary": "GPT‑6 Astra GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS\" - I've not tried it yet myself, so I don't have a great deal to say about it yet. It's going to be API priced at the same rate as Claude Fable 5 and 5.1: $10/million input and $50/million output. This is clearly OpenAI's Fable competitor, and appears to score higher than Fable on most of OpenAI's self-reported benchmarks. Most impressively, Astra scores 99.9% on...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI launches GPT-6 Astra, its most powerful model yet, and touts its ability to use your computer",
+      "url": "https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/?utm_source=flipboard&utm_content=fortune/magazine/Personal+finance",
+      "source": "Flipboard AI",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T18:44:52.000Z",
+      "summary": "OpenAI’s newest and most powerful model, GPT-6 Astra, is out today, and one of its hallmark features is called “computer use,” in which the model …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Perplexity Adds One-Command API Setup Through Stripe Projects",
+      "url": "https://superpowerdaily.com/posts/perplexity-adds-one-command-api-setup-through-stripe-projects",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-03T11:47:22.000Z",
+      "summary": "The terminal flow puts credentials, prepaid credits and spending controls beside an application’s code. But teams connecting an existing Perplexity project stay on its existing billing path.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T00:56:45.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic Adds ant apply to Manage Claude API Resources as Code",
+      "url": "https://superpowerdaily.com/posts/anthropic-adds-ant-apply-to-manage-claude-api-resources-as-code",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-09-03T23:50:22.000Z",
+      "summary": "The new CLI command lets teams keep Claude API resource definitions alongside application code, while its lockfile sets strict limits on what the tool can manage.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "release-publish/0fdf4dba55e0-1788491579",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F0fdf4dba55e0-1788491579",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-09-04T03:10:47.000Z",
+      "summary": "fix(release): pin ClawHub package-publish to the storage-staging CLI …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "release-publish/4916ca25bfe3-1788491092",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F4916ca25bfe3-1788491092",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-09-04T03:04:13.000Z",
+      "summary": "fix(release): pin ClawHub package-publish to the storage-staging CLI …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "release-publish/428fa8e0d3da-1788453684",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F428fa8e0d3da-1788453684",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.45999999999999996,
+      "date": "2026-09-03T16:41:00.000Z",
+      "summary": "fix(release): include src/plugins in the trusted plugin npm tooling c…",
+      "category": "ai_tools"
+    }
+  ]
+}

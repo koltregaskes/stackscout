@@ -1,0 +1,180 @@
+{
+  "generated": "2026-08-31T12:00:10.104Z",
+  "site": "Stack Scout",
+  "article_count": 11,
+  "articles": [
+    {
+      "title": "v4.0.519",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.519",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-31T08:46:39.000Z",
+      "summary": "What's Changed @remotion/three : Fix canvases under scale(0) ancestors by @JonnyBurger in #10927 @remotion/studio : Add option to sort compositions alphabetically by @naoyashiga in #10813 @remotion/studio : Add folder selection when creating compositions by @JonnyBurger in #10877 @remotion/studio : Add inspector section titles by @JonnyBurger in #10899 @remotion/studio : Add translation while rotating by @JonnyBurger in #10930 @remotion/studio : Redesign error overlay actions and stack frames by @JonnyBurger in #10937 @remotion/studio : Change design of image layer by @JonnyBurger in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenClaw Releases OpenClaw 2.0: Guided Model Setup, 575 ms Control UI Startup, and One Trust Boundary Per Gateway",
+      "url": "https://www.marktechpost.com/2026/08/30/openclaw-releases-openclaw-2-0-guided-model-setup-575-ms-control-ui-startup-and-one-trust-boundary-per-gateway/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-31T05:04:10.000Z",
+      "summary": "The OpenClaw Foundation has released v2026.8.1, which the project calls OpenClaw 2.0: 933 contributors, 569 first-timers, and more than 16,000 pull requests, roughly half of every PR ever merged into the repo. Setup now reuses existing subscriptions, API keys and local models. The rebuilt Control UI cut test-harness startup from about 1.6 seconds to 575 ms. Shared cloud sessions add real multiplayer, though the docs are explicit that they are not a security boundary. The post OpenClaw Releases OpenClaw 2.0: Guided Model Setup, 575 ms Control UI Startup, and One Trust Boundary Per Gateway...",
+      "category": "ai_research"
+    },
+    {
+      "title": "Release v0.59.0-nightly.20260831.g0bd1d4397",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260831.g0bd1d4397",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-31T01:30:31.000Z",
+      "summary": "Full Changelog : v0.59.0-nightly.20260830.g0bd1d4397...v0.59.0-nightly.20260831.g0bd1d4397",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Reportedly Buys Tens of Thousands of Macs for Computer-Use Agent Training",
+      "url": "https://superpowerdaily.com/posts/openai-reportedly-buys-tens-of-thousands-of-macs-for-computer-use-agent-training",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-31T10:12:40.000Z",
+      "summary": "The reported purchase points to dedicated capacity for agent training alongside GPU systems, while its cost and performance tradeoffs remain unclear.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Lowest-Latency Inference APIs for Voice and Realtime Agents: A Time to First Token TTFT-First Benchmark",
+      "url": "https://www.marktechpost.com/2026/08/30/lowest-latency-inference-apis-for-voice-and-realtime-agents-a-time-to-first-token-ttft-first-benchmark/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-30T21:24:38.000Z",
+      "summary": "Voice agents fail on latency long before they fail on intelligence. Time to first token is the metric most teams use to choose an inference API, and it is the right starting point and the wrong stopping point. This benchmark works through every layer of the voice stack — LLM, speech-to-text, text-to-speech, and speech-to-speech — using figures verified against primary sources on August 30, 2026, with each number labeled as independently measured, vendor-published, or vendor-measured on its own product. The post Lowest-Latency Inference APIs for Voice and Realtime Agents: A Time to First...",
+      "category": "ai_research"
+    },
+    {
+      "title": "Clearlake Adds Google Cloud’s AI Stack to Its Portfolio Push After OpenAI Deal",
+      "url": "https://superpowerdaily.com/posts/clearlake-adds-google-cloud-s-ai-stack-to-its-portfolio-push-after-openai-deal",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-30T18:37:56.000Z",
+      "summary": "The private-equity firm is assembling multiple model and cloud options around its operating framework, shifting the question from AI access to whether its companies can turn that access into repeatable operational change.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Claude, Codex and Hermes Ran Unowned Package Commands Inside Corporate Networks",
+      "url": "https://superpowerdaily.com/posts/claude-codex-and-hermes-ran-unowned-package-commands-inside-corporate-networks",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-08-30T22:46:37.000Z",
+      "summary": "The experiment showed that trusted-looking documentation can become an execution path when an agent is allowed to install software. It did not establish confirmed infections or stolen production data.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Spark: Sparklines in your shell",
+      "url": "https://git.zx2c4.com/spark/about/",
+      "source": "Hacker News",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-08-30T10:02:16.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "release-publish/6107afa77d77-33347278689: fix(release): consume verified historical release evidence (#133675)",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F6107afa77d77-33347278689",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-08-31T01:39:45.000Z",
+      "summary": "fix(release): accept current validation evidence manifests fix(release): verify historical npm preflight producers test(release): exercise historical producer provenance in workflows",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Love Cheats review – one romance scam is so hideous that a woman takes it to parliament",
+      "url": "https://www.theguardian.com/tv-and-radio/2026/aug/30/love-cheats-review-season-two",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-08-30T22:15:07.000Z",
+      "summary": "From a man with triple lives to fake family deaths, the lies told by seemingly devoted partners in this series are shocking. But this is more than true crime entertainment – it is an enraged warning for other victims A model turned DJ, Liv Nervo had forged an enviable career travelling the world with her sister and musical collaborator, Mim. Old cliches about being a strong, independent woman and not needing a man aside, it’s clear that Liv already had a fantastic life before she met her former partner, Matthew. A successful businessman, their paths first crossed when she played a private...",
+      "category": "tech_general"
+    },
+    {
+      "title": "The looming failure of Operation Economic Outcast",
+      "url": "https://www.aljazeera.com/opinions/2026/8/31/the-looming-failure-of-operation-economic-outcast?traffic_source=rss",
+      "source": "Al Jazeera",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.38,
+      "date": "2026-08-31T10:18:40.000Z",
+      "summary": "The latest package of US sanctions on Iran is unlikely to achieve Washington’s objectives.",
+      "category": "tech_general"
+    }
+  ]
+}

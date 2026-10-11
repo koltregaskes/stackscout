@@ -1,0 +1,300 @@
+{
+  "generated": "2026-09-01T17:45:07.610Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "cua-driver-rs v0.20.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/cua-driver-rs-v0.20.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T07:12:41.000Z",
+      "summary": "Qwen CUA Driver prebuilt binaries (vendored under packages/cua-driver ). macOS : codesigned + notarized universal binary + QwenCuaDriver.app Linux : unsigned (x86_64 + arm64, glibc 2.31 floor) Windows : unsigned UIAccess worker + native SDK payload (x86_64 + arm64); deployments must sign and trust the worker on the target machine before UIAccess activation Node.js : the same workflow publishes @qwen-code/cua-sdk after a clean install against these release assets and publishes the independently versioned @qwen-code/node-repl-mcp package after its MCP protocol smoke tests Enable relative...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.22.3-nightly.20260831.3a0c4c6108",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.22.3-nightly.20260831.3a0c4c6108",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-31T15:31:21.000Z",
+      "summary": "What's Changed feat(web-shell): show git state hints beside branch picker actions by @wenshao in #10397 feat(review): emit the Step 3A fan-out as a generated workflow script by @qqqys in #10119 fix(core): keep the ask_user_question dialog behind allow rules and auto-approval by @qqqys in #10160 fix(cli): derive bootstrap --help from shared option definitions by @yiliang114 in #8902 feat(serve): hide workspace Browse on headless daemon hosts by @qqqys in #9406 fix(core): prevent Anthropic streams from hanging indefinitely by @yiliang114 in #9945 docs(design): OpenTUI migration design and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "n8n@2.38.1",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.38.1",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T10:35:48.000Z",
+      "summary": "2.38.1 (2026-09-01) Bug Fixes Add parameter binding for mongodb sort and projection ( #37335 ) ( 292f442 ) ai-builder: Add case for agent artifacts in AIA preview tab bar ( #37141 ) ( ede265d ) ai-builder: Add several tools of the same provider via UI ( #37212 ) ( fd3a51c ) ai-builder: Emit tool call events for Workflow, HTTP Request and Code tools ( #37044 ) ( 7e81610 ) ai-builder: Fix session timeline/trace not showing on preview dock when full screen ( #36930 ) ( 80ff0f3 ) ai-builder: Preserve managed n8n credits when building workflows ( #37198 ) ( 0fbc526 ) Alibaba Cloud Node: Use...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "beta",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T10:30:42.000Z",
+      "summary": "2.38.1 (2026-09-01) Bug Fixes Add parameter binding for mongodb sort and projection ( #37335 ) ( 292f442 ) ai-builder: Add case for agent artifacts in AIA preview tab bar ( #37141 ) ( ede265d ) ai-builder: Add several tools of the same provider via UI ( #37212 ) ( fd3a51c ) ai-builder: Emit tool call events for Workflow, HTTP Request and Code tools ( #37044 ) ( 7e81610 ) ai-builder: Fix session timeline/trace not showing on preview dock when full screen ( #36930 ) ( 80ff0f3 ) ai-builder: Preserve managed n8n credits when building workflows ( #37198 ) ( 0fbc526 ) Alibaba Cloud Node: Use...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.2.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.2.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T00:57:45.000Z",
+      "summary": "Patch Changes Restored the pnpm executable target without a file extension so pnpm 12.1 and earlier can upgrade to newer pnpm 12 releases on POSIX systems. Platinum Sponsors Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v7.7.0-preview.4 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.7.0-preview.4",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T00:57:32.000Z",
+      "summary": "7.7.0-preview.4 Engine Updates and Fixes Fix FileOnlyEntry crashing on older versions of Windows ( #27880 ) Call CodeGeneration.EscapeSingleQuotedStringContent API in SyncCurrentLocationHandler ( #27874 ) Improve PowerShell Remoting Argument Validation ( #27870 ) Improve validation for data fragments for PSRP frame headers ( #27871 ) Add the xsd validation back for CIM cmdlets ( #27869 ) Fix PATH caching in CommandDiscovery code ( #27809 ) Add support for new WLDP setting EnableFileOnlyEntry ( #26752 ) Fix the dot-sourcing behavior of pwsh -file for advanced-function scripts ( #27727 )...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.92.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.92.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-08-31T20:55:43.000Z",
+      "summary": "Compact Exit Banner + Mode This release includes some fixes + an UX improvement. Compact Exit Banner It's now possible to configure the exits banner to more compact, if you so wish. .crushrc : option ui exit-banner compact option ui exit-banner none option ui exit-banner default # default crush.json : { \"options\" : { \"tui\" : { \"exit_banner\" : \" compact \" } } } Default: Compact: Agentic fixes We made quite a few fixes to Fantasy to make it more stable and fix a few issues with some inference providers. Small Bash config fix @devYRPauli made a fix to the Bash config. When adding a model,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Vanta Releases 65 Agent Controls, Drawing a Line Between Governance and Runtime Enforcement",
+      "url": "https://superpowerdaily.com/posts/vanta-puts-65-ai-agent-controls-in-ga-but-leaves-runtime-blocking-to-other-tools",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-01T01:37:23.000Z",
+      "summary": "The open-source library gives organizations a shared way to document and assess agent risk, but it does not stop an agent action while it is running.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v4.0.520",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.520",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T10:19:50.000Z",
+      "summary": "What's Changed remotion : Replace imperative playing ref with playbackStore and usePlaying() by @Octember in #10956 remotion : Canonicalize playing and buffering subscriptions by @Octember in #10991 remotion : Update sequence registrations in place by @JonnyBurger in #10992 @remotion/media : Upgrade Mediabunny to 1.55.5 by @JonnyBurger in #11006 @remotion/media : Add preview pitch shifting by @JonnyBurger in #11008 @remotion/studio : Hide FPS counter on narrow viewports by @JonnyBurger in #10966 @remotion/studio : Restore reset zoom button styling by @JonnyBurger in #10969...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.2",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.2.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T00:01:41.000Z",
+      "summary": "Minor Changes Catalogs can now resolve workspace dependencies through the workspace: protocol. Patch Changes Fixed pnpm audit --fix failing with ERR_PNPM_INVALID_FIX_OPTION when used without a value, including when another flag follows it, as in pnpm audit --fix --json #13261 . Fixed pnpm audit --fix=override ignoring the saveExact and savePrefix settings when writing vulnerability overrides #11523 . Authenticate Node.js runtime downloads from nodeDownloadMirrors with URL-scoped npm registry credentials, including bearer tokens, basic auth, and tokenHelper pnpm/pnpm#14334 . Fixed detached...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Muse Code Exits Beta With Agent SDK Preview and Monthly Plans",
+      "url": "https://superpowerdaily.com/posts/muse-code-exits-beta-with-agent-sdk-preview-and-monthly-plans",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-01T01:02:52.000Z",
+      "summary": "The coding tool now offers a preview route for developers to build agents on top of it, while pricing and access mechanics remain unannounced.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenClaw 2.0 lands with an easier setup and a rebuilt browser app",
+      "url": "https://www.techspot.com/news/113686-openclaw-20-lands-easier-setup-rebuilt-browser-app.html?utm_source=flipboard&utm_content=user/TechSpot",
+      "source": "Flipboard AI",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-31T20:02:00.000Z",
+      "summary": "What just happened? OpenClaw shipped version 2026.8.1 over the weekend and is calling it 2.0 – the largest update since the open-source AI agent …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.59.0-nightly.20260901.g0bd1d4397",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260901.g0bd1d4397",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T01:33:41.000Z",
+      "summary": "Full Changelog : v0.59.0-nightly.20260831.g0bd1d4397...v0.59.0-nightly.20260901.g0bd1d4397",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-01T01:11:10.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Introducing wrapture",
+      "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-08-31T23:59:36.000Z",
+      "summary": "Introducing wrapture New from Graham Dumpleton (of wrapt , mod_wsgi, and New Relic's Python agent fame), who describes Wrapture as taking the monkeypatching ideas from wrapt and extending them to apply to testing and tracing at the same time. Wrapture ( full documentation here ) makes it easy to wrap any function or method such that all access can be traced, or can be overridden to return a different value. It acts as both an alternative to unittest.mock and a way to implement tracing against an existing project: Attaching observation to code you do not control, recording what flows...",
+      "category": "ai_tools"
+    }
+  ]
+}

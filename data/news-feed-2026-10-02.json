@@ -1,0 +1,290 @@
+{
+  "generated": "2026-10-02T17:45:05.258Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "openclaw 2026.8.35",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-02T14:06:34.000Z",
+      "summary": "This is a gateway-only extended-stable release, which is our current equivalent to LTS. This release is OpenClaw from the end of August 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The latest version of OpenClaw at the time of this release is 2026.9.7 2026.8.35 Highlights GPT-6.1 Sol support: add the current Sol model across OpenAI routing, discovery, reasoning, harness, and Reef guard-model boundaries. ( #161400 , #162955 ) Safer updates and recovery: preserve plugin settings, prevent duplicate Gateways, handle pnpm package...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.8.34",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-02T00:13:33.000Z",
+      "summary": "This is a gateway-only extended-stable release, which is our current equivalent to LTS. This release is OpenClaw from the end of August 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The latest version of OpenClaw at the time of this release is 2026.9.7 2026.8.34 Highlights Extended-stable correctness rollup: backport 113 audit-selected fix units across upgrades, Doctor, authentication, sessions, channels, plugins, sandboxing, filesystem safety, model runtimes, and release packaging. Complete rescan: re-evaluate the full...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.7-nightly.20261001.a7deb01bcb",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261001.a7deb01bcb",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T22:01:32.000Z",
+      "summary": "What's Changed fix(core): align Code Mode text with lazy tool discovery by @tanzhenxin in #12990 fix(permissions): honor approved cross-directory tool calls by @tanzhenxin in #12987 fix(cli): stop swallowing Enter while completion suggestions load ( #13015 ) by @qwen-code-dev-bot in #13021 fix(cli): isolate daemon extension settings loads from shared process state by @yiliang114 in #13022 test(managed-agent): record Hosted latency baseline by @wenshao in #12945 feat(agents): add local workspace-agent collaboration by @yiliang114 in #11206 feat(serve): implement generic Broker provider...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.16: Fix nullable Mongo list container validation (#30568)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.16",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T18:18:55.000Z",
+      "summary": "Linked issue Follow-up to #30051 , found during fresh consumer QA. No Linear ticket, per the original project direction. At a glance optionalStrings String[]? optionalNullableStrings String?[]? Both fields now admit an explicit null container in Mongo; only the second admits null elements. Previously, omission worked but an explicit null container failed database validation. Summary Make Mongo collection validation honor the existing nullable-list contract and generated TypeScript types, independently of element nullability. Decision This PR changes all three list-container branches in...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.14: Use the binder for language-server resolution and completion (#30545)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.14",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T15:14:41.000Z",
+      "summary": "Linked issue This project explicitly omits Linear tickets. Prerequisite: #30538 , still open/queued; this PR targets mongo-conversion and should be retargeted after it merges. Approved slice spec . At a glance From the completion regression , with | marking the cursor: model Shared { id Int } namespace app { enum Shared { VALUE } model Int { id String } model Local { value | } } namespace other { model Hidden { id Int } } Completion includes local Local and classifies Int as a model; the local enum hides the outer Shared model before candidate filtering. The previous independent...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.18: docs: close nullable scalar lists project (#30571)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.18",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-02T15:20:10.000Z",
+      "summary": "Linked issue Close-out of #30051 and its QA follow-up #30568 , both merged. No Linear project or ticket, by explicit operator direction. At a glance List ADR 248 → ADR 258 (indexed; ADR 178 examples and explanation updated directly) Evidence commit → transient project directory removed Summary Close nullable scalar lists without losing the failed-QA record or the rationale for the shipped wire incompatibility. Keep the decisions in ADR 258 and the verification lesson in drive/retro/README.md ; remove the completed coordination documents. Decision and DoD All four planned slices shipped...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.64.0-nightly.20261002.gc9096a847",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261002.gc9096a847",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-02T01:33:21.000Z",
+      "summary": "What's Changed fix(core): implement append-only delta patching and bounded history windowing in ChatRecordingService by @jvargassanchez-dot in #29568 fix(cli): persist state atomically and recover from backup on corruption by @urielefrenvirtusa in #29558 fix(cli): ensure Ctrl+C emergency abort reaches cancellation handler during active operations by @urielefrenvirtusa in #29586 fix(cli): resolve @file :line references and prevent ghost text wrap hang by @jesussamuel-byte in #29581 fix(ui): ensure Windows ConPTY forwards IME cursor position by @jesussamuel-byte in #29560 fix(cli): retry...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Amazon Launches Strands Decider 2B as Decision Models Gain Momentum",
+      "url": "https://superintelligencenews.com/ai-fields/large-language-models/amazon-decision-model-strands-decider-2b/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T16:54:04.000Z",
+      "summary": "Amazon released Strands Decider 2B, an open-source decision model built for fast, low-cost choices in AI agent workflows. The post Amazon Launches Strands Decider 2B as Decision Models Gain Momentum appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.15: Close the PSL binder project (#30566)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.15",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T16:06:46.000Z",
+      "summary": "Linked issue Closes out #30349 (binder), #30478 (SQL), #30538 (Mongo), and #30545 (language server). Linear tracking was explicitly omitted. Summary Add the already-emitted PSL_UNRESOLVED_REFERENCE code to PslDiagnosticCode , with a type regression test. Remove the completed project's temporary files. Documentation changes correct outdated API signatures, removed helpers, namespace behavior, diagnostic shapes, and diagnostic-source descriptions. They do not introduce new architectural decisions or narrate binder implementation in unrelated ADRs. No retrospective remains in the final diff....",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cloudflare Releases Clef and Clef-flash: Open-Weight Decision Models That Return Typed Probabilities Instead of Text",
+      "url": "https://www.marktechpost.com/2026/10/01/cloudflare-releases-clef-and-clef-flash/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-02T01:00:41.000Z",
+      "summary": "Cloudflare has released Clef (27B) and Clef-flash (9B), open-weight decision models that return typed probabilities instead of text. They are Jev-API compatible, accept images, and run on Workers AI at 209.3 ms and 38.8 ms median latency. The post Cloudflare Releases Clef and Clef-flash: Open-Weight Decision Models That Return Typed Probabilities Instead of Text appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "ArXiv's Updated Rate Limit Policy",
+      "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
+      "source": "Hacker News",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-01T20:12:15.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "Ideogram Releases 4.5 Image Editor, Claiming Less Drift Across Repeated Changes",
+      "url": "https://superpowerdaily.com/posts/ideogram-releases-4-5-image-editor-claiming-less-drift-across-repeated-changes",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-01T18:50:02.000Z",
+      "summary": "The model is available on Ideogram’s platform and API. Its precision claims rest on company examples, while Recraft support and downloadable weights remain planned.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
+      "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-10-01T16:44:35.000Z",
+      "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI’s Medicare attack has exposed Australia’s ‘tech debt’. Fixing it could bring a big bill for taxpayers",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/03/openais-medicare-attack-has-exposed-australias-tech-debt-fixing-it-could-bring-a-big-bill-for-taxpayers",
+      "source": "The Guardian Tech",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-10-02T15:00:13.000Z",
+      "summary": "Home affairs department orders all federal government agencies to conduct review of ‘legacy technology’ amid fallout from AI agent hacks Get our breaking news email , free app or daily news podcast The Australian government faces significant “tech debt” that could bring a big bill for taxpayers after the OpenAI Medicare breach , as government agencies will need to fortify their defences against future attacks by AI agents. This week, the home affairs department ordered all federal government agencies to conduct a “legacy technology stocktake” that requires a plan for each agency to...",
+      "category": "tech_general"
+    },
+    {
+      "title": "ChatGPT can now virtually try on clothes for you",
+      "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-10-01T19:21:53.000Z",
+      "summary": "OpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using their own photos and save products they like to a Favorites library.",
+      "category": "ai_tools"
+    }
+  ]
+}

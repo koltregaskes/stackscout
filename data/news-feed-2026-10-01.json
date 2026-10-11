@@ -1,0 +1,306 @@
+{
+  "generated": "2026-10-01T17:45:09.416Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.24.7-nightly.20260930.57e720bc97",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20260930.57e720bc97",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T22:19:59.000Z",
+      "summary": "What's Changed fix(core): align Code Mode text with lazy tool discovery by @tanzhenxin in #12990 fix(permissions): honor approved cross-directory tool calls by @tanzhenxin in #12987 fix(cli): stop swallowing Enter while completion suggestions load ( #13015 ) by @qwen-code-dev-bot in #13021 fix(cli): isolate daemon extension settings loads from shared process state by @yiliang114 in #13022 test(managed-agent): record Hosted latency baseline by @wenshao in #12945 feat(agents): add local workspace-agent collaboration by @yiliang114 in #11206 feat(serve): implement generic Broker provider...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.1: chore(release): bump to 8.0.0-rc.14 (#30541)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T16:21:20.000Z",
+      "summary": "Release 8.0.0-rc.13 → 8.0.0-rc.14 See docs/oss/versioning.md for the versioning policy and the release procedure. What to review Release notes: docs/releases/v8.0.0-rc.14.md . This file becomes the body of the GitHub Release. CHANGELOG.md carries the same text. The notes cover the 15 pull requests merged since v8.0.0-rc.13 ; internal refactors, process notes and documentation-only changes are left out. Upgrade guides: the app guide and the extension guide . They are assembled from the 5 pending fragments, which moved unchanged to...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.14: Use the binder for language-server resolution and completion (#30545)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.14",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T15:14:41.000Z",
+      "summary": "Linked issue This project explicitly omits Linear tickets. Prerequisite: #30538 , still open/queued; this PR targets mongo-conversion and should be retargeted after it merges. Approved slice spec . At a glance From the completion regression , with | marking the cursor: model Shared { id Int } namespace app { enum Shared { VALUE } model Int { id String } model Local { value | } } namespace other { model Hidden { id Int } } Completion includes local Local and classifies Int as a model; the local enum hides the outer Shared model before candidate filtering. The previous independent...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.13: Use the binder for Mongo PSL interpretation (#30538)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.13",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T12:27:49.000Z",
+      "summary": "Linked issue This project intentionally omits Linear tickets by operator decision. Prerequisite: #30478 (merged). Scope and completion: Mongo conversion spec . At a glance From the provider interpretation test : model User { id ObjectId @id @map ( \" _id \" ) bad Mystery } This now reports PSL_UNRESOLVED_REFERENCE: Cannot find type \"Mystery\" , rather than the interpreter's PSL_UNSUPPORTED_FIELD_TYPE fallback. Summary Use the existing binder as the authority for Mongo PSL declaration resolution. Reuse its resolved symbols and typed attribute nodes so classification, relation targets, and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.6",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.6",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T03:58:51.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.5 by @github-actions[bot] in #14329 fix: Upgrade standalone turbo on installer reruns by @anthonyshew in #14330 test: Deflake OpenTelemetry and PTY shutdown tests by @anthonyshew in #14331 docs: Document standalone turbo installation by @anthonyshew in #14332 ci: Install standalone turbo on Windows with PowerShell by @anthonyshew in #14334 fix: Keep Yarn patch resolutions with npm protocol selectors in prune by @anthonyshew in #14337 chore: Update with-tailwind example by @vercel-gh-bot-5[bot] in #14264 ci: Resolve latest turbo...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.9.7",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T23:44:26.000Z",
+      "summary": "OpenClaw v2026.9.7 518 direct commits · 2,818 pull requests · 334 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people, with expandable sections. Changelog — plain Markdown for AI agents and tools. Thanks @609NFT @Aalmann @aatreya @abacha @abuegab1-spec @ada-KVR @AgentSolomon @aicyberg @ajmtrz @Alekstodo @aleps001 @alexph-dev @alibux @Alix-007 @altaywtf @amarsmission @AmesGit @anarchia-99 @andersonjeccel @aniruddhaadak80 @anyech @apple2345-pixel @areslp @AS76 @aspalagin...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v4.0.531",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.531",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T15:40:40.000Z",
+      "summary": "What's Changed remotion : Adapt HTML-in-canvas to Chrome 157 implementation by @JonnyBurger in #11829 remotion : Fix connected compositions for Interactive.withSchema() by @JonnyBurger in #11814 remotion : Hide composition-root Interactive.withSchema() sequence from timeline by @JonnyBurger in #11836 remotion : Remove loop from Interactive.baseSchema by @JonnyBurger in #11800 @remotion/studio : Split captions with Enter by @JonnyBurger in #11805 @remotion/studio : Link update release titles to GitHub releases by @JonnyBurger in #11830 @remotion/studio : Remove uneven dimension warnings...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Releases GPT-6.1 Sol: Near-Astra Coding and Computer Use at One-Fifth of Astra’s Token Price",
+      "url": "https://www.marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-30T21:09:24.000Z",
+      "summary": "OpenAI released GPT-6.1 Sol on September 29, 2026, an upgrade to GPT-6 Sol. It reaches near-Astra results on agentic coding, computer use and professional work at one-fifth of Astra's token prices. It costs $2 input and $10 output per million tokens, and cached input drops to $0.10. It is available now through the OpenAI API, ChatGPT Work and Codex. The post OpenAI Releases GPT-6.1 Sol: Near-Astra Coding and Computer Use at One-Fifth of Astra’s Token Price appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Amazon Launches Strands Decider 2B as Decision Models Gain Momentum",
+      "url": "https://superintelligencenews.com/ai-fields/large-language-models/amazon-decision-model-strands-decider-2b/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T16:54:04.000Z",
+      "summary": "Amazon released Strands Decider 2B, an open-source decision model built for fast, low-cost choices in AI agent workflows. The post Amazon Launches Strands Decider 2B as Decision Models Gain Momentum appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "RSC embraces ‘hugely challenging’ task of staging Susanna Clarke’s Piranesi and Virginia Woolf’s Mrs Dalloway",
+      "url": "https://www.theguardian.com/stage/2026/oct/01/rsc-new-season-mrs-dalloway-piranesi",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-01T08:00:31.000Z",
+      "summary": "The Royal Shakespeare Company announces ambitious adaptations of novels in season that includes Elizabeth Debicki as Richard II and Damien Molony as Coriolanus The Royal Shakespeare Company is to stage two highly experimental novels, written almost 100 years apart and posing serious conundrums for adaptation, according to co-artistic directors Daniel Evans and Tamara Harvey. Virginia Woolf’s 1925 “day in the life” classic Mrs Dalloway and Susanna Clarke’s otherworldly 2020 award-winner Piranesi grapple with what they described as “a century-old theatrical preoccupation: the exploration of...",
+      "category": "tech_general"
+    },
+    {
+      "title": "pnpm 11.28.3",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.3",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T15:28:07.000Z",
+      "summary": "pnpm 11.28.3 updates undici to clear a security advisory, fixes \"database disk image is malformed\" errors when several pnpm processes share a store, and makes packages, catalogs, projects, and commands named like constructor work. Patch Changes Installing packages pnpm now ships undici 7.29.1, so security scans of pnpm no longer report GHSA-3wwx-pv8p-q78v . pnpm no longer fails with \"database disk image is malformed\" or reads stale store entries while another pnpm process writes to the same store. Names that match built-in JavaScript object properties, such as constructor , toString , or...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.13-dev.12: docs(error-reference): name each CLI command with its group (#30527)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.13-dev.12",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-30T15:18:52.000Z",
+      "summary": "At a glance MIGRATION.UNKNOWN_REF in docs/reference/error-reference.md , before: A ref name was used (read, resolved, or deleted via ref commands) but no ref file with that name exists. Create it with prisma ref set , or run ref list to see what exists. After: A ref name was used (read, resolved, or deleted via migration ref commands) but no ref file with that name exists. Create it with prisma migration ref set , or run migration ref list to see what exists. prisma ref set does not exist: in 8.0.0-rc.19 it prints the top-level help. The command is prisma migration ref set . Linked issue...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.14-dev.15: Close the PSL binder project (#30566)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.14-dev.15",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.62,
+      "date": "2026-10-01T16:06:46.000Z",
+      "summary": "Linked issue Closes out #30349 (binder), #30478 (SQL), #30538 (Mongo), and #30545 (language server). Linear tracking was explicitly omitted. Summary Add the already-emitted PSL_UNRESOLVED_REFERENCE code to PslDiagnosticCode , with a type regression test. Remove the completed project's temporary files. Documentation changes correct outdated API signatures, removed helpers, namespace behavior, diagnostic shapes, and diagnostic-source descriptions. They do not introduce new architectural decisions or narrate binder implementation in unrelated ADRs. No retrospective remains in the final diff....",
+      "category": "ai_tools"
+    },
+    {
+      "title": "DoorDash launches an AI agent you can text to order food",
+      "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-09-30T16:00:24.000Z",
+      "summary": "By launching an AI agent for food ordering, DoorDash is looking to gain an edge over rivals Uber Eats and Grubhub.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Releases Gemini 4 Argon First to Trusted Cyber Defenders",
+      "url": "https://superpowerdaily.com/posts/google-releases-gemini-4-argon-first-to-trusted-cyber-defenders",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-30T20:17:51.000Z",
+      "summary": "Paid API customers and Google AI Ultra subscribers are next in line, but Google has not set a date. Selected defenders will get the model without cyber guardrails.",
+      "category": "ai_tools"
+    }
+  ]
+}

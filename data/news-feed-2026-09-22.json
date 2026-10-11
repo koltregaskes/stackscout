@@ -1,0 +1,316 @@
+{
+  "generated": "2026-09-22T17:45:20.226Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.14",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.14",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T15:20:34.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.24.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.2 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.23.1 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.7.35",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T21:22:22.000Z",
+      "summary": "This is a gateway-only extended-stable release, which is our current equivalent to LTS. This release is OpenClaw from the end of July 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The current latest version of OpenClaw is 2026.9.5 2026.7.35 Fixes Doctor plugin registry: preserve the complete bundled plugin inventory when Doctor creates or repairs registry state, so default Browser, Canvas, pairing, file-transfer, phone-control, Talk voice, and Bonjour plugins remain available after restart. State-migration discovery now also...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.24.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T16:32:58.000Z",
+      "summary": "What's Changed fix(cli): scope the ACP permission queue to the session by @chiga0 in #11802 feat(channels): add shared output modes with DingTalk support by @qqqys in #11822 feat(web-shell): slide the active pill between tabs by @callmeYe in #11844 refactor(goal): delete the first-generation Stop-hook Goal implementation by @qqqys in #11900 fix(ci): separate autofix runner labels from queued reviews by @yiliang114 in #11912 feat(daemon): enumerate installed extension skills locally by @callmeYe in #11281 feat(web-shell): follow the reading position in the global turn navigation by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.24.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T14:44:55.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Web Shell Web Shell gains structured shell results, optional trajectory metrics, host settings allowlists, and mobile navigation fixes. Web Shell now presents structured shell execution results with command, output, execution details, elapsed time, and scrollable content. ( #12311 ) Adds an opt-in trajectory table tab in Web Shell showing per-turn durations, time to first token, token counts, and tool timing. ( #12388 ) web-shell: support host settings item allowlists ( #12328 ) web-shell: restore...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "llm-typesafe 0.1a0",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T15:54:16.000Z",
+      "summary": "Release: llm-typesafe 0.1a0 I built this new plugin for LLM to add support for TypeSafe AI's new Jev model . Install it like this: llm install llm-typesafe Then set an API key ( get one here , the waitlist seems to move pretty fast): llm keys set typesafe # Paste key And now you can ask yes/no \"noul\" questions like this: llm -m jev 'Please refund my last payment.' \\ -s 'Does this message explicitly request a refund?' Output: {\"type\": \"noul\", \"noul\": 0.99} Or choice questions like this: cat message.txt | llm -m jev \\ -s ' Which team should handle this message? If billing and technical...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Introduces SoL-Pi: Auto-Research Loops That Cut Coding Agent Token Traffic by Up to 49%",
+      "url": "https://www.marktechpost.com/2026/09/21/nvidia-researchers-have-released-sol-pi/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T05:04:43.000Z",
+      "summary": "NVIDIA researchers have released SoL-Pi, 4 harness mechanisms for the open-source Pi coding agent, discovered by an AI running auto-research loops across 535 environments. On EdgeBench, SoL-Pi cuts token traffic by 44.7% to 49.0% and API cost by roughly 33%, while keeping about 94% of Pi's score on GPT-5.6 Sol and Opus 5. The post NVIDIA Introduces SoL-Pi: Auto-Research Loops That Cut Coding Agent Token Traffic by Up to 49% appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "v8.0.0-rc.11-dev.44: Add checked PSL entity references and explicit unchecked names (#30344)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.44",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-22T10:45:58.000Z",
+      "summary": "Linked issue Linear integration and ticket-prefixed naming explicitly waived by the operator. This is Slice 1 of the shared PSL value-specification work; Slice 2 is not implemented here. Summary This PR adds checked PSL entity references and explicit unchecked names, including SQL/Mongo inheritance consumers and existing attribute tooling. Checked references retain the selected declaration into lowering so validation and storage construction cannot independently select different same-named models. Ready for review, not permission to merge. Independent review of the API correction and...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.96.1",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.1",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T16:51:05.000Z",
+      "summary": "Quick little theme API adjustment Hey! ICYMI we released support for themes a few hours ago. Before they get too widely adopted, we’re making one small breaking API change to the names of keys.: insert_bg -> insert_code_bg delete_bg -> delete_code_bg This is what it looks like in code: { // ... \"diff_insert_fg\" : \" #629657 \" , \"diff_insert_code_bg\" : \" #2d3431 \" , \"diff_insert_gutter_bg\" : \" #282d2c \" , \"diff_delete_fg\" : \" #a45c59 \" , \"diff_delete_code_bg\" : \" #33272d \" , \"diff_delete_gutter_bg\" : \" #2a232a \" , // ... } See ya! Charm 🎸 Changelog Other stuff 56abdfa : themes: prefix diff...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "url": "https://simonwillison.net/2026/Sep/21/jev/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-21T23:09:20.000Z",
+      "summary": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is a better name for these). Jev is an interesting variant on the usual LLM format: it still accepts text inputs, but instead of text output it returns floating point numbers corresponding to categories, yes/no questions, ratings, and associated confidence scores. TypeSafe describe Jev like this: Think of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. It's...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.96.0",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.0",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-21T16:50:48.000Z",
+      "summary": "Themes and more! This release is HUGE and we are so excited to share what our team and contributors have done! The long awaited feature! Crush now has themes! 🎨 Open the new Themes dialog from the command palette to switch looks with live preview, try the built-in Gruvbox Dark, or create and edit your own custom palettes right inside the TUI. Thank @meowgorithm and @gurnben for this feature! QoL and fixes Small changes but no less important. Hypercredits are now displayed in real time! Added spaces to errors in chat by @taciturnaxolotl Increased default timeout to 2 minutes by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Rabbit Launches OS3, Moving Its AI Agent Beyond the R1",
+      "url": "https://superpowerdaily.com/posts/rabbit-launches-os3-moving-its-ai-agent-beyond-the-r1",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T16:23:03.000Z",
+      "summary": "The new system can reach local computers from a browser or messaging app, but its promise of hands-off software work depends on users trusting an agent with meaningful access.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Adds AI Agent Workflows to Its Open-Source Robotics Toolkit",
+      "url": "https://superpowerdaily.com/posts/nvidia-adds-ai-agent-workflows-to-its-open-source-robotics-toolkit",
+      "source": "Superpower Daily",
+      "tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T12:32:30.000Z",
+      "summary": "Isaac ROS 5.0 packages reusable instructions for coding agents alongside a migration to ROS 2 Lyrical, but developers moving from older interfaces face source-level changes and known hardware-specific limits.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
+      "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+      "source": "NVIDIA AI Blog",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T12:00:41.000Z",
+      "summary": "To build and deploy sophisticated robotics applications that can perceive, reason and act in dynamic environments, developers need new physical AI models and tools. The ROS open framework is a project from Open Robotics that helps humans build robots. NVIDIA Isaac ROS 5.0 — a collection of GPU-accelerated packages built on ROS, released today at […]",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Tencent Releases Hy Image 3.5 Preview With Multi-Round Editing and 4K Output",
+      "url": "https://superpowerdaily.com/posts/tencent-releases-hy-image-3-5-preview-with-multi-round-editing-and-4k-output",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T04:17:28.000Z",
+      "summary": "The new image model reaches Tencent’s chatbot, creative tools and cloud API. Its claimed competitive results come from internal designer testing, leaving independent quality comparisons unresolved.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Oracle Publishes AI Workflow for a 5.1 Million-Record GoldenGate Reload",
+      "url": "https://superpowerdaily.com/posts/oracle-publishes-ai-workflow-for-a-5-1-million-record-goldengate-reload",
+      "source": "Superpower Daily",
+      "tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "mcp",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-22T01:55:33.000Z",
+      "summary": "The lab shows how an AI agent can coordinate a difficult replication reset from a runbook, but missing MCP options still pushed key steps through direct APIs—and the server remains experimental.",
+      "category": "ai_tools"
+    }
+  ]
+}

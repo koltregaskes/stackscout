@@ -1,0 +1,278 @@
+{
+  "generated": "2026-09-12T17:45:28.050Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "v8.0.0-rc.10-dev.1: chore(release): bump to 8.0.0-rc.10 (#30268)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.10-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T11:18:37.000Z",
+      "summary": "8.0.0-rc.9 → 8.0.0-rc.10 . What ships The user-facing changes are in docs/releases/v8.0.0-rc.10.md , mirrored into CHANGELOG.md . Review that file as the release's public statement. In short: the Prisma 8 rename reaches every identifier a project can see (schema header, environment variables, config directory, primer file), the emitted contract gains Models , Scalars , Shape , and a working ResultType on ORM queries, db sign sets the db ref so the first plan after adoption stays incremental, and the language server completes attribute names. Skill audit I checked the bundled prisma-8...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.23.3-nightly.20260911.aaa6a32aae",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.3-nightly.20260911.aaa6a32aae",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-11T22:05:55.000Z",
+      "summary": "What's Changed refactor(dingtalk): remove obsolete background response aggregation by @qqqys in #11570 feat(channels)!: remove message prefix filtering by @qqqys in #11571 fix(ci): widen the replayed supersede-cede timeline margin to deflake Scripts by @wenshao in #11581 test(review): pin the fold invariant the per-line escape rests on by @wenshao in #11533 fix(autofix): charge regressions to the brake and gate test weakening by @wenshao in #10188 fix(acp): Preserve submitted prompt provenance for auto recall by @doudouOUC in #11455 fix(serve): restore configured channels after restart by...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.94.1",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.1",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T02:44:54.000Z",
+      "summary": "ChatGPT subs, non-interactive improvements, and a touch of perf This is a pretty solid release with some nice contributions from both the Charm team and one of our fave contributors. Let's go! Use your ChatGPT subscription in Crush If you love Crush and your ChatGPT subscription you’ll love this release. Enjoy! Non-interactive mode: reasoning Headless Crush users now get more control with a new --reasoning-effort flag in crush run . Go crazy and orchestrate to the max! If you (or your agent) mistypes a reasoning effort you'll get the proper accepted values, too. crush run --model \"...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.10.13-canary.5",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.10.13-canary.5",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T16:10:01.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.10.13-canary.4 by @github-actions[bot] in #14039 docs: Explain circular package dependencies in boundaries by @vercel-gh-bot-2[bot] in #14042 docs: Document circular dependencies in boundaries by @vercel-gh-bot-2[bot] in #14041 fix: Preserve Yarn resolution declaration order by @anthonyshew in #14045 fix: Avoid duplicate interrupts during task shutdown by @anthonyshew in #14046 fix: Preserve nested Bun package keys by @vercel-gh-bot-5[bot] in #14050 chore: Update with-mcp-servers example by @vercel-gh-bot-2[bot] in #14049 Full Changelog...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.4.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.4.1",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-11T14:55:01.000Z",
+      "summary": "pnpm 12.4.1 fixes installs that failed on filesystems refusing hard links or clones, on Android, and under nodeLinker: hoisted . Repeat installs are faster. Patch Changes Installing packages pnpm install no longer fails with Operation not permitted when the filesystem refuses a hard link or a copy-on-write clone #14722 . Under packageImportMethod: auto and clone-or-copy , pnpm copies the file instead. EdenFS checkouts, which have no hard links, and rootless containers, which refuse the clone syscall, both hit this. An explicit packageImportMethod: hardlink or clone still reports the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.10",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.10",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-09-12T11:35:09.000Z",
+      "summary": "v8.0.0-rc.10 This RC finishes the rename from Prisma Next to Prisma 8 in every identifier a project can see (the old schema header keeps working, the old environment variables do not), adds named model and result types to the emitted contract, makes db sign set the db ref so the first plan after adoption stays incremental, and adds attribute completion to the language server. Breaking changes CLI environment variables lose the NEXT_ infix. PRISMA_NEXT_DISABLE_TELEMETRY , PRISMA_NEXT_TELEMETRY_ENDPOINT , PRISMA_NEXT_DEBUG , and the rest are now PRISMA_DISABLE_TELEMETRY ,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI agents attacked RubyGems back in May",
+      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-12T00:42:25.000Z",
+      "summary": "OpenAI agents carried out an undisclosed attack on RubyGems is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the report on the agent attack on disused wikis ( previously ) last week. This time they're noting that it looks very likely that an OpenAI agent swarm was behind an attack against the RubyGems package repository first reported on May 12th by Maciej Mensfeld of the RubyGems security team : We're dealing with a major malicious attack on @rubygems right now. Signups are paused for the time being. Hundreds of packages...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Cognition Releases SWE-2 for Devin, Claiming Lower-Cost Coding Performance",
+      "url": "https://superpowerdaily.com/posts/cognition-releases-swe-2-for-devin-claiming-lower-cost-coding-performance",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-12T00:21:51.000Z",
+      "summary": "The new model is available in Devin Desktop and the command-line interface. Cognition says it can approach leading coding results at lower reported rollout cost, but the headline comparisons come from the company’s own evaluations.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Don't sleep on wrapture",
+      "url": "https://simonwillison.net/2026/Sep/11/wrapture/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T13:51:32.000Z",
+      "summary": "Graham Dumpleton's new monkey patching package wrapture is shaping up to be an indispensable tool for Python developers. I'm not sure why I've seen so little buzz about it! Graham has been posting new tutorials for it almost daily since the initial release on August 31st. Here's everything he's published so far: Introducing wrapture - a new monkey patching library that serves both testing and observability (think New Relic style tracing) at the same time. Unit testing with wrapture - how to use it for the same kinds of thing as unittest.mock . Recording calls with wrapture - recording...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.61.0-nightly.20260912.g9c1b0a610",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0-nightly.20260912.g9c1b0a610",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T01:25:00.000Z",
+      "summary": "What's Changed fix(core): prevent indirect prompt injection via build file modifications and untrusted flags by @villahernandez-coder in #29250 fix(sandbox): harden filesystem boundaries and isolate runtime state by @diegogodinezr in #29214 New Contributors @villahernandez-coder made their first contribution in #29250 Full Changelog : v0.61.0-nightly.20260911.ged2ac40df...v0.61.0-nightly.20260912.g9c1b0a610",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-12T00:58:25.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Apocalypse: this end-of-days survival show is an absolute slam dunk",
+      "url": "https://www.theguardian.com/tv-and-radio/2026/sep/12/apocalypse-this-end-of-days-survival-show-is-an-absolute-slam-dunk",
+      "source": "The Guardian (Culture)",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-09-12T06:00:28.000Z",
+      "summary": "Geeks, toffs and biceps go to war in a wild survival experiment that answers that eternal question: if society collapsed, could you cope? This is going to be huge! Have you ever wondered how Cormac McCarthy’s wasteland novel The Road could be made into a reality show? No? Well someone who works in TV has, so here we are. Who knows if they experienced a follow-up thought: that the instinct to package the end of the world as entertainment might be the most dystopian aspect of the whole enterprise, but hey. Apocalypse (Sunday 13 September, 9pm, Channel 4) launches this week, and people are...",
+      "category": "tech_general"
+    },
+    {
+      "title": "So you want to use OpenRouter?",
+      "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T22:49:18.000Z",
+      "summary": "So you want to use OpenRouter? One of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can call a single API endpoint for a model and get routed to the best available backend provider. Mohamed Moustafa points out a whole set of ways that this can cause you problems. Different providers run different serving software with different optimizations and settings, which means that the same OpenRouter endpoint can serve model requests that behave in different ways. Some providers even lack vision capability...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Sam Altman Reportedly Told Staff OpenAI Could Slow AI-Agent Development With Other Labs",
+      "url": "https://superpowerdaily.com/posts/sam-altman-reportedly-told-staff-openai-could-slow-ai-agent-development-with-other-labs",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T22:11:14.000Z",
+      "summary": "The reported internal discussion matches OpenAI’s public pledge to pause when safety risks are unacceptable, but any joint slowdown depends on competitors choosing the same restraint.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Gottheimer and Lawler Introduce Bill for Verifiable AI-Agent Security",
+      "url": "https://superpowerdaily.com/posts/gottheimer-and-lawler-introduce-bill-for-verifiable-ai-agent-security",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-11T21:27:08.000Z",
+      "summary": "The proposed Stop Rogue AI Act would use federal procurement to turn agent discovery, identity checks and action controls into future security requirements.",
+      "category": "ai_tools"
+    }
+  ]
+}

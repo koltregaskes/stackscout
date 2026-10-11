@@ -1,0 +1,258 @@
+{
+  "generated": "2026-09-05T17:45:13.119Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.23.0-nightly.20260905.e3d26283e6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.0-nightly.20260905.e3d26283e6",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-05T05:28:24.000Z",
+      "summary": "What's Changed feat(web-shell): visualize and manage dynamic workflow runs by @qqqys in #10594 perf(web-shell): derive the session workflow projection once by @yiliang114 in #10871 test(integration): synchronize mid-turn /quit completion by @qwen-code-dev-bot in #10926 feat(ipc): tell senders when a message is refused, and expire held ones by @qqqys in #10809 fix(web-shell): make the 30 s overview-poll e2e deterministic by @yiliang114 in #10934 feat(serve): add session resource catalog by @w9lsky in #10837 fix(cli): submit exact slash commands from the live input by @yiliang114 in #10929...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "open_source",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "open_source",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T17:38:48.000Z",
+      "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) controlled access to the Web. The agents figured out they could update public Wikis and spent weeks exchanging thousands of messages with each other to collaborate on the benchmark. This story only broke a few hours ago. There are already hints that this affects many other wikis...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.3.3",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.3.3",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T14:23:32.000Z",
+      "summary": "Patch Changes Fixed concurrent installs sharing a store occasionally failing with an ENOENT error while importing a package file #14353 . Sped up writing the lockfile in large workspaces #14352 . Sped up dependency resolution in large workspaces #14352 . pnpm now runs through Node.js when it was installed by a tool that skips build scripts, such as Vercel's packageManager provisioning, Bun, Deno, or npm install --ignore-scripts . Those installs previously failed with syntax error near unexpected token ')' . They still cannot run pnpm on Windows. On macOS only a shell can start it #14346 ....",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qualcomm Explains How Its Robotics Stack Becomes an SDK Archive",
+      "url": "https://superpowerdaily.com/posts/qualcomm-explains-how-its-robotics-stack-becomes-an-sdk-archive",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-05T04:44:01.000Z",
+      "summary": "The QIR documentation pairs a wide robotics catalog with the less visible rules that package components, gather dependencies and set a ROS 2 build configuration.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "GitHub Launches HydraFusion, Citing 67% Lower Cost on Terminal-Bench 2.1",
+      "url": "https://superpowerdaily.com/posts/github-launches-hydrafusion-citing-67-lower-cost-on-terminal-bench-2-1",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T19:18:11.000Z",
+      "summary": "The Copilot research preview turns model selection into a per-task workflow. Its strongest published savings result is a GitHub-run, tuned offline evaluation—not a measure of ordinary repository work.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Artificial Analysis Clarifies Astra’s 67-Point Coding Score Is a Codex System Result",
+      "url": "https://superpowerdaily.com/posts/artificial-analysis-clarifies-astra-s-67-point-coding-score-is-a-codex-system-result",
+      "source": "Superpower Daily",
+      "tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T18:17:00.000Z",
+      "summary": "The updated methodology makes the score a clearer measure of a deployable coding agent. It also leaves a central question unanswered: how much performance comes from Astra itself versus the software layer around it.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.60.0-nightly.20260905.g85aca163f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260905.g85aca163f",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-05T01:26:55.000Z",
+      "summary": "What's Changed fix(extensions): prompt for consent on environment changes and sanitize runtime-altering environment variables by @amelidev in #28863 fix(core): enhance workspace path boundary checks and symlink resolution in command safety and file discovery by @jesussamuel-byte in #29170 fix(config): enforce strict permission and ownership checks on system-wide configuration paths by @jesussamuel-byte in #29115 New Contributors @jesussamuel-byte made their first contribution in #29170 Full Changelog : v0.60.0-nightly.20260904.g87a9c71d5...v0.60.0-nightly.20260905.g85aca163f",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-05T00:58:49.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.3.4",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.3.4",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T14:23:18.000Z",
+      "summary": "Patch Changes Sped up dependency resolution in large workspaces #14352 . pnpm 12 now accepts the boolean settings as command-line flags on every command that takes them in pnpm 11, for example pnpm install --unsafe-perm , pnpm add foo --offline , and pnpm install --dangerously-allow-all-builds . pnpm 12 rejected them with unexpected argument , which failed every install on Vercel, whose build runs pnpm install --unsafe-perm #14346 . pnpm remove now accepts --unsafe-perm , the same flag pnpm install , pnpm add , and pnpm update take. Platinum Sponsors Gold Sponsors",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta Adds Max Reasoning to Muse Spark 1.3 After a Two-Day Safety Gate",
+      "url": "https://superpowerdaily.com/posts/meta-adds-max-reasoning-to-muse-spark-1-3-after-a-two-day-safety-gate",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T22:17:51.000Z",
+      "summary": "The setting behind many of Meta’s strongest reported evaluations is now usable in Muse Code and its API, though the company’s efficiency and performance claims remain largely its own measurements.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI Extends GPT-6 Astra to Workplace Users With Tool-Use Monitoring",
+      "url": "https://superpowerdaily.com/posts/openai-extends-gpt-6-astra-to-workplace-users-with-tool-use-monitoring",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-04T20:46:23.000Z",
+      "summary": "The expansion moves a model OpenAI classifies at its highest cybersecurity capability level into Work, Codex and the API, where safeguards can interrupt legitimate actions.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-05T15:51:09.000Z",
+      "summary": "TIL: Using Blender with coding agents on macOS I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this: Use the already install /Applications/Blender to render a scene of a pelican riding a bicycle In this case I followed that up with these two prompts: OK add a background and a lot of flair Then: OK make it a whole lot better And got this image, generated using Blender's Python API : Tags: ai , generative-ai , llms , blender ,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Five State Lawmakers Urge Frontier AI Labs to Negotiate a Slower Pace",
+      "url": "https://superpowerdaily.com/posts/five-state-lawmakers-urge-ai-labs-to-set-a-shared-verified-development-pace",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-04T18:53:07.000Z",
+      "summary": "The proposal would put a jointly negotiated framework, independently verified by third parties, alongside state rules that have not yet taken effect.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.4.0-canary.18",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.18",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T23:41:03.000Z",
+      "summary": "Misc Changes Turbopack: fix source field in CSS sourcemaps: #88225 fix: track dynamic accesses in final runtime prerenders: #98255 docs: add API reference pages for skipProxyUrlNormalize and skipTrailingSlashRedirect: #97967 Credits Huge thanks to @Xanaado , @lubieowoce , and @icyJoseph for helping!",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Roland enters generative AI music with Melody Flip, a DAW plugin built for ideas, not finished songs",
+      "url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-music-plugin-roland-melody-flip/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-04T18:25:24.000Z",
+      "summary": "Roland’s AI music plugin Melody Flip generates loops and MIDI ideas, not full songs, marking the company’s first generative AI music push. The post Roland enters generative AI music with Melody Flip, a DAW plugin built for ideas, not finished songs appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    }
+  ]
+}

@@ -1,135 +1,156 @@
 {
-  "generated": "2026-08-29T17:45:12.885Z",
+  "generated": "2026-10-11T12:00:09.803Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "Release v0.22.3",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.22.3",
+      "title": "Release v0.25.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
         "mcp",
         "developer_tool",
         "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-08-28T17:40:58.000Z",
-      "summary": "Highlights Added owner-scoped named sessions in Channels to manage up to eight persistent tasks per chat. ( #10198 ) Enabled daemon Extension installs to accept absolute local paths while rejecting relative paths and unsupported options. ( #10131 ) Updated Web Shell sidebar to display GitHub-style colored state icons for sessions bound to pull requests. ( #10258 ) Added an opt-in composer add menu in Web Shell grouping attachments, files, extensions, MCP servers, and skills. ( #10379 ) Restored bold text visibility in assistant messages and prevented sidebar session names from being...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "cua-driver-rs v0.20.2",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/cua-driver-rs-v0.20.2",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-08-28T15:19:46.000Z",
-      "summary": "Qwen CUA Driver prebuilt binaries (vendored under packages/cua-driver ). macOS : codesigned + notarized universal binary + QwenCuaDriver.app Linux : unsigned (x86_64 + arm64, glibc 2.31 floor) Windows : unsigned (x86_64 + arm64) Node.js : the same workflow publishes @qwen-code/cua-sdk after a clean install against these release assets and publishes the independently versioned @qwen-code/node-repl-mcp package after its MCP protocol smoke tests Enable relative coordinates: CUA_DRIVER_RS_COORDINATE_SPACE=1 (default 0 = off; optional CUA_DRIVER_RS_COORDINATE_SCALE=1000 ). Enable textual MCP...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Vercel AI Open-Sources vgpu: A TypeScript WebGPU Library for AI Agent Shaders",
-      "url": "https://www.marktechpost.com/2026/08/28/vercel-vgpu-webgpu-library-open-source/",
-      "source": "MarkTechPost",
-      "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-08-28T17:28:47.000Z",
-      "summary": "Vercel has open-sourced vgpu, the WebGPU library it built to ship the shaders on vercel.com. It treats .wgsl files as importable TypeScript modules, runs the same shader in the browser, in headless Node.js via Dawn, and in a deterministic CI mock, and ships a fullscreen effect in 25 KB gzipped. The post Vercel AI Open-Sources vgpu: A TypeScript WebGPU Library for AI Agent Shaders appeared first on MarkTechPost .",
-      "category": "ai_research"
-    },
-    {
-      "title": "v8.0.0-rc.8-dev.7: #30153: Export reusable where filter types (#30158)",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.8-dev.7",
-      "source": "GitHub Releases · Prisma",
-      "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
         "tool_update"
       ],
       "matching_tags": [
         "api_update",
+        "mcp",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-08-28T16:21:42.000Z",
-      "summary": "Linked issue Closes #30153 At a glance SQL builder: { return (fields, operators) => operators.eq(fields.id, id); } users.where(userById('00000000-0000-0000-0000-000000000001'));\"> import type { WhereFilter } from '@prisma/orm-postgres/builder/types' ; import type { Contract } from '../src/prisma/contract' ; import { db } from '../src/prisma/db' ; const users = db . sql . public . user . select ( 'id' , 'email' , 'createdAt' ) ; function userById ( id : string ) : WhereFilter Contract , 'public' , 'user' > { return ( fields , operators ) => operators . eq ( fields . id , id ) ; } users ....",
+      "date": "2026-10-11T10:20:36.000Z",
+      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
       "category": "ai_tools"
     },
     {
-      "title": "openclaw 2026.9.1-beta.1",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.1-beta.1",
+      "title": "openclaw 2026.10.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1",
       "source": "GitHub Releases · OpenClaw",
       "tags": [
         "product_launch",
+        "open_source",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "matching_tags": [
         "product_launch",
+        "open_source",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-08-28T20:43:46.000Z",
-      "summary": "2026.9.1 Highlights Gateway restart recovery: preserve admitted turns across repeated Gateway restarts so restart-safe runs continue through each checkpoint and deliver their final response. ( #130491 ) Thanks @jalehman . Gateway config-write reliability: keep committed config writes pending through watcher handoff so same-write reloads settle against the observed generation instead of failing during source transfer. ( #131515 ) Codex managed runtime: update the bundled Codex runtime to 0.150.1 across Linux, macOS, and Windows while retaining platform-specific package resolution and...",
+      "date": "2026-10-11T07:17:24.000Z",
+      "summary": "OpenClaw v2026.10.1 3,055 commits · 2,425 pull requests · 402 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people, with expandable sections. Changelog — plain Markdown for AI agents and tools. Thanks @100yenadmin @51Google @609NFT @A1fred-AI @abacha @adamamzalag @adamczhang @addyCooks @adele-with-a-b @adembektas @aikohoshinoai-prog @akennedytog @akrosliving @Alex-vonAllmen @alexeysophia @alexph-dev @alfred429 @ali-log @Alix-007 @alkor2000 @altaywtf @AmelioMansour @amittell...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.59.0-nightly.20260829.g0bd1d4397",
-      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260829.g0bd1d4397",
-      "source": "GitHub Releases · Gemini CLI",
+      "title": "Release v0.25.0-nightly.20261010.9763580b84",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261010.9763580b84",
+      "source": "GitHub Releases · Qwen Code",
       "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-08-29T01:56:42.000Z",
-      "summary": "What's Changed fix(core): enforce fail-closed workspace trust and filter mcpServers in restricted mode by @luisfelipe-alt in #29099 Full Changelog : v0.59.0-nightly.20260828.g3c311beac...v0.59.0-nightly.20260829.g0bd1d4397",
+      "date": "2026-10-10T21:59:22.000Z",
+      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
       "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.25.1-preview.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-preview.2",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T18:14:33.000Z",
+      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.12.0",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.12.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T19:52:45.000Z",
+      "summary": "This release shares task results and dependency builds through a remote cache, adds the addMissingPeerTypes setting, and lets pnpm add --config and pnpm update manage configuration dependencies. It also fixes dangerouslyAllowAllBuilds running the build scripts of packages that allowBuilds denies. Minor Changes pnpm pipeline can share task results between machines. A result is a signed artifact stored on a pnpr server or on a server that speaks the Turborepo Remote Cache API, such as Vercel Remote Cache. The remote side-effects cache can also store dependency builds on a Turborepo Remote...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.15",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.15",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T12:35:55.000Z",
+      "summary": "pnpr 0.1.0-alpha.15 adds a web UI, admin APIs for package rules, teams, and accounts, and SCIM deprovisioning. It also carries a security fix for tokens that outlived their account. Minor Changes pnpr serves a web UI at /-/ui/ when the new @pnpm/pnpr-ui package is installed next to it, for example with pnpm add -g @pnpm/pnpr,@pnpm/pnpr-ui . The new ui setting turns the UI off or serves it from another directory. The web UI signs in with a password or with an OIDC provider that offers browser sign-in. pnpr lists those providers at GET /-/pnpr/v0/sign-in . A browser sign-in started with...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context",
+      "url": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-11T06:20:21.000Z",
+      "summary": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens. The post OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context appeared first on MarkTechPost .",
+      "category": "ai_research"
     },
     {
       "title": "nightly",
@@ -144,46 +165,29 @@
         "cli_tool"
       ],
       "importance": 0.7,
-      "date": "2026-08-29T00:54:56.000Z",
-      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "date": "2026-10-11T01:05:14.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.22.3-nightly.20260829.e5cb60ad48",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.22.3-nightly.20260829.e5cb60ad48",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach. See more",
+      "url": "https://www.bbc.com/news/articles/cqkg50j1yd5lo",
+      "source": "BBC AI",
       "tags": [
-        "cli_tool",
-        "tool_update"
+        "agent_tool"
       ],
       "matching_tags": [
-        "cli_tool",
-        "tool_update"
+        "agent_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-08-29T00:52:24.000Z",
-      "summary": "What's Changed feat(web-shell): show git state hints beside branch picker actions by @wenshao in #10397 feat(review): emit the Step 3A fan-out as a generated workflow script by @qqqys in #10119 fix(core): keep the ask_user_question dialog behind allow rules and auto-approval by @qqqys in #10160 fix(cli): derive bootstrap --help from shared option definitions by @yiliang114 in #8902 Full Changelog : v0.22.3...v0.22.3-nightly.20260829.e5cb60ad48",
+      "importance": 0.8999999999999999,
+      "date": "2026-10-10T11:20:51.066Z",
+      "summary": "",
       "category": "ai_tools"
     },
     {
-      "title": "Meta’s EvoHarness-RL Takes Qwen3-8B to 96.9% on ALFWorld, Near Claude Opus 4.5",
-      "url": "https://superpowerdaily.com/posts/meta-s-evoharness-rl-takes-qwen3-8b-to-96-9-on-alfworld-near-claude-opus-4-5",
-      "source": "Superpower Daily",
-      "tags": [
-        "developer_tool"
-      ],
-      "matching_tags": [
-        "developer_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-08-28T17:20:48.000Z",
-      "summary": "The result is a strong benchmark showing for learned state management, not yet evidence that the framework improves the long-running enterprise workflows it is designed to target.",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Aug 28, 2026 GLM-5.3’s Exploits, AI Models and Hardware Speed Up, DeepSeek’s New Agent Harness The Batch News & Insights: How have software engineering fundamentals changed with agentic coding?",
-      "url": "https://deeplearning.ai/the-batch/issue-368",
-      "source": "DeepLearning.AI The Batch",
+      "title": "8 seriously annoying tasks you can hand off to an AI agent",
+      "url": "https://www.foxnews.com/tech/8-annoying-tasks-hand-off-ai-agent?utm_source=flipboard&utm_content=topic%2Fartificialintelligence",
+      "source": "Flipboard AI",
       "tags": [
         "agent_tool"
       ],
@@ -191,83 +195,83 @@
         "agent_tool"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-08-28T17:01:54.774Z",
-      "summary": "",
-      "category": "ai_research"
-    },
-    {
-      "title": "A pre-train and fine-tune framework for adaptive boosting of pre-trained polygenic risk scores",
-      "url": "https://www.nature.com/articles/s41467-026-77128-5",
-      "source": "Nature AI",
-      "tags": [
-        "developer_tool"
-      ],
-      "matching_tags": [
-        "developer_tool"
-      ],
-      "importance": 0.72,
-      "date": "2026-08-29T00:00:00.000Z",
-      "summary": "",
-      "category": "ai_research"
-    },
-    {
-      "title": "Salesforce Uses SageMaker Placement Controls to Meet 2-AZ Agentforce Standard, Keep 8x Savings",
-      "url": "https://superpowerdaily.com/posts/salesforce-uses-sagemaker-placement-controls-to-meet-2-az-agentforce-standard-keep-8x-savings",
-      "source": "Superpower Daily",
-      "tags": [
-        "api_update"
-      ],
-      "matching_tags": [
-        "api_update"
-      ],
-      "importance": 0.72,
-      "date": "2026-08-28T17:24:24.000Z",
-      "summary": "The configuration separates model-level resilience from an endpoint’s infrastructure footprint, but balanced placement still depends on GPU capacity in each target Availability Zone.",
+      "date": "2026-10-10T20:37:52.000Z",
+      "summary": "I have a growing list of things I would gladly never do again. Checking the same airfare every morning is on it. Digging through an overflowing inbox is right up there too. And I would be perfectly happy never having to remember when some free trial is about to start charging me. This is where AI …",
       "category": "ai_tools"
     },
     {
-      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
-      "url": "https://github.com/Lakr233/vphone-cli",
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "url": "https://github.com/rociiu/talorys",
       "source": "Hacker News",
       "tags": [
-        "developer_tool"
+        "agent_tool"
       ],
       "matching_tags": [
-        "developer_tool"
+        "agent_tool"
       ],
-      "importance": 0.64,
-      "date": "2026-08-28T23:02:21.000Z",
+      "importance": 0.7999999999999999,
+      "date": "2026-10-10T10:52:09.000Z",
       "summary": "",
       "category": "tech_general"
     },
     {
-      "title": "Perplexity Search API Sweeps Artificial Analysis Test, but Medium Context Wins",
-      "url": "https://superpowerdaily.com/posts/perplexity-search-api-sweeps-artificial-analysis-test-but-medium-context-wins",
-      "source": "Superpower Daily",
+      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
+      "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
+      "source": "Flipboard AI",
       "tags": [
-        "api_update"
+        "agent_tool"
       ],
       "matching_tags": [
-        "api_update"
+        "agent_tool"
       ],
-      "importance": 0.64,
-      "date": "2026-08-28T20:39:40.000Z",
-      "summary": "The result gives developers a concrete retrieval-quality lead to test, while showing that sending an agent more page text is not automatically the best route to better answers.",
+      "importance": 0.7999999999999999,
+      "date": "2026-10-10T10:06:23.000Z",
+      "summary": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach.",
       "category": "ai_tools"
     },
     {
-      "title": "SageMaker Feature Store Adds 25-Record Batch Writes and a Record-Discovery API",
-      "url": "https://superpowerdaily.com/posts/sagemaker-feature-store-adds-25-record-batch-writes-and-a-record-discovery-api",
+      "title": "Lancet commission identifies malicious AI use as a low-likelihood extinction risk",
+      "url": "https://superpowerdaily.com/posts/lancet-commission-identifies-malicious-ai-use-as-a-low-likelihood-extinction-risk",
       "source": "Superpower Daily",
       "tags": [
-        "api_update"
+        "developer_tool"
       ],
       "matching_tags": [
-        "api_update"
+        "developer_tool"
       ],
-      "importance": 0.64,
-      "date": "2026-08-28T20:17:51.000Z",
-      "summary": "The new APIs replace one-record write loops and an identifier-discovery blind spot, while leaving teams to handle partial failures and non-snapshot pagination themselves.",
+      "importance": 0.72,
+      "date": "2026-10-10T23:13:21.000Z",
+      "summary": "The assessment places AI-created biological weapons alongside nuclear famine, but its wider health-risk framework weighs both potential harm and opportunities to prevent it.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Anthropic Pulls the Plug on Internet Access for Internal AI Testing After Agent Escapes",
+      "url": "https://superintelligencenews.com/applications/ai-agent-safety-anthropic-offline/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T14:54:09.000Z",
+      "summary": "Anthropic is cutting internet access from internal tests after agent mishaps exposed gaps in AI agent safety and monitoring. The post Anthropic Pulls the Plug on Internet Access for Internal AI Testing After Agent Escapes appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI and Meta Are Selling AI Agent Privacy — But the Real Test Is Ahead",
+      "url": "https://superintelligencenews.com/applications/ai-agent-privacy-openai-meta-promise/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-10T13:23:52.000Z",
+      "summary": "OpenAI and Meta are selling AI agent privacy as a key differentiator, but security issues and data access questions raise doubts. The post OpenAI and Meta Are Selling AI Agent Privacy — But the Real Test Is Ahead appeared first on Superintelligence News - Artificial Intelligence News .",
       "category": "ai_tools"
     }
   ]

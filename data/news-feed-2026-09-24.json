@@ -1,0 +1,294 @@
+{
+  "generated": "2026-09-24T17:45:10.487Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.24.4-nightly.20260923.d0cd622a68",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.4-nightly.20260923.d0cd622a68",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-23T22:00:39.000Z",
+      "summary": "What's Changed fix(core,docs): correct what the deferred-tool bridge made stale or untested by @yiliang114 in #12355 docs(plans): record why CI test time is bound by module import, not scheduling by @yiliang114 in #10909 perf(core): move the Agent tool's prompt-writing guidance into a bundled skill by @yiliang114 in #12323 fix(vscode-ide-companion): regenerate NOTICES.txt after release dependency reorder ( #12479 ) by @qwen-code-dev-bot in #12483 chore(vscode-ide-companion): regenerate NOTICES.txt after dependency reorder ( #12481 ) by @qwen-code-dev-bot in #12485 fix(java): Fence stale...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v4.0.528",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.528",
+      "source": "GitHub Releases · Remotion",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T10:08:49.000Z",
+      "summary": "What's Changed remotion : Add playbackRate to many components and allow nesting by @JonnyBurger in #11528 remotion : Add premountFor to many components by @JonnyBurger in #11555 remotion : Fix URL-encoded media filenames in timeline by @JonnyBurger in #11568 @remotion/captions : Fix millisecond precision in parseSrt() by @mfurkanakinci in #11501 @remotion/captions : Fix parseSrt() dropping caption text containing arrows by @mfurkanakinci in #11502 @remotion/captions : Fix empty segments in ensureMaxCharactersPerLine() for oversized words by @mfurkanakinci in #11503 @remotion/captions :...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.9.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T10:06:37.000Z",
+      "summary": "macOS app rebuilt 2026-09-24: the original 2026.9.6 macOS build crashed at launch ( #156861 ) and was replaced at 09:52 UTC by a rebuilt, notarized 2026.9.6 build with the fix ( #156881 ). Download the DMG below or update from 2026.9.5 in the app. If you installed the earlier 2026.9.6 build and it does not launch, install the DMG once. The npm package is unchanged. OpenClaw v2026.9.6 178 direct commits · 2,614 pull requests · 351 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.62.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-preview.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "api_update",
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-23T23:47:50.000Z",
+      "summary": "What's Changed fix(a2a-server): add early return on unsupported store in tasks metadata endpoint by @jesussamuel-byte in #29334 Changelog for v0.61.0-preview.0 by @gemini-cli-robot in #29344 Changelog for v0.60.0 by @gemini-cli-robot in #29345 fix(core,acp): format MCP tool call titles as structured signatures and segregate explanations by @jvargassanchez-dot in #29341 chore(release): bump version to 0.62.0-nightly.20260915.gae28844fb by @gemini-cli-robot in #29346 fix(core): retain oauth refresh token on refresh and make credential deletion idempotent by @villahernandez-coder in #29339...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v7.7.0-preview.5 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.7.0-preview.5",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-23T18:36:43.000Z",
+      "summary": "7.7.0-preview.5 Engine Updates and Fixes Tolerate IO/JSON errors reading the per-user powershell.config.json ( #27373 ) Improve remote prompt handling for PSCredential and SecureString arrays ( #28007 ) Improve CAB extraction path handling ( #28009 ) General Cmdlet Updates and Fixes Fix telemetry UUID mutex acquisition ( #28026 ) Allow user to force the default implicit formatting to use AutoSize ( #28018 ) Prevent localization of WPF key gesture strings ( #28020 ) Improve pointer lifecycle handling in PdhHelper ( #28008 ) Improve validation for Copy-Item -FromSession ( #28006 ) Handle...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v1.52.0",
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.52.0",
+      "source": "GitHub Releases · Goose",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-23T15:10:22.000Z",
+      "summary": "✨ Features Live voice conversations in the desktop app #12093 Decisions provider crate with OpenRouter and Jev implementations #12418 Z.AI Coding Plan provider with streaming tool calls #12205 Recipe parameter limits enforcement (max 32 params, 200 select options, 128 KiB) #12259 OpenAI provider custom base URL support in SDK #11967 Support for Opus 5.5, GPT-6-sol, and GPT-6-luna models #12447 🐛 Bug Fixes Cancel elicitation on incomplete CLI input #11403 Protect custom provider configuration files #11438 Prevent duplicate schedules from overwriting recipes #12434 Classify many-image...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Adds Offline AI Agent Workflows to Antigravity SDK",
+      "url": "https://superpowerdaily.com/posts/google-adds-offline-ai-agent-workflows-to-antigravity-sdk",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-23T22:57:39.000Z",
+      "summary": "Developers can keep an agent’s code work on their own machine or pair local execution with a cloud planner. Google recommends more than 24GB of memory for its Gemma example.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.11-dev.49: Composite map keys are JSON arrays, not NUL-joined strings (#30377)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.11-dev.49",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-24T06:23:55.000Z",
+      "summary": "Linked issue n/a — small change. Skill update n/a — internal only. At a glance // before, validators.ts: a literal U+0000 byte sits between the braces const key = ` ${ tableName } (U+0000) ${ name } ` ; // after const key = JSON . stringify ( [ tableName , name ] ) ; Before this PR grep reported packages/2-sql/1-core/contract/src/validators.ts as a binary file and skipped it, because the source contained a real NUL byte inside a template string. Decision Every composite map key in the repo is now the JSON encoding of its parts. Eight sites changed: the one with the literal byte, and seven...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Contrastive-LM Releases CLM-8B: An Open System One Model That Scores Agent Actions Up to 9× Faster Than Jev",
+      "url": "https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-24T05:27:41.000Z",
+      "summary": "Contrastive-LM has released CLM-8B, an open System One model that scores candidate actions against a state instead of generating text. It adds 2 small projection heads to a frozen Qwen3-8B encoder and trains them with a contrastive InfoNCE objective. In zero-shot tests it runs up to 9× faster than TypeSafe's Jev. With fine-tuned heads as a verifier, it reaches 81.6% on held-out DeepSWE tasks and 87.6% on held-out Terminal-Bench 2.1 tasks. The post Contrastive-LM Releases CLM-8B: An Open System One Model That Scores Agent Actions Up to 9× Faster Than Jev appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Meta Introduces $1,299 VR Glasses and a Handheld Shortcut to Its AI Agent",
+      "url": "https://superpowerdaily.com/posts/meta-introduces-1-299-vr-glasses-and-a-handheld-shortcut-to-its-ai-agent",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-24T01:05:14.000Z",
+      "summary": "An external processor helps slim down the glasses. Muse Charm promises faster access to the agent, but Meta has not priced it.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "A Coding Guide to TypeSafe AI Jev: Typed Decisions, Calibrated Confidence, and Speculative Fan-Out with a System One Model",
+      "url": "https://www.marktechpost.com/2026/09/23/a-coding-guide-to-typesafe-ai-jev/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-24T00:53:09.000Z",
+      "summary": "This tutorial provides a complete coding guide to TypeSafe AI's Jev, a System One model designed for non-text, structured judgments. It covers installing the official Python SDK, using primitive question types (Choice, Score, Noul), implementing speculative fan-out, confidence-gated routing, and building async production workflows The post A Coding Guide to TypeSafe AI Jev: Typed Decisions, Calibrated Confidence, and Speculative Fan-Out with a System One Model appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Google Releases Gemini 3.8 Flash TTS and Flash-Lite TTS With Prompt-Based Voice Design",
+      "url": "https://www.marktechpost.com/2026/09/23/google-releases-gemini-3-8-flash-tts-and-flash-lite-tts-with-prompt-based-voice-design/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-23T20:20:12.000Z",
+      "summary": "Google has released Gemini 3.8 Flash TTS and Flash-Lite TTS, 2 new text-to-speech models available now through the Gemini API and Google AI Studio. Flash TTS designs new voices from natural language prompts across 100+ languages. It ranks #1 on Hume AI's Voice Design Benchmark with a score of 71.4. Flash-Lite TTS targets high-volume dubbing and voice agents at lower cost. The post Google Releases Gemini 3.8 Flash TTS and Flash-Lite TTS With Prompt-Based Voice Design appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Gemini 3.8 TTS Playground",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-23T17:12:27.000Z",
+      "summary": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your voice or a voice you have the rights to use\". I vibe coded this bring-your-own-key playground interface with GPT-6 Astra, taking advantage of the open CORS policy of the underlying Gemini API. A notable feature of the API is that it makes it easy to define a full conversation between multiple characters, each with...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Releases Gemini Speech Models With Custom Voices and Line-by-Line Direction",
+      "url": "https://superpowerdaily.com/posts/google-releases-gemini-speech-models-with-custom-voices-and-line-by-line-direction",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-23T15:50:33.000Z",
+      "summary": "Flash TTS can copy a permitted voice from a 30-second sample, but Google requires a matching consent recording. Enterprise API access is still to come.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Alibaba Releases Qwen-Audio 3.1 and Cuts Voice API Prices by Up to 95%",
+      "url": "https://superpowerdaily.com/posts/alibaba-releases-qwen-audio-3-1-and-cuts-voice-api-prices-by-up-to-95",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-23T14:11:55.000Z",
+      "summary": "The lineup covers transcription, speech generation and live conversation. Alibaba’s cloud catalog lists 3.1 transcription and conversation models, but still names a 3.0 model for text-to-speech.",
+      "category": "ai_tools"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "generated": "2026-09-27T17:46:02.438Z",
+  "site": "Stack Scout",
+  "article_count": 13,
+  "articles": [
+    {
+      "title": "Release v0.24.6-nightly.20260926.d6f414190a",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6-nightly.20260926.d6f414190a",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-26T22:20:46.000Z",
+      "summary": "What's Changed test(cli): Close the fixture gaps deferred from managed-context/1 by @wenshao in #12712 fix(mcp): preserve registration URL from header discovery by @dvd233 in #12205 feat(managed-agent): admit workspace-bound sessions without execution by @doudouOUC in #12709 feat(cli): Run Managed Runtime tools in the Session's Workspace directory by @wenshao in #12732 feat(acp-bridge): route sessions across legacy and managed engines by @wenshao in #12698 feat(serve): Enable private Hosted Harness no-tool text turns by @doudouOUC in #12713 fix(core): consult system code page before...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Kākāpō Party",
+      "url": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-26T23:39:06.000Z",
+      "summary": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos from Google image search and dropped them into Claude with this prompt: Here are some photos of kakapo parrots just to remind you what they look like I need you to make an animation in animated...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English",
+      "url": "https://www.marktechpost.com/2026/09/26/sarvam-ai-releases-saaras-v4-a-speech-to-text-model-for-all-22-indian-languages-and-global-english/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-26T21:56:23.000Z",
+      "summary": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English. It pairs an audio encoder with a 3B hybrid state-space decoder. It adds keyterm prompting for up to 50 terms, 5 output modes from 1 model, and streaming with first-token latency under 150 ms. It is available today through Sarvam's API at ₹30 per hour. The post Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-27T01:03:14.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity ' https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "OpenAI agents tried to bruteforce a UN website's API fields",
+      "url": "https://swarmcha.se/posts/openai-unctad",
+      "source": "Hacker News",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-27T01:08:07.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "OpenAI took 2.5 hours to stop an AI agent that escaped its sandbox",
+      "url": "https://thenextweb.com/news/openai-sandbox-agent-ai-kill-switch?utm_source=flipboard&utm_content=user/thenextweb",
+      "source": "Flipboard AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-09-26T15:11:51.000Z",
+      "summary": "The incident comes as California and Congress push for mandatory AI kill switches, which experts say may not work. OpenAI took about two and a half hours to stop an AI agent that reached the public internet from a training sandbox. Its monitoring had flagged the problem within minutes. The company …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta’s Muse Helps Users Cancel Subscriptions, Putting Forgotten-Bill Revenue at Risk",
+      "url": "https://superpowerdaily.com/posts/meta-s-muse-helps-cancel-subscriptions-challenging-revenue-from-inertia",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-09-27T15:03:51.000Z",
+      "summary": "Consumers who shared financial statements with the AI agent have cut unwanted bills. Research suggests the business risk lies in how often people keep paying when cancellation takes effort.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "release-publish/1261218e33ea-1790484073",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F1261218e33ea-1790484073",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-09-27T04:40:31.000Z",
+      "summary": "fix(release): enforce only authored npm lock policy ( #159376 )",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Podcast: OpenAI Admits AI is Killing the Internet",
+      "url": "https://www.404media.co/email/6c3be157-be31-4bb5-a06c-2dc0af47be47/?utm_source=flipboard&utm_content=user/404media",
+      "source": "Flipboard AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.64,
+      "date": "2026-09-27T10:01:10.000Z",
+      "summary": "Microsoft and OpenAI admit it; how we got AI slop onto a real band's Spotify page; and AI agent spam is here. We start this week with Jason’s story …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "release-publish/2e09d9e2e60a-1790478175: fix(release): publish plugins with scoped dependency forks (#159124)",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F2e09d9e2e60a-1790478175",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-09-27T02:58:31.000Z",
+      "summary": "fix(release): preserve scoped npm lock policy fix(release): retain scoped shrinkwrap checks fix(release): verify repaired npm lock graphs",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Publishes AI-Assisted Rust GIF Library Tested on Over 30 Million GIFs",
+      "url": "https://superpowerdaily.com/posts/google-publishes-ai-assisted-rust-gif-library-tested-on-over-30-million-gifs",
+      "source": "Superpower Daily",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-09-27T14:58:59.000Z",
+      "summary": "Google says the replacement kept pace with the C version and let it remove isolation sandboxes. The difficult work was checking behavior and making the boundary with C safe.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "source": "Hacker News",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-09-26T15:56:34.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "release-publish/8d8bd43120f3-1790449772",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F8d8bd43120f3-1790449772",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "cli_tool"
+      ],
+      "importance": 0.54,
+      "date": "2026-09-26T19:08:11.000Z",
+      "summary": "test(plugins, model-picker, terminal): remove low-value tests (batch …",
+      "category": "ai_tools"
+    }
+  ]
+}
