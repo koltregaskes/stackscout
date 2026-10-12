@@ -1,8 +1,60 @@
 {
-  "generated": "2026-10-11T12:00:09.803Z",
+  "generated": "2026-10-11T17:45:08.534Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.19",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.19",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-11T11:42:33.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.25.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.0 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.6 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.5 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.25.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.1",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-11T11:31:22.000Z",
+      "summary": "What's Changed fix(serve): preserve session creation failure diagnostics by @callmeYe in #12331 feat(sdk-java): Add managed runtime attestation client by @doudouOUC in #12522 feat(web-shell): select a time range on the trajectory overview to narrow the table by @qqqys in #12543 feat(serve,web-shell): set the Qwen Live endpoint and model from settings by @qqqys in #12529 feat(channels): separate private and group access policies by @qqqys in #12547 fix(core): bound oversized images returned by MCP tools by @yiliang114 in #10835 feat(serve): run Qwen Live through the Web Shell, native macOS...",
+      "category": "ai_tools"
+    },
     {
       "title": "Release v0.25.1",
       "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
@@ -22,8 +74,8 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-11T10:20:36.000Z",
-      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
+      "date": "2026-10-11T11:39:21.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features Restores the selected text-only connection and validated session or workspace route after Android Activity recreation, while preserving explicit retry screens after failures. ( #12247 ) by @jabrailkhalil Improves mobile profile screen accessibility with clearer connection actions, editor labels, validation announcements, and scrollable storage recovery. ( #12129 ) by @jabrailkhalil Adds an experimental Kubernetes CSI-backed runtime that validates workspaces, persists...",
       "category": "ai_tools"
     },
     {
@@ -117,22 +169,22 @@
       "category": "ai_tools"
     },
     {
-      "title": "pnpr 0.1.0-alpha.15",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.15",
+      "title": "pnpm 12.12.1",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.12.1",
       "source": "GitHub Releases · pnpm",
       "tags": [
-        "api_update",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "matching_tags": [
-        "api_update",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-10T12:35:55.000Z",
-      "summary": "pnpr 0.1.0-alpha.15 adds a web UI, admin APIs for package rules, teams, and accounts, and SCIM deprovisioning. It also carries a security fix for tokens that outlived their account. Minor Changes pnpr serves a web UI at /-/ui/ when the new @pnpm/pnpr-ui package is installed next to it, for example with pnpm add -g @pnpm/pnpr,@pnpm/pnpr-ui . The new ui setting turns the UI off or serves it from another directory. The web UI signs in with a password or with an OIDC provider that offers browser sign-in. pnpr lists those providers at GET /-/pnpr/v0/sign-in . A browser sign-in started with...",
+      "date": "2026-10-11T11:30:09.000Z",
+      "summary": "This release adds OIDC authentication to pnpm dist-tag and the tool: protocol. pnpm publish now checks which registry an NPM_ID_TOKEN was issued for before using it. Patch Changes pnpm publish now uses an NPM_ID_TOKEN only if its aud claim matches the selected registry, such as npm:registry.npmjs.org . A token for another registry is skipped with a warning, and pnpm falls back to the configured credentials. pnpm dist-tag add , rm , and ls now support OIDC authentication in CI. Enable \"Allow npm dist-tag\" in the package's trusted publishing settings to manage tags without a stored npm...",
       "category": "ai_tools"
     },
     {
@@ -170,18 +222,35 @@
       "category": "ai_tools"
     },
     {
-      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach. See more",
-      "url": "https://www.bbc.com/news/articles/cqkg50j1yd5lo",
-      "source": "BBC AI",
+      "title": "release-publish/a17bd679979e-1791717771: refactor(plugin-sdk): move SQLite runtime writes into workers (#168857)",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2Fa17bd679979e-1791717771",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.62,
+      "date": "2026-10-11T11:17:16.000Z",
+      "summary": "refactor(plugin-sdk): share legacy persistence warning budgets refactor(plugin-sdk): await native exec and placement preparation Move bundled node policy preparation, approval methods that expire rows, placement retirement, and restart clearing through their existing workers. Preserve released native signatures and callback ordering with shared deprecation warnings, and retain effect-time authority checks. Storage format and update behavior are unchanged. test: repair approval authority fixture and inventory native compatibility test: reflect retained native placement calls in worker...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "5 AI apps you should use instead of Meta Muse",
+      "url": "https://www.androidauthority.com/best-meta-muse-alternatives-3719671/?utm_source=flipboard&utm_content=topic/technology",
+      "source": "Flipboard AI",
       "tags": [
         "agent_tool"
       ],
       "matching_tags": [
         "agent_tool"
       ],
-      "importance": 0.8999999999999999,
-      "date": "2026-10-10T11:20:51.066Z",
-      "summary": "",
+      "importance": 0.7999999999999999,
+      "date": "2026-10-11T09:00:44.000Z",
+      "summary": "Meta's cute AI agent isn't your only option. Add Android Authority on Google: Preferred SourceGoogle Discover If you have grown tired of seeing Meta AI being pushed across Facebook, Instagram, WhatsApp, and whatever other apps the company runs, Meta has a surprise for you: more AI! Meta Muse is an …",
       "category": "ai_tools"
     },
     {
@@ -200,8 +269,8 @@
       "category": "ai_tools"
     },
     {
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "url": "https://github.com/rociiu/talorys",
+      "title": "My personal AI agent posted my bank details on company Slack",
+      "url": "https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10",
       "source": "Hacker News",
       "tags": [
         "agent_tool"
@@ -210,24 +279,9 @@
         "agent_tool"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-10T10:52:09.000Z",
+      "date": "2026-10-10T14:46:16.000Z",
       "summary": "",
       "category": "tech_general"
-    },
-    {
-      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
-      "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
-      "source": "Flipboard AI",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-10T10:06:23.000Z",
-      "summary": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach.",
-      "category": "ai_tools"
     },
     {
       "title": "Lancet commission identifies malicious AI use as a low-likelihood extinction risk",
@@ -242,36 +296,6 @@
       "importance": 0.72,
       "date": "2026-10-10T23:13:21.000Z",
       "summary": "The assessment places AI-created biological weapons alongside nuclear famine, but its wider health-risk framework weighs both potential harm and opportunities to prevent it.",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Anthropic Pulls the Plug on Internet Access for Internal AI Testing After Agent Escapes",
-      "url": "https://superintelligencenews.com/applications/ai-agent-safety-anthropic-offline/",
-      "source": "Superintelligence Newsletter",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-10T14:54:09.000Z",
-      "summary": "Anthropic is cutting internet access from internal tests after agent mishaps exposed gaps in AI agent safety and monitoring. The post Anthropic Pulls the Plug on Internet Access for Internal AI Testing After Agent Escapes appeared first on Superintelligence News - Artificial Intelligence News .",
-      "category": "ai_tools"
-    },
-    {
-      "title": "OpenAI and Meta Are Selling AI Agent Privacy — But the Real Test Is Ahead",
-      "url": "https://superintelligencenews.com/applications/ai-agent-privacy-openai-meta-promise/",
-      "source": "Superintelligence Newsletter",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-10T13:23:52.000Z",
-      "summary": "OpenAI and Meta are selling AI agent privacy as a key differentiator, but security issues and data access questions raise doubts. The post OpenAI and Meta Are Selling AI Agent Privacy — But the Real Test Is Ahead appeared first on Superintelligence News - Artificial Intelligence News .",
       "category": "ai_tools"
     }
   ]
