@@ -1,17 +1,16 @@
 {
-  "generated": "2026-10-11T17:45:08.534Z",
+  "generated": "2026-10-12T17:45:14.995Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "SDK TypeScript Release v0.1.19",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.19",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "openclaw 2026.10.5-beta.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.2",
+      "source": "GitHub Releases · OpenClaw",
       "tags": [
         "api_update",
         "mcp",
         "product_launch",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
@@ -20,45 +19,19 @@
         "api_update",
         "mcp",
         "product_launch",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-11T11:42:33.000Z",
-      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.25.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.0 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.6 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.5 Source: CLI built from source (same branch/ref as...",
+      "date": "2026-10-12T12:10:48.000Z",
+      "summary": "2026.10.5-beta.2 Highlights Updates finish and recover: openclaw update settles stale handoff leases, completed receipts, and legacy 2026.9.8 recovery records instead of stopping on update-recovery-pending , keeps the service heap limit and webhook listeners, handles Windows short-name paths, and no longer reports accepted handoffs or successful updates as failures. ( #169038 , #169027 , #168388 , #168889 , #169035 , #169292 , #168927 , #168993 , #169037 , #169454 , #168905 ) Thanks @mkdelta221 , @waynegault , @chedong , @k94118 , @bluet , @sirius1024 , @RomneyDa , @sayitfast , and...",
       "category": "ai_tools"
     },
     {
-      "title": "Qwen Code Desktop v0.25.1",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.1",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update",
-        "agent_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-11T11:31:22.000Z",
-      "summary": "What's Changed fix(serve): preserve session creation failure diagnostics by @callmeYe in #12331 feat(sdk-java): Add managed runtime attestation client by @doudouOUC in #12522 feat(web-shell): select a time range on the trajectory overview to narrow the table by @qqqys in #12543 feat(serve,web-shell): set the Qwen Live endpoint and model from settings by @qqqys in #12529 feat(channels): separate private and group access policies by @qqqys in #12547 fix(core): bound oversized images returned by MCP tools by @yiliang114 in #10835 feat(serve): run Qwen Live through the Web Shell, native macOS...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Release v0.25.1",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "v4.0.535",
+      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.535",
+      "source": "GitHub Releases · Remotion",
       "tags": [
         "api_update",
         "mcp",
@@ -74,8 +47,8 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-11T11:39:21.000Z",
-      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features Restores the selected text-only connection and validated session or workspace route after Android Activity recreation, while preserving explicit retry screens after failures. ( #12247 ) by @jabrailkhalil Improves mobile profile screen accessibility with clearer connection actions, editor labels, validation announcements, and scrollable storage recovery. ( #12129 ) by @jabrailkhalil Adds an experimental Kubernetes CSI-backed runtime that validates workspaces, persists...",
+      "date": "2026-10-12T09:07:07.000Z",
+      "summary": "What's Changed @remotion/studio : Premount components for 2 seconds by default by @JonnyBurger in #12212 @remotion/studio : Hide premounting by default (configurable) by @JonnyBurger in #12081 Upgrade Mediabunny to 1.61.3 by @JonnyBurger in #12100 @remotion/studio : Make caption layers orange and show titles by @JonnyBurger in #12162 @remotion/lambda-client : Add renderFramesOnLambda() for image sequences by @JonnyBurger in #12077 @remotion/lambda : Add separateAudioTo to renderMediaOnLambda() by @JonnyBurger in #12091 @remotion/lambda-python : Add AsyncRemotionClient for asynchronous...",
       "category": "ai_tools"
     },
     {
@@ -97,13 +70,13 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-11T07:17:24.000Z",
+      "date": "2026-10-12T02:32:29.000Z",
       "summary": "OpenClaw v2026.10.1 3,055 commits · 2,425 pull requests · 402 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people, with expandable sections. Changelog — plain Markdown for AI agents and tools. Thanks @100yenadmin @51Google @609NFT @A1fred-AI @abacha @adamamzalag @adamczhang @addyCooks @adele-with-a-b @adembektas @aikohoshinoai-prog @akennedytog @akrosliving @Alex-vonAllmen @alexeysophia @alexph-dev @alfred429 @ali-log @Alix-007 @alkor2000 @altaywtf @AmelioMansour @amittell...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.0-nightly.20261010.9763580b84",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261010.9763580b84",
+      "title": "Release v0.25.1-nightly.20261011.01d3e6d81a",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-nightly.20261011.01d3e6d81a",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
@@ -120,76 +93,125 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-10T21:59:22.000Z",
-      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
+      "date": "2026-10-11T22:01:32.000Z",
+      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.1-preview.2",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-preview.2",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "v8.0.0-rc.17-dev.24: SQL ORM names every table in a statement through one scope (#30646)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.24",
+      "source": "GitHub Releases · Prisma",
       "tags": [
         "api_update",
-        "mcp",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "matching_tags": [
         "api_update",
-        "mcp",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-10T18:14:33.000Z",
-      "summary": "What's Changed fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in #13430 test(core): close #12693 post-merge review test and hygiene gaps by @wenshao in #13341 test(integration): make the /hooks dialog E2E witness the rendered dialog ( #13425 ) by @qwen-code-dev-bot in #13427 fix(ci): wait 60s before the E2E build artifact download retry ( #13284 ) by @qwen-code-dev-bot in #13292 fix(ci): fail yamllint and shellcheck lanes loudly on an empty git file list by @qwen-code-dev-bot in #12650 fix(managed-agent): serve SSE subscribers from a Condition instead of...",
+      "date": "2026-10-12T13:55:44.000Z",
+      "summary": "Linked issue n/a — no Linear ticket; second of three PRs for cross-namespace inheritance (first: #30577 ). The third PR re-keys contract variants by discriminator value and adds multi-table-inheritance (MTI) variants in other namespaces, which needs two tables with the same name in one statement. At a glance From packages/3-extensions/sql-orm-client/test/include-table-aliases.test.ts : invited.select('id').where((user) => user.name.eq('Bob')), )\"> collection . select ( 'id' ) . include ( 'invitedUsers' , ( invited ) => invited . select ( 'id' ) . where ( ( user ) => user . name . eq (...",
       "category": "ai_tools"
     },
     {
-      "title": "pnpm 12.12.0",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.12.0",
+      "title": "openclaw 2026.10.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.2",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T07:33:27.000Z",
+      "summary": "2026.10.2 Highlights Updates from 2026.10.1: the first upgrade from stable 2026.10.1 now completes cleanly, successful in-place updates no longer end in errors, and Windows, cloned-filesystem, and private-Node update paths finish instead of stalling or rolling back. ( #168849 , #169031 , #165233 , #166530 , #168968 , #164677 , #165257 ) Thanks @RomneyDa , @jarvisnextgeneration20-lang , and @MrJanvar . Doctor and update recovery: Doctor no longer stops on residual legacy imports, stale Gateway locks, slow state inspection, memory reindex locks, or allowlists for removed channel accounts,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 10.34.7",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v10.34.7",
       "source": "GitHub Releases · pnpm",
       "tags": [
-        "api_update",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "matching_tags": [
-        "api_update",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-10T19:52:45.000Z",
-      "summary": "This release shares task results and dependency builds through a remote cache, adds the addMissingPeerTypes setting, and lets pnpm add --config and pnpm update manage configuration dependencies. It also fixes dangerouslyAllowAllBuilds running the build scripts of packages that allowBuilds denies. Minor Changes pnpm pipeline can share task results between machines. A result is a signed artifact stored on a pnpr server or on a server that speaks the Turborepo Remote Cache API, such as Vercel Remote Cache. The remote side-effects cache can also store dependency builds on a Turborepo Remote...",
+      "date": "2026-10-12T06:05:46.000Z",
+      "summary": "Patch Changes 97f550c : Switching to the pnpm version in packageManager now works through registry mirrors that strip npm's signatures or re-sign packages with their own key. pnpm then reads the signature from https://registry.npmjs.org/ and verifies it against the integrity of the downloaded pnpm #16778 . b11d7bb : The update notification now suggests the standalone install script instead of pnpm self-update when PNPM_HOME is not set, such as when another package manager installed pnpm. pnpm self-update installs into PNPM_HOME , so in that case it cannot replace the pnpm in use. Platinum...",
       "category": "ai_tools"
     },
     {
-      "title": "pnpm 12.12.1",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.12.1",
-      "source": "GitHub Releases · pnpm",
+      "title": "NVIDIA contributes Vera Rubin rack designs to open AI infrastructure standards",
+      "url": "https://superpowerdaily.com/posts/nvidia-contributes-vera-rubin-rack-designs-to-open-ai-infrastructure-standards",
+      "source": "Superpower Daily",
       "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "developer_tool"
       ],
       "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "developer_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-10-11T11:30:09.000Z",
-      "summary": "This release adds OIDC authentication to pnpm dist-tag and the tool: protocol. pnpm publish now checks which registry an NPM_ID_TOKEN was issued for before using it. Patch Changes pnpm publish now uses an NPM_ID_TOKEN only if its aud claim matches the selected registry, such as npm:registry.npmjs.org . A token for another registry is skipped with a warning, and pnpm falls back to the configured credentials. pnpm dist-tag add , rm , and ls now support OIDC authentication in CI. Enable \"Allow npm dist-tag\" in the package's trusted publishing settings to manage tags without a stored npm...",
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T16:15:25.000Z",
+      "summary": "The OCP Summit package pairs hardware designs with facility specifications and open-source operating tools. Its grid standard sets a recovery target, not a measured result.",
       "category": "ai_tools"
     },
     {
-      "title": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context",
-      "url": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
+      "title": "AMD introduces an AI-agent rack design with up to 32,768 CPU cores",
+      "url": "https://superpowerdaily.com/posts/amd-introduces-an-ai-agent-rack-design-with-up-to-32-768-cpu-cores",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T13:41:33.000Z",
+      "summary": "Helion offers separate agent-execution capacity or an integrated CPU/GPU system. AMD targets November availability, but independent coverage gives a later schedule.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "AWS releases an AI-agent sandbox that checks actions against what happened before",
+      "url": "https://superpowerdaily.com/posts/aws-releases-an-ai-agent-sandbox-that-checks-actions-against-what-happened-before",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T06:47:00.000Z",
+      "summary": "Strands Box combines operating-system isolation with history-aware rules. The free developer preview runs on Apple silicon Macs, but directly granted files bypass its policy history.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "TII Releases Falcon-ASR: 1.6B Arabic Speech Model Hits 20.92% WER",
+      "url": "https://www.marktechpost.com/2026/10/11/tii-falcon-asr-arabic-speech-recognition/",
       "source": "MarkTechPost",
       "tags": [
         "api_update",
@@ -200,9 +222,43 @@
         "product_launch"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-11T06:20:21.000Z",
-      "summary": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens. The post OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context appeared first on MarkTechPost .",
+      "date": "2026-10-12T03:16:09.000Z",
+      "summary": "TII has released Falcon-ASR, a 1.6B speech recognition model for Arabic with an Emirati focus. It reports 20.92% average WER on 6 Arabic test sets, but weights and an API are not yet available. The post TII Releases Falcon-ASR: 1.6B Arabic Speech Model Hits 20.92% WER appeared first on MarkTechPost .",
       "category": "ai_research"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.23: TML-3282: Close out the SQL expression literals project (#30690)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.23",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T13:16:45.000Z",
+      "summary": "At a glance The SQL expression literals project is finished. Raw SQL is one value everywhere: 0 AND char_length(email) > 0 `, name: \"profile_valid\")\"> @@check ( expression : sql ` owner_id > 0 AND char_length ( email ) > 0 `, name : \" profile_valid \" ) 0 AND char_length(email) > 0`, name: 'profile_valid' });\"> check ( { expression : sql `owner_id > 0 AND char_length(email) > 0` , name : 'profile_valid' } ) ; 0 AND char_length(email) > 0`)\"> // generated migration.ts checkExpression ( 'profile_valid_5901ae2d' , sql `owner_id > 0 AND char_length(email) > 0` ) This PR closes the project: it...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.65.0-nightly.20261012.g9b6e0265d",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-nightly.20261012.g9b6e0265d",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T01:29:25.000Z",
+      "summary": "Full Changelog : v0.65.0-nightly.20261010.g9b6e0265d...v0.65.0-nightly.20261012.g9b6e0265d",
+      "category": "ai_tools"
     },
     {
       "title": "nightly",
@@ -217,85 +273,25 @@
         "cli_tool"
       ],
       "importance": 0.7,
-      "date": "2026-10-11T01:05:14.000Z",
+      "date": "2026-10-12T01:07:53.000Z",
       "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
       "category": "ai_tools"
     },
     {
-      "title": "release-publish/a17bd679979e-1791717771: refactor(plugin-sdk): move SQLite runtime writes into workers (#168857)",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2Fa17bd679979e-1791717771",
+      "title": "release-publish/2040d1b71db9-1791766004: perf(sessions): reuse config-owned roster and projection facts (#169263)",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/release-publish%2F2040d1b71db9-1791766004",
       "source": "GitHub Releases · OpenClaw",
       "tags": [
         "api_update",
-        "developer_tool"
+        "tool_update"
       ],
       "matching_tags": [
         "api_update",
-        "developer_tool"
+        "tool_update"
       ],
       "importance": 0.62,
-      "date": "2026-10-11T11:17:16.000Z",
-      "summary": "refactor(plugin-sdk): share legacy persistence warning budgets refactor(plugin-sdk): await native exec and placement preparation Move bundled node policy preparation, approval methods that expire rows, placement retirement, and restart clearing through their existing workers. Preserve released native signatures and callback ordering with shared deprecation warnings, and retain effect-time authority checks. Storage format and update behavior are unchanged. test: repair approval authority fixture and inventory native compatibility test: reflect retained native placement calls in worker...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "5 AI apps you should use instead of Meta Muse",
-      "url": "https://www.androidauthority.com/best-meta-muse-alternatives-3719671/?utm_source=flipboard&utm_content=topic/technology",
-      "source": "Flipboard AI",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-11T09:00:44.000Z",
-      "summary": "Meta's cute AI agent isn't your only option. Add Android Authority on Google: Preferred SourceGoogle Discover If you have grown tired of seeing Meta AI being pushed across Facebook, Instagram, WhatsApp, and whatever other apps the company runs, Meta has a surprise for you: more AI! Meta Muse is an …",
-      "category": "ai_tools"
-    },
-    {
-      "title": "8 seriously annoying tasks you can hand off to an AI agent",
-      "url": "https://www.foxnews.com/tech/8-annoying-tasks-hand-off-ai-agent?utm_source=flipboard&utm_content=topic%2Fartificialintelligence",
-      "source": "Flipboard AI",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-10T20:37:52.000Z",
-      "summary": "I have a growing list of things I would gladly never do again. Checking the same airfare every morning is on it. Digging through an overflowing inbox is right up there too. And I would be perfectly happy never having to remember when some free trial is about to start charging me. This is where AI …",
-      "category": "ai_tools"
-    },
-    {
-      "title": "My personal AI agent posted my bank details on company Slack",
-      "url": "https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10",
-      "source": "Hacker News",
-      "tags": [
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-10T14:46:16.000Z",
-      "summary": "",
-      "category": "tech_general"
-    },
-    {
-      "title": "Lancet commission identifies malicious AI use as a low-likelihood extinction risk",
-      "url": "https://superpowerdaily.com/posts/lancet-commission-identifies-malicious-ai-use-as-a-low-likelihood-extinction-risk",
-      "source": "Superpower Daily",
-      "tags": [
-        "developer_tool"
-      ],
-      "matching_tags": [
-        "developer_tool"
-      ],
-      "importance": 0.72,
-      "date": "2026-10-10T23:13:21.000Z",
-      "summary": "The assessment places AI-created biological weapons alongside nuclear famine, but its wider health-risk framework weighs both potential harm and opportunities to prevent it.",
+      "date": "2026-10-11T22:21:52.000Z",
+      "summary": "perf(sessions): reuse config-owned roster and projection facts Retain roster facts for the published config revision and model facts across row-only publications. Let selection and facts publications retire list caches while preserving materialization-scoped weak presentations. Keep independent mutable inputs batch-scoped and invalidate same-object config republication. Exercise configuration refresh through the actual publisher. fix(sessions): keep roster publication reads import-light Publish config identity and revision before observers through an import-free leaf so roster reads do...",
       "category": "ai_tools"
     }
   ]
