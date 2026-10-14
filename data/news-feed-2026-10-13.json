@@ -1,0 +1,298 @@
+{
+  "generated": "2026-10-13T17:45:09.223Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "openclaw 2026.10.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.3",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T14:29:03.000Z",
+      "summary": "2026.10.3 Highlights Updates that were stuck behind lost leases, completed-but-unrecognized receipts, or legacy 2026.9.8 activation records now recover and finish instead of refusing every retry. ( #168388 , #169038 , #169027 , #170195 , #170170 ) Thanks @k94118 , @mkdelta221 , @waynegault , @chedong , and @Warhangel . Windows, macOS, and pnpm updates no longer leave the Gateway stopped or roll back: machine-qualified task accounts, short-name install paths, Doctor ancestry re-checks, protected Bun service commands, and pnpm 12 launchers all keep working. ( #169481 , #169292 , #169563 ,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.10.5-beta.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.3",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T10:00:37.000Z",
+      "summary": "2026.10.5-beta.3 Highlights Updates leave the Gateway running: pnpm 12 installs keep their Gateway service and openclaw launcher on the durable install path, Windows updates accept qualified Scheduled Task accounts and their own verified driver, macOS accepts protected Bun service commands, and clean service-install refusals no longer leave the Gateway stopped. ( #170003 , #169059 , #170131 , #169244 , #169481 , #169563 , #170006 , #169662 , #169658 , #169915 ) Thanks @xilopaint , @k-sekula , @RomneyDa , @jokerman1302-eng , and @vincentkoc . Stuck updates recover: updates settle...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.25.1-nightly.20261012.18f80f5666",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-nightly.20261012.18f80f5666",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T22:25:02.000Z",
+      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "pnpm 12.13.0",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.13.0",
+      "source": "GitHub Releases · pnpm",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T08:32:10.000Z",
+      "summary": "This release adds the pnpm profile and pnpm token commands, the storeIndexFormat: files setting for stores shared over a network filesystem, and faster Python dependency resolution. Minor Changes Added the pnpm profile command to view and update registry user profile settings. Added pnpm token to list, create, and revoke authentication tokens on the registry. Added the storeIndexFormat setting. Set it to files to keep a store's package index as one file per package instead of the SQLite index.db , for a store on a network filesystem that several machines use at once. SQLite's locking does...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.24: SQL ORM names every table in a statement through one scope (#30646)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.24",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T13:55:44.000Z",
+      "summary": "Linked issue n/a — no Linear ticket; second of three PRs for cross-namespace inheritance (first: #30577 ). The third PR re-keys contract variants by discriminator value and adds multi-table-inheritance (MTI) variants in other namespaces, which needs two tables with the same name in one statement. At a glance From packages/3-extensions/sql-orm-client/test/include-table-aliases.test.ts : invited.select('id').where((user) => user.name.eq('Bob')), )\"> collection . select ( 'id' ) . include ( 'invitedUsers' , ( invited ) => invited . select ( 'id' ) . where ( ( user ) => user . name . eq (...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Meta introduces liquid-cooled switches and open networks for larger AI clusters",
+      "url": "https://superpowerdaily.com/posts/meta-introduces-liquid-cooled-switches-and-open-networks-for-larger-ai-clusters",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T22:03:36.000Z",
+      "summary": "The summit package changes how GPUs share traffic and how switches shed heat. A companion platform standard targets repeated integration work, but remains under review.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.35: docs: close out cross-namespace inheritance (#30712)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.35",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T13:57:25.000Z",
+      "summary": "Linked issue n/a — no Linear ticket. Closes out the cross-namespace inheritance project, delivered in #30577 , #30646 and #30696 . Summary Closes the project in the team's process docs. The project's working folder was never committed, so there is nothing to migrate or delete in the repo. What changes drive/calibration/dod.md : the project-DoD item \"Artefact-format changes load the previous format\" is removed. It contradicts .agents/rules/no-backward-compatibility.mdc , and it is where this project's spec got a \"released contracts stay loadable\" requirement that was later dropped. The...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.32: A polymorphic base can have variants in other namespaces (#30696)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.32",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T11:55:54.000Z",
+      "summary": "Linked issue n/a — no Linear ticket; third and last PR for cross-namespace inheritance (after #30577 and #30646 ). At a glance namespace a { model Task { id Int @id title String type String projectId Int ? @map ( \" project_id \" ) @@discriminator ( type ) @@map ( \" tasks \" ) } } namespace b { model Chore { effort Int ownerId Int ? @map ( \" owner_id \" ) @@base ( a . Task , \" chore \" ) @@map ( \" tasks \" ) } model Epic { size Int @@base ( a . Task , \" b-epic \" ) @@map ( \" epics \" ) } } task.id.asc()).all();\"> const tasks = orm ( { runtime , context } ) . a . Task ; const rows = await tasks ....",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.31: Include PSL mixins in models, types, enums and extension blocks (#30694)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.31",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T11:04:00.000Z",
+      "summary": "Linked issue n/a. Third slice of the PSL mixins project ( projects/psl-mixins/ ); the syntax landed in #30675 . This replaces #30678 , which resolved inclusion names in the symbol table. At a glance model mixin Timestamps { createdAt DateTime @default ( now () ) updatedAt DateTime @default ( now () ) @@index ( [ createdAt ] ) } enum mixin BaseRoles { ADMIN = \"admin\" USER = \"user\" } model User { id Int @id +Timestamps email String } enum Role { @@type ( \" pg/text@1 \" ) +BaseRoles GUEST = \"guest\" } User has the fields id , createdAt , updatedAt , email , in that order, and the index on...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v16.5.0-canary.9",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.9",
+      "source": "GitHub Releases · Next.js 15",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-12T23:53:03.000Z",
+      "summary": "Core Changes Gate upgrade reminder rules with agentUpgrade: #99990 Enable network access for Codex upgrades: #100074 Make it possible to disable turbopackGc : #100067 fix: use EntryKeySide in EntryKey side field: #100053 fix: use removePathPrefix instead of regex: #100063 Fix root params detection on Windows: #100065 Durable use cache: exclude context for path and code hashes: #99898 Ensure workStore.page is unnormalized for generateStaticParams: #99881 fix(codemod): find bundled docs via workspace packages in agents-md: #100017 fix(codemod): make agents-md docs root relative to the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
+      "url": "https://github.com/bherbruck/solidcraft",
+      "source": "Hacker News",
+      "tags": [
+        "mcp",
+        "open_source"
+      ],
+      "matching_tags": [
+        "mcp",
+        "open_source"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-13T00:11:04.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "Alibaba Qwen Introduces QwenGyre: Elastic Reinforcement Learning RL for XLong-Horizon Agents",
+      "url": "https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/",
+      "source": "MarkTechPost",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T21:41:50.000Z",
+      "summary": "Alibaba’s Qwen team has introduced QwenGyre, an elastic reinforcement learning RL framework for extreme-long-horizon agent training. QwenGyre is an online reinforcement learning system from Alibaba that trains coding agents through unmodified, black-box harnesses. It targets rollouts that run for hours and process close to 1M tokens. The QwenGyre elastic RL framework was used on Qwen’s […] The post Alibaba Qwen Introduces QwenGyre: Elastic Reinforcement Learning RL for XLong-Horizon Agents appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Meta's new Muse Wonder and Muse Wonder Full models achieve frontier performance, but only the weaker one is available via API",
+      "url": "https://venturebeat.com/technology/metas-new-muse-wonder-and-muse-wonder-full-models-achieve-frontier-performance-but-only-the-weaker-one-is-available-via-api?utm_source=flipboard&utm_content=nndflip/magazine/AI",
+      "source": "Flipboard AI",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T20:04:04.000Z",
+      "summary": "Meta is back in the race for the most powerful AI models, introducing two new proprietary models that the company says can outperform leading offerings from OpenAI and Anthropic on complex software engineering, legal work, business automation and long-running AI agent tasks. Announced Monday, …",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA contributes Vera Rubin rack designs to open AI infrastructure standards",
+      "url": "https://superpowerdaily.com/posts/nvidia-contributes-vera-rubin-rack-designs-to-open-ai-infrastructure-standards",
+      "source": "Superpower Daily",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-12T16:15:25.000Z",
+      "summary": "The OCP Summit package pairs hardware designs with facility specifications and open-source operating tools. Its grid standard sets a recovery target, not a measured result.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+      "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-10-13T13:00:00.000Z",
+      "summary": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have authorized, potentially preventing costly mistakes and disputes as AI-powered shopping grows.",
+      "category": "ai_tools"
+    }
+  ]
+}
