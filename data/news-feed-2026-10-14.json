@@ -1,0 +1,306 @@
+{
+  "generated": "2026-10-14T17:45:07.085Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "Release v0.25.1-nightly.20261013.6212189f1f",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-nightly.20261013.6212189f1f",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T21:56:06.000Z",
+      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.25.2-preview.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-preview.0",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:01:50.000Z",
+      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.18-dev.1: chore(release): bump to 8.0.0-rc.18 (#30720)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.18-dev.1",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-14T16:29:23.000Z",
+      "summary": "8.0.0-rc.17 → 8.0.0-rc.18 Version policy: docs/oss/versioning.md . Review surface: docs/releases/v8.0.0-rc.18.md holds the user-facing notes, mirrored at the top of CHANGELOG.md . It becomes the GitHub Release body verbatim. Merging this PR ships the release. The push to main carries the bumped root version ; the Publish to npm workflow detects the change, publishes 8.0.0-rc.18 under dist-tag latest , and creates a matching GitHub Release marked pre-release. Docs site: prisma/web#8498 updates the Prisma ORM 8 pages for this release. Merge it only after this release is published. What the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.10.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.3",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T22:33:26.000Z",
+      "summary": "OpenClaw v2026.10.3 90 commits · 79 pull requests · 99 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people. Changelog — plain Markdown for AI agents and tools. Thanks @aaajiao @adenzhou1350 @aia007731-lab @aleps001 @alexph-dev @an2in @arifarai @bluet @ceckert @chedong @clawdgawd @Claynetic @CodeForcer @creanet-64 @davidevelyn @davidmackrory-byte @destinedenergy @DonnieFi @eduherranz @ericcurtin @ezimerman @frxiaobei @fuller-stack-dev @georgenaz @gisk0 @GoldenrodScript...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.18",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.18",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-14T16:52:53.000Z",
+      "summary": "v8.0.0-rc.18 Raw SQL in a contract is now always a sql literal or value, a full-text index can span several weighted fields and is searched from the ORM by naming it, and middleware observes each statement and transaction as an activity. PSL gains mixins, the SQL ORM gains whereUnique and firstOrThrow , and MongoDB migrations carry out --rename . The upgrade recipes for this hop: the app recipe and the extension recipe . Each breaking change below names the change ids to look for in them. Breaking changes Raw SQL in a contract is a sql literal. In PSL, @@index(where:) ,...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.40: Close out the PSL mixins project (#30718)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.40",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-14T09:06:14.000Z",
+      "summary": "Linked issue n/a. Close-out of the PSL mixins project. At a glance projects/psl-mixins/ deleted (28 files) Summary The PSL mixins project has delivered: mixin { … } declares a set of members for one block kind, + includes it, and the emitted contract is the same as for the members written inline. This PR removes the project's working folder. The decisions are recorded in ADR 269 . Delivered PR What #30674 Consumers read a block's members from its symbol #30675 Mixin syntax: parser, typed AST, formatter, reserved word, signed numbers, member recovery #30694 Inclusions take effect: mixin...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.64.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:44:46.000Z",
+      "summary": "What's Changed refactor(a2a-server): implement V1 to V2 settings migration logic by @jvargassanchez-dot in #29450 fix(acp): bridge PromptResponse.usage and emit usage_update notifications ( #29389 ) by @elberthc-byte in #29549 Changelog for v0.63.0-preview.0 by @gemini-cli-robot in #29565 fix(cli): propagate resolved folder trust state in headless mode ( #29031 ) by @amelidev in #29528 chore(release): bump version to 0.64.0-nightly.20260929.gd75234cae by @gemini-cli-robot in #29567 fix(cli): prevent CPU hang and quote swallowing on @ within code ( #29434 ) by @elberthc-byte in #29557...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v7.6.7 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.7",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:37:33.000Z",
+      "summary": "7.6.7 Engine Updates and Fixes Tolerate IO/JSON errors reading the per-user powershell.config.json ( #28084 ) General Cmdlet Updates and Fixes Prevent localization of WPF key gesture strings ( #28097 ) Allow user to force the default implicit formatting to use AutoSize ( #28096 ) Handle MSIX installation specially when prepending to PATH ( #28091 ) Add GetImportModuleCommand method and session restriction check in Show-Command ( #28088 ) Tests Fix the PATH test for MSIX installed PowerShell ( #28108 ) Fix LocProject.json tests and trigger CIs on changes to LocProject.json ( #28104 ) Mark...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.65.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-preview.0",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "mcp",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:27:55.000Z",
+      "summary": "What's Changed fix(cli): enforce read-only workspace settings in untrusted folders by @jvargassanchez-dot in #29583 fix(core): avoid duplicate tool response turns when resuming sessions by @diegogodinezr in #29618 fix(core): prevent deletion of resumed session history on quick exit ( #29198 ) by @villahernandez-coder in #29584 Changelog for v0.64.0-preview.0 by @gemini-cli-robot in #29656 Changelog for v0.63.0 by @gemini-cli-robot in #29659 fix(core): align OAuth callback iss parameter validation with RFC 9207 metadata by @luisfelipe-alt in #29616 fix(cli): prevent unnecessary terminal...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v7.5.12 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.5.12",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:05:29.000Z",
+      "summary": "7.5.12 Engine Updates and Fixes Tolerate IO/JSON errors reading the per-user powershell.config.json ( #28070 ) General Cmdlet Updates and Fixes Add GetImportModuleCommand method and session restriction check in Show-Command ( #28073 ) Build and Packaging Improvements Update to .NET SDK 9.0.319 Move to the latest Microsoft.PowerShell.Native package and add test ( #28175 ) Update Microsoft.PowerShell.Native package version ( #28170 ) Bump CodeQL init and analyze actions to 4.38.2 ( #28150 ) Simplify Microsoft Store listing metadata ( #28063 ) Add the needed variable groups to the MSIX VPack...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v7.4.21 Release of PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.4.21",
+      "source": "GitHub Releases · PowerShell",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T20:03:13.000Z",
+      "summary": "7.4.21 Engine Updates and Fixes Tolerate IO/JSON errors reading the per-user powershell.config.json ( #28048 ) General Cmdlet Updates and Fixes Add GetImportModuleCommand method and session restriction check in Show-Command ( #28059 ) Build and Packaging Improvements Update to .NET SDK 8.0.426 Move to the latest Microsoft.PowerShell.Native package and add test ( #28174 ) Update Microsoft.PowerShell.Native package version ( #28169 ) Bump CodeQL init and analyze actions to 4.38.2 ( #28145 ) Remove unintended Microsoft Store languages ( #28077 ) Change Windows CI to stop using PowerShell 5.1...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.8",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.8",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T18:09:13.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.7 by @github-actions[bot] in #14357 chore: Update with-vitest example by @vercel-gh-bot-3[bot] in #14355 feat: Add experimental setup future flag by @anthonyshew in #14361 fix: Remove Bash dependency from strict environment tests by @vercel-gh-bot-3[bot] in #14362 fix: Use repository package manager for automatic Turbo downloads by @vercel-gh-bot-3[bot] in #14360 chore: Improve Factory chat and model controls by @vercel-gh-bot-3[bot] in #14368 chore: Add Linear connector to Factory by @vercel-gh-bot-3[bot] in #14369 chore: Remove...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v8.0.0-rc.17-dev.35: docs: close out cross-namespace inheritance (#30712)",
+      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.17-dev.35",
+      "source": "GitHub Releases · Prisma",
+      "tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-13T13:57:25.000Z",
+      "summary": "Linked issue n/a — no Linear ticket. Closes out the cross-namespace inheritance project, delivered in #30577 , #30646 and #30696 . Summary Closes the project in the team's process docs. The project's working folder was never committed, so there is nothing to migrate or delete in the repo. What changes drive/calibration/dod.md : the project-DoD item \"Artefact-format changes load the previous format\" is removed. It contradicts .agents/rules/no-backward-compatibility.mdc , and it is where this project's spec got a \"released contracts stay loadable\" requirement that was later dropped. The...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Fish Audio releases Drama 3 with script-directed voices and downloadable weights",
+      "url": "https://superpowerdaily.com/posts/fish-audio-releases-drama-3-with-script-directed-voices-and-downloadable-weights",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-14T09:40:49.000Z",
+      "summary": "Creators can direct delivery mid-sentence through the website, app and API. Editing individual words remains in testing, and the downloadable model carries commercial-use limits.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Ripple adds embedded wallets for AI-agent payments through Stripe-owned Privy",
+      "url": "https://superpowerdaily.com/posts/ripple-adds-embedded-wallets-for-ai-agent-payments-through-stripe-owned-privy",
+      "source": "Superpower Daily",
+      "tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-14T07:27:00.000Z",
+      "summary": "The integration removes the need for separate wallet software. Existing agent-payment figures show millions of transactions, but comparatively small amounts changing hands.",
+      "category": "ai_tools"
+    }
+  ]
+}
