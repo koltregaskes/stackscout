@@ -1,18 +1,15 @@
 {
-  "generated": "2026-10-16T17:45:04.424Z",
+  "generated": "2026-10-17T17:45:03.893Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "Qwen Code Desktop v0.25.2",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.2",
+      "title": "Release v0.25.2-nightly.20261016.b4614845f0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-nightly.20261016.b4614845f0",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
@@ -20,28 +17,22 @@
       "matching_tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-15T16:35:12.000Z",
-      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
+      "date": "2026-10-16T22:01:44.000Z",
+      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.2",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2",
+      "title": "Release v0.25.3-preview.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3-preview.0",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
@@ -49,97 +40,13 @@
       "matching_tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-15T16:22:08.000Z",
-      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features feat(managed-agent): H4e-b2 the lead's mailbox over Session messages ( #13892 ) by @wenshao A new private extension imports Vitest 3.2 JSON reports and exposes failures, errors, counts, and diagnostics through MCP tools with search and pagination. ( #13854 ) by @qqqys Opt-in headless Mods now support TypeScript authoring, relative imports, typed non-secret configuration, and dependency validation before startup. ( #13890 ) by @qqqys Adds a default-off option allowing...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Release v0.25.2-preview.1",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-preview.1",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "open_source",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-15T15:40:08.000Z",
-      "summary": "What's Changed fix(managed-agent): connector and broker robustness from the #12692 R2 review by @wenshao in #13330 feat(managed-agent): H4e-b2 the lead's mailbox over Session messages by @wenshao in #13892 fix(managed-agent): settle worktree child runs after their merge ( #13753 I2 follow-up) by @wenshao in #13872 feat(extensions): add test failure report explorer by @qqqys in #13854 feat(mods): add TypeScript authoring and configuration (PR2a) by @qqqys in #13890 test(managed-agent): Add FG7 channel fault gates for the channel domains ( #13802 ) by @wenshao in #13839 fix(core): report...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "SDK TypeScript Release v0.1.20",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.20",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-15T16:21:10.000Z",
-      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.25.2 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.0 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.6 Source: CLI built from source (same branch/ref as...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "openclaw 2026.10.4",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.4",
-      "source": "GitHub Releases · OpenClaw",
-      "tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T03:04:10.000Z",
-      "summary": "2026.10.4 Highlights The Gateway keeps running after the computer sleeps or the system clock jumps, instead of restarting itself because its ownership heartbeat looked stale. ( #170790 ) Thanks @AnvinaLI , @sgh6688 , @waynegault , and @RomneyDa . Gateway shutdown and restart no longer hang on a stalled transcript worker or in-flight session lifecycle events. ( #170493 , #170555 ) Thanks @Oldrich333 . Tlon group DMs no longer treat other participants as the owner, closing an owner-impersonation path. ( #165801 ) Thanks @eleqtrizit . Headless browser pages keep responding to clicks while a...",
+      "date": "2026-10-16T18:28:53.000Z",
+      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
       "category": "ai_tools"
     },
     {
@@ -163,6 +70,27 @@
       "importance": 0.7,
       "date": "2026-10-16T17:07:23.000Z",
       "summary": "✨ Features AIgateway declarative provider #12528 Propagate W3C trace context from ACP prompts to MCP tool calls #12697 Surface provider x-request-id on responses and errors #12587 Honor supports_vision declared on custom provider models #12769 Use live model metadata for OpenAI reasoning and prefer the Responses API #12568 Cap auto-compaction at 225k tokens by default #12790 Improve askai bot relevance #12728 🐛 Bug Fixes Adaptive thinking for Claude Sonnet and Haiku 5.5 #12761 Reject malformed GOOSE_MODE across ACP providers #12846 Bedrock: don't retry non-context ValidationException on...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Turborepo v2.11.9",
+      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.9",
+      "source": "GitHub Releases · Turbo",
+      "tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-16T19:07:18.000Z",
+      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.8 by @github-actions[bot] in #14789 perf: Prefetch Cargo metadata during lazy graph construction by @anthonyshew in #14497 perf: Compute Berry lockfile closures once across workspaces by @anthonyshew in #14499 perf: Check cache hit outputs in place instead of on the blocking pool by @anthonyshew in #14524 perf: Speed up Berry lockfile loading by @anthonyshew in #14500 perf: Parse bun.lock without building a JSON syntax tree by @anthonyshew in #14502 perf: Skip the dry run cache batch window when there is no remote cache by...",
       "category": "ai_tools"
     },
     {
@@ -208,46 +136,6 @@
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.2-nightly.20261015.c24e99e9cb",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-nightly.20261015.c24e99e9cb",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-15T22:09:44.000Z",
-      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Perplexity publishes SPACE source code for running AI agents in isolated workspaces",
-      "url": "https://superpowerdaily.com/posts/perplexity-publishes-space-source-code-for-running-ai-agents-in-isolated-workspaces",
-      "source": "Superpower Daily",
-      "tags": [
-        "api_update",
-        "open_source",
-        "developer_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "open_source",
-        "developer_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-15T21:00:54.000Z",
-      "summary": "The Apache-licensed platform separates code execution from the application directing it. Getting started requires deploying the sandbox infrastructure, not just connecting an SDK.",
-      "category": "ai_tools"
-    },
-    {
       "title": "v8.0.0-rc.18-dev.16: Test that PSL merges several types blocks (#30753)",
       "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.18-dev.16",
       "source": "GitHub Releases · Prisma",
@@ -267,77 +155,131 @@
       "category": "ai_tools"
     },
     {
-      "title": "v4.0.536",
-      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.536",
-      "source": "GitHub Releases · Remotion",
+      "title": "StepFun launches a 3,999-yuan phone with an AI agent built into its operating system",
+      "url": "https://superpowerdaily.com/posts/stepfun-launches-a-3-999-yuan-phone-with-an-ai-agent-built-into-its-operating-system",
+      "source": "Superpower Daily",
       "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "product_launch",
+        "agent_tool"
       ],
       "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T08:10:49.000Z",
-      "summary": "What's Changed @remotion/studio : New timeline experience! by @JonnyBurger in #12228 @remotion/studio : Show unmounted components in the timeline by @JonnyBurger in e9c20e1 remotion : Add Interactive.create() for custom components by @JonnyBurger in #12269 @remotion/cli : Add Config.setSequenceActivityLimit() with unlimited default by @JonnyBurger in #12272 remotion : Add effectsOutputSize to all effect-capable components by @alec-watts in #12178 @remotion/studio : Add rolling edits for touching timeline clips by @JonnyBurger in #12224 @remotion/studio : Add interlocking transitions with...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "v16.5.0-canary.15",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.15",
-      "source": "GitHub Releases · Next.js 15",
-      "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-15T23:44:24.000Z",
-      "summary": "Core Changes Hoist app page request URL into render context: #99269 Hide overlay editor button labels on smaller screens: #100266 Prefer non-partial entries regardless of FetchStrategy: #99705 [Partial Prefetching] Don't report vary params in responses that include dynamic data: #99700 [Partial Prefetching] Small optimizations and fixes: #99695 [Cached Navs] Extract the shell from a fully cached response: #99619 Refactor the navigation fetch and decode layering: #99618 [Cached Navs] Don't extract static stage: #99617 Make error overlay editor actions easier to discover: #100206 Misc...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "pnpm 11.28.6",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.6",
-      "source": "GitHub Releases · pnpm",
-      "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-15T13:45:17.000Z",
-      "summary": "This release stops pnpm publish from sending a CI identity token to a registry it was not issued for. It also fixes installs that dropped a dependency also declared as an optional peer, and accepts empty httpProxy and httpsProxy settings again. Patch Changes Security pnpm publish now uses an NPM_ID_TOKEN only if its aud claim matches the selected registry, such as npm:registry.npmjs.org . A token for another registry is skipped with a warning, and pnpm falls back to the configured credentials. The warning about renamed package files with invalid names no longer prints control characters...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Meta Releases Muse Spark Open: 816B Open-Weight MoE With 1M Context",
-      "url": "https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/",
-      "source": "MarkTechPost",
-      "tags": [
-        "mcp",
-        "product_launch"
-      ],
-      "matching_tags": [
-        "mcp",
-        "product_launch"
+        "product_launch",
+        "agent_tool"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-16T02:26:04.000Z",
-      "summary": "Meta released Muse Spark Open, an 816B-parameter open-weight MoE model with 42B active parameters and a 1M-token context. It leads open models on MCP-Atlas and runs on 2 M5 Ultra Mac Studios. The post Meta Releases Muse Spark Open: 816B Open-Weight MoE With 1M Context appeared first on MarkTechPost .",
+      "date": "2026-10-17T16:19:47.000Z",
+      "summary": "The early-access STEPX Neo combines direct software connections, personal memory and on-device sensing. More complex tasks still go to the cloud, and AI pricing after the first year remains undisclosed.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.66.0-nightly.20261017.ged96faedf",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261017.ged96faedf",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-17T01:31:42.000Z",
+      "summary": "What's Changed Add Banner about Gemini CLI not being optimized for Gemini 4 by @srithreepo in #29774 Update README to remove obsolete content by @srithreepo in #29775 fix(ci): remove unsupported members permission in unassign-inactive-assignees workflow by @ugorla-dev in #29770 fix(cli): reset slash-command conflict dedupe when conflicts reappear by @jvargassanchez-dot in #29768 fix(cli): verify active binary update to prevent PATH shadowing false success by @urielefrenvirtusa in #29757 fix(cli): support 'keys' array in keybindings.json by @urielefrenvirtusa in #29773 fix(cli): forward...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-17T00:51:04.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Elorian’s Glimpse model bets AI can finally reason over images like humans do",
+      "url": "https://superintelligencenews.com/ai-fields/large-language-models/visual-reasoning-elorian-glimpse-launch/",
+      "source": "Superintelligence Newsletter",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-16T16:23:47.000Z",
+      "summary": "Elorian launched Glimpse, an AI model focused on visual reasoning, with API access, image zooming and video analysis tools. The post Elorian’s Glimpse model bets AI can finally reason over images like humans do appeared first on Superintelligence News - Artificial Intelligence News .",
+      "category": "ai_tools"
+    },
+    {
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.8999999999999999,
+      "date": "2026-10-16T17:52:24.000Z",
+      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.8200000000000001,
+      "date": "2026-10-16T15:33:49.000Z",
+      "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Harbor raises $10 million to pair AI-agent controls with insurance",
+      "url": "https://superpowerdaily.com/posts/harbor-raises-10-million-to-pair-ai-agent-controls-with-insurance",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-17T11:15:36.000Z",
+      "summary": "The startup says it will block agent decisions that break company rules and put its own money behind the remaining risk. It has not disclosed policy limits in its funding announcement.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API",
+      "url": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-17T08:53:58.000Z",
+      "summary": "DeepSeek has just released DeepSeek-V4.1-Flash-1017, a new checkpoint of its V4.1-Flash model. It is live on the DeepSeek website, app and API. DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release. The company calls it a Pareto improvement in performance and cost. Alongside it, DeepSeek opened its Search and […] The post DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API appeared first on MarkTechPost .",
       "category": "ai_research"
     }
   ]
