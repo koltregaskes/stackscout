@@ -1,0 +1,188 @@
+{
+  "generated": "2026-10-18T17:45:03.850Z",
+  "site": "Stack Scout",
+  "article_count": 11,
+  "articles": [
+    {
+      "title": "Release v0.25.2-nightly.20261017.39c237af3b",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-nightly.20261017.39c237af3b",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-17T22:05:50.000Z",
+      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+      "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T08:15:04.000Z",
+      "summary": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "StepFun launches a 3,999-yuan phone with an AI agent built into its operating system",
+      "url": "https://superpowerdaily.com/posts/stepfun-launches-a-3-999-yuan-phone-with-an-ai-agent-built-into-its-operating-system",
+      "source": "Superpower Daily",
+      "tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-17T16:19:47.000Z",
+      "summary": "The early-access STEPX Neo combines direct software connections, personal memory and on-device sensing. More complex tasks still go to the cloud, and AI pricing after the first year remains undisclosed.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.66.0-nightly.20261018.ged96faedf",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261018.ged96faedf",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-18T01:34:41.000Z",
+      "summary": "Full Changelog : v0.66.0-nightly.20261017.ged96faedf...v0.66.0-nightly.20261018.ged96faedf",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-18T00:56:25.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
+      "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+      "source": "MarkTechPost",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T05:56:05.000Z",
+      "summary": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and KumoRelational for whole relational databases, and each of them answers by in-context learning: we […] The post How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+      "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+      "source": "MarkTechPost",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T04:06:33.000Z",
+      "summary": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier. The post Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Anthropic says juniors’ share of technical hires fell from 27% to 9%",
+      "url": "https://superpowerdaily.com/posts/anthropic-says-juniors-share-of-technical-hires-fell-from-27-to-9",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-17T21:10:20.000Z",
+      "summary": "The company’s internal study links rising output to coding-agent adoption, while showing a shift toward supervision and judgment. It does not prove AI caused every change.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Researchers find complex AI-agent setups offer no edge on ML-engineering benchmarks",
+      "url": "https://superpowerdaily.com/posts/researchers-find-complex-ai-agent-setups-offer-no-edge-on-ml-engineering-benchmarks",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-10-18T11:24:45.000Z",
+      "summary": "Holding the model and time budget constant, the authors point to the underlying AI—not extra orchestration—as the main performance driver in the tested setting.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Hermes gets a WhatsApp voice-call plugin",
+      "url": "https://www.digg.com/ai/8kngy9zn",
+      "source": "Digg AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.5800000000000001,
+      "date": "2026-10-18T17:30:42.939Z",
+      "summary": "",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Inline rendering with document​.currentScript",
+      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.5599999999999999,
+      "date": "2026-10-17T21:11:12.000Z",
+      "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline element that replaces itself when the page loads: The year is document.currentScript.replaceWith( new Date().getFullYear()) If you define a shortcut function like this: $=(...n)=>document.currentScript.replaceWith(...n) You get a tiny template language: The year is $(new Date().getFullYear()) Tags: javascript",
+      "category": "ai_tools"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-17T17:45:03.893Z",
+  "generated": "2026-10-18T17:45:03.850Z",
   "site": "Stack Scout",
-  "article_count": 15,
+  "article_count": 11,
   "articles": [
     {
-      "title": "Release v0.25.2-nightly.20261016.b4614845f0",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-nightly.20261016.b4614845f0",
+      "title": "Release v0.25.2-nightly.20261017.39c237af3b",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2-nightly.20261017.39c237af3b",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
@@ -22,137 +22,26 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-16T22:01:44.000Z",
+      "date": "2026-10-17T22:05:50.000Z",
       "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.3-preview.0",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3-preview.0",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+      "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+      "source": "MarkTechPost",
       "tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "developer_tool"
       ],
       "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "developer_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-10-16T18:28:53.000Z",
-      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "v1.55.0",
-      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.55.0",
-      "source": "GitHub Releases · Goose",
-      "tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T17:07:23.000Z",
-      "summary": "✨ Features AIgateway declarative provider #12528 Propagate W3C trace context from ACP prompts to MCP tool calls #12697 Surface provider x-request-id on responses and errors #12587 Honor supports_vision declared on custom provider models #12769 Use live model metadata for OpenAI reasoning and prefer the Responses API #12568 Cap auto-compaction at 225k tokens by default #12790 Improve askai bot relevance #12728 🐛 Bug Fixes Adaptive thinking for Claude Sonnet and Haiku 5.5 #12761 Reject malformed GOOSE_MODE across ACP providers #12846 Bedrock: don't retry non-context ValidationException on...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Turborepo v2.11.9",
-      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.9",
-      "source": "GitHub Releases · Turbo",
-      "tags": [
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T19:07:18.000Z",
-      "summary": "What's Changed Changelog chore: Release Turborepo 2.11.8 by @github-actions[bot] in #14789 perf: Prefetch Cargo metadata during lazy graph construction by @anthonyshew in #14497 perf: Compute Berry lockfile closures once across workspaces by @anthonyshew in #14499 perf: Check cache hit outputs in place instead of on the blocking pool by @anthonyshew in #14524 perf: Speed up Berry lockfile loading by @anthonyshew in #14500 perf: Parse bun.lock without building a JSON syntax tree by @anthonyshew in #14502 perf: Skip the dry run cache batch window when there is no remote cache by...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "v8.0.0-rc.18-dev.15: Remove 945 redundant and declaration-restating unit tests (#30731)",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.18-dev.15",
-      "source": "GitHub Releases · Prisma",
-      "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T15:36:08.000Z",
-      "summary": "Linked issue n/a. This continues the test-suite audit from #30729 . At a glance This is a typical removal, from packages/1-framework/3-tooling/migration/test/find-path-with-invariants.test.ts : { - const graph = reconstructGraph([pkg('A', 'B', 'm1')]); - expect(findPathWithInvariants(graph, 'A', 'Z', new Set(['X']))).toBeNull(); - });\"> - it ( 'unreachable target → null' , ( ) => { - const graph = reconstructGraph ( [ pkg ( 'A' , 'B' , 'm1' ) ] ) ; - expect ( findPathWithInvariants ( graph , 'A' , 'Z' , new Set ( [ 'X' ] ) ) ) . toBeNull ( ) ; - } ) ; The same file keeps a test with an...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Turborepo v2.11.9-canary.1",
-      "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.9-canary.1",
-      "source": "GitHub Releases · Turbo",
-      "tags": [
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T14:06:28.000Z",
-      "summary": "What's Changed Changelog test: Add owned setup policy fixtures for CLI tests by @anthonyshew in #14456 feat: Represent matching Node-bundled npm ownership by @anthonyshew in #14457 feat: Preserve setup lock declarations during prune by @anthonyshew in #14459 refactor: Add guarded setup publication primitives by @anthonyshew in #14460 chore: Release Turborepo 2.11.8-canary.2 by @github-actions[bot] in #14458 chore: Update non-monorepo example by @vercel-gh-bot-4[bot] in #14452 feat: Provision frozen Node and pnpm through setup by @anthonyshew in #14462 fix: Exclude optional npm peers from...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "v8.0.0-rc.18-dev.16: Test that PSL merges several types blocks (#30753)",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.18-dev.16",
-      "source": "GitHub Releases · Prisma",
-      "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-16T16:06:26.000Z",
-      "summary": "Linked issue n/a — small change At a glance types { Email = String } model User { id Int @id email Email slug Slug } types { Slug = VarChar (191) } prisma contract emit accepts this schema: the named types from both blocks are in the contract. If a name is bound in two types blocks, the second one is reported as PSL_DUPLICATE_DECLARATION and the first binding is kept. Summary A schema has been able to contain several types blocks since the legacy PSL parser was replaced by the symbol table in #851 . The legacy parser reported \"Only one top-level types block is allowed per document\"....",
-      "category": "ai_tools"
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T08:15:04.000Z",
+      "summary": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appeared first on MarkTechPost .",
+      "category": "ai_research"
     },
     {
       "title": "StepFun launches a 3,999-yuan phone with an AI agent built into its operating system",
@@ -172,8 +61,8 @@
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.66.0-nightly.20261017.ged96faedf",
-      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261017.ged96faedf",
+      "title": "Release v0.66.0-nightly.20261018.ged96faedf",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261018.ged96faedf",
       "source": "GitHub Releases · Gemini CLI",
       "tags": [
         "cli_tool",
@@ -184,8 +73,8 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-17T01:31:42.000Z",
-      "summary": "What's Changed Add Banner about Gemini CLI not being optimized for Gemini 4 by @srithreepo in #29774 Update README to remove obsolete content by @srithreepo in #29775 fix(ci): remove unsupported members permission in unassign-inactive-assignees workflow by @ugorla-dev in #29770 fix(cli): reset slash-command conflict dedupe when conflicts reappear by @jvargassanchez-dot in #29768 fix(cli): verify active binary update to prevent PATH shadowing false success by @urielefrenvirtusa in #29757 fix(cli): support 'keys' array in keybindings.json by @urielefrenvirtusa in #29773 fix(cli): forward...",
+      "date": "2026-10-18T01:34:41.000Z",
+      "summary": "Full Changelog : v0.66.0-nightly.20261017.ged96faedf...v0.66.0-nightly.20261018.ged96faedf",
       "category": "ai_tools"
     },
     {
@@ -201,60 +90,43 @@
         "cli_tool"
       ],
       "importance": 0.7,
-      "date": "2026-10-17T00:51:04.000Z",
+      "date": "2026-10-18T00:56:25.000Z",
       "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
       "category": "ai_tools"
     },
     {
-      "title": "Elorian’s Glimpse model bets AI can finally reason over images like humans do",
-      "url": "https://superintelligencenews.com/ai-fields/large-language-models/visual-reasoning-elorian-glimpse-launch/",
-      "source": "Superintelligence Newsletter",
+      "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
+      "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+      "source": "MarkTechPost",
       "tags": [
-        "api_update",
-        "tool_update"
+        "developer_tool"
       ],
       "matching_tags": [
-        "api_update",
-        "tool_update"
+        "developer_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-10-16T16:23:47.000Z",
-      "summary": "Elorian launched Glimpse, an AI model focused on visual reasoning, with API access, image zooming and video analysis tools. The post Elorian’s Glimpse model bets AI can finally reason over images like humans do appeared first on Superintelligence News - Artificial Intelligence News .",
-      "category": "ai_tools"
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T05:56:05.000Z",
+      "summary": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and KumoRelational for whole relational databases, and each of them answers by in-context learning: we […] The post How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models appeared first on MarkTechPost .",
+      "category": "ai_research"
     },
     {
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "source": "TechCrunch AI",
+      "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+      "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+      "source": "MarkTechPost",
       "tags": [
-        "agent_tool"
+        "mcp"
       ],
       "matching_tags": [
-        "agent_tool"
+        "mcp"
       ],
-      "importance": 0.8999999999999999,
-      "date": "2026-10-16T17:52:24.000Z",
-      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "category": "ai_tools"
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T04:06:33.000Z",
+      "summary": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier. The post Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI appeared first on MarkTechPost .",
+      "category": "ai_research"
     },
     {
-      "title": "Jev is Vercel’s fastest-adopted AI model ever",
-      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "api_update"
-      ],
-      "matching_tags": [
-        "api_update"
-      ],
-      "importance": 0.8200000000000001,
-      "date": "2026-10-16T15:33:49.000Z",
-      "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
-      "category": "ai_tools"
-    },
-    {
-      "title": "Harbor raises $10 million to pair AI-agent controls with insurance",
-      "url": "https://superpowerdaily.com/posts/harbor-raises-10-million-to-pair-ai-agent-controls-with-insurance",
+      "title": "Anthropic says juniors’ share of technical hires fell from 27% to 9%",
+      "url": "https://superpowerdaily.com/posts/anthropic-says-juniors-share-of-technical-hires-fell-from-27-to-9",
       "source": "Superpower Daily",
       "tags": [
         "agent_tool"
@@ -263,24 +135,54 @@
         "agent_tool"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-17T11:15:36.000Z",
-      "summary": "The startup says it will block agent decisions that break company rules and put its own money behind the remaining risk. It has not disclosed policy limits in its funding announcement.",
+      "date": "2026-10-17T21:10:20.000Z",
+      "summary": "The company’s internal study links rising output to coding-agent adoption, while showing a shift toward supervision and judgment. It does not prove AI caused every change.",
       "category": "ai_tools"
     },
     {
-      "title": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API",
-      "url": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/",
-      "source": "MarkTechPost",
+      "title": "Researchers find complex AI-agent setups offer no edge on ML-engineering benchmarks",
+      "url": "https://superpowerdaily.com/posts/researchers-find-complex-ai-agent-setups-offer-no-edge-on-ml-engineering-benchmarks",
+      "source": "Superpower Daily",
+      "tags": [
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "agent_tool"
+      ],
+      "importance": 0.72,
+      "date": "2026-10-18T11:24:45.000Z",
+      "summary": "Holding the model and time budget constant, the authors point to the underlying AI—not extra orchestration—as the main performance driver in the tested setting.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Hermes gets a WhatsApp voice-call plugin",
+      "url": "https://www.digg.com/ai/8kngy9zn",
+      "source": "Digg AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.5800000000000001,
+      "date": "2026-10-18T17:30:42.939Z",
+      "summary": "",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Inline rendering with document​.currentScript",
+      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+      "source": "Simon Willison's Blog",
       "tags": [
         "api_update"
       ],
       "matching_tags": [
         "api_update"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-17T08:53:58.000Z",
-      "summary": "DeepSeek has just released DeepSeek-V4.1-Flash-1017, a new checkpoint of its V4.1-Flash model. It is live on the DeepSeek website, app and API. DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release. The company calls it a Pareto improvement in performance and cost. Alongside it, DeepSeek opened its Search and […] The post DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API appeared first on MarkTechPost .",
-      "category": "ai_research"
+      "importance": 0.5599999999999999,
+      "date": "2026-10-17T21:11:12.000Z",
+      "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline element that replaces itself when the page loads: The year is document.currentScript.replaceWith( new Date().getFullYear()) If you define a shortcut function like this: $=(...n)=>document.currentScript.replaceWith(...n) You get a tiny template language: The year is $(new Date().getFullYear()) Tags: javascript",
+      "category": "ai_tools"
     }
   ]
 }
