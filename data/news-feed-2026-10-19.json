@@ -1,0 +1,292 @@
+{
+  "generated": "2026-10-19T17:45:04.172Z",
+  "site": "Stack Scout",
+  "article_count": 15,
+  "articles": [
+    {
+      "title": "SDK TypeScript Release v0.1.21",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.21",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "github_release",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T07:47:40.000Z",
+      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.25.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.2 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.0 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.25.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T06:52:53.000Z",
+      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features Adds optional model-generated layouts to Test Failure Explorer, with validation and fallback to the fixed view ( #14269 ) by @qqqys The Web Shell mobile composer no longer shows the ↑ and ↓ history buttons, reducing clutter while keeping history search available. ( #14220 ) by @pomelo-nwu The Web Shell trajectory panel now includes a collapsible Recent executions section that shows live requests and tools with elapsed time and final durations. ( #14071 ) by @qqqys...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "openclaw 2026.10.10-beta.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.2",
+      "source": "GitHub Releases · OpenClaw",
+      "tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "product_launch",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T12:23:09.000Z",
+      "summary": "2026.10.10-beta.2 Highlights Changes Fixes Workspace safety: reject a multi-file apply_patch before changing files when a later update target is missing or its context does not match, preserving the original workspace for the next attempt. Commit-time I/O failures can still leave partial effects. ( #160409 ; related #117742 and #127496 ) Thanks @masatohoshino , @obviyus , and @yetval . Tool policy: run plugin before_tool_call hooks in standalone openclaw agent exec sessions so plugin tool guards take effect. ( #159333 ; fixes #158824 ) Thanks @joseairosa and @obviyus . Buzz: reconnect...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Qwen Code Desktop v0.25.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.3",
+      "source": "GitHub Releases · Qwen Code",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T08:06:26.000Z",
+      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MiniMax releases M3.1 Flash, claiming 70% lower costs for AI agent tasks",
+      "url": "https://superpowerdaily.com/posts/minimax-releases-m3-1-flash-claiming-70-lower-costs-for-ai-agent-tasks",
+      "source": "Superpower Daily",
+      "tags": [
+        "api_update",
+        "product_launch",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "product_launch",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-19T13:44:26.000Z",
+      "summary": "The model is available through MiniMax’s API and coding tools. Its speed and benchmark gains remain company-reported, while downloadable weights are promised later.",
+      "category": "ai_tools"
+    },
+    {
+      "title": "3.70.0",
+      "url": "https://github.com/mifi/lossless-cut/releases/tag/v3.70.0",
+      "source": "GitHub Releases · LosslessCut",
+      "tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T10:29:08.000Z",
+      "summary": "‼️ Note: this version has a bug where the Windows x64 ffmpeg.exe file is missing. Please use next version instead. Upgrade bundled FFmpeg to 8.1 (fixes CVE-2026-8461 ) #2943 #3139 New \"Theme\" setting (System default / Dark / Light) - LosslessCut can now follow the OS dark/light theme #3113 Metadata editor improvements #3135 #3136 #3140 #3141 Copy track or file metadata from another track or another loaded file with the new \"Copy from\" menu Apply a track metadata value (e.g. language ) to all other tracks of the same type with one click Edited tracks and files are now highlighted in the...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "source": "NVIDIA AI Blog",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-19T15:00:31.000Z",
+      "summary": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration […]",
+      "category": "ai_tools"
+    },
+    {
+      "title": "MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input",
+      "url": "https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "api_update",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-19T12:37:58.000Z",
+      "summary": "MiniMax has released M3.1 Flash, a 428B-parameter MoE model with about 23B active parameters and a 1M-token context. API pricing is $0.15/$0.60 per 1M tokens, with weights due October 23 The post MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "llm-echo 0.5",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "source": "Simon Willison's Blog",
+      "tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T23:16:16.000Z",
+      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the prompt, then I decide what to say. { \"prompt\": \"hi there\", \"system\": \"\", \"attachments\": [],...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
+      "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "agent_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T18:20:28.000Z",
+      "summary": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add further costs. TinyFish, a web infrastructure […] The post TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Release v0.66.0-nightly.20261019.ged96faedf",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261019.ged96faedf",
+      "source": "GitHub Releases · Gemini CLI",
+      "tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "cli_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T01:34:29.000Z",
+      "summary": "Full Changelog : v0.66.0-nightly.20261018.ged96faedf...v0.66.0-nightly.20261019.ged96faedf",
+      "category": "ai_tools"
+    },
+    {
+      "title": "nightly",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+      "source": "GitHub Releases · Crush",
+      "tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "matching_tags": [
+        "product_launch",
+        "cli_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-19T01:04:18.000Z",
+      "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "v0.42.0",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
+      "source": "GitHub Releases · ComfyUI",
+      "tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-18T22:10:38.000Z",
+      "summary": "What's Changed [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in #17067 Update workflow templates to v0.11.85 by @comfyui-wiki in #17068 Use FLUX 3 Image in node display labels by @MaanavD in #17075 Better documentation about the comfy quant format. by @comfyanonymous in #17078 Update workflow templates to v0.11.86 by @comfyui-wiki in #17083 feat: Add MOSS-image support by @kijai in #17095 [Partner Nodes] chore(Quiver): remove retired Arrow 1.x models by @bigcat88 in #17102 Update comfy-kitchen version to 0.2.38 by @comfyanonymous in #17107 Use fused situ with MOSS-image...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "source": "Hacker News",
+      "tags": [
+        "mcp"
+      ],
+      "matching_tags": [
+        "mcp"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-18T21:36:10.000Z",
+      "summary": "",
+      "category": "tech_general"
+    },
+    {
+      "title": "Hermes gets a WhatsApp voice-call plugin",
+      "url": "https://www.digg.com/ai/8kngy9zn",
+      "source": "Digg AI",
+      "tags": [
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "developer_tool"
+      ],
+      "importance": 0.74,
+      "date": "2026-10-18T17:30:42.939Z",
+      "summary": "",
+      "category": "ai_tools"
+    }
+  ]
+}
