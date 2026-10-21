@@ -1,17 +1,61 @@
 {
-  "generated": "2026-10-19T17:45:04.172Z",
+  "generated": "2026-10-20T17:45:42.339Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "SDK TypeScript Release v0.1.21",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.21",
+      "title": "n8n@2.45.0",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.0",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-20T09:15:14.000Z",
+      "summary": "2.45.0 (2026-10-20) Bug Fixes AI Agent Node: Replay Anthropic thinking turns with their tool arguments ( #41241 ) ( ea98bd0 ) Align data table and variable editing on protected instances ( #41258 ) ( d4bde14 ) Allow skipping table initialization ( #40437 ) ( d245b17 ) API: Apply projectId filter to executions for member API keys ( #40887 ) ( 3075b60 ) API: Log errors before returning generic 500 in Public API ( #41186 ) ( fe36279 ) Check provisioning license on Users settings page ( #41048 ) ( 066480d ) Convert to File Node: Decode data URIs and validate Base64 input ( #38554 ) ( 315e0a5...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "beta",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta",
+      "source": "GitHub Releases · n8n",
+      "tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "mcp",
+        "developer_tool",
+        "tool_update",
+        "agent_tool"
+      ],
+      "importance": 0.7,
+      "date": "2026-10-20T09:11:10.000Z",
+      "summary": "2.45.0 (2026-10-20) Bug Fixes AI Agent Node: Replay Anthropic thinking turns with their tool arguments ( #41241 ) ( ea98bd0 ) Align data table and variable editing on protected instances ( #41258 ) ( d4bde14 ) Allow skipping table initialization ( #40437 ) ( d245b17 ) API: Apply projectId filter to executions for member API keys ( #40887 ) ( 3075b60 ) API: Log errors before returning generic 500 in Public API ( #41186 ) ( fe36279 ) Check provisioning license on Users settings page ( #41048 ) ( 066480d ) Convert to File Node: Decode data URIs and validate Base64 input ( #38554 ) ( 315e0a5...",
+      "category": "ai_tools"
+    },
+    {
+      "title": "Release v0.25.3-nightly.20261019.5dcf7c7cb1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3-nightly.20261019.5dcf7c7cb1",
       "source": "GitHub Releases · Qwen Code",
       "tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
@@ -19,124 +63,108 @@
       "matching_tags": [
         "api_update",
         "mcp",
-        "product_launch",
-        "github_release",
         "developer_tool",
         "cli_tool",
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-19T07:47:40.000Z",
-      "summary": "Bundled CLI Version This SDK release bundles CLI version: 0.25.3 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.2 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.1 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.25.0 Source: CLI built from source (same branch/ref as SDK) Bundled CLI Version This SDK release bundles CLI version: 0.24.7 Source: CLI built from source (same branch/ref as...",
+      "date": "2026-10-19T22:11:28.000Z",
+      "summary": "What's Changed feat(daemon): support session-targeted Skill and Extension refresh by @callmeYe in #14050 fix(managed-agent): bound initial publication guard waits by @yiliang114 in #14563 feat(runtime-broker): Session-create warm for Workspace-isolated bound Sessions by @doudouOUC in #14599 test(cli): give turn-settling waits the slow-host budget by @yiliang114 in #14598 feat(managed-agent): ship a configuration template in the reference distribution by @wenshao in #14631 feat(serve): run private CSI file turns through Hosted Harness by @doudouOUC in #14487 test(cli): retry ENOTEMPTY in...",
       "category": "ai_tools"
     },
     {
-      "title": "Release v0.25.3",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3",
-      "source": "GitHub Releases · Qwen Code",
-      "tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "mcp",
-        "product_launch",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-19T06:52:53.000Z",
-      "summary": "Highlights See the complete change list below. Breaking Changes No known breaking changes. Complete Change List Features Adds optional model-generated layouts to Test Failure Explorer, with validation and fallback to the fixed view ( #14269 ) by @qqqys The Web Shell mobile composer no longer shows the ↑ and ↓ history buttons, reducing clutter while keeping history search available. ( #14220 ) by @pomelo-nwu The Web Shell trajectory panel now includes a collapsible Recent executions section that shows live requests and tools with elapsed time and final durations. ( #14071 ) by @qqqys...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "openclaw 2026.10.10-beta.2",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.2",
+      "title": "openclaw 2026.10.5",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5",
       "source": "GitHub Releases · OpenClaw",
       "tags": [
-        "api_update",
-        "mcp",
         "product_launch",
+        "open_source",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "matching_tags": [
-        "api_update",
-        "mcp",
         "product_launch",
+        "open_source",
         "developer_tool",
-        "cli_tool"
+        "cli_tool",
+        "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-19T12:23:09.000Z",
-      "summary": "2026.10.10-beta.2 Highlights Changes Fixes Workspace safety: reject a multi-file apply_patch before changing files when a later update target is missing or its context does not match, preserving the original workspace for the next attempt. Commit-time I/O failures can still leave partial effects. ( #160409 ; related #117742 and #127496 ) Thanks @masatohoshino , @obviyus , and @yetval . Tool policy: run plugin before_tool_call hooks in standalone openclaw agent exec sessions so plugin tool guards take effect. ( #159333 ; fixes #158824 ) Thanks @joseairosa and @obviyus . Buzz: reconnect...",
+      "date": "2026-10-19T18:44:47.000Z",
+      "summary": "OpenClaw v2026.10.5 2,704 commits · 2,250 pull requests · 638 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: Release notes — formatted for people. Changelog — plain Markdown for AI agents and tools. Thanks @609nft @67-luck @9fw2pq8sgb-art @a1fred-ai @a6xa3 @aaajiao @aacodex401 @aatreya @abacha @absol89 @adamamzalag @adamjgmiller @adele-with-a-b @adenzhou1350 @adlbas26 @aia007731-lab @aikohoshinoai-prog @ajmtrz @akshatshahh @aldiz1711 @aleps001 @alexph-dev @alexsimeonoww @alfred429 @alfredjbclaw @alix-007...",
       "category": "ai_tools"
     },
     {
-      "title": "Qwen Code Desktop v0.25.3",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.3",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+      "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "source": "TechCrunch AI",
       "tags": [
         "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "agent_tool"
       ],
       "matching_tags": [
         "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source",
+        "agent_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-10-19T08:06:26.000Z",
-      "summary": "What's Changed fix(managed-agent): admit team_plan_approval into the journal-only interrupted-turn settle ( #13847 ) by @wenshao in #14160 test(managed-agent): add the FG8e/FG8f monitor_run and background-shell fault gates by @wenshao in #14120 feat(extensions): add bounded generated failure explorer views (PR4) by @qqqys in #14269 fix(sdk-java): Order the FG8 gate's imports for the checkstyle rules by @wenshao in #14305 test(cli): skip the remaining chmod-based tests on the permission probe by @wenshao in #14271 refactor(managed-agent): Reuse text and byte-range utilities by @doudouOUC...",
+      "importance": 0.8999999999999999,
+      "date": "2026-10-19T19:28:34.000Z",
+      "summary": "OpenCode is an open source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for help kept refusing to look at the malicious code.",
       "category": "ai_tools"
     },
     {
-      "title": "MiniMax releases M3.1 Flash, claiming 70% lower costs for AI agent tasks",
-      "url": "https://superpowerdaily.com/posts/minimax-releases-m3-1-flash-claiming-70-lower-costs-for-ai-agent-tasks",
+      "title": "DeepSeek Open-Sources DeepInfer, the Inference Framework Behind DeepSeek-V4.1-Flash",
+      "url": "https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework/",
+      "source": "MarkTechPost",
+      "tags": [
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "matching_tags": [
+        "open_source",
+        "developer_tool",
+        "tool_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-20T14:31:59.000Z",
+      "summary": "DeepSeek has open-sourced DeepInfer, the Apache 2.0 inference framework that serves DeepSeek-V4.1-Flash in production. It targets NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs, and ships offline inference only. The post DeepSeek Open-Sources DeepInfer, the Inference Framework Behind DeepSeek-V4.1-Flash appeared first on MarkTechPost .",
+      "category": "ai_research"
+    },
+    {
+      "title": "Voxtral 3",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "source": "Mistral AI Blog",
+      "tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "matching_tags": [
+        "api_update",
+        "developer_tool"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-20T16:02:07.000Z",
+      "summary": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages — accurate transcription, emotional TTS, deep tool use. EU-hosted or self-deployed.",
+      "category": "ai_models"
+    },
+    {
+      "title": "fal launches FLUX 3 Max, claiming a 22-fold speed edge in AI video",
+      "url": "https://superpowerdaily.com/posts/fal-launches-flux-3-max-claiming-a-22-fold-speed-edge-in-ai-video",
       "source": "Superpower Daily",
       "tags": [
         "api_update",
-        "product_launch",
-        "agent_tool"
+        "product_launch"
       ],
       "matching_tags": [
         "api_update",
-        "product_launch",
-        "agent_tool"
+        "product_launch"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-19T13:44:26.000Z",
-      "summary": "The model is available through MiniMax’s API and coding tools. Its speed and benchmark gains remain company-reported, while downloadable weights are promised later.",
-      "category": "ai_tools"
-    },
-    {
-      "title": "3.70.0",
-      "url": "https://github.com/mifi/lossless-cut/releases/tag/v3.70.0",
-      "source": "GitHub Releases · LosslessCut",
-      "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
-      ],
-      "importance": 0.7,
-      "date": "2026-10-19T10:29:08.000Z",
-      "summary": "‼️ Note: this version has a bug where the Windows x64 ffmpeg.exe file is missing. Please use next version instead. Upgrade bundled FFmpeg to 8.1 (fixes CVE-2026-8461 ) #2943 #3139 New \"Theme\" setting (System default / Dark / Light) - LosslessCut can now follow the OS dark/light theme #3113 Metadata editor improvements #3135 #3136 #3140 #3141 Copy track or file metadata from another track or another loaded file with the new \"Copy from\" menu Apply a track metadata value (e.g. language ) to all other tracks of the same type with one click Edited tracks and files are now highlighted in the...",
+      "date": "2026-10-19T23:55:38.000Z",
+      "summary": "The Black Forest Labs collaboration is available through fal’s API. Its quality ranking has independent support, but its speed claims remain vendor benchmarks with differing reported timings.",
       "category": "ai_tools"
     },
     {
@@ -157,59 +185,8 @@
       "category": "ai_tools"
     },
     {
-      "title": "MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input",
-      "url": "https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/",
-      "source": "MarkTechPost",
-      "tags": [
-        "api_update",
-        "tool_update"
-      ],
-      "matching_tags": [
-        "api_update",
-        "tool_update"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-19T12:37:58.000Z",
-      "summary": "MiniMax has released M3.1 Flash, a 428B-parameter MoE model with about 23B active parameters and a 1M-token context. API pricing is $0.15/$0.60 per 1M tokens, with weights due October 23 The post MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input appeared first on MarkTechPost .",
-      "category": "ai_research"
-    },
-    {
-      "title": "llm-echo 0.5",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-      "source": "Simon Willison's Blog",
-      "tags": [
-        "product_launch",
-        "developer_tool"
-      ],
-      "matching_tags": [
-        "product_launch",
-        "developer_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-18T23:16:16.000Z",
-      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the prompt, then I decide what to say. { \"prompt\": \"hi there\", \"system\": \"\", \"attachments\": [],...",
-      "category": "ai_tools"
-    },
-    {
-      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
-      "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
-      "source": "MarkTechPost",
-      "tags": [
-        "api_update",
-        "agent_tool"
-      ],
-      "matching_tags": [
-        "api_update",
-        "agent_tool"
-      ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-18T18:20:28.000Z",
-      "summary": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add further costs. TinyFish, a web infrastructure […] The post TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web appeared first on MarkTechPost .",
-      "category": "ai_research"
-    },
-    {
-      "title": "Release v0.66.0-nightly.20261019.ged96faedf",
-      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261019.ged96faedf",
+      "title": "Release v0.66.0-nightly.20261020.g76e4d7c04",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261020.g76e4d7c04",
       "source": "GitHub Releases · Gemini CLI",
       "tags": [
         "cli_tool",
@@ -220,8 +197,8 @@
         "tool_update"
       ],
       "importance": 0.7,
-      "date": "2026-10-19T01:34:29.000Z",
-      "summary": "Full Changelog : v0.66.0-nightly.20261018.ged96faedf...v0.66.0-nightly.20261019.ged96faedf",
+      "date": "2026-10-20T01:33:51.000Z",
+      "summary": "What's Changed fix(ui): preserve terminal scrollback during viewport refreshes by @diegogodinezr in #29792 fix(cli): decode streamed Node HTTP activity chunks with StringDecoder by @jesussamuel-byte in #29827 Full Changelog : v0.66.0-nightly.20261019.ged96faedf...v0.66.0-nightly.20261020.g76e4d7c04",
       "category": "ai_tools"
     },
     {
@@ -237,56 +214,69 @@
         "cli_tool"
       ],
       "importance": 0.7,
-      "date": "2026-10-19T01:04:18.000Z",
+      "date": "2026-10-20T01:00:36.000Z",
       "summary": "Verifying the artifacts First, download the checksums.txt file and the checksums.txt.sigstore.json file files, for example, with wget : wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt ' wget ' https://github.com/charmbracelet/crush/releases/download/nightly/checksums.txt.sigstore.json ' Then, verify it using cosign : cosign verify-blob \\ --certificate-identity-regexp ' ^https://github.com/charmbracelet/crush/\\.github/workflows/(release|nightly)\\.yml@ ' \\ --certificate-oidc-issuer ' https://token.actions.githubusercontent.com ' \\ --bundle '...",
       "category": "ai_tools"
     },
     {
-      "title": "v0.42.0",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
-      "source": "GitHub Releases · ComfyUI",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "source": "TechCrunch AI",
       "tags": [
-        "developer_tool",
-        "tool_update"
+        "developer_tool"
       ],
       "matching_tags": [
-        "developer_tool",
-        "tool_update"
+        "developer_tool"
       ],
-      "importance": 0.7,
-      "date": "2026-10-18T22:10:38.000Z",
-      "summary": "What's Changed [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in #17067 Update workflow templates to v0.11.85 by @comfyui-wiki in #17068 Use FLUX 3 Image in node display labels by @MaanavD in #17075 Better documentation about the comfy quant format. by @comfyanonymous in #17078 Update workflow templates to v0.11.86 by @comfyui-wiki in #17083 feat: Add MOSS-image support by @kijai in #17095 [Partner Nodes] chore(Quiver): remove retired Arrow 1.x models by @bigcat88 in #17102 Update comfy-kitchen version to 0.2.38 by @comfyanonymous in #17107 Use fused situ with MOSS-image...",
+      "importance": 0.8999999999999999,
+      "date": "2026-10-19T20:09:24.000Z",
+      "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
       "category": "ai_tools"
     },
     {
-      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
-      "url": "https://github.com/finereli/whatsapp-mcp",
-      "source": "Hacker News",
+      "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "url": "https://paperswithcode.com/papers/2610.26860",
+      "source": "Papers With Code",
       "tags": [
-        "mcp"
+        "api_update"
       ],
       "matching_tags": [
-        "mcp"
+        "api_update"
       ],
       "importance": 0.7999999999999999,
-      "date": "2026-10-18T21:36:10.000Z",
+      "date": "2026-10-20T17:01:03.002Z",
       "summary": "",
-      "category": "tech_general"
+      "category": "ai_research"
     },
     {
-      "title": "Hermes gets a WhatsApp voice-call plugin",
-      "url": "https://www.digg.com/ai/8kngy9zn",
-      "source": "Digg AI",
+      "title": "Don’t take AI’s word for it — this $60 tool double-checks its answers",
+      "url": "https://mashable.com/tech/oct-20-caveat-ai-standard-plan-lifetime-subscription?utm_source=flipboard&utm_content=Mashable/magazine/Breaking+Tech+News",
+      "source": "Flipboard AI",
       "tags": [
         "developer_tool"
       ],
       "matching_tags": [
         "developer_tool"
       ],
-      "importance": 0.74,
-      "date": "2026-10-18T17:30:42.939Z",
-      "summary": "",
+      "importance": 0.7999999999999999,
+      "date": "2026-10-20T09:00:00.000Z",
+      "summary": "Check AI’s work before you rely on its answer with this browser extension. TL;DR: Get a second opinion on AI answers with this lifetime subscription to Caveat AI Standard Plan, on sale now for $59.99 (reg. $179). AI can be incredibly helpful — until it confidently gives you a wrong answer. If you’re …",
       "category": "ai_tools"
+    },
+    {
+      "title": "Exa 3.0 Search API Tops Perplexity, Brave and Parallel on 8 Benchmarks",
+      "url": "https://www.marktechpost.com/2026/10/20/exa-3-0-search-api-lite/",
+      "source": "MarkTechPost",
+      "tags": [
+        "api_update"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.7999999999999999,
+      "date": "2026-10-20T08:12:21.000Z",
+      "summary": "Exa 3.0 is a search API upgrade from Exa. It adds a larger embedding model, Exa Lite at $4 per 1,000 requests, and Dynamic Highlights, and leads 8 benchmarks Exa ran itself. The post Exa 3.0 Search API Tops Perplexity, Brave and Parallel on 8 Benchmarks appeared first on MarkTechPost .",
+      "category": "ai_research"
     }
   ]
 }
