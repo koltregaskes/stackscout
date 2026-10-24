@@ -29,14 +29,22 @@ if ($privateDataDirInput) {
   $privateDataDir = (Resolve-Path $privateDataDirInput).Path
 }
 
-$statusFile = if ($privateDataDir) { Join-Path $privateDataDir 'stackscout-refresh-status.json' } else { $null }
+if (-not $privateDataDir) {
+  $privateDataDir = Join-Path $repoRoot '.local'
+  if (-not (Test-Path $privateDataDir)) {
+    New-Item -ItemType Directory -Path $privateDataDir -Force | Out-Null
+  }
+}
+
+$statusFile = Join-Path $privateDataDir 'stackscout-refresh-status.json'
+$logFile = Join-Path $privateDataDir 'stackscout-refresh.log'
 $toolsManifestFile = Join-Path $repoRoot 'data\tools-manifest.json'
 $updatesManifestFile = Join-Path $repoRoot 'data\updates-manifest.json'
 $categoriesManifestFile = Join-Path $repoRoot 'data\categories-manifest.json'
 $publishCandidatePaths = @(
   'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
   'radar', 'method', 'index.html', 'sitemap.xml', 'service-worker.js',
-  'llms.txt', 'robots.txt'
+  'llms.txt', 'robots.txt', '404.html'
 )
 $startedAt = (Get-Date).ToUniversalTime().ToString('o')
 $steps = New-Object System.Collections.Generic.List[object]
@@ -133,6 +141,72 @@ function Invoke-RefreshStep {
       error = $_.Exception.Message
     })
     throw
+  }
+}
+
+function Write-RefreshLog {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Message
+  )
+
+  if (-not $logFile -or -not $Message) {
+    return
+  }
+
+  $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+  $writer = New-Object System.IO.StreamWriter($logFile, $true, $utf8NoBom)
+  try {
+    $writer.WriteLine($Message)
+  } finally {
+    $writer.Dispose()
+  }
+}
+
+function Invoke-LoggedNative {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$FilePath,
+    [string[]]$ArgumentList = @(),
+    [Parameter(Mandatory = $true)]
+    [string]$FailureMessage
+  )
+
+  $stdoutFile = New-TemporaryFile
+  $stderrFile = New-TemporaryFile
+
+  try {
+    $process = Start-Process `
+      -FilePath $FilePath `
+      -ArgumentList $ArgumentList `
+      -WorkingDirectory $repoRoot `
+      -Wait `
+      -PassThru `
+      -NoNewWindow `
+      -RedirectStandardOutput $stdoutFile.FullName `
+      -RedirectStandardError $stderrFile.FullName
+
+    $combined = @()
+    if (Test-Path -LiteralPath $stdoutFile.FullName) {
+      $combined += @(Get-Content -LiteralPath $stdoutFile.FullName -ErrorAction SilentlyContinue)
+    }
+    if (Test-Path -LiteralPath $stderrFile.FullName) {
+      $combined += @(Get-Content -LiteralPath $stderrFile.FullName -ErrorAction SilentlyContinue)
+    }
+
+    $text = (($combined | Where-Object { $_ -ne $null }) -join "`n").Trim()
+    if ($text) {
+      Write-Host $text
+      Write-RefreshLog -Message $text
+    }
+
+    # Start-Process returns the real process exit code. Piping a native
+    # command into Tee-Object would hide that code on Windows PowerShell.
+    if ($process.ExitCode -ne 0) {
+      throw "$FailureMessage Exited with code $($process.ExitCode)."
+    }
+  } finally {
+    Remove-Item -LiteralPath $stdoutFile.FullName, $stderrFile.FullName -Force -ErrorAction SilentlyContinue
   }
 }
 
@@ -241,8 +315,10 @@ function Assert-PublishRemoteUnchanged {
   }
 }
 
+Write-RefreshLog -Message "---- Stack Scout refresh $startedAt ----"
 Write-RefreshStatus -State 'running' -Message 'Stack Scout refresh started.' -Extra @{
   lastSuccessAt = $previousLastSuccessAt
+  logFile = $logFile
 }
 
 Push-Location $repoRoot
@@ -255,19 +331,19 @@ try {
     }
   }
 
-  Invoke-RefreshStep -Label 'Build Stack Scout' -ScriptBlock {
-    & node 'scripts/build-stackscout.js'
-    if ($LASTEXITCODE -ne 0) {
-      throw "Stack Scout build failed with exit code $LASTEXITCODE."
+  if ($env:STACKSCOUT_ROUTED_FEED_URL) {
+    Invoke-RefreshStep -Label 'Fetch routed feed' -ScriptBlock {
+      Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/fetch-routed-feed.js') -FailureMessage 'Routed feed fetch failed.'
     }
+  }
+
+  Invoke-RefreshStep -Label 'Build Stack Scout' -ScriptBlock {
+    Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/build-stackscout.js') -FailureMessage 'Stack Scout build failed.'
   }
 
   if (-not $SkipCheck) {
     Invoke-RefreshStep -Label 'Check Stack Scout' -ScriptBlock {
-      & cmd /c 'npm run check'
-      if ($LASTEXITCODE -ne 0) {
-        throw "Stack Scout checks failed with exit code $LASTEXITCODE."
-      }
+      Invoke-LoggedNative -FilePath 'cmd.exe' -ArgumentList @('/d', '/c', 'npm run check') -FailureMessage 'Stack Scout checks failed.'
     }
   }
 
@@ -343,6 +419,7 @@ try {
   }
 } catch {
   $durationStopwatch.Stop()
+  Write-RefreshLog -Message ("ERROR: " + $_.Exception.Message)
   Write-RefreshStatus -State 'error' -Message $_.Exception.Message -Extra @{
     failedAt = (Get-Date).ToUniversalTime().ToString('o')
     lastSuccessAt = $previousLastSuccessAt

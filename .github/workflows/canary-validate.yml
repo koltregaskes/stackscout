@@ -1,0 +1,24 @@
+name: Canary validate
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs even when the Windows publisher does not push. The build fails
+    # once data/news-feed-latest.json or its newest item is more than 3 days old.
+    - cron: '45 5 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build generated site
+        run: npm run build:site
+
+      - name: Run launch-safety checks
+        run: npm run check

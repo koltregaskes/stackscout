@@ -21,6 +21,8 @@ const PUBLIC_ENTRIES = [
   'sitemap.xml',
   'llms.txt',
   'icon.svg',
+  '404.html',
+  'robots.txt',
 ]
 const REQUIRED_PUBLIC_FILES = [
   'index.html',
@@ -46,6 +48,8 @@ const REQUIRED_PUBLIC_FILES = [
   'sitemap.xml',
   'llms.txt',
   'icon.svg',
+  '404.html',
+  'robots.txt',
 ]
 const GENERATED_DATA_FILES = new Set([
   'data/page-registry.json',

@@ -1,0 +1,46 @@
+name: Link check
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # 05:17 UTC is 06:17 in London during British Summer Time, just after
+    # the 06:15 publisher. In winter it is 05:17 London.
+    - cron: '17 5 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build generated site
+        run: npm run build:site
+
+      - name: Check on-site links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check the generated pages only. News digests quote GitHub paths
+          # such as /owner/repo/blob/..., and those are not pages on this site.
+          # Fragment checks are left off because directory links like
+          # collections/#creator-stack are valid once GitHub Pages serves index.html.
+          args: >-
+            --no-progress
+            --timeout 20
+            --max-concurrency 4
+            --exclude "^https?://"
+            index.html
+            404.html
+            catalog
+            categories
+            collections
+            method
+            radar
+            tools
+            updates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,5 @@
+Contact: https://github.com/koltregaskes/stackscout/issues
+Policy: https://github.com/koltregaskes/stackscout/blob/main/SECURITY.md
+Preferred-Languages: en
+Expires: 2027-12-31T23:59:59Z
+
