@@ -24,14 +24,23 @@ jobs:
       - name: Check on-site links
         uses: lycheeverse/lychee-action@v2
         with:
-          # External story links rot independently of the site. This check
-          # proves the pages we generate still point at files that exist.
+          # Check the generated pages only. News digests quote GitHub paths
+          # such as /owner/repo/blob/..., and those are not pages on this site.
+          # Fragment checks are left off because directory links like
+          # collections/#creator-stack are valid once GitHub Pages serves index.html.
           args: >-
             --no-progress
-            --include-fragments
             --timeout 20
             --max-concurrency 4
             --exclude "^https?://"
-            .
+            index.html
+            404.html
+            catalog
+            categories
+            collections
+            method
+            radar
+            tools
+            updates
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
