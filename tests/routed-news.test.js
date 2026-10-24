@@ -50,6 +50,31 @@ test('routed feed compiles public-safe updates with exact provenance', () => {
   assert.equal(compiled.updates[1].projectName, 'Example Tool')
 })
 
+test('emergency age override widens only when it is a positive number', () => {
+  const previous = process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS
+  const staleFeed = { ...routedFeed, generated: '2026-07-20T00:00:00.000Z' }
+
+  try {
+    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '14'
+    assert.doesNotThrow(() => assertRoutedNewsFeed(staleFeed, { now }))
+
+    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '0'
+    assert.throws(() => assertRoutedNewsFeed(staleFeed, { now }), /maximum is 3/)
+
+    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '60'
+    assert.throws(
+      () => assertRoutedNewsFeed(staleFeed, { now, maxAgeDays: 3 }),
+      /maximum is 3/,
+    )
+  } finally {
+    if (previous == null) {
+      delete process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS
+    } else {
+      process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = previous
+    }
+  }
+})
+
 test('routed feed rejects stale generation and newest-item dates', () => {
   assert.throws(
     () => assertRoutedNewsFeed({ ...routedFeed, generated: '2026-07-20T00:00:00.000Z' }, { now }),

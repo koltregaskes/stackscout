@@ -90,6 +90,30 @@ without creating a commit if the remote moved during the build. Recovery must
 preserve generated output on a review branch; the automation never resets,
 rebases, force-pushes, or resolves conflicts.
 
+`robots.txt` and `404.html` are on that allow-list. An untracked `robots.txt`
+edit is what stopped the daily publish from 30 Aug 2026 until the allow-list
+change on 6 Oct 2026. Publishes resumed on 11 Oct 2026. Any new file outside
+the allow-list will stop publishing the same way.
+
+### Diagnostics and the routed feed
+
+The build reads `data/news-feed-latest.json` and fails if that feed, or its
+newest item, is more than three days old. That limit stays in place.
+
+`STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS` is an emergency switch only. Set it to a
+positive number of days for one run if you must publish while repairing the
+feed writer. Unset it afterwards. It does not replace a current feed.
+
+If `STACKSCOUT_ROUTED_FEED_URL` is set, the refresh downloads that JSON into
+`data/news-feed-latest.json` before the build. The download is checked for the
+expected site name and article count, and a failed download stops the run.
+
+Every refresh writes `stackscout-refresh-status.json` and
+`stackscout-refresh.log`. Set `STACKSCOUT_PRIVATE_STATUS_DIR` to keep them
+outside the checkout. Otherwise they are written to the ignored `.local/`
+directory. The log includes the build and check output, and the status file
+records `steps[].error` with the real process exit code.
+
 ## Site structure
 
 - `Home`

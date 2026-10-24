@@ -1,0 +1,37 @@
+name: Link check
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # 05:17 UTC is 06:17 in London during British Summer Time, just after
+    # the 06:15 publisher. In winter it is 05:17 London.
+    - cron: '17 5 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build generated site
+        run: npm run build:site
+
+      - name: Check on-site links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # External story links rot independently of the site. This check
+          # proves the pages we generate still point at files that exist.
+          args: >-
+            --no-progress
+            --include-fragments
+            --timeout 20
+            --max-concurrency 4
+            --exclude "^https?://"
+            .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

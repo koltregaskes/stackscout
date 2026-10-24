@@ -104,11 +104,26 @@ function stableId(article, publishedAt) {
   return `routed-${digest}`
 }
 
+function resolveMaxAgeDays(maxAgeDays) {
+  if (maxAgeDays != null) {
+    return Number(maxAgeDays)
+  }
+
+  // Emergency switch only. A positive STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS
+  // widens the gate for one run. Callers that pass maxAgeDays keep that limit.
+  const envMaxAgeDays = Number(process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS)
+  if (Number.isFinite(envMaxAgeDays) && envMaxAgeDays > 0) {
+    return envMaxAgeDays
+  }
+
+  return DEFAULT_MAX_ROUTED_NEWS_AGE_DAYS
+}
+
 function assertRoutedNewsFeed(
   feed,
   {
     now = new Date(),
-    maxAgeDays = DEFAULT_MAX_ROUTED_NEWS_AGE_DAYS,
+    maxAgeDays,
     expectedSite = 'Stack Scout',
   } = {},
 ) {
@@ -129,7 +144,8 @@ function assertRoutedNewsFeed(
 
   const nowDate = parseDate(now, 'verification clock')
   const generatedAt = parseDate(feed.generated, 'generated timestamp')
-  const maxAgeMs = Number(maxAgeDays) * 86_400_000
+  const effectiveMaxAgeDays = resolveMaxAgeDays(maxAgeDays)
+  const maxAgeMs = effectiveMaxAgeDays * 86_400_000
   const futureToleranceMs = 5 * 60_000
   const generatedAgeMs = nowDate.getTime() - generatedAt.getTime()
 
@@ -141,7 +157,7 @@ function assertRoutedNewsFeed(
   }
   if (generatedAgeMs > maxAgeMs) {
     throw new Error(
-      `Stack Scout routed news feed is ${(generatedAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${maxAgeDays}.`,
+      `Stack Scout routed news feed is ${(generatedAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
     )
   }
 
@@ -170,7 +186,7 @@ function assertRoutedNewsFeed(
   }
   if (newestItemAgeMs > maxAgeMs) {
     throw new Error(
-      `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${maxAgeDays}.`,
+      `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
     )
   }
 
@@ -247,6 +263,7 @@ function compareUpdatesNewestFirst(left, right) {
 module.exports = {
   DEFAULT_MAX_ROUTED_NEWS_AGE_DAYS,
   ROUTED_NEWS_PUBLIC_PATH,
+  resolveMaxAgeDays,
   assertRoutedNewsFeed,
   cleanPublicText,
   compareUpdatesNewestFirst,

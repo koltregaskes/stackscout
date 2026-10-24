@@ -15,6 +15,7 @@ const GENERATED_OUTPUT_PATHS = [
   'sitemap.xml',
   'service-worker.js',
   'llms.txt',
+  '404.html',
 ]
 
 function normaliseStatusPath(line) {

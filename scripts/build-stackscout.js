@@ -441,7 +441,7 @@ function renderToolCard(tool, outputPath, compact = false) {
       </div>
       <div class="scout-card__actions">
         <a class="button button--primary" href="${outputHref(outputPath, `tools/${tool.slug}/index.html`)}">Open dossier</a>
-        <a class="button button--ghost" href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noreferrer">Official</a>
+        <a class="button button--ghost" href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noopener noreferrer">Official</a>
       </div>
     </article>
   `
@@ -475,7 +475,7 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
         ${tool
           ? `<a class="button button--ghost" href="${outputHref(outputPath, `tools/${update.toolSlug}/index.html`)}">Tool page</a>`
           : ''}
-        <a class="button button--ghost" href="${escapeHtml(update.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>
+        <a class="button button--ghost" href="${escapeHtml(update.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source</a>
       </div>
     </article>
   `.replace(/[ \t]+$/gm, '')
@@ -540,8 +540,8 @@ function renderRadarCard(item) {
       <p class="summary">${escapeHtml(item.summary)}</p>
       <p class="card-note">${escapeHtml(item.reason)}</p>
       <div class="scout-card__actions">
-        <a class="button button--ghost" href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noreferrer">Official</a>
-        <a class="button button--ghost" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noreferrer">Source</a>
+        <a class="button button--ghost" href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener noreferrer">Official</a>
+        <a class="button button--ghost" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source</a>
       </div>
     </article>
   `
@@ -565,6 +565,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <meta property="og:title" content="${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}" />
@@ -631,23 +632,23 @@ function renderDocument({ title, description, currentKey, outputPath, content })
           <span>Projects</span>
           <a href="${outputHref(outputPath, 'radar/index.html')}">Radar</a>
           <a href="${sourceHref}">Sources &amp; method</a>
-          <a href="https://theairesourcehub.com/" target="_blank" rel="noreferrer">AI Resource Hub</a>
-          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+          <a href="https://theairesourcehub.com/" target="_blank" rel="noopener noreferrer">AI Resource Hub</a>
+          <a href="https://elusionworks.com/" target="_blank" rel="noopener noreferrer">Elusion Works</a>
         </nav>
         <div class="site-footer__links">
           <span>Contact</span>
-          <a href="https://koltregaskes.com/" target="_blank" rel="noreferrer">Kol Tregaskes</a>
-          <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://koltregaskes.com/" target="_blank" rel="noopener noreferrer">Kol Tregaskes</a>
+          <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="${sourceHref}">Method</a>
         </div>
       </div>
       <div class="site-footer__estate" aria-label="Elusion Works umbrella">
         <div>
           <span>Umbrella home</span>
-          <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Elusion Works</a>
+          <a href="https://elusionworks.com/" target="_blank" rel="noopener noreferrer">Elusion Works</a>
         </div>
         <p>The showcase for Kol's websites, tools, games, and web experiments.</p>
-        <a href="https://elusionworks.com/" target="_blank" rel="noreferrer">Visit Elusion Works -&gt;</a>
+        <a href="https://elusionworks.com/" target="_blank" rel="noopener noreferrer">Visit Elusion Works -&gt;</a>
       </div>
       <div class="site-footer__meta">
         <p><span class="live-dot" aria-hidden="true"></span><span id="utcClock">Live UTC</span></p>
@@ -708,7 +709,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
             </div>
             <div class="hero__actions">${spotlightTool ? `
               <a class="button button--primary" href="${outputHref(outputPath, `tools/${spotlightTool.slug}/index.html`)}">Open dossier</a>` : ''}
-              ${spotlightUpdate ? `<a class="button button--ghost" href="${escapeHtml(spotlightUpdate.sourceUrl)}" target="_blank" rel="noreferrer">Read source</a>` : ''}
+              ${spotlightUpdate ? `<a class="button button--ghost" href="${escapeHtml(spotlightUpdate.sourceUrl)}" target="_blank" rel="noopener noreferrer">Read source</a>` : ''}
             </div>
           </article>
           <article class="hero-panel hero-panel--metrics">
@@ -832,7 +833,7 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
                     (update) => `
                       <a class="brief-link" href="${update.toolSlug
                         ? outputHref(outputPath, `tools/${update.toolSlug}/index.html`)
-                        : escapeHtml(update.sourceUrl)}"${update.toolSlug ? '' : ' target="_blank" rel="noreferrer"'}>
+                        : escapeHtml(update.sourceUrl)}"${update.toolSlug ? '' : ' target="_blank" rel="noopener noreferrer"'}>
                         <span>${escapeHtml(update.title)}</span>
                         <strong>${escapeHtml(formatDate(update.publishedAt))}</strong>
                       </a>
@@ -1020,9 +1021,9 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
           <h1>${escapeHtml(tool.name)}</h1>
           <p class="hero__lede">${escapeHtml(tool.summary)}</p>
           <div class="hero__actions">
-            <a class="button button--primary" href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noreferrer">Open official</a>
-            ${tool.docsUrl ? `<a class="button button--ghost" href="${escapeHtml(tool.docsUrl)}" target="_blank" rel="noreferrer">Docs</a>` : ''}
-            ${tool.repoUrl ? `<a class="button button--ghost" href="${escapeHtml(tool.repoUrl)}" target="_blank" rel="noreferrer">Repo</a>` : ''}
+            <a class="button button--primary" href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noopener noreferrer">Open official</a>
+            ${tool.docsUrl ? `<a class="button button--ghost" href="${escapeHtml(tool.docsUrl)}" target="_blank" rel="noopener noreferrer">Docs</a>` : ''}
+            ${tool.repoUrl ? `<a class="button button--ghost" href="${escapeHtml(tool.repoUrl)}" target="_blank" rel="noopener noreferrer">Repo</a>` : ''}
           </div>
           <div class="chip-row">${renderChips(tool.bestFor, 'ink', 'Best for')}</div>
         </div>
@@ -1068,10 +1069,10 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
           <div class="detail-panel">
             <span class="label">Links</span>
             <div class="link-stack">
-              <a href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noreferrer">Official site</a>
-              ${tool.docsUrl ? `<a href="${escapeHtml(tool.docsUrl)}" target="_blank" rel="noreferrer">Documentation</a>` : ''}
-              ${tool.repoUrl ? `<a href="${escapeHtml(tool.repoUrl)}" target="_blank" rel="noreferrer">Repository</a>` : ''}
-              ${tool.socialLinks.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.label)}</a>`).join('')}
+              <a href="${escapeHtml(tool.officialUrl)}" target="_blank" rel="noopener noreferrer">Official site</a>
+              ${tool.docsUrl ? `<a href="${escapeHtml(tool.docsUrl)}" target="_blank" rel="noopener noreferrer">Documentation</a>` : ''}
+              ${tool.repoUrl ? `<a href="${escapeHtml(tool.repoUrl)}" target="_blank" rel="noopener noreferrer">Repository</a>` : ''}
+              ${tool.socialLinks.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.label)}</a>`).join('')}
             </div>
           </div>
           <div class="detail-panel">
@@ -1317,6 +1318,28 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 `
 }
 
+function renderNotFound(outputPath) {
+  return renderDocument({
+    title: 'Stack Scout // Page not found',
+    description: 'The requested Stack Scout page could not be found.',
+    currentKey: 'not-found',
+    outputPath,
+    content: `
+      <section class="hero hero--inner">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">404</p>
+          <h1>That page is not on the desk.</h1>
+          <p class="hero__lede">The address may be mistyped, or the page has moved.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="${outputHref(outputPath, 'index.html')}">Go to Home</a>
+            <a class="button button--ghost" href="${outputHref(outputPath, 'catalog/index.html')}">Explore catalog</a>
+          </div>
+        </div>
+      </section>
+    `,
+  })
+}
+
 function main() {
   const privatePreviewExport = resolvePrivatePreviewExportPath()
   const site = readJson('site-source.json')
@@ -1355,6 +1378,7 @@ function main() {
   writeFile('radar/index.html', renderRadar(site, 'radar/index.html'))
   writeFile('collections/index.html', renderCollections(collections, toolIndex, 'collections/index.html'))
   writeFile('method/index.html', renderMethod(site, 'method/index.html'))
+  writeFile('404.html', renderNotFound('404.html'))
 
   categories.forEach((category) => {
     writeFile(
