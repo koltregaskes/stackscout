@@ -100,6 +100,15 @@ the allow-list will stop publishing the same way.
 The build reads `data/news-feed-latest.json` and fails if that feed, or its
 newest item, is more than three days old. That limit stays in place.
 
+`.github/workflows/routed-feed-freshness.yml` runs every day at 06:30 UTC and
+fails once that same feed is one day old. The failure names the missing source
+before the three-day build gate. No public feed URL is configured, so the job
+does not download or invent articles. `scripts/refresh-stackscout.ps1` still
+only fetches a feed when `STACKSCOUT_ROUTED_FEED_URL` is set. The shared news
+routing file lists Stack Scout as a destination at `sites/stackscout/data` and
+assigns it no sources. The gatherer that writes `data/news-feed-latest.json`
+remains the Windows publisher, which is not in this repo.
+
 `STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS` is an emergency switch only. Set it to a
 positive number of days for one run if you must publish while repairing the
 feed writer. Unset it afterwards. It does not replace a current feed.

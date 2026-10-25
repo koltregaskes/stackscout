@@ -1,0 +1,56 @@
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const path = require('node:path')
+const test = require('node:test')
+
+const {
+  HARD_MAX_DAYS,
+  MISSING_SOURCE,
+  WARN_AFTER_DAYS,
+  assessRoutedFeedFreshness,
+  formatReport,
+} = require('../scripts/check-routed-feed-freshness')
+
+const now = new Date('2026-10-26T06:30:00.000Z')
+
+function feedAt(iso) {
+  return {
+    generated: iso,
+    site: 'Stack Scout',
+    article_count: 1,
+    articles: [{ title: 'Release', url: 'https://example.com/release', date: iso }],
+  }
+}
+
+test('a feed younger than one day does not warn', () => {
+  const generated = new Date(now.getTime() - 12 * 60 * 60 * 1000).toISOString()
+  const assessment = assessRoutedFeedFreshness(feedAt(generated), now)
+
+  assert.equal(assessment.warn, false)
+  assert.equal(assessment.hardFail, false)
+  assert.ok(assessment.ageDays < WARN_AFTER_DAYS)
+})
+
+test('a one-day-old feed warns before the three-day build gate', () => {
+  const generated = new Date(now.getTime() - WARN_AFTER_DAYS * 86_400_000).toISOString()
+  const assessment = assessRoutedFeedFreshness(feedAt(generated), now)
+
+  assert.equal(assessment.warn, true)
+  assert.equal(assessment.hardFail, false)
+  assert.ok(assessment.ageDays < HARD_MAX_DAYS)
+  assert.match(formatReport(assessment), /Missing source: No public feed URL exists/)
+  assert.match(MISSING_SOURCE, /STACKSCOUT_ROUTED_FEED_URL/)
+  assert.match(MISSING_SOURCE, /sites\/stackscout\/data/)
+})
+
+test('the scheduled workflow runs this check every day', () => {
+  const workflow = fs.readFileSync(
+    path.join(__dirname, '..', '.github', 'workflows', 'routed-feed-freshness.yml'),
+    'utf8',
+  )
+
+  assert.match(workflow, /cron: '30 6 \* \* \*'/)
+  assert.match(workflow, /node scripts\/check-routed-feed-freshness\.js/)
+  assert.match(workflow, /workflow_dispatch:/)
+  assert.doesNotMatch(workflow, /contents: write/)
+})

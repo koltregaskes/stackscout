@@ -1,0 +1,22 @@
+name: Routed feed freshness
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:30 UTC every day. Fails once data/news-feed-latest.json or its newest
+    # item is 1 day old, before the 3-day build gate. No public feed URL exists,
+    # so this job does not download or invent articles.
+    - cron: '30 6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Warn before the three-day routed feed gate
+        run: node scripts/check-routed-feed-freshness.js
