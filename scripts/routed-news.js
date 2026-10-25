@@ -63,7 +63,11 @@ function escapeHtml(value) {
 function truncate(value, maxLength = 360) {
   const text = String(value || '').trim()
   if (text.length <= maxLength) return text
-  return `${text.slice(0, maxLength - 1).trimEnd()}…`
+  const budget = maxLength - 1
+  const slice = text.slice(0, budget)
+  const lastSpace = slice.lastIndexOf(' ')
+  const clipped = lastSpace > Math.floor(budget * 0.6) ? slice.slice(0, lastSpace) : slice
+  return `${clipped.trimEnd()}…`
 }
 
 function parseDate(value, label) {
@@ -270,4 +274,5 @@ module.exports = {
   compileRoutedNewsFeed,
   escapeHtml,
   mergeUpdates,
+  truncate,
 }

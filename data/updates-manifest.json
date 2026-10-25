@@ -19,7 +19,7 @@
       "toolSlug": null,
       "kind": "release",
       "title": "Crush v0.98.2",
-      "summary": "Keanu, OAuth re-sign-in and a crash fix This patch was brought to you by our team and our favorite contributors! Keanu Caution This will make you feel like a hacker A theme made by @andreynering 🎉 💻 Fixed! • Fixed a crash when parallel tool calls finish together, by @andreynering • Fixed OAuth sign-in and credential refresh, by @taciturnaxolotl • Ctrl+C n…",
+      "summary": "Keanu, OAuth re-sign-in and a crash fix This patch was brought to you by our team and our favorite contributors! Keanu Caution This will make you feel like a hacker A theme made by @andreynering 🎉 💻 Fixed! • Fixed a crash when parallel tool calls finish together, by @andreynering • Fixed OAuth sign-in and credential refresh, by @taciturnaxolotl • Ctrl+C…",
       "publishedAt": "2026-10-23",
       "publishedAtIso": "2026-10-23T17:21:28.000Z",
       "sourceLabel": "GitHub Releases · Crush",

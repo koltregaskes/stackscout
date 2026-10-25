@@ -37,6 +37,17 @@ const routedFeed = {
   ],
 }
 
+test('long public summaries stop on a word boundary', () => {
+  const { truncate } = require('../scripts/routed-news')
+  const summary = `${'alpha '.repeat(90)}omega`
+  const clipped = truncate(summary, 40)
+
+  assert.match(clipped, /^alpha( alpha)*…$/)
+  assert.ok(clipped.length <= 40)
+  assert.equal(truncate('short note', 40), 'short note')
+  assert.match(truncate('Supercalifragilisticexpialidocious', 12), /^Supercalifr…$/)
+})
+
 test('routed feed compiles public-safe updates with exact provenance', () => {
   const compiled = compileRoutedNewsFeed(routedFeed, { now })
 
