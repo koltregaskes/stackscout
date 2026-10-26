@@ -1,300 +1,300 @@
 {
-  "generated": "2026-10-23T17:45:04.717Z",
+  "generated": "2026-10-26T00:13:16.003Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "Release v0.26.0-nightly.20261022.bf66a26c97",
-      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0-nightly.20261022.bf66a26c97",
-      "source": "GitHub Releases · Qwen Code",
+      "title": "Research agenda proposes seven open problems for multi-agent AI swarms",
+      "url": "https://www.digg.com/ai/r76rcah4",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T22:30:02.000Z",
-      "summary": "What's Changed feat(serve): add daemon token persistence by @wenshao in #15023 fix(release): cover every spawned vendored binary in the tarball exec-bit gate by @yiliang114 in #15008 test(managed-agent): reuse a same-key cancel (FG11d) by @wenshao in #14997 test(managed-agent): share the quote and camel gate helpers (FG13) by @wenshao in #15047 test(managed-agent): align Hosted fault gates with shared ownership by @doudouOUC in #15066 test(ci): guard no-AK membership and filter resolution by @zonemeen in #14989 feat(managed-agent): Add durable manual context compression by @doudouOUC in...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T23:40:03.518Z",
+      "summary": "A JinesisLab researcher says each problem is scored for its importance to AI alignment.",
+      "category": "industry-media"
     },
     {
-      "title": "v8.0.0-rc.20-dev.1: chore(release): bump to 8.0.0-rc.20 (#30838)",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.20-dev.1",
-      "source": "GitHub Releases · Prisma",
+      "title": "Eight-video course on building reasoning models is online",
+      "url": "https://www.digg.com/ai/qjwaj81v",
+      "source": "Digg AI",
       "tags": [
-        "product_launch",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "product_launch",
-        "github_release",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T17:41:26.000Z",
-      "summary": "Version 8.0.0-rc.19 → 8.0.0-rc.20 . Merging this PR publishes the release. The main change: the ORM's commands run on @prisma/cli-engine 0.9.0, the engine the prisma CLI 8.0.0-rc.25 ships ( #30835 ). A piped ORM command now prints tab-separated data lines on stdout; scripts that read JSON must pass --json . This release lets prisma/composer and prisma/prisma-cli drop their engine 0.7.0 pins. What to review Release notes: docs/releases/v8.0.0-rc.20.md , which becomes the GitHub Release body. It covers 11 merged PRs: 7 breaking changes, 7 features, 3 fixes. CHANGELOG.md has the same entry....",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T22:42:49.472Z",
+      "summary": "Sebastian Raschka says the course offers over 11 hours of Python and PyTorch coding on evaluation, reinforcement learning and distillation.",
+      "category": "industry-media"
     },
     {
-      "title": "v0.98.2",
-      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.98.2",
-      "source": "GitHub Releases · Crush",
+      "title": "Shigeru Miyamoto selected for Japan's Order of Culture, reflects on AI and creativity",
+      "url": "https://www.digg.com/ai/9j7dv2z0",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "product_launch",
-        "cli_tool",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "product_launch",
-        "cli_tool",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-23T17:21:28.000Z",
-      "summary": "Keanu, OAuth re-sign-in and a crash fix This patch was brought to you by our team and our favorite contributors! Keanu Caution This will make you feel like a hacker A theme made by @andreynering 🎉 💻 Fixed! • Fixed a crash when parallel tool calls finish together, by @andreynering • Fixed OAuth sign-in and credential refresh, by @taciturnaxolotl • Ctrl+C now interrupts startup, and custom provider model discovery no longer stalls it, by @taciturnaxolotl • Fixed server prompts and permission requests being scoped to the wrong session, by @meowgorithm • Fixed the TUI status, spinner and...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T22:30:01.750Z",
+      "summary": "Famitsu reports Miyamoto distinguished creating from the satisfying work of execution, saying AI could make that difference clearer.",
+      "category": "industry-media"
     },
     {
-      "title": "v8.0.0-rc.20",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.20",
-      "source": "GitHub Releases · Prisma",
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "source": "TechCrunch AI",
       "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "product_launch"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T18:09:39.000Z",
-      "summary": "v8.0.0-rc.20 ORM commands run on @prisma/cli-engine 0.9.0, so a piped command prints tab-separated data lines and JSON needs --json . A type alias in PSL can set @default , @onCreate and @onUpdate , and the contract stores each column's real type instead of the alias name. Postgres migrations can rename, move and remove namespaces, and can change a relation's actions or a primary key. A failed migration check now names the object it expected. The upgrade recipes for this hop: the app recipe and the extension recipe . Each breaking change below names the change ids to look for in them....",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T21:31:16.000Z",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+      "category": "industry-media"
     },
     {
-      "title": "v4.0.538",
-      "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
-      "source": "GitHub Releases · Remotion",
+      "title": "One-time reset restores 25% of monthly quota for Kimi subscribers",
+      "url": "https://www.digg.com/ai/p8tafiis",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "mcp",
-        "developer_tool",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T15:32:38.000Z",
-      "summary": "What's Changed Many performance improvements in the Studio! @remotion/studio : Preserve pitch when changing playback speed by @JonnyBurger in #12423 Upgrade Mediabunny to 1.62.0 by @JonnyBurger in #12450 @remotion/media : Add preservePitch to change speed without changing pitch by @alec-watts in #12350 remotion : Show notice in when not supported instead of crash by @JonnyBurger in #12421 remotion : Fix memory leak when replacing children by @alec-watts in #12291 remotion : Fix retention of replaced components and callbacks by @JonnyBurger in #12462 remotion : Fix Studio sequence prop...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T21:24:50.895Z",
+      "summary": "Kimi apologized for K3.1 Pro rate limits and unnecessary quota use, saying it is reducing unnecessary subagent calls.",
+      "category": "industry-media"
     },
     {
-      "title": "You.com Launches Inference Router: 12 Open-Weight Models With 99.9% Uptime SLA",
-      "url": "https://www.marktechpost.com/2026/10/22/you-com-inference-router-open-weight-models-uptime-sla/",
-      "source": "MarkTechPost",
+      "title": "Softmax and cross-entropy implementations reportedly contain two subtle bugs",
+      "url": "https://www.digg.com/ai/we3n4mdl",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-23T05:28:21.000Z",
-      "summary": "You.com launched Inference Router, an OpenAI-compatible API for 12 open-weight models with a 99.9% uptime SLA, zero data retention, 100% US hosting, server-side web search and no platform fee. The post You.com Launches Inference Router: 12 Open-Weight Models With 99.9% Uptime SLA appeared first on MarkTechPost .",
-      "category": "ai_research"
+      "importance": 0.35,
+      "date": "2026-10-25T21:01:18.506Z",
+      "summary": "On X, @jon_barron claims a simple rewrite fixes both bugs and eliminates slingshots during grokking.",
+      "category": "industry-media"
     },
     {
-      "title": "Cohere Releases Rerank 5 With Passage-Level Context Focus and Calibrated Scores",
-      "url": "https://www.marktechpost.com/2026/10/22/cohere-rerank-5-context-focus/",
-      "source": "MarkTechPost",
+      "title": "@theo's T3 Code work list includes two-click clones and live guest thread sharing",
+      "url": "https://www.digg.com/ai/bpr7gowe",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-22T16:31:31.000Z",
-      "summary": "Cohere Rerank 5 ships in Pro and Fast tiers with a 32K context window, Context Focus passage extraction and calibrated relevance scores. Pro scores 82.2 on BRIGHT and costs $0.05 per 1M tokens. The post Cohere Releases Rerank 5 With Passage-Level Context Focus and Calibrated Scores appeared first on MarkTechPost .",
-      "category": "ai_research"
+      "importance": 0.35,
+      "date": "2026-10-25T20:01:22.038Z",
+      "summary": "In an October 25 post, @theo also described compiler projects and put other merged PRs at roughly 370.",
+      "category": "industry-media"
     },
     {
-      "title": "v1.56.0",
-      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.56.0",
-      "source": "GitHub Releases · Goose",
+      "title": "A musical joke about rain on a wedding day",
+      "url": "https://www.digg.com/ai/83foctzd",
+      "source": "Digg AI",
       "tags": [
-        "mcp",
-        "product_launch",
-        "cli_tool"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "mcp",
-        "product_launch",
-        "cli_tool"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-23T15:57:25.000Z",
-      "summary": "✨ Features Automatic thinking level operation for improved model reasoning #12237 Resume failed or cancelled delegate subagents #13015 Subagent session link in UI with view-only subagent sessions #12998 Limit concurrent subagents with GOOSE_MAX_CONCURRENT_SUBAGENTS #12946 Report session status via OSC 7501 in CLI #12928 Windows NSIS installer for desktop #12869 IO Intelligence provider #12795 Provider-defined cache prices support #12944 Dangerous include history option #13051 Replace PCTX code mode with Boa JavaScript runtime #12952 🐛 Bug Fixes Windows build error #13081 Omit...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T19:42:26.971Z",
+      "summary": "A poster riffs on “It's like raaaaain on your wedding day” and links to a photo.",
+      "category": "industry-media"
     },
     {
-      "title": "Canva launches first in-house image model as it pushes beyond third-party AI",
-      "url": "https://superintelligencenews.com/ai-fields/large-language-models/canva-image-model-launch-ai-strategy/",
-      "source": "Superintelligence Newsletter",
+      "title": "The 'Scale mafia' and its alumni in AI, venture capital and government",
+      "url": "https://www.digg.com/ai/txkinlkq",
+      "source": "Digg AI",
       "tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "product_launch",
-        "tool_update"
+        "open_source"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T21:56:17.000Z",
-      "summary": "Canva launched its first in-house image model, Craft, on Oct. 22, 2026, with 2K output, 30+ aspect ratios and API access. The post Canva launches first in-house image model as it pushes beyond third-party AI appeared first on Superintelligence News - Artificial Intelligence News .",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T19:03:40.452Z",
+      "summary": "Alexandr Wang calls Scale alumni the 'first true mafia of the modern tech era,' listing their current roles.",
+      "category": "industry-media"
     },
     {
-      "title": "openclaw 2026.10.6",
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6",
-      "source": "GitHub Releases · OpenClaw",
+      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch AI",
       "tags": [
+        "announcement",
         "product_launch",
-        "developer_tool",
-        "cli_tool"
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "product_launch",
-        "developer_tool",
-        "cli_tool"
+        "product_launch"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T21:11:27.000Z",
-      "summary": "2026.10.6 Highlights Patched Node runtime required: OpenClaw now requires Node 24.22.1+ on the 24 line or 26.12.1+ on the 26 line, which reject TLS chains signed with the compromised certificate keys addressed in the October 2026 Node.js security releases. Docker images ship Node 24.22.1, installers select the patched runtimes, and openclaw update refuses with recovery guidance before installing on an older Node instead of breaking the running install. Source builds now pin pnpm 12.15.0. ( #179992 ) Thanks @joshavant . Safer updates and recovery: package swaps now refuse unsafe service...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T16:57:32.000Z",
+      "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+      "category": "industry-media"
     },
     {
-      "title": "v7.6.8 Release of PowerShell",
-      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.8",
-      "source": "GitHub Releases · PowerShell",
+      "title": "The hottest AI wearables and gadgets you should know about",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "source": "TechCrunch AI",
       "tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "api_update",
-        "developer_tool",
-        "cli_tool"
+        "product_launch"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T17:06:53.000Z",
-      "summary": "7.6.8 General Cmdlet Updates and Fixes Remove the Update Notification feature from PowerShell ( #28242 ) Build and Packaging Improvements Update to .NET SDK 10.0.402 Merged PR 42142: [release/v7.6.8] Update branch for release SHA256 Hashes of the release artifacts hashes.sha256 8B1E273A18AB7B3AB0D3FB1DC9FDC8F9631FEC092EF48CA4CCFCAF32D6012B24 powershell-7.6.8-1.azl4.aarch64.rpm 20658D1269AFBABE57CBD806AF8D96EFF23106C0FDA5665F8AB608512388731C powershell-7.6.8-1.azl4.x86_64.rpm 7AF32201D27E64C0D52EA68E9D6CF5647C50B7E43E08F83CA849ECEA99164737 powershell-7.6.8-1.cm.aarch64.rpm...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-25T14:10:00.000Z",
+      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+      "category": "industry-media"
     },
     {
-      "title": "v8.0.0-rc.19-dev.10: TML-3693: Each database's packages move into one folder (#30829)",
-      "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.19-dev.10",
-      "source": "GitHub Releases · Prisma",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch AI",
       "tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "developer_tool",
-        "cli_tool",
-        "tool_update"
+        "product_launch"
       ],
-      "importance": 0.7,
-      "date": "2026-10-22T13:59:05.000Z",
-      "summary": "This PR moves each database's packages into one folder per database. After it, everything Postgres needs is here: packages/3-targets/postgres/ 1-target/ @internal/target-postgres 2-adapter/ @internal/adapter-postgres 3-driver/ @internal/driver-postgres 4-codec-testkit/ @internal/postgres-codec-testkit 9-facade/ @internal/postgres Before, the same five packages were spread over four folders: Package Was in Now in target pack packages/3-targets/3-targets/postgres/ packages/3-targets/postgres/1-target/ adapter packages/3-targets/6-adapters/postgres/ packages/3-targets/postgres/2-adapter/...",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-24T19:00:00.000Z",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "category": "industry-media"
     },
     {
-      "title": "Meta launches Muse in Japan, taking its AI agent beyond North America",
-      "url": "https://superpowerdaily.com/posts/meta-launches-muse-in-japan-taking-its-ai-agent-beyond-north-america",
-      "source": "Superpower Daily",
+      "title": "Block’s new voice model sounds eerily human",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "source": "TechCrunch AI",
       "tags": [
+        "announcement",
         "product_launch",
-        "agent_tool"
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "product_launch",
-        "agent_tool"
+        "product_launch"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-23T07:36:13.000Z",
-      "summary": "Gmail and calendar connections are available, while Japanese service partnerships are in development. Meta says users retain control over access and important actions.",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-24T16:00:00.000Z",
+      "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+      "category": "industry-media"
     },
     {
-      "title": "Google Cloud Launches Agent Compute Engine: A MicroVM per AI Agent",
-      "url": "https://www.marktechpost.com/2026/10/22/google-cloud-agent-compute-engine-microvm-ai-agents/",
-      "source": "MarkTechPost",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "source": "TechCrunch AI",
       "tags": [
+        "announcement",
         "product_launch",
-        "agent_tool"
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "product_launch",
-        "agent_tool"
+        "product_launch"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-23T06:05:10.000Z",
-      "summary": "Google Cloud announced Agent Compute Engine, a compute service that gives every AI agent its own hardware-isolated microVM with no credentials inside. It already runs Gemini agents and enters preview in the coming months. The post Google Cloud Launches Agent Compute Engine: A MicroVM per AI Agent appeared first on MarkTechPost .",
-      "category": "ai_research"
+      "importance": 0.35,
+      "date": "2026-10-24T15:00:00.000Z",
+      "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "category": "industry-media"
     },
     {
-      "title": "Donating Agent Skills to the Agentic AI Foundation",
-      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
-      "source": "Simon Willison's Blog",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
       "tags": [
-        "mcp",
-        "developer_tool"
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
       ],
       "matching_tags": [
-        "mcp",
-        "developer_tool"
+        "product_launch"
       ],
-      "importance": 0.7999999999999999,
-      "date": "2026-10-22T18:09:56.000Z",
-      "summary": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Protocol (MCP). I'm pleased to note I called this one last December , when Anthropic first declared skills to be an \"open standard\": I wouldn't be surprised to see this end up in the AAIF , recently the new home of the MCP specification....",
-      "category": "ai_tools"
+      "importance": 0.35,
+      "date": "2026-10-24T14:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "category": "industry-media"
     }
   ]
 }
