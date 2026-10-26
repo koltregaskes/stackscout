@@ -97,16 +97,19 @@ the allow-list will stop publishing the same way.
 
 ### Diagnostics and the routed feed
 
-The build reads `data/news-feed-latest.json` and fails if that feed, or its
-newest item, is more than three days old. That limit stays in place.
+The build reads `data/news-feed-latest.json` and fails if its generated time,
+or its newest article when the list is not empty, is more than three days old.
+A fresh empty article list is valid.
 
 `.github/workflows/refresh-routed-feed.yml` runs every day at 05:15 UTC. It
 checks out `shared/website-tools/pipelines/news` from `koltregaskes/ai-resource-hub`,
 fetches every entry in `config/sources.json`, and applies the Stack Scout filter
-in `site-filters.json`. When that fetch returns items, it commits
-`data/news-feed-latest.json` and the pages `npm run build:site` writes, including
-`data/updates-manifest.json`, `index.html`, and `updates/index.html`. A source
-that cannot be fetched fails the run by name. The job does not invent articles.
+in `site-filters.json`. A successful fetch commits `data/news-feed-latest.json`,
+including a fresh empty article list when nothing matches, and the pages
+`npm run build:site` writes, including `data/updates-manifest.json`, `index.html`,
+and `updates/index.html`. A source that cannot be fetched fails the run by name
+and leaves the file unchanged. After a commit, the same run publishes GitHub Pages.
+The job does not invent articles.
 
 `.github/workflows/routed-feed-freshness.yml` remains the early signal. It runs
 at 06:30 UTC and fails once the committed feed is one day old, before the

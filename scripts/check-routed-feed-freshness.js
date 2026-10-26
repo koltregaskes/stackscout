@@ -13,10 +13,10 @@ const FEED_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
 const WARN_AFTER_DAYS = 1
 const HARD_MAX_DAYS = 3
 const MISSING_SOURCE =
-  'The 05:15 UTC refresh fetches every source in the shared news sources.json and commits this file only when that fetch returns items. A source that cannot be fetched fails that run by name. This check means the committed feed was not replaced. Shared routing lists Stack Scout as a destination (sites/stackscout/data).'
+  'The 05:15 UTC refresh fetches every source in the shared news sources.json and commits this file after a successful fetch, including an empty article list when nothing matches. A source that cannot be fetched fails that run by name and leaves the file unchanged. This check means the committed feed was not replaced. Shared routing lists Stack Scout as a destination (sites/stackscout/data).'
 
 function assessRoutedFeedFreshness(feed, now = new Date()) {
-  if (!feed || typeof feed !== 'object' || !Array.isArray(feed.articles) || feed.articles.length === 0) {
+  if (!feed || typeof feed !== 'object' || !Array.isArray(feed.articles)) {
     throw new Error('Routed feed is missing articles.')
   }
 
@@ -37,7 +37,7 @@ function assessRoutedFeedFreshness(feed, now = new Date()) {
     }
     return time
   })
-  const newestMs = Math.max(...itemTimes)
+  const newestMs = itemTimes.length ? Math.max(...itemTimes) : generatedMs
   const ageDays = Math.max(nowMs - generatedMs, nowMs - newestMs) / 86_400_000
 
   return {

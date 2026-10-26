@@ -6,6 +6,8 @@
  * (config/sources.json and site-filters.json). Articles are the entries
  * those sources return. This script does not invent items. A source that
  * cannot be fetched fails the run by name, and the feed file is left unchanged.
+ * A successful fetch writes the feed even when nothing matches: a fresh
+ * generated timestamp and an empty article list.
  */
 const fs = require('fs')
 const path = require('path')
@@ -123,16 +125,119 @@ function parseRss(xml, source) {
   return capEntries(entries, source.maxItems)
 }
 
-function dateInCard(html, index) {
-  const window = html.slice(index, index + 4000)
-  const stamped = window.match(/\b(?:datetime|dateTime)=["']([^"']+)["']/)
+function tagBoundary(lower, start, tagName) {
+  const next = lower[start + 1 + tagName.length]
+  return next === undefined || /[\s>/]/.test(next)
+}
+
+function elementEnd(lower, start, tagName) {
+  const open = `<${tagName}`
+  const close = `</${tagName}>`
+  let depth = 0
+  let cursor = start
+  while (cursor < lower.length) {
+    const nextOpen = lower.indexOf(open, cursor)
+    const nextClose = lower.indexOf(close, cursor)
+    if (nextClose === -1) return -1
+    if (nextOpen !== -1 && nextOpen < nextClose && tagBoundary(lower, nextOpen, tagName)) {
+      depth += 1
+      cursor = nextOpen + open.length
+      continue
+    }
+    depth -= 1
+    if (depth === 0) return nextClose
+    cursor = nextClose + close.length
+  }
+  return -1
+}
+
+function enclosingSlice(html, index, tagName) {
+  const lower = html.toLowerCase()
+  const open = `<${tagName}`
+  let cursor = index
+  while (cursor > 0) {
+    const start = lower.lastIndexOf(open, cursor - 1)
+    if (start === -1) return ''
+    if (!tagBoundary(lower, start, tagName)) {
+      cursor = start
+      continue
+    }
+    const end = elementEnd(lower, start, tagName)
+    if (end === -1) return ''
+    if (end < index) {
+      cursor = start
+      continue
+    }
+    return html.slice(start, end)
+  }
+  return ''
+}
+
+function isCardClass(value) {
+  return String(value || '').toLowerCase().split(/\s+/).some((token) => (
+    token === 'card' || token === 'post' || token === 'story' || token === 'entry'
+    || token.endsWith('-card') || token.endsWith('-post') || token.endsWith('-story') || token.endsWith('-entry')
+  ))
+}
+
+function enclosingClassCard(html, index) {
+  const lower = html.toLowerCase()
+  const pattern = /<([a-z0-9]+)\b[^>]*\bclass\s*=\s*["']([^"']*)["'][^>]*>/gi
+  let best = ''
+  for (const match of html.matchAll(pattern)) {
+    const start = match.index ?? -1
+    if (start === -1 || start >= index || !isCardClass(match[2])) continue
+    const end = elementEnd(lower, start, match[1].toLowerCase())
+    if (end === -1 || end < index) continue
+    const slice = html.slice(start, end)
+    if (!best || slice.length < best.length) best = slice
+  }
+  return best
+}
+
+function dateFromScope(scope) {
+  const stamped = scope.match(/\b(?:datetime|dateTime)=["']([^"']+)["']/)
   if (stamped) {
     const iso = parseTimestamp(stamped[1])
     if (iso) return iso
   }
-  const human = window.match(/<time\b[^>]*>\s*([A-Za-z]{3,9}\s+\d{1,2},\s+\d{4})\s*<\/time>/)
+  const human = scope.match(/<time\b[^>]*>\s*([A-Za-z]{3,9}\s+\d{1,2},\s+\d{4})\s*<\/time>/)
   return human ? humanDate(human[1]) : ''
 }
+
+function nextTag(lower, tagName, from) {
+  const open = `<${tagName}`
+  let cursor = from
+  while (cursor < lower.length) {
+    const start = lower.indexOf(open, cursor)
+    if (start === -1) return -1
+    if (tagBoundary(lower, start, tagName)) return start
+    cursor = start + open.length
+  }
+  return -1
+}
+
+function dateInCard(html, index) {
+  const regions = ['article', 'li'].map((tag) => enclosingSlice(html, index, tag)).filter(Boolean)
+  const card = enclosingClassCard(html, index)
+  if (card) regions.push(card)
+  if (regions.length > 0) {
+    regions.sort((left, right) => left.length - right.length)
+    for (const region of regions) {
+      const date = dateFromScope(region)
+      if (date) return date
+    }
+    return ''
+  }
+  const lower = html.toLowerCase()
+  const bounds = [index + 4000]
+  const nextArticle = nextTag(lower, 'article', index + 1)
+  const nextItem = nextTag(lower, 'li', index + 1)
+  if (nextArticle !== -1) bounds.push(nextArticle)
+  if (nextItem !== -1) bounds.push(nextItem)
+  return dateFromScope(html.slice(index, Math.min(...bounds)))
+}
+
 
 function dateNearSlug(html, href) {
   let slug = ''
@@ -291,12 +396,14 @@ async function fetchText(url, fetchImpl, retries) {
         const text = await response.text()
         if (response.ok) return text
         lastError = `HTTP ${response.status}`
-        const status = response.status
-        if (!RETRY_STATUSES.has(status) && status !== 400) throw new Error(lastError)
+        if (!RETRY_STATUSES.has(response.status) && response.status !== 400) {
+          const failure = new Error(lastError)
+          failure.nonRetryable = true
+          throw failure
+        }
       } catch (error) {
-        lastError = error.message || lastError
-        const status = Number(String(lastError).replace('HTTP ', ''))
-        if (!RETRY_STATUSES.has(status) && status !== 400) throw new Error(lastError)
+        if (error?.nonRetryable) throw error
+        lastError = error?.message || lastError
       }
     }
     if (attempt < attempts) {
@@ -363,9 +470,6 @@ async function refreshRoutedFeed({
     return { wrote: false, failures, feed: null }
   }
   const articles = applySiteFilter(tagged, siteFilter, now)
-  if (articles.length === 0) {
-    return { wrote: false, failures: [], feed: null }
-  }
   const feed = buildFeedDocument(siteFilter, articles, now)
   if (write) {
     fs.mkdirSync(path.dirname(outputPath), { recursive: true })
@@ -392,13 +496,9 @@ async function main() {
     process.exitCode = 1
     return
   }
-  if (!result.feed) {
-    console.error('::error title=Routed feed empty::Every source was fetched, and no items matched the site filter. news-feed-latest.json was left unchanged.')
-    process.exitCode = 1
-    return
-  }
+  const newest = result.feed.articles[0]?.date
   console.log(
-    `Wrote ${result.feed.article_count} articles to ${path.relative(process.cwd(), OUTPUT_PATH)}. Newest: ${result.feed.articles[0].date}.`,
+    `Wrote ${result.feed.article_count} articles to ${path.relative(process.cwd(), OUTPUT_PATH)}.${newest ? ` Newest: ${newest}.` : ''}`,
   )
 }
 
