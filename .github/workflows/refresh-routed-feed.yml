@@ -1,0 +1,63 @@
+name: Refresh routed feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 05:15 UTC, before the 05:45 canary build and the 06:30 freshness warning.
+    # Every source in the shared news config is fetched. A source that cannot
+    # be fetched fails this run by name. The feed is committed only when the
+    # fetch returns items that match the Stack Scout filter.
+    - cron: '15 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-routed-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Checkout news routing config
+        uses: actions/checkout@v6
+        with:
+          repository: koltregaskes/ai-resource-hub
+          ref: main
+          path: .news-pipeline
+          persist-credentials: false
+          sparse-checkout: shared/website-tools/pipelines/news
+          sparse-checkout-cone-mode: true
+
+      - name: Fetch sources and apply the Stack Scout filter
+        run: node scripts/refresh-routed-feed.js --pipeline .news-pipeline/shared/website-tools/pipelines/news
+
+      - name: Rebuild public pages from the fetched feed
+        run: npm run build:site
+
+      - name: Commit the feed and the pages that build produces
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/news-feed-latest.json data/updates-manifest.json index.html updates/index.html sitemap.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method
+          if git diff --cached --quiet; then
+            echo "No routed feed changes to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: refresh routed news feed"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          npm run build:site
+          node scripts/verify-generated-output.js
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push the refreshed feed
+        if: steps.commit.outputs.committed == 'true'
+        run: git push origin "HEAD:${GITHUB_REF_NAME}"

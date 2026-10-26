@@ -100,14 +100,20 @@ the allow-list will stop publishing the same way.
 The build reads `data/news-feed-latest.json` and fails if that feed, or its
 newest item, is more than three days old. That limit stays in place.
 
-`.github/workflows/routed-feed-freshness.yml` runs every day at 06:30 UTC and
-fails once that same feed is one day old. The failure names the missing source
-before the three-day build gate. No public feed URL is configured, so the job
-does not download or invent articles. `scripts/refresh-stackscout.ps1` still
-only fetches a feed when `STACKSCOUT_ROUTED_FEED_URL` is set. The shared news
-routing file lists Stack Scout as a destination at `sites/stackscout/data` and
-assigns it no sources. The gatherer that writes `data/news-feed-latest.json`
-remains the Windows publisher, which is not in this repo.
+`.github/workflows/refresh-routed-feed.yml` runs every day at 05:15 UTC. It
+checks out `shared/website-tools/pipelines/news` from `koltregaskes/ai-resource-hub`,
+fetches every entry in `config/sources.json`, and applies the Stack Scout filter
+in `site-filters.json`. When that fetch returns items, it commits
+`data/news-feed-latest.json` and the pages `npm run build:site` writes, including
+`data/updates-manifest.json`, `index.html`, and `updates/index.html`. A source
+that cannot be fetched fails the run by name. The job does not invent articles.
+
+`.github/workflows/routed-feed-freshness.yml` remains the early signal. It runs
+at 06:30 UTC and fails once the committed feed is one day old, before the
+three-day build gate. `scripts/refresh-stackscout.ps1` still only downloads a
+feed when `STACKSCOUT_ROUTED_FEED_URL` is set, and that URL is not published.
+The shared routing file lists Stack Scout as a destination at
+`sites/stackscout/data`.
 
 `STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS` is an emergency switch only. Set it to a
 positive number of days for one run if you must publish while repairing the

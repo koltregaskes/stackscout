@@ -3,9 +3,8 @@
  * Fails once the committed routed feed is a day old.
  *
  * The build still refuses the feed at three days. This check runs on a
- * schedule so a missed Windows refresh is visible before that gate.
- * It does not invent articles and it does not download a feed: no public
- * URL is published for STACKSCOUT_ROUTED_FEED_URL.
+ * schedule so a missed refresh is visible before that gate. The refresh
+ * workflow is what fetches sources and commits the feed.
  */
 const fs = require('fs')
 const path = require('path')
@@ -14,7 +13,7 @@ const FEED_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
 const WARN_AFTER_DAYS = 1
 const HARD_MAX_DAYS = 3
 const MISSING_SOURCE =
-  'No public feed URL exists. scripts/refresh-stackscout.ps1 downloads data/news-feed-latest.json only when STACKSCOUT_ROUTED_FEED_URL is set, and that URL is not published. The Windows gatherer that writes this file is not in this repo. Shared routing lists Stack Scout as a destination (sites/stackscout/data) with no sources assigned.'
+  'The 05:15 UTC refresh fetches every source in the shared news sources.json and commits this file only when that fetch returns items. A source that cannot be fetched fails that run by name. This check means the committed feed was not replaced. Shared routing lists Stack Scout as a destination (sites/stackscout/data).'
 
 function assessRoutedFeedFreshness(feed, now = new Date()) {
   if (!feed || typeof feed !== 'object' || !Array.isArray(feed.articles) || feed.articles.length === 0) {
