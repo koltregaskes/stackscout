@@ -78,6 +78,76 @@ test('html listings use dates that are on the page', () => {
   assert.equal(byUrl['https://www.digg.com/ai/bpr7gowe'], '2026-10-25T20:01:22.038Z')
 })
 
+test('html summaries stop at the enclosing card', () => {
+  const html = `<!DOCTYPE html><html><body>
+    <article>
+      <a href="https://example.com/first-story">First story headline</a>
+      <time datetime="2026-10-25T12:00:00Z">Oct 25, 2026</time>
+    </article>
+    <article>
+      <a href="https://example.com/second-story">Second story headline</a>
+      <time datetime="2026-10-25T11:00:00Z">Oct 25, 2026</time>
+      <p>Second card paragraph.</p>
+    </article>
+    <div class="post-card">
+      <a href="https://example.com/own-card">Own card headline</a>
+      <time datetime="2026-10-25T10:00:00Z">Oct 25, 2026</time>
+      <div class="card-body"><p>Own card paragraph.</p></div>
+    </div>
+    <div class="post-card">
+      <a href="https://example.com/next-card">Next card headline</a>
+      <time datetime="2026-10-25T09:00:00Z">Oct 25, 2026</time>
+      <p>Next card paragraph.</p>
+    </div>
+    <a href="https://example.com/bare-story">Bare story headline</a>
+    <time datetime="2026-10-25T08:00:00Z">Oct 25, 2026</time>
+    <article>
+      <a href="https://example.com/wrapped-story">Wrapped story headline</a>
+      <time datetime="2026-10-25T07:00:00Z">Oct 25, 2026</time>
+      <p>Wrapped paragraph.</p>
+    </article>
+    <article>
+      <a href="https://example.com/unclosed-story">Unclosed story headline</a>
+      <time datetime="2026-10-25T06:00:00Z">Oct 25, 2026</time>
+    <article>
+      <a href="https://example.com/after-unclosed">After unclosed headline</a>
+      <time datetime="2026-10-25T05:00:00Z">Oct 25, 2026</time>
+      <p>After unclosed paragraph.</p>
+    </article>
+    <a href="https://example.com/loose-story">Loose story headline</a>
+    <time datetime="2026-10-25T04:00:00Z">Oct 25, 2026</time>
+    <p class="card-excerpt">Loose paragraph.</p>
+    <ul>
+      <li>
+        <a href="https://example.com/first-item">First item headline</a>
+        <time datetime="2026-10-25T03:00:00Z">Oct 25, 2026</time>
+      </li>
+      <li>
+        <a href="https://example.com/second-item">Second item headline</a>
+        <time datetime="2026-10-25T02:00:00Z">Oct 25, 2026</time>
+        <p>Second item paragraph.</p>
+      </li>
+    </ul>
+    </body></html>`
+  const entries = parseHtml(html, {
+    url: 'https://example.com/news',
+    articleLinkPattern: '^https://example\\.com/',
+    maxItems: 20,
+  })
+  const byUrl = Object.fromEntries(entries.map((entry) => [entry.url, entry.summary]))
+  assert.equal(byUrl['https://example.com/first-story'], '')
+  assert.equal(byUrl['https://example.com/second-story'], 'Second card paragraph.')
+  assert.equal(byUrl['https://example.com/own-card'], 'Own card paragraph.')
+  assert.equal(byUrl['https://example.com/next-card'], 'Next card paragraph.')
+  assert.equal(byUrl['https://example.com/bare-story'], '')
+  assert.equal(byUrl['https://example.com/wrapped-story'], 'Wrapped paragraph.')
+  assert.equal(byUrl['https://example.com/unclosed-story'], '')
+  assert.equal(byUrl['https://example.com/after-unclosed'], 'After unclosed paragraph.')
+  assert.equal(byUrl['https://example.com/loose-story'], 'Loose paragraph.')
+  assert.equal(byUrl['https://example.com/first-item'], '')
+  assert.equal(byUrl['https://example.com/second-item'], 'Second item paragraph.')
+})
+
 test('a source that cannot be fetched fails by name and does not write', async () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'routed-feed-'))
   const outputPath = path.join(dir, 'news-feed-latest.json')

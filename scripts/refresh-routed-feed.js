@@ -259,6 +259,50 @@ function dateNearSlug(html, href) {
   return ''
 }
 
+function sliceEnd(html, index, slice) {
+  if (!slice) return -1
+  const start = html.lastIndexOf(slice, index)
+  if (start === -1 || start > index) return -1
+  const end = start + slice.length
+  return end > index ? end : -1
+}
+
+function nextClassCardStart(html, from, until) {
+  const pattern = /<([a-z0-9]+)\b[^>]*\bclass\s*=\s*["']([^"']*)["'][^>]*>/gi
+  for (const match of html.matchAll(pattern)) {
+    const start = match.index ?? -1
+    if (start < from) continue
+    if (start >= until) return -1
+    if (isCardClass(match[2])) return start
+  }
+  return -1
+}
+
+function summaryNearAnchor(html, index) {
+  const limit = Math.min(html.length, index + 2500)
+  const ends = ['article', 'li']
+    .map((tagName) => sliceEnd(html, index, enclosingSlice(html, index, tagName)))
+    .filter((end) => end > index)
+  const cardEnd = sliceEnd(html, index, enclosingClassCard(html, index))
+  if (cardEnd > index) ends.push(cardEnd)
+  let end = limit
+  if (ends.length > 0) {
+    end = Math.min(limit, ...ends)
+  } else {
+    const lower = html.toLowerCase()
+    const bounds = [limit]
+    for (const tagName of ['article', 'li']) {
+      const next = nextTag(lower, tagName, index + 1)
+      if (next !== -1 && next < limit) bounds.push(next)
+    }
+    const nextCard = nextClassCardStart(html, index + 1, limit)
+    if (nextCard !== -1) bounds.push(nextCard)
+    end = Math.min(...bounds)
+  }
+  const summaryMatch = html.slice(index, end).match(/<p\b[^>]*>([\s\S]*?)<\/p>/i)
+  return cleanText(summaryMatch?.[1] || '')
+}
+
 function parseHtml(html, source) {
   if (!/<html\b|<a\b/i.test(html)) {
     throw new Error('response was not an HTML listing')
@@ -283,12 +327,11 @@ function parseHtml(html, source) {
     const current = found.get(href)
     if (current && title.length <= current.title.length) continue
     const date = dateInCard(html, anchor.index) || dateNearSlug(html, href)
-    const summaryMatch = html.slice(anchor.index, anchor.index + 2500).match(/<p\b[^>]*>([\s\S]*?)<\/p>/i)
     found.set(href, {
       title: title.length >= (current?.title.length || 0) ? title : current.title,
       url: href,
       date: date || current?.date || '',
-      summary: cleanText(summaryMatch?.[1] || ''),
+      summary: summaryNearAnchor(html, anchor.index),
     })
   }
   const entries = [...found.values()].filter((entry) => entry.title && entry.title.length >= 8)
