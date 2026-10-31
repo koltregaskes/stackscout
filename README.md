@@ -104,9 +104,19 @@ newest item, is more than three days old. That limit stays in place.
 positive number of days for one run if you must publish while repairing the
 feed writer. Unset it afterwards. It does not replace a current feed.
 
-If `STACKSCOUT_ROUTED_FEED_URL` is set, the refresh downloads that JSON into
-`data/news-feed-latest.json` before the build. The download is checked for the
-expected site name and article count, and a failed download stops the run.
+Before the build, the refresh imports the routed feed into
+`data/news-feed-latest.json` from the first source that applies:
+
+1. `STACKSCOUT_ROUTED_FEED_URL`, downloaded over HTTP(S).
+2. `STACKSCOUT_ROUTED_FEED_FILE`, a local JSON file.
+3. `..\_pipeline-output\stackscout\data\news-feed-latest.json` next to this
+   checkout, when it exists. Since the 25 Oct 2026 move to `F:\Repos`, the news
+   pipeline writes there instead of into this checkout's `data/` folder.
+
+The feed is checked for the expected site name and article count, and a feed
+older than the current one is refused. A failed import stops the run. For a
+local file, dated `news-feed-YYYY-MM-DD.json` and `digest-YYYY-MM-DD.md` files
+from the same folder are copied into `data/` when they are missing there.
 
 Every refresh writes `stackscout-refresh-status.json` and
 `stackscout-refresh.log`. Set `STACKSCOUT_PRIVATE_STATUS_DIR` to keep them

@@ -331,9 +331,17 @@ try {
     }
   }
 
-  if ($env:STACKSCOUT_ROUTED_FEED_URL) {
-    Invoke-RefreshStep -Label 'Fetch routed feed' -ScriptBlock {
-      Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/fetch-routed-feed.js') -FailureMessage 'Routed feed fetch failed.'
+  # Since the 25 Oct 2026 move to F:\Repos the news pipeline writes the routed
+  # feed to the sibling _pipeline-output folder instead of into this checkout's
+  # data/ folder. Import it from there unless a URL or file is already set.
+  $defaultRoutedFeedFile = Join-Path (Split-Path -Parent $repoRoot) '_pipeline-output\stackscout\data\news-feed-latest.json'
+  if (-not $env:STACKSCOUT_ROUTED_FEED_URL -and -not $env:STACKSCOUT_ROUTED_FEED_FILE -and (Test-Path -LiteralPath $defaultRoutedFeedFile)) {
+    $env:STACKSCOUT_ROUTED_FEED_FILE = $defaultRoutedFeedFile
+  }
+
+  if ($env:STACKSCOUT_ROUTED_FEED_URL -or $env:STACKSCOUT_ROUTED_FEED_FILE) {
+    Invoke-RefreshStep -Label 'Import routed feed' -ScriptBlock {
+      Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/fetch-routed-feed.js') -FailureMessage 'Routed feed import failed.'
     }
   }
 
