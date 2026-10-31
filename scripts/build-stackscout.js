@@ -409,7 +409,7 @@ function renderChips(values, tone, prefix = '') {
     .join('')
 }
 
-function renderToolCard(tool, outputPath, compact = false) {
+function renderToolCard(tool, outputPath, compact = false, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--tool" data-card
       data-scope="${escapeHtml(tool.scope)}"
@@ -429,7 +429,7 @@ function renderToolCard(tool, outputPath, compact = false) {
       </div>
       <div class="scout-card__body">
         <p class="label">${escapeHtml(tool.toolType)} / ${escapeHtml(categoryLabel(tool.category))}</p>
-        <h3>${escapeHtml(tool.name)}</h3>
+        <h${headingLevel}>${escapeHtml(tool.name)}</h${headingLevel}>
         <p class="summary">${escapeHtml(tool.summary)}</p>
         ${compact ? '' : `<p class="card-note">${escapeHtml(tool.latestTrackedChange)}</p>`}
         <div class="chip-row">${renderChips(tool.bestFor.slice(0, compact ? 2 : 3), 'ink')}</div>
@@ -447,7 +447,7 @@ function renderToolCard(tool, outputPath, compact = false) {
   `
 }
 
-function renderUpdateCard(update, tool, outputPath, compact = false) {
+function renderUpdateCard(update, tool, outputPath, compact = false, headingLevel = 3) {
   const label = tool
     ? `${tool.toolType} / ${tool.name}`
     : `Routed signal / ${update.projectName || update.sourceLabel}`
@@ -457,7 +457,7 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
       <div class="activity-card__head">
         <div>
           <p class="label">${escapeHtml(label)}</p>
-          <h3>${escapeHtml(update.title)}</h3>
+          <h${headingLevel}>${escapeHtml(update.title)}</h${headingLevel}>
         </div>
         <div class="chip-row">
           <span class="pill pill--ink">${escapeHtml(titleCaseFromSlug(update.kind || 'update'))}</span>
@@ -481,7 +481,7 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
   `.replace(/[ \t]+$/gm, '')
 }
 
-function renderCollectionCard(collection, toolIndex, outputPath) {
+function renderCollectionCard(collection, toolIndex, outputPath, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--collection" id="${escapeHtml(collection.slug)}">
       <div class="scout-card__topline">
@@ -490,7 +490,7 @@ function renderCollectionCard(collection, toolIndex, outputPath) {
       </div>
       <div class="scout-card__body">
         <p class="label">Use-case grouping</p>
-        <h3>${escapeHtml(collection.title)}</h3>
+        <h${headingLevel}>${escapeHtml(collection.title)}</h${headingLevel}>
         <p class="summary">${escapeHtml(collection.description)}</p>
         <div class="token-list">
           ${collection.items
@@ -505,7 +505,7 @@ function renderCollectionCard(collection, toolIndex, outputPath) {
   `
 }
 
-function renderCategoryCard(category, tools, outputPath) {
+function renderCategoryCard(category, tools, outputPath, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--category">
       <div class="scout-card__topline">
@@ -517,7 +517,7 @@ function renderCategoryCard(category, tools, outputPath) {
       </div>
       <div class="scout-card__body">
         <p class="label">Public lane</p>
-        <h3>${escapeHtml(category.title)}</h3>
+        <h${headingLevel}>${escapeHtml(category.title)}</h${headingLevel}>
         <p class="summary">${escapeHtml(category.description)}</p>
       </div>
       <div class="scout-card__actions">
@@ -527,13 +527,13 @@ function renderCategoryCard(category, tools, outputPath) {
   `
 }
 
-function renderRadarCard(item) {
+function renderRadarCard(item, headingLevel = 3) {
   return `
     <article class="activity-card">
       <div class="activity-card__head">
         <div>
           <p class="label">Radar</p>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h${headingLevel}>${escapeHtml(item.title)}</h${headingLevel}>
         </div>
         <span class="pill pill--amber">${escapeHtml(item.status)}</span>
       </div>
@@ -554,11 +554,56 @@ function renderNav(currentKey, outputPath) {
   }).join('')
 }
 
+const SOCIAL_IMAGE = {
+  path: 'images/social/stackscout-og.png',
+  width: 1200,
+  height: 630,
+  alt: 'Stack Scout: a field log for the AI stack.',
+}
+
+function publicPageUrl(outputPath) {
+  return PUBLIC_BASE_URL + outputPath.replace(/(^|\/)index\.html$/, '$1')
+}
+
+function renderSocialMeta({ title, description, outputPath, currentKey }) {
+  const isNotFound = currentKey === 'not-found'
+  const pageUrl = publicPageUrl(outputPath)
+  const imageUrl = PUBLIC_BASE_URL + SOCIAL_IMAGE.path
+  const website = { '@type': 'WebSite', '@id': `${PUBLIC_BASE_URL}#website`, name: 'Stack Scout', url: PUBLIC_BASE_URL }
+  const graph = currentKey === 'home'
+    ? [{ ...website, description }]
+    : [website, { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, name: title, description, url: pageUrl, isPartOf: { '@id': website['@id'] } }]
+  const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replaceAll('<', '\\u003c')
+  const lines = isNotFound
+    ? ['<meta name="robots" content="noindex" />']
+    : [
+        `<link rel="canonical" href="${escapeHtml(pageUrl)}" />`,
+        `<meta property="og:url" content="${escapeHtml(pageUrl)}" />`,
+      ]
+  lines.push(
+    '<meta property="og:site_name" content="Stack Scout" />',
+    `<meta property="og:image" content="${escapeHtml(imageUrl)}" />`,
+    `<meta property="og:image:width" content="${SOCIAL_IMAGE.width}" />`,
+    `<meta property="og:image:height" content="${SOCIAL_IMAGE.height}" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(SOCIAL_IMAGE.alt)}" />`,
+    '<meta name="twitter:card" content="summary_large_image" />',
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+    `<meta name="twitter:image" content="${escapeHtml(imageUrl)}" />`,
+    `<meta name="twitter:image:alt" content="${escapeHtml(SOCIAL_IMAGE.alt)}" />`,
+  )
+  if (!isNotFound) {
+    lines.push(`<script type="application/ld+json">${jsonLd}</script>`)
+  }
+  return lines.join('\n    ')
+}
+
 function renderDocument({ title, description, currentKey, outputPath, content }) {
   const homeHref = outputHref(outputPath, 'index.html')
   const siteRoot = homeHref === './' ? './' : homeHref
   const sourceHref = outputHref(outputPath, 'method/index.html')
   const rootClass = 'mood-graphite'
+  const pageTitle = title.replaceAll('StackScout', 'Stack Scout')
 
   return `<!DOCTYPE html>
 <html lang="en" class="${rootClass}">
@@ -571,6 +616,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <meta property="og:title" content="${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="website" />
+    ${renderSocialMeta({ title: pageTitle, description, outputPath, currentKey })}
     <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="apple-touch-icon" href="${outputAssetHref(outputPath, 'icon.svg')}" />
@@ -581,6 +627,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <link rel="stylesheet" href="${outputAssetHref(outputPath, 'styles.css')}" />
   </head>
   <body data-page="${escapeHtml(currentKey)}" data-site-root="${escapeHtml(siteRoot)}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="ss-grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="site-brand" href="${homeHref}">
@@ -598,7 +645,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
         </div>
       </div>
     </header>
-    <main class="page-shell">${content}</main>
+    <main class="page-shell" id="main-content" tabindex="-1">${content}</main>
     <footer class="site-footer">
       <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
         <div class="site-footer__marquee-track">
@@ -1133,7 +1180,7 @@ function renderCategoriesIndex(categories, tools, outputPath) {
       </section>
       <section class="section-block" data-reveal>
         <div class="card-grid card-grid--categories">
-          ${categories.map((category) => renderCategoryCard(category, tools.filter((tool) => tool.category === category.slug), outputPath)).join('')}
+          ${categories.map((category) => renderCategoryCard(category, tools.filter((tool) => tool.category === category.slug), outputPath, 2)).join('')}
         </div>
       </section>
     `,
@@ -1162,7 +1209,7 @@ function renderCategoryDetail(category, tools, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="card-grid">${tools.map((tool) => renderToolCard(tool, outputPath)).join('')}</div>
+        <div class="card-grid">${tools.map((tool) => renderToolCard(tool, outputPath, false, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1183,7 +1230,7 @@ function renderUpdates(updates, toolIndex, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="activity-grid">${updates.map((update) => renderUpdateCard(update, toolIndex.get(update.toolSlug), outputPath)).join('')}</div>
+        <div class="activity-grid">${updates.map((update) => renderUpdateCard(update, toolIndex.get(update.toolSlug), outputPath, false, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1204,7 +1251,7 @@ function renderRadar(site, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="activity-grid">${site.radar.map((item) => renderRadarCard(item)).join('')}</div>
+        <div class="activity-grid">${site.radar.map((item) => renderRadarCard(item, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1225,7 +1272,7 @@ function renderCollections(collections, toolIndex, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="card-grid card-grid--collections">${collections.map((collection) => renderCollectionCard(collection, toolIndex, outputPath)).join('')}</div>
+        <div class="card-grid card-grid--collections">${collections.map((collection) => renderCollectionCard(collection, toolIndex, outputPath, 2)).join('')}</div>
       </section>
     `,
   })
