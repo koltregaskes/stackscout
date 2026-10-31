@@ -918,7 +918,7 @@ h3 {
 /* Stack Scout zine refined system */
 :root {
   --ink: #ede5d3;
-  --muted: #7d8086;
+  --muted: #93969c;
   --rule: rgba(237, 229, 211, 0.18);
   --rule-strong: rgba(237, 229, 211, 0.45);
   --zine-max: min(1320px, calc(100vw - 40px));
@@ -1692,4 +1692,34 @@ select:focus {
   .site-footer__meta {
     flex-direction: column;
   }
+}
+
+/* Accessibility: skip link and a visible keyboard focus ring on every theme */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 100;
+  padding: 10px 16px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Several component rules set outline: none on :focus-visible to share the
+   hover style; keyboard users need a ring that survives those rules. */
+:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px;
+}
+
+main:focus,
+main:focus-visible {
+  outline: none !important;
 }

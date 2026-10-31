@@ -9,6 +9,17 @@
     <meta property="og:title" content="Stack Scout // Page not found" />
     <meta property="og:description" content="The requested Stack Scout page could not be found." />
     <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex" />
+    <meta property="og:site_name" content="Stack Scout" />
+    <meta property="og:image" content="https://koltregaskes.github.io/stackscout/images/social/stackscout-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Stack Scout: a field log for the AI stack." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stack Scout // Page not found" />
+    <meta name="twitter:description" content="The requested Stack Scout page could not be found." />
+    <meta name="twitter:image" content="https://koltregaskes.github.io/stackscout/images/social/stackscout-og.png" />
+    <meta name="twitter:image:alt" content="Stack Scout: a field log for the AI stack." />
     <meta name="theme-color" content="#14171c" />
     <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <link rel="apple-touch-icon" href="./icon.svg" />
@@ -19,6 +30,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-page="not-found" data-site-root="./">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="ss-grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="site-brand" href="./">
@@ -36,7 +48,7 @@
         </div>
       </div>
     </header>
-    <main class="page-shell">
+    <main class="page-shell" id="main-content" tabindex="-1">
       <section class="hero hero--inner">
         <div class="hero__copy" data-reveal>
           <p class="eyebrow">404</p>
