@@ -1712,11 +1712,14 @@ select:focus {
   top: 12px;
 }
 
-main:focus {
-  outline: none;
+/* Several component rules set outline: none on :focus-visible to share the
+   hover style; keyboard users need a ring that survives those rules. */
+:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px;
 }
 
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+main:focus,
+main:focus-visible {
+  outline: none !important;
 }
