@@ -6,12 +6,24 @@ param(
   # refresh only writes files locally — digests were piling up untracked and
   # the deployed site never saw them. Off by default; enable by adding
   # -Publish to the scheduled task action once approved.
-  [switch]$Publish
+  [switch]$Publish,
+  # Folder the shared news router writes Stack Scout's feed into. Since the
+  # 25 Oct 2026 repo move this is outside the checkout, so the refresh must
+  # import it before building or it rebuilds from a stale data/ feed.
+  [string]$RoutedFeedDir
 )
 
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+
+if (-not $RoutedFeedDir) {
+  $RoutedFeedDir = if ($env:STACKSCOUT_ROUTED_FEED_DIR) {
+    $env:STACKSCOUT_ROUTED_FEED_DIR
+  } else {
+    Join-Path (Split-Path -Parent $repoRoot) '_pipeline-output\stackscout\data'
+  }
+}
 $privateDataDirInput = if ($env:STACKSCOUT_PRIVATE_STATUS_DIR) {
   $env:STACKSCOUT_PRIVATE_STATUS_DIR
 } elseif ($env:STACKSCOUT_PRIVATE_EXPORT_DIR) {
@@ -334,6 +346,13 @@ try {
   if ($env:STACKSCOUT_ROUTED_FEED_URL) {
     Invoke-RefreshStep -Label 'Fetch routed feed' -ScriptBlock {
       Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/fetch-routed-feed.js') -FailureMessage 'Routed feed fetch failed.'
+    }
+  } else {
+    Invoke-RefreshStep -Label 'Import routed feed' -ScriptBlock {
+      if (-not (Test-Path -LiteralPath $RoutedFeedDir)) {
+        throw "Routed feed folder not found: $RoutedFeedDir. Set -RoutedFeedDir or STACKSCOUT_ROUTED_FEED_DIR."
+      }
+      Invoke-LoggedNative -FilePath 'node' -ArgumentList @('scripts/import-routed-feed.js', "`"$RoutedFeedDir`"") -FailureMessage 'Routed feed import failed.'
     }
   }
 

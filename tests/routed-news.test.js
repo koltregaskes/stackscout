@@ -183,3 +183,56 @@ test('generated-output gate reports untracked public routes', () => {
     '?? tools/new-tool/index.html',
   ])
 })
+
+const fs = require('node:fs')
+const os = require('node:os')
+const path = require('node:path')
+const { importRoutedFeed } = require('../scripts/import-routed-feed')
+
+function makeFeedDirs(sourceFeed, targetFeed) {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'stackscout-import-'))
+  const sourceDir = path.join(root, 'source')
+  const targetDir = path.join(root, 'target')
+  fs.mkdirSync(sourceDir)
+  fs.mkdirSync(targetDir)
+  fs.writeFileSync(path.join(sourceDir, 'news-feed-latest.json'), JSON.stringify(sourceFeed))
+  fs.writeFileSync(path.join(sourceDir, 'news-feed-2026-07-25.json'), JSON.stringify(sourceFeed))
+  fs.writeFileSync(path.join(sourceDir, 'digest-2026-07-25.md'), '# digest\n')
+  if (targetFeed) {
+    fs.writeFileSync(path.join(targetDir, 'news-feed-latest.json'), JSON.stringify(targetFeed))
+  }
+  return { sourceDir, targetDir }
+}
+
+test('routed feed import copies a newer router feed into data/', () => {
+  const staleFeed = { ...routedFeed, generated: '2026-07-01T00:00:00.000Z' }
+  const { sourceDir, targetDir } = makeFeedDirs(routedFeed, staleFeed)
+
+  const result = importRoutedFeed({ sourceDir, targetDir, now })
+
+  assert.equal(result.imported, true)
+  assert.deepEqual(result.files, ['news-feed-latest.json', 'news-feed-2026-07-25.json', 'digest-2026-07-25.md'])
+  const written = JSON.parse(fs.readFileSync(path.join(targetDir, 'news-feed-latest.json'), 'utf8'))
+  assert.equal(written.generated, routedFeed.generated)
+})
+
+test('routed feed import never replaces a newer feed with an older one', () => {
+  const newerFeed = { ...routedFeed, generated: '2026-07-26T00:00:00.000Z' }
+  const { sourceDir, targetDir } = makeFeedDirs(routedFeed, newerFeed)
+
+  const result = importRoutedFeed({ sourceDir, targetDir, now })
+
+  assert.equal(result.imported, false)
+  const kept = JSON.parse(fs.readFileSync(path.join(targetDir, 'news-feed-latest.json'), 'utf8'))
+  assert.equal(kept.generated, newerFeed.generated)
+})
+
+test('routed feed import refuses a stale router feed', () => {
+  const { sourceDir, targetDir } = makeFeedDirs(routedFeed, null)
+
+  assert.throws(
+    () => importRoutedFeed({ sourceDir, targetDir, now: new Date('2026-08-10T00:00:00.000Z') }),
+    /days old/,
+  )
+  assert.equal(fs.existsSync(path.join(targetDir, 'news-feed-latest.json')), false)
+})
