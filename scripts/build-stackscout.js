@@ -558,10 +558,9 @@ function renderDocument({ title, description, currentKey, outputPath, content })
   const homeHref = outputHref(outputPath, 'index.html')
   const siteRoot = homeHref === './' ? './' : homeHref
   const sourceHref = outputHref(outputPath, 'method/index.html')
-  const rootClass = 'mood-graphite'
 
   return `<!DOCTYPE html>
-<html lang="en" class="${rootClass}">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -571,17 +570,19 @@ function renderDocument({ title, description, currentKey, outputPath, content })
     <meta property="og:title" content="${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#14171c" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#070d09" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f2f3ea" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="apple-touch-icon" href="${outputAssetHref(outputPath, 'icon.svg')}" />
     <link rel="manifest" href="${outputAssetHref(outputPath, 'manifest.json')}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Public+Sans:ital,wght@0,400..600;1,400&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="${outputAssetHref(outputPath, 'styles.css')}" />
   </head>
   <body data-page="${escapeHtml(currentKey)}" data-site-root="${escapeHtml(siteRoot)}">
-    <div class="ss-grain" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="site-brand" href="${homeHref}">
         <span class="site-brand__mark" aria-hidden="true"></span>
@@ -589,18 +590,13 @@ function renderDocument({ title, description, currentKey, outputPath, content })
       </a>
       <div class="site-header__right">
         <nav class="site-nav" aria-label="Primary">${renderNav(currentKey, outputPath)}</nav>
-        <div class="mood-switcher" aria-label="Theme">
-          <button class="mood-switcher__button is-active" type="button" data-mood="graphite" aria-label="Graphite theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="midnight" aria-label="Midnight theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="obsidian" aria-label="Obsidian theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="slate" aria-label="Slate theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="carbon" aria-label="Carbon theme"></button>
-        </div>
       </div>
     </header>
-    <main class="page-shell">${content}</main>
+    <main class="page-shell" id="main" tabindex="-1">${content}</main>
     <footer class="site-footer">
-      <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
+      <div class="site-footer__marquee" role="region" aria-label="Stack Scout operating principles">
+        <button class="site-footer__marquee-toggle" type="button" aria-pressed="false">Pause</button>
+        <div class="site-footer__marquee-viewport">
         <div class="site-footer__marquee-track">
           <span>No affiliate theatre</span>
           <span>No fake scores</span>
@@ -614,6 +610,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
           <span>Used or vetted</span>
           <span>Badges over decimal dust</span>
           <span>Curated, not exhaustive</span>
+        </div>
         </div>
       </div>
       <div class="site-footer__grid">
@@ -992,7 +989,7 @@ function renderCatalog(tools, categories, outputPath) {
           </aside>
           <div class="catalog-main">
             <div class="catalog-results">
-              <p id="catalogResultCount">${tools.length} entries</p>
+              <p id="catalogResultCount" aria-live="polite">${tools.length} entries</p>
               <p>URL state updates as filters change, so every filtered view is linkable.</p>
             </div>
             <div id="catalogGrid" class="card-grid card-grid--catalog">${tools.map((tool) => renderToolCard(tool, outputPath)).join('')}</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="mood-graphite">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,17 +9,19 @@
     <meta property="og:title" content="Stack Scout // Wire" />
     <meta property="og:description" content="Recent public activity from the Stack Scout cohort." />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#14171c" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#070d09" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f2f3ea" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="../icon.svg" />
     <link rel="apple-touch-icon" href="../icon.svg" />
     <link rel="manifest" href="../manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Public+Sans:ital,wght@0,400..600;1,400&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body data-page="updates" data-site-root="../">
-    <div class="ss-grain" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="site-brand" href="../">
         <span class="site-brand__mark" aria-hidden="true"></span>
@@ -27,16 +29,9 @@
       </a>
       <div class="site-header__right">
         <nav class="site-nav" aria-label="Primary"><a href="../">Home</a><a href="../catalog/">Top tools</a><a href="../categories/">Categories</a><a href="./" aria-current="page">Wire</a><a href="../radar/">Radar</a><a href="../collections/">Collections</a><a href="../method/">Sources &amp; method</a></nav>
-        <div class="mood-switcher" aria-label="Theme">
-          <button class="mood-switcher__button is-active" type="button" data-mood="graphite" aria-label="Graphite theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="midnight" aria-label="Midnight theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="obsidian" aria-label="Obsidian theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="slate" aria-label="Slate theme"></button>
-          <button class="mood-switcher__button" type="button" data-mood="carbon" aria-label="Carbon theme"></button>
-        </div>
       </div>
     </header>
-    <main class="page-shell">
+    <main class="page-shell" id="main" tabindex="-1">
       <section class="hero hero--inner">
         <div class="hero__copy" data-reveal>
           <p class="eyebrow">Updates</p>
@@ -79,7 +74,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">✨ Features Automatic thinking level operation for improved model reasoning #12237 Resume failed or cancelled delegate subagents #13015 Subagent session link in UI with view-only subagent sessions #12998 Limit concurrent subagents with GOOSE_MAX_CONCURRENT_SUBAGENTS #12946 Report session status via OSC 7501 in CLI #12928 Windows NSIS installer for desktop #1…</p>
+      <p class="summary">✨ Features Automatic thinking level operation for improved model reasoning #12237 Resume failed or cancelled delegate subagents #13015 Subagent session link in UI with view-only subagent sessions #12998 Limit concurrent subagents with GOOSE_MAX_CONCURRENT_SUBAGENTS #12946 Report session status via OSC 7501 in CLI #12928 Windows NSIS installer for desktop…</p>
       <div class="activity-card__meta">
         <span>23 Oct 2026</span>
         <span>GitHub Releases · Goose</span>
@@ -167,7 +162,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">What&#39;s Changed feat(serve): add daemon token persistence by @wenshao in #15023 fix(release): cover every spawned vendored binary in the tarball exec-bit gate by @yiliang114 in #15008 test(managed-agent): reuse a same-key cancel (FG11d) by @wenshao in #14997 test(managed-agent): share the quote and camel gate helpers (FG13) by @wenshao in #15047 test(managed…</p>
+      <p class="summary">What&#39;s Changed feat(serve): add daemon token persistence by @wenshao in #15023 fix(release): cover every spawned vendored binary in the tarball exec-bit gate by @yiliang114 in #15008 test(managed-agent): reuse a same-key cancel (FG11d) by @wenshao in #14997 test(managed-agent): share the quote and camel gate helpers (FG13) by @wenshao in #15047…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · Qwen Code</span>
@@ -211,7 +206,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">2026.10.6 Highlights Patched Node runtime required: OpenClaw now requires Node 24.22.1+ on the 24 line or 26.12.1+ on the 26 line, which reject TLS chains signed with the compromised certificate keys addressed in the October 2026 Node.js security releases. Docker images ship Node 24.22.1, installers select the patched runtimes, and openclaw update refuses w…</p>
+      <p class="summary">2026.10.6 Highlights Patched Node runtime required: OpenClaw now requires Node 24.22.1+ on the 24 line or 26.12.1+ on the 26 line, which reject TLS chains signed with the compromised certificate keys addressed in the October 2026 Node.js security releases. Docker images ship Node 24.22.1, installers select the patched runtimes, and openclaw update refuses…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · OpenClaw</span>
@@ -233,7 +228,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Pr…</p>
+      <p class="summary">Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>Simon Willison&#39;s Blog</span>
@@ -255,7 +250,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">v8.0.0-rc.20 ORM commands run on @prisma/cli-engine 0.9.0, so a piped command prints tab-separated data lines and JSON needs --json . A type alias in PSL can set @default , @onCreate and @onUpdate , and the contract stores each column&#39;s real type instead of the alias name. Postgres migrations can rename, move and remove namespaces, and can change a relation…</p>
+      <p class="summary">v8.0.0-rc.20 ORM commands run on @prisma/cli-engine 0.9.0, so a piped command prints tab-separated data lines and JSON needs --json . A type alias in PSL can set @default , @onCreate and @onUpdate , and the contract stores each column&#39;s real type instead of the alias name. Postgres migrations can rename, move and remove namespaces, and can change a…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · Prisma</span>
@@ -277,7 +272,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">Version 8.0.0-rc.19 → 8.0.0-rc.20 . Merging this PR publishes the release. The main change: the ORM&#39;s commands run on @prisma/cli-engine 0.9.0, the engine the prisma CLI 8.0.0-rc.25 ships ( #30835 ). A piped ORM command now prints tab-separated data lines on stdout; scripts that read JSON must pass --json . This release lets prisma/composer and prisma/prism…</p>
+      <p class="summary">Version 8.0.0-rc.19 → 8.0.0-rc.20 . Merging this PR publishes the release. The main change: the ORM&#39;s commands run on @prisma/cli-engine 0.9.0, the engine the prisma CLI 8.0.0-rc.25 ships ( #30835 ). A piped ORM command now prints tab-separated data lines on stdout; scripts that read JSON must pass --json . This release lets prisma/composer and…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · Prisma</span>
@@ -299,7 +294,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">7.6.8 General Cmdlet Updates and Fixes Remove the Update Notification feature from PowerShell ( #28242 ) Build and Packaging Improvements Update to .NET SDK 10.0.402 Merged PR 42142: [release/v7.6.8] Update branch for release SHA256 Hashes of the release artifacts hashes.sha256 8B1E273A18AB7B3AB0D3FB1DC9FDC8F9631FEC092EF48CA4CCFCAF32D6012B24 powershell-7.6.…</p>
+      <p class="summary">7.6.8 General Cmdlet Updates and Fixes Remove the Update Notification feature from PowerShell ( #28242 ) Build and Packaging Improvements Update to .NET SDK 10.0.402 Merged PR 42142: [release/v7.6.8] Update branch for release SHA256 Hashes of the release artifacts hashes.sha256 8B1E273A18AB7B3AB0D3FB1DC9FDC8F9631FEC092EF48CA4CCFCAF32D6012B24…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · PowerShell</span>
@@ -343,7 +338,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">What&#39;s Changed Many performance improvements in the Studio! @remotion/studio : Preserve pitch when changing playback speed by @JonnyBurger in #12423 Upgrade Mediabunny to 1.62.0 by @JonnyBurger in #12450 @remotion/media : Add preservePitch to change speed without changing pitch by @alec-watts in #12350 remotion : Show notice in when not supported instead of…</p>
+      <p class="summary">What&#39;s Changed Many performance improvements in the Studio! @remotion/studio : Preserve pitch when changing playback speed by @JonnyBurger in #12423 Upgrade Mediabunny to 1.62.0 by @JonnyBurger in #12450 @remotion/media : Add preservePitch to change speed without changing pitch by @alec-watts in #12350 remotion : Show notice in when not supported instead…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · Remotion</span>
@@ -365,7 +360,7 @@
           <span class="pill pill--blue">Routed feed</span>
         </div>
       </div>
-      <p class="summary">This PR moves each database&#39;s packages into one folder per database. After it, everything Postgres needs is here: packages/3-targets/postgres/ 1-target/ @internal/target-postgres 2-adapter/ @internal/adapter-postgres 3-driver/ @internal/driver-postgres 4-codec-testkit/ @internal/postgres-codec-testkit 9-facade/ @internal/postgres Before, the same five packa…</p>
+      <p class="summary">This PR moves each database&#39;s packages into one folder per database. After it, everything Postgres needs is here: packages/3-targets/postgres/ 1-target/ @internal/target-postgres 2-adapter/ @internal/adapter-postgres 3-driver/ @internal/driver-postgres 4-codec-testkit/ @internal/postgres-codec-testkit 9-facade/ @internal/postgres Before, the same five…</p>
       <div class="activity-card__meta">
         <span>22 Oct 2026</span>
         <span>GitHub Releases · Prisma</span>
@@ -643,7 +638,9 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="site-footer__marquee" aria-label="Stack Scout operating principles">
+      <div class="site-footer__marquee" role="region" aria-label="Stack Scout operating principles">
+        <button class="site-footer__marquee-toggle" type="button" aria-pressed="false">Pause</button>
+        <div class="site-footer__marquee-viewport">
         <div class="site-footer__marquee-track">
           <span>No affiliate theatre</span>
           <span>No fake scores</span>
@@ -657,6 +654,7 @@
           <span>Used or vetted</span>
           <span>Badges over decimal dust</span>
           <span>Curated, not exhaustive</span>
+        </div>
         </div>
       </div>
       <div class="site-footer__grid">

@@ -1,32 +1,19 @@
 document.body.classList.add('has-motion')
 
-const MOOD_CLASSES = ['mood-graphite', 'mood-midnight', 'mood-obsidian', 'mood-slate', 'mood-carbon']
-
-function initMoodSwitcher() {
-  const buttons = Array.from(document.querySelectorAll('[data-mood]'))
-  if (!buttons.length) {
-    return
-  }
-
-  const storedMood = localStorage.getItem('stackscout:mood')
-  const initialMood = buttons.some((button) => button.dataset.mood === storedMood) ? storedMood : 'graphite'
-
-  function applyMood(mood) {
-    document.documentElement.classList.remove(...MOOD_CLASSES)
-    document.documentElement.classList.add(`mood-${mood}`)
-    buttons.forEach((button) => {
-      const isActive = button.dataset.mood === mood
-      button.classList.toggle('is-active', isActive)
-      button.setAttribute('aria-pressed', String(isActive))
-    })
-    localStorage.setItem('stackscout:mood', mood)
-  }
-
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => applyMood(button.dataset.mood))
+function initTickerPause() {
+  // WCAG 2.2.2: any moving strip needs a visible pause control, not hover only.
+  document.querySelectorAll('.site-footer__marquee').forEach((ticker) => {
+    const toggle = ticker.querySelector('.site-footer__marquee-toggle')
+    if (!toggle) return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    function setPaused(paused) {
+      ticker.classList.toggle('is-paused', paused)
+      toggle.setAttribute('aria-pressed', String(paused))
+      toggle.textContent = paused ? 'Play' : 'Pause'
+    }
+    setPaused(reduce)
+    toggle.addEventListener('click', () => setPaused(!ticker.classList.contains('is-paused')))
   })
-
-  applyMood(initialMood)
 }
 
 function initUtcClock() {
@@ -219,5 +206,5 @@ function initCatalogFilters() {
 
 initReveal()
 initCatalogFilters()
-initMoodSwitcher()
+initTickerPause()
 initUtcClock()
