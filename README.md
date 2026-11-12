@@ -116,6 +116,16 @@ records `steps[].error` with the real process exit code.
 
 ## Site structure
 
+Code validation and link checks use `npm run build:site -- --snapshot` to rebuild
+the committed feed at its original generation time. This checks its shape and
+article ages at generation, without changing dates or claiming it is current.
+The publisher and the separate scheduled Canary validate workflow continue to
+use `npm run build:site` with the wall clock and the three-day freshness limit.
+A green code check does not mean daily news delivery is healthy.
+
+The service worker cache includes an asset revision as well as the feed date,
+so design releases update cached CSS and JavaScript without waiting for new news.
+
 - `Home`
 - `Top tools`
 - `Tool Detail`

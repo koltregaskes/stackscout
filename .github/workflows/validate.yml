@@ -19,8 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Build generated site
-        run: npm run build:site
+      - name: Rebuild committed snapshot (freshness is checked by Canary validate)
+        run: npm run build:site -- --snapshot
 
       - name: Run launch-safety checks
         run: npm run check
