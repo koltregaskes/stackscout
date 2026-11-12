@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const crypto = require('crypto')
 const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
@@ -55,11 +56,20 @@ function writeExternalJson(absolutePath, value) {
 }
 
 function syncServiceWorkerCacheName() {
+  // A design-only release must replace cached assets even without a new feed.
+  const revision = crypto.createHash('sha256')
+  for (const file of ['styles.css', 'app.js', 'pwa.js', 'manifest.json', 'icon.svg',
+    'scripts/build-stackscout.js', 'data/news-feed-latest.json',
+    'content/stackscout/site-source.json', 'content/stackscout/tools-source.json',
+    'content/stackscout/updates-source.json']) {
+    revision.update(fs.readFileSync(path.join(ROOT_DIR, file), 'utf8').replace(/\r\n/g, '\n'))
+  }
+  const cacheName = `stackscout-${GENERATED_AT}-${revision.digest('hex').slice(0, 12)}`
   const serviceWorkerPath = path.join(ROOT_DIR, 'service-worker.js')
   const current = fs.readFileSync(serviceWorkerPath, 'utf8')
   const next = current.replace(
-    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}['"]/,
-    `const CACHE_NAME = 'stackscout-${GENERATED_AT}'`,
+    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}(?:-[a-f0-9]+)?['"]/,
+    `const CACHE_NAME = '${cacheName}'`,
   )
 
   if (next !== current) {
@@ -1342,7 +1352,11 @@ function main() {
   const site = readJson('site-source.json')
   const tools = readJson('tools-source.json')
   const routedFeed = readRootJson('data/news-feed-latest.json')
-  const routedNews = compileRoutedNewsFeed(routedFeed)
+  // Code validation rebuilds the committed snapshot at its original clock.
+  // The publisher and freshness canary use the wall clock by default.
+  const snapshot = process.argv.includes('--snapshot')
+  const routedNews = compileRoutedNewsFeed(routedFeed, snapshot ? { now: routedFeed.generated } : {})
+  if (snapshot) console.log(`Validating committed snapshot from ${routedFeed.generated}; this does not prove live feed freshness.`)
   GENERATED_AT_ISO = routedNews.provenance.generatedAt
   GENERATED_AT = GENERATED_AT_ISO.slice(0, 10)
   const updates = mergeUpdates(readJson('updates-source.json'), routedNews.updates)
