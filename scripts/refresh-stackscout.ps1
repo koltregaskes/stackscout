@@ -56,7 +56,7 @@ $categoriesManifestFile = Join-Path $repoRoot 'data\categories-manifest.json'
 $publishCandidatePaths = @(
   'data', 'updates', 'tools', 'categories', 'collections', 'catalog',
   'radar', 'method', 'index.html', 'sitemap.xml', 'service-worker.js',
-  'llms.txt', 'robots.txt', '404.html'
+  'llms.txt', 'robots.txt', '404.html', 'rss.xml'
 )
 $startedAt = (Get-Date).ToUniversalTime().ToString('o')
 $steps = New-Object System.Collections.Generic.List[object]

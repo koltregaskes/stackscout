@@ -157,3 +157,7 @@ so design releases update cached CSS and JavaScript without waiting for new news
 - `.autolab/` is internal AutoResearch support and remains untracked.
 - `.env*` files are local-only except `.env.example`.
 - `.local/` and `*.local.md` are working notes and remain ignored.
+
+## SEO contract
+
+Run `node scripts/seo.mjs` after public content changes and `node scripts/seo.mjs --check` before committing. CI checks page canonical URLs, PNG sharing cards, JSON-LD, RSS, sitemap routes, robots and llms.txt. RSS uses source publication dates, never the build clock. Search Console and Bing verification and sitemap submission require the site owner.

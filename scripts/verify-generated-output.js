@@ -13,6 +13,7 @@ const GENERATED_OUTPUT_PATHS = [
   'method',
   'index.html',
   'sitemap.xml',
+  'rss.xml',
   'service-worker.js',
   'llms.txt',
   '404.html',
