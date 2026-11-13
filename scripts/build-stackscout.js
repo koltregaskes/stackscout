@@ -419,7 +419,7 @@ function renderChips(values, tone, prefix = '') {
     .join('')
 }
 
-function renderToolCard(tool, outputPath, compact = false) {
+function renderToolCard(tool, outputPath, compact = false, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--tool" data-card
       data-scope="${escapeHtml(tool.scope)}"
@@ -439,7 +439,7 @@ function renderToolCard(tool, outputPath, compact = false) {
       </div>
       <div class="scout-card__body">
         <p class="label">${escapeHtml(tool.toolType)} / ${escapeHtml(categoryLabel(tool.category))}</p>
-        <h3>${escapeHtml(tool.name)}</h3>
+        <h${headingLevel}>${escapeHtml(tool.name)}</h${headingLevel}>
         <p class="summary">${escapeHtml(tool.summary)}</p>
         ${compact ? '' : `<p class="card-note">${escapeHtml(tool.latestTrackedChange)}</p>`}
         <div class="chip-row">${renderChips(tool.bestFor.slice(0, compact ? 2 : 3), 'ink')}</div>
@@ -457,7 +457,7 @@ function renderToolCard(tool, outputPath, compact = false) {
   `
 }
 
-function renderUpdateCard(update, tool, outputPath, compact = false) {
+function renderUpdateCard(update, tool, outputPath, compact = false, headingLevel = 3) {
   const label = tool
     ? `${tool.toolType} / ${tool.name}`
     : `Routed signal / ${update.projectName || update.sourceLabel}`
@@ -467,7 +467,7 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
       <div class="activity-card__head">
         <div>
           <p class="label">${escapeHtml(label)}</p>
-          <h3>${escapeHtml(update.title)}</h3>
+          <h${headingLevel}>${escapeHtml(update.title)}</h${headingLevel}>
         </div>
         <div class="chip-row">
           <span class="pill pill--ink">${escapeHtml(titleCaseFromSlug(update.kind || 'update'))}</span>
@@ -491,7 +491,7 @@ function renderUpdateCard(update, tool, outputPath, compact = false) {
   `.replace(/[ \t]+$/gm, '')
 }
 
-function renderCollectionCard(collection, toolIndex, outputPath) {
+function renderCollectionCard(collection, toolIndex, outputPath, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--collection" id="${escapeHtml(collection.slug)}">
       <div class="scout-card__topline">
@@ -500,7 +500,7 @@ function renderCollectionCard(collection, toolIndex, outputPath) {
       </div>
       <div class="scout-card__body">
         <p class="label">Use-case grouping</p>
-        <h3>${escapeHtml(collection.title)}</h3>
+        <h${headingLevel}>${escapeHtml(collection.title)}</h${headingLevel}>
         <p class="summary">${escapeHtml(collection.description)}</p>
         <div class="token-list">
           ${collection.items
@@ -515,7 +515,7 @@ function renderCollectionCard(collection, toolIndex, outputPath) {
   `
 }
 
-function renderCategoryCard(category, tools, outputPath) {
+function renderCategoryCard(category, tools, outputPath, headingLevel = 3) {
   return `
     <article class="scout-card scout-card--category">
       <div class="scout-card__topline">
@@ -527,7 +527,7 @@ function renderCategoryCard(category, tools, outputPath) {
       </div>
       <div class="scout-card__body">
         <p class="label">Public lane</p>
-        <h3>${escapeHtml(category.title)}</h3>
+        <h${headingLevel}>${escapeHtml(category.title)}</h${headingLevel}>
         <p class="summary">${escapeHtml(category.description)}</p>
       </div>
       <div class="scout-card__actions">
@@ -537,13 +537,13 @@ function renderCategoryCard(category, tools, outputPath) {
   `
 }
 
-function renderRadarCard(item) {
+function renderRadarCard(item, headingLevel = 3) {
   return `
     <article class="activity-card">
       <div class="activity-card__head">
         <div>
           <p class="label">Radar</p>
-          <h3>${escapeHtml(item.title)}</h3>
+          <h${headingLevel}>${escapeHtml(item.title)}</h${headingLevel}>
         </div>
         <span class="pill pill--amber">${escapeHtml(item.status)}</span>
       </div>
@@ -1140,7 +1140,7 @@ function renderCategoriesIndex(categories, tools, outputPath) {
       </section>
       <section class="section-block" data-reveal>
         <div class="card-grid card-grid--categories">
-          ${categories.map((category) => renderCategoryCard(category, tools.filter((tool) => tool.category === category.slug), outputPath)).join('')}
+          ${categories.map((category) => renderCategoryCard(category, tools.filter((tool) => tool.category === category.slug), outputPath, 2)).join('')}
         </div>
       </section>
     `,
@@ -1169,7 +1169,7 @@ function renderCategoryDetail(category, tools, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="card-grid">${tools.map((tool) => renderToolCard(tool, outputPath)).join('')}</div>
+        <div class="card-grid">${tools.map((tool) => renderToolCard(tool, outputPath, false, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1190,7 +1190,7 @@ function renderUpdates(updates, toolIndex, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="activity-grid">${updates.map((update) => renderUpdateCard(update, toolIndex.get(update.toolSlug), outputPath)).join('')}</div>
+        <div class="activity-grid">${updates.map((update) => renderUpdateCard(update, toolIndex.get(update.toolSlug), outputPath, false, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1211,7 +1211,7 @@ function renderRadar(site, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="activity-grid">${site.radar.map((item) => renderRadarCard(item)).join('')}</div>
+        <div class="activity-grid">${site.radar.map((item) => renderRadarCard(item, 2)).join('')}</div>
       </section>
     `,
   })
@@ -1232,7 +1232,7 @@ function renderCollections(collections, toolIndex, outputPath) {
         </div>
       </section>
       <section class="section-block" data-reveal>
-        <div class="card-grid card-grid--collections">${collections.map((collection) => renderCollectionCard(collection, toolIndex, outputPath)).join('')}</div>
+        <div class="card-grid card-grid--collections">${collections.map((collection) => renderCollectionCard(collection, toolIndex, outputPath, 2)).join('')}</div>
       </section>
     `,
   })
