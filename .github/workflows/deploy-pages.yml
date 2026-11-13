@@ -1,0 +1,16 @@
+name: Request existing Pages deployment
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Request the existing branch-based Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/${{ github.repository }}/pages/builds

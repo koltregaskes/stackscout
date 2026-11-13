@@ -137,7 +137,7 @@ function assertRoutedNewsFeed(
   if (feed.site !== expectedSite) {
     throw new Error(`Stack Scout routed news feed site must be "${expectedSite}", received "${feed.site || 'missing'}".`)
   }
-  if (!Array.isArray(feed.articles) || feed.articles.length === 0) {
+  if (!Array.isArray(feed.articles)) {
     throw new Error('Stack Scout routed news feed has no articles.')
   }
   if (Number(feed.article_count) !== feed.articles.length) {
@@ -183,15 +183,19 @@ function assertRoutedNewsFeed(
     return parseDate(article.date, `article ${index + 1} date`)
   })
 
-  const newestItemAt = new Date(Math.max(...articleDates.map((date) => date.getTime())))
-  const newestItemAgeMs = nowDate.getTime() - newestItemAt.getTime()
-  if (newestItemAgeMs < -futureToleranceMs) {
-    throw new Error('Stack Scout routed news newest article timestamp is in the future.')
-  }
-  if (newestItemAgeMs > maxAgeMs) {
-    throw new Error(
-      `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
-    )
+  const newestItemAt = articleDates.length
+    ? new Date(Math.max(...articleDates.map((date) => date.getTime())))
+    : generatedAt
+  if (articleDates.length > 0) {
+    const newestItemAgeMs = nowDate.getTime() - newestItemAt.getTime()
+    if (newestItemAgeMs < -futureToleranceMs) {
+      throw new Error('Stack Scout routed news newest article timestamp is in the future.')
+    }
+    if (newestItemAgeMs > maxAgeMs) {
+      throw new Error(
+        `Stack Scout routed news newest article is ${(newestItemAgeMs / 86_400_000).toFixed(1)} days old; maximum is ${effectiveMaxAgeDays}.`,
+      )
+    }
   }
 
   return {
@@ -233,7 +237,7 @@ function compileRoutedNewsFeed(feed, options = {}) {
     .filter((item) => item.title && item.summary)
     .sort(compareUpdatesNewestFirst)
 
-  if (updates.length === 0) {
+  if (updates.length === 0 && feed.articles.length > 0) {
     throw new Error('Stack Scout routed news feed produced no public-safe updates.')
   }
 

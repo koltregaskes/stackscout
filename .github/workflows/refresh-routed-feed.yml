@@ -1,0 +1,70 @@
+name: Refresh routed feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Refresh healthy sources before the publication freshness gate.
+    - cron: '15 5 * * *'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-routed-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Checkout news routing config
+        uses: actions/checkout@v7
+        with:
+          repository: koltregaskes/ai-resource-hub
+          ref: main
+          path: .news-pipeline
+          persist-credentials: false
+          sparse-checkout: shared/website-tools/pipelines/news
+          sparse-checkout-cone-mode: true
+
+      - name: Fetch sources and apply the Stack Scout filter
+        run: node scripts/refresh-routed-feed.js --pipeline .news-pipeline/shared/website-tools/pipelines/news
+
+      - name: Rebuild public pages from the fetched feed
+        run: npm run build:site
+
+      - name: Commit the feed and the pages that build produces
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/ index.html updates/index.html sitemap.xml rss.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method
+          node scripts/verify-generated-output.js --staged
+          if git diff --cached --quiet; then
+            echo "No routed feed changes to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: refresh routed news feed"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          npm run build:site
+          node scripts/verify-generated-output.js
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push the refreshed feed
+        if: steps.commit.outputs.committed == 'true'
+        run: git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Dispatch the single Pages workflow
+        if: steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main

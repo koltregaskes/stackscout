@@ -32,3 +32,6 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# News config checked out by the refresh workflow
+.news-pipeline/

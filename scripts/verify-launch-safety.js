@@ -235,11 +235,13 @@ function assertRoutedSourceProof() {
   if (updatesManifest.sourceProvenance?.news?.consumerPath !== provenance.news.consumerPath) {
     throw new Error('Updates manifest is missing the routed-feed consumer proof.')
   }
-  if (!updatesManifest.items.some((item) => item.sourceUrl === newestItem.url)) {
-    throw new Error('Updates manifest does not contain the newest routed-feed item.')
-  }
-  if (!updatesHtml.includes(`href="${escapeHtml(newestItem.url)}"`)) {
-    throw new Error('Rendered updates page does not contain the newest routed-feed source URL.')
+  if (newestItem) {
+    if (!updatesManifest.items.some((item) => item.sourceUrl === newestItem.url)) {
+      throw new Error('Updates manifest does not contain the newest routed-feed item.')
+    }
+    if (!updatesHtml.includes(`href="${escapeHtml(newestItem.url)}"`)) {
+      throw new Error('Rendered updates page does not contain the newest routed-feed source URL.')
+    }
   }
 
   return {

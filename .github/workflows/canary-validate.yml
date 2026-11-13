@@ -5,6 +5,8 @@ on:
   schedule:
     # Runs even when the Windows publisher does not push. The build fails
     # once data/news-feed-latest.json or its newest item is more than 3 days old.
+    # refresh-routed-feed.yml fetches sources at 05:15 UTC.
+    # routed-feed-freshness.yml fails at 1 day, before this hard gate.
     - cron: '45 5 * * *'
 
 permissions:

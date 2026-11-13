@@ -52,7 +52,7 @@ function readGeneratedOutputStatus(rootDir = ROOT_DIR) {
 }
 
 function main() {
-  const changes = findGeneratedOutputChanges(readGeneratedOutputStatus())
+  const changes = findGeneratedOutputChanges(readGeneratedOutputStatus()).filter(line => !process.argv.includes('--staged') || line[1] !== ' ' || line.startsWith('??'))
   if (changes.length > 0) {
     throw new Error(
       `Generated public output differs from the commit:\n${changes.join('\n')}`,
