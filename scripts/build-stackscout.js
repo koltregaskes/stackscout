@@ -1,4 +1,5 @@
 const fs = require('fs')
+const siteConfig = require('../site-config.json')
 const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
 const crypto = require('crypto')
@@ -653,7 +654,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
           <span>Contact</span>
           <a href="https://koltregaskes.com/" target="_blank" rel="noopener noreferrer">Kol Tregaskes</a>
           <a href="https://github.com/koltregaskes/stackscout" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="${sourceHref}">Method</a>
+          <a href="mailto:${escapeHtml(siteConfig.contactEmail)}">${escapeHtml(siteConfig.contactEmail)}</a>
         </div>
       </div>
       <div class="site-footer__estate" aria-label="Elusion Works umbrella">

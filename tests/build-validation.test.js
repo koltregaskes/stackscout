@@ -9,7 +9,7 @@ test('snapshot validation stays reproducible and design releases invalidate cach
   const root = path.resolve(__dirname, '..')
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'stackscout-build-'))
   for (const entry of ['content', 'data', 'scripts', 'styles.css', 'app.js', 'pwa.js',
-    'manifest.json', 'icon.svg', 'service-worker.js', 'seo-config.json', 'social-preview.png', 'robots.txt']) {
+    'manifest.json', 'icon.svg', 'service-worker.js', 'seo-config.json', 'site-config.json', 'social-preview.png', 'robots.txt']) {
     fs.cpSync(path.join(root, entry), path.join(fixture, entry), { recursive: true })
   }
   const run = (...args) => spawnSync(process.execPath, ['scripts/build-stackscout.js', ...args], {
