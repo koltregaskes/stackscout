@@ -1,0 +1,23 @@
+name: Launch contract
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  launch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.22.1'
+          cache: npm
+      - run: npm ci
+      - run: npm run build:site -- --snapshot && npm run check && node scripts/verify-generated-output.js
+      - run: node scripts/seo.mjs --check
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:launch

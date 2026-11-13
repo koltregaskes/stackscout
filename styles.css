@@ -1977,4 +1977,15 @@ select {
 /* Keep keyboard focus visible across component styles. */
 :focus-visible { outline: 2px solid var(--accent) !important; outline-offset: 2px; }
 
+/* Flex children must shrink within narrow viewports. */
+.site-footer__marquee-viewport { min-width: 0; overflow: hidden; }
+.activity-card__head > div { min-width: 0; }
+.activity-card h2, .activity-card h3, .activity-card a { overflow-wrap: anywhere; }
+
+.site-footer__grid > * { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 600px) { .site-footer__estate { grid-template-columns: minmax(0, 1fr); } }
+
+@media (max-width: 600px) { .site-footer__estate > a { white-space: normal; overflow-wrap: anywhere; } }
+
 .scout-card h2, .activity-card h2 { text-transform: none; }
