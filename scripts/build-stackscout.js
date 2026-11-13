@@ -1,4 +1,5 @@
 const fs = require('fs')
+const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
 const crypto = require('crypto')
 const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
@@ -43,6 +44,11 @@ function ensureParent(filePath) {
 function writeFile(relativePath, content) {
   const outputPath = path.join(ROOT_DIR, relativePath)
   ensureParent(outputPath)
+  if (relativePath.endsWith('.html')) {
+    for (const [original, fallback] of Object.entries(sourceLinkOverrides)) {
+      content = content.replaceAll('href="'+escapeHtml(original)+'"', 'href="'+escapeHtml(fallback.url)+'" aria-label="'+escapeHtml(fallback.label)+'"');
+    }
+  }
   fs.writeFileSync(outputPath, content, 'utf8')
 }
 
@@ -573,6 +579,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>${escapeHtml(title.replaceAll('StackScout', 'Stack Scout'))}</title>
@@ -1345,7 +1352,7 @@ function renderNotFound(outputPath) {
         </div>
       </section>
     `,
-  }).replace(/\b(href|src)=(["'])\.\//g, (_, attr, quote) => `${attr}=${quote}${siteRootPath}`)
+  }).replace('<head>', '<head>\n    <meta name="robots" content="noindex,follow" />').replace(/\b(href|src)=(["'])\.\//g, (_, attr, quote) => `${attr}=${quote}${siteRootPath}`)
 }
 
 function main() {
