@@ -18,8 +18,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Build generated site
-        run: npm run build:site
+      - name: Rebuild committed snapshot (freshness is checked by Canary validate)
+        run: npm run build:site -- --snapshot
 
       - name: Check on-site links
         uses: lycheeverse/lychee-action@v2

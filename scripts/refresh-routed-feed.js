@@ -5,7 +5,7 @@
  * Sources and filters come from the news pipeline config
  * (config/sources.json and site-filters.json). Articles are the entries
  * those sources return. This script does not invent items. A source that
- * cannot be fetched fails the run by name, and the feed file is left unchanged.
+ * cannot be fetched is reported; a majority must succeed before the feed changes.
  * A successful fetch writes the feed even when nothing matches: a fresh
  * generated timestamp and an empty article list.
  */
@@ -506,10 +506,10 @@ async function refreshRoutedFeed({
     } catch (error) {
       const message = `${source.id} (${source.name || source.id}) could not be fetched: ${error.message}`
       failures.push(message)
-      console.error(`::error title=Source fetch failed::${message}`)
+      console.error(`::warning title=Source fetch failed::${message}`)
     }
   }
-  if (failures.length > 0) {
+  if (!sources.length || failures.length >= Math.ceil(sources.length / 2)) {
     return { wrote: false, failures, feed: null }
   }
   const articles = applySiteFilter(tagged, siteFilter, now)
@@ -518,7 +518,7 @@ async function refreshRoutedFeed({
     fs.mkdirSync(path.dirname(outputPath), { recursive: true })
     fs.writeFileSync(outputPath, `${JSON.stringify(feed, null, 2)}\n`, 'utf8')
   }
-  return { wrote: write, failures: [], feed }
+  return { wrote: write, failures, feed }
 }
 
 function parseArgs(argv) {
@@ -535,7 +535,7 @@ async function main() {
     throw new Error('Pass --pipeline with the shared news config directory.')
   }
   const result = await refreshRoutedFeed({ pipelineDir })
-  if (result.failures.length > 0) {
+  if (!result.feed) {
     process.exitCode = 1
     return
   }

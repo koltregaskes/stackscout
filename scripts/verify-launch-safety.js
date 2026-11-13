@@ -192,9 +192,9 @@ function assertRequiredFiles() {
 function assertServiceWorkerFreshness() {
   const serviceWorker = readText('service-worker.js')
   const cacheName = extractCacheName()
-  const cacheDateMatch = cacheName.match(/^stackscout-(\d{4}-\d{2}-\d{2})$/)
+  const cacheDateMatch = cacheName.match(/^stackscout-(\d{4}-\d{2}-\d{2})(?:-[a-f0-9]{12})?$/)
   if (!cacheDateMatch) {
-    throw new Error(`CACHE_NAME must use stackscout-YYYY-MM-DD format; found ${cacheName}.`)
+    throw new Error(`CACHE_NAME must use stackscout-YYYY-MM-DD with an optional asset revision; found ${cacheName}.`)
   }
 
   const issueDate = extractIssueDate()

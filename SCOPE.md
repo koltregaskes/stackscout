@@ -23,8 +23,8 @@ This is **not** a design brief and not an implementation plan. The repo already 
 The design identity is already locked in StackScout's existing `DESIGN.md`:
 
 - **Tone:** Editorial, sharp, credible, product-intelligence-first
-- **Aesthetic:** Dark editorial shell; acid green / ice blue / ember accents
-- **Type:** Fraunces (display) / Archivo (body) / IBM Plex Mono (metadata)
+- **Aesthetic:** Field log: dark field desk or khaki notebook (follows the device setting); one acid-lime accent
+- **Type:** Archivo condensed (display) / Public Sans (body) / Martian Mono (metadata)
 - **Position:** Scout desk / field report, not generic app gallery or directory grid
 
 ---

@@ -134,6 +134,16 @@ records `steps[].error` with the real process exit code.
 
 ## Site structure
 
+Code validation and link checks use `npm run build:site -- --snapshot` to rebuild
+the committed feed at its original generation time. This checks its shape and
+article ages at generation, without changing dates or claiming it is current.
+The publisher and the separate scheduled Canary validate workflow continue to
+use `npm run build:site` with the wall clock and the three-day freshness limit.
+A green code check does not mean daily news delivery is healthy.
+
+The service worker cache includes an asset revision as well as the feed date,
+so design releases update cached CSS and JavaScript without waiting for new news.
+
 - `Home`
 - `Top tools`
 - `Tool Detail`
@@ -165,3 +175,7 @@ records `steps[].error` with the real process exit code.
 - `.autolab/` is internal AutoResearch support and remains untracked.
 - `.env*` files are local-only except `.env.example`.
 - `.local/` and `*.local.md` are working notes and remain ignored.
+
+## SEO contract
+
+Run `node scripts/seo.mjs` after public content changes and `node scripts/seo.mjs --check` before committing. CI checks page canonical URLs, PNG sharing cards, JSON-LD, RSS, sitemap routes, robots and llms.txt. RSS uses source publication dates, never the build clock. Search Console and Bing verification and sitemap submission require the site owner.

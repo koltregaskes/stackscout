@@ -3,17 +3,12 @@ name: Refresh routed feed
 on:
   workflow_dispatch:
   schedule:
-    # 05:15 UTC, before the 05:45 canary build and the 06:30 freshness warning.
-    # Every source in the shared news config is fetched. A source that cannot
-    # be fetched fails this run by name and leaves the file unchanged.
-    # A successful fetch commits the feed, including an empty article list.
-    # That same run then publishes GitHub Pages.
+    # Refresh healthy sources before the publication freshness gate.
     - cron: '15 5 * * *'
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 concurrency:
   group: refresh-routed-feed
@@ -21,10 +16,9 @@ concurrency:
 
 jobs:
   refresh:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -52,7 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/news-feed-latest.json data/updates-manifest.json index.html updates/index.html sitemap.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method
+          git add -- data/news-feed-latest.json data/updates-manifest.json index.html updates/index.html sitemap.xml rss.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method
           if git diff --cached --quiet; then
             echo "No routed feed changes to commit."
             echo "committed=false" >> "$GITHUB_OUTPUT"
@@ -68,21 +62,8 @@ jobs:
         if: steps.commit.outputs.committed == 'true'
         run: git push origin "HEAD:${GITHUB_REF_NAME}"
 
-      - name: Remove the pipeline checkout
+      - name: Dispatch the single Pages workflow
         if: steps.commit.outputs.committed == 'true'
-        run: rm -rf .news-pipeline
-
-      - name: Configure Pages
-        if: steps.commit.outputs.committed == 'true'
-        uses: actions/configure-pages@v5
-
-      - name: Upload the site
-        if: steps.commit.outputs.committed == 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Publish GitHub Pages
-        id: deployment
-        if: steps.commit.outputs.committed == 'true'
-        uses: actions/deploy-pages@v4
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main

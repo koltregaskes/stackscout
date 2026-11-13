@@ -310,8 +310,19 @@ test('the refresh workflow fetches the shared config and commits the built pages
   assert.match(workflow, /index\.html/)
   assert.match(workflow, /updates\/index\.html/)
   assert.doesNotMatch(workflow, /git add -A|git add \./)
-  assert.match(workflow, /actions\/deploy-pages@/)
-  assert.match(workflow, /pages: write/)
-  assert.match(workflow, /id-token: write/)
+  assert.match(workflow, /gh workflow run deploy-pages.yml --ref main/);
+  assert.match(workflow, /actions: write/);
+  assert.doesNotMatch(workflow, /upload-pages-artifact|deploy-pages@/);
   assert.doesNotMatch(workflow, /secrets\.[A-Z0-9_]*(?:PAT|TOKEN)/)
 })
+
+test('one unavailable source preserves the healthy majority and reports the failure', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'routed-feed-'));
+  const outputPath = path.join(dir, 'news-feed-latest.json');
+  pipeline(dir, ['healthy-one', 'healthy-two', 'offline'].map(id => ({id, name:id, adapter:'rss', url:'https://example.com/'+id, tags:['open_source']})));
+  const result = await refreshRoutedFeed({pipelineDir:dir, outputPath, retries:1, fetchImpl:async url => ({ok:!url.endsWith('offline'), status:url.endsWith('offline')?404:200, text:async()=>'<rss><channel></channel></rss>'})});
+  assert.equal(result.wrote,true);
+  assert.equal(result.failures.length,1);
+  assert.match(result.failures[0],/offline/);
+  assert.equal(JSON.parse(fs.readFileSync(outputPath,'utf8')).article_count,0);
+});
