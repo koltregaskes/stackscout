@@ -35,3 +35,7 @@ Thumbs.db
 
 # News config checked out by the refresh workflow
 .news-pipeline/
+
+node_modules/
+test-results/
+playwright-report/

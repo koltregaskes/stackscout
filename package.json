@@ -8,6 +8,11 @@
     "refresh:site": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/refresh-stackscout.ps1",
     "test": "node --test tests/*.test.js",
     "check": "npm run test && node --check scripts/build-stackscout.js && node --check scripts/routed-news.js && node --check scripts/verify-generated-output.js && node --check app.js && node --check pwa.js && node --check service-worker.js && node --check scripts/verify-launch-safety.js && node scripts/verify-launch-safety.js",
-    "verify:launch": "node scripts/verify-launch-safety.js"
+    "verify:launch": "node scripts/verify-launch-safety.js",
+    "test:launch": "playwright test --config playwright.launch.config.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "@axe-core/playwright": "4.11.1"
   }
 }
