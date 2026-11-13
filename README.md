@@ -179,3 +179,5 @@ so design releases update cached CSS and JavaScript without waiting for new news
 ## SEO contract
 
 Run `node scripts/seo.mjs` after public content changes and `node scripts/seo.mjs --check` before committing. CI checks page canonical URLs, PNG sharing cards, JSON-LD, RSS, sitemap routes, robots and llms.txt. RSS uses source publication dates, never the build clock. Search Console and Bing verification and sitemap submission require the site owner.
+
+The generated 404 page uses the configured Pages base path for its site root, so service-worker registration and assets resolve correctly even at a deep missing URL. The launch suite checks this at 320px and 1280px using offline resource routing and a registration-fetch shim; no worker or server is started. It excludes only the expected navigation HTTP 404 console message.
