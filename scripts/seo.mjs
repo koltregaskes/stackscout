@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const cfg=JSON.parse(read('seo-config.json'));
+const sourceLinkOverrides=JSON.parse(read('content/stackscout/source-link-overrides.json'));
 const check=process.argv.includes('--check');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
 function save(p,s){ if(check){if(read(p)!==s)throw Error(`${p} is stale; run node scripts/seo.mjs`);}else fs.writeFileSync(path.join(root,p),s); }
@@ -33,7 +34,7 @@ if(png.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||png.readUInt32BE(16)!
 let items=[];
 if(cfg.kind==='kol-tregaskes-photography')items=JSON.parse(read('news-digests/index.json')).files.slice(0,30).map(f=>({title:`Photography digest ${f.slice(7,17)}`,url:cfg.base+'news-digests/'+f,date:f.slice(7,17)}));
 if(cfg.kind==='gametrackdaily')items=JSON.parse(read('data/games-news.json')).feeds.flatMap(f=>f.items).map(i=>({title:i.title,url:i.url,date:i.publishedAt}));
-if(cfg.kind==='stackscout')items=JSON.parse(read('data/updates-manifest.json')).items.map(i=>({title:i.title,url:i.sourceUrl||i.href,date:i.publishedAtIso||i.publishedAt}));
+if(cfg.kind==='stackscout')items=JSON.parse(read('data/updates-manifest.json')).items.map(i=>({title:i.title,url:sourceLinkOverrides[i.sourceUrl]?.url||i.sourceUrl||i.href,date:i.publishedAtIso||i.publishedAt}));
 items=items.filter(i=>i.title&&/^https:\/\//.test(i.url)&&Number.isFinite(Date.parse(i.date))).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
 items=[...new Map(items.map(i=>[i.url,i])).values()].slice(0,30);
 if(!items.length)throw Error('RSS has no dated items');

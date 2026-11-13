@@ -18,6 +18,13 @@ test('snapshot validation stays reproducible and design releases invalidate cach
   })
   const snapshot = run('--snapshot')
   assert.equal(snapshot.status, 0, snapshot.stderr)
+  const indexPath = path.join(fixture, 'index.html')
+  const schema = '<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'Organization','@id':'https://example.com/#retained'})+'</script>'
+  fs.writeFileSync(indexPath, fs.readFileSync(indexPath,'utf8').replace('</head>',schema+'</head>'))
+  const seo = spawnSync(process.execPath,['scripts/seo.mjs'],{cwd:fixture,encoding:'utf8'})
+  assert.equal(seo.status,0,seo.stderr)
+  assert.ok(fs.readFileSync(indexPath,'utf8').includes(schema),'page-owned schema survives SEO generation')
+  assert.equal(spawnSync(process.execPath,['scripts/seo.mjs','--check'],{cwd:fixture}).status,0,'SEO generation is idempotent')
   const cache = () => fs.readFileSync(path.join(fixture, 'service-worker.js'), 'utf8').split('\n')[0]
   const first = cache()
   assert.equal(run('--snapshot').status, 0)
