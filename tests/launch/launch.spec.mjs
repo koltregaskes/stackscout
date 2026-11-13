@@ -58,3 +58,45 @@ for (const file of await pages(root)) {
   }
  });
 }
+
+
+for (const width of [320,1280]) test('deep missing path at '+width+'px has no application console errors', async ({page}) => {
+ const missing=new URL('missing/deep/page',base).href;
+ const errors=[];
+ page.on('console',message=>{
+  // A real 404 navigation reports its HTTP status in Chromium; exclude only that expected transport message.
+  if(message.type()==='error' && !(message.location().url===missing && /Failed to load resource:.*404/.test(message.text()))) errors.push({text:message.text(),url:message.location().url});
+ });
+ page.on('pageerror',error=>errors.push(error.message));
+ await page.setViewportSize({width,height:900});
+ // Routing blocks native workers in this suite. Model registration's script fetch to check its URL and scope,
+ // without allowing an actual worker or any request to the live site.
+ await page.addInitScript(()=>{
+  window.workerRegistrations=[];
+  navigator.serviceWorker.register=async (script,options)=>{
+   const url=new URL(script,location.href).href;
+   const scope=new URL(options.scope,location.href).href;
+   window.workerRegistrations.push({url,scope});
+   const response=await fetch(url);
+   if(!response.ok)throw new Error('Worker script HTTP '+response.status);
+   return {scope};
+  };
+ });
+ await page.route('**/*',async route=>{
+  const url=new URL(route.request().url());
+  // Fonts are outside this offline application regression; fulfil their CSS without network access.
+  if(url.origin==='https://fonts.googleapis.com')return route.fulfill({body:'',contentType:'text/css'});
+  if(url.origin!==origin)return route.abort();
+  if(url.href===missing)return route.fulfill({status:404,body:await fs.readFile(path.join(root,'404.html')),contentType:'text/html'});
+  const target=localPath(url);
+  if(!target.startsWith(root+path.sep))return route.abort();
+  try{await route.fulfill({body:await fs.readFile(target),contentType:types[path.extname(target)]||'application/octet-stream'});}
+  catch{await route.fulfill({status:404,body:'Not found'});}
+ });
+ await page.goto(missing);
+ await page.waitForLoadState('networkidle');
+ await expect(page.locator('h1')).toHaveText('That page is not on the desk.');
+ expect(await page.locator('body').getAttribute('data-site-root')).toBe(prefix);
+ expect(await page.evaluate(()=>window.workerRegistrations)).toEqual([{url:new URL('service-worker.js',base).href,scope:base}]);
+ expect(errors).toEqual([]);
+});

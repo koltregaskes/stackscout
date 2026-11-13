@@ -1353,7 +1353,7 @@ function renderNotFound(outputPath) {
         </div>
       </section>
     `,
-  }).replace('<head>', '<head>\n    <meta name="robots" content="noindex,follow" />').replace(/\b(href|src)=(["'])\.\//g, (_, attr, quote) => `${attr}=${quote}${siteRootPath}`)
+  }).replace('<head>', '<head>\n    <meta name="robots" content="noindex,follow" />').replace('data-site-root="./"', `data-site-root="${escapeHtml(siteRootPath)}"`).replace(/\b(href|src)=(["'])\.\//g, (_, attr, quote) => `${attr}=${quote}${siteRootPath}`)
 }
 
 function main() {
