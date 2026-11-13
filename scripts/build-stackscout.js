@@ -1429,3 +1429,4 @@ function main() {
 }
 
 main()
+require('node:child_process').execFileSync(process.execPath, [require('node:path').join(__dirname, 'seo.mjs')], {stdio: 'inherit'})
