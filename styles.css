@@ -1989,3 +1989,9 @@ select {
 @media (max-width: 600px) { .site-footer__estate > a { white-space: normal; overflow-wrap: anywhere; } }
 
 .scout-card h2, .activity-card h2 { text-transform: none; }
+
+/* Paused/reduced-motion principles must remain readable rather than clipped. */
+.site-footer__marquee.is-paused .site-footer__marquee-track { width: auto; flex-wrap: wrap; white-space: normal; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+ .site-footer__marquee-track { width: auto; flex-wrap: wrap; white-space: normal; transform: none; animation: none; }
+}

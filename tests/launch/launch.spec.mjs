@@ -1,3 +1,4 @@
+import {geometryFindings} from './geometry.mjs';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs/promises';
@@ -16,7 +17,7 @@ const types = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.j
 for (const file of await pages(root)) {
  const relative = path.relative(root,file).replaceAll('\\','/');
  const html = await fs.readFile(file,'utf8');
- for (const width of [320,1280]) test(`${relative} at ${width}px`, async ({page}) => {
+ for (const width of [320,390,1280]) test(`${relative} at ${width}px`, async ({page}) => {
   await page.addInitScript(() => { window.cspViolations=[]; document.addEventListener("securitypolicyviolation", e => window.cspViolations.push({directive:e.effectiveDirective,blocked:e.blockedURI})); });
   await page.setViewportSize({width,height:900});
   await page.emulateMedia({reducedMotion:'reduce'});
@@ -36,7 +37,7 @@ for (const file of await pages(root)) {
   await page.waitForLoadState('networkidle');
   await expect(page.locator('body')).toBeVisible();
   const overflow = await page.evaluate(() => [...document.querySelectorAll('body *')].filter(e => e.getBoundingClientRect().right > innerWidth + 1).map(e => ({tag:e.tagName,classes:e.className,width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right})).slice(0,10));
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), JSON.stringify(overflow)).toBe(true);
+  expect(await page.evaluate(geometryFindings), JSON.stringify(overflow)).toEqual([]);
   await expect.poll(() => page.evaluate(()=>({reduce:matchMedia('(prefers-reduced-motion: reduce)').matches,motion:document.body.classList.contains('has-motion'),unrevealed:[...document.querySelectorAll('[data-reveal]')].filter(n=>!n.classList.contains('is-visible')).map(n=>n.className)}))).toEqual({reduce:true,motion:true,unrevealed:[]});
   await page.waitForFunction(() => [...document.querySelectorAll('link[rel=stylesheet]')].filter(link=>new URL(link.href).origin===location.origin).every(link=>link.sheet));
   await page.evaluate(async () => {
@@ -60,7 +61,7 @@ for (const file of await pages(root)) {
 }
 
 
-for (const width of [320,1280]) test('deep missing path at '+width+'px has no application console errors', async ({page}) => {
+for (const width of [320,390,1280]) test('deep missing path at '+width+'px has no application console errors', async ({page}) => {
  const missing=new URL('missing/deep/page',base).href;
  const errors=[];
  page.on('console',message=>{
@@ -100,3 +101,7 @@ for (const width of [320,1280]) test('deep missing path at '+width+'px has no ap
  expect(await page.evaluate(()=>window.workerRegistrations)).toEqual([{url:new URL('service-worker.js',base).href,scope:base}]);
  expect(errors).toEqual([]);
 });
+
+for(const hidden of ['html','body']) test('geometry detects planted overflow behind '+hidden+' clipping',async({page})=>{await page.setViewportSize({width:320,height:900});await page.setContent('<style>'+hidden+'{overflow:hidden}body{margin:0}#planted{width:616px;height:40px}</style><main><div id="planted">Visible content that must not disappear</div></main>');expect(await page.evaluate(geometryFindings)).not.toEqual([]);});
+
+test('geometry detects content clipped inside a viewport-sized container',async({page})=>{await page.setViewportSize({width:390,height:900});await page.setContent('<main style="width:200px;height:20px;overflow:hidden"><div style="height:80px">Literal text must remain readable</div></main>');expect((await page.evaluate(geometryFindings)).some(f=>f.kind==='clip-y')).toBe(true);});
