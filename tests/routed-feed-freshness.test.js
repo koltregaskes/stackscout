@@ -68,3 +68,5 @@ test('the scheduled workflow runs this check every day', () => {
   assert.match(workflow, /workflow_dispatch:/)
   assert.doesNotMatch(workflow, /contents: write/)
 })
+
+test('future source or acquisition timestamps cannot report fresh',()=>{const future='2026-10-27T06:30:00Z';assert.throws(()=>assessRoutedFeedFreshness(feedAt(future),now),/future/);assert.throws(()=>assessRoutedFeedFreshness({...feedAt(now.toISOString()),articles:[{date:future}]},now),/future/);});
