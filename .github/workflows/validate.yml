@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Rebuild committed snapshot (freshness is checked by Canary validate)
         run: npm run build:site -- --snapshot
@@ -32,7 +32,7 @@ jobs:
         run: test -s index.html
 
       - name: HTML syntax validation
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        uses: Cyb3r-Jak3/html5validator-action@v8.0.0
         with:
           root: .
           format: text
