@@ -88,7 +88,7 @@ function buildLlmsTxt(site, categories) {
 
 ## Start Here
 
-${STATIC_PAGES.map((page) => `- [${page.title}](${PUBLIC_BASE_URL}${page.outputPath.replace(/index\\.html$/, '')}): ${page.summary}`).join('\n')}
+${STATIC_PAGES.map((page) => `- [${page.title}](${PUBLIC_BASE_URL}${page.outputPath.replace(/index\.html$/, '')}): ${page.summary}`).join('\n')}
 
 ## Categories
 
@@ -1326,6 +1326,7 @@ ${routes.map((route) => `  <url><loc>${PUBLIC_BASE_URL}${route}</loc></url>`).jo
 }
 
 function renderNotFound(outputPath) {
+  const siteRootPath = new URL(PUBLIC_BASE_URL).pathname
   return renderDocument({
     title: 'Stack Scout // Page not found',
     description: 'The requested Stack Scout page could not be found.',
@@ -1344,7 +1345,7 @@ function renderNotFound(outputPath) {
         </div>
       </section>
     `,
-  })
+  }).replace(/\b(href|src)=(["'])\.\//g, (_, attr, quote) => `${attr}=${quote}${siteRootPath}`)
 }
 
 function main() {

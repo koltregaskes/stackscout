@@ -4,13 +4,13 @@
 
 ## Start Here
 
-- [Home](https://koltregaskes.github.io/stackscout/index.html): Editorial front door, featured tools, categories, updates, and the lab subset.
-- [Top tools](https://koltregaskes.github.io/stackscout/catalog/index.html): Searchable, filterable catalog of tracked tools and lab products.
-- [Categories](https://koltregaskes.github.io/stackscout/categories/index.html): Landing page for websites, web services, APIs, MCPs, CLIs, and app lanes.
-- [Wire](https://koltregaskes.github.io/stackscout/updates/index.html): Recent public activity, releases, direction changes, and noteworthy platform moves.
-- [Radar](https://koltregaskes.github.io/stackscout/radar/index.html): The worth-watching layer for tools and systems that are not yet full recommendations.
-- [Collections](https://koltregaskes.github.io/stackscout/collections/index.html): Curated use-case groupings that make the catalog easier to navigate.
-- [Sources & method](https://koltregaskes.github.io/stackscout/method/index.html): Public badge definitions, freshness rules, and editorial guardrails.
+- [Home](https://koltregaskes.github.io/stackscout/): Editorial front door, featured tools, categories, updates, and the lab subset.
+- [Top tools](https://koltregaskes.github.io/stackscout/catalog/): Searchable, filterable catalog of tracked tools and lab products.
+- [Categories](https://koltregaskes.github.io/stackscout/categories/): Landing page for websites, web services, APIs, MCPs, CLIs, and app lanes.
+- [Wire](https://koltregaskes.github.io/stackscout/updates/): Recent public activity, releases, direction changes, and noteworthy platform moves.
+- [Radar](https://koltregaskes.github.io/stackscout/radar/): The worth-watching layer for tools and systems that are not yet full recommendations.
+- [Collections](https://koltregaskes.github.io/stackscout/collections/): Curated use-case groupings that make the catalog easier to navigate.
+- [Sources & method](https://koltregaskes.github.io/stackscout/method/): Public badge definitions, freshness rules, and editorial guardrails.
 
 ## Categories
 
