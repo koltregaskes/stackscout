@@ -1,4 +1,4 @@
-﻿import fs from 'node:fs';
+import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -15,10 +15,10 @@ for(const p of pages){
  urls.push(url);
  // Preserve existing site-specific graph and descriptions, normalise sharing URLs.
  html=html.replace(/\s*<link\b[^>]*rel="(?:canonical|alternate)"[^>]*>/g,'').replace(/\s*<meta\b[^>]*(?:property="og:(?:url|image(?:\:[^"]+)?)"|name="twitter:(?:card|image(?:\:[^"]+)?)")[^>]*>/g,'');
- html=html.replace(/\s*<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/g,'');
+ html=html.replace(/\s*<script\b[^>]*data-seo-generated="true"[^>]*>[\s\S]*?<\/script>/g,'');
  const jsonld=[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)];
  for(const m of jsonld) JSON.parse(m[1]);
- const schema=jsonld.length?'':`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:html.match(/<title>(.*?)<\/title>/s)?.[1]||cfg.title,url,isPartOf:{'@type':'WebSite',name:cfg.title,url:cfg.base}}).replaceAll('<','\\u003c')}</script>`;
+ const schema=jsonld.length?'':`<script type="application/ld+json" data-seo-generated="true">${JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:html.match(/<title>(.*?)<\/title>/s)?.[1]||cfg.title,url,isPartOf:{'@type':'WebSite',name:cfg.title,url:cfg.base}}).replaceAll('<','\\u003c')}</script>`;
  const tags=`\n<link rel="canonical" href="${url}">\n<meta property="og:url" content="${url}">\n<meta property="og:image" content="${cfg.base}social-preview.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="${esc(cfg.title)}">\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="${cfg.base}social-preview.png">\n<link rel="alternate" type="application/rss+xml" title="${esc(cfg.title)}" href="${cfg.base}rss.xml">\n${schema}\n`;
  html=html.replace(/\s*<\/head>/,tags+'</head>');
  save(p,html);
