@@ -501,6 +501,7 @@ async function refreshRoutedFeed({
   for (const source of sources) {
     try {
       const entries = await fetchSource(source, fetchImpl, retries)
+      if (!entries.length) throw new Error('zero dated entries returned')
       tagged.push(...tagEntries(entries, source, Number(siteFilter.min_importance_score ?? 0)))
       console.log(`${source.id}: fetched ${entries.length} dated entries`)
     } catch (error) {
