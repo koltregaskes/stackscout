@@ -17,6 +17,7 @@ for (const file of await pages(root)) {
  const relative = path.relative(root,file).replaceAll('\\','/');
  const html = await fs.readFile(file,'utf8');
  for (const width of [320,1280]) test(`${relative} at ${width}px`, async ({page}) => {
+  await page.addInitScript(() => { window.cspViolations=[]; document.addEventListener("securitypolicyviolation", e => window.cspViolations.push({directive:e.effectiveDirective,blocked:e.blockedURI})); });
   await page.setViewportSize({width,height:900});
   await page.emulateMedia({reducedMotion:'reduce'});
   await page.route('**/*', async route => {
@@ -43,6 +44,7 @@ for (const file of await pages(root)) {
    await Promise.all(document.getAnimations().filter(a=>a.effect?.getTiming().iterations !== Infinity).map(a=>a.finished.catch(()=>{})));
    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
   });
+  expect(await page.evaluate(()=>window.cspViolations)).toEqual([]);
   const result = await new AxeBuilder({page}).analyze();
   expect(result.violations.filter(v => ['serious','critical'].includes(v.impact)).map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
   const links = await page.locator('[href], [src]').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')||n.getAttribute('src')).filter(Boolean).map(value=>new URL(value,document.baseURI).href));
