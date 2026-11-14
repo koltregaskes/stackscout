@@ -37,6 +37,7 @@ function assessRoutedFeedFreshness(feed, now = new Date()) {
     }
     return time
   })
+  if (generatedMs > nowMs + 5 * 60_000 || itemTimes.some(time => time > nowMs + 5 * 60_000)) throw new Error("Routed feed timestamp is in the future.")
   const newestMs = itemTimes.length ? Math.max(...itemTimes) : generatedMs
   const ageDays = Math.max(nowMs - generatedMs, nowMs - newestMs) / 86_400_000
 
