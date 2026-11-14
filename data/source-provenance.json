@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-13T11:12:01.924Z",
+  "generatedAt": "2026-11-14T12:14:16.764Z",
   "news": {
     "consumerPath": "data/news-feed-latest.json",
-    "generatedAt": "2026-11-13T11:12:01.924Z",
-    "newestItemAt": "2026-11-13T08:30:30.905Z",
+    "generatedAt": "2026-11-14T12:14:16.764Z",
+    "newestItemAt": "2026-11-14T11:31:10.943Z",
     "itemCount": 15,
     "consumedItems": 15
   }

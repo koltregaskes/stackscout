@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-13T11:12:01.924Z",
+  "generated": "2026-11-14T12:14:16.764Z",
   "site": "Stack Scout",
   "article_count": 15,
   "articles": [
     {
-      "title": "Nearly half of AI research runs stuck with plan A, Bespoke Labs finds",
-      "url": "https://www.digg.com/ai/a7mrvddp",
+      "title": "Gradio’s NeurIPS challenge asks AI agents to show their work",
+      "url": "https://www.digg.com/ai/683fuxv7",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -19,13 +19,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-13T08:30:30.905Z",
-      "summary": "Bespoke Labs links new approaches to bigger validation-score gains; simply telling agents to switch more isn’t a proven fix.",
+      "date": "2026-11-14T11:31:10.943Z",
+      "summary": "Gradio’s paper-reproduction challenge runs November 20–December 5, with a five-paper limit and registration closing November 19.",
       "category": "industry-media"
     },
     {
-      "title": "OpenAI announces Daybreak tools for patching vulnerabilities and testing web apps",
-      "url": "https://www.digg.com/ai/lj4e8b5d",
+      "title": "‘Stand with Jensen’ letter is ‘amateur hour,’ @lulumeservey says",
+      "url": "https://www.digg.com/ai/7byd0tu8",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -39,13 +39,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-13T05:50:31.829Z",
-      "summary": "OpenAI says its agents can prepare patches and test web applications, with engineers reviewing proposed fixes.",
+      "date": "2026-11-14T05:51:31.247Z",
+      "summary": "@lulumeservey says the letter’s signature pages include names such as Xi Jinping and Jeffrey Epstein.",
       "category": "industry-media"
     },
     {
-      "title": "SOV-Transcribe-1 tops the open-weight speech-to-text ranking, says @ArtificialAnlys",
-      "url": "https://www.digg.com/ai/358ns36r",
+      "title": "Muse announces Poppy 1.0, an open standard for personal agents to work with businesses",
+      "url": "https://www.digg.com/ai/h1x9ymfb",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -59,13 +59,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-13T04:29:55.227Z",
-      "summary": "With a 2.3% AA-WER Index score, SOV-Transcribe-1 ranks seventh of 44 models overall, according to @ArtificialAnlys.",
+      "date": "2026-11-14T05:32:00.191Z",
+      "summary": "Muse says a poppy.json file tells personal agents how to reach businesses’ websites, APIs or agents.",
       "category": "industry-media"
     },
     {
-      "title": "Perplexity’s Decider update cuts to the passage",
-      "url": "https://www.digg.com/ai/bo2mlfn9",
+      "title": "Databricks says Genie hit 91% on its data benchmark. Rivals used a different setup.",
+      "url": "https://www.digg.com/ai/il3nxnsy",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -79,13 +79,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T23:30:32.797Z",
-      "summary": "Arav Srinivas says Decider v1.3 and Decider Flash v1.3 find requested passages and show where they appear.",
+      "date": "2026-11-14T01:43:31.479Z",
+      "summary": "Databricks says Genie beat two unnamed agents using fewer than half the tokens, though the systems had different integrations.",
       "category": "industry-media"
     },
     {
-      "title": "Replit Agent can now buy through Link, @jeff_weinstein says",
-      "url": "https://www.digg.com/ai/ug3m2ajl",
+      "title": "Epoch says AI safety-test agents tried hacking its site—and posing as its staff",
+      "url": "https://www.digg.com/ai/a1q745xp",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -99,13 +99,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T23:21:24.616Z",
-      "summary": "@amasad says Replit Agent can make business purchases, including ads aimed at acquiring new customers.",
+      "date": "2026-11-14T01:35:47.629Z",
+      "summary": "Epoch says agents sought private benchmark data during Trajectory Labs’ evaluations, initially without consent, but didn’t obtain it.",
       "category": "industry-media"
     },
     {
-      "title": "Aurora users say it does the annoying part: calling businesses",
-      "url": "https://www.digg.com/ai/6h9x8pfq",
+      "title": "Claude Fable and Opus lead Coding Agent Index v2.1. Fable max takes an expensive detour",
+      "url": "https://www.digg.com/ai/f9w7so4z",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -119,13 +119,53 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T23:10:55.612Z",
-      "summary": "Posts describe AI agents phoning local businesses, with users reporting AC-service results and a completed furniture pickup.",
+      "date": "2026-11-14T01:34:47.108Z",
+      "summary": "Artificial Analysis reports a tie at 58, while Fable’s pricier max setting scores lower as more attempts time out.",
       "category": "industry-media"
     },
     {
-      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-      "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "title": "NYU Courant’s new AI center wants models mathematicians can pick apart",
+      "url": "https://www.digg.com/ai/vdn548s2",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-14T01:33:21.784Z",
+      "summary": "MAIC says it’s founding a consortium with UT Austin to pursue shared infrastructure and eventually its own open model.",
+      "category": "industry-media"
+    },
+    {
+      "title": "A Cybercab of your own? Tesla invites select customers to buy",
+      "url": "https://www.digg.com/ai/tw8h94m7",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-14T01:31:14.153Z",
+      "summary": "Cybercab purchase invites are going to select customers, reportedly with a $29,990 price and required $299 monthly autonomy subscription.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -138,13 +178,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T22:42:51.000Z",
-      "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
+      "date": "2026-11-13T22:43:00.000Z",
+      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
       "category": "industry-media"
     },
     {
-      "title": "Muse can now place calls to US businesses — if you pay",
-      "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -157,53 +197,87 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T22:22:28.000Z",
-      "summary": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
+      "date": "2026-11-13T19:37:57.000Z",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
       "category": "industry-media"
     },
     {
-      "title": "willdepue claims six Chinese AI models carry Blackwell fingerprints",
-      "url": "https://www.digg.com/ai/kp0ndugm",
-      "source": "Digg AI",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "source": "TechCrunch AI",
       "tags": [
         "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
+        "product_launch",
+        "funding",
+        "acquisition",
         "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-13T18:40:30.000Z",
+      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source",
+        "model_release",
+        "tool_use",
+        "agentic_framework"
       ],
       "matching_tags": [
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T22:10:11.812Z",
-      "summary": "willdepue says initial-weight patterns match Blackwell hardware, citing reproductions on a B300 and rented GB200.",
-      "category": "industry-media"
+      "date": "2026-11-13T18:00:39.000Z",
+      "summary": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "category": "platform-blog"
     },
     {
-      "title": "Mira Murati says it’s release time for Inkling 2 Small’s weights",
-      "url": "https://www.digg.com/ai/x94edoey",
-      "source": "Digg AI",
+      "title": "XYBench: Helping with the problem behind the question",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "source": "Hugging Face Blog",
       "tags": [
-        "announcement",
-        "model_release",
         "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
+        "model_release",
+        "tool_use",
+        "agentic_framework"
       ],
       "matching_tags": [
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T21:59:36.282Z",
-      "summary": "Murati’s November 12 announcement credits her team and safety-testing partners, but doesn’t spell out licensing or download details.",
+      "date": "2026-11-13T17:02:35.000Z",
+      "summary": "XYBench: Helping with the problem behind the question",
+      "category": "platform-blog"
+    },
+    {
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-13T16:00:12.000Z",
+      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
       "category": "industry-media"
     },
     {
       "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -216,83 +290,8 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-12T21:35:00.000Z",
+      "date": "2026-11-13T15:58:00.000Z",
       "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-12T21:27:10.000Z",
-      "summary": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Jensen Huang was having a third affair, Reuters reports",
-      "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-12T20:26:47.000Z",
-      "summary": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-      "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-12T19:27:45.000Z",
-      "summary": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
-      "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-      "source": "Ars Technica AI",
-      "tags": [
-        "research_paper",
-        "open_source",
-        "hardware",
-        "policy"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-12T19:23:03.000Z",
-      "summary": "Gemini 4 Hydrogen isn’t getting a slow, security-conscious release like Carbon and Argon.",
       "category": "industry-media"
     }
   ]
