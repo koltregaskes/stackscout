@@ -1,4 +1,5 @@
-const CACHE_NAME = 'stackscout-2026-11-15-30183c338428'
+const CACHE_NAME = 'stackscout-2026-11-15-48f29d8cf0ad'
+const CACHE_PREFIX = 'stackscout-'
 const APP_SHELL = [
   '',
   'index.html',
@@ -43,7 +44,7 @@ self.addEventListener('activate', (event) => {
     caches
       .keys()
       .then((keys) =>
-        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))),
+        Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME).map((key) => caches.delete(key))),
       )
       .then(() => self.clients.claim()),
   )
@@ -51,22 +52,25 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url)
-  if (requestUrl.origin !== self.location.origin || event.request.method !== 'GET') {
+  const scopeUrl = new URL(self.registration.scope)
+  if (requestUrl.origin !== scopeUrl.origin || !requestUrl.pathname.startsWith(scopeUrl.pathname) || event.request.method !== 'GET') {
     return
   }
 
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request).catch(async () => {
-        const cached = await caches.match(event.request)
-        return cached || caches.match(scopedUrl('index.html'))
+        const cache = await caches.open(CACHE_NAME)
+        const cached = await cache.match(event.request)
+        return cached || cache.match(scopedUrl('index.html'))
       }),
     )
     return
   }
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    caches.open(CACHE_NAME).then(async (cache) => {
+      const cached = await cache.match(event.request)
       if (cached) {
         return cached
       }
@@ -77,7 +81,7 @@ self.addEventListener('fetch', (event) => {
         }
 
         const copy = response.clone()
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy))
+        event.waitUntil(cache.put(event.request, copy))
         return response
       })
     }),
