@@ -332,3 +332,11 @@ test('zero-entry sources warn and count against the healthy majority', async () 
  const result=await refreshRoutedFeed({pipelineDir:dir,outputPath:path.join(dir,'feed.json'),retries:1,fetchImpl:async url=>({ok:true,status:200,text:async()=>url.endsWith('healthy')?'<rss><channel><item><title>Recovered entry</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>':'<rss><channel></channel></rss>'})});
  assert.equal(result.wrote,false);assert.equal(result.failures.length,2);assert.ok(result.failures.every(f=>f.includes('zero dated entries')));
 });
+
+test('malformed numeric entities cannot discard an otherwise valid RSS source', () => {
+  const xml = '<rss><item><title>Release &#x110000; &#xD800; &#12abc; &#x1F680;</title><link>https://example.com/release</link><pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate><description>&lt;img src=x onerror=&quot;alert(1)&quot;&gt;</description></item></rss>'
+  const entries = parseRss(xml, {})
+  assert.equal(entries.length, 1)
+  assert.equal(entries[0].title, 'Release &#x110000; &#xD800; &#12abc; \u{1F680}')
+  assert.equal(entries[0].date, '2026-11-15T12:00:00.000Z')
+})

@@ -11,6 +11,7 @@
  */
 const fs = require('fs')
 const path = require('path')
+const { decodeHtmlEntities } = require('./routed-news')
 
 const SITE_SLUG = 'stackscout'
 const OUTPUT_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
@@ -29,24 +30,12 @@ const MONTHS = {
 }
 
 function cleanText(value) {
-  return String(value || '')
+  return decodeHtmlEntities(String(value || '')
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
-    .replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (match, entity) => {
-      const lower = entity.toLowerCase()
-      if (lower.startsWith('#x')) {
-        const code = Number.parseInt(lower.slice(2), 16)
-        return Number.isNaN(code) ? match : String.fromCodePoint(code)
-      }
-      if (lower.startsWith('#')) {
-        const code = Number.parseInt(lower.slice(1), 10)
-        return Number.isNaN(code) ? match : String.fromCodePoint(code)
-      }
-      const named = { amp: '&', apos: "'", gt: '>', lt: '<', nbsp: ' ', quot: '"' }
-      return named[lower] ?? match
-    })
+  )
     .replace(/\s+/g, ' ')
     .trim()
 }

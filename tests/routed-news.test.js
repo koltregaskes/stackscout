@@ -236,3 +236,19 @@ test('routed feed import refuses a stale router feed', () => {
   )
   assert.equal(fs.existsSync(path.join(targetDir, 'news-feed-latest.json')), false)
 })
+
+test('routed acceptance rejects coerced timestamps', () => {
+  for (const value of [null, undefined, '', ' ', 1234567, false, []]) {
+    assert.throws(() => assertRoutedNewsFeed({ ...routedFeed, generated: value }, { now }), /generated timestamp/)
+    assert.throws(() => assertRoutedNewsFeed({ ...routedFeed, articles: routedFeed.articles.map(a => ({ ...a, date: value })) }, { now }), /article 1 date/)
+  }
+})
+
+test('malformed entities remain text and escaped markup cannot break an attribute', () => {
+  const { cleanPublicText } = require('../scripts/routed-news')
+  const input = 'Release &#x110000; &#999999999999999999999; &#xD800; &#12abc; &#x1F680; &amp;'
+  assert.equal(cleanPublicText(input), 'Release &#x110000; &#999999999999999999999; &#xD800; &#12abc; \u{1F680} &')
+  const rendered = escapeHtml(cleanPublicText('&lt;img src=x onerror=&quot;alert(1)&quot;&gt;'))
+  assert.equal(rendered, '&lt;img src=x onerror=&quot;alert(1)&quot;&gt;')
+  assert.ok(!rendered.includes('<img'))
+})
