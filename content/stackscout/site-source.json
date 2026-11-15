@@ -3,7 +3,7 @@
     "name": "Stack Scout",
     "tagline": "A field log for the AI stack.",
     "description": "Stack Scout tracks the tools, services, APIs, MCPs, CLIs, and workbench apps worth a builder's attention.",
-    "heroEyebrow": "Today's lead // official sources first",
+    "heroEyebrow": "Builder tools // dated source log",
     "heroTitle": "A field log for the tools worth opening.",
     "heroLede": "Stack Scout is a selective, source-led zine for builder infrastructure: APIs, MCPs, CLIs, services, workbench apps, and the lab tools we are building ourselves. It is curated rather than exhaustive, with visible dates and editorial badges instead of fake precision."
   },

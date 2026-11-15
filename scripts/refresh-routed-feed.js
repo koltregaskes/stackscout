@@ -11,6 +11,7 @@
  */
 const fs = require('fs')
 const path = require('path')
+const { tagEntries } = require('./article-relevance')
 
 const SITE_SLUG = 'stackscout'
 const OUTPUT_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
@@ -120,7 +121,9 @@ function parseRss(xml, source) {
     const summary = cleanText(
       readTag(block, 'description') || readTag(block, 'summary') || readTag(block, 'content'),
     )
-    if (title && /^https?:\/\//i.test(url)) entries.push({ title, url, date, summary })
+    const metadata = [...block.matchAll(/<category\b[^>]*>([\s\S]*?)<\/category>/gi)].map(match => cleanText(match[1]))
+    for (const match of block.matchAll(/<category\b[^>]*\bterm=["']([^"']+)["']/gi)) metadata.push(cleanText(match[1]))
+    if (title && /^https?:\/\//i.test(url)) entries.push({ title, url, date, summary, metadata })
   }
   return capEntries(entries, source.maxItems)
 }
@@ -357,6 +360,7 @@ function parseHuggingNews(body, source) {
     url: story?.url || (story?.slug ? `https://huggingnews.com/ai/${story.slug}` : ''),
     date: parseTimestamp(story?.publishedAt || story?.date || ''),
     summary: cleanText(story?.summary || story?.description || ''),
+    metadata: Array.isArray(story?.tags) ? story.tags.filter(tag => typeof tag === 'string') : [],
   })).filter((entry) => entry.title && /^https?:\/\//i.test(entry.url))
   return capEntries(entries, source.maxItems)
 }
@@ -410,19 +414,6 @@ function applySiteFilter(items, siteFilter, now) {
   }
   matched.sort((left, right) => right.date.localeCompare(left.date) || left.url.localeCompare(right.url))
   return matched.slice(0, Number.isFinite(maxArticles) && maxArticles > 0 ? maxArticles : matched.length)
-}
-
-function tagEntries(entries, source, importance) {
-  return entries.map((entry) => ({
-    title: entry.title,
-    url: entry.url,
-    source: source.name,
-    tags: [...(source.tags || [])],
-    importance,
-    date: entry.date,
-    summary: (entry.summary || entry.title).slice(0, 700),
-    category: source.categories?.[0] || source.section || '',
-  }))
 }
 
 async function fetchText(url, fetchImpl, retries) {
@@ -502,7 +493,7 @@ async function refreshRoutedFeed({
     try {
       const entries = await fetchSource(source, fetchImpl, retries)
       if (!entries.length) throw new Error('zero dated entries returned')
-      tagged.push(...tagEntries(entries, source, Number(siteFilter.min_importance_score ?? 0)))
+      tagged.push(...tagEntries(entries, source))
       console.log(`${source.id}: fetched ${entries.length} dated entries`)
     } catch (error) {
       const message = `${source.id} (${source.name || source.id}) could not be fetched: ${error.message}`

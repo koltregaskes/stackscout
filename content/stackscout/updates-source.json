@@ -83,8 +83,8 @@
     "id": "anthropic-sonnet-46",
     "toolSlug": "anthropic-api",
     "kind": "model",
-    "title": "Anthropic's current system-card set centers Claude Sonnet 4.6",
-    "summary": "Anthropic's model materials list Claude Sonnet 4.6 as the current Sonnet generation and explicitly note API access among the active surfaces.",
+    "title": "February 2026 record: Claude Sonnet 4.6 system cards",
+    "summary": "This entry recorded Claude Sonnet 4.6 system cards and API access on 20 February 2026. It does not identify the current model generation.",
     "publishedAt": "2026-02-20",
     "sourceLabel": "Anthropic System Cards",
     "sourceUrl": "https://www.anthropic.com/system-cards"

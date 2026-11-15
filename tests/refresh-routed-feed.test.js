@@ -27,7 +27,7 @@ function pipeline(dir, sources) {
   fs.writeFileSync(path.join(dir, 'config', 'sources.json'), JSON.stringify({ sources }))
 }
 
-test('rss entries keep the source tags and the site filter', () => {
+test('rss entries retain article text and the site filter uses explicit article tags', () => {
   const rss = `<?xml version="1.0"?><rss version="2.0"><channel><title>Example</title>
     <item><title><![CDATA[Router launch]]></title><link>https://example.com/router</link><pubDate>Sun, 25 Oct 2026 21:31:16 +0000</pubDate><description>A real &amp; fetched summary.</description></item>
     </channel></rss>`
@@ -194,7 +194,7 @@ test('an empty feed document is a successful fetch and a matched item is written
   ])
   const bodies = {
     'https://export.arxiv.org/rss/cs.AI': '<rss version="2.0"><channel><title>cs.AI</title><item><title>Outside focus</title><link>https://arxiv.org/abs/1</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>',
-    'https://techcrunch.com/category/artificial-intelligence/feed/': '<rss version="2.0"><channel><item><title>Grok clip</title><link>https://techcrunch.com/2026/10/25/grok/</link><pubDate>Sun, 25 Oct 2026 21:31:16 +0000</pubDate><description>Fetched from the feed.</description></item></channel></rss>',
+    'https://techcrunch.com/category/artificial-intelligence/feed/': '<rss version="2.0"><channel><item><title>Developer SDK launch</title><link>https://techcrunch.com/2026/10/25/grok/</link><pubDate>Sun, 25 Oct 2026 21:31:16 +0000</pubDate><description>Fetched from the feed.</description></item></channel></rss>',
   }
   const result = await refreshRoutedFeed({
     pipelineDir: dir,
@@ -210,7 +210,7 @@ test('an empty feed document is a successful fetch and a matched item is written
   assert.equal(feed.site, 'Stack Scout')
   assert.equal(feed.generated, '2026-10-26T00:10:00.000Z')
   assert.equal(feed.article_count, 1)
-  assert.equal(feed.articles[0].title, 'Grok clip')
+  assert.equal(feed.articles[0].title, 'Developer SDK launch')
   assert.equal(feed.articles[0].source, 'TechCrunch AI')
   assert.deepEqual(feed.articles[0].tags, ['product_launch'])
   assert.equal(feed.articles[0].summary, 'Fetched from the feed.')
@@ -256,7 +256,7 @@ test('a thrown timeout uses the remaining retries', async () => {
     fetchImpl: async () => {
       calls += 1
       if (calls === 1) throw new Error('The operation was aborted due to timeout')
-      return { ok: true, status: 200, text: async () => '<rss version="2.0"><channel><item><title>Recovered entry</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>' }
+      return { ok: true, status: 200, text: async () => '<rss version="2.0"><channel><item><title>New SDK release</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>' }
     },
   })
   assert.ok(calls >= 2)
@@ -319,7 +319,7 @@ test('one unavailable source preserves the healthy majority and reports the fail
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'routed-feed-'));
   const outputPath = path.join(dir, 'news-feed-latest.json');
   pipeline(dir, ['healthy-one', 'healthy-two', 'offline'].map(id => ({id, name:id, adapter:'rss', url:'https://example.com/'+id, tags:['open_source']})));
-  const result = await refreshRoutedFeed({pipelineDir:dir, outputPath, retries:1, fetchImpl:async url => ({ok:!url.endsWith('offline'), status:url.endsWith('offline')?404:200, text:async()=>'<rss><channel><item><title>Unmatched research</title><link>https://example.com/research</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>'})});
+  const result = await refreshRoutedFeed({pipelineDir:dir, outputPath, retries:1, fetchImpl:async url => ({ok:!url.endsWith('offline'), status:url.endsWith('offline')?404:200, text:async()=>'<rss><channel><item><title>Open source CLI utility</title><link>https://example.com/research</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>'})});
   assert.equal(result.wrote,true);
   assert.equal(result.failures.length,1);
   assert.match(result.failures[0],/offline/);
@@ -329,6 +329,6 @@ test('one unavailable source preserves the healthy majority and reports the fail
 test('zero-entry sources warn and count against the healthy majority', async () => {
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'routed-feed-'));
  pipeline(dir,['empty-one','empty-two','healthy'].map(id=>({id,name:id,adapter:'rss',url:'https://example.com/'+id,tags:['product_launch']})));
- const result=await refreshRoutedFeed({pipelineDir:dir,outputPath:path.join(dir,'feed.json'),retries:1,fetchImpl:async url=>({ok:true,status:200,text:async()=>url.endsWith('healthy')?'<rss><channel><item><title>Recovered entry</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>':'<rss><channel></channel></rss>'})});
+ const result=await refreshRoutedFeed({pipelineDir:dir,outputPath:path.join(dir,'feed.json'),retries:1,fetchImpl:async url=>({ok:true,status:200,text:async()=>url.endsWith('healthy')?'<rss><channel><item><title>New SDK release</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>':'<rss><channel></channel></rss>'})});
  assert.equal(result.wrote,false);assert.equal(result.failures.length,2);assert.ok(result.failures.every(f=>f.includes('zero dated entries')));
 });

@@ -3,8 +3,8 @@
   "news": {
     "consumerPath": "data/news-feed-latest.json",
     "generatedAt": "2026-11-15T12:46:30.933Z",
-    "newestItemAt": "2026-11-15T12:21:00.137Z",
-    "itemCount": 15,
-    "consumedItems": 15
+    "newestItemAt": "2026-11-15T12:46:30.933Z",
+    "itemCount": 0,
+    "consumedItems": 0
   }
 }
