@@ -1,4 +1,5 @@
 const crypto = require('crypto')
+const { validateCoverage } = require('./source-coverage')
 
 const ROUTED_NEWS_PUBLIC_PATH = 'data/news-feed-latest.json'
 const DEFAULT_MAX_ROUTED_NEWS_AGE_DAYS = 3
@@ -208,6 +209,8 @@ function assertRoutedNewsFeed(
 
 function compileRoutedNewsFeed(feed, options = {}) {
   const provenance = assertRoutedNewsFeed(feed, options)
+  const coverage = feed.acquisition === undefined ? null : validateCoverage(feed.acquisition)
+  if (coverage?.status === 'failed') throw new Error('Source coverage is too low to publish this feed.')
   const updates = feed.articles
     .map((article) => {
       const publishedAtIso = parseDate(article.date, 'article date').toISOString()
@@ -245,6 +248,7 @@ function compileRoutedNewsFeed(feed, options = {}) {
     updates,
     provenance: {
       ...provenance,
+      coverage,
       consumedItems: updates.length,
     },
   }

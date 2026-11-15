@@ -3,6 +3,7 @@ const siteConfig = require('../site-config.json')
 const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
 const crypto = require('crypto')
+const { coverageMessage } = require('./source-coverage')
 const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
@@ -10,6 +11,7 @@ const SOURCE_DIR = path.join(ROOT_DIR, 'content', 'stackscout')
 const DATA_DIR = path.join(ROOT_DIR, 'data')
 let GENERATED_AT = null
 let GENERATED_AT_ISO = null
+let SOURCE_COVERAGE = null
 const PUBLIC_BASE_URL = 'https://koltregaskes.github.io/stackscout/'
 const STATIC_PAGES = [
   ['home', 'Home', 'Editorial front door, featured tools, categories, updates, and the lab subset.', 'index.html'],
@@ -610,7 +612,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
         <nav class="site-nav" aria-label="Primary">${renderNav(currentKey, outputPath)}</nav>
       </div>
     </header>
-    <main class="page-shell" id="main" tabindex="-1">${content}</main>
+    <main class="page-shell" id="main" tabindex="-1">${coverageMessage(SOURCE_COVERAGE) ? `<p class="card-note" role="status">${escapeHtml(coverageMessage(SOURCE_COVERAGE))}</p>` : ''}${content}</main>
     <footer class="site-footer">
       <div class="site-footer__marquee" role="region" aria-label="Stack Scout operating principles">
         <button class="site-footer__marquee-toggle" type="button" aria-pressed="false">Pause</button>
@@ -1367,6 +1369,7 @@ function main() {
   const routedNews = compileRoutedNewsFeed(routedFeed, snapshot ? { now: routedFeed.generated } : {})
   if (snapshot) console.log(`Validating committed snapshot from ${routedFeed.generated}; this does not prove live feed freshness.`)
   GENERATED_AT_ISO = routedNews.provenance.generatedAt
+  SOURCE_COVERAGE = routedNews.provenance.coverage
   GENERATED_AT = GENERATED_AT_ISO.slice(0, 10)
   const updates = mergeUpdates(readJson('updates-source.json'), routedNews.updates)
   const toolIndex = new Map(tools.map((tool) => [tool.slug, tool]))
