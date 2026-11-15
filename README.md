@@ -186,3 +186,9 @@ Routed-source validation rejects missing/non-text timestamps instead of coercing
 JSON null or numbers into dates. Invalid numeric HTML references remain literal
 text, so one malformed reference cannot discard an otherwise valid source;
 rendered text still passes through HTML escaping.
+
+Filtering keeps only finite numeric importance values and HTTP(S) links, orders
+publication timestamps by their UTC instant, and retains the newest accepted
+entry for each source URL. Missing scores remain unknown. The refresh adapter's
+importance values are configured routing thresholds, not independently measured
+quality scores or editorial rankings.

@@ -379,26 +379,38 @@ function applySiteFilter(items, siteFilter, now) {
   const exclude = new Set(siteFilter.exclude_tags || [])
   const minImportance = Number(siteFilter.min_importance_score ?? 0)
   const maxArticles = Number(siteFilter.max_articles_per_run ?? 15)
-  const futureLimit = new Date(now).getTime() + 5 * 60 * 1000
+  const nowMs = now == null ? NaN : new Date(now).getTime()
+  if (!Number.isFinite(nowMs)) throw new Error('Site filter clock is invalid.')
+  if (!Number.isFinite(minImportance)) throw new Error('Site filter minimum importance is invalid.')
+  const futureLimit = nowMs + 5 * 60 * 1000
   const matched = []
-  const seen = new Set()
   for (const item of items) {
-    if (!item?.title || !item?.url || !item?.date || seen.has(item.url)) continue
+    if (!item?.title || !item?.url || typeof item?.date !== 'string' || !item.date.trim()) continue
     const published = new Date(item.date).getTime()
     if (!Number.isFinite(published) || published > futureLimit) continue
     const tags = Array.isArray(item.tags) ? item.tags : []
-    const importance = Number(item.importance)
+    let url
+    try { url = new URL(item.url) } catch { continue }
+    if (!['http:', 'https:'].includes(url.protocol)) continue
+    const importance = typeof item.importance === 'number' ? item.importance : NaN
     if (!Number.isFinite(importance) || importance < minImportance) continue
     if (tags.some((tag) => exclude.has(tag))) continue
     if (include.size > 0 && !tags.some((tag) => include.has(tag))) continue
-    seen.add(item.url)
     matched.push({
       ...item,
+      date: new Date(published).toISOString(),
       matching_tags: (siteFilter.include_tags || []).filter((tag) => tags.includes(tag)),
     })
   }
   matched.sort((left, right) => right.date.localeCompare(left.date) || left.url.localeCompare(right.url))
-  return matched.slice(0, Number.isFinite(maxArticles) && maxArticles > 0 ? maxArticles : matched.length)
+  // Deduplicate after ordering so an older source cannot hide a newer update.
+  const seen = new Set()
+  const unique = matched.filter((item) => {
+    if (seen.has(item.url)) return false
+    seen.add(item.url)
+    return true
+  })
+  return unique.slice(0, Number.isFinite(maxArticles) && maxArticles > 0 ? maxArticles : unique.length)
 }
 
 function tagEntries(entries, source, importance) {
