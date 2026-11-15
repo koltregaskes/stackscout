@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stackscout-2026-11-15-30183c338428'
+const CACHE_NAME = 'stackscout-2026-11-15-ebe90cd7a44d'
 const APP_SHELL = [
   '',
   'index.html',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   'radar/',
   'collections/',
   'method/',
+  'privacy/',
   'styles.css',
   'app.js',
   'pwa.js',

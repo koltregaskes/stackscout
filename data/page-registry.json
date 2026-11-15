@@ -39,6 +39,12 @@
       "href": "collections/"
     },
     {
+      "key": "privacy",
+      "title": "Privacy notice",
+      "summary": "How Stack Scout handles hosting requests, fonts, local storage and privacy rights.",
+      "href": "privacy/"
+    },
+    {
       "key": "method",
       "title": "Sources & method",
       "summary": "Public badge definitions, freshness rules, and editorial guardrails.",

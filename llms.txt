@@ -10,6 +10,7 @@
 - [Wire](https://koltregaskes.github.io/stackscout/updates/): Recent public activity, releases, direction changes, and noteworthy platform moves.
 - [Radar](https://koltregaskes.github.io/stackscout/radar/): The worth-watching layer for tools and systems that are not yet full recommendations.
 - [Collections](https://koltregaskes.github.io/stackscout/collections/): Curated use-case groupings that make the catalog easier to navigate.
+- [Privacy notice](https://koltregaskes.github.io/stackscout/privacy/): How Stack Scout handles hosting requests, fonts, local storage and privacy rights.
 - [Sources & method](https://koltregaskes.github.io/stackscout/method/): Public badge definitions, freshness rules, and editorial guardrails.
 
 ## Categories
