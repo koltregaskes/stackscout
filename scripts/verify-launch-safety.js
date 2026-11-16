@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const { escapeHtml } = require('./routed-news')
+const { serviceWorkerCacheName } = require('./service-worker-cache')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
 const PUBLIC_ENTRIES = [
@@ -194,14 +195,8 @@ function assertRequiredFiles() {
 function assertServiceWorkerFreshness() {
   const serviceWorker = readText('service-worker.js')
   const cacheName = extractCacheName()
-  const cacheDateMatch = cacheName.match(/^stackscout-(\d{4}-\d{2}-\d{2})(?:-[a-f0-9]{12})?$/)
-  if (!cacheDateMatch) {
-    throw new Error(`CACHE_NAME must use stackscout-YYYY-MM-DD with an optional asset revision; found ${cacheName}.`)
-  }
-
-  const issueDate = extractIssueDate()
-  if (cacheDateMatch[1] < issueDate) {
-    throw new Error(`CACHE_NAME ${cacheName} is older than visible generated date ${issueDate}.`)
+  if (cacheName !== serviceWorkerCacheName(ROOT_DIR)) {
+    throw new Error('CACHE_NAME must match the site-unique versioned asset revision; rebuild the site.')
   }
 
   const missingShellEntries = REQUIRED_APP_SHELL_ENTRIES.filter((entry) => !serviceWorker.includes(`'${entry}'`))
