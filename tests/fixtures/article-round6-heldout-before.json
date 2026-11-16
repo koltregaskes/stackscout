@@ -1,0 +1,137 @@
+{
+  "base": "963aed6ec86f516655f3bfa60ea233b56d47758a",
+  "inputSha256": "f750db1c926981fe1ee76cb36ce116652248247f45c76103cd074ce18fd7e042",
+  "classifierSha256": "9f1c8bf2ee478495268f172311798370e21216b1cd76287903988bba4406d8f0",
+  "cleanParentBeforeEdits": true,
+  "inputCount": 20,
+  "predictions": [
+    {
+      "id": "h01",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h02",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h03",
+      "expected": true,
+      "admitted": true,
+      "tags": [
+        "product_launch"
+      ]
+    },
+    {
+      "id": "h04",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h05",
+      "expected": true,
+      "admitted": true,
+      "tags": [
+        "product_launch"
+      ]
+    },
+    {
+      "id": "h06",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h07",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h08",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h09",
+      "expected": true,
+      "admitted": true,
+      "tags": [
+        "product_launch"
+      ]
+    },
+    {
+      "id": "h10",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h11",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h12",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h13",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h14",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h15",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h16",
+      "expected": false,
+      "admitted": true,
+      "tags": [
+        "product_launch"
+      ]
+    },
+    {
+      "id": "h17",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h18",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h19",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h20",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {"id":"h01","title":"Orchard launches observability API for deployment metrics","summary":"","expected":true,"reason":"A named provider launches a builder API."},
+  {"id":"h02","title":"Willow ships batch inference SDK for Python","summary":"","expected":true,"reason":"A release of an SDK with functional descriptors."},
+  {"id":"h03","title":"Northstar releases a zero-copy CLI for package downloads","summary":"","expected":true,"reason":"A command-line tool release."},
+  {"id":"h04","title":"Harbour retires its deprecated API version next month","summary":"","expected":true,"reason":"An API lifecycle event targeting a version."},
+  {"id":"h05","title":"Juniper SDK adds Linux support","summary":"","expected":true,"reason":"The tool is explicitly the subject of a feature addition."},
+  {"id":"h06","title":"Redwood introduces hosted connector MCP servers","summary":"","expected":true,"reason":"An MCP server release with two descriptors."},
+  {"id":"h07","title":"Arc API becomes generally available for developers","summary":"","expected":true,"reason":"General availability of a builder API."},
+  {"id":"h08","title":"Atlas launches plugin SDK: which platforms are supported?","summary":"","expected":true,"reason":"An affirmative SDK launch followed by a separate question."},
+  {"id":"h09","title":"Developer platform update","summary":"At this week's summit, Cedar released a telemetry API for app makers.","expected":true,"reason":"A summary independently reports an API release."},
+  {"id":"h10","title":"New tooling from Finch","summary":"Finch's command-line utility is now available to teams.","expected":true,"reason":"An affirmative tool-availability statement in the summary."},
+  {"id":"h11","title":"Orchard Releases Statement Criticising Its API Provider","summary":"","expected":false,"reason":"The released object is a statement about a provider."},
+  {"id":"h12","title":"Willow Launches Investigation Into Connector SDK Breach","summary":"","expected":false,"reason":"An investigation does not release or change the SDK."},
+  {"id":"h13","title":"Northstar releases annual survey about developer tools","summary":"","expected":false,"reason":"The released object is a survey."},
+  {"id":"h14","title":"Harbour's API team opens a training centre","summary":"","expected":false,"reason":"An organisational event, without a tool change."},
+  {"id":"h15","title":"Why did the Juniper API release fail?","summary":"","expected":false,"reason":"A question about a failed release is not an asserted release."},
+  {"id":"h16","title":"Redwood Releases Evidence Linking Its CLI To Surveillance","summary":"","expected":false,"reason":"The released object is evidence about the CLI."},
+  {"id":"h17","title":"Arc unveils an exhibition inspired by software frameworks","summary":"","expected":false,"reason":"An exhibition is not a builder-tool change."},
+  {"id":"h18","title":"Atlas launches a scholarship for open-source developers","summary":"","expected":false,"reason":"A scholarship is not an open-source tool."},
+  {"id":"h19","title":"Quarterly results from Cedar","summary":"Cedar released disappointing sales figures for its API division.","expected":false,"reason":"The summary reports financial figures, not an API release."},
+  {"id":"h20","title":"Finch API community update","summary":"Maintainers discussed a possible SDK retirement; no retirement date has been agreed.","expected":false,"reason":"Discussion of a possible retirement is not a confirmed lifecycle event."}
+]

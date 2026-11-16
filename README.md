@@ -107,6 +107,10 @@ phrases use bounded common modifiers, capitalised names and version/hyphenated
 tokens; questions and unrelated prose cannot supply a release on their own.
 Unlisted wholly lowercase product names can be missed. This is a deterministic
 editorial heuristic, not complete natural-language subject recognition.
+In object position, up to two unrecognised descriptor words immediately before
+the tool noun are allowed, with no free -ing word. Capitalisation alone is not
+name evidence in a Title Case object clause. Explicit version lead-ins and
+separately marked question trailers can retain an affirmative release statement.
 
 `.github/workflows/refresh-routed-feed.yml` runs every day at 05:15 UTC. It
 checks out `shared/website-tools/pipelines/news` from `koltregaskes/ai-resource-hub`,

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "AWS releases new agent SDK for Bedrock",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "GitHub launches remote MCP server",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "OpenAI launches realtime voice API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Anthropic releases files API in beta",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Google launches managed MCP servers for Cloud",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Google to sunset Firebase Dynamic Links API in August",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "X retires free API tier",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "OpenAI releases Agents SDK: what changed?",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Google launches Gemini CLI, but is it any good?",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "What developers need to know this week",
+    "summary": "Google released Gemini CLI 0.6 with extension support.",
+    "expected": true
+  },
+  {
+    "title": "Python tooling roundup",
+    "summary": "With version 2, the Stripe Python SDK adds async support.",
+    "expected": true
+  },
+  {
+    "title": "Cloudflare developer week, day three",
+    "summary": "Today we are launching the Workers AI SDK in open beta.",
+    "expected": true
+  },
+  {
+    "title": "OpenAI Releases Statement Blaming Third-Party API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "EU Introduces Tougher Rules Governing AI Model Endpoints",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Meta Releases Leaked Internal Memo Criticising Llama API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Startup Launches Marketing Push Targeting Developer Tools",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Hackers release Stripe API keys online",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Security researchers release proof-of-concept attack on Python SDK",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Apple ships fix after outage hits its API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Heroku retires free tier for API users",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Is OpenAI's new Agents SDK worth it?",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Apple faces developer backlash",
+    "summary": "Developers said the update broke the Swift SDK.",
+    "expected": false
+  },
+  {
+    "title": "Earnings: Twilio beats estimates",
+    "summary": "The company Released Results Showing Strong Messaging API demand.",
+    "expected": false
+  },
+  {
+    "title": "Interview with a DevRel lead",
+    "summary": "She recalls the day the team launched a petition against the API.",
+    "expected": false
+  }
+]
