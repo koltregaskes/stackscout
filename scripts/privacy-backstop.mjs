@@ -1,4 +1,5 @@
 import {decodeReferenceText} from './privacy-source-references.mjs';
+import {decodeDataDocument,DOCUMENT_DEPTH_LIMIT} from './privacy-data-url.mjs';
 
 // This sweep is deliberately independent of HTML/CSS/JS reference recognition.
 // Keep every normalisation view: decoding must never erase an earlier token.
@@ -12,7 +13,8 @@ function normaliseEscapes(source,kind) {
     });
 }
 
-export function backstopHosts(source,{baseURL='https://koltregaskes.github.io/stackscout/',decodedText}={}) {
+export function backstopHosts(source,{baseURL='https://koltregaskes.github.io/stackscout/',decodedText,depth=0}={}) {
+    if(depth>DOCUMENT_DEPTH_LIMIT)throw Error('Nested data document exceeds inspection limit');
     const decoded=decodedText??decodeReferenceText(source);
     const views=new Set([decoded]);
     for(const kind of ['js','css']){
@@ -25,9 +27,13 @@ export function backstopHosts(source,{baseURL='https://koltregaskes.github.io/st
         }
     }
     const hosts=new Set();
+    // Preserve original views and add percent-decoded byte sequences, including
+    // delimiters such as %22 before a scheme. Unrelated literal % signs are text.
+    for(const view of [...views])views.add(view.replace(/(?:%[0-9a-f]{2})+/gi,part=>{try{return decodeURIComponent(part);}catch{return part;}}));
+    const dataDocuments=new Set();
     for(const view of views){
         const text=view.replace(/[\t\n\r]/g,'');
-        const starts=/(?:\b[a-z][a-z0-9+.-]*:[\\/]{2}|(?<![\w:/\\])\/\/(?=[^\s/\\"'`<>]))/gi;
+        const starts=/(?:(?<![A-Za-z0-9+.-])[a-z][a-z0-9+.-]*:[\\/]{2}|(?<![\w:/\\])\/\/(?=[^\s/\\"'`<>]))/gi;
         for(const match of text.matchAll(starts)){
             let end=match.index+match[0].length;
             while(end<text.length&&!/[\s"'`<>]/.test(text[end]))end++;
@@ -40,7 +46,13 @@ export function backstopHosts(source,{baseURL='https://koltregaskes.github.io/st
                 hosts.add(url.hostname);
             } catch {throw Error('Cannot parse a backstop URL-like token');}
         }
+        for(const match of view.matchAll(/data:(?:text\/html|image\/svg\+xml)[^\s"'`<>]*/gi)){
+            const candidate=match[0].replace(/[)};]+$/,'');
+            const document=decodeDataDocument(candidate);
+            if(document!==null)dataDocuments.add(document);
+        }
     }
+    for(const document of dataDocuments)for(const host of backstopHosts(document,{baseURL,depth:depth+1}))hosts.add(host);
     return hosts;
 }
 

@@ -25,7 +25,7 @@ test('SVG and manifest external references are guarded too', async () => {
     ['manifest.json', '{"icons":[{"src":"https://surprise.invalid/x"}]}']]) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ss-privacy-assets-'))
     fs.mkdirSync(path.join(dir, 'privacy'))
-    fs.writeFileSync(path.join(dir, 'privacy/index.html'), '<code data-privacy-host="fonts.gstatic.com">fonts.gstatic.com</code><footer><a href="/privacy/">Privacy notice</a></footer>')
+    fs.writeFileSync(path.join(dir, 'privacy/index.html'), '<code data-privacy-role="load" data-privacy-host="fonts.gstatic.com">fonts.gstatic.com</code><footer><a href="/privacy/">Privacy notice</a></footer>')
     fs.writeFileSync(path.join(dir, 'seo-config.json'), '{"base":"https://site.invalid/"}')
     fs.writeFileSync(path.join(dir, file), source)
     assert.ok((await inspectPrivacyHosts(dir)).errors.some(error => error.includes('surprise.invalid')), file)

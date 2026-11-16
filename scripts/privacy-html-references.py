@@ -9,6 +9,34 @@ import sys
 ENTITY = re.compile(r"&(#(?:[xX][0-9a-fA-F]+|[0-9]+);?|[A-Za-z][A-Za-z0-9]*;?)")
 ATTRIBUTE = re.compile(r'''([^\s/=<>`]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+)))?''')
 URL_ATTRIBUTES = {"href", "src", "action", "formaction", "poster", "data", "cite", "background", "longdesc", "manifest", "xlink:href"}
+ASCII_SPACE = "\t\n\f\r "
+
+
+def refresh_destination(content):
+    # Accept the supported declarative-refresh grammar explicitly. A syntax we
+    # cannot classify must fail, never leave an active URL to a mention exception.
+    delay = re.match(r"^[\t\n\f\r ]*[0-9]+(?:\.[0-9]+)?", content)
+    if not delay:
+        raise ValueError("Unsupported refresh delay")
+    remainder = content[delay.end():].strip(ASCII_SPACE)
+    if not remainder:
+        return ""  # Delay-only refresh reloads the current document.
+    if remainder[0] not in ";,":
+        raise ValueError("Unsupported refresh separator")
+    destination = remainder[1:].strip(ASCII_SPACE)
+    if destination.startswith((";", ",")):
+        raise ValueError("Unsupported refresh separator")
+    if destination[:3].lower() == "url":
+        marker = re.match(r"url[\t\n\f\r ]*=[\t\n\f\r ]*", destination, re.I)
+        if not marker:
+            raise ValueError("Unsupported refresh URL marker")
+        destination = destination[marker.end():]
+    if destination.startswith(('"', "'")):
+        end = destination.find(destination[0], 1)
+        if end < 0 or destination[end + 1:].strip(ASCII_SPACE):
+            raise ValueError("Unsupported quoted refresh destination")
+        destination = destination[1:end]
+    return destination
 
 
 def decode_attribute(value):
@@ -50,7 +78,16 @@ class References(HTMLParser):
             self.base = attrs["href"]
         for name, value in attrs.items():
             if name in URL_ATTRIBUTES:
-                self.references.append({"kind": "url", "value": value})
+                kind = "url"  # Resource load unless the element proves otherwise.
+                if name in {"href", "xlink:href"} and tag in {"a", "area"}:
+                    kind = "navigation"
+                elif name in {"action", "formaction"}:
+                    kind = "navigation"
+                elif tag == "base" or tag == "link" and name == "href" and set(attrs.get("rel", "").lower().split()) <= {"canonical", "alternate"} and attrs.get("rel"):
+                    kind = "metadata"
+                elif tag in {"iframe", "object", "embed"} and name in {"src", "data"}:
+                    kind = "document"
+                self.references.append({"kind": kind, "value": value})
             elif name in {"srcset", "imagesrcset"}:
                 self.references.append({"kind": "srcset", "value": value})
             elif name == "ping":
@@ -62,18 +99,14 @@ class References(HTMLParser):
             elif name.startswith("on"):
                 self.references.append({"kind": "js", "value": value})
         if tag == "meta" and attrs.get("property", attrs.get("name", "")).lower() in {"og:url", "og:image", "twitter:image", "twitter:url"}:
-            self.references.append({"kind": "url", "value": attrs.get("content", "")})
+            kind = "url" if "image" in attrs.get("property", attrs.get("name", "")).lower() else "metadata"
+            self.references.append({"kind": kind, "value": attrs.get("content", "")})
         if tag == "meta" and attrs.get("http-equiv", "").lower() == "refresh":
-            refresh = re.match(r"^\s*[0-9]+(?:\.[0-9]+)?\s*;\s*(?:url\s*=\s*)?(.*)$", attrs.get("content", ""), re.I | re.S)
-            if refresh:
-                destination = refresh[1].strip()
-                if destination.startswith(('"', "'")):
-                    if len(destination) < 2 or destination[-1] != destination[0]:
-                        raise ValueError("Invalid refresh argument")
-                    destination = destination[1:-1]
-                self.references.append({"kind": "url", "value": destination})
+            self.references.append({"kind": "navigation", "value": refresh_destination(attrs.get("content", ""))})
         if tag in {"script", "style"}:
             self.raw_kind = "js" if tag == "script" else "css"
+            if tag == "script" and attrs.get("type", "").lower() == "application/ld+json":
+                self.raw_kind = "metadata-js"
             self.raw_parts = []
 
     def handle_startendtag(self, tag, attrs):

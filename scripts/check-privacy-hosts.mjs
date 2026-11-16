@@ -3,38 +3,56 @@ import path from 'node:path';
 import {fileURLToPath, pathToFileURL} from 'node:url';
 import {sourceReferences} from './privacy-source-references.mjs';
 import {backstopHosts,validateMentions} from './privacy-backstop.mjs';
+import {decodeDataDocument,DOCUMENT_DEPTH_LIMIT} from './privacy-data-url.mjs';
 
 export function referencedHosts(source, {kind='url',baseURL='https://koltregaskes.github.io/stackscout/'}={}) {
     const references=sourceReferences(source,kind);
-    return structuredReferenceHosts(references,{baseURL});
+    return new Set(referenceEvidence(references,{baseURL}).hosts.keys());
 }
 
-function structuredReferenceHosts(references,{baseURL},depth=0) {
-    if(depth>32)throw Error('Nested HTML exceeds the inspection limit');
+function referenceEvidence(references,{baseURL,sweep=false},depth=0) {
+    if(depth>DOCUMENT_DEPTH_LIMIT)throw Error('Nested document exceeds the inspection limit');
     let base;
     try {base=new URL(references.base ?? baseURL,baseURL);} catch {throw Error('Cannot parse the page base reference');}
-    const hosts = new Set();
-    for (const value of references.values) {
+    const hosts = new Map(), backstop = new Set();
+    const merge=child=>{
+        for(const [host,roles] of child.hosts){if(!hosts.has(host))hosts.set(host,new Set());for(const role of roles)hosts.get(host).add(role);}
+        for(const host of child.backstop)backstop.add(host);
+    };
+    if(sweep&&references.decodedText!==undefined)for(const host of backstopHosts(references.decodedText,{baseURL:base.href,decodedText:references.decodedText}))backstop.add(host);
+    for (const request of references.requests) {
+        const {value,role}=request;
         // WHATWG URL handles internal ASCII tabs/newlines, C0/space trimming,
         // backslashes, userinfo, ports, IDNs and relative references as a unit.
         const clean=value.replace(/[\t\n\r]/g,'').replace(/^[\x00-\x20]+|[\x00-\x20]+$/g,'');
         try {
             const url=new URL(value,base);
             if(!url.hostname&&/^(?:https?:|[\\/]{2})/i.test(clean))throw Error('Missing hostname');
-            if(url.hostname)hosts.add(url.hostname);
+            if(url.hostname){if(!hosts.has(url.hostname))hosts.set(url.hostname,new Set());hosts.get(url.hostname).add(role);}
+            if(url.protocol==='data:'){
+                const document=decodeDataDocument(url.href,{required:request.document});
+                if(document!==null)merge(referenceEvidence(sourceReferences(document,'html'),{baseURL:base.href,sweep},depth+1));
+            }
         } catch {
             throw Error('Cannot parse an external URL reference in public source');
         }
     }
     for(const document of references.documents||[]){
-        for(const host of structuredReferenceHosts(sourceReferences(document,'html'),{baseURL:base.href},depth+1))hosts.add(host);
+        merge(referenceEvidence(sourceReferences(document,'html'),{baseURL:base.href,sweep},depth+1));
     }
-    return hosts;
+    return {hosts,backstop};
 }
 
 export async function inspectPrivacyHosts(root) {
     const privacy = await fs.readFile(path.join(root, 'privacy/index.html'), 'utf8');
-    const allowed = new Set([...privacy.matchAll(/<code\b[^>]*data-privacy-host="([a-z0-9.-]+)"[^>]*>\s*\1\s*<\/code>/g)].map(m => m[1]));
+    const allowed = new Map();
+    for(const code of privacy.matchAll(/<code\b([^>]*)>([^<]*)<\/code>/g)){
+        if(!/\bdata-privacy-host=/.test(code[1]))continue;
+        const host=/\bdata-privacy-host="([a-z0-9.-]+)"/.exec(code[1])?.[1];
+        const role=/\bdata-privacy-role="(load|navigation|metadata)"/.exec(code[1])?.[1];
+        if(!host||!role||code[2].trim()!==host||new URL('https://'+host).hostname!==host||allowed.has(host))throw Error('Invalid visible privacy host policy');
+        allowed.set(host,role);
+    }
     if (!allowed.size) throw Error('Privacy notice must visibly list its external hosts');
     const siteBase = new URL(JSON.parse(await fs.readFile(path.join(root, 'seo-config.json'), 'utf8')).base);
     const own = siteBase.hostname;
@@ -60,11 +78,18 @@ export async function inspectPrivacyHosts(root) {
             if(kind==='json'){JSON.parse(source);kind='js';}
             const baseURL=new URL(path.relative(root,file).split(path.sep).map(encodeURIComponent).join('/'),siteBase).href;
             const extracted=sourceReferences(source,kind);
-            const structured=structuredReferenceHosts(extracted,{baseURL});
-            for (const host of structured) {
-                if (host !== own && !allowed.has(host)) errors.push(path.relative(root,file)+': unlisted external host '+host);
+            const evidence=referenceEvidence(extracted,{baseURL,sweep:true});
+            // CSS/JS do not go through the HTML helper, so supply their original
+            // source to the independent sweep as well as all decoded documents.
+            for(const host of backstopHosts(source,{baseURL,decodedText:extracted.decodedText}))evidence.backstop.add(host);
+            const structured=new Set(evidence.hosts.keys());
+            for (const [host,roles] of evidence.hosts) {
+                if(host===own)continue;
+                if(!allowed.has(host))errors.push(path.relative(root,file)+': unlisted external host '+host);
+                else if(roles.has('load')&&allowed.get(host)!=='load')errors.push(path.relative(root,file)+': resource load requires load disclosure for '+host);
+                else if(roles.has('navigation')&&allowed.get(host)==='metadata')errors.push(path.relative(root,file)+': navigation requires navigation disclosure for '+host);
             }
-            for(const host of backstopHosts(source,{baseURL,decodedText:extracted.decodedText})){
+            for(const host of evidence.backstop){
                 if(host===own||allowed.has(host))continue;
                 const relative=path.relative(root,file).split(path.sep).join('/');
                 const mention=mentions.find(entry=>entry.file===relative&&entry.host===host);
@@ -88,7 +113,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     try {
         const root = path.resolve(process.argv[2] || path.join(path.dirname(fileURLToPath(import.meta.url)), '..'));
         const result = await inspectPrivacyHosts(root);
-        console.log('Privacy host check: '+result.files+' public HTML/CSS/JS files, '+result.hosts+' listed hosts, '+result.errors.length+' failures');
+        console.log('Privacy host check: '+result.files+' public HTML/CSS/JS/SVG/manifest files, '+result.hosts+' listed hosts, '+result.errors.length+' failures');
         if (result.errors.length) {console.error(result.errors.join('\n'));process.exitCode=1;}
     } catch {
         console.error('Privacy host check failed: cannot inspect public references');

@@ -9,7 +9,7 @@ const LINK_HOSTS = [
 const METADATA_HOSTS = ['schema.org', 'www.w3.org']
 
 function renderPrivacyContent(contactEmail, escapeHtml) {
-  const hosts = list => list.map(host => `<li><code data-privacy-host="${host}">${host}</code></li>`).join('')
+  const hosts = (list, role) => list.map(host => `<li><code data-privacy-host="${host}" data-privacy-role="${role}">${host}</code></li>`).join('')
   return `
     <section class="hero hero--inner">
       <div class="hero__copy">
@@ -54,11 +54,11 @@ function renderPrivacyContent(contactEmail, escapeHtml) {
         <div class="detail-panel">
           <h2>Hosts used by this version</h2>
           <p>Hosting: koltregaskes.github.io. Automatic third-party font requests:</p>
-          <ul class="text-list">${hosts(FONT_HOSTS)}</ul>
+          <ul class="text-list">${hosts(FONT_HOSTS, 'load')}</ul>
           <p>Outbound links, including provider policies and the complaints route. These hosts are contacted when you follow a link, not installed as trackers:</p>
-          <ul class="text-list">${hosts(LINK_HOSTS)}</ul>
+          <ul class="text-list">${hosts(LINK_HOSTS, 'navigation')}</ul>
           <p>Metadata vocabulary and SVG namespace identifiers. Their presence does not itself make a browser request:</p>
-          <ul class="text-list">${hosts(METADATA_HOSTS)}</ul>
+          <ul class="text-list">${hosts(METADATA_HOSTS, 'metadata')}</ul>
         </div>
       </aside>
     </section>`

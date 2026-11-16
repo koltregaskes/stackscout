@@ -201,13 +201,18 @@ export function srcsetReferences(source) {
 }
 
 export function sourceReferences(source,kind) {
-    if(kind==='css')return {base:null,values:cssReferences(source)};
-    if(kind==='js')return {base:null,values:jsReferences(source)};
-    if(kind==='url')return {base:null,values:[source]};
-    if(kind==='srcset')return {base:null,values:srcsetReferences(source)};
+    const result=(values,role='load',document=false)=>({base:null,values,requests:values.map(value=>({value,role,document}))});
+    if(kind==='css')return result(cssReferences(source));
+    if(kind==='js')return result(jsReferences(source));
+    if(kind==='metadata-js')return result(jsReferences(source),'metadata');
+    if(kind==='url')return result([source]);
+    if(kind==='document')return result([source],'load',true);
+    if(kind==='navigation'||kind==='metadata')return result([source],kind);
+    if(kind==='srcset')return result(srcsetReferences(source));
     if(kind!=='html')fail();
     const parsed=runHtmlHelper(source);
-    return {base:parsed.base,values:parsed.references.filter(ref=>ref.kind!=='html').flatMap(ref=>sourceReferences(ref.value,ref.kind).values),documents:parsed.references.filter(ref=>ref.kind==='html').map(ref=>ref.value),decodedText:parsed.decodedText};
+    const children=parsed.references.filter(ref=>ref.kind!=='html').map(ref=>sourceReferences(ref.value,ref.kind));
+    return {base:parsed.base,values:children.flatMap(child=>child.values),requests:children.flatMap(child=>child.requests),documents:parsed.references.filter(ref=>ref.kind==='html').map(ref=>ref.value),decodedText:parsed.decodedText};
 }
 
 const exactKeys=(value,keys)=>value!==null&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(value).sort().join('|')===[...keys].sort().join('|');
@@ -215,7 +220,7 @@ export function validateHtmlHelperOutput(parsed,decodeOnly=false) {
     if(!exactKeys(parsed,decodeOnly?['decodedText']:['base','references','decodedText'])||typeof parsed.decodedText!=='string')fail();
     if(!decodeOnly){
         if(parsed.base!==null&&typeof parsed.base!=='string'||!Array.isArray(parsed.references))fail();
-        for(const ref of parsed.references)if(!exactKeys(ref,['kind','value'])||!['url','srcset','css','js','html'].includes(ref.kind)||typeof ref.value!=='string')fail();
+        for(const ref of parsed.references)if(!exactKeys(ref,['kind','value'])||!['url','navigation','metadata','metadata-js','document','srcset','css','js','html'].includes(ref.kind)||typeof ref.value!=='string')fail();
     }
     return parsed;
 }

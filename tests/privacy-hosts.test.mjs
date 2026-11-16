@@ -12,7 +12,7 @@ async function fixture(file, source, declaredHost='fonts.gstatic.com') {
     const dir=await fs.mkdtemp(path.join(os.tmpdir(),'ktp-privacy-'));
     await fs.writeFile(path.join(dir,'seo-config.json'),'{"base":"https://site.invalid/"}');
     await fs.mkdir(path.join(dir,'privacy'),{recursive:true});
-    await fs.writeFile(path.join(dir,'privacy/index.html'),`<code data-privacy-host="${declaredHost}">${declaredHost}</code><footer><a href="/privacy/">Privacy notice</a></footer>`);
+    await fs.writeFile(path.join(dir,'privacy/index.html'),`<code data-privacy-role="load" data-privacy-host="${declaredHost}">${declaredHost}</code><footer><a href="/privacy/">Privacy notice</a></footer>`);
     await fs.mkdir(path.dirname(path.join(dir,file)),{recursive:true});
     await fs.writeFile(path.join(dir,file),source);
     return dir;

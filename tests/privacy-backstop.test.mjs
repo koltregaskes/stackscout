@@ -17,7 +17,7 @@ async function fixture(file,source,base='https://site.invalid/',allowedHosts=['f
     const dir=await fs.mkdtemp(path.join(os.tmpdir(),'ktp-privacy-r4-'));
     await fs.writeFile(path.join(dir,'seo-config.json'),JSON.stringify({base}));
     await fs.mkdir(path.join(dir,'privacy'),{recursive:true});
-    await fs.writeFile(path.join(dir,'privacy/index.html'),allowedHosts.map(host=>`<code data-privacy-host="${host}">${host}</code>`).join('')+footer);
+    await fs.writeFile(path.join(dir,'privacy/index.html'),allowedHosts.map(host=>`<code data-privacy-role="load" data-privacy-host="${host}">${host}</code>`).join('')+footer);
     await fs.mkdir(path.dirname(path.join(dir,file)),{recursive:true});
     await fs.writeFile(path.join(dir,file),source);
     return dir;
@@ -99,7 +99,7 @@ for(const [name,payload] of [
 ])test('malformed helper output fails the actual checker: '+name,async()=>{
     const dir=await fixture('page.html','<img src="https://evil.invalid/x">'+footer);
     await fs.mkdir(path.join(dir,'scripts'));
-    for(const name of ['check-privacy-hosts.mjs','privacy-source-references.mjs','privacy-backstop.mjs'])await fs.copyFile(path.join(root,'scripts',name),path.join(dir,'scripts',name));
+    for(const name of ['check-privacy-hosts.mjs','privacy-source-references.mjs','privacy-backstop.mjs','privacy-data-url.mjs'])await fs.copyFile(path.join(root,'scripts',name),path.join(dir,'scripts',name));
     await fs.writeFile(path.join(dir,'scripts/privacy-html-references.py'),'import sys\nsys.stdout.write('+JSON.stringify(JSON.stringify(payload))+')\n');
     const result=cli(dir,path.join(dir,'scripts/check-privacy-hosts.mjs'));
     assert.equal(result.status,1);assertRedacted(result);

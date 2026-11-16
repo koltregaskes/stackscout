@@ -35,12 +35,30 @@ undocumented hosts and missing footer links fail closed. A non-request mention
 exception, if ever needed, must name an exact file, host and reason and cannot
 exempt an active structured reference. No exceptions are used in this version.
 
+The refresh parser is ported from KT Photography PR #40 round 5 at
+`cf0cabbfe2e4bc0ab1e1b5dc4679ec26d75b93df`. Comma and semicolon refresh
+destinations are active references even when an inert mention of the same host
+has an exception. Unsupported refresh syntax fails closed.
+
+`privacy-data-url.mjs` decodes HTML and SVG data documents in resource references
+and inspects their nested HTML/CSS/JS, including nested srcdoc and data documents.
+Inspection stops at 16 nested document levels or 1 MiB per decoded document;
+invalid percent/base64/UTF-8 encoding or unsupported document encoding fails.
+The independent backstop also sweeps decoded data text, percent-decoded token
+views and schemes after underscore or encoded-quote prefixes.
+
+Every visible host declaration has an explicit `data-privacy-role`: `load`,
+`navigation` or `metadata`. Navigation disclosure cannot permit a resource load.
+SVG image references, loading link relations and ping are loads. Fonts are load
+hosts; outbound destinations are navigation hosts; vocabulary identifiers are
+metadata. Changing one of these roles requires review, not a mention exception.
+
 Threat model: catch accidental or disguised literal third-party references in
 generated HTML, public CSS/JS/SVG and the web manifest. Build tooling, tests,
 source JSON and archive data are outside the runtime reference scan; this is
 not a claim that Pages hides them. Host declarations and the checker are trusted
 reviewed inputs. Arbitrary dynamically assembled URLs, remote CSS contents,
-redirects, a malicious build/checker change, injected production content and
+HTTP redirects, a malicious build/checker change, injected production content and
 provider-side logging/settings are outside this static guard. Review runtime
 code and actual requests before enabling new integrations. A host allowlist
 proves disclosure coverage, not the host's safety or legal compliance.
