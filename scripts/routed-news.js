@@ -1,4 +1,5 @@
 const crypto = require('crypto')
+const { isDate } = require('node:util').types
 const { validateCoverage } = require('./source-coverage')
 
 const ROUTED_NEWS_PUBLIC_PATH = 'data/news-feed-latest.json'
@@ -14,15 +15,15 @@ const NAMED_HTML_ENTITIES = {
 }
 
 function decodeHtmlEntities(value) {
-  return String(value || '').replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (match, entity) => {
+  return String(value || '').replace(/&(#(?:x[0-9a-f]+|[0-9]+)|[a-z]+);/gi, (match, entity) => {
     const lowerEntity = entity.toLowerCase()
-    if (lowerEntity.startsWith('#x')) {
-      const codePoint = Number.parseInt(lowerEntity.slice(2), 16)
-      return Number.isNaN(codePoint) ? match : String.fromCodePoint(codePoint)
-    }
     if (lowerEntity.startsWith('#')) {
-      const codePoint = Number.parseInt(lowerEntity.slice(1), 10)
-      return Number.isNaN(codePoint) ? match : String.fromCodePoint(codePoint)
+      const hex = lowerEntity.startsWith('#x')
+      const codePoint = Number.parseInt(lowerEntity.slice(hex ? 2 : 1), hex ? 16 : 10)
+      // Preserve malformed references as text instead of crashing a whole source.
+      if (!Number.isInteger(codePoint) || codePoint > 0x10ffff
+        || (codePoint >= 0xd800 && codePoint <= 0xdfff)) return match
+      return String.fromCodePoint(codePoint)
     }
     return NAMED_HTML_ENTITIES[lowerEntity] ?? match
   })
@@ -72,7 +73,10 @@ function truncate(value, maxLength = 360) {
 }
 
 function parseDate(value, label) {
-  const parsed = new Date(value || '')
+  // Genuine Dates can cross VM realms; instanceof rejects those valid clocks.
+  // The native brand check also rejects objects spoofing Symbol.toStringTag.
+  const hasValue = (typeof value === 'string' && value.trim()) || isDate(value)
+  const parsed = new Date(hasValue ? value : '')
   if (Number.isNaN(parsed.getTime())) {
     throw new Error(`Stack Scout routed news ${label} is missing or invalid.`)
   }
@@ -278,6 +282,7 @@ module.exports = {
   resolveMaxAgeDays,
   assertRoutedNewsFeed,
   cleanPublicText,
+  decodeHtmlEntities,
   compareUpdatesNewestFirst,
   compileRoutedNewsFeed,
   escapeHtml,

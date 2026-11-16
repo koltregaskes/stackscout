@@ -49,4 +49,21 @@ test('snapshot validation stays reproducible and design releases invalidate cach
   assert.notEqual(run('--snapshot').status, 0, 'snapshot still rejects articles stale at generation')
   fs.writeFileSync(feedPath, JSON.stringify({ ...feed, article_count: 0, articles: [] }))
   assert.equal(run('--snapshot').status, 0, 'a genuine empty acquisition remains valid')
+  // Exercise ingestion -> manifest -> generated HTML with encoded active markup.
+  feed.generated = '2026-11-15T12:00:00.000Z'
+  const attack = '<img src=x onerror="alert(1)">'
+  feed.articles = [{ title: '&lt;img src=x onerror=&quot;alert(1)&quot;&gt; Release',
+    url: 'https://example.com/release?a=1&b=2', date: feed.generated,
+    source: 'Fixture', summary: '&lt;img src=x onerror=&quot;alert(1)&quot;&gt; Detail' }]
+  feed.article_count = 1
+  fs.writeFileSync(feedPath, JSON.stringify(feed))
+  const safeBuild = run('--snapshot')
+  assert.equal(safeBuild.status, 0, safeBuild.stderr)
+  for (const page of ['index.html', 'updates/index.html']) {
+    const html = fs.readFileSync(path.join(fixture, page), 'utf8')
+    assert.ok(!html.includes(attack), page + ' must not contain an active injected tag')
+    assert.ok(html.includes('&lt;img src=x onerror=&quot;alert(1)&quot;&gt;'), page + ' keeps the source text escaped')
+    assert.ok(html.includes('href="https://example.com/release?a=1&amp;b=2"'))
+  }
+
 })

@@ -77,6 +77,20 @@ test('emergency age override widens only when it is a positive number', () => {
   assert.throws(() => withOverride('60')(staleFeed, { now, maxAgeDays: 3 }), /maximum is 3/)
 })
 
+test('verification accepts a genuine Date from another VM realm', () => {
+  const foreignClock = require('node:vm').runInNewContext('new Date("2026-07-26T12:00:00.000Z")')
+  assert.equal(foreignClock instanceof Date, false, 'exercise the realm boundary')
+  assert.doesNotThrow(() => assertRoutedNewsFeed(routedFeed, { now: foreignClock }))
+})
+
+test('verification rejects invalid and spoofed Date clocks without coercion', () => {
+  const spoof = { [Symbol.toStringTag]: 'Date', toString: () => now.toISOString(), valueOf: () => now.getTime() }
+  const invalidForeignClock = require('node:vm').runInNewContext('new Date(NaN)')
+  for (const value of [null, false, 1234567, [], '', ' ', {}, spoof, Object.create(Date.prototype), invalidForeignClock]) {
+    assert.throws(() => assertRoutedNewsFeed(routedFeed, { now: value }), /verification clock/)
+  }
+})
+
 test('routed feed rejects stale generation and newest-item dates', () => {
   assert.throws(
     () => assertRoutedNewsFeed({ ...routedFeed, generated: '2026-07-20T00:00:00.000Z' }, { now }),
@@ -226,4 +240,20 @@ test('routed feed import refuses a stale router feed', () => {
     /days old/,
   )
   assert.equal(fs.existsSync(path.join(targetDir, 'news-feed-latest.json')), false)
+})
+
+test('routed acceptance rejects coerced timestamps', () => {
+  for (const value of [null, undefined, '', ' ', 1234567, false, []]) {
+    assert.throws(() => assertRoutedNewsFeed({ ...routedFeed, generated: value }, { now }), /generated timestamp/)
+    assert.throws(() => assertRoutedNewsFeed({ ...routedFeed, articles: routedFeed.articles.map(a => ({ ...a, date: value })) }, { now }), /article 1 date/)
+  }
+})
+
+test('malformed entities remain text and escaped markup cannot break an attribute', () => {
+  const { cleanPublicText } = require('../scripts/routed-news')
+  const input = 'Release &#x110000; &#999999999999999999999; &#xD800; &#12abc; &#x1F680; &amp;'
+  assert.equal(cleanPublicText(input), 'Release &#x110000; &#999999999999999999999; &#xD800; &#12abc; \u{1F680} &')
+  const rendered = escapeHtml(cleanPublicText('&lt;img src=x onerror=&quot;alert(1)&quot;&gt;'))
+  assert.equal(rendered, '&lt;img src=x onerror=&quot;alert(1)&quot;&gt;')
+  assert.ok(!rendered.includes('<img'))
 })

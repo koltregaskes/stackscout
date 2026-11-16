@@ -332,3 +332,38 @@ test('zero-entry sources warn and count against the healthy majority', async () 
  const result=await refreshRoutedFeed({pipelineDir:dir,outputPath:path.join(dir,'feed.json'),retries:1,fetchImpl:async url=>({ok:true,status:200,text:async()=>url.endsWith('healthy')?'<rss><channel><item><title>Recovered entry</title><link>https://example.com/recovered</link><pubDate>Sun, 25 Oct 2026 21:31:16 GMT</pubDate></item></channel></rss>':'<rss><channel></channel></rss>'})});
  assert.equal(result.wrote,false);assert.equal(result.failures.length,2);assert.ok(result.failures.every(f=>f.includes('zero dated entries')));
 });
+
+test('malformed numeric entities cannot discard an otherwise valid RSS source', () => {
+  const xml = '<rss><item><title>Release &#x110000; &#xD800; &#12abc; &#x1F680;</title><link>https://example.com/release</link><pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate><description>&lt;img src=x onerror=&quot;alert(1)&quot;&gt;</description></item></rss>'
+  const entries = parseRss(xml, {})
+  assert.equal(entries.length, 1)
+  assert.equal(entries[0].title, 'Release &#x110000; &#xD800; &#12abc; \u{1F680}')
+  assert.equal(entries[0].date, '2026-11-15T12:00:00.000Z')
+})
+
+test('site filtering preserves unknown scores and refuses unsafe URLs', () => {
+  const base = { title: 'Release', url: 'https://example.com/release', date: '2026-11-15T12:00:00Z', importance: 0, tags: [] }
+  const now = new Date('2026-11-15T13:00:00Z')
+  for (const importance of [null, undefined, '', false, true, NaN, Infinity]) {
+    assert.equal(applySiteFilter([{ ...base, importance }], {}, now).length, 0, `score ${String(importance)} stays unknown`)
+  }
+  for (const url of ['javascript:alert(1)', 'data:text/html,hello', 'file:///example', 'not a url']) {
+    assert.equal(applySiteFilter([{ ...base, url }], {}, now).length, 0, url)
+  }
+  assert.equal(applySiteFilter([base], {}, now).length, 1, 'an explicit numeric zero is known')
+  assert.throws(() => applySiteFilter([base], {}, new Date('invalid')), /clock/)
+  assert.throws(() => applySiteFilter([base], { min_importance_score: 'invalid' }, now), /importance/)
+})
+
+test('filter orders by publication instant and keeps the newest duplicate independently of source order', () => {
+  const base = { title: 'Release', url: 'https://example.com/release', importance: 0.7, tags: [] }
+  const older = { ...base, title: 'Older', date: '2026-11-15T12:00:00+02:00' }
+  const newer = { ...base, title: 'Newer', date: '2026-11-15T11:00:00Z' }
+  const third = { ...base, title: 'Third', url: 'https://example.com/third', date: '2026-11-15T10:30:00Z' }
+  for (const items of [[older, newer, third], [third, newer, older]]) {
+    const result = applySiteFilter(items, {}, new Date('2026-11-15T13:00:00Z'))
+    assert.deepEqual(result.map(item => item.title), ['Newer', 'Third'])
+    assert.equal(result[0].date, '2026-11-15T11:00:00.000Z')
+    assert.equal(result[0].importance, 0.7, 'source score is retained')
+  }
+})
