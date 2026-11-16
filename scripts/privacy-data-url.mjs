@@ -8,7 +8,8 @@ export function decodeDataDocument(value, {required=false}={}) {
     const comma=value.indexOf(',');
     if(comma<0)throw Error('Malformed data document');
     const parts=value.slice(5,comma).split(';');
-    const type=parts.shift().toLowerCase();
+    const type=parts.shift().trim().toLowerCase();
+    if(['text/css','text/javascript','application/javascript','application/x-javascript','text/ecmascript','application/ecmascript'].includes(type))throw Error('Data CSS and JavaScript documents are forbidden');
     if(!['text/html','image/svg+xml'].includes(type)){
         if(required)throw Error('Unsupported data document type');
         return null;

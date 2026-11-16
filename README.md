@@ -53,6 +53,23 @@ SVG image references, loading link relations and ping are loads. Fonts are load
 hosts; outbound destinations are navigation hosts; vocabulary identifiers are
 metadata. Changing one of these roles requires review, not a mention exception.
 
+The HTML helper tracks SVG/MathML namespaces, integration points and breakout
+elements to select HTML5 foreign-content tokenisation for style and script.
+CDATA in HTML is a bogus comment ending at the first `>`; foreign CDATA remains
+text. SVG set/animate href candidates are resource loads. Embedded data CSS and
+JavaScript are rejected, including base64 documents, rather than silently skipped.
+
+Backstop tokens need structured evidence with the same role in their own source
+context. Being listed in the notice is insufficient. Unclassified active tokens
+fail even if an unrelated link names that host. A file/host mention exception can
+apply only to parser-proven inert text or lexer-proven comments. Helper context
+records have an exact schema and are checked alongside structured references.
+
+`npm run check` runs the complete test suite with no skip pattern. Tests use
+synthetic feed articles and an isolated mock for the environment override, without
+changing the process or child environment. Privacy tests use two workers to bound
+the number of simultaneous Python helper processes; every case still runs.
+
 Threat model: catch accidental or disguised literal third-party references in
 generated HTML, public CSS/JS/SVG and the web manifest. Build tooling, tests,
 source JSON and archive data are outside the runtime reference scan; this is

@@ -77,7 +77,7 @@ for(const source of [
     '<!-- ftp://evil.invalid/x -->',
 ])test('backstop normalisation case '+[...source].reduce((n,c)=>n+c.codePointAt(0),0),()=>assert.ok(backstopHosts(source).has('evil.invalid')));
 
-const valid={base:null,references:[{kind:'url',value:'/local'}],decodedText:'<img src="/local">'};
+const valid={base:null,references:[{kind:'url',value:'/local'}],contexts:[{kind:'url',value:'/local',decodedText:'/local'}],decodedText:'<img src="/local">'};
 for(const [name,mutant] of [
     ['null',null],['array',[]],['missing base',{references:[],decodedText:'x'}],
     ['false base',{base:false,references:[],decodedText:'x'}],['missing references',{base:null,decodedText:'x'}],
@@ -127,4 +127,11 @@ for(const row of regressions.cases)test('retained independent-review case '+row.
     if(['000','005','294','295','301','302','304','307','308','313','314','321','333'].includes(row.id)){
         const processResult=cli(dir);assert.equal(processResult.status,row.expected==='fail'?1:0,'CLI case '+row.id);assertRedacted(processResult);
     }
+});
+for(const row of regressions.cases.filter(row=>row.expectedBeforeRound3==='pass'))test('retained inert positive requires an explicit mention '+row.id,async()=>{
+    const dir=await fixture(row.file,row.source,row.base,row.allowedHosts);
+    assert.ok((await inspectPrivacyHosts(dir)).errors.length);
+    const host=row.id==='176'?'xn--bcher-kva.example':row.id==='177'?'site.invalid':'fonts.gstatic.com';
+    await fs.writeFile(path.join(dir,'privacy-non-request-mentions.json'),JSON.stringify({version:1,mentions:[{kind:'non-request mention',file:row.file,host,reason:'Reviewed inert HTML comment from retained positive fixture.'}]}));
+    assert.deepEqual((await inspectPrivacyHosts(dir)).errors,[]);
 });

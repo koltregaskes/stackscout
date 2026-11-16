@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath, pathToFileURL} from 'node:url';
-import {sourceReferences} from './privacy-source-references.mjs';
+import {sourceReferences,referenceContexts} from './privacy-source-references.mjs';
 import {backstopHosts,validateMentions} from './privacy-backstop.mjs';
 import {decodeDataDocument,DOCUMENT_DEPTH_LIMIT} from './privacy-data-url.mjs';
 
@@ -14,10 +14,13 @@ function referenceEvidence(references,{baseURL,sweep=false},depth=0) {
     if(depth>DOCUMENT_DEPTH_LIMIT)throw Error('Nested document exceeds the inspection limit');
     let base;
     try {base=new URL(references.base ?? baseURL,baseURL);} catch {throw Error('Cannot parse the page base reference');}
-    const hosts = new Map(), backstop = new Set();
+    const hosts = new Map(), backstop = new Set(), accounted = new Set(), inert = new Set(), unaccounted = new Set();
     const merge=child=>{
         for(const [host,roles] of child.hosts){if(!hosts.has(host))hosts.set(host,new Set());for(const role of roles)hosts.get(host).add(role);}
         for(const host of child.backstop)backstop.add(host);
+        for(const host of child.accounted)accounted.add(host);
+        for(const host of child.inert)inert.add(host);
+        for(const host of child.unaccounted)unaccounted.add(host);
     };
     if(sweep&&references.decodedText!==undefined)for(const host of backstopHosts(references.decodedText,{baseURL:base.href,decodedText:references.decodedText}))backstop.add(host);
     for (const request of references.requests) {
@@ -40,7 +43,22 @@ function referenceEvidence(references,{baseURL,sweep=false},depth=0) {
     for(const document of references.documents||[]){
         merge(referenceEvidence(sourceReferences(document,'html'),{baseURL:base.href,sweep},depth+1));
     }
-    return {hosts,backstop};
+    if(sweep)for(const context of referenceContexts(references)){
+        if(context.kind==='html')continue; // Recursed above as its own document.
+        const hits=backstopHosts(context.value,{baseURL:base.href,decodedText:context.decodedText});
+        for(const host of hits)backstop.add(host);
+        if(context.kind==='inert'){for(const host of hits)inert.add(host);continue;}
+        if(context.kind==='unknown'){for(const host of hits)unaccounted.add(host);continue;}
+        const primary=referenceEvidence(sourceReferences(context.value,context.kind),{baseURL:base.href},depth);
+        merge(primary); // Recovered references must carry their roles into policy validation.
+        for(const host of hits){
+            // Matching roles are established within THIS source context, not by
+            // an unrelated anchor or metadata reference elsewhere in the file.
+            if(primary.hosts.has(host))accounted.add(host);
+            else unaccounted.add(host);
+        }
+    }
+    return {hosts,backstop,accounted,inert,unaccounted};
 }
 
 export async function inspectPrivacyHosts(root) {
@@ -82,7 +100,6 @@ export async function inspectPrivacyHosts(root) {
             // CSS/JS do not go through the HTML helper, so supply their original
             // source to the independent sweep as well as all decoded documents.
             for(const host of backstopHosts(source,{baseURL,decodedText:extracted.decodedText}))evidence.backstop.add(host);
-            const structured=new Set(evidence.hosts.keys());
             for (const [host,roles] of evidence.hosts) {
                 if(host===own)continue;
                 if(!allowed.has(host))errors.push(path.relative(root,file)+': unlisted external host '+host);
@@ -90,11 +107,11 @@ export async function inspectPrivacyHosts(root) {
                 else if(roles.has('navigation')&&allowed.get(host)==='metadata')errors.push(path.relative(root,file)+': navigation requires navigation disclosure for '+host);
             }
             for(const host of evidence.backstop){
-                if(host===own||allowed.has(host))continue;
                 const relative=path.relative(root,file).split(path.sep).join('/');
                 const mention=mentions.find(entry=>entry.file===relative&&entry.host===host);
-                if(mention&&!structured.has(host))usedMentions.add(mention);
-                else if(!structured.has(host))errors.push(relative+': backstop found unlisted host '+host);
+                if(evidence.unaccounted.has(host)||!evidence.accounted.has(host)&&!evidence.inert.has(host))errors.push(relative+': backstop found unaccounted active host '+host);
+                else if(mention&&evidence.inert.has(host))usedMentions.add(mention);
+                else if(!evidence.accounted.has(host))errors.push(relative+': backstop found unlisted host '+host);
             }
         } catch {errors.push(path.relative(root,file)+': cannot parse complete public references');}
         if (file.endsWith('.html')) {

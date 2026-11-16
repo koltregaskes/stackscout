@@ -91,13 +91,20 @@ function imageSetReferences(body) {
 }
 
 export function cssReferences(source) {
-    const values=[];let i=0;
+    const values=[];let i=0,pendingImport=false;
     while(i<source.length){
         i=skipCommentsAndSpace(source,i);if(i>=source.length)break;
         if(source[i]==='"'||source[i]==="'"){i=stringAt(source,i,'css').end;continue;}
         if(source[i]==='@'){
             const name=cssIdentifier(source,i+1);
-            if(name.value.toLowerCase()==='import'){i=skipCommentsAndSpace(source,name.end);if(source[i]==='"'||source[i]==="'"){const part=stringAt(source,i,'css');values.push(part.value);i=part.end;continue;}}
+            if(name.value.toLowerCase()==='import'){
+                pendingImport=true;i=skipCommentsAndSpace(source,name.end);
+                if(source[i]==='"'||source[i]==="'"){
+                    const part=stringAt(source,i,'css');
+                    if(/^[\x00-\x20]*data:/i.test(part.value))fail();
+                    values.push(part.value);i=part.end;pendingImport=false;continue;
+                }
+            }
         }
         const name=cssIdentifier(source,i),open=skipCommentsAndSpace(source,name.end);
         if(['image-set','-webkit-image-set'].includes(name.value.toLowerCase())&&source[open]==='('){
@@ -116,6 +123,8 @@ export function cssReferences(source) {
                 value=value.replace(/^[\t\n\f\r ]+|[\t\n\f\r ]+$/g,'');
             }
             if(source[i]!==')')fail();
+            if(pendingImport&&/^[\x00-\x20]*data:/i.test(value))fail();
+            pendingImport=false;
             values.push(value);i++;continue;
         }
         i=name.end>i?name.end:i+1;
@@ -201,7 +210,7 @@ export function srcsetReferences(source) {
 }
 
 export function sourceReferences(source,kind) {
-    const result=(values,role='load',document=false)=>({base:null,values,requests:values.map(value=>({value,role,document}))});
+    const result=(values,role='load',document=false)=>({base:null,source,kind,values,requests:values.map(value=>({value,role,document}))});
     if(kind==='css')return result(cssReferences(source));
     if(kind==='js')return result(jsReferences(source));
     if(kind==='metadata-js')return result(jsReferences(source),'metadata');
@@ -212,15 +221,46 @@ export function sourceReferences(source,kind) {
     if(kind!=='html')fail();
     const parsed=runHtmlHelper(source);
     const children=parsed.references.filter(ref=>ref.kind!=='html').map(ref=>sourceReferences(ref.value,ref.kind));
-    return {base:parsed.base,values:children.flatMap(child=>child.values),requests:children.flatMap(child=>child.requests),documents:parsed.references.filter(ref=>ref.kind==='html').map(ref=>ref.value),decodedText:parsed.decodedText};
+    return {base:parsed.base,source,kind,contexts:parsed.contexts,values:children.flatMap(child=>child.values),requests:children.flatMap(child=>child.requests),documents:parsed.references.filter(ref=>ref.kind==='html').map(ref=>ref.value),decodedText:parsed.decodedText};
+}
+
+// Only comments proven by the source lexer are inert. Strings/templates and
+// unsupported active syntax cannot borrow a non-request mention exception.
+export function referenceContexts(references) {
+    const initial=references.contexts||[{kind:references.kind,value:references.source}];
+    return initial.flatMap(context=>{
+        if(!['css','js','metadata-js'].includes(context.kind))return [context];
+        const source=context.value,parts=[],masked=source.split('');let i=0,canStartRegex=true;
+        const hide=(start,end)=>{parts.push({kind:'inert',value:source.slice(start,end)});for(let n=start;n<end;n++)masked[n]=' ';};
+        while(i<source.length){
+            if(source.startsWith('/*',i)){const end=source.indexOf('*/',i+2);if(end<0)fail();hide(i,end+2);i=end+2;continue;}
+            if(context.kind!=='css'&&source.startsWith('//',i)){const end=source.indexOf('\n',i+2);const until=end<0?source.length:end;hide(i,until);i=until;continue;}
+            const char=source[i];
+            if(char==='"'||char==="'"){i=stringAt(source,i,context.kind==='css'?'css':'js').end;canStartRegex=false;continue;}
+            if(char==='`'&&context.kind!=='css'){i=templateAt(source,i,/\bString\s*\.\s*raw\s*$/.test(source.slice(0,i))).end;canStartRegex=false;continue;}
+            if(context.kind!=='css'&&char==='/'&&canStartRegex){
+                let inClass=false;i++;
+                while(i<source.length){if(source[i]==='\\'){i+=2;continue;}if(source[i]==='[')inClass=true;if(source[i]===']')inClass=false;if(source[i++]==='/'&&!inClass)break;}
+                while(/[a-z]/i.test(source[i]||''))i++;
+                canStartRegex=false;continue;
+            }
+            if(/\s/.test(char)){i++;continue;}
+            const word=source.slice(i).match(/^[a-z_$][\w$]*/i)?.[0];
+            if(word){i+=word.length;canStartRegex=['return','throw','case','delete','void','typeof','instanceof','in','of','yield','await'].includes(word);continue;}
+            canStartRegex=!/[\w)\]}]/.test(char);i++;
+        }
+        return [{kind:context.kind,value:masked.join(''),...(parts.length?{}:{decodedText:context.decodedText})},...parts];
+    });
 }
 
 const exactKeys=(value,keys)=>value!==null&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(value).sort().join('|')===[...keys].sort().join('|');
 export function validateHtmlHelperOutput(parsed,decodeOnly=false) {
-    if(!exactKeys(parsed,decodeOnly?['decodedText']:['base','references','decodedText'])||typeof parsed.decodedText!=='string')fail();
+    if(!exactKeys(parsed,decodeOnly?['decodedText']:['base','references','contexts','decodedText'])||typeof parsed.decodedText!=='string')fail();
     if(!decodeOnly){
         if(parsed.base!==null&&typeof parsed.base!=='string'||!Array.isArray(parsed.references))fail();
         for(const ref of parsed.references)if(!exactKeys(ref,['kind','value'])||!['url','navigation','metadata','metadata-js','document','srcset','css','js','html'].includes(ref.kind)||typeof ref.value!=='string')fail();
+        if(!Array.isArray(parsed.contexts))fail();
+        for(const ref of parsed.contexts)if(!exactKeys(ref,['kind','value','decodedText'])||!['url','navigation','metadata','metadata-js','document','srcset','css','js','html','inert','unknown'].includes(ref.kind)||typeof ref.value!=='string'||typeof ref.decodedText!=='string')fail();
     }
     return parsed;
 }
