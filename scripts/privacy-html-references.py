@@ -170,7 +170,11 @@ class References(HTMLParser):
                 self.pop()
             foreign = False
         ns = parent["ns"] if foreign else "svg" if tag == "svg" else "math" if tag == "math" else "html"
-        if tag == "script" and re.match(r"^[\x00-\x20]*data:", attrs.get("src", ""), re.I):
+        # All script loading attributes are boundaries, including SVG href and
+        # xlink:href. Classic scripts cannot be made safe by their data MIME.
+        # Strip URL-parser-ignored tabs/newlines before checking the scheme.
+        if tag == "script" and any(re.match(r"^[\x00-\x20]*data:", re.sub(r"[\t\r\n]", "", attrs.get(name, "")), re.I)
+                                   for name in ("src", "href", "xlink:href")):
             raise ValueError("Data scripts are forbidden")
         if tag == "link" and "stylesheet" in attrs.get("rel", "").lower().split() and re.match(r"^[\x00-\x20]*data:", attrs.get("href", ""), re.I):
             raise ValueError("Data stylesheets are forbidden")

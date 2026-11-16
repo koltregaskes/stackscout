@@ -58,6 +58,9 @@ elements to select HTML5 foreign-content tokenisation for style and script.
 CDATA in HTML is a bogus comment ending at the first `>`; foreign CDATA remains
 text. SVG set/animate href candidates are resource loads. Embedded data CSS and
 JavaScript are rejected, including base64 documents, rather than silently skipped.
+Every script element rejects data URLs at its src, href and xlink:href loading
+boundaries, in every namespace and nested srcdoc, irrespective of the data MIME.
+Tabs and newlines ignored by URL parsing cannot hide the data scheme.
 
 Backstop tokens need structured evidence with the same role in their own source
 context. Being listed in the notice is insufficient. Unclassified active tokens
