@@ -6,10 +6,11 @@ async function registerStackScoutServiceWorker() {
   }
 
   const siteRoot = document.body?.dataset?.siteRoot || './'
+  const scope = new URL(siteRoot, document.baseURI)
 
   try {
-    await navigator.serviceWorker.register(`${siteRoot}service-worker.js`, {
-      scope: siteRoot,
+    await navigator.serviceWorker.register(new URL('service-worker.js', scope).href, {
+      scope: scope.href,
     })
   } catch (error) {
     console.error('Stack Scout service worker registration failed.', error)

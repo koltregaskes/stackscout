@@ -62,7 +62,7 @@ launch-safety gate:
 npm run verify:launch
 ```
 
-That gate scans generated public output for local Windows paths and private surface markers, confirms the public file set exists, checks `.gitignore` still excludes local notes and env files, and verifies the `service-worker.js` cache name is not older than the generated issue date.
+That gate scans generated public output for local Windows paths and private surface markers, confirms the public file set exists, checks `.gitignore` still excludes local notes and env files, and verifies the `service-worker.js` cache name matches the current versioned asset revision.
 
 It also proves the newest routed item reached the updates manifest and rendered
 Wire, and that visible dates come from the routed source timestamp rather than
@@ -70,7 +70,15 @@ the wall clock used to run the build.
 
 GitHub Pages does not support custom response headers such as a Netlify `_headers` file. Keep browser hardening inside static HTML, conservative client code, and dependency-free scripts unless the site moves to a host that can set CSP/HSTS-style headers.
 
-Before a public refresh, bump `CACHE_NAME` in `service-worker.js` when generated public content advances. The launch-safety gate fails if the cache date is older than the visible issue date.
+The builder generates `koltregaskes-stackscout-sw-v1-<hash>` from the public inputs
+and worker implementation. The launch gate recomputes it, so stale worker names
+fail even when source dates have not changed. Activation removes only anchored
+names in that exact namespace at the current or an older schema version, or an
+exact entry in `LEGACY_CACHE_NAMES`. The 49 legacy names were extracted from
+`service-worker.js` history reachable from the supplied main and four launch PR
+heads; `tests/fixtures/service-worker-legacy-caches.json` records an observing
+commit for each. Never replace this migration list with prefix or date matching.
+An unknown cache belongs to someone else unless ownership is established.
 
 ## Refresh
 

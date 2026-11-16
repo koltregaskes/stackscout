@@ -2,7 +2,7 @@ const fs = require('fs')
 const siteConfig = require('../site-config.json')
 const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
-const crypto = require('crypto')
+const { serviceWorkerCacheName } = require('./service-worker-cache')
 const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
@@ -63,19 +63,11 @@ function writeExternalJson(absolutePath, value) {
 }
 
 function syncServiceWorkerCacheName() {
-  // A design-only release must replace cached assets even without a new feed.
-  const revision = crypto.createHash('sha256')
-  for (const file of ['styles.css', 'app.js', 'pwa.js', 'manifest.json', 'icon.svg',
-    'scripts/build-stackscout.js', 'data/news-feed-latest.json',
-    'content/stackscout/site-source.json', 'content/stackscout/tools-source.json',
-    'content/stackscout/updates-source.json']) {
-    revision.update(fs.readFileSync(path.join(ROOT_DIR, file), 'utf8').replace(/\r\n/g, '\n'))
-  }
-  const cacheName = `stackscout-${GENERATED_AT}-${revision.digest('hex').slice(0, 12)}`
+  const cacheName = serviceWorkerCacheName(ROOT_DIR)
   const serviceWorkerPath = path.join(ROOT_DIR, 'service-worker.js')
   const current = fs.readFileSync(serviceWorkerPath, 'utf8')
   const next = current.replace(
-    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}(?:-[a-f0-9]+)?['"]/,
+    /const CACHE_NAME = ['"][^'"]+['"]/,
     `const CACHE_NAME = '${cacheName}'`,
   )
 
