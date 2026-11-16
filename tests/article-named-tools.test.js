@@ -8,9 +8,9 @@ for (const row of cases) test(`round-four ${row.probe}: ${row.title}`, () => {
   const entry = { ...row, url: 'https://example.invalid/story', date: '2026-11-15T10:00:00Z' }
   assert.equal(applySiteFilter(tagEntries([entry], { name: 'Fixture', tags: ['product_launch'] }), filter, '2026-11-16T00:00:00Z').length === 1, row.expected)
 })
-for (const name of ['Aster Meridian', 'Noma-7', 'Zéphyr 2.4', 'quartz payments']) {
-  test(`synthetic names use a general modifier rule: ${name}`, () => {
-    assert.ok(classifyArticle({ title: `Fixture vendor releases ${name} SDK` }).tags.includes('product_launch'))
+for (const row of require('./fixtures/article-synthetic-names.json')) {
+  test(`synthetic-name routing policy: ${row.name}${row.knownLimitation ? ' (known false negative)' : ''}`, () => {
+    assert.equal(classifyArticle(row).tags.includes('product_launch'), row.expectedRouting)
   })
 }
 for (const title of ['Fixture Launches Aster Campaign For Developer Tools', 'Fixture Introduces A Bill To Regulate AI APIs',

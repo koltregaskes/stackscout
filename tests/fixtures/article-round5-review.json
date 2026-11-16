@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Meta launches investigation into leaked API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Regulator launches probe into Google Play API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Google releases damning report criticising Android SDK",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "OpenAI releases statement blaming third-party API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Hackers release stolen data from Twilio API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Researchers release benchmark comparing coding assistants",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Union launches strike threat over developer tools",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Cloudflare releases outage postmortem: Workers API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "EU introduces tougher rules governing AI model endpoints",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Startup launches marketing push targeting API",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Developers grumble the API ships too slowly",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Was the REST API retired too early?",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Study: SDK updates introduce security holes in 40% of apps",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "Leaked memo says SDK release delayed again",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "OpenAI poaches former Stripe API lead",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "title": "OpenAI CFO discusses 2027 outlook",
+    "summary": "She said the company released weaker figures across the API.",
+    "expected": false
+  },
+  {
+    "title": "Microsoft earnings beat expectations",
+    "summary": "The company launched cost cuts affecting the Azure SDK.",
+    "expected": false
+  },
+  {
+    "title": "JetBrains releases Kotlin Multiplatform SDK 2.0",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "AWS launches Bedrock AgentCore SDK",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Supabase ships new Edge Functions CLI",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "OpenAI introduces gpt-image-1 API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Anthropic Messages API adds citations",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Google Ads API v19 now available",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Stripe launches Agent Toolkit for MCP servers",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Mozilla to retire Firefox Send API next month",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Meta releases Llama Stack API with streaming support",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "title": "Hugging Face launches Inference Providers API, Hub SDK update",
+    "summary": "",
+    "expected": true
+  }
+]

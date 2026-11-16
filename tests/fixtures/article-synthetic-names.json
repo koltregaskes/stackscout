@@ -1,0 +1,6 @@
+[
+  {"name":"Aster Meridian","title":"Fixture vendor releases Aster Meridian SDK","summary":"","expected":true,"expectedRouting":true},
+  {"name":"Noma-7","title":"Fixture vendor releases Noma-7 SDK","summary":"","expected":true,"expectedRouting":true},
+  {"name":"Zéphyr 2.4","title":"Fixture vendor releases Zéphyr 2.4 SDK","summary":"","expected":true,"expectedRouting":true},
+  {"name":"quartz payments","title":"Fixture vendor releases quartz payments SDK","summary":"","expected":true,"expectedRouting":false,"expectedRoutingBeforeRound5":true,"knownLimitation":"An unlisted, wholly lowercase name without a digit or hyphen is deliberately rejected. Keep expected=true so probe metrics count this as a false negative."}
+]

@@ -101,6 +101,13 @@ The build reads `data/news-feed-latest.json` and fails if its generated time,
 or its newest article when the list is not empty, is more than three days old.
 A fresh empty article list is valid.
 
+Article relevance requires an asserted builder-tool change or an open-source
+tool description. Source-wide tags cannot supply that evidence. Tool noun
+phrases use bounded common modifiers, capitalised names and version/hyphenated
+tokens; questions and unrelated prose cannot supply a release on their own.
+Unlisted wholly lowercase product names can be missed. This is a deterministic
+editorial heuristic, not complete natural-language subject recognition.
+
 `.github/workflows/refresh-routed-feed.yml` runs every day at 05:15 UTC. It
 checks out `shared/website-tools/pipelines/news` from `koltregaskes/ai-resource-hub`,
 fetches every entry in `config/sources.json`, and applies the Stack Scout filter
