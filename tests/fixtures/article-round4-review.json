@@ -1,0 +1,368 @@
+[
+  {
+    "probe": "pr37.cjs",
+    "title": "OpenAI launches advertising campaign",
+    "summary": "The campaign promotes ChatGPT subscriptions. OpenAI also provides an API for developers.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Court releases ruling in AI copyright dispute",
+    "summary": "Developers using the company's API face contractual uncertainty following the decision.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "AI company launches new London office",
+    "summary": "The company sells API access to businesses and is opening its first European headquarters.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "API provider CEO announces retirement",
+    "summary": "The company introduced an updated SDK last year.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Anthropic opens London office, plans API hiring",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Anthropic opens London office, plans API hiring",
+    "summary": "The office will house sales staff and developers who work on the Claude API.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Google faces antitrust ruling over Android SDK",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Google faces antitrust ruling over Android SDK",
+    "summary": "Regulators said the SDK terms restricted rivals.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Microsoft launches Copilot ad campaign",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Microsoft launches Copilot ad campaign",
+    "summary": "The ads promote GitHub Copilot and its CLI to developers.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Microsoft Launches Copilot Ad Campaign For Developer Tools",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Microsoft Launches New Copilot Ad Campaign Featuring Its SDK",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Anthropic Opens London Office And Launches API Hiring Drive",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "EU fines Google over Android SDK updates",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Google faces antitrust ruling over Android SDK update",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Lawsuit claims API update leaked customer data",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Microsoft launches Copilot ad campaign",
+    "summary": "The campaign introduces the Copilot SDK to new audiences.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "OpenAI launches advertising campaign",
+    "summary": "Separately, API updates are expected next year.",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Judge rules SDK release violated licence",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Anthropic launches London office for API customers",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Company launches campaign; API added to billboards",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Anthropic releases Python SDK v0.40",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "OpenAI SDK release adds streaming helpers",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "OpenAI deprecates Assistants API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "OpenAI to deprecate the Assistants API in 2026",
+    "summary": "Developers should migrate to the Responses API.",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Assistants API deprecation announced",
+    "summary": "OpenAI will sunset the API next August.",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "GitHub CLI update adds Copilot commands",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "GitHub updates its CLI with new Copilot commands",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "gh CLI 2.60 released",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "GitHub releases MCP server",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "GitHub MCP Server 1.0 released",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Playwright MCP server release brings browser snapshots",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Cloudflare Wrangler 4 ships",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Stripe launches new payments API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37.cjs",
+    "title": "Hugging Face releases open-source CLI for model uploads",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "OpenAI launches Realtime API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Google releases Gemini CLI",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Anthropic releases Claude Agent SDK",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Mistral launches Agents API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "OpenAI launches fine-tuning API for GPT-5",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "OpenAI fine-tuning API adds vision support",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Google Ads API v18 released",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Microsoft updates Office Add-ins API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Office Add-ins API update adds Copilot hooks",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Stripe launches settlement reports API",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Google deprecates Gemini 1.5 API endpoints",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Vercel ships AI SDK 5",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Docker launches MCP Catalog",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Claude Batch API now generally available",
+    "summary": "",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Google releases Gemini CLI",
+    "summary": "The open-source command-line tool brings Gemini to the terminal.",
+    "expected": true
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Developers complain the API ships too slowly",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Is the REST API retired? Why rumours are exaggerated",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Report: SDK updates introduce vulnerabilities in 40% of apps",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "OpenAI hires former Stripe API lead",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Senator introduces bill to regulate AI APIs",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Hackers release exploit for popular npm package manager",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Microsoft ships Windows update that breaks Python SDK installs",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Open-source CLI tool maintainer quits over burnout",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Startup launches $5m seed round to build developer tools",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Podcast: the CLI tools we released in 2026",
+    "summary": "",
+    "expected": false
+  },
+  {
+    "probe": "pr37-new.cjs",
+    "title": "Analysts expect API pricing to rise next year",
+    "summary": "Several vendors updated their SDK terms.",
+    "expected": false
+  }
+]

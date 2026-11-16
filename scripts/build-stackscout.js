@@ -308,7 +308,7 @@ function buildUpdatesManifest(updates, toolIndex, sourceProvenance) {
     title: 'Stack Scout // Updates',
     generatedAt: GENERATED_AT,
     updatedAt: GENERATED_AT,
-    summary: 'Public-safe activity stream seeded from official or first-party sources.',
+    summary: 'Dated editorial updates and routed builder-tool stories, with source links.',
     sourceProvenance,
     items: updates.map((item) => ({
       ...item,
@@ -454,7 +454,8 @@ function renderToolCard(tool, outputPath, compact = false, headingLevel = 3) {
       <div class="scout-card__meta">
         <span>${escapeHtml(tool.publisher)}</span>
         <span>${escapeHtml(tool.maturity)}</span>
-        <span>${escapeHtml(formatDate(tool.lastUpdatedAt))}</span>
+        <span>Last tracked change: ${escapeHtml(formatDate(tool.lastUpdatedAt))}</span>
+        <span>Last verified: not recorded</span>
       </div>
       <div class="scout-card__actions">
         <a class="button button--primary" href="${outputHref(outputPath, `tools/${tool.slug}/index.html`)}">Open dossier</a>
@@ -828,10 +829,10 @@ function renderHome(site, tools, updates, categories, collections, outputPath) {
       <section class="section-block" data-reveal>
         <div class="section-head">
           <div>
-            <p class="eyebrow">Streaming activity</p>
-            <h2>What moved recently.</h2>
+            <p class="eyebrow">Dated activity</p>
+            <h2>From the update log.</h2>
           </div>
-          <p class="section-copy">A lighter public activity stream sourced from official changelogs, release notes, blogs, and first-party repos.</p>
+          <p class="section-copy">Dated editorial entries and routed builder-tool stories. Check the linked source and publication date.</p>
         </div>
         <div class="newsroom-grid">
           <div class="activity-grid">
@@ -1056,6 +1057,7 @@ function renderToolDetail(tool, relatedTools, toolUpdates, outputPath) {
           <article class="hero-panel">
             <span class="label">Latest tracked change</span>
             <strong>${escapeHtml(formatDate(tool.lastUpdatedAt))}</strong>
+            <p>Last verified: not recorded. This date records a tracked change, not a verification review.</p>
             <p>${escapeHtml(tool.latestTrackedChange)}</p>
           </article>
         </div>
@@ -1194,7 +1196,7 @@ function renderUpdates(updates, toolIndex, outputPath) {
         <div class="hero__copy" data-reveal>
           <p class="eyebrow">Updates</p>
           <h1>Follow movement, not noise.</h1>
-          <p class="hero__lede">Every item here comes from an official or first-party source, with dates visible and no fake "live" claims.</p>
+          <p class="hero__lede">Editorial entries and routed stories show their source and date. A recent feed check does not mean the catalogue has been re-verified.</p>
         </div>
       </section>
       <section class="section-block" data-reveal>

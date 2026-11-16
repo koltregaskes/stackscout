@@ -1,0 +1,38 @@
+[
+  {
+    "name": "real SDK release",
+    "title": "New SDK release for developers",
+    "summary": "The SDK adds typed streaming helpers.",
+    "expected": true
+  },
+  {
+    "name": "ordinary model announcement",
+    "title": "New chatbot model arrives",
+    "summary": "A new model for chat users.",
+    "expected": false
+  },
+  {
+    "name": "advertising campaign",
+    "title": "OpenAI launches advertising campaign",
+    "summary": "The campaign promotes ChatGPT subscriptions. OpenAI also provides an API for developers.",
+    "expected": false
+  },
+  {
+    "name": "court ruling",
+    "title": "Court releases ruling in AI copyright dispute",
+    "summary": "Developers using the company's API face contractual uncertainty following the decision.",
+    "expected": false
+  },
+  {
+    "name": "office opening",
+    "title": "AI company launches new London office",
+    "summary": "The company sells API access to businesses and is opening its first European headquarters.",
+    "expected": false
+  },
+  {
+    "name": "executive story",
+    "title": "API provider CEO announces retirement",
+    "summary": "The company introduced an updated SDK last year.",
+    "expected": false
+  }
+]
