@@ -1,0 +1,129 @@
+{
+  "base": "9758c4954ff921ccd3a3e4ecb846227bf4ac87ee",
+  "inputSha256": "1d5ec910207b78b6b67f801ceab43435ce2c80b466110abdce5840d6fd57f696",
+  "classifierSha256": "038519b5695e0c193995f27e8dfd18af538bdfe1748cec3137566093d15dd170",
+  "cleanParentBeforeEdits": true,
+  "inputCount": 20,
+  "predictions": [
+    {
+      "id": "h01",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h02",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h03",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h04",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h05",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h06",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h07",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h08",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h09",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h10",
+      "expected": true,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h11",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h12",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h13",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h14",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h15",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h16",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h17",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h18",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h19",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    },
+    {
+      "id": "h20",
+      "expected": false,
+      "admitted": false,
+      "tags": []
+    }
+  ]
+}

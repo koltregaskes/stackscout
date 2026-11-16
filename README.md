@@ -119,6 +119,12 @@ In object position, up to two unrecognised descriptor words immediately before
 the tool noun are allowed, with no free -ing word. Capitalisation alone is not
 name evidence in a Title Case object clause. Explicit version lead-ins and
 separately marked question trailers can retain an affirmative release statement.
+Builder nouns include compilers, debuggers, databases, build tools, testing
+frameworks, developer toolkits/profilers and API clients. Generic toolkits and
+frameworks still need a builder qualifier. Numbered releases of a tool,
+qualified command-line tools, feature additions to a tool and availability
+announcements use bounded object phrases. These editorial rules remain
+conservative; measured regression accuracy does not establish production accuracy.
 
 `.github/workflows/refresh-routed-feed.yml` runs every day at 05:15 UTC. It
 checks out `shared/website-tools/pipelines/news` from `koltregaskes/ai-resource-hub`,

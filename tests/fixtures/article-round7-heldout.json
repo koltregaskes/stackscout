@@ -1,0 +1,122 @@
+[
+  {
+    "id": "h01",
+    "expected": true,
+    "title": "Alpine releases a WebAssembly compiler for Rust",
+    "summary": ""
+  },
+  {
+    "id": "h02",
+    "expected": true,
+    "title": "Meadow launches a source-level debugger for Python",
+    "summary": ""
+  },
+  {
+    "id": "h03",
+    "expected": true,
+    "title": "Cobalt ships version 4 of its developer database",
+    "summary": ""
+  },
+  {
+    "id": "h04",
+    "expected": true,
+    "title": "Nimbus build tool adds sandboxed caching",
+    "summary": ""
+  },
+  {
+    "id": "h05",
+    "expected": true,
+    "title": "Vertex releases a property-based testing framework",
+    "summary": ""
+  },
+  {
+    "id": "h06",
+    "expected": true,
+    "title": "Forge ships its developer toolkit with a CPU profiler",
+    "summary": ""
+  },
+  {
+    "id": "h07",
+    "expected": true,
+    "title": "New tools from Slate",
+    "summary": "The team released v2.3 of the Slate CLI, adding structured output."
+  },
+  {
+    "id": "h08",
+    "expected": true,
+    "title": "Birch updates its API client with signed requests",
+    "summary": ""
+  },
+  {
+    "id": "h09",
+    "expected": true,
+    "title": "Oak introduces a command-line memory analysis tool",
+    "summary": ""
+  },
+  {
+    "id": "h10",
+    "expected": true,
+    "title": "Maple's code editor is now available for Linux",
+    "summary": ""
+  },
+  {
+    "id": "h11",
+    "expected": false,
+    "title": "Alpine Releases Report Describing Faults In Its Compiler",
+    "summary": ""
+  },
+  {
+    "id": "h12",
+    "expected": false,
+    "title": "Meadow launches a survey about debugger reliability",
+    "summary": ""
+  },
+  {
+    "id": "h13",
+    "expected": false,
+    "title": "Cobalt releases version 4 of its database incident report",
+    "summary": ""
+  },
+  {
+    "id": "h14",
+    "expected": false,
+    "title": "Nimbus build tool team opens a regional office",
+    "summary": ""
+  },
+  {
+    "id": "h15",
+    "expected": false,
+    "title": "Vertex publishes a testing framework comparison",
+    "summary": ""
+  },
+  {
+    "id": "h16",
+    "expected": false,
+    "title": "Forge launches a developer toolkit marketing campaign",
+    "summary": ""
+  },
+  {
+    "id": "h17",
+    "expected": false,
+    "title": "Slate product bulletin",
+    "summary": "The company released a report about CLI crashes."
+  },
+  {
+    "id": "h18",
+    "expected": false,
+    "title": "Birch releases updated API client documentation",
+    "summary": ""
+  },
+  {
+    "id": "h19",
+    "expected": false,
+    "title": "Did Oak release a command-line memory analysis tool?",
+    "summary": ""
+  },
+  {
+    "id": "h20",
+    "expected": false,
+    "title": "Maple Releases Statement Criticising Its Code Editor",
+    "summary": ""
+  }
+]

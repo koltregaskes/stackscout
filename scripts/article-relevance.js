@@ -4,13 +4,17 @@
 // Wrangler is the named CLI already present in tools-source.json; matching its
 // name is a relevance cue, not a new catalogue/version claim.
 const MCP_ARTIFACT = '(?:servers?|clients?|catalog(?:ue)?s?|directories|registr(?:y|ies)|gateways?|bridges?|adapters?|toolkits?)'
-const CORE_TOOL = `(?:apis?(?: (?:endpoints?|tiers?|versions?))?|sdks?|mcps?(?: ${MCP_ARTIFACT})?|model context protocol(?: ${MCP_ARTIFACT})?|clis?(?: (?:tools?|utilit(?:y|ies)))?|command[- ]line(?: (?:tools?|utilit(?:y|ies)))?|developer tools?|devtools?|developer platforms?|code editors?|coding assistants?|software frameworks?|package managers?|(?:model|inference) endpoints?|wrangler)`
+// Builder nouns describe software used to develop, test, run or inspect code.
+// Generic frameworks/toolkits need a software, testing or developer qualifier.
+const COMMAND_TOOL = '(?:tools?|utilit(?:y|ies)|compilers?|debuggers?|profilers?)'
+const CORE_TOOL = `(?:apis?(?: (?:endpoints?|tiers?|versions?|clients?))?|sdks?|mcps?(?: ${MCP_ARTIFACT})?|model context protocol(?: ${MCP_ARTIFACT})?|clis?(?: (?:tools?|utilit(?:y|ies)))?|command[- ]line(?: (?:[a-z]+(?:-[a-z]+)? ){0,2}${COMMAND_TOOL})?|developer (?:tools?|toolkits?|platforms?|profilers?)|devtools?|code[- ]editors?|coding assistants?|(?:software|testing) frameworks?|package managers?|build tools?|compilers?|debuggers?|databases?|profilers?|(?:model|inference) endpoints?|wrangler)`
 // A generic toolkit needs an explicit builder qualifier in its own noun phrase.
 // This does not make an unqualified marketing/photography toolkit builder news.
 const TOOL = `(?:${CORE_TOOL}|toolkits?(?=\\s+for\\s+(?:the\\s+)?${CORE_TOOL}\\b))`
 const VERSION = '(?:\\s+v?\\d+(?:\\.[\\w-]+)*)?'
+const RELEASE_VERSION = '(?:(?:version|release)\\s+v?\\d+(?:\\.[\\w-]+)*|v\\d+(?:\\.[\\w-]+)*)'
 const LIFECYCLE = '(?:deprecat(?:e[ds]?|ing|ion)|sunset(?:s|ted|ting)?|retir(?:e[ds]?|ing|ement)|end[- ]of[- ]life|reach(?:ed|es|ing)? (?:its )?end[- ]of[- ]life)'
-const CHANGE = `(?:launch(?:ed|es|ing)?|releas(?:e[ds]?|ing)|introduc(?:e[ds]?|ing)|adds?|added|updates?|updat(?:ed|ing)|upgrad(?:e[ds]?|ing)|ship(?:s|ped|ping)?|(?:now\\s+)?(?:generally\\s+)?available|${LIFECYCLE})`
+const CHANGE = `(?:launch(?:ed|es|ing)?|releas(?:e[ds]?|ing)|introduc(?:e[ds]?|ing)|announc(?:e[ds]?|ing)|unveil(?:s|ed|ing)?|roll(?:s|ed|ing)? out|adds?|added|updates?|updat(?:ed|ing)|upgrad(?:e[ds]?|ing)|ship(?:s|ped|ping)?|(?:now\\s+)?(?:generally\\s+)?available|${LIFECYCLE})`
 // Common function/quality words are explicit. Other names need capitalisation,
 // a numeric version, or a lowercase product token containing a hyphen/digit.
 // Arbitrary lowercase prose cannot bridge a release verb and a later tool noun.
@@ -23,13 +27,14 @@ function isTitleCase(clause) {
 }
 
 function validToolModifiers(text, tool, { object = false, titleCase = false } = {}) {
+  if (/^command[- ]line /i.test(tool) && tool.split(/\s+/).slice(1, -1).some(word => NON_MODIFIER.test(word))) return false
   const prefix = text.trim().split(/\s+/).filter(Boolean)
   // Executable labels conventionally use one lowercase token before CLI.
   // Keep that bounded shape without allowing an arbitrary prose prefix.
   if (/^clis?\b/i.test(tool) && prefix.length === 1 && /^[a-z][a-z0-9-]*$/.test(prefix[0]) && !NON_MODIFIER.test(prefix[0])) return true
   if (prefix.length > 6 || prefix.some(word => NON_MODIFIER.test(word))) return false
   const versionish = word => /^(?:\p{N}[\p{L}\p{N}_.+-]*|\p{Ll}\p{L}*[-\d][\p{L}\p{N}.-]*|\.[\p{Lu}][\p{L}\p{N}.-]*)$/u.test(word)
-  const named = word => /^\p{Lu}[\p{L}\p{N}_.+-]*$/u.test(word) && !(titleCase && object)
+  const named = word => /^\p{Lu}[\p{L}\p{N}_.+-]*(?:['’]s)?$/u.test(word) && !(titleCase && object)
   const known = word => COMMON.test(word) || versionish(word) || named(word)
   // Only the immediate object suffix may supply up to two free descriptors.
   // Subjects keep strict modifiers, and -ing prose cannot bridge to the tool.
@@ -47,10 +52,13 @@ function toolPrefix(text, titleCase = false) {
 }
 
 function directToolObject(text, titleCase = false) {
+  // A numbered release/version is the head of the same tool noun phrase.
+  // Never skip arbitrary objects such as a report or a guide "of" a tool.
+  text = text.replace(new RegExp(`^(?:(?:a|an|the|its|our|their|new|updated|latest)\\s+){0,2}${RELEASE_VERSION}\\s+of\\s+`, 'i'), '')
   const tool = toolPrefix(text, titleCase)
   if (!tool) return ''
   const tail = text.slice(tool.index + tool[0].length)
-  if (tail && !/^(?:\s*$|\s*[,.:;!?)]|\s+(?:for|with|to|that|which|offering|featuring|including|supporting|enabling|and|in|on|from|by|starting|effective|next|this|v?\d)\b)/i.test(tail)) return ''
+  if (tail && !/^(?:\s*$|\s*[,.:;!?)]|\s+(?:for|with|to|that|which|offering|featuring|including|supporting|enabling|and|in|on|from|by|starting|effective|next|this|today|yesterday|tomorrow|v?\d)\b)/i.test(tail)) return ''
   return tool[0]
 }
 
@@ -76,10 +84,17 @@ function toolChanges(value) {
     const titleCase = isTitleCase(clause)
     // A tool is the grammatical subject of the change, including release/update
     // headings such as "SDK release" and "MCP Server reached 1.0".
-    const subject = new RegExp(`\\b(${TOOL})${VERSION}(?:\\s+(?:is|are|was|were|will be|to be|has been|have been))?\\s+(${CHANGE}|reached\\s+v?\\d)\\b`, 'gi')
+    const subject = new RegExp(`\\b(${TOOL})${VERSION}(?:\\s+(?:is|are|was|were|will be|to be|has been|have been|becomes?|became))?\\s+(?:now\\s+)?(${CHANGE}|gains?|gained|supports?|supported|reached\\s+v?\\d)\\b`, 'gi')
     for (const match of clause.matchAll(subject)) {
       if (!validToolModifiers(clause.slice(0, match.index), match[1])) continue
-      if (/^\s+(?:delayed|cancelled|canceled|blocked)\b/i.test(clause.slice(match.index + match[0].length))) continue
+      const tail = clause.slice(match.index + match[0].length)
+      if (/^\s+(?:delayed|cancelled|canceled|blocked)\b/i.test(tail)) continue
+      // "Gains" can describe popularity rather than a software change. Require
+      // a functional feature head; descriptors cannot cross a preposition.
+      if (/^(?:gains?|gained)$/i.test(match[2])) {
+        const feature = /^\s+((?:[\p{L}\p{N}-]+\s+){0,4})(?:support|features?|capabilities|execution|compilation|debugging|profiling|caching|completion|tracing|diagnostics?|integrations?|bindings?)\b/iu.exec(tail)
+        if (!feature || feature[1].trim().split(/\s+/).some(word => NON_MODIFIER.test(word))) continue
+      }
       evidence.push(match[1])
     }
     // Or the change verb takes an explicit tool as its direct object. Evidence
@@ -91,6 +106,17 @@ function toolChanges(value) {
     }
     for (const match of clause.matchAll(new RegExp(`\\b${LIFECYCLE}\\s+(?:of|for)\\s+`, 'gi'))) {
       const tool = directToolObject(clause.slice(match.index + match[0].length), titleCase)
+      if (tool) evidence.push(tool)
+    }
+    // A feature is added to a particular tool, or that tool is made available.
+    // Both constructions must still end in a complete, bounded tool object.
+    const qualified = [
+      /\b(?:adds?|added)\s+(?:[\p{L}\p{N}][\p{L}\p{N}-]*\s+){1,6}to\s+((?:its|their|our|the)\s+.+)$/giu,
+      /\bmak(?:e[sd]?|ing)\s+(.+?)\s+(?:(?:generally|publicly|widely|now)\s+)?available\b/gi,
+    ]
+    for (const pattern of qualified) for (const match of clause.matchAll(pattern)) {
+      if (/\b(?:not|never|without|won't|might|may|plans? to)\s+(?:\w+\s+){0,2}$/i.test(clause.slice(0, match.index))) continue
+      const tool = directToolObject(match[1], titleCase)
       if (tool) evidence.push(tool)
     }
   }
