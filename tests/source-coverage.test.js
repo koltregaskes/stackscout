@@ -10,7 +10,7 @@ const { compileRoutedNewsFeed } = require('../scripts/routed-news')
 const root = path.resolve(__dirname, '..')
 const now = '2026-04-17T12:00:00Z'
 
-async function refresh(failCount, required = false, count = 4) {
+async function refresh(failCount, required = false, count = 4, title = 'SDK release') {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ss-coverage-'))
   fs.mkdirSync(path.join(dir, 'config'))
   const sources = Array.from({ length: count }, (_, i) => ({ id: `source-${i}`, name: `Source ${i}`, required: required && i === 0,
@@ -22,7 +22,7 @@ async function refresh(failCount, required = false, count = 4) {
   const result = await refreshRoutedFeed({ pipelineDir: dir, outputPath, statusPath, now, retries: 1,
     fetchImpl: async url => ({ ok: Number(new URL(url).pathname.slice(1)) >= failCount,
       status: Number(new URL(url).pathname.slice(1)) < failCount ? 404 : 200,
-      text: async () => `<rss><channel><item><title>SDK release</title><link>${url}/story</link><pubDate>2026-04-17T10:00:00Z</pubDate></item></channel></rss>` }) })
+      text: async () => `<rss><channel><item><title>${title}</title><link>${url}/story</link><pubDate>2026-04-17T10:00:00Z</pubDate></item></channel></rss>` }) })
   return { result, outputPath, statusPath, dir }
 }
 
@@ -55,6 +55,21 @@ for (const [failed, status, wrote, level] of [[0, 'healthy', true, 'notice'], [1
 test('a single required-source loss fails despite a healthy majority; no configured sources also fails', async () => {
   assert.equal((await refresh(1, true)).result.coverage.status, 'failed')
   assert.equal((await refresh(0, false, 0)).result.coverage.status, 'failed')
+})
+
+test('malformed entities remain valid source text while coverage thresholds preserve feed bytes', async () => {
+  const title = 'SDK release &#x110000; &#xD800; &#12abc;'
+  const degraded = await refresh(1, false, 4, title)
+  assert.equal(degraded.result.coverage.status, 'degraded')
+  assert.equal(degraded.result.coverage.succeeded, 3)
+  assert.equal(degraded.result.wrote, true)
+  assert.ok(degraded.result.feed.articles.every(article => article.title === title))
+  const failed = await refresh(2, false, 4, title)
+  assert.equal(failed.result.coverage.status, 'failed')
+  assert.equal(failed.result.coverage.succeeded, 2)
+  assert.equal(failed.result.wrote, false)
+  assert.equal(failed.result.feed, null)
+  assert.equal(fs.readFileSync(failed.outputPath, 'utf8'), 'previous feed bytes\n')
 })
 
 test('invalid or forged coverage cannot silently become healthy', () => {

@@ -20,18 +20,18 @@ function assessRoutedFeedFreshness(feed, now = new Date()) {
     throw new Error('Routed feed is missing articles.')
   }
 
-  const nowMs = new Date(now).getTime()
+  const nowMs = now == null ? NaN : new Date(now).getTime()
   if (!Number.isFinite(nowMs)) {
     throw new Error('Routed feed freshness clock is invalid.')
   }
 
-  const generatedMs = new Date(feed.generated).getTime()
+  const generatedMs = typeof feed.generated === 'string' && feed.generated.trim() ? new Date(feed.generated).getTime() : NaN
   if (!Number.isFinite(generatedMs)) {
     throw new Error('Routed feed generated timestamp is missing or invalid.')
   }
 
   const itemTimes = feed.articles.map((article, index) => {
-    const time = new Date(article?.date).getTime()
+    const time = typeof article?.date === 'string' && article.date.trim() ? new Date(article.date).getTime() : NaN
     if (!Number.isFinite(time)) {
       throw new Error(`Routed feed article ${index + 1} date is missing or invalid.`)
     }

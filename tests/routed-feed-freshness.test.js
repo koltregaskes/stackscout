@@ -70,3 +70,12 @@ test('the scheduled workflow runs this check every day', () => {
 })
 
 test('future source or acquisition timestamps cannot report fresh',()=>{const future='2026-10-27T06:30:00Z';assert.throws(()=>assessRoutedFeedFreshness(feedAt(future),now),/future/);assert.throws(()=>assessRoutedFeedFreshness({...feedAt(now.toISOString()),articles:[{date:future}]},now),/future/);});
+
+// Source missingness must be rejected before JavaScript Date coercion.
+test('freshness rejects missing and non-text source timestamps', () => {
+  for (const value of [null, undefined, '', ' ', 0, false, []]) {
+    assert.throws(() => assessRoutedFeedFreshness({ ...feedAt(now.toISOString()), generated: value }, now), /generated timestamp/)
+    assert.throws(() => assessRoutedFeedFreshness({ ...feedAt(now.toISOString()), articles: [{ date: value }] }, now), /article 1 date/)
+  }
+  assert.throws(() => assessRoutedFeedFreshness(feedAt(now.toISOString()), null), /clock/)
+})
