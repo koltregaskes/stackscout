@@ -3,20 +3,27 @@
 // rule weights, independent of the downstream site's minimum score.
 // Wrangler is the named CLI already present in tools-source.json; matching its
 // name is a relevance cue, not a new catalogue/version claim.
-const TOOL = '(?:apis?(?: endpoints?)?|sdks?|mcps?(?: servers?)?|model context protocol(?: servers?)?|clis?(?: (?:tools?|utilit(?:y|ies)))?|command[- ]line(?: (?:tools?|utilit(?:y|ies)))?|developer tools?|devtools?|developer platforms?|code editors?|coding assistants?|software frameworks?|package managers?|(?:model|inference) endpoints?|wrangler)'
+const MCP_ARTIFACT = '(?:servers?|clients?|catalog(?:ue)?s?|directories|registr(?:y|ies)|gateways?|bridges?|adapters?|toolkits?)'
+const TOOL = `(?:apis?(?: endpoints?)?|sdks?|mcps?(?: ${MCP_ARTIFACT})?|model context protocol(?: ${MCP_ARTIFACT})?|clis?(?: (?:tools?|utilit(?:y|ies)))?|command[- ]line(?: (?:tools?|utilit(?:y|ies)))?|developer tools?|devtools?|developer platforms?|code editors?|coding assistants?|software frameworks?|package managers?|(?:model|inference) endpoints?|wrangler)`
 const VERSION = '(?:\\s+v?\\d+(?:\\.[\\w-]+)*)?'
 const LIFECYCLE = '(?:deprecat(?:e[ds]?|ing|ion)|sunset(?:s|ted|ting)?|retir(?:e[ds]?|ing|ement)|end[- ]of[- ]life|reach(?:ed|es|ing)? (?:its )?end[- ]of[- ]life)'
-const CHANGE = `(?:launch(?:ed|es|ing)?|releas(?:e[ds]?|ing)|introduc(?:e[ds]?|ing)|adds?|added|updates?|updat(?:ed|ing)|upgrad(?:e[ds]?|ing)|ship(?:s|ped|ping)?|${LIFECYCLE})`
-const MODIFIER = /^(?:a|an|the|its|their|our|new|updated|improved|first|latest|official|open-source|typed|streaming|native|public|beta|stable|python|javascript|typescript|node\.js|rust|go|java|\.net|payments?|billing|search|authentication|embeddings?|vector|speech|audio|vision|video|browser|inference|assistants?|responses?|v?\d+(?:\.\d+)*)$/i
+const CHANGE = `(?:launch(?:ed|es|ing)?|releas(?:e[ds]?|ing)|introduc(?:e[ds]?|ing)|adds?|added|updates?|updat(?:ed|ing)|upgrad(?:e[ds]?|ing)|ship(?:s|ped|ping)?|(?:now\\s+)?(?:generally\\s+)?available|${LIFECYCLE})`
+// Product names, common-noun modifiers and numeric versions share a general
+// lexical rule. Their capitalisation is neither necessary nor sufficient.
+const MODIFIER = /^(?:[\p{L}][\p{L}\p{N}_.+-]*|v?\d+(?:\.\d+)*|\.[\p{L}][\p{L}\p{N}-]*)$/u
+const NON_MODIFIER = /^(?:for|to|of|about|over|against|after|before|during|using|featuring|with|in|on|and|or|that|which|campaigns?|bills?|exploits?|rounds?|funding)$/i
+
+function toolPrefix(text) {
+  const tool = new RegExp(`\\b${TOOL}\\b`, 'i').exec(text)
+  if (!tool) return null
+  const prefix = text.slice(0, tool.index).trim().split(/\s+/).filter(Boolean)
+  if (prefix.length > 6 || prefix.some(word => !MODIFIER.test(word) || NON_MODIFIER.test(word))) return null
+  return tool
+}
 
 function directToolObject(text) {
-  const tool = new RegExp(`\\b${TOOL}\\b`, 'i').exec(text)
+  const tool = toolPrefix(text)
   if (!tool) return ''
-  const prefix = text.slice(0, tool.index).trim().split(/\s+/).filter(Boolean)
-  // Only reviewed modifiers may precede the tool noun. Title Case is not
-  // evidence that a word names a product. Never jump
-  // across "campaign for", "ruling about" or another unrelated object/clause.
-  if (prefix.length > 6 || prefix.some(word => !MODIFIER.test(word))) return ''
   const tail = text.slice(tool.index + tool[0].length)
   if (tail && !/^(?:\s*$|\s*[,.:;!?)]|\s+(?:for|with|to|that|which|offering|featuring|including|supporting|enabling|and|in|on|from|by|starting|effective|next|this|v?\d)\b)/i.test(tail)) return ''
   return tool[0]
@@ -54,8 +61,15 @@ function classifyArticle(entry) {
   if (!builder) return { tags: [], importance: 0 }
   // Finance, executives and geopolitical stories are not tool updates merely
   // because a platform is named in the description.
-  const headline = String(entry.title || '').toLowerCase()
-  if (/\b(?:funding|valuation|raises? \$|acquisition|ceo|petition|lawmakers|geopolitic|export.ban|courts?|rulings?|lawsuits?|antitrust|judges?|settlements?|fines?|advertising|ads?|campaigns?|offices?|hiring)\b/.test(headline)) {
+  const headline = String(entry.title || '')
+  const excluded = /\b(?:funding|valuation|raises? \$|acquisition|ceo|petition|lawmakers|geopolitic|export.ban|courts?|rulings?|lawsuits?|antitrust|judges?|fines?(?!-)|campaigns?|hiring|hires?|complain\w*|rumou?rs?|exaggerated|vulnerabilit(?:y|ies)|exploits?|burnout)\b/i.test(headline)
+    || /^\s*(?:report|podcast|opinion|analysis)\s*:/i.test(headline)
+    || /^\s*(?:is|are|does|do|will|should|can|could)\b[^?]*\?/i.test(headline)
+  // These words also name legitimate tool functions/products. Exclude the
+  // unrelated story only when the word is not part of a tool noun phrase.
+  const ambiguousTopic = [...headline.matchAll(/\b(?:ads?|advertising|offices?|settlements?)\b/gi)]
+    .some(match => !toolPrefix(headline.slice(match.index)))
+  if (excluded || ambiguousTopic) {
     return { tags: [], importance: 0 }
   }
   const tags = []
