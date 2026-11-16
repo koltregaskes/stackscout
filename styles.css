@@ -1995,3 +1995,7 @@ select {
 @media (prefers-reduced-motion: reduce) {
  .site-footer__marquee-track { width: auto; flex-wrap: wrap; white-space: normal; transform: none; animation: none; }
 }
+
+/* Detail columns must shrink at 320px; long hosts, URLs and policy names wrap. */
+.detail-main, .detail-side { min-width: 0; }
+.detail-panel { min-width: 0; overflow-wrap: anywhere; }
