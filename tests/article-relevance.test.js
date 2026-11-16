@@ -29,7 +29,8 @@ test('tool releases and open-source tools receive only supported article-level t
 
 test('RSS and Atom categories are article metadata; source metadata is not used', () => {
   for (const category of ['<category>SDK product_launch</category>', '<category term="SDK product_launch"/>']) {
-    const entries = parseRss(`<feed><entry><title>A platform change</title><link href="https://example.com/item"/><published>2026-04-16</published>${category}</entry></feed>`, {})
+    const entries = parseRss(`<feed><entry><title>A platform change</title><summary>The SDK adds typed streaming helpers.</summary><link href="https://example.com/item"/><published>2026-04-16</published>${category}</entry></feed>`, {})
+    assert.deepEqual(entries[0].metadata, ['SDK product_launch'])
     assert.deepEqual(tagEntries(entries, { name: 'Example', tags: ['open_source'] })[0].tags, ['product_launch'])
   }
 })
