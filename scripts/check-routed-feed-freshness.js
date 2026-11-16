@@ -13,7 +13,7 @@ const FEED_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
 const WARN_AFTER_DAYS = 1
 const HARD_MAX_DAYS = 3
 const MISSING_SOURCE =
-  'The 05:15 UTC refresh fetches every source in the shared news sources.json and commits this file after a successful fetch, including an empty article list when nothing matches. A source that cannot be fetched fails that run by name and leaves the file unchanged. This check means the committed feed was not replaced. Shared routing lists Stack Scout as a destination (sites/stackscout/data).'
+  'The 05:15 UTC refresh fetches every source in the shared news sources.json and commits this file after a successful fetch, including an empty article list when nothing matches. Partial source loss is published with reduced-coverage metadata and a warning; at least half failing or a required source failing preserves the previous feed and fails the run. Feed age alone does not establish source health. Shared routing lists Stack Scout as a destination (sites/stackscout/data).'
 
 function assessRoutedFeedFreshness(feed, now = new Date()) {
   if (!feed || typeof feed !== 'object' || !Array.isArray(feed.articles)) {

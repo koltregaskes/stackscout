@@ -12,6 +12,8 @@
 const fs = require('fs')
 const path = require('path')
 const { decodeHtmlEntities } = require('./routed-news')
+const { makeCoverage, validateCoverage } = require('./source-coverage')
+const { reportSourceStatus } = require('./report-source-status')
 
 const SITE_SLUG = 'stackscout'
 const OUTPUT_PATH = path.resolve(__dirname, '..', 'data', 'news-feed-latest.json')
@@ -466,10 +468,11 @@ async function fetchSource(source, fetchImpl, retries) {
   throw new Error(`unsupported adapter ${source.adapter || 'missing'}`)
 }
 
-function buildFeedDocument(siteFilter, articles, now) {
+function buildFeedDocument(siteFilter, articles, now, coverage) {
   return {
     generated: new Date(now).toISOString(),
     site: siteFilter.name,
+    ...(coverage ? { acquisition: coverage } : {}),
     article_count: articles.length,
     articles: articles.map((article) => ({
       title: article.title,
@@ -493,34 +496,43 @@ async function refreshRoutedFeed({
   now = new Date(),
   write = true,
   retries = 3,
+  statusPath = null,
 }) {
   const { filters, sources } = loadPipeline(pipelineDir)
   const siteFilter = filters.sites[siteSlug]
   if (!siteFilter?.name) throw new Error(`Site filter ${siteSlug} is missing from site-filters.json.`)
   const failures = []
   const tagged = []
+  const outcomes = []
   for (const source of sources) {
     try {
       const entries = await fetchSource(source, fetchImpl, retries)
       if (!entries.length) throw new Error('zero dated entries returned')
       tagged.push(...tagEntries(entries, source, Number(siteFilter.min_importance_score ?? 0)))
+      outcomes.push({ id: source.id, name: source.name || source.id, required: source.required === true, outcome: 'success' })
       console.log(`${source.id}: fetched ${entries.length} dated entries`)
     } catch (error) {
       const message = `${source.id} (${source.name || source.id}) could not be fetched: ${error.message}`
       failures.push(message)
+      outcomes.push({ id: source.id, name: source.name || source.id, required: source.required === true, outcome: 'failure' })
       console.error(`::warning title=Source fetch failed::${message}`)
     }
   }
-  if (!sources.length || failures.length >= Math.ceil(sources.length / 2)) {
-    return { wrote: false, failures, feed: null }
+  const coverage = validateCoverage(makeCoverage(outcomes))
+  if (statusPath && write) {
+    fs.mkdirSync(path.dirname(statusPath), { recursive: true })
+    fs.writeFileSync(statusPath, `${JSON.stringify({ attemptedAt: new Date(now).toISOString(), coverage }, null, 2)}\n`, 'utf8')
+  }
+  if (coverage.status === 'failed') {
+    return { wrote: false, failures, coverage, feed: null }
   }
   const articles = applySiteFilter(tagged, siteFilter, now)
-  const feed = buildFeedDocument(siteFilter, articles, now)
+  const feed = buildFeedDocument(siteFilter, articles, now, coverage)
   if (write) {
     fs.mkdirSync(path.dirname(outputPath), { recursive: true })
     fs.writeFileSync(outputPath, `${JSON.stringify(feed, null, 2)}\n`, 'utf8')
   }
-  return { wrote: write, failures, feed }
+  return { wrote: write, failures, coverage, feed }
 }
 
 function parseArgs(argv) {
@@ -536,7 +548,8 @@ async function main() {
   if (!pipelineDir) {
     throw new Error('Pass --pipeline with the shared news config directory.')
   }
-  const result = await refreshRoutedFeed({ pipelineDir })
+  const result = await refreshRoutedFeed({ pipelineDir, statusPath: path.join(__dirname, '../.local/routed-feed-status.json') })
+  reportSourceStatus(result.coverage)
   if (!result.feed) {
     process.exitCode = 1
     return

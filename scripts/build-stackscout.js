@@ -2,7 +2,8 @@ const fs = require('fs')
 const siteConfig = require('../site-config.json')
 const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
-const crypto = require('crypto')
+const { coverageMessage } = require('./source-coverage')
+const { serviceWorkerCacheName } = require('./service-worker-cache')
 const { compileRoutedNewsFeed, escapeHtml, mergeUpdates } = require('./routed-news')
 
 const ROOT_DIR = path.resolve(__dirname, '..')
@@ -10,6 +11,7 @@ const SOURCE_DIR = path.join(ROOT_DIR, 'content', 'stackscout')
 const DATA_DIR = path.join(ROOT_DIR, 'data')
 let GENERATED_AT = null
 let GENERATED_AT_ISO = null
+let SOURCE_COVERAGE = null
 const PUBLIC_BASE_URL = 'https://koltregaskes.github.io/stackscout/'
 const STATIC_PAGES = [
   ['home', 'Home', 'Editorial front door, featured tools, categories, updates, and the lab subset.', 'index.html'],
@@ -63,19 +65,11 @@ function writeExternalJson(absolutePath, value) {
 }
 
 function syncServiceWorkerCacheName() {
-  // A design-only release must replace cached assets even without a new feed.
-  const revision = crypto.createHash('sha256')
-  for (const file of ['styles.css', 'app.js', 'pwa.js', 'manifest.json', 'icon.svg',
-    'scripts/build-stackscout.js', 'data/news-feed-latest.json',
-    'content/stackscout/site-source.json', 'content/stackscout/tools-source.json',
-    'content/stackscout/updates-source.json']) {
-    revision.update(fs.readFileSync(path.join(ROOT_DIR, file), 'utf8').replace(/\r\n/g, '\n'))
-  }
-  const cacheName = `stackscout-${GENERATED_AT}-${revision.digest('hex').slice(0, 12)}`
+  const cacheName = serviceWorkerCacheName(ROOT_DIR)
   const serviceWorkerPath = path.join(ROOT_DIR, 'service-worker.js')
   const current = fs.readFileSync(serviceWorkerPath, 'utf8')
   const next = current.replace(
-    /const CACHE_NAME = ['"]stackscout-\d{4}-\d{2}-\d{2}(?:-[a-f0-9]+)?['"]/,
+    /const CACHE_NAME = ['"][^'"]+['"]/,
     `const CACHE_NAME = '${cacheName}'`,
   )
 
@@ -610,7 +604,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
         <nav class="site-nav" aria-label="Primary">${renderNav(currentKey, outputPath)}</nav>
       </div>
     </header>
-    <main class="page-shell" id="main" tabindex="-1">${content}</main>
+    <main class="page-shell" id="main" tabindex="-1">${coverageMessage(SOURCE_COVERAGE) ? `<p class="card-note" role="status">${escapeHtml(coverageMessage(SOURCE_COVERAGE))}</p>` : ''}${content}</main>
     <footer class="site-footer">
       <div class="site-footer__marquee" role="region" aria-label="Stack Scout operating principles">
         <button class="site-footer__marquee-toggle" type="button" aria-pressed="false">Pause</button>
@@ -1367,6 +1361,7 @@ function main() {
   const routedNews = compileRoutedNewsFeed(routedFeed, snapshot ? { now: routedFeed.generated } : {})
   if (snapshot) console.log(`Validating committed snapshot from ${routedFeed.generated}; this does not prove live feed freshness.`)
   GENERATED_AT_ISO = routedNews.provenance.generatedAt
+  SOURCE_COVERAGE = routedNews.provenance.coverage
   GENERATED_AT = GENERATED_AT_ISO.slice(0, 10)
   const updates = mergeUpdates(readJson('updates-source.json'), routedNews.updates)
   const toolIndex = new Map(tools.map((tool) => [tool.slug, tool]))

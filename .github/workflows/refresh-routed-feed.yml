@@ -38,6 +38,10 @@ jobs:
       - name: Fetch sources and apply the Stack Scout filter
         run: node scripts/refresh-routed-feed.js --pipeline .news-pipeline/shared/website-tools/pipelines/news
 
+      - name: Report source coverage (warning on partial loss, failure on lost coverage)
+        if: always()
+        run: node scripts/report-source-status.js .local/routed-feed-status.json
+
       - name: Rebuild public pages from the fetched feed
         run: npm run build:site
 
