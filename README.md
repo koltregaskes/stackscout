@@ -115,8 +115,17 @@ fetches every entry in `config/sources.json`, and applies the Stack Scout filter
 in `site-filters.json`. A successful fetch commits `data/news-feed-latest.json`,
 including a fresh empty article list when nothing matches, and the pages
 `npm run build:site` writes, including `data/updates-manifest.json`, `index.html`,
-and `updates/index.html`. A source that cannot be fetched fails the run by name
-and leaves the file unchanged. After a commit, the same run publishes GitHub Pages.
+and `updates/index.html`. If fewer than half the sources fail and no source
+marked `required` is lost, the feed is published with reduced-coverage metadata,
+a workflow warning and summary, and a visible "Some sources unavailable" notice.
+If at least half fail, any required source fails, or no sources are configured,
+the run fails and the previous feed is preserved. Published `acquisition`
+metadata lists each source outcome and the attempted/succeeded/failed counts.
+The ignored `.local/routed-feed-status.json` also records refused refreshes.
+Older feeds without coverage metadata show "Source availability: not recorded
+for this feed." A recent feed timestamp alone does not establish source health.
+After a commit, the same run requests a GitHub Pages build; this does not prove
+public delivery.
 The job does not invent articles.
 
 `.github/workflows/routed-feed-freshness.yml` remains the early signal. It runs
