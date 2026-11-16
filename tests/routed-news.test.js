@@ -62,27 +62,32 @@ test('routed feed compiles public-safe updates with exact provenance', () => {
 })
 
 test('emergency age override widens only when it is a positive number', () => {
-  const previous = process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS
   const staleFeed = { ...routedFeed, generated: '2026-07-20T00:00:00.000Z' }
+  const file = require('node:path').join(__dirname, '../scripts/routed-news.js')
+  const withOverride = value => {
+    const module = { exports: {} }
+    require('node:vm').runInNewContext(require('node:fs').readFileSync(file, 'utf8'), {
+      module, exports: module.exports, require: require('node:module').createRequire(file), URL,
+      process: { env: { STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS: value } },
+    }, { filename: file })
+    return module.exports.assertRoutedNewsFeed
+  }
+  assert.doesNotThrow(() => withOverride('14')(staleFeed, { now }))
+  assert.throws(() => withOverride('0')(staleFeed, { now }), /maximum is 3/)
+  assert.throws(() => withOverride('60')(staleFeed, { now, maxAgeDays: 3 }), /maximum is 3/)
+})
 
-  try {
-    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '14'
-    assert.doesNotThrow(() => assertRoutedNewsFeed(staleFeed, { now }))
+test('verification accepts a genuine Date from another VM realm', () => {
+  const foreignClock = require('node:vm').runInNewContext('new Date("2026-07-26T12:00:00.000Z")')
+  assert.equal(foreignClock instanceof Date, false, 'exercise the realm boundary')
+  assert.doesNotThrow(() => assertRoutedNewsFeed(routedFeed, { now: foreignClock }))
+})
 
-    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '0'
-    assert.throws(() => assertRoutedNewsFeed(staleFeed, { now }), /maximum is 3/)
-
-    process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = '60'
-    assert.throws(
-      () => assertRoutedNewsFeed(staleFeed, { now, maxAgeDays: 3 }),
-      /maximum is 3/,
-    )
-  } finally {
-    if (previous == null) {
-      delete process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS
-    } else {
-      process.env.STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS = previous
-    }
+test('verification rejects invalid and spoofed Date clocks without coercion', () => {
+  const spoof = { [Symbol.toStringTag]: 'Date', toString: () => now.toISOString(), valueOf: () => now.getTime() }
+  const invalidForeignClock = require('node:vm').runInNewContext('new Date(NaN)')
+  for (const value of [null, false, 1234567, [], '', ' ', {}, spoof, Object.create(Date.prototype), invalidForeignClock]) {
+    assert.throws(() => assertRoutedNewsFeed(routedFeed, { now: value }), /verification clock/)
   }
 })
 

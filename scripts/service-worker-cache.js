@@ -9,7 +9,7 @@ function serviceWorkerCacheName(root) {
   if (!version || !/^const CACHE_NAME = '[^']+'$/m.test(worker)) throw new Error('Worker cache declarations are missing or invalid.')
   const revision = crypto.createHash('sha256')
   for (const file of ['styles.css', 'app.js', 'pwa.js', 'manifest.json', 'icon.svg',
-    'scripts/build-stackscout.js', 'scripts/service-worker-cache.js', 'data/news-feed-latest.json',
+    'scripts/build-stackscout.js', 'scripts/service-worker-cache.js', 'scripts/privacy-content.js', 'data/news-feed-latest.json',
     'content/stackscout/site-source.json', 'content/stackscout/tools-source.json',
     'content/stackscout/updates-source.json']) {
     revision.update(file + '\0').update(read(file))

@@ -50,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/ index.html updates/index.html sitemap.xml rss.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method
+          git add -- data/ index.html updates/index.html sitemap.xml rss.xml service-worker.js llms.txt 404.html updates tools categories collections catalog radar method privacy
           node scripts/verify-generated-output.js --staged
           if git diff --cached --quiet; then
             echo "No routed feed changes to commit."

@@ -11,6 +11,7 @@ const GENERATED_OUTPUT_PATHS = [
   'catalog',
   'radar',
   'method',
+  'privacy',
   'index.html',
   'sitemap.xml',
   'rss.xml',

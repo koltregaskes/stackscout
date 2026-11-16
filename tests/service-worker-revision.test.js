@@ -9,7 +9,7 @@ const root = path.resolve(__dirname, '..')
 test('cache revision is reproducible, versioned and changes with worker or design bytes', () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'ss-cache-revision-'))
   const files = ['styles.css', 'app.js', 'pwa.js', 'manifest.json', 'icon.svg',
-    'scripts/build-stackscout.js', 'scripts/service-worker-cache.js', 'data/news-feed-latest.json',
+    'scripts/build-stackscout.js', 'scripts/service-worker-cache.js', 'scripts/privacy-content.js', 'data/news-feed-latest.json',
     'content/stackscout/site-source.json', 'content/stackscout/tools-source.json',
     'content/stackscout/updates-source.json', 'service-worker.js']
   for (const file of files) {
@@ -27,6 +27,9 @@ test('cache revision is reproducible, versioned and changes with worker or desig
   assert.notEqual(workerRevision, first)
   fs.appendFileSync(path.join(fixture, 'styles.css'), '\nbody { outline-offset: 3px; }\n')
   assert.notEqual(serviceWorkerCacheName(fixture), workerRevision)
+  const designRevision = serviceWorkerCacheName(fixture)
+  fs.appendFileSync(path.join(fixture, 'scripts/privacy-content.js'), '\n// Updated privacy copy\n')
+  assert.notEqual(serviceWorkerCacheName(fixture), designRevision)
 })
 
 test('the committed name equals the expected revision, including worker behaviour', () => {

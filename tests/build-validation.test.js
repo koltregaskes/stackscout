@@ -8,14 +8,20 @@ const { spawnSync } = require('node:child_process')
 test('snapshot validation stays reproducible and design releases invalidate cached assets', () => {
   const root = path.resolve(__dirname, '..')
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'stackscout-build-'))
-  for (const entry of ['content', 'data', 'scripts', 'styles.css', 'app.js', 'pwa.js',
+  for (const name of ['STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS', 'STACKSCOUT_PRIVATE_EXPORT_FILE', 'STACKSCOUT_PRIVATE_EXPORT_DIR']) {
+    assert.ok(!process.env[name], `Run this fixture without the build control ${name}`)
+  }
+  for (const entry of ['content', 'scripts', 'styles.css', 'app.js', 'pwa.js',
     'manifest.json', 'icon.svg', 'service-worker.js', 'seo-config.json', 'site-config.json', 'social-preview.png', 'robots.txt']) {
     fs.cpSync(path.join(root, entry), path.join(fixture, entry), { recursive: true })
   }
-  const run = (...args) => spawnSync(process.execPath, ['scripts/build-stackscout.js', ...args], {
-    cwd: fixture, encoding: 'utf8', env: { ...process.env, STACKSCOUT_ROUTED_FEED_MAX_AGE_DAYS: '',
-      STACKSCOUT_PRIVATE_EXPORT_FILE: '', STACKSCOUT_PRIVATE_EXPORT_DIR: '' },
-  })
+  const feedPath = path.join(fixture, 'data/news-feed-latest.json')
+  const feed = { site: 'Stack Scout', generated: '2000-01-02T00:00:00Z', article_count: 1,
+    articles: [{ title: 'Synthetic SDK release', source: 'Fixture', url: 'https://example.invalid/sdk',
+      date: '2000-01-01T00:00:00Z', summary: 'Synthetic fixture article, independent of live data.', tags: ['product_launch'] }] }
+  fs.mkdirSync(path.dirname(feedPath), { recursive: true })
+  fs.writeFileSync(feedPath, JSON.stringify(feed))
+  const run = (...args) => spawnSync(process.execPath, ['scripts/build-stackscout.js', ...args], { cwd: fixture, encoding: 'utf8' })
   const snapshot = run('--snapshot')
   assert.equal(snapshot.status, 0, snapshot.stderr)
   const indexPath = path.join(fixture, 'index.html')
@@ -33,11 +39,7 @@ test('snapshot validation stays reproducible and design releases invalidate cach
   assert.equal(run('--snapshot').status, 0)
   assert.notEqual(cache(), first)
   // Fix the fixture in the past, independently of the actual repository feed.
-  const feedPath = path.join(fixture, 'data/news-feed-latest.json')
-  const feed = JSON.parse(fs.readFileSync(feedPath, 'utf8'))
-  feed.generated = '2000-01-02T00:00:00Z'
-  feed.articles.forEach(article => { article.date = '2000-01-01T00:00:00Z' })
-  fs.writeFileSync(feedPath, JSON.stringify(feed))
+  assert.equal(feed.articles.length, 1, 'stale-article check must not be vacuous')
   assert.equal(run('--snapshot').status, 0)
   const live = run()
   assert.notEqual(live.status, 0)
@@ -45,6 +47,8 @@ test('snapshot validation stays reproducible and design releases invalidate cach
   feed.articles.forEach(article => { article.date = '1999-01-01T00:00:00Z' })
   fs.writeFileSync(feedPath, JSON.stringify(feed))
   assert.notEqual(run('--snapshot').status, 0, 'snapshot still rejects articles stale at generation')
+  fs.writeFileSync(feedPath, JSON.stringify({ ...feed, article_count: 0, articles: [] }))
+  assert.equal(run('--snapshot').status, 0, 'a genuine empty acquisition remains valid')
   // Exercise ingestion -> manifest -> generated HTML with encoded active markup.
   feed.generated = '2026-11-15T12:00:00.000Z'
   const attack = '<img src=x onerror="alert(1)">'

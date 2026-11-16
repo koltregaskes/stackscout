@@ -1,5 +1,6 @@
 const fs = require('fs')
 const siteConfig = require('../site-config.json')
+const { renderPrivacyContent } = require('./privacy-content')
 const sourceLinkOverrides = require('../content/stackscout/source-link-overrides.json')
 const path = require('path')
 const { coverageMessage } = require('./source-coverage')
@@ -20,6 +21,7 @@ const STATIC_PAGES = [
   ['updates', 'Wire', 'Recent public activity, releases, direction changes, and noteworthy platform moves.', 'updates/index.html'],
   ['radar', 'Radar', 'The worth-watching layer for tools and systems that are not yet full recommendations.', 'radar/index.html'],
   ['collections', 'Collections', 'Curated use-case groupings that make the catalog easier to navigate.', 'collections/index.html'],
+  ['privacy', 'Privacy notice', 'How Stack Scout handles hosting requests, fonts, local storage and privacy rights.', 'privacy/index.html'],
   ['method', 'Sources & method', 'Public badge definitions, freshness rules, and editorial guardrails.', 'method/index.html'],
 ].map(([key, title, summary, outputPath]) => ({ key, title, summary, outputPath }))
 const BADGE_ORDER = ['Recommended', 'Specialist Pick', 'Worth Watching', 'Early but Promising']
@@ -641,6 +643,7 @@ function renderDocument({ title, description, currentKey, outputPath, content })
           <span>Projects</span>
           <a href="${outputHref(outputPath, 'radar/index.html')}">Radar</a>
           <a href="${sourceHref}">Sources &amp; method</a>
+          <a href="${outputHref(outputPath, 'privacy/index.html')}">Privacy notice</a>
           <a href="https://theairesourcehub.com/" target="_blank" rel="noopener noreferrer">AI Resource Hub</a>
           <a href="https://elusionworks.com/" target="_blank" rel="noopener noreferrer">Elusion Works</a>
         </nav>
@@ -1393,6 +1396,7 @@ function main() {
   writeFile('radar/index.html', renderRadar(site, 'radar/index.html'))
   writeFile('collections/index.html', renderCollections(collections, toolIndex, 'collections/index.html'))
   writeFile('method/index.html', renderMethod(site, 'method/index.html'))
+  writeFile('privacy/index.html', renderDocument({ title: 'Stack Scout // Privacy notice', description: 'Privacy information for Stack Scout: hosting, fonts, browser storage, contact and your rights.', currentKey: 'privacy', outputPath: 'privacy/index.html', content: renderPrivacyContent(siteConfig.contactEmail, escapeHtml) }))
   writeFile('404.html', renderNotFound('404.html'))
 
   categories.forEach((category) => {
@@ -1422,6 +1426,7 @@ function main() {
     'radar/',
     'collections/',
     'method/',
+    'privacy/',
     ...categories.map((category) => `categories/${category.slug}/`),
     ...tools.map((tool) => `tools/${tool.slug}/`),
   ]

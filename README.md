@@ -4,6 +4,85 @@
 
 This repo remains the GitHub Pages implementation base, but the visible product is no longer a simple internal "Tools Hub" brochure. The private operational console stays outside this public repo.
 
+## Hosting and privacy
+
+The checked-in HTML at the branch root, `.nojekyll`, the project base in
+`seo-config.json` and the existing branch-based Pages-build request in
+`.github/workflows/deploy-pages.yml` indicate publication from the branch root.
+They do not prove the current Pages source setting: verify with the Pages API
+before deployment. The generated-output allowlists are publisher checks, not
+access controls or a deployment artifact filter. Do not assume source files at
+the published branch root are private. Cloudflare proxying is only a proposal.
+
+The builder generates `privacy/index.html`, its footer link, sitemap entry,
+canonical/sharing metadata and llms entry. The notice names the existing contact
+route and distinguishes Google Fonts requests from outbound links and metadata.
+It describes the current worker independently of the separate scope repair.
+Apply and verify that repair before launch. Provider settings, log retention,
+international-transfer arrangements and mailbox retention need owner review;
+this source-only notice does not verify them. Analytics #1498/#367 is not active.
+
+Run `npm run check:privacy` after building. Node and Python 3 are required; no
+packages or network are needed. This guard adapts KT Photography PR #40's final
+two-layer design. First, `privacy-source-references.mjs` and the Python HTML
+helper extract complete HTML attributes, srcset candidates, nested srcdoc,
+refresh destinations, CSS references and JS string/template references. WHATWG
+URL parsing resolves each complete value against the actual page/base URL.
+The independent `privacy-backstop.mjs` also sweeps every URL-like token, including
+comments and text, retaining escape/entity-normalisation views. Helper output
+has an exact schema; parser errors, missing Python, malformed JSON, symlinks,
+undocumented hosts and missing footer links fail closed. A non-request mention
+exception, if ever needed, must name an exact file, host and reason and cannot
+exempt an active structured reference. No exceptions are used in this version.
+
+The refresh parser is ported from KT Photography PR #40 round 5 at
+`cf0cabbfe2e4bc0ab1e1b5dc4679ec26d75b93df`. Comma and semicolon refresh
+destinations are active references even when an inert mention of the same host
+has an exception. Unsupported refresh syntax fails closed.
+
+`privacy-data-url.mjs` decodes HTML and SVG data documents in resource references
+and inspects their nested HTML/CSS/JS, including nested srcdoc and data documents.
+Inspection stops at 16 nested document levels or 1 MiB per decoded document;
+invalid percent/base64/UTF-8 encoding or unsupported document encoding fails.
+The independent backstop also sweeps decoded data text, percent-decoded token
+views and schemes after underscore or encoded-quote prefixes.
+
+Every visible host declaration has an explicit `data-privacy-role`: `load`,
+`navigation` or `metadata`. Navigation disclosure cannot permit a resource load.
+SVG image references, loading link relations and ping are loads. Fonts are load
+hosts; outbound destinations are navigation hosts; vocabulary identifiers are
+metadata. Changing one of these roles requires review, not a mention exception.
+
+The HTML helper tracks SVG/MathML namespaces, integration points and breakout
+elements to select HTML5 foreign-content tokenisation for style and script.
+CDATA in HTML is a bogus comment ending at the first `>`; foreign CDATA remains
+text. SVG set/animate href candidates are resource loads. Embedded data CSS and
+JavaScript are rejected, including base64 documents, rather than silently skipped.
+Every script element rejects data URLs at its src, href and xlink:href loading
+boundaries, in every namespace and nested srcdoc, irrespective of the data MIME.
+Tabs and newlines ignored by URL parsing cannot hide the data scheme.
+
+Backstop tokens need structured evidence with the same role in their own source
+context. Being listed in the notice is insufficient. Unclassified active tokens
+fail even if an unrelated link names that host. A file/host mention exception can
+apply only to parser-proven inert text or lexer-proven comments. Helper context
+records have an exact schema and are checked alongside structured references.
+
+`npm run check` runs the complete test suite with no skip pattern. Tests use
+synthetic feed articles and an isolated mock for the environment override, without
+changing the process or child environment. Privacy tests use two workers to bound
+the number of simultaneous Python helper processes; every case still runs.
+
+Threat model: catch accidental or disguised literal third-party references in
+generated HTML, public CSS/JS/SVG and the web manifest. Build tooling, tests,
+source JSON and archive data are outside the runtime reference scan; this is
+not a claim that Pages hides them. Host declarations and the checker are trusted
+reviewed inputs. Arbitrary dynamically assembled URLs, remote CSS contents,
+HTTP redirects, a malicious build/checker change, injected production content and
+provider-side logging/settings are outside this static guard. Review runtime
+code and actual requests before enabling new integrations. A host allowlist
+proves disclosure coverage, not the host's safety or legal compliance.
+
 ## Public vs private
 
 - This repo is public-facing only.

@@ -1,4 +1,5 @@
 const crypto = require('crypto')
+const { isDate } = require('node:util').types
 const { validateCoverage } = require('./source-coverage')
 
 const ROUTED_NEWS_PUBLIC_PATH = 'data/news-feed-latest.json'
@@ -72,7 +73,9 @@ function truncate(value, maxLength = 360) {
 }
 
 function parseDate(value, label) {
-  const hasValue = (typeof value === 'string' && value.trim()) || value instanceof Date
+  // Genuine Dates can cross VM realms; instanceof rejects those valid clocks.
+  // The native brand check also rejects objects spoofing Symbol.toStringTag.
+  const hasValue = (typeof value === 'string' && value.trim()) || isDate(value)
   const parsed = new Date(hasValue ? value : '')
   if (Number.isNaN(parsed.getTime())) {
     throw new Error(`Stack Scout routed news ${label} is missing or invalid.`)
