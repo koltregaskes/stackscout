@@ -1,11 +1,102 @@
 {
-  "generatedAt": "2026-11-15T12:46:30.933Z",
+  "generatedAt": "2026-11-16T13:41:58.047Z",
   "news": {
     "consumerPath": "data/news-feed-latest.json",
-    "generatedAt": "2026-11-15T12:46:30.933Z",
-    "newestItemAt": "2026-11-15T12:21:00.137Z",
+    "generatedAt": "2026-11-16T13:41:58.047Z",
+    "newestItemAt": "2026-11-16T12:33:16.390Z",
     "itemCount": 15,
-    "coverage": null,
+    "coverage": {
+      "status": "degraded",
+      "attempted": 14,
+      "succeeded": 10,
+      "failed": 4,
+      "sources": [
+        {
+          "id": "techcrunch-ai",
+          "name": "TechCrunch AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "the-verge-ai",
+          "name": "The Verge AI",
+          "required": false,
+          "outcome": "failure"
+        },
+        {
+          "id": "ars-technica-ai",
+          "name": "Ars Technica AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "anthropic-news",
+          "name": "Anthropic News",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "deepmind-blog",
+          "name": "Google DeepMind Blog",
+          "required": false,
+          "outcome": "failure"
+        },
+        {
+          "id": "meta-ai-blog",
+          "name": "Meta AI Blog",
+          "required": false,
+          "outcome": "failure"
+        },
+        {
+          "id": "hugging-face-blog",
+          "name": "Hugging Face Blog",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "huggingnews",
+          "name": "HuggingNews",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "mit-technology-review-ai",
+          "name": "MIT Technology Review AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "arxiv-cs-ai",
+          "name": "arXiv cs.AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "arxiv-cs-lg",
+          "name": "arXiv cs.LG",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "venturebeat-ai",
+          "name": "VentureBeat AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "digg-ai",
+          "name": "Digg AI",
+          "required": false,
+          "outcome": "success"
+        },
+        {
+          "id": "bens-bites",
+          "name": "Ben's Bites",
+          "required": false,
+          "outcome": "failure"
+        }
+      ]
+    },
     "consumedItems": 15
   }
 }

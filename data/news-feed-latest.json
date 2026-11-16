@@ -1,11 +1,103 @@
 {
-  "generated": "2026-11-15T12:46:30.933Z",
+  "generated": "2026-11-16T13:41:58.047Z",
   "site": "Stack Scout",
+  "acquisition": {
+    "status": "degraded",
+    "attempted": 14,
+    "succeeded": 10,
+    "failed": 4,
+    "sources": [
+      {
+        "id": "techcrunch-ai",
+        "name": "TechCrunch AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "the-verge-ai",
+        "name": "The Verge AI",
+        "required": false,
+        "outcome": "failure"
+      },
+      {
+        "id": "ars-technica-ai",
+        "name": "Ars Technica AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "anthropic-news",
+        "name": "Anthropic News",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "deepmind-blog",
+        "name": "Google DeepMind Blog",
+        "required": false,
+        "outcome": "failure"
+      },
+      {
+        "id": "meta-ai-blog",
+        "name": "Meta AI Blog",
+        "required": false,
+        "outcome": "failure"
+      },
+      {
+        "id": "hugging-face-blog",
+        "name": "Hugging Face Blog",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "huggingnews",
+        "name": "HuggingNews",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "mit-technology-review-ai",
+        "name": "MIT Technology Review AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "arxiv-cs-ai",
+        "name": "arXiv cs.AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "arxiv-cs-lg",
+        "name": "arXiv cs.LG",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "venturebeat-ai",
+        "name": "VentureBeat AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "digg-ai",
+        "name": "Digg AI",
+        "required": false,
+        "outcome": "success"
+      },
+      {
+        "id": "bens-bites",
+        "name": "Ben's Bites",
+        "required": false,
+        "outcome": "failure"
+      }
+    ]
+  },
   "article_count": 15,
   "articles": [
     {
-      "title": "US and China plan AI risk talks, @theojaffee says, citing Bessent",
-      "url": "https://www.digg.com/ai/swl3a6b0",
+      "title": "Claude’s desktop apps get HTML-in-Canvas. Cue the Flash nostalgia.",
+      "url": "https://www.digg.com/ai/9b79knai",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -19,33 +111,32 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T12:21:00.137Z",
-      "summary": "Citing Scott Bessent, @theojaffee says planned US-China AI talks would cover testing, human control and incident alerts.",
+      "date": "2026-11-16T12:33:16.390Z",
+      "summary": "Felix Rieseberg says Claude’s desktop apps now support HTML-in-Canvas; his explainer describes melting text that stays selectable.",
       "category": "industry-media"
     },
     {
-      "title": "Reports say U.S. lawmakers move to further tighten China's access to advanced AI chips",
-      "url": "https://www.digg.com/ai/7f1mwa5i",
-      "source": "Digg AI",
+      "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
+      "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      "source": "TechCrunch AI",
       "tags": [
         "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
+        "product_launch",
+        "funding",
+        "acquisition",
         "industry_move"
       ],
       "matching_tags": [
-        "open_source"
+        "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T11:36:46.000Z",
-      "summary": "Multiple accounts, citing the Financial Times, reported that U.S. lawmakers are moving to further cut off China's access to advanced AI chips in the wake of the Nvidia scandal.",
+      "date": "2026-11-16T12:30:00.000Z",
+      "summary": "Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.",
       "category": "industry-media"
     },
     {
-      "title": "Jensen Huang turned a toast into a speech at dinner with Macron, attendee recalls",
-      "url": "https://www.digg.com/ai/wc16n08d",
+      "title": "code_star calls foul on a blog’s claims about Ricursive and ‘laddering’",
+      "url": "https://www.digg.com/ai/xe5dq2ao",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -59,13 +150,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T10:51:15.585Z",
-      "summary": "In @hidecloud’s telling, Huang arrived late, picked up a wine glass and delivered an “electric” improvised speech.",
+      "date": "2026-11-16T12:21:07.209Z",
+      "summary": "code_star disputes apparent invention claims about “laddering,” while natolambert says the unnamed blog reads like AI-generated filler.",
       "category": "industry-media"
     },
     {
-      "title": "Baseten set for roughly $30 billion valuation, Bloomberg reports",
-      "url": "https://www.digg.com/ai/beioh05u",
+      "title": "Timnit Gebru warns against letting Pangram play authorship judge",
+      "url": "https://www.digg.com/ai/7qdopj2c",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -79,13 +170,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T10:02:42.447Z",
-      "summary": "Bloomberg reports two planned valuation tiers for Baseten’s funding round: $26 billion and $30 billion.",
+      "date": "2026-11-16T11:11:52.410Z",
+      "summary": "Gebru shared Emily M. Bender’s critique of AI-detection verdicts, while a critic defended detectors’ potential for near-zero false positives.",
       "category": "industry-media"
     },
     {
-      "title": "Jason offers $420.69 in “XMONEY” for Starship remixes, “AI slop” and all",
-      "url": "https://www.digg.com/ai/jq4mubpb",
+      "title": "SemiAnalysis reportedly cuts 2028 AI accelerator spending forecast by 28%, per @firstadopter",
+      "url": "https://www.digg.com/ai/k228gyu0",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -99,13 +190,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T10:01:38.914Z",
-      "summary": "Jason’s Starship-remix offer welcomes “AI slop” and music videos, but the post leaves “XMONEY” unexplained and sets no deadline.",
+      "date": "2026-11-16T11:11:25.949Z",
+      "summary": "@firstadopter says a reported client note cites slower frontier-lab growth and tightening capital markets.",
       "category": "industry-media"
     },
     {
-      "title": "Foundation hasn’t paid employees since October 30, post citing CNBC says",
-      "url": "https://www.digg.com/ai/6dbg9tpz",
+      "title": "Google pitches Gemini Decisions API: up to 1,000 questions, one pass",
+      "url": "https://www.digg.com/ai/j42903qu",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -119,13 +210,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T04:41:25.121Z",
-      "summary": "A post citing CNBC says Foundation lent CEO Sankaet Pathak $4.6 million for a home last year.",
+      "date": "2026-11-16T07:21:10.872Z",
+      "summary": "Google says its new model evaluates text, images, audio, video and PDFs with no output-token charges.",
       "category": "industry-media"
     },
     {
-      "title": "InferenceForge’s creator claims 43% more throughput—with the same latency rules",
-      "url": "https://www.digg.com/ai/6ghl34j7",
+      "title": "Baconbrix says Grok urged a hospital visit for a possible collapsed lung",
+      "url": "https://www.digg.com/ai/4rmr1bhr",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -139,13 +230,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T04:11:04.846Z",
-      "summary": "The creator’s AgentX claim concerns throughput under the same latency requirements, not a promise of 43% quicker replies.",
+      "date": "2026-11-16T07:11:43.894Z",
+      "summary": "Baconbrix credits Grok with flagging a possible collapsed lung, saying they were about to undergo surgery.",
       "category": "industry-media"
     },
     {
-      "title": "A Grok Bot user says it handled the rental-car hassle, partial refund included",
-      "url": "https://www.digg.com/ai/0sq675dk",
+      "title": "Miwo’s next chapter is coming soon, creator Tarin Clanuwat says",
+      "url": "https://www.digg.com/ai/wziaojmm",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -159,8 +250,104 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T01:21:50.560Z",
-      "summary": "altryne credits @bot with a partial Enterprise refund and a new drop-off arrangement, but the transaction remains unverified.",
+      "date": "2026-11-16T05:51:24.666Z",
+      "summary": "JapanGov reports miwo transcribes old Japanese script from photos, with 20-language support in development.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Apple launches health AI study, not a doctor in your pocket",
+      "url": "https://www.digg.com/ai/bl28maw1",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-16T05:20:50.835Z",
+      "summary": "Apple’s OpenEvidence study seeks up to 200,000 eligible U.S. adults to explore health AI trust, comprehension and optional HealthKit sharing.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Apple launches new app to study how people use AI for health",
+      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-16T01:30:00.000Z",
+      "summary": "Apple's new app for a study will answer everyday medical questions",
+      "category": "industry-media"
+    },
+    {
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-15T23:30:00.000Z",
+      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-15T21:56:35.000Z",
+      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "category": "industry-media"
+    },
+    {
+      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-15T20:20:57.000Z",
+      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
       "category": "industry-media"
     },
     {
@@ -199,101 +386,6 @@
       "importance": 0.35,
       "date": "2026-11-14T21:41:22.000Z",
       "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-      "category": "industry-media"
-    },
-    {
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-14T17:30:00.000Z",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-14T16:34:15.000Z",
-      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-13T22:43:00.000Z",
-      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-      "category": "industry-media"
-    },
-    {
-      "title": "AI agent startup LangChain hits $3B valuation",
-      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-13T19:37:57.000Z",
-      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-13T18:40:30.000Z",
-      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
       "category": "industry-media"
     }
   ]
