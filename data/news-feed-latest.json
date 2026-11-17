@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-16T13:41:58.047Z",
+  "generated": "2026-11-17T14:28:54.575Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 10,
-    "failed": 4,
+    "succeeded": 8,
+    "failed": 6,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -65,13 +65,13 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "arxiv-cs-lg",
         "name": "arXiv cs.LG",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "venturebeat-ai",
@@ -96,28 +96,8 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Claude’s desktop apps get HTML-in-Canvas. Cue the Flash nostalgia.",
-      "url": "https://www.digg.com/ai/9b79knai",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T12:33:16.390Z",
-      "summary": "Felix Rieseberg says Claude’s desktop apps now support HTML-in-Canvas; his explainer describes melting text that stays selectable.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
-      "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
+      "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -130,153 +110,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T12:30:00.000Z",
-      "summary": "Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.",
+      "date": "2026-11-17T14:26:46.000Z",
+      "summary": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
       "category": "industry-media"
     },
     {
-      "title": "code_star calls foul on a blog’s claims about Ricursive and ‘laddering’",
-      "url": "https://www.digg.com/ai/xe5dq2ao",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T12:21:07.209Z",
-      "summary": "code_star disputes apparent invention claims about “laddering,” while natolambert says the unnamed blog reads like AI-generated filler.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Timnit Gebru warns against letting Pangram play authorship judge",
-      "url": "https://www.digg.com/ai/7qdopj2c",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T11:11:52.410Z",
-      "summary": "Gebru shared Emily M. Bender’s critique of AI-detection verdicts, while a critic defended detectors’ potential for near-zero false positives.",
-      "category": "industry-media"
-    },
-    {
-      "title": "SemiAnalysis reportedly cuts 2028 AI accelerator spending forecast by 28%, per @firstadopter",
-      "url": "https://www.digg.com/ai/k228gyu0",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T11:11:25.949Z",
-      "summary": "@firstadopter says a reported client note cites slower frontier-lab growth and tightening capital markets.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Google pitches Gemini Decisions API: up to 1,000 questions, one pass",
-      "url": "https://www.digg.com/ai/j42903qu",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T07:21:10.872Z",
-      "summary": "Google says its new model evaluates text, images, audio, video and PDFs with no output-token charges.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Baconbrix says Grok urged a hospital visit for a possible collapsed lung",
-      "url": "https://www.digg.com/ai/4rmr1bhr",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T07:11:43.894Z",
-      "summary": "Baconbrix credits Grok with flagging a possible collapsed lung, saying they were about to undergo surgery.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Miwo’s next chapter is coming soon, creator Tarin Clanuwat says",
-      "url": "https://www.digg.com/ai/wziaojmm",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T05:51:24.666Z",
-      "summary": "JapanGov reports miwo transcribes old Japanese script from photos, with 20-language support in development.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Apple launches health AI study, not a doctor in your pocket",
-      "url": "https://www.digg.com/ai/bl28maw1",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-16T05:20:50.835Z",
-      "summary": "Apple’s OpenEvidence study seeks up to 200,000 eligible U.S. adults to explore health AI trust, comprehension and optional HealthKit sharing.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Apple launches new app to study how people use AI for health",
-      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -289,13 +129,53 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T01:30:00.000Z",
-      "summary": "Apple's new app for a study will answer everyday medical questions",
+      "date": "2026-11-17T14:05:30.000Z",
+      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
       "category": "industry-media"
     },
     {
-      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "title": "GPT and Claude give the appendix a starring role in paper reviews, preprint reports",
+      "url": "https://www.digg.com/ai/mumgs67p",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T14:04:54.985Z",
+      "summary": "A preprint reports appendix-heavy AI critiques, but different classification prompts complicate its comparison with human reviewers.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Harness Hub sends Qwen3.8-27B to Pi school, reports 55–62% fewer benchmark tool calls",
+      "url": "https://www.digg.com/ai/wm7ym9dw",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T14:04:32.270Z",
+      "summary": "Harness Hub reports higher success rates for its Pi-specific Qwen3.8-27B adapter, with thinking off and benchmark-informed checkpoint selection.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
+      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -308,13 +188,133 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T23:30:00.000Z",
-      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "date": "2026-11-17T14:00:00.000Z",
+      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
       "category": "industry-media"
     },
     {
-      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
-      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "title": "Anthropic's advice for AI agents: Don't copy the org chart",
+      "url": "https://www.digg.com/ai/0kqohhmb",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T12:34:24.013Z",
+      "summary": "The company recommends testing fewer subagents, citing frequent quality gains and often lower costs and latency in enterprise comparisons.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Isomorphic Labs announces a $5 billion bet on AI-designed medicines",
+      "url": "https://www.digg.com/ai/k4ucgedy",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T12:23:26.996Z",
+      "summary": "Greenoaks and Sequoia co-led the Series C, with Alphabet and Andreessen Horowitz among the backers, the company says.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Posts report Megaspeed probe details and Nvidia’s new export control committee",
+      "url": "https://www.digg.com/ai/r6aaoz03",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T11:06:06.000Z",
+      "summary": "DivesTech says Commerce and DOJ released Megaspeed export probe details; StockSavvyShay says Nvidia formed an export control oversight committee.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Google says hackers’ AI can read the fix, then launch the exploit",
+      "url": "https://www.digg.com/ai/zuu7ku8w",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T09:30:00.000Z",
+      "summary": "Google says exploit_agent analyzes patches, writes attack code and runs it without human intervention, potentially squeezing defenders’ time to update.",
+      "category": "industry-media"
+    },
+    {
+      "title": "LM Studio announces Agent Remote Control. Your other computer has work to do.",
+      "url": "https://www.digg.com/ai/ak341os8",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T09:22:32.776Z",
+      "summary": "Launch posts describe Bionic agents running on other devices while you manage them from a laptop.",
+      "category": "industry-media"
+    },
+    {
+      "title": "DHS secretary suggests AI link to US outages, Kalshi reports",
+      "url": "https://www.digg.com/ai/h0vd0rvw",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T08:11:56.918Z",
+      "summary": "Kalshi reports that the DHS secretary says AI may be behind recent outages in the US.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+      "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -327,13 +327,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T21:56:35.000Z",
-      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "date": "2026-11-16T23:32:32.000Z",
+      "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
       "category": "industry-media"
     },
     {
-      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
-      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "title": "All the questions Nvidia should answer on Tuesday — but probably won’t",
+      "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -346,13 +346,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T20:20:57.000Z",
-      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+      "date": "2026-11-16T22:03:02.000Z",
+      "summary": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
       "category": "industry-media"
     },
     {
-      "title": "Where was Nvidia’s security team?",
-      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "title": "California state AG sues OpenAI over rogue agent incidents",
+      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -365,13 +365,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-15T00:08:07.000Z",
-      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "date": "2026-11-16T20:07:13.000Z",
+      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
       "category": "industry-media"
     },
     {
-      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
+      "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -384,8 +384,8 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-14T21:41:22.000Z",
-      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "date": "2026-11-16T19:12:02.000Z",
+      "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
       "category": "industry-media"
     }
   ]
