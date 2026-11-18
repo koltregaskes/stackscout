@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-17T14:28:54.575Z",
+  "generated": "2026-11-18T14:04:09.997Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 8,
-    "failed": 6,
+    "succeeded": 10,
+    "failed": 4,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -65,13 +65,13 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "failure"
+        "outcome": "success"
       },
       {
         "id": "arxiv-cs-lg",
         "name": "arXiv cs.LG",
         "required": false,
-        "outcome": "failure"
+        "outcome": "success"
       },
       {
         "id": "venturebeat-ai",
@@ -96,8 +96,28 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-      "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
+      "title": "Midas Project alleges covert right-wing influencer push for Nvidia chip sales to China",
+      "url": "https://www.digg.com/ai/gdfafmwl",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-18T13:21:32.607Z",
+      "summary": "The Midas Project says over 80 influencers likely received payment for mostly undisclosed pro-AI-industry promotions.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -110,13 +130,33 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T14:26:46.000Z",
-      "summary": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
+      "date": "2026-11-18T13:00:00.000Z",
+      "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
-      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
+      "title": "Elon Musk’s one-word verdict on the Grimes AI-joke meet-cute story: “True”",
+      "url": "https://www.digg.com/ai/oz31jvl8",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-18T12:03:27.927Z",
+      "summary": "Musk quote-posted an account claiming a shared Roko’s Basilisk joke brought them together, without elaborating on its details.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+      "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -129,53 +169,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T14:05:30.000Z",
-      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
+      "date": "2026-11-18T12:00:00.000Z",
+      "summary": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
       "category": "industry-media"
     },
     {
-      "title": "GPT and Claude give the appendix a starring role in paper reviews, preprint reports",
-      "url": "https://www.digg.com/ai/mumgs67p",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-17T14:04:54.985Z",
-      "summary": "A preprint reports appendix-heavy AI critiques, but different classification prompts complicate its comparison with human reviewers.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Harness Hub sends Qwen3.8-27B to Pi school, reports 55–62% fewer benchmark tool calls",
-      "url": "https://www.digg.com/ai/wm7ym9dw",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-17T14:04:32.270Z",
-      "summary": "Harness Hub reports higher success rates for its Pi-specific Qwen3.8-27B adapter, with thinking off and benchmark-informed checkpoint selection.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
-      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
+      "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -188,13 +188,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T14:00:00.000Z",
-      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
+      "date": "2026-11-18T11:30:00.000Z",
+      "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
       "category": "industry-media"
     },
     {
-      "title": "Anthropic's advice for AI agents: Don't copy the org chart",
-      "url": "https://www.digg.com/ai/0kqohhmb",
+      "title": "Muse voice lands on Apple Watch and Wear OS, Alexandr Wang says",
+      "url": "https://www.digg.com/ai/nvxbov4o",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -208,13 +208,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T12:34:24.013Z",
-      "summary": "The company recommends testing fewer subagents, citing frequent quality gains and often lower costs and latency in enterprise comparisons.",
+      "date": "2026-11-18T09:51:40.859Z",
+      "summary": "Alexandr Wang says you can now talk to Muse on Apple Watch and Android Wear OS.",
       "category": "industry-media"
     },
     {
-      "title": "Isomorphic Labs announces a $5 billion bet on AI-designed medicines",
-      "url": "https://www.digg.com/ai/k4ucgedy",
+      "title": "Gemini 4 Neon pricing reportedly surfaces. Hold the launch party.",
+      "url": "https://www.digg.com/ai/6th7h041",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -228,13 +228,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T12:23:26.996Z",
-      "summary": "Greenoaks and Sequoia co-led the Series C, with Alphabet and Andreessen Horowitz among the backers, the company says.",
+      "date": "2026-11-18T08:04:18.000Z",
+      "summary": "Gemini 4 Neon reportedly has $3 input and $15 output pricing per million tokens; availability is still unconfirmed.",
       "category": "industry-media"
     },
     {
-      "title": "Posts report Megaspeed probe details and Nvidia’s new export control committee",
-      "url": "https://www.digg.com/ai/r6aaoz03",
+      "title": "TuXinming says Claude’s training diet included protein sequences at scale",
+      "url": "https://www.digg.com/ai/xec3e84r",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -248,13 +248,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T11:06:06.000Z",
-      "summary": "DivesTech says Commerce and DOJ released Megaspeed export probe details; StockSavvyShay says Nvidia formed an export control oversight committee.",
+      "date": "2026-11-18T04:52:57.162Z",
+      "summary": "TuXinming reports that only the latest Claude models predicted continuations of little-studied bacterial proteins.",
       "category": "industry-media"
     },
     {
-      "title": "Google says hackers’ AI can read the fix, then launch the exploit",
-      "url": "https://www.digg.com/ai/zuu7ku8w",
+      "title": "Kimmonismus: Anthropic researcher says broadly superhuman AI could be 1.3 years away",
+      "url": "https://www.digg.com/ai/fxtqm9ga",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -268,53 +268,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T09:30:00.000Z",
-      "summary": "Google says exploit_agent analyzes patches, writes attack code and runs it without human intervention, potentially squeezing defenders’ time to update.",
+      "date": "2026-11-18T03:06:22.197Z",
+      "summary": "A separate post quotes Anthropic researcher Tao Lin predicting permanent unemployment for nearly everyone because of AI.",
       "category": "industry-media"
     },
     {
-      "title": "LM Studio announces Agent Remote Control. Your other computer has work to do.",
-      "url": "https://www.digg.com/ai/ak341os8",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-17T09:22:32.776Z",
-      "summary": "Launch posts describe Bionic agents running on other devices while you manage them from a laptop.",
-      "category": "industry-media"
-    },
-    {
-      "title": "DHS secretary suggests AI link to US outages, Kalshi reports",
-      "url": "https://www.digg.com/ai/h0vd0rvw",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-17T08:11:56.918Z",
-      "summary": "Kalshi reports that the DHS secretary says AI may be behind recent outages in the US.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
-      "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -327,13 +287,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T23:32:32.000Z",
-      "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
+      "date": "2026-11-18T01:44:21.000Z",
+      "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
       "category": "industry-media"
     },
     {
-      "title": "All the questions Nvidia should answer on Tuesday — but probably won’t",
-      "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
+      "title": "Nvidia promises that revenue will keep soaring — for now",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -346,13 +306,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T22:03:02.000Z",
-      "summary": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
+      "date": "2026-11-18T00:16:50.000Z",
+      "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
       "category": "industry-media"
     },
     {
-      "title": "California state AG sues OpenAI over rogue agent incidents",
-      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -365,13 +325,33 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T20:07:13.000Z",
-      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
+      "date": "2026-11-17T23:37:48.000Z",
+      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
       "category": "industry-media"
     },
     {
-      "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-      "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+      "title": "Jason Wei is joining Mercor as chief scientist. He knows the customer side.",
+      "url": "https://www.digg.com/ai/1skishvz",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T23:21:50.451Z",
+      "summary": "Wei will help build Mercor’s research team and shape its data and evaluations work, according to Brendan Foody.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -384,8 +364,27 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-16T19:12:02.000Z",
-      "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
+      "date": "2026-11-17T23:04:35.000Z",
+      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-17T22:42:27.000Z",
+      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
       "category": "industry-media"
     }
   ]

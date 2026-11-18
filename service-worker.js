@@ -1,4 +1,4 @@
-const CACHE_NAME = 'koltregaskes-stackscout-sw-v1-fb1d4dc063cf'
+const CACHE_NAME = 'koltregaskes-stackscout-sw-v1-789c4537f5a8'
 const CACHE_VERSION = 1
 // Exact CACHE_NAME literals from this site's supplied Git history. Never migrate by prefix.
 const LEGACY_CACHE_NAMES = new Set([
