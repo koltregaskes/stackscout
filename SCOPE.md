@@ -11,12 +11,12 @@ This is **not** a design brief and not an implementation plan. The repo already 
 
 ## Product identity
 
-**Repo:** `stackscout` (on disk at `W:\Websites\sites\stackscout`)
+**Repo:** `stackscout` (local checkout path kept private)
 **Public brand:** StackScout
 **Domain:** TBD
 **Stack:** Static HTML + vanilla CSS/JS with a shared source layer (JSON-driven content generation). Per existing structure: `catalog/`, `categories/`, `collections/`, `content/`, `data/`, `app.js`, `assets/`.
 **Deploy:** GitHub Pages from the public repo
-**Private counterpart:** `W:\Repos\_local\surfaces\stackscout-local` (operational console — out of scope here)
+**Private counterpart:** a private local console (path kept off GitHub) (operational console — out of scope here)
 
 **One-sentence pitch:** StackScout is a curated scout-desk for builder tools — APIs, MCPs, CLIs, services — where every entry has been used or vetted by Kol, not just listed.
 
