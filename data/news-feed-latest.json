@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T14:04:09.997Z",
+  "generated": "2026-11-19T14:28:02.127Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
@@ -96,8 +96,27 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Midas Project alleges covert right-wing influencer push for Nvidia chip sales to China",
-      "url": "https://www.digg.com/ai/gdfafmwl",
+      "title": "Superhuman pushes its Go assistant everywhere",
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-19T14:00:00.000Z",
+      "summary": "Superhuman is making Go its central agent and making it available in Docs and Mail",
+      "category": "industry-media"
+    },
+    {
+      "title": "Anthropic’s hypothetical $602 billion-a-year hurdle comes with a big asterisk",
+      "url": "https://www.digg.com/ai/w6714ptm",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -111,32 +130,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T13:21:32.607Z",
-      "summary": "The Midas Project says over 80 influencers likely received payment for mostly undisclosed pro-AI-industry promotions.",
+      "date": "2026-11-19T11:44:42.288Z",
+      "summary": "The calculation assumes $1 trillion in capital, 20% return on invested capital, 40% operating margin and 17% effective tax rate.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
-      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T13:00:00.000Z",
-      "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Elon Musk’s one-word verdict on the Grimes AI-joke meet-cute story: “True”",
-      "url": "https://www.digg.com/ai/oz31jvl8",
+      "title": "Anthropic prices IPO at $83 a share, Kobeissi Letter reports",
+      "url": "https://www.digg.com/ai/43y0epsk",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -150,51 +150,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T12:03:27.927Z",
-      "summary": "Musk quote-posted an account claiming a shared Roko’s Basilisk joke brought them together, without elaborating on its details.",
+      "date": "2026-11-19T11:04:31.422Z",
+      "summary": "Citing Bloomberg, Kobeissi Letter says the price topped Anthropic’s marketed range of $70 to $78.",
       "category": "industry-media"
     },
     {
-      "title": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
-      "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T12:00:00.000Z",
-      "summary": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
-      "category": "industry-media"
-    },
-    {
-      "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
-      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T11:30:00.000Z",
-      "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Muse voice lands on Apple Watch and Wear OS, Alexandr Wang says",
-      "url": "https://www.digg.com/ai/nvxbov4o",
+      "title": "TMol brings molecular physics to PyTorch. The atoms have notes.",
+      "url": "https://www.digg.com/ai/x93v23hb",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -208,13 +170,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T09:51:40.859Z",
-      "summary": "Alexandr Wang says you can now talk to Muse on Apple Watch and Android Wear OS.",
+      "date": "2026-11-19T08:17:46.421Z",
+      "summary": "The library combines Rosetta-style energy scoring, GPU batching and coordinate gradients so compatible models can use molecular-energy feedback.",
       "category": "industry-media"
     },
     {
-      "title": "Gemini 4 Neon pricing reportedly surfaces. Hold the launch party.",
-      "url": "https://www.digg.com/ai/6th7h041",
+      "title": "MParakhin defends Google’s model lineup after willcb’s “Gemini 4 Sodium” jab",
+      "url": "https://www.digg.com/ai/1uhhqeg7",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -228,13 +190,32 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T08:04:18.000Z",
-      "summary": "Gemini 4 Neon reportedly has $3 input and $15 output pricing per million tokens; availability is still unconfirmed.",
+      "date": "2026-11-19T06:24:45.831Z",
+      "summary": "MParakhin argues Google should release its best models, answering willcb’s element-themed jab at confusing tiers.",
       "category": "industry-media"
     },
     {
-      "title": "TuXinming says Claude’s training diet included protein sequences at scale",
-      "url": "https://www.digg.com/ai/xec3e84r",
+      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-19T00:42:56.000Z",
+      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Prime Intellect’s Model Factory pitch: train the AI, ship it, study the mistakes",
+      "url": "https://www.digg.com/ai/npsig7j4",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -248,13 +229,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T04:52:57.162Z",
-      "summary": "TuXinming reports that only the latest Claude models predicted continuations of little-studied bacterial proteins.",
+      "date": "2026-11-19T00:32:18.446Z",
+      "summary": "The company says its new platform connects model training, deployment and production feedback, with hosted and dedicated options.",
       "category": "industry-media"
     },
     {
-      "title": "Kimmonismus: Anthropic researcher says broadly superhuman AI could be 1.3 years away",
-      "url": "https://www.digg.com/ai/fxtqm9ga",
+      "title": "OpenAI says its coding agents finish longer research tasks—and still write ‘AI slop’",
+      "url": "https://www.digg.com/ai/8fgn5s8u",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -268,13 +249,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T03:06:22.197Z",
-      "summary": "A separate post quotes Anthropic researcher Tao Lin predicting permanent unemployment for nearly everyone because of AI.",
+      "date": "2026-11-18T23:46:01.078Z",
+      "summary": "OpenAI reports 46% unassisted success on delegated tasks estimated at two to four human hours, but humans aren’t clocking out.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
-      "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -287,13 +268,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T01:44:21.000Z",
-      "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+      "date": "2026-11-18T23:45:00.000Z",
+      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia promises that revenue will keep soaring — for now",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
+      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -306,13 +287,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T00:16:50.000Z",
-      "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+      "date": "2026-11-18T23:25:17.000Z",
+      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -325,13 +306,32 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T23:37:48.000Z",
-      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+      "date": "2026-11-18T23:17:28.000Z",
+      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
       "category": "industry-media"
     },
     {
-      "title": "Jason Wei is joining Mercor as chief scientist. He knows the customer side.",
-      "url": "https://www.digg.com/ai/1skishvz",
+      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-18T22:58:11.000Z",
+      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Jasmine Sun challenges Anthropic’s save-the-world-by-winning logic",
+      "url": "https://www.digg.com/ai/jd9qb52f",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -345,13 +345,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T23:21:50.451Z",
-      "summary": "Wei will help build Mercor’s research team and shape its data and evaluations work, according to Brendan Foody.",
+      "date": "2026-11-18T22:51:09.986Z",
+      "summary": "Jasmine Sun challenges Anthropic’s build-first safety logic and reports internal dissent over whether the company should pause.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+      "title": "Anthropic prices IPO at $83 a share, above projected range",
+      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -364,13 +364,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T23:04:35.000Z",
-      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+      "date": "2026-11-18T22:11:15.000Z",
+      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -383,8 +383,8 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-17T22:42:27.000Z",
-      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+      "date": "2026-11-18T21:57:40.000Z",
+      "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
       "category": "industry-media"
     }
   ]
