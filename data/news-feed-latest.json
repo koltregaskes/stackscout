@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T14:28:02.127Z",
+  "generated": "2026-11-20T14:04:00.280Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
@@ -96,8 +96,8 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Superhuman pushes its Go assistant everywhere",
-      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "title": "Six AI-powered gadgets that could make your home office smarter",
+      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -110,13 +110,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T14:00:00.000Z",
-      "summary": "Superhuman is making Go its central agent and making it available in Docs and Mail",
+      "date": "2026-11-20T14:00:00.000Z",
+      "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
       "category": "industry-media"
     },
     {
-      "title": "Anthropic’s hypothetical $602 billion-a-year hurdle comes with a big asterisk",
-      "url": "https://www.digg.com/ai/w6714ptm",
+      "title": "Signal’s new AI defense has an awkward casualty: screenshots",
+      "url": "https://www.digg.com/ai/v80g7kni",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -130,13 +130,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T11:44:42.288Z",
-      "summary": "The calculation assumes $1 trillion in capital, 20% return on invested capital, 40% operating margin and 17% effective tax rate.",
+      "date": "2026-11-20T12:47:08.000Z",
+      "summary": "Signal’s screenshot restrictions target chat-reading AI, but ordinary captures get blocked too—and the company warns protection is incomplete.",
       "category": "industry-media"
     },
     {
-      "title": "Anthropic prices IPO at $83 a share, Kobeissi Letter reports",
-      "url": "https://www.digg.com/ai/43y0epsk",
+      "title": "Ex-OpenAI research chief says runaway AI has a bulldozer problem",
+      "url": "https://www.digg.com/ai/3qydf8t3",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -150,13 +150,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T11:04:31.422Z",
-      "summary": "Citing Bloomberg, Kobeissi Letter says the price topped Anthropic’s marketed range of $70 to $78.",
+      "date": "2026-11-20T12:15:25.513Z",
+      "summary": "Bob McGrew argues automated researchers deliver a big, bounded boost because GPUs, experiments and factories still set the pace.",
       "category": "industry-media"
     },
     {
-      "title": "TMol brings molecular physics to PyTorch. The atoms have notes.",
-      "url": "https://www.digg.com/ai/x93v23hb",
+      "title": "GPT-6.2 Astra leads floorplan benchmark, Andon Labs says",
+      "url": "https://www.digg.com/ai/8nixhxl8",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -170,13 +170,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T08:17:46.421Z",
-      "summary": "The library combines Rosetta-style energy scoring, GPU batching and coordinate gradients so compatible models can use molecular-energy feedback.",
+      "date": "2026-11-20T10:24:33.707Z",
+      "summary": "Andon Labs says Astra ranks first and Sol third in a test turning apartment photos into floorplans.",
       "category": "industry-media"
     },
     {
-      "title": "MParakhin defends Google’s model lineup after willcb’s “Gemini 4 Sodium” jab",
-      "url": "https://www.digg.com/ai/1uhhqeg7",
+      "title": "Tesla Asia says Giga Shanghai gave production leftovers a new job: Musk’s gift",
+      "url": "https://www.digg.com/ai/05vciv06",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -190,32 +190,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T06:24:45.831Z",
-      "summary": "MParakhin argues Google should release its best models, answering willcb’s element-themed jab at confusing tiers.",
+      "date": "2026-11-20T10:24:30.389Z",
+      "summary": "Tesla Asia says Musk’s thank-you visit brought a gift in return, crafted at Giga Shanghai from production leftovers.",
       "category": "industry-media"
     },
     {
-      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-19T00:42:56.000Z",
-      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Prime Intellect’s Model Factory pitch: train the AI, ship it, study the mistakes",
-      "url": "https://www.digg.com/ai/npsig7j4",
+      "title": "House records show nearly 880,000 AI chips approved for Chinese firms. Approval isn’t delivery.",
+      "url": "https://www.digg.com/ai/e8jc3mkq",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -229,13 +210,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-19T00:32:18.446Z",
-      "summary": "The company says its new platform connects model training, deployment and production feedback, with hosted and dedicated options.",
+      "date": "2026-11-20T09:16:44.995Z",
+      "summary": "The May 11 records list Nvidia and AMD approvals as “not shipped”; they don’t establish subsequent deliveries.",
       "category": "industry-media"
     },
     {
-      "title": "OpenAI says its coding agents finish longer research tasks—and still write ‘AI slop’",
-      "url": "https://www.digg.com/ai/8fgn5s8u",
+      "title": "Qwen3.8-27B’s pi adapter reports better coding scores—and fewer trips to the toolbox",
+      "url": "https://www.digg.com/ai/xuc4t331",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -249,89 +230,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T23:46:01.078Z",
-      "summary": "OpenAI reports 46% unassisted success on delegated tasks estimated at two to four human hours, but humans aren’t clocking out.",
+      "date": "2026-11-20T09:16:25.921Z",
+      "summary": "Its model card reports higher benchmark scores and fewer tool calls, but the local GGUF version hasn’t been re-evaluated.",
       "category": "industry-media"
     },
     {
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T23:45:00.000Z",
-      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T23:25:17.000Z",
-      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T23:17:28.000Z",
-      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-18T22:58:11.000Z",
-      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Jasmine Sun challenges Anthropic’s save-the-world-by-winning logic",
-      "url": "https://www.digg.com/ai/jd9qb52f",
+      "title": "Dragos says prompt traps exposed breaches at three AI providers",
+      "url": "https://www.digg.com/ai/v4we0213",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -345,13 +250,33 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T22:51:09.986Z",
-      "summary": "Jasmine Sun challenges Anthropic’s build-first safety logic and reports internal dissent over whether the company should pause.",
+      "date": "2026-11-20T07:25:35.028Z",
+      "summary": "Dragos reports prompt theft through reseller logs and privacy failures, including ignored zero-data-retention settings.",
       "category": "industry-media"
     },
     {
-      "title": "Anthropic prices IPO at $83 a share, above projected range",
-      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+      "title": "Nous Research says Hermes Enterprise is clocking in on Microsoft Teams and Azure",
+      "url": "https://www.digg.com/ai/kpagcgzg",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T07:06:16.629Z",
+      "summary": "Nous Research says Hermes brings reusable skills to office work, with team sharing subject to review.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -364,13 +289,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T22:11:15.000Z",
-      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+      "date": "2026-11-20T00:56:01.000Z",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -383,8 +308,82 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-18T21:57:40.000Z",
-      "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
+      "date": "2026-11-20T00:43:50.000Z",
+      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source",
+        "model_release",
+        "tool_use",
+        "agentic_framework"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T00:00:00.000Z",
+      "summary": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "category": "platform-blog"
+    },
+    {
+      "title": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "source": "Anthropic News",
+      "tags": [
+        "model_release",
+        "api_update",
+        "ai_agents",
+        "ai_safety"
+      ],
+      "matching_tags": [
+        "api_update"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T00:00:00.000Z",
+      "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+      "category": "provider-blog"
+    },
+    {
+      "title": "Meta’s new Muse Charm device may cost $300",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-19T21:58:06.000Z",
+      "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+      "category": "industry-media"
+    },
+    {
+      "title": "These tech outages are giving Y2K, AI agent style",
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-19T21:42:31.000Z",
+      "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
       "category": "industry-media"
     }
   ]
