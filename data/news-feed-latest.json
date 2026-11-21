@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-20T14:04:00.280Z",
+  "generated": "2026-11-21T13:29:53.826Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 10,
-    "failed": 4,
+    "succeeded": 8,
+    "failed": 6,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -65,13 +65,13 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "arxiv-cs-lg",
         "name": "arXiv cs.LG",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "venturebeat-ai",
@@ -96,6 +96,260 @@
   "article_count": 15,
   "articles": [
     {
+      "title": "OpenAI says its model beat square grids in Erdős’s unit-distance problem",
+      "url": "https://www.digg.com/ai/i9z9e1cr",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T13:15:14.614Z",
+      "summary": "OpenAI calls the result the first autonomous AI solution to a prominent open problem in mathematics.",
+      "category": "industry-media"
+    },
+    {
+      "title": "OVHcloud launches Olala mini, says the GPU is optional",
+      "url": "https://www.digg.com/ai/xr9zvhmf",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T12:06:05.543Z",
+      "summary": "The seven-billion-parameter model has downloadable weights, though familiar local AI apps reportedly weren't ready for its architecture.",
+      "category": "industry-media"
+    },
+    {
+      "title": "LeCun and coauthors propose an AI hindsight shortcut—with physics in the fine print",
+      "url": "https://www.digg.com/ai/e7dx3zcw",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T11:05:33.424Z",
+      "summary": "Their preprint reports counterfactual R² rising from 38–46% to 86–96% across four simulators, using the same predictors.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Sam Bankman-Fried puts AI extinction risk around 25%—and stays bullish on Anthropic",
+      "url": "https://www.digg.com/ai/8bv6hu4u",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T10:45:04.806Z",
+      "summary": "The former Anthropic investor gave a teen podcaster his speculative AI doom estimate, with some very large caveats.",
+      "category": "industry-media"
+    },
+    {
+      "title": "_mohansolo says Antigravity’s Gemini quotas are reset",
+      "url": "https://www.digg.com/ai/do6njmen",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T09:42:44.596Z",
+      "summary": "_mohansolo says caching improvements let users get 22% more done within their quota on Antigravity.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Jensen Huang reportedly mocked Mistral chief Arthur Mensch’s French accent at GTC",
+      "url": "https://www.digg.com/ai/trmm4t4p",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T08:24:55.814Z",
+      "summary": "Footage of a March panel has reportedly resurfaced amid allegations that Huang humiliated and threatened employees.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Heave-Ho’s robot moving crew takes its orders out loud",
+      "url": "https://www.digg.com/ai/zc7tsis8",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T08:15:55.599Z",
+      "summary": "Researchers say humanoids can synchronize carrying tasks through spoken commands, without exchanging network messages between robots.",
+      "category": "industry-media"
+    },
+    {
+      "title": "A decade later, tszzl salutes Lee Sedol’s grace in defeat",
+      "url": "https://www.digg.com/ai/5t128ejf",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T07:45:12.078Z",
+      "summary": "In a response to tszzl’s tribute, lishali88 shares a passage on why one win against AlphaGo mattered.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Google rolls out new search homepage with AI chat history and no search button",
+      "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+      "source": "Ars Technica AI",
+      "tags": [
+        "research_paper",
+        "open_source",
+        "hardware",
+        "policy"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T21:58:29.000Z",
+      "summary": "Google search is making it even easier to access AI tools on the search page.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T19:53:41.000Z",
+      "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+      "category": "industry-media"
+    },
+    {
+      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T19:32:08.000Z",
+      "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Chips can survive the space environment — can their financing?",
+      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T17:40:01.000Z",
+      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "category": "industry-media"
+    },
+    {
+      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-20T14:55:44.000Z",
+      "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+      "category": "industry-media"
+    },
+    {
       "title": "Six AI-powered gadgets that could make your home office smarter",
       "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
       "source": "TechCrunch AI",
@@ -115,166 +369,6 @@
       "category": "industry-media"
     },
     {
-      "title": "Signal’s new AI defense has an awkward casualty: screenshots",
-      "url": "https://www.digg.com/ai/v80g7kni",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T12:47:08.000Z",
-      "summary": "Signal’s screenshot restrictions target chat-reading AI, but ordinary captures get blocked too—and the company warns protection is incomplete.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Ex-OpenAI research chief says runaway AI has a bulldozer problem",
-      "url": "https://www.digg.com/ai/3qydf8t3",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T12:15:25.513Z",
-      "summary": "Bob McGrew argues automated researchers deliver a big, bounded boost because GPUs, experiments and factories still set the pace.",
-      "category": "industry-media"
-    },
-    {
-      "title": "GPT-6.2 Astra leads floorplan benchmark, Andon Labs says",
-      "url": "https://www.digg.com/ai/8nixhxl8",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T10:24:33.707Z",
-      "summary": "Andon Labs says Astra ranks first and Sol third in a test turning apartment photos into floorplans.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Tesla Asia says Giga Shanghai gave production leftovers a new job: Musk’s gift",
-      "url": "https://www.digg.com/ai/05vciv06",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T10:24:30.389Z",
-      "summary": "Tesla Asia says Musk’s thank-you visit brought a gift in return, crafted at Giga Shanghai from production leftovers.",
-      "category": "industry-media"
-    },
-    {
-      "title": "House records show nearly 880,000 AI chips approved for Chinese firms. Approval isn’t delivery.",
-      "url": "https://www.digg.com/ai/e8jc3mkq",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T09:16:44.995Z",
-      "summary": "The May 11 records list Nvidia and AMD approvals as “not shipped”; they don’t establish subsequent deliveries.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Qwen3.8-27B’s pi adapter reports better coding scores—and fewer trips to the toolbox",
-      "url": "https://www.digg.com/ai/xuc4t331",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T09:16:25.921Z",
-      "summary": "Its model card reports higher benchmark scores and fewer tool calls, but the local GGUF version hasn’t been re-evaluated.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Dragos says prompt traps exposed breaches at three AI providers",
-      "url": "https://www.digg.com/ai/v4we0213",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T07:25:35.028Z",
-      "summary": "Dragos reports prompt theft through reseller logs and privacy failures, including ignored zero-data-retention settings.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Nous Research says Hermes Enterprise is clocking in on Microsoft Teams and Azure",
-      "url": "https://www.digg.com/ai/kpagcgzg",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T07:06:16.629Z",
-      "summary": "Nous Research says Hermes brings reusable skills to office work, with team sharing subject to review.",
-      "category": "industry-media"
-    },
-    {
       "title": "Apple may be developing its own AI agent that runs your Mac",
       "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
       "source": "TechCrunch AI",
@@ -291,99 +385,6 @@
       "importance": 0.35,
       "date": "2026-11-20T00:56:01.000Z",
       "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T00:43:50.000Z",
-      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
-      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-      "source": "Hugging Face Blog",
-      "tags": [
-        "open_source",
-        "model_release",
-        "tool_use",
-        "agentic_framework"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T00:00:00.000Z",
-      "summary": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
-      "category": "platform-blog"
-    },
-    {
-      "title": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
-      "url": "https://www.anthropic.com/news/ipo-close",
-      "source": "Anthropic News",
-      "tags": [
-        "model_release",
-        "api_update",
-        "ai_agents",
-        "ai_safety"
-      ],
-      "matching_tags": [
-        "api_update"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T00:00:00.000Z",
-      "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
-      "category": "provider-blog"
-    },
-    {
-      "title": "Meta’s new Muse Charm device may cost $300",
-      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-19T21:58:06.000Z",
-      "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
-      "category": "industry-media"
-    },
-    {
-      "title": "These tech outages are giving Y2K, AI agent style",
-      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-19T21:42:31.000Z",
-      "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
       "category": "industry-media"
     }
   ]

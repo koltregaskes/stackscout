@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-20T14:04:00.280Z",
+  "generatedAt": "2026-11-21T13:29:53.826Z",
   "news": {
     "consumerPath": "data/news-feed-latest.json",
-    "generatedAt": "2026-11-20T14:04:00.280Z",
-    "newestItemAt": "2026-11-20T14:00:00.000Z",
+    "generatedAt": "2026-11-21T13:29:53.826Z",
+    "newestItemAt": "2026-11-21T13:15:14.614Z",
     "itemCount": 15,
     "coverage": {
       "status": "degraded",
       "attempted": 14,
-      "succeeded": 10,
-      "failed": 4,
+      "succeeded": 8,
+      "failed": 6,
       "sources": [
         {
           "id": "techcrunch-ai",
@@ -69,13 +69,13 @@
           "id": "arxiv-cs-ai",
           "name": "arXiv cs.AI",
           "required": false,
-          "outcome": "success"
+          "outcome": "failure"
         },
         {
           "id": "arxiv-cs-lg",
           "name": "arXiv cs.LG",
           "required": false,
-          "outcome": "success"
+          "outcome": "failure"
         },
         {
           "id": "venturebeat-ai",
