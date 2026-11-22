@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T13:29:53.826Z",
+  "generated": "2026-11-22T13:23:55.730Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
@@ -96,8 +96,8 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "OpenAI says its model beat square grids in Erdős’s unit-distance problem",
-      "url": "https://www.digg.com/ai/i9z9e1cr",
+      "title": "Seb Krier: A claimed Riemann solution isn’t an instant profit boost",
+      "url": "https://www.digg.com/ai/4fb97g98",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -111,13 +111,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T13:15:14.614Z",
-      "summary": "OpenAI calls the result the first autonomous AI solution to a prominent open problem in mathematics.",
+      "date": "2026-11-22T12:04:46.135Z",
+      "summary": "Krier points to cash flow and commoditization; alexolegimas says advanced math capabilities may already be priced in.",
       "category": "industry-media"
     },
     {
-      "title": "OVHcloud launches Olala mini, says the GPU is optional",
-      "url": "https://www.digg.com/ai/xr9zvhmf",
+      "title": "Simeon_Cps says an agent locked out his cofounder. Cue swarm negotiations.",
+      "url": "https://www.digg.com/ai/ziw5djd4",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -131,13 +131,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T12:06:05.543Z",
-      "summary": "The seven-billion-parameter model has downloadable weights, though familiar local AI apps reportedly weren't ready for its architecture.",
+      "date": "2026-11-22T12:04:45.551Z",
+      "summary": "Simeon_Cps says Davidad lost access for more than 24 hours; the post’s text doesn’t say whether negotiations restored it.",
       "category": "industry-media"
     },
     {
-      "title": "LeCun and coauthors propose an AI hindsight shortcut—with physics in the fine print",
-      "url": "https://www.digg.com/ai/e7dx3zcw",
+      "title": "Gary Marcus says ‘the jig is almost up’ over Musk’s reported AI cash-crunch warning",
+      "url": "https://www.digg.com/ai/ka8y52dv",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -151,13 +151,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T11:05:33.424Z",
-      "summary": "Their preprint reports counterfactual R² rising from 38–46% to 86–96% across four simulators, using the same predictors.",
+      "date": "2026-11-22T10:05:07.101Z",
+      "summary": "Polymarket reports Musk warned AI could need hundreds of billions in additional financing next year.",
       "category": "industry-media"
     },
     {
-      "title": "Sam Bankman-Fried puts AI extinction risk around 25%—and stays bullish on Anthropic",
-      "url": "https://www.digg.com/ai/8bv6hu4u",
+      "title": "Gowers says he attended a pause-AI march",
+      "url": "https://www.digg.com/ai/2n5gal6d",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -171,13 +171,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T10:45:04.806Z",
-      "summary": "The former Anthropic investor gave a teen podcaster his speculative AI doom estimate, with some very large caveats.",
+      "date": "2026-11-22T03:25:24.301Z",
+      "summary": "Gowers describes “complicated feelings,” linking his march attendance with a visit to his nearly two-year-old grandson.",
       "category": "industry-media"
     },
     {
-      "title": "_mohansolo says Antigravity’s Gemini quotas are reset",
-      "url": "https://www.digg.com/ai/do6njmen",
+      "title": "WSJ reporter: Dario Amodei suggested videogames could ease political strife from AI joblessness",
+      "url": "https://www.digg.com/ai/trojodql",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -191,13 +191,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T09:42:44.596Z",
-      "summary": "_mohansolo says caching improvements let users get 22% more done within their quota on Antigravity.",
+      "date": "2026-11-22T01:44:43.032Z",
+      "summary": "Maxwell Zeff says the suggestion involved immersive games and dated to Amodei’s time working at OpenAI.",
       "category": "industry-media"
     },
     {
-      "title": "Jensen Huang reportedly mocked Mistral chief Arthur Mensch’s French accent at GTC",
-      "url": "https://www.digg.com/ai/trmm4t4p",
+      "title": "Musk says Teslas will share traffic knowledge and tap Grok’s live X feed",
+      "url": "https://www.digg.com/ai/lwa23c9t",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -211,13 +211,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T08:24:55.814Z",
-      "summary": "Footage of a March panel has reportedly resurfaced amid allegations that Huang humiliated and threatened employees.",
+      "date": "2026-11-22T00:24:56.141Z",
+      "summary": "Musk says Tesla vehicles will offer destination updates by combining shared traffic knowledge with Grok’s X feed.",
       "category": "industry-media"
     },
     {
-      "title": "Heave-Ho’s robot moving crew takes its orders out loud",
-      "url": "https://www.digg.com/ai/zc7tsis8",
+      "title": "Ron Biscardi says Grok Bot helped wrangle a 5,000-person summit",
+      "url": "https://www.digg.com/ai/duybe970",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -231,13 +231,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T08:15:55.599Z",
-      "summary": "Researchers say humanoids can synchronize carrying tasks through spoken commands, without exchanging network messages between robots.",
+      "date": "2026-11-21T23:35:59.564Z",
+      "summary": "Biscardi says a dozen agents helped his COO handle half the TomorrowX Summit’s run-up.",
       "category": "industry-media"
     },
     {
-      "title": "A decade later, tszzl salutes Lee Sedol’s grace in defeat",
-      "url": "https://www.digg.com/ai/5t128ejf",
+      "title": "OpenCode says GLM 5.3 and DeepSeek V4.1 Flash are now 60% off",
+      "url": "https://www.digg.com/ai/spi1b30v",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -251,8 +251,84 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-21T07:45:12.078Z",
-      "summary": "In a response to tszzl’s tribute, lishali88 shares a passage on why one win against AlphaGo mattered.",
+      "date": "2026-11-21T23:07:05.854Z",
+      "summary": "OpenCode lists GLM 5.3 at $0.56 and DeepSeek V4.1 Flash at $0.12 per million input tokens.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T21:37:10.000Z",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "category": "industry-media"
+    },
+    {
+      "title": "A tale of two Nvidias",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T21:07:42.000Z",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Here are the top AI agents that can live in your text messages",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T17:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-21T16:00:00.000Z",
+      "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
       "category": "industry-media"
     },
     {
@@ -309,82 +385,6 @@
       "importance": 0.35,
       "date": "2026-11-20T19:32:08.000Z",
       "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Chips can survive the space environment — can their financing?",
-      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T17:40:01.000Z",
-      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
-      "category": "industry-media"
-    },
-    {
-      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T14:55:44.000Z",
-      "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
-      "category": "industry-media"
-    },
-    {
-      "title": "Six AI-powered gadgets that could make your home office smarter",
-      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T14:00:00.000Z",
-      "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-20T00:56:01.000Z",
-      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
       "category": "industry-media"
     }
   ]
