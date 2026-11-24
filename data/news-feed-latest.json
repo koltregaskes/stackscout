@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-23T16:01:39.898Z",
+  "generated": "2026-11-24T15:55:42.911Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 11,
-    "failed": 3,
+    "succeeded": 9,
+    "failed": 5,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -65,13 +65,13 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "arxiv-cs-lg",
         "name": "arXiv cs.LG",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "venturebeat-ai",
@@ -96,8 +96,8 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
-      "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
+      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
+      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -110,13 +110,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T15:04:01.000Z",
-      "summary": "The president cited the U.S. Attorney General in defending Huang's return, while urging Nvidia to continue its export-control investigation.",
+      "date": "2026-11-24T15:51:07.000Z",
+      "summary": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
       "category": "industry-media"
     },
     {
-      "title": "Jensen Huang reinstated as Nvidia CEO after brief resignation",
-      "url": "https://www.digg.com/ai/ya0mwvx3",
+      "title": "ICML 2027 lets AI polish reviews, not pass judgment",
+      "url": "https://www.digg.com/ai/hqmnquhe",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -130,13 +130,153 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T14:54:01.652Z",
-      "summary": "Nvidia's board reinstated Jensen Huang as president, CEO, and board member, effective immediately, after he resigned about two weeks earlier amid reports of extramarital affairs. A probe into possible foreign-intelligence targeting continues. X posts reported large Nvidia share gains.",
+      "date": "2026-11-24T15:34:18.712Z",
+      "summary": "The conference’s new rulebook adds early screening, submission caps and mandatory AI disclosures—without handing AI the reviewer’s chair.",
       "category": "industry-media"
     },
     {
-      "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
-      "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "title": "Yoshua Bengio backs global AI governance as Guterres puts oversight on the to-do list",
+      "url": "https://www.digg.com/ai/ape1ckjm",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T15:27:34.370Z",
+      "summary": "Bengio backed international cooperation after a Barbados summit where Guterres called for an AI risk framework within a year.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Some LLM flaws are fading, analysis finds. The flattery didn’t get the memo.",
+      "url": "https://www.digg.com/ai/s3c37lqy",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T14:55:42.209Z",
+      "summary": "A retest found nearly half of 50 documented behaviors largely gone in newer models, but three tendencies grew stronger.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Hendrycks pitches AI agent IDs, not a good-behavior badge",
+      "url": "https://www.digg.com/ai/ooktbdn8",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T14:37:40.519Z",
+      "summary": "The voluntary framework would link AI agents to whoever authorized them, without routinely revealing that identity to websites.",
+      "category": "industry-media"
+    },
+    {
+      "title": "OpenAI joins Anthropic with a VP ≠ VNP proof claim. Hold the victory lap.",
+      "url": "https://www.digg.com/ai/i7tyyw3s",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T14:27:38.591Z",
+      "summary": "OpenAI’s manuscript reportedly follows Anthropic’s by roughly four hours, but a GitHub merge isn’t a mathematical verdict.",
+      "category": "industry-media"
+    },
+    {
+      "title": "OpenAI and Anthropic employees reportedly fear some unreleased models are too risky to ship",
+      "url": "https://www.digg.com/ai/b04pmqjl",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T14:26:13.850Z",
+      "summary": "The reported debate goes beyond delaying launches: some insiders want to stop training new models entirely.",
+      "category": "industry-media"
+    },
+    {
+      "title": "An early AI Christmas: @mervenoyann says Nvidia sent an RTX Spark",
+      "url": "https://www.digg.com/ai/1acdkcw8",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T13:56:30.568Z",
+      "summary": "The poster says the hardware is for @Llama_app’s Windows app and llama.cpp; the posts don’t give a release date.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Muse launches in the UK, @finkd says",
+      "url": "https://www.digg.com/ai/3nelntwj",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-24T07:42:38.967Z",
+      "summary": "Meta says Muse for Mac organizes files and accesses Messages, Calendar and Notes with your permission.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -149,13 +289,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T14:43:03.000Z",
-      "summary": "Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in a Series F round.",
+      "date": "2026-11-23T22:05:50.000Z",
+      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
-      "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -168,153 +308,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T14:21:59.000Z",
-      "summary": "The stunning reversal was supported by senior officials in the U.S. government.",
+      "date": "2026-11-23T22:02:05.000Z",
+      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
       "category": "industry-media"
     },
     {
-      "title": "Trump wants Jensen Huang back at Nvidia—with a ‘big apology’",
-      "url": "https://www.digg.com/ai/8buc96hl",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T13:04:38.648Z",
-      "summary": "Trump reportedly urged Nvidia’s board to rehire Huang after publicly making the case for an apology and second chance.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Anthropic shares give back premarket gains, DeItaone reports",
-      "url": "https://www.digg.com/ai/vsbxiw45",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T12:42:29.000Z",
-      "summary": "Zerohedge says Anthropic shares turned negative after being up as much as 5.6%.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Novartis CEO isn’t buying AI’s five-to-10-year cancer-cure forecast",
-      "url": "https://www.digg.com/ai/1ty82k2u",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T11:31:09.145Z",
-      "summary": "Vas Narasimhan, also an Anthropic board member, forecasts faster drug development—not an end to lengthy clinical trials.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Tao Lin’s AI jobs warning gets a misleading countdown",
-      "url": "https://www.digg.com/ai/6rd0p1ir",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T08:00:02.000Z",
-      "summary": "Tao Lin rejected near-universal permanent unemployment within 15 months, despite the “matter of months” framing attached to his warning.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Z.ai announces GLM-5.4 with vision and 50% more weekly quota",
-      "url": "https://www.digg.com/ai/jinvxxz6",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T04:36:42.639Z",
-      "summary": "Z.ai promises vision and stronger coding for Coding Plan users, plus 50% more quota for those with weekly allowances.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Sakana AI says a paper co-written with AI Scientist v3 was accepted at ALIFE 2026",
-      "url": "https://www.digg.com/ai/1249rdgi",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T02:56:11.207Z",
-      "summary": "Sakana says Robert Lange’s symposium talk charts the AI Scientist’s evolution and ambitions beyond benchmark scores.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Shopify CEO Tobi Lütke reportedly thinks all human-written code probably needs replacing within six or 12 months",
-      "url": "https://www.digg.com/ai/pjzk9maw",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T01:55:02.806Z",
-      "summary": "Lütke reportedly expects nearly bug-free software and 100x speedups in many instances; the account provides no benchmarks.",
-      "category": "industry-media"
-    },
-    {
-      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
-      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -327,31 +327,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T01:25:53.000Z",
-      "summary": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+      "date": "2026-11-23T21:47:41.000Z",
+      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
       "category": "industry-media"
     },
     {
-      "title": "How to build and maintain an agentic evaluation",
-      "url": "https://huggingface.co/blog/agentic-evals",
-      "source": "Hugging Face Blog",
-      "tags": [
-        "open_source",
-        "model_release",
-        "tool_use",
-        "agentic_framework"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T00:00:00.000Z",
-      "summary": "How to build and maintain an agentic evaluation",
-      "category": "platform-blog"
-    },
-    {
-      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -364,26 +346,46 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-22T21:14:07.000Z",
-      "summary": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+      "date": "2026-11-23T21:25:42.000Z",
+      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
       "category": "industry-media"
     },
     {
-      "title": "Ready Player One",
-      "url": "https://www.theverge.com/2018/3/12/17109960/ready-player-one-movie-review-steven-spielberg-ernest-cline-tye-sheridan-sxsw-2018",
-      "source": "The Verge AI",
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "source": "TechCrunch AI",
       "tags": [
         "announcement",
         "product_launch",
-        "policy",
+        "funding",
+        "acquisition",
         "industry_move"
       ],
       "matching_tags": [
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-22T20:56:12.000Z",
-      "summary": "Ready Player One",
+      "date": "2026-11-23T20:38:53.000Z",
+      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-23T19:14:46.000Z",
+      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
       "category": "industry-media"
     }
   ]
