@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T15:55:42.911Z",
+  "generated": "2026-11-25T15:39:42.604Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
@@ -96,8 +96,68 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
-      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+      "title": "Andrew Curran repeats rumors of an RSA-breaking advance at OpenAI and Anthropic",
+      "url": "https://www.digg.com/ai/un1k7lhp",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T15:08:30.187Z",
+      "summary": "Curran says the unconfirmed rumors concern both AI labs and have circulated for about ten days.",
+      "category": "industry-media"
+    },
+    {
+      "title": "@ladyxtel claims OpenHuman agents used a Riemann Hypothesis proof to derive 17 results",
+      "url": "https://www.digg.com/ai/wotexdu9",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T14:18:13.069Z",
+      "summary": "@ladyxtel says six named conjectures were among 17 results, with Lean checking every proof.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Schumer urges bipartisan bills to curb AI-chip exports to China",
+      "url": "https://www.digg.com/ai/8fcn6z7d",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T14:15:15.374Z",
+      "summary": "Rania Khalek challenges lawmakers’ national-security focus, arguing healthcare should take priority over China chip-sales concerns.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -110,173 +170,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-24T15:51:07.000Z",
-      "summary": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
+      "date": "2026-11-25T14:10:18.000Z",
+      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
       "category": "industry-media"
     },
     {
-      "title": "ICML 2027 lets AI polish reviews, not pass judgment",
-      "url": "https://www.digg.com/ai/hqmnquhe",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T15:34:18.712Z",
-      "summary": "The conference’s new rulebook adds early screening, submission caps and mandatory AI disclosures—without handing AI the reviewer’s chair.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Yoshua Bengio backs global AI governance as Guterres puts oversight on the to-do list",
-      "url": "https://www.digg.com/ai/ape1ckjm",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T15:27:34.370Z",
-      "summary": "Bengio backed international cooperation after a Barbados summit where Guterres called for an AI risk framework within a year.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Some LLM flaws are fading, analysis finds. The flattery didn’t get the memo.",
-      "url": "https://www.digg.com/ai/s3c37lqy",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T14:55:42.209Z",
-      "summary": "A retest found nearly half of 50 documented behaviors largely gone in newer models, but three tendencies grew stronger.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Hendrycks pitches AI agent IDs, not a good-behavior badge",
-      "url": "https://www.digg.com/ai/ooktbdn8",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T14:37:40.519Z",
-      "summary": "The voluntary framework would link AI agents to whoever authorized them, without routinely revealing that identity to websites.",
-      "category": "industry-media"
-    },
-    {
-      "title": "OpenAI joins Anthropic with a VP ≠ VNP proof claim. Hold the victory lap.",
-      "url": "https://www.digg.com/ai/i7tyyw3s",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T14:27:38.591Z",
-      "summary": "OpenAI’s manuscript reportedly follows Anthropic’s by roughly four hours, but a GitHub merge isn’t a mathematical verdict.",
-      "category": "industry-media"
-    },
-    {
-      "title": "OpenAI and Anthropic employees reportedly fear some unreleased models are too risky to ship",
-      "url": "https://www.digg.com/ai/b04pmqjl",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T14:26:13.850Z",
-      "summary": "The reported debate goes beyond delaying launches: some insiders want to stop training new models entirely.",
-      "category": "industry-media"
-    },
-    {
-      "title": "An early AI Christmas: @mervenoyann says Nvidia sent an RTX Spark",
-      "url": "https://www.digg.com/ai/1acdkcw8",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T13:56:30.568Z",
-      "summary": "The poster says the hardware is for @Llama_app’s Windows app and llama.cpp; the posts don’t give a release date.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Muse launches in the UK, @finkd says",
-      "url": "https://www.digg.com/ai/3nelntwj",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-24T07:42:38.967Z",
-      "summary": "Meta says Muse for Mac organizes files and accesses Messages, Calendar and Notes with your permission.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -289,13 +189,131 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T22:05:50.000Z",
-      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "date": "2026-11-25T13:00:00.000Z",
+      "summary": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
       "category": "industry-media"
     },
     {
-      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "title": "Mantic says its AI forecaster roughly matches Fable 5.2 (medium) at one-fifteenth the cost per forecast",
+      "url": "https://www.digg.com/ai/5aehzn6t",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T12:45:42.107Z",
+      "summary": "The team’s 100,000-forecast S&P 500 demo is a giant what-if exercise, not a sneak peek at 2027.",
+      "category": "industry-media"
+    },
+    {
+      "title": "RumiFold gives Qwen a protein-folding job before letting it talk",
+      "url": "https://www.digg.com/ai/nriqau60",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T12:44:58.523Z",
+      "summary": "Northeastern researchers say their adapted chat model predicts protein backbones internally, improving function predictions but weakening general language performance.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Google Research repo says Cogentic generated six new math papers",
+      "url": "https://www.digg.com/ai/0bufqau6",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T12:25:45.374Z",
+      "summary": "The GitHub commit promises Lean 4 formalizations of all six proofs in a later companion submission.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Avalon-M1 gives AI agents a CEO and a deadline",
+      "url": "https://www.digg.com/ai/wruc363o",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T12:16:06.702Z",
+      "summary": "Researchers report similar average scores at roughly one-third the derived latency of token-matched solo execution, with mixed oversight results.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Calling Slotbound ‘vibe-coded’ skips the work, Gergely Orosz argues",
+      "url": "https://www.digg.com/ai/i62byv73",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T11:57:17.453Z",
+      "summary": "Orosz challenged a post touting Slotbound’s claimed $1.33 million week, arguing that AI assistance doesn’t erase its creator’s work.",
+      "category": "industry-media"
+    },
+    {
+      "title": "An Indic Voice Agent with CUGA",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source",
+        "model_release",
+        "tool_use",
+        "agentic_framework"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T10:22:09.000Z",
+      "summary": "An Indic Voice Agent with CUGA",
+      "category": "platform-blog"
+    },
+    {
+      "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
+      "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -308,13 +326,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T22:02:05.000Z",
-      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "date": "2026-11-25T00:12:02.000Z",
+      "summary": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether the country is celebrating a company that has helped put advanced chips in its adversaries' hands.",
       "category": "industry-media"
     },
     {
-      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
-      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+      "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
+      "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -327,13 +345,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T21:47:41.000Z",
-      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "date": "2026-11-24T22:27:52.000Z",
+      "summary": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
       "category": "industry-media"
     },
     {
-      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
+      "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -346,13 +364,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T21:25:42.000Z",
-      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
+      "date": "2026-11-24T21:48:27.000Z",
+      "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
-      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "title": "Even the best AI agents struggle with everyday life",
+      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -365,27 +383,8 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-23T20:38:53.000Z",
-      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-23T19:14:46.000Z",
-      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+      "date": "2026-11-24T21:33:29.000Z",
+      "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
       "category": "industry-media"
     }
   ]
