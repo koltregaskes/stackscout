@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-25T15:39:42.604Z",
+  "generated": "2026-11-26T15:21:45.812Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 9,
-    "failed": 5,
+    "succeeded": 10,
+    "failed": 4,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -17,7 +17,7 @@
         "id": "the-verge-ai",
         "name": "The Verge AI",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "ars-technica-ai",
@@ -65,13 +65,13 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "failure"
+        "outcome": "success"
       },
       {
         "id": "arxiv-cs-lg",
         "name": "arXiv cs.LG",
         "required": false,
-        "outcome": "failure"
+        "outcome": "success"
       },
       {
         "id": "venturebeat-ai",
@@ -96,8 +96,8 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Andrew Curran repeats rumors of an RSA-breaking advance at OpenAI and Anthropic",
-      "url": "https://www.digg.com/ai/un1k7lhp",
+      "title": "Antigravity’s Neon can squeeze 28% more tasks into quota, @_mohansolo says",
+      "url": "https://www.digg.com/ai/bojboo76",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -111,13 +111,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T15:08:30.187Z",
-      "summary": "Curran says the unconfirmed rumors concern both AI labs and have circulated for about ten days.",
+      "date": "2026-11-26T14:55:35.971Z",
+      "summary": "The account says caching and harness tweaks delivered close to 75% more Neon usage within quota over five days.",
       "category": "industry-media"
     },
     {
-      "title": "@ladyxtel claims OpenHuman agents used a Riemann Hypothesis proof to derive 17 results",
-      "url": "https://www.digg.com/ai/wotexdu9",
+      "title": "KimChiSpicey claims Anthropic-linked ties to 178 House members and 68 senators",
+      "url": "https://www.digg.com/ai/1sm4pn1k",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -131,13 +131,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T14:18:13.069Z",
-      "summary": "@ladyxtel says six named conjectures were among 17 results, with Lean checking every proof.",
+      "date": "2026-11-26T14:35:47.211Z",
+      "summary": "KimChiSpicey says revised counts include incoming lawmakers, putting its Senate tally at 68 of 98 seats.",
       "category": "industry-media"
     },
     {
-      "title": "Schumer urges bipartisan bills to curb AI-chip exports to China",
-      "url": "https://www.digg.com/ai/8fcn6z7d",
+      "title": "Tim Sweeney shares claim Nvidia just open-sourced Megatron-LM",
+      "url": "https://www.digg.com/ai/60ln56jt",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -151,51 +151,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T14:15:15.374Z",
-      "summary": "Rania Khalek challenges lawmakers’ national-security focus, arguing healthcare should take priority over China chip-sales concerns.",
+      "date": "2026-11-26T14:16:17.909Z",
+      "summary": "CrazyShyyt says Nvidia’s Megatron-LM is free and open-source, built to train trillion-parameter language models.",
       "category": "industry-media"
     },
     {
-      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
-      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-25T14:10:18.000Z",
-      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
-      "category": "industry-media"
-    },
-    {
-      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
-      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-25T13:00:00.000Z",
-      "summary": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Mantic says its AI forecaster roughly matches Fable 5.2 (medium) at one-fifteenth the cost per forecast",
-      "url": "https://www.digg.com/ai/5aehzn6t",
+      "title": "ChrisCroy describes a Pangram dispute: ‘100% AI’ dissertation claim, ‘100% human’ excerpts",
+      "url": "https://www.digg.com/ai/ks32u6mi",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -209,13 +171,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T12:45:42.107Z",
-      "summary": "The team’s 100,000-forecast S&P 500 demo is a giant what-if exercise, not a sneak peek at 2027.",
+      "date": "2026-11-26T14:05:55.423Z",
+      "summary": "According to ChrisCroy, other users submitted dissertation excerpts to Pangram and received “100% human” results.",
       "category": "industry-media"
     },
     {
-      "title": "RumiFold gives Qwen a protein-folding job before letting it talk",
-      "url": "https://www.digg.com/ai/nriqau60",
+      "title": "Atlassian’s AI chief says one all-builder team needed direction, not more code",
+      "url": "https://www.digg.com/ai/9762moxr",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -229,13 +191,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T12:44:58.523Z",
-      "summary": "Northeastern researchers say their adapted chat model predicts protein backbones internally, improving function predictions but weakening general language performance.",
+      "date": "2026-11-26T13:56:35.056Z",
+      "summary": "One product manager reported a return to traditional duties after about a month in Atlassian’s AI-builder experiment, Sherif Mansour says.",
       "category": "industry-media"
     },
     {
-      "title": "Google Research repo says Cogentic generated six new math papers",
-      "url": "https://www.digg.com/ai/0bufqau6",
+      "title": "Creator says they asked AI to give bicycle pelicans the Anthropic launch treatment",
+      "url": "https://www.digg.com/ai/zrzdmjc2",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -249,53 +211,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T12:25:45.374Z",
-      "summary": "The GitHub commit promises Lean 4 formalizations of all six proofs in a later companion submission.",
+      "date": "2026-11-26T13:25:10.133Z",
+      "summary": "Claude Pelican 1 is fictional, and its imaginary specialty is wonderfully specific: generating SVG pelicans on bicycles.",
       "category": "industry-media"
     },
     {
-      "title": "Avalon-M1 gives AI agents a CEO and a deadline",
-      "url": "https://www.digg.com/ai/wruc363o",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-25T12:16:06.702Z",
-      "summary": "Researchers report similar average scores at roughly one-third the derived latency of token-matched solo execution, with mixed oversight results.",
-      "category": "industry-media"
-    },
-    {
-      "title": "Calling Slotbound ‘vibe-coded’ skips the work, Gergely Orosz argues",
-      "url": "https://www.digg.com/ai/i62byv73",
-      "source": "Digg AI",
-      "tags": [
-        "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "open_source"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-25T11:57:17.453Z",
-      "summary": "Orosz challenged a post touting Slotbound’s claimed $1.33 million week, arguing that AI assistance doesn’t erase its creator’s work.",
-      "category": "industry-media"
-    },
-    {
-      "title": "An Indic Voice Agent with CUGA",
-      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
       "source": "Hugging Face Blog",
       "tags": [
         "open_source",
@@ -307,51 +229,89 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T10:22:09.000Z",
-      "summary": "An Indic Voice Agent with CUGA",
+      "date": "2026-11-26T11:37:17.000Z",
+      "summary": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
       "category": "platform-blog"
     },
     {
-      "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
-      "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
-      "source": "TechCrunch AI",
+      "title": "Torvalds accepts huge AI-assisted ext4 update, delivers the warning in all caps",
+      "url": "https://www.digg.com/ai/sm55cimn",
+      "source": "Digg AI",
       "tags": [
         "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
         "industry_move"
       ],
       "matching_tags": [
-        "product_launch"
+        "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-25T00:12:02.000Z",
-      "summary": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether the country is celebrating a company that has helped put advanced chips in its adversaries' hands.",
+      "date": "2026-11-26T11:06:12.634Z",
+      "summary": "Torvalds accepted the 41,197-insertion submission for Linux 7.4-rc5, but warned against another oversized, late-cycle update.",
       "category": "industry-media"
     },
     {
-      "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-      "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-      "source": "TechCrunch AI",
+      "title": "GLM-5.5 could slip into 2027—and chips aren’t the only headache",
+      "url": "https://www.digg.com/ai/wm9bthho",
+      "source": "Digg AI",
       "tags": [
         "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
         "industry_move"
       ],
       "matching_tags": [
-        "product_launch"
+        "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-24T22:27:52.000Z",
-      "summary": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
+      "date": "2026-11-26T10:45:42.727Z",
+      "summary": "Anti-distillation safeguards have reportedly slowed Zhipu’s flagship, while new U.S. computing rules threaten to make the wait longer.",
       "category": "industry-media"
     },
     {
-      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
-      "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source",
+        "model_release",
+        "tool_use",
+        "agentic_framework"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-26T05:05:36.000Z",
+      "summary": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "category": "platform-blog"
+    },
+    {
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "open_source",
+        "model_release",
+        "tool_use",
+        "agentic_framework"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-26T00:00:00.000Z",
+      "summary": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "category": "platform-blog"
+    },
+    {
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -364,13 +324,13 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-24T21:48:27.000Z",
-      "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
+      "date": "2026-11-25T22:44:32.000Z",
+      "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
       "category": "industry-media"
     },
     {
-      "title": "Even the best AI agents struggle with everyday life",
-      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
       "source": "TechCrunch AI",
       "tags": [
         "announcement",
@@ -383,8 +343,46 @@
         "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-24T21:33:29.000Z",
-      "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
+      "date": "2026-11-25T20:03:27.000Z",
+      "summary": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T19:54:57.000Z",
+      "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "source": "TechCrunch AI",
+      "tags": [
+        "announcement",
+        "product_launch",
+        "funding",
+        "acquisition",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "product_launch"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-25T19:44:24.000Z",
+      "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
       "category": "industry-media"
     }
   ]
