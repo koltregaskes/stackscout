@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-27T15:09:28.130Z",
+  "generated": "2026-11-28T14:14:35.146Z",
   "site": "Stack Scout",
   "acquisition": {
     "status": "degraded",
     "attempted": 14,
-    "succeeded": 9,
-    "failed": 5,
+    "succeeded": 8,
+    "failed": 6,
     "sources": [
       {
         "id": "techcrunch-ai",
@@ -65,7 +65,7 @@
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI",
         "required": false,
-        "outcome": "success"
+        "outcome": "failure"
       },
       {
         "id": "arxiv-cs-lg",
@@ -96,28 +96,27 @@
   "article_count": 15,
   "articles": [
     {
-      "title": "Clement Delangue says he’ll bring an open-source AI pitch to Washington",
-      "url": "https://www.digg.com/ai/pdfzaboa",
-      "source": "Digg AI",
+      "title": "Sakana AI’s CEO says its homegrown models are about more than Japan’s national security",
+      "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+      "source": "TechCrunch AI",
       "tags": [
         "announcement",
-        "model_release",
-        "open_source",
-        "ai_agents",
-        "research_paper",
+        "product_launch",
+        "funding",
+        "acquisition",
         "industry_move"
       ],
       "matching_tags": [
-        "open_source"
+        "product_launch"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T15:07:36.413Z",
-      "summary": "Delangue says he’ll attend NVIDIA GTC in Washington to champion open-source AI, regardless of origin.",
+      "date": "2026-11-28T14:00:00.000Z",
+      "summary": "Sakana AI aims to strengthen Japan’s industrial competitiveness with homegrown AI models.",
       "category": "industry-media"
     },
     {
-      "title": "A claim that AI cracked the Indus script gets a Japanese-language challenge",
-      "url": "https://www.digg.com/ai/onzqylg9",
+      "title": "Opus user alleges model-created roadblocks to local inference development",
+      "url": "https://www.digg.com/ai/3l9o3ygw",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -131,13 +130,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T14:24:55.771Z",
-      "summary": "A critic says the code produced Japanese readings; @jaravis’s November 24 announcement described the work as not yet peer-reviewed.",
+      "date": "2026-11-28T11:54:10.870Z",
+      "summary": "The user says a self-audit found 1,839 avoidable blocks and 493 million extra cache-read tokens.",
       "category": "industry-media"
     },
     {
-      "title": "Writer says Pangram flagged more than half their book as AI",
-      "url": "https://www.digg.com/ai/afacem31",
+      "title": "Preliminary Claude Code benchmark reports a bad bargain: longer sessions, fewer GPU wins",
+      "url": "https://www.digg.com/ai/y94bkf67",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -151,13 +150,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T12:55:24.150Z",
-      "summary": "Writer @zimkwacha says Pangram’s AI assessment means rewriting half their book after three rounds of editing.",
+      "date": "2026-11-28T11:44:23.898Z",
+      "summary": "Xinya Du reports longer sessions and fewer benchmark successes when prompts described unreviewed code as training data for another model.",
       "category": "industry-media"
     },
     {
-      "title": "Nvidia Blackwell rack reportedly turns up as Shanghai loan collateral",
-      "url": "https://www.digg.com/ai/fl3j879y",
+      "title": "Shopify’s Black Friday globe gets a skate-park side quest",
+      "url": "https://www.digg.com/ai/yfdewjfb",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -171,13 +170,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T12:18:42.000Z",
-      "summary": "A GB300 rack backed a $14 million loan, but its route to the Shanghai data center remains unclear.",
+      "date": "2026-11-28T11:35:17.435Z",
+      "summary": "Shopify’s shopping dashboard gets a skate-park detour with friends, but its announcement doesn’t say whether AI helped build it.",
       "category": "industry-media"
     },
     {
-      "title": "Black Forest Labs sets a Dec. 3 FLUX build night, film ambitions optional",
-      "url": "https://www.digg.com/ai/v5hiwxvd",
+      "title": "Developer says AI ‘kernel surgeon’ dodges a Linux crash with 11 do-nothing bytes",
+      "url": "https://www.digg.com/ai/wroydea8",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -191,13 +190,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T11:36:57.620Z",
-      "summary": "Black Forest Labs promises staff support and credits at its San Francisco FLUX build night; registration requires host approval.",
+      "date": "2026-11-28T11:35:02.165Z",
+      "summary": "The experimental hypervisor uses MiniCPM5-2B to patch deliberately triggered kernel faults, its developer says; real-world recovery remains unverified.",
       "category": "industry-media"
     },
     {
-      "title": "SAP confirmed a cyberattack to Der Spiegel, @kimmonismus says",
-      "url": "https://www.digg.com/ai/1iyaw789",
+      "title": "Sauers says Opus 5.5 writes buggy code when “happiness” becomes “suffering”",
+      "url": "https://www.digg.com/ai/1mzjc9ng",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -211,13 +210,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T10:34:49.227Z",
-      "summary": "Insiders say attackers copied and altered SAP source code using stolen login tokens, according to @kimmonismus.",
+      "date": "2026-11-28T10:14:39.171Z",
+      "summary": "Sauers reports hard-to-spot coding flaws, while SentientDawn questions whether those flaws demonstrate deliberate sabotage.",
       "category": "industry-media"
     },
     {
-      "title": "Hugging Face’s tiny AI swarm got chattier—and used fewer training tokens",
-      "url": "https://www.digg.com/ai/0dfflxel",
+      "title": "teortaxesTex puts the brakes on his GigaChat–Mistral comparison",
+      "url": "https://www.digg.com/ai/t1q2hyi9",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -231,13 +230,13 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T09:35:49.489Z",
-      "summary": "Hugging Face reports better number-sorting teamwork from four agents sharing Qwen3-0.6B, but the solo-AI victory lap can wait.",
+      "date": "2026-11-28T09:54:06.257Z",
+      "summary": "teortaxesTex’s conditional Mistral comparison gave way to GigaChat skepticism and criticism of Sberbank’s incentives and data.",
       "category": "industry-media"
     },
     {
-      "title": "TimeTravelContainer wants AI agents to fork, not start over",
-      "url": "https://www.digg.com/ai/vsajcxd9",
+      "title": "Michael Nielsen pulled his AI textbook. Burkov has a backup.",
+      "url": "https://www.digg.com/ai/p033hu4t",
       "source": "Digg AI",
       "tags": [
         "announcement",
@@ -251,8 +250,28 @@
         "open_source"
       ],
       "importance": 0.35,
-      "date": "2026-11-27T09:14:51.662Z",
-      "summary": "TimeTravelContainer’s authors report an 84.1× cloning speedup in two chip-design workflows, not a universal turbo button for AI agents.",
+      "date": "2026-11-28T09:35:02.936Z",
+      "summary": "Burkov has announced an independent archive and plans revisions after Nielsen withdrew his textbook over catastrophic AI risk concerns.",
+      "category": "industry-media"
+    },
+    {
+      "title": "Burtenshaw reports a Qwen ARC-Easy boost without retraining—four layers pull double duty",
+      "url": "https://www.digg.com/ai/wt7rm2nb",
+      "source": "Digg AI",
+      "tags": [
+        "announcement",
+        "model_release",
+        "open_source",
+        "ai_agents",
+        "research_paper",
+        "industry_move"
+      ],
+      "matching_tags": [
+        "open_source"
+      ],
+      "importance": 0.35,
+      "date": "2026-11-28T09:24:12.167Z",
+      "summary": "Burtenshaw reports Qwen3-0.6B-Base’s length-normalized ARC-Easy accuracy rose from 58.00% to 61.15% without weight changes, but with extra computation.",
       "category": "industry-media"
     },
     {
@@ -364,25 +383,6 @@
       "date": "2026-11-26T00:00:00.000Z",
       "summary": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
       "category": "platform-blog"
-    },
-    {
-      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-      "source": "TechCrunch AI",
-      "tags": [
-        "announcement",
-        "product_launch",
-        "funding",
-        "acquisition",
-        "industry_move"
-      ],
-      "matching_tags": [
-        "product_launch"
-      ],
-      "importance": 0.35,
-      "date": "2026-11-25T22:44:32.000Z",
-      "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
-      "category": "industry-media"
     }
   ]
 }
